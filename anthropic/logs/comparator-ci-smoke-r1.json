@@ -1,0 +1,28 @@
+{
+  "format": "external-eth-command-v1",
+  "name": "comparator-ci-smoke-r1",
+  "started_utc": "2026-11-04T17:36:46.369713+00:00",
+  "finished_utc": "2026-11-04T17:36:49.358756+00:00",
+  "argv": [
+    "<REPLICATION_ROOT>/anthropic/tools/comparator-ci-source/.lake/build/bin/comparator"
+  ],
+  "cwd": "<REPLICATION_ROOT>/anthropic/tools/comparator-ci-source",
+  "environment_overrides": {
+    "ELAN_HOME": "<REPLICATION_ROOT>/anthropic/elan",
+    "XDG_CACHE_HOME": "<REPLICATION_ROOT>/anthropic/cache",
+    "MATHLIB_CACHE_DIR": "<REPLICATION_ROOT>/anthropic/cache/mathlib",
+    "PATH": "<REDACTED FIELD>"
+  },
+  "timeout_wall_seconds": 28800,
+  "timed_out": false,
+  "exit_code": 1,
+  "wall_seconds": 2.988953125,
+  "child_user_seconds": 0.049734999999999994,
+  "child_system_seconds": 0.055267,
+  "child_cpu_seconds": 0.10500199999999998,
+  "peak_child_rss_bytes_macos": 38060032,
+  "output_path": "<REPLICATION_ROOT>/anthropic/logs/comparator-ci-smoke-r1.txt",
+  "output_size_bytes": 65,
+  "output_sha256": "13bedbf32f58187fa4467476fc0a46865944d61bd63763b88b2b85d5cdbb65eb",
+  "limitations": "Local command resource accounting excludes source authoring and model inference. Downloaded dependency objects are distinct from project-source re-elaboration."
+}

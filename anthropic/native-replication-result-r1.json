@@ -1,0 +1,455 @@
+{
+  "format": "anthropic-eth-native-replication-result-v1",
+  "observed_utc": "2026-11-04T20:10:37.755263+00:00",
+  "author_label": "codex-eth-anthropic-replication",
+  "verdict": "PASS for all required native replication checks under the documented tool and platform deviations",
+  "all_required_native_checks_passed": true,
+  "verbatim_upstream_linux_ci_reproduction": false,
+  "source": {
+    "repository": "https://github.com/anthropics/formal-math",
+    "commit": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+    "subdirectory": "eth",
+    "project_source_modified": false,
+    "lean_version": "4.33.1",
+    "lean_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "manifest": {
+      "path": "research/eth-external-replication-20261104/anthropic/source-manifest.json",
+      "size_bytes": 194243,
+      "sha256": "9e47b16125e4969f06fa8ebba53a0cded954d61de9238c5a3d4f8416b245d779"
+    },
+    "dependency_provenance": {
+      "path": "research/eth-external-replication-20261104/anthropic/dependency-provenance.json",
+      "size_bytes": 1492180,
+      "sha256": "69a2a24dd8cf88f2291742f3286ababa93f1151608459dcff6da23c70b88b1c4"
+    }
+  },
+  "targets": [
+    {
+      "name": "MainResults.ethIsFalse",
+      "type": "MainResults.ETHIsFalse",
+      "source": "Solution.lean:40",
+      "contract": "MainResults.lean:122"
+    },
+    {
+      "name": "MainResults.mainTheorem",
+      "type": "MainResults.MainTheorem",
+      "source": "Solution.lean:44",
+      "contract": "MainResults.lean:177"
+    }
+  ],
+  "source_build": {
+    "completed_project_target_commands": 1050,
+    "all_exit_zero": true,
+    "solution_index": 1038,
+    "final_module": "PaperIndex",
+    "default_build_jobs": 9768,
+    "challenge_placeholder_warnings_expected": true,
+    "solution_project_import_closure_size": 810,
+    "challenge_in_solution_import_closure": false,
+    "dependency_cache_scope": "8690 official Mathlib cache files restored; dependency sources not re-elaborated from scratch",
+    "scheduling": "One Lake module target at a time, LEAN_NUM_THREADS=2 per process; no unsupported Lake jobs flag",
+    "journal": {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/build-topological-r1.jsonl",
+      "size_bytes": 652583,
+      "sha256": "3724487b949228eefb3f81bb965c299a3ac7515dda03afed7d8fe71d5b057067"
+    }
+  },
+  "axiom_audit": {
+    "events": [
+      {
+        "event": "environment",
+        "initializer_execution_enabled": false,
+        "load_extensions": false,
+        "load_level": "private",
+        "module": "Solution",
+        "permitted_axioms": [
+          "propext",
+          "Quot.sound",
+          "Classical.choice"
+        ],
+        "schema": "eth-target-axiom-audit/1",
+        "standard_axiom_signature_check": true
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "disallowed_axioms": [],
+        "event": "target",
+        "module": "Solution",
+        "passed": true,
+        "schema": "eth-target-axiom-audit/1",
+        "target": "MainResults.ethIsFalse",
+        "visited_constants": 72360
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "disallowed_axioms": [],
+        "event": "target",
+        "module": "Solution",
+        "passed": true,
+        "schema": "eth-target-axiom-audit/1",
+        "target": "MainResults.mainTheorem",
+        "visited_constants": 72169
+      },
+      {
+        "event": "complete",
+        "module": "Solution",
+        "passed": true,
+        "schema": "eth-target-axiom-audit/1",
+        "scope": "named-theorem transitive axiom audit; no statement comparison or kernel replay",
+        "targets_checked": 2
+      }
+    ],
+    "scope": "Named target transitive type/value dependencies; rejects unsafe/partial dependencies; original4.33.1 private imports with extensions and initializers disabled; standard axiom signatures match trusted Init. Separate from statement comparison and kernel replay."
+  },
+  "comparator": {
+    "source_commit": "575674928e239f5bc452aab72d1dd7b0f1326494",
+    "required_driver_compiler": "4.34.0-rc1",
+    "actual_driver_compiler": "4.34.1",
+    "actual_driver_compiler_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+    "driver_source_modified": false,
+    "upstream_config": "comparator.json",
+    "upstream_config_sha256": "757e5537ccf47d1946521b0b5fb91a230cdcfd8933dc9ab047710709c15ffa7e",
+    "final_acceptance_lines": [
+      "nanoda kernel accepts the solution",
+      "Lean default kernel accepts the solution",
+      "Your solution is okay!"
+    ],
+    "mode": "Native upstream development fake-landrun shim; Linux isolation not reproduced",
+    "tool_manifest": {
+      "path": "research/eth-external-replication-20261104/anthropic/comparator-ci-tool-manifest-r1.json",
+      "size_bytes": 37584,
+      "sha256": "c1a08efe6be5abba717546cf7baae4b5a8045c0b5ffe41706a565148724631c2"
+    }
+  },
+  "nanoda": {
+    "source_repository": "https://github.com/robsimmons/nanoda_lib",
+    "source_commit": "68d5ca9db226849b41a6fff59d796ff19d0a8840",
+    "exporter_source_commit": "15f6055e299ad5b89345e533cc2192f4cc00f659",
+    "exporter_source_tag": "v4.33.0",
+    "exporter_actual_lean": "4.33.1",
+    "export_format": "3.1.0",
+    "exporter_patch_fallback": "Official CI fallback to available matching-minor exporter tag",
+    "effective_policy": {
+      "export_file_path": "<TEMP_PATH>",
+      "nat_extension": true,
+      "permitted_axioms": [
+        "propext",
+        "Quot.sound",
+        "Classical.choice"
+      ],
+      "string_extension": true,
+      "unpermitted_axiom_hard_error": true,
+      "use_stdin": false
+    },
+    "num_threads_omitted_semantics": "Pinned Nanoda default0 selects serial checking",
+    "record_directory": "research/eth-external-replication-20261104/anthropic/checker-records/nanoda-64425-0dvr445m",
+    "finished_receipt": {
+      "path": "research/eth-external-replication-20261104/anthropic/checker-records/nanoda-64425-0dvr445m/02-finished.json",
+      "size_bytes": 5575,
+      "sha256": "aa31fe1b0ab3b9acd1d10745ffd45f0669c6fbea4cbe3c643395dc0c2cb42070"
+    },
+    "checker_exit_code": 0,
+    "inputs_unchanged": true,
+    "recording_complete": true,
+    "checker_cpu_seconds": 40.131589,
+    "checker_wall_seconds": 40.28184975,
+    "raw_export_sha256": "e5cc12cb057e47d08780ce6e807186b5be0074bcc2dcddeffea1a0b3191641e6",
+    "raw_export_size_bytes": 583355033,
+    "retained_gzip": {
+      "path": "research/eth-external-replication-20261104/anthropic/checker-records/nanoda-64425-0dvr445m/export.ndjson.gz",
+      "size_bytes": 118800833,
+      "sha256": "c625a4755f8ccbf05a95760d59b8a3af42643d9f702f7bbaccb7aa682db814f3"
+    },
+    "raw_and_gzip_export_publication": "Local retained artifact; large archive excluded from bounded public package"
+  },
+  "original_lean_fresh_replay": {
+    "actual_argv": [
+      "env",
+      "LEAN_NUM_THREADS=2",
+      "lake",
+      "env",
+      "leanchecker",
+      "--fresh",
+      "Solution"
+    ],
+    "scope": "Original4.33.1 same-kernel replay of the full imported safe, nonpartial environment into an empty environment; axiom declarations are admitted; constructors and recursors postchecked. Target axiom policy and exact statements are checked separately. This is not the independent Nanoda kernel.",
+    "verbose_option": "Omitted as an output-option choice only; no coverage or runtime-saving claim",
+    "empty_output_expected": true
+  },
+  "post_check_identity": {
+    "all_pinned_inputs_match": true,
+    "source_files_checked": 1069,
+    "dependencies_checked": 9,
+    "selected_installed_lean_files_checked": 5,
+    "scope": "Pinned tracked inputs and selected runtime files; untracked/generated files outside manifest and dependency-cache binary rederivation excluded; original downloaded Lean archive hash unavailable"
+  },
+  "phases": [
+    {
+      "name": "build-topological-r1",
+      "receipt": {
+        "path": "research/eth-external-replication-20261104/anthropic/logs/build-topological-r1.json",
+        "size_bytes": 2855,
+        "sha256": "83a2db6db64d488fd798042639cfcec377a2fa3d6f264cedae6d3b11932381b1"
+      },
+      "output": {
+        "path": "research/eth-external-replication-20261104/anthropic/logs/build-topological-r1.txt",
+        "size_bytes": 902920,
+        "sha256": "ed2b692b098dfeb06806685f0e28be70c213f6fa5cd3725aa241332c33419e64"
+      },
+      "argv": [
+        "python3",
+        "<REPLICATION_ROOT>/anthropic/build_topological.py"
+      ],
+      "started_utc": "2026-11-04T17:04:32.666985+00:00",
+      "finished_utc": "2026-11-04T19:38:30.323637+00:00",
+      "child_cpu_seconds": 8990.073577,
+      "wall_seconds": 9237.617874209,
+      "peak_child_rss_bytes_macos": 5897256960,
+      "exit_code": 0,
+      "timed_out": false
+    },
+    {
+      "name": "default-build-r1",
+      "receipt": {
+        "path": "research/eth-external-replication-20261104/anthropic/logs/default-build-r1.json",
+        "size_bytes": 2765,
+        "sha256": "03c11516c46e0667f255adb2c9465520d4aed5da4d9633737e580f48989c75c1"
+      },
+      "output": {
+        "path": "research/eth-external-replication-20261104/anthropic/logs/default-build-r1.txt",
+        "size_bytes": 187,
+        "sha256": "7663818f919ad8f5e1c7f4da68b57c1417becb88e04ac6737fffec33998ad698"
+      },
+      "argv": [
+        "env",
+        "LEAN_NUM_THREADS=2",
+        "lake",
+        "build"
+      ],
+      "started_utc": "2026-11-04T19:39:12.863954+00:00",
+      "finished_utc": "2026-11-04T19:39:22.063985+00:00",
+      "child_cpu_seconds": 8.339424,
+      "wall_seconds": 9.199978792,
+      "peak_child_rss_bytes_macos": 848117760,
+      "exit_code": 0,
+      "timed_out": false
+    },
+    {
+      "name": "pinned-input-identity-r1",
+      "receipt": {
+        "path": "research/eth-external-replication-20261104/anthropic/logs/pinned-input-identity-r1.json",
+        "size_bytes": 2851,
+        "sha256": "f09e2f9bf10bd37a4e5469849bb5267da61dcf1f21854e003bba720e8a98c3ca"
+      },
+      "output": {
+        "path": "research/eth-external-replication-20261104/anthropic/logs/pinned-input-identity-r1.txt",
+        "size_bytes": 2580,
+        "sha256": "2f455608444b63fcd8a4f6e633e124c9659c1f7d7a16b8cb0c07c57582a327cc"
+      },
+      "argv": [
+        "python3",
+        "<REPLICATION_ROOT>/anthropic/verify_source_identity.py"
+      ],
+      "started_utc": "2026-11-04T19:39:28.742848+00:00",
+      "finished_utc": "2026-11-04T19:39:29.765793+00:00",
+      "child_cpu_seconds": 0.653343,
+      "wall_seconds": 1.022827042,
+      "peak_child_rss_bytes_macos": 20643840,
+      "exit_code": 0,
+      "timed_out": false
+    },
+    {
+      "name": "target-axiom-audit-r1",
+      "receipt": {
+        "path": "research/eth-external-replication-20261104/anthropic/logs/target-axiom-audit-r1.json",
+        "size_bytes": 3006,
+        "sha256": "c4f699876562a2576b9502a4d86a106a6d8ed53df7aecd7d0a7ddb8a217eaf5b"
+      },
+      "output": {
+        "path": "research/eth-external-replication-20261104/anthropic/logs/target-axiom-audit-r1.txt",
+        "size_bytes": 917,
+        "sha256": "0bfd5fff304f3737544ba1138bc3ccbc8fb339f2d86bce9322671ba52782a24f"
+      },
+      "argv": [
+        "env",
+        "LEAN_NUM_THREADS=2",
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "<REPLICATION_ROOT>/verification/AuditTargets.lean",
+        "Solution",
+        "MainResults.ethIsFalse",
+        "MainResults.mainTheorem"
+      ],
+      "started_utc": "2026-11-04T19:39:43.239393+00:00",
+      "finished_utc": "2026-11-04T19:40:20.095168+00:00",
+      "child_cpu_seconds": 12.811796000000001,
+      "wall_seconds": 36.855624875000004,
+      "peak_child_rss_bytes_macos": 6297681920,
+      "exit_code": 0,
+      "timed_out": false
+    },
+    {
+      "name": "upstream-print-axioms-r1",
+      "receipt": {
+        "path": "research/eth-external-replication-20261104/anthropic/logs/upstream-print-axioms-r1.json",
+        "size_bytes": 2824,
+        "sha256": "22e8d6ba5e6dfa127b09524aba04f3db3cc4f044c7d6bc0bb07839e10b10f0ed"
+      },
+      "output": {
+        "path": "research/eth-external-replication-20261104/anthropic/logs/upstream-print-axioms-r1.txt",
+        "size_bytes": 169,
+        "sha256": "ce9d0d587c18393a59a0cfa1ef45563189578b5752126dbf219f6f18495a89a8"
+      },
+      "argv": [
+        "env",
+        "LEAN_NUM_THREADS=2",
+        "lake",
+        "env",
+        "lean",
+        "scripts/PrintAxioms.lean"
+      ],
+      "started_utc": "2026-11-04T19:41:20.153324+00:00",
+      "finished_utc": "2026-11-04T19:41:50.048292+00:00",
+      "child_cpu_seconds": 7.094761,
+      "wall_seconds": 29.894833833,
+      "peak_child_rss_bytes_macos": 5858836480,
+      "exit_code": 0,
+      "timed_out": false
+    },
+    {
+      "name": "comparator-native-r1",
+      "receipt": {
+        "path": "research/eth-external-replication-20261104/anthropic/logs/comparator-native-r1.json",
+        "size_bytes": 3722,
+        "sha256": "aacc3c3489a4fb00a2f4cbf55ec7a926d7318a67931b44116b5b0e4c05d24699"
+      },
+      "output": {
+        "path": "research/eth-external-replication-20261104/anthropic/logs/comparator-native-r1.txt",
+        "size_bytes": 2605,
+        "sha256": "cd1a5122e528f6df70d1df470926f2a0b49eb11e446aebfdf0a7f22787efbf47"
+      },
+      "argv": [
+        "env",
+        "LEAN_NUM_THREADS=2",
+        "COMPARATOR_LANDRUN=<REPLICATION_ROOT>/anthropic/tools/comparator-ci-source/scripts/fake-landrun.sh",
+        "COMPARATOR_LEAN4EXPORT=<REPLICATION_ROOT>/verification-tools/lean4export-433-source/.lake/build/bin/lean4export",
+        "COMPARATOR_NANODA=<REPLICATION_ROOT>/verification-tools/record_nanoda.py",
+        "NANODA_REAL_BINARY=<REPLICATION_ROOT>/verification-tools/nanoda-source/target/release/nanoda_bin",
+        "REPLICATION_CHECKER_RECORD_DIR=<REPLICATION_ROOT>/anthropic/checker-records",
+        "lake",
+        "env",
+        "<REPLICATION_ROOT>/anthropic/tools/comparator-ci-source/.lake/build/bin/comparator",
+        "comparator.json"
+      ],
+      "started_utc": "2026-11-04T19:42:12.500891+00:00",
+      "finished_utc": "2026-11-04T19:45:26.015147+00:00",
+      "child_cpu_seconds": 143.319858,
+      "wall_seconds": 193.513025125,
+      "peak_child_rss_bytes_macos": 5804376064,
+      "exit_code": 0,
+      "timed_out": false
+    },
+    {
+      "name": "leanchecker-fresh-r1",
+      "receipt": {
+        "path": "research/eth-external-replication-20261104/anthropic/logs/leanchecker-fresh-r1.json",
+        "size_bytes": 2829,
+        "sha256": "f03ad388578e947d982c4e6950e686f6b7a224ea93fa8aba0840b431b97a42e1"
+      },
+      "output": {
+        "path": "research/eth-external-replication-20261104/anthropic/logs/leanchecker-fresh-r1.txt",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "argv": [
+        "env",
+        "LEAN_NUM_THREADS=2",
+        "lake",
+        "env",
+        "leanchecker",
+        "--fresh",
+        "Solution"
+      ],
+      "started_utc": "2026-11-04T19:46:16.301173+00:00",
+      "finished_utc": "2026-11-04T20:05:20.880813+00:00",
+      "child_cpu_seconds": 980.732225,
+      "wall_seconds": 1144.574556375,
+      "peak_child_rss_bytes_macos": 5753356288,
+      "exit_code": 0,
+      "timed_out": false
+    },
+    {
+      "name": "pinned-input-identity-post-checkers-r1",
+      "receipt": {
+        "path": "research/eth-external-replication-20261104/anthropic/logs/pinned-input-identity-post-checkers-r1.json",
+        "size_bytes": 2901,
+        "sha256": "437182ced6435ad055fa792861f57342224f8d194de6b36556791619b74d1c93"
+      },
+      "output": {
+        "path": "research/eth-external-replication-20261104/anthropic/logs/pinned-input-identity-post-checkers-r1.txt",
+        "size_bytes": 2580,
+        "sha256": "c873227507d8e2573c8d76831b11ab0c3327cea926fc36ec46bcda407713e7b9"
+      },
+      "argv": [
+        "python3",
+        "<REPLICATION_ROOT>/anthropic/verify_source_identity.py"
+      ],
+      "started_utc": "2026-11-04T20:07:48.874239+00:00",
+      "finished_utc": "2026-11-04T20:07:50.006933+00:00",
+      "child_cpu_seconds": 0.7457069999999999,
+      "wall_seconds": 1.132648333,
+      "peak_child_rss_bytes_macos": 22642688,
+      "exit_code": 0,
+      "timed_out": false
+    }
+  ],
+  "resource_use": {
+    "host": "Apple M5,10CPUcores,32GBRAM,macOSarm64",
+    "principal_stage_child_cpu_seconds": 10143.770691,
+    "principal_stage_wall_seconds_summed": 10653.811368583996,
+    "all_closed_stage_child_cpu_seconds": 10306.834104999998,
+    "all_closed_stage_wall_seconds_summed": 10842.283383333997,
+    "isolated_toolchain_install_checkpoint_cpu_seconds": 7.837123,
+    "isolated_toolchain_install_checkpoint_wall_seconds": 22.923504,
+    "nanoda_cpu_already_included_in_comparator_stage": true,
+    "maximum_recorded_phase_peak_child_rss_bytes_macos": 6297681920,
+    "paid_cloud_spend_usd": 0,
+    "scope": "Command child resource measurements; excludes model inference, source authoring, some source acquisition and small read/hash/report/monitoring overhead. Shared host and temporary root OpenAI suspension; no timing comparison."
+  },
+  "retained_failures_and_controls": [
+    {
+      "stage": "upstream-comparator-preflight-r1",
+      "exit_code": 1,
+      "meaning": "Unchanged CI helper stops at go is required on native host; full Linux CI environment not reproduced."
+    },
+    {
+      "stage": "comparator-ci-build-r1",
+      "exit_code": 127,
+      "meaning": "env parsed absolute executable path containing P=NP as assignment; corrected build-r2 used arch wrapper, unchanged tool source."
+    },
+    {
+      "stage": "comparator-ci-smoke-r1",
+      "exit_code": 1,
+      "meaning": "Expected fail-closed missing-config CLI negative control, not a theorem rejection."
+    }
+  ],
+  "claim_limits": [
+    "Checks concern the exact formal targets and recorded standard axioms; this is replication, not a new proof.",
+    "MainResults states a finite-alphabet Mathlib FinTM2 theorem; the standard-model interpretation remains a separate mathematical review.",
+    "No practical SAT implementation, explicit usable constants, polynomial-time SAT claim or SHA-256d mining advantage measured.",
+    "Trusted Mathlib dependency build caches restored rather than rebuilt; source/binary provenance retained.",
+    "Native fake-landrun does not establish Linux isolation; exact Comparator source uses a disclosed driver compiler patch deviation.",
+    "Same-team saved-evidence review is not external scholarly review."
+  ]
+}

@@ -1,0 +1,18 @@
+info: lean4export: cloning https://github.com/leanprover/lean4export
+info: lean4export: checking out revision 'b18d673bd29b476466a51a3be1012df2ed322b10'
+✔ [4/16] Built Comparator.Util (6.6s)
+✔ [5/16] Built Comparator.Util:c.o (1.5s)
+✔ [6/16] Built Export.Parse (13s)
+✔ [7/16] Built Comparator.Axioms (2.0s)
+✔ [8/16] Built Comparator.Axioms:c.o (3.4s)
+✔ [9/16] Built Comparator.Compare (2.3s)
+✔ [10/16] Built Comparator.Compare:c.o (976ms)
+✔ [11/16] Built Comparator (748ms)
+✔ [12/16] Built Comparator:c.o (152ms)
+✔ [13/16] Built Export.Parse:c.o (10s)
+✔ [14/16] Built Main (6.5s)
+✔ [15/16] Built Main:c.o (1.5s)
+ℹ [16/16] Built comparator:exe (2.3s)
+info: stderr:
+ld64.lld: warning: directory not found for option -L/usr/local/lib
+Build completed successfully (16 jobs).

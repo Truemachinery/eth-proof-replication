@@ -1,0 +1,353 @@
+{
+  "schema": "anthropic-native-saved-evidence-review/1",
+  "reviewer": "codex-eth-public-package",
+  "observed_utc": "2026-11-04T20:12:08.429338+00:00",
+  "verdict": "SUPPORTED: all eight requested native stages closed successfully, under the documented tool/platform deviations",
+  "review_kind": "Same-team source inspection, saved-evidence parsing and byte-identity review; this reviewer did not execute Lean, leanchecker, Comparator, lean4export or Nanoda.",
+  "underlying_kernel_execution": "The source owner actually executed original-version Lean fresh replay and the independent Nanoda kernel; this saved review is not another independent kernel execution.",
+  "source": {
+    "commit": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+    "lean_version": "4.33.1",
+    "lean_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474"
+  },
+  "targets": [
+    {
+      "name": "MainResults.ethIsFalse",
+      "type": "MainResults.ETHIsFalse",
+      "source": "Solution.lean:40",
+      "contract": "MainResults.lean:122"
+    },
+    {
+      "name": "MainResults.mainTheorem",
+      "type": "MainResults.MainTheorem",
+      "source": "Solution.lean:44",
+      "contract": "MainResults.lean:177"
+    }
+  ],
+  "closed_stages": [
+    {
+      "name": "build-topological-r1",
+      "receipt_path": "anthropic/logs/build-topological-r1.json",
+      "receipt_sha256": "83a2db6db64d488fd798042639cfcec377a2fa3d6f264cedae6d3b11932381b1",
+      "output_path": "anthropic/logs/build-topological-r1.txt",
+      "output_sha256": "ed2b692b098dfeb06806685f0e28be70c213f6fa5cd3725aa241332c33419e64",
+      "output_bytes": 902920,
+      "normal_closed_success_and_binding": true,
+      "child_cpu_seconds": 8990.073577,
+      "wall_seconds": 9237.617874209
+    },
+    {
+      "name": "default-build-r1",
+      "receipt_path": "anthropic/logs/default-build-r1.json",
+      "receipt_sha256": "03c11516c46e0667f255adb2c9465520d4aed5da4d9633737e580f48989c75c1",
+      "output_path": "anthropic/logs/default-build-r1.txt",
+      "output_sha256": "7663818f919ad8f5e1c7f4da68b57c1417becb88e04ac6737fffec33998ad698",
+      "output_bytes": 187,
+      "normal_closed_success_and_binding": true,
+      "child_cpu_seconds": 8.339424,
+      "wall_seconds": 9.199978792
+    },
+    {
+      "name": "pinned-input-identity-r1",
+      "receipt_path": "anthropic/logs/pinned-input-identity-r1.json",
+      "receipt_sha256": "f09e2f9bf10bd37a4e5469849bb5267da61dcf1f21854e003bba720e8a98c3ca",
+      "output_path": "anthropic/logs/pinned-input-identity-r1.txt",
+      "output_sha256": "2f455608444b63fcd8a4f6e633e124c9659c1f7d7a16b8cb0c07c57582a327cc",
+      "output_bytes": 2580,
+      "normal_closed_success_and_binding": true,
+      "child_cpu_seconds": 0.653343,
+      "wall_seconds": 1.022827042
+    },
+    {
+      "name": "target-axiom-audit-r1",
+      "receipt_path": "anthropic/logs/target-axiom-audit-r1.json",
+      "receipt_sha256": "c4f699876562a2576b9502a4d86a106a6d8ed53df7aecd7d0a7ddb8a217eaf5b",
+      "output_path": "anthropic/logs/target-axiom-audit-r1.txt",
+      "output_sha256": "0bfd5fff304f3737544ba1138bc3ccbc8fb339f2d86bce9322671ba52782a24f",
+      "output_bytes": 917,
+      "normal_closed_success_and_binding": true,
+      "child_cpu_seconds": 12.811796000000001,
+      "wall_seconds": 36.855624875000004
+    },
+    {
+      "name": "upstream-print-axioms-r1",
+      "receipt_path": "anthropic/logs/upstream-print-axioms-r1.json",
+      "receipt_sha256": "22e8d6ba5e6dfa127b09524aba04f3db3cc4f044c7d6bc0bb07839e10b10f0ed",
+      "output_path": "anthropic/logs/upstream-print-axioms-r1.txt",
+      "output_sha256": "ce9d0d587c18393a59a0cfa1ef45563189578b5752126dbf219f6f18495a89a8",
+      "output_bytes": 169,
+      "normal_closed_success_and_binding": true,
+      "child_cpu_seconds": 7.094761,
+      "wall_seconds": 29.894833833
+    },
+    {
+      "name": "comparator-native-r1",
+      "receipt_path": "anthropic/logs/comparator-native-r1.json",
+      "receipt_sha256": "aacc3c3489a4fb00a2f4cbf55ec7a926d7318a67931b44116b5b0e4c05d24699",
+      "output_path": "anthropic/logs/comparator-native-r1.txt",
+      "output_sha256": "cd1a5122e528f6df70d1df470926f2a0b49eb11e446aebfdf0a7f22787efbf47",
+      "output_bytes": 2605,
+      "normal_closed_success_and_binding": true,
+      "child_cpu_seconds": 143.319858,
+      "wall_seconds": 193.513025125
+    },
+    {
+      "name": "leanchecker-fresh-r1",
+      "receipt_path": "anthropic/logs/leanchecker-fresh-r1.json",
+      "receipt_sha256": "f03ad388578e947d982c4e6950e686f6b7a224ea93fa8aba0840b431b97a42e1",
+      "output_path": "anthropic/logs/leanchecker-fresh-r1.txt",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_bytes": 0,
+      "normal_closed_success_and_binding": true,
+      "child_cpu_seconds": 980.732225,
+      "wall_seconds": 1144.574556375
+    },
+    {
+      "name": "pinned-input-identity-post-checkers-r1",
+      "receipt_path": "anthropic/logs/pinned-input-identity-post-checkers-r1.json",
+      "receipt_sha256": "437182ced6435ad055fa792861f57342224f8d194de6b36556791619b74d1c93",
+      "output_path": "anthropic/logs/pinned-input-identity-post-checkers-r1.txt",
+      "output_sha256": "c873227507d8e2573c8d76831b11ab0c3327cea926fc36ec46bcda407713e7b9",
+      "output_bytes": 2580,
+      "normal_closed_success_and_binding": true,
+      "child_cpu_seconds": 0.7457069999999999,
+      "wall_seconds": 1.132648333
+    }
+  ],
+  "source_build_checks": {
+    "graph_count": 1050,
+    "ledger_rows": 1050,
+    "order_graph_and_exit_errors": [],
+    "raw_starts": 1050,
+    "raw_ends": 1050,
+    "raw_end_equals_ledger": true,
+    "completion_sentinel": true,
+    "intentional_challenge_warnings": 2,
+    "interpretation": "All 1050 ordered target commands completed. Original default build succeeded with 9768 jobs. Challenge admissions are not Solution proof dependencies."
+  },
+  "input_identity_review": {
+    "path": "anthropic/native-saved-input-review-r1.json",
+    "sha256": "24f19d42b1f539578b01b51471f1d27ba49d98f02cca481e942d32337a4655f5",
+    "unique_files_rehashed": 1198,
+    "unique_bytes_rehashed": 669083743,
+    "interim_status": "This immutable earlier snapshot accurately left checker stages pending; the current review adds their closed outcomes.",
+    "post_identity_checks": {
+      "all_eight_required_stages_closed": true,
+      "principal_cpu_sum": true,
+      "principal_wall_sum": true,
+      "nanoda_not_double_counted": true,
+      "post_identity": true,
+      "unchanged_identity_helper": true,
+      "owner_scope": true
+    }
+  },
+  "named_axiom_audit": {
+    "probe_sha256": "a78f30e0439e85d3a9ae51828e0e42c248c027a7fcfeb4c4fb16cb776fae0b05",
+    "checks": {
+      "closed_normal_exit": true,
+      "raw_hash": true,
+      "raw_size": true,
+      "exact_invocation": true,
+      "environment": true,
+      "exact_two_targets": true,
+      "all_target_axioms": true,
+      "completion": true
+    },
+    "events": [
+      {
+        "event": "environment",
+        "initializer_execution_enabled": false,
+        "load_extensions": false,
+        "load_level": "private",
+        "module": "Solution",
+        "permitted_axioms": [
+          "propext",
+          "Quot.sound",
+          "Classical.choice"
+        ],
+        "schema": "eth-target-axiom-audit/1",
+        "standard_axiom_signature_check": true
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "disallowed_axioms": [],
+        "event": "target",
+        "module": "Solution",
+        "passed": true,
+        "schema": "eth-target-axiom-audit/1",
+        "target": "MainResults.ethIsFalse",
+        "visited_constants": 72360
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "disallowed_axioms": [],
+        "event": "target",
+        "module": "Solution",
+        "passed": true,
+        "schema": "eth-target-axiom-audit/1",
+        "target": "MainResults.mainTheorem",
+        "visited_constants": 72169
+      },
+      {
+        "event": "complete",
+        "module": "Solution",
+        "passed": true,
+        "schema": "eth-target-axiom-audit/1",
+        "scope": "named-theorem transitive axiom audit; no statement comparison or kernel replay",
+        "targets_checked": 2
+      }
+    ],
+    "upstream_print_axioms_output_sha256": "ce9d0d587c18393a59a0cfa1ef45563189578b5752126dbf219f6f18495a89a8",
+    "meaning": "Both named theorem dependency closures contain only the three standard axioms, with their signatures checked against Init; this is distinct from statement comparison."
+  },
+  "comparator": {
+    "source_commit": "575674928e239f5bc452aab72d1dd7b0f1326494",
+    "checks": {
+      "closed_exit0_not_timeout": true,
+      "raw_binding": true,
+      "exact_original_config": true,
+      "pinned_driver_invocation": true,
+      "native_shim_explicit": true,
+      "actual_nanoda_log_link": true,
+      "actual_nanoda_within_stage": true,
+      "all_success_lines": true,
+      "final_success_line": true
+    },
+    "original_config_sha256": "757e5537ccf47d1946521b0b5fb91a230cdcfd8933dc9ab047710709c15ffa7e",
+    "original_config": {
+      "challenge_module": "Challenge",
+      "solution_module": "Solution",
+      "theorem_names": [
+        "MainResults.ethIsFalse",
+        "MainResults.mainTheorem"
+      ],
+      "definition_names": [],
+      "permitted_axioms": [
+        "propext",
+        "Quot.sound",
+        "Classical.choice"
+      ],
+      "enable_nanoda": true
+    },
+    "source_review": "Read Compare, Axioms, Util and Main's comparison/kernel/postcheck path. Final success follows exact target/type/dependency and primitive comparison, target axiom checks, independent Nanoda, built-in Lean replay and quotient postcheck.",
+    "compiler_deviation": "Driver source requests Lean4.34.0-rc1; actual unchanged-source native binary was built with Lean4.34.1. Proof source/exporter/fresh replay use original Lean4.33.1.",
+    "isolation": "Official fake-landrun development shim; no operating-system sandbox. Not a verbatim Linux CI reproduction."
+  },
+  "nanoda": {
+    "checks": {
+      "finished_record": true,
+      "inputs_unchanged_flag": true,
+      "before_after_bytes": true,
+      "pre_and_finished_original_inputs": true,
+      "exact_forwarded_argv": true,
+      "audited_nanoda_binary": true,
+      "config_archive_hash": true,
+      "effective_policy_same": true,
+      "actual_export_exact": true,
+      "gzip_exact": true,
+      "native_no_sandbox": true,
+      "wrapper_policy_unchanged": true
+    },
+    "effective_policy": {
+      "nat_extension": true,
+      "permitted_axioms": [
+        "propext",
+        "Quot.sound",
+        "Classical.choice"
+      ],
+      "string_extension": true,
+      "unpermitted_axiom_hard_error": true,
+      "use_stdin": false
+    },
+    "thread_policy": "Exact575 omits num_threads. Pinned Nanoda serde default0 selects serial checking.",
+    "source_commit": "68d5ca9db226849b41a6fff59d796ff19d0a8840",
+    "actual_checked_export": {
+      "uncompressed_sha256": "e5cc12cb057e47d08780ce6e807186b5be0074bcc2dcddeffea1a0b3191641e6",
+      "uncompressed_bytes": 583355033,
+      "gzip_sha256": "c625a4755f8ccbf05a95760d59b8a3af42643d9f702f7bbaccb7aa682db814f3",
+      "gzip_bytes": 118800833
+    },
+    "finished_receipt_sha256": "aa31fe1b0ab3b9acd1d10745ffd45f0669c6fbea4cbe3c643395dc0c2cb42070",
+    "recorder_source_sha256": "c34f36d630d182708937a5280b6eda8d0723fa0ffdd85caf8fc54af17b332f48",
+    "checker_cpu_seconds": 40.131589,
+    "checker_wall_seconds": 40.28184975,
+    "independent_archive_review": "This reviewer streamed and hashed the entire gzip and decompressed export; all original config/export/binary before/after and exact forwarded-argv bindings pass.",
+    "availability": "Raw583355033-byte export and118800833-byte gzip retained locally, not published in this bounded package. Small recording receipts/policy and hashes are publishable.",
+    "replay_limit": "Archived config contains the original temporary path; replay elsewhere requires a newly documented config path/hash. Do not claim byte-identical config replay or substitute a separately exported file's hash."
+  },
+  "original_fresh_replay": {
+    "checks": {
+      "normal_closed_exit": true,
+      "original_exact_invocation": true,
+      "output_binding": true,
+      "silent_success_expected": true
+    },
+    "meaning": "Original Lean4.33.1 leanchecker --fresh Solution replayed the full imported safe/nonpartial environment into an empty environment. It admits axiom declarations; named axiom/statement checks remain separate.",
+    "same_kernel": true,
+    "reviewer_reran": false
+  },
+  "owner_report_review": {
+    "reports": [
+      {
+        "path": "anthropic/native-replication-result-r1.json",
+        "sha256": "95c9afd9e6b0187835cfa4d223cec06e5549d313a9da5fb373e77df321e271e6",
+        "bytes": 19264
+      },
+      {
+        "path": "anthropic/native-replication-report-r1.md",
+        "sha256": "5bac43c501df2d1f67687cd71bf6090593a79e4324244ff7bcf33abc86c2a2c7",
+        "bytes": 5502
+      },
+      {
+        "path": "anthropic/native-replication-artifacts-r1.json",
+        "sha256": "d507667b2467f30fd20952fd8d7b128d45b1b968fae48424f6ba518b6e864c8c",
+        "bytes": 11977
+      }
+    ],
+    "checks": {
+      "all_eight_required_stages_closed": true,
+      "principal_cpu_sum": true,
+      "principal_wall_sum": true,
+      "nanoda_not_double_counted": true,
+      "post_identity": true,
+      "unchanged_identity_helper": true,
+      "owner_scope": true
+    },
+    "small_manifest_bindings_checked": 50,
+    "large_asset_prior_full_review_binding": [
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/checker-records/nanoda-64425-0dvr445m/export.ndjson.gz",
+        "matches_prior_full_archive_review": true
+      }
+    ],
+    "failures": []
+  },
+  "retained_negative_controls": [
+    "Unchanged upstream CI helper could not pass native missing-Go preflight.",
+    "First tool-build launcher exited127 before compilation because env interpreted an executable path containing an equals sign as an assignment.",
+    "Comparator missing-config smoke exited1 as expected. These are retained preparation/control outcomes, not ETH theorem rejection."
+  ],
+  "limitations": [
+    "All reviewers here are collaborating tasks in one Codex session; no independent human/provider authorship or external scholarly review is asserted.",
+    "Downloaded dependency objects were restored, not independently rebuilt. Dependency Git heads/clean tracked state and selected runtime bytes were checked; untracked/generated files, OS/system libraries/hardware and absent toolchain archive hashes remain outside those identities.",
+    "This verifies execution evidence for existing exact formal statements under their recorded standard axioms and tool variants. It does not certify every paper interpretation, derive usable constants or provide a practical SAT executable.",
+    "No new proof, first replication, P=NP result, practical SHA-256d shortcut, profitability or energy claim follows.",
+    "OpenAI and Linux workflow coverage are separate and remain in progress; no verdict about them is supplied by this review."
+  ],
+  "resources": {
+    "known_metered_checksum_parse_cpu_seconds": 1.428093,
+    "known_metered_checksum_parse_wall_seconds": 1.850332,
+    "scope": "Known hash/parse command counters only; small inspection, authoring, checkpoint, model/inference and energy overhead incompletely metered. No proof/checker execution or tests by this reviewer.",
+    "budget": "30CPU/180wall for bounded checksum/parsing; within that scope.",
+    "paid_cost_usd": 0
+  }
+}

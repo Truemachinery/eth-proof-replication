@@ -1,0 +1,264 @@
+{
+  "format": "anthropic-eth-native-result-artifact-manifest-v1",
+  "observed_utc": "2026-11-04T20:10:37.869593+00:00",
+  "verdict": "All required native checks passed with documented deviations",
+  "files": [
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/source-manifest.json",
+      "size_bytes": 194243,
+      "sha256": "9e47b16125e4969f06fa8ebba53a0cded954d61de9238c5a3d4f8416b245d779"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/dependency-provenance.json",
+      "size_bytes": 1492180,
+      "sha256": "69a2a24dd8cf88f2291742f3286ababa93f1151608459dcff6da23c70b88b1c4"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/build-graph.json",
+      "size_bytes": 487670,
+      "sha256": "2490a1fbb7e79a7abc7976b11eb76e71f548293530393a1da4df619a946c9348"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/stage.py",
+      "size_bytes": 4711,
+      "sha256": "1ad6db85790c6a650ae42765ecc6138a7bbc079d6f688d0f0f24798d762e3cdc"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/build_topological.py",
+      "size_bytes": 5357,
+      "sha256": "afa48d561f8d9219527f4ebe4cad38d5dc0dccd0ed7827f10cd9ea1e2976fde0"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/verify_source_identity.py",
+      "size_bytes": 3291,
+      "sha256": "9f0d6e947100087f268a07af4374861a59f339481dcb5add35586133f765ce6b"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/lexical-source-scan.json",
+      "size_bytes": 726,
+      "sha256": "05fcb6d04b3660a58315f8f9f61a17b1f53293a1b9d22933a64159d1d934be13"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/basic-model-scope-r1.json",
+      "size_bytes": 2829,
+      "sha256": "20381eee6e6a66adc5c2cddd1d653a3804c2165704efe89329fdbb135ce2996e"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/comparator-ci-tool-manifest-r1.json",
+      "size_bytes": 37584,
+      "sha256": "c1a08efe6be5abba717546cf7baae4b5a8045c0b5ffe41706a565148724631c2"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/COMPARATOR_TOOL.md",
+      "size_bytes": 2942,
+      "sha256": "b62be412db58eba0e7f0f840d1c31a543bc1911e2bea5dd1f9d27776e1daa970"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/build-topological-r1.jsonl",
+      "size_bytes": 652583,
+      "sha256": "3724487b949228eefb3f81bb965c299a3ac7515dda03afed7d8fe71d5b057067"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/verification/AuditTargets.lean",
+      "size_bytes": 5663,
+      "sha256": "a78f30e0439e85d3a9ae51828e0e42c248c027a7fcfeb4c4fb16cb776fae0b05"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/verification-tools/tool-manifest-r1.json",
+      "size_bytes": 55010,
+      "sha256": "90cf428c18e95d4e05502605b01f35e527d3f04644ef814a3742c8554c26a2c1"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/verification-tools/record_nanoda.py",
+      "size_bytes": 8494,
+      "sha256": "c34f36d630d182708937a5280b6eda8d0723fa0ffdd85caf8fc54af17b332f48"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/native-replication-result-r1.json",
+      "size_bytes": 19264,
+      "sha256": "95c9afd9e6b0187835cfa4d223cec06e5549d313a9da5fb373e77df321e271e6"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/native-replication-report-r1.md",
+      "size_bytes": 5502,
+      "sha256": "5bac43c501df2d1f67687cd71bf6090593a79e4324244ff7bcf33abc86c2a2c7"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/actual-lean-version-r1.json",
+      "size_bytes": 2787,
+      "sha256": "c29607e2e0985d2cf15ac2cf53ab1bce4df1a25335ccc43d8483ac95ae4b0516"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/actual-lean-version-r1.txt",
+      "size_bytes": 106,
+      "sha256": "4762d596346ad354e28668de62b7eeae7de5d531b9a7b1c182ca59cfacd81bdd"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/build-topological-r1.json",
+      "size_bytes": 2855,
+      "sha256": "83a2db6db64d488fd798042639cfcec377a2fa3d6f264cedae6d3b11932381b1"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/build-topological-r1.txt",
+      "size_bytes": 902920,
+      "sha256": "ed2b692b098dfeb06806685f0e28be70c213f6fa5cd3725aa241332c33419e64"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/cache-get-r1.json",
+      "size_bytes": 2757,
+      "sha256": "a5385542f39b54d1ab1f03dd10131dd8c4e16890caeac5d1eb268b1ec661d300"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/cache-get-r1.txt",
+      "size_bytes": 22160,
+      "sha256": "e84bda83f28a911991ec967898c9a15c1a72a63e5b5c914f71e075998049ddfd"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/comparator-ci-build-r1.json",
+      "size_bytes": 2947,
+      "sha256": "59c78f3d7b5054d701a7113c1c92cc207b42d1dd1113f48824ceddeb792bf459"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/comparator-ci-build-r1.txt",
+      "size_bytes": 38,
+      "sha256": "39186b7ebc9c3c08c18c8aef7829d8552da65172f8bc5ba97ce2c69c2d53e7e5"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/comparator-ci-build-r2.json",
+      "size_bytes": 2985,
+      "sha256": "e9d8fa98d431386202b48e88ab11c9ed199492e4eb432a223d116991c8f8e93c"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/comparator-ci-build-r2.txt",
+      "size_bytes": 797,
+      "sha256": "a615b95b280e7a4913058da69efef4c98f99b0349f512b06e6ff30a9f4e8e89c"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/comparator-ci-compiler-version-r1.json",
+      "size_bytes": 2944,
+      "sha256": "310016b678991fc3f0ec97e02789e2dd4ac9e26170dbca5516f963ef37c9d330"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/comparator-ci-compiler-version-r1.txt",
+      "size_bytes": 106,
+      "sha256": "20f42f897511ec814f7616bd9a193ae7504aa2f52fb05299eb752936eb77ca6e"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/comparator-ci-smoke-r1.json",
+      "size_bytes": 2898,
+      "sha256": "50efd9f0753bbbf661799e4ff4ab0749825d49db0f08fdedc0f0b7ceca83afd7"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/comparator-ci-smoke-r1.txt",
+      "size_bytes": 65,
+      "sha256": "13bedbf32f58187fa4467476fc0a46865944d61bd63763b88b2b85d5cdbb65eb"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/comparator-native-r1.json",
+      "size_bytes": 3722,
+      "sha256": "aacc3c3489a4fb00a2f4cbf55ec7a926d7318a67931b44116b5b0e4c05d24699"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/comparator-native-r1.txt",
+      "size_bytes": 2605,
+      "sha256": "cd1a5122e528f6df70d1df470926f2a0b49eb11e446aebfdf0a7f22787efbf47"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/default-build-r1.json",
+      "size_bytes": 2765,
+      "sha256": "03c11516c46e0667f255adb2c9465520d4aed5da4d9633737e580f48989c75c1"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/default-build-r1.txt",
+      "size_bytes": 187,
+      "sha256": "7663818f919ad8f5e1c7f4da68b57c1417becb88e04ac6737fffec33998ad698"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/leanchecker-fresh-r1.json",
+      "size_bytes": 2829,
+      "sha256": "f03ad388578e947d982c4e6950e686f6b7a224ea93fa8aba0840b431b97a42e1"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/leanchecker-fresh-r1.txt",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/pinned-input-identity-post-checkers-r1.json",
+      "size_bytes": 2901,
+      "sha256": "437182ced6435ad055fa792861f57342224f8d194de6b36556791619b74d1c93"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/pinned-input-identity-post-checkers-r1.txt",
+      "size_bytes": 2580,
+      "sha256": "c873227507d8e2573c8d76831b11ab0c3327cea926fc36ec46bcda407713e7b9"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/pinned-input-identity-r1.json",
+      "size_bytes": 2851,
+      "sha256": "f09e2f9bf10bd37a4e5469849bb5267da61dcf1f21854e003bba720e8a98c3ca"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/pinned-input-identity-r1.txt",
+      "size_bytes": 2580,
+      "sha256": "2f455608444b63fcd8a4f6e633e124c9659c1f7d7a16b8cb0c07c57582a327cc"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/target-axiom-audit-r1.json",
+      "size_bytes": 3006,
+      "sha256": "c4f699876562a2576b9502a4d86a106a6d8ed53df7aecd7d0a7ddb8a217eaf5b"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/target-axiom-audit-r1.txt",
+      "size_bytes": 917,
+      "sha256": "0bfd5fff304f3737544ba1138bc3ccbc8fb339f2d86bce9322671ba52782a24f"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/upstream-comparator-preflight-r1.json",
+      "size_bytes": 3019,
+      "sha256": "ce41c48b78336bb296594429c826cc6093941776a7e850fa8b7a3bc445bf7820"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/upstream-comparator-preflight-r1.txt",
+      "size_bytes": 22,
+      "sha256": "0a66d437ffc4cd65c84d2aa6db6f0688b048fc8c6559c3806fcebc6f7930c32d"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/upstream-print-axioms-r1.json",
+      "size_bytes": 2824,
+      "sha256": "22e8d6ba5e6dfa127b09524aba04f3db3cc4f044c7d6bc0bb07839e10b10f0ed"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/upstream-print-axioms-r1.txt",
+      "size_bytes": 169,
+      "sha256": "ce9d0d587c18393a59a0cfa1ef45563189578b5752126dbf219f6f18495a89a8"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/checker-records/nanoda-64425-0dvr445m/00-prepared.json",
+      "size_bytes": 4278,
+      "sha256": "4d996f55d93f8f0a8d7642de666dc0d99a56475715bc076860873a905c08306c"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/checker-records/nanoda-64425-0dvr445m/01-started.json",
+      "size_bytes": 305,
+      "sha256": "5ec4e359905e24f8faf52a4a6446ebaaea3d3cc16a48793950123a21f8ee1267"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/checker-records/nanoda-64425-0dvr445m/02-finished.json",
+      "size_bytes": 5575,
+      "sha256": "aa31fe1b0ab3b9acd1d10745ffd45f0669c6fbea4cbe3c643395dc0c2cb42070"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/checker-records/nanoda-64425-0dvr445m/effective-config.json",
+      "size_bytes": 246,
+      "sha256": "a641e911dc5a747f0d9e59b5db381aba8707bce13ebc6087e9c30307b768f020"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/checker-records/nanoda-64425-0dvr445m/export.ndjson.gz",
+      "size_bytes": 118800833,
+      "sha256": "c625a4755f8ccbf05a95760d59b8a3af42643d9f702f7bbaccb7aa682db814f3"
+    }
+  ],
+  "total_size_bytes": 122768628,
+  "publication_note": "Local manifest includes large export gzip and full source journal; bounded public export may include hashes/metadata instead of these large/live-schema artifacts. Sanitized copies require separate source/copy hashes."
+}

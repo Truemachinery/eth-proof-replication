@@ -1,0 +1,1 @@
+{"export_file_path":"<TEMP_PATH>","nat_extension":true,"permitted_axioms":["propext","Quot.sound","Classical.choice"],"string_extension":true,"unpermitted_axiom_hard_error":true,"use_stdin":false}

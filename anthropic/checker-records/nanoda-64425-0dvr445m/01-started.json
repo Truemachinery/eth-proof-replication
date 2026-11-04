@@ -1,0 +1,8 @@
+{
+  "pid": 64454,
+  "started_at": "2026-11-04T19:44:00.191150+00:00",
+  "checker_argv": [
+    "<REPLICATION_ROOT>/verification-tools/nanoda-source/target/release/nanoda_bin",
+    "<TEMP_PATH>"
+  ]
+}

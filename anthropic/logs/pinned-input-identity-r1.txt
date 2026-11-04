@@ -1,0 +1,69 @@
+{
+  "format": "anthropic-eth-pinned-input-identity-v1",
+  "observed_utc": "2026-11-04T19:39:29.756494+00:00",
+  "verifier_script_sha256": "9f0d6e947100087f268a07af4374861a59f339481dcb5add35586133f765ce6b",
+  "source_manifest_sha256": "9e47b16125e4969f06fa8ebba53a0cded954d61de9238c5a3d4f8416b245d779",
+  "dependency_provenance_sha256": "69a2a24dd8cf88f2291742f3286ababa93f1151608459dcff6da23c70b88b1c4",
+  "source_commit": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+  "source_files_checked": 1069,
+  "packages": [
+    {
+      "name": "mathlib",
+      "actual_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "matches_pinned_commit_and_clean_tracked_worktree": true,
+      "tracked_changes": ""
+    },
+    {
+      "name": "plausible",
+      "actual_commit": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "matches_pinned_commit_and_clean_tracked_worktree": true,
+      "tracked_changes": ""
+    },
+    {
+      "name": "LeanSearchClient",
+      "actual_commit": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "matches_pinned_commit_and_clean_tracked_worktree": true,
+      "tracked_changes": ""
+    },
+    {
+      "name": "importGraph",
+      "actual_commit": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "matches_pinned_commit_and_clean_tracked_worktree": true,
+      "tracked_changes": ""
+    },
+    {
+      "name": "proofwidgets",
+      "actual_commit": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+      "matches_pinned_commit_and_clean_tracked_worktree": true,
+      "tracked_changes": ""
+    },
+    {
+      "name": "aesop",
+      "actual_commit": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "matches_pinned_commit_and_clean_tracked_worktree": true,
+      "tracked_changes": ""
+    },
+    {
+      "name": "Qq",
+      "actual_commit": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "matches_pinned_commit_and_clean_tracked_worktree": true,
+      "tracked_changes": ""
+    },
+    {
+      "name": "batteries",
+      "actual_commit": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "matches_pinned_commit_and_clean_tracked_worktree": true,
+      "tracked_changes": ""
+    },
+    {
+      "name": "Cli",
+      "actual_commit": "6130a47896ce867c6a4a55373441e59e565bad0f",
+      "matches_pinned_commit_and_clean_tracked_worktree": true,
+      "tracked_changes": ""
+    }
+  ],
+  "installed_lean_files_checked": 5,
+  "all_pinned_inputs_match": true,
+  "failures": [],
+  "limitations": "Rechecks pinned tracked public inputs and selected installed Lean runtime files; does not independently rederive dependency build caches or toolchain archive hashes."
+}

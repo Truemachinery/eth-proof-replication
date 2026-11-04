@@ -1,0 +1,32 @@
+{
+  "format": "external-eth-command-v1",
+  "name": "comparator-ci-build-r1",
+  "started_utc": "2026-11-04T17:34:27.537346+00:00",
+  "finished_utc": "2026-11-04T17:34:27.780873+00:00",
+  "argv": [
+    "env",
+    "LEAN_NUM_THREADS=2",
+    "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lake",
+    "build",
+    "comparator"
+  ],
+  "cwd": "<REPLICATION_ROOT>/anthropic/tools/comparator-ci-source",
+  "environment_overrides": {
+    "ELAN_HOME": "<REPLICATION_ROOT>/anthropic/elan",
+    "XDG_CACHE_HOME": "<REPLICATION_ROOT>/anthropic/cache",
+    "MATHLIB_CACHE_DIR": "<REPLICATION_ROOT>/anthropic/cache/mathlib",
+    "PATH": "<REDACTED FIELD>"
+  },
+  "timeout_wall_seconds": 28800,
+  "timed_out": false,
+  "exit_code": 127,
+  "wall_seconds": 0.2419209590000001,
+  "child_user_seconds": 0.001784,
+  "child_system_seconds": 0.010947,
+  "child_cpu_seconds": 0.012731,
+  "peak_child_rss_bytes_macos": 1064960,
+  "output_path": "<REPLICATION_ROOT>/anthropic/logs/comparator-ci-build-r1.txt",
+  "output_size_bytes": 38,
+  "output_sha256": "39186b7ebc9c3c08c18c8aef7829d8552da65172f8bc5ba97ce2c69c2d53e7e5",
+  "limitations": "Local command resource accounting excludes source authoring and model inference. Downloaded dependency objects are distinct from project-source re-elaboration."
+}

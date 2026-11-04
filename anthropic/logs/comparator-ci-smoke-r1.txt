@@ -1,0 +1,1 @@
+uncaught exception: Expected config file path as first argument.

@@ -1,0 +1,31 @@
+{
+  "format": "external-eth-command-v1",
+  "name": "default-build-r1",
+  "started_utc": "2026-11-04T19:39:12.863954+00:00",
+  "finished_utc": "2026-11-04T19:39:22.063985+00:00",
+  "argv": [
+    "env",
+    "LEAN_NUM_THREADS=2",
+    "lake",
+    "build"
+  ],
+  "cwd": "<REPLICATION_ROOT>/anthropic/source/eth",
+  "environment_overrides": {
+    "ELAN_HOME": "<REPLICATION_ROOT>/anthropic/elan",
+    "XDG_CACHE_HOME": "<REPLICATION_ROOT>/anthropic/cache",
+    "MATHLIB_CACHE_DIR": "<REPLICATION_ROOT>/anthropic/cache/mathlib",
+    "PATH": "<REDACTED FIELD>"
+  },
+  "timeout_wall_seconds": 28800,
+  "timed_out": false,
+  "exit_code": 0,
+  "wall_seconds": 9.199978792,
+  "child_user_seconds": 2.889783,
+  "child_system_seconds": 5.449641,
+  "child_cpu_seconds": 8.339424,
+  "peak_child_rss_bytes_macos": 848117760,
+  "output_path": "<REPLICATION_ROOT>/anthropic/logs/default-build-r1.txt",
+  "output_size_bytes": 187,
+  "output_sha256": "7663818f919ad8f5e1c7f4da68b57c1417becb88e04ac6737fffec33998ad698",
+  "limitations": "Local command resource accounting excludes source authoring and model inference. Downloaded dependency objects are distinct from project-source re-elaboration."
+}

@@ -1,0 +1,4 @@
+{"event":"environment","initializer_execution_enabled":false,"load_extensions":false,"load_level":"private","module":"Solution","permitted_axioms":["propext","Quot.sound","Classical.choice"],"schema":"eth-target-axiom-audit/1","standard_axiom_signature_check":true}
+{"axioms":["propext","Classical.choice","Quot.sound"],"disallowed_axioms":[],"event":"target","module":"Solution","passed":true,"schema":"eth-target-axiom-audit/1","target":"MainResults.ethIsFalse","visited_constants":72360}
+{"axioms":["propext","Classical.choice","Quot.sound"],"disallowed_axioms":[],"event":"target","module":"Solution","passed":true,"schema":"eth-target-axiom-audit/1","target":"MainResults.mainTheorem","visited_constants":72169}
+{"event":"complete","module":"Solution","passed":true,"schema":"eth-target-axiom-audit/1","scope":"named-theorem transitive axiom audit; no statement comparison or kernel replay","targets_checked":2}

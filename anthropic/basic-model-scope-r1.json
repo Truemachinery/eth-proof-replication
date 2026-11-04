@@ -1,0 +1,43 @@
+{
+  "schema": "anthropic-eth-basic-model-scope/1",
+  "scope": "Read-only source interpretation, not a checked theorem or complete mathematical/paper-faithfulness audit",
+  "reviewer": "codex-eth-anthropic-replication",
+  "recorded_utc": "2026-11-04T18:39:36.243820+00:00",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "proof_commit": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+  "source_observations": [
+    {
+      "path_within_pinned_mathlib": "Mathlib/Computability/TuringMachine/Computable.lean",
+      "read_line_range": [
+        34,
+        154
+      ],
+      "whole_file_sha256": "acb5fa046c00afd1f85570d4439653b009b7353d7ed93aa7a6fc52dae346a59b",
+      "finding": "FinTM2 enforces finite stack-index type K, labels Lambda and internal states sigma. Its own alphabet finiteness field concerns input alphabet; MainResults independently requires every stack alphabet finite. TM2OutputsInTime instantiates EvalsToInTime with explicit initList/haltList, and TM2ComputableAux packages Boolean alphabet equivalences."
+    },
+    {
+      "path_within_pinned_mathlib": "Mathlib/Computability/TuringMachine/StackTuringMachine.lean",
+      "read_line_range": [
+        112,
+        175
+      ],
+      "whole_file_sha256": "7d71a8e1090b5fc5de0a68701fe80d4e67541f9ac0ca8f78a5146d7165f02334",
+      "finding": "Stmt is an inductive finite syntax tree of push/peek/pop/load/branch/goto/halt. stepAux recurses within that tree; goto or halt ends a block. TM2.step runs one labelled block, not an arbitrary unbounded while-loop."
+    },
+    {
+      "path_within_pinned_mathlib": "Mathlib/Computability/StateTransition.lean",
+      "read_line_range": [
+        250,
+        270
+      ],
+      "whole_file_sha256": "eceb96a26dccbd8f8abcd83874539b49b8b7e797f195a864cff85c1bbe8476b2",
+      "finding": "EvalsTo stores a natural step count and equality to repeated transition application. EvalsToInTime extends it with steps<=m, not merely unbounded reachability."
+    }
+  ],
+  "interpretive_inference": "For one fixed machine with finite state/control/alphabets, primitive functions have finite-domain tables, and finitely many finite statement trees bound primitive stack operations per counted block by a machine-dependent constant. This is an elementary interpretation of the model, not a Lean certificate produced here. The exact target quantifiers place the MainTheorem machine before k and the input formula.",
+  "limitations": [
+    "No explicit simulator to textbook Turing machines was reconstructed or formally checked by this review.",
+    "No numerical hidden constant, executable practical SAT solver, SHA shortcut or P=NP consequence is established.",
+    "The source/build/axiom/independent-kernel verification stages are separate; at this recording the main native source build is still running."
+  ]
+}

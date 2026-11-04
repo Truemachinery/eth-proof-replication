@@ -1,0 +1,29 @@
+{
+  "format": "external-eth-command-v1",
+  "name": "build-topological-r1",
+  "started_utc": "2026-11-04T17:04:32.666985+00:00",
+  "finished_utc": "2026-11-04T19:38:30.323637+00:00",
+  "argv": [
+    "python3",
+    "<REPLICATION_ROOT>/anthropic/build_topological.py"
+  ],
+  "cwd": "<REPLICATION_ROOT>/anthropic/source/eth",
+  "environment_overrides": {
+    "ELAN_HOME": "<REPLICATION_ROOT>/anthropic/elan",
+    "XDG_CACHE_HOME": "<REPLICATION_ROOT>/anthropic/cache",
+    "MATHLIB_CACHE_DIR": "<REPLICATION_ROOT>/anthropic/cache/mathlib",
+    "PATH": "<REDACTED FIELD>"
+  },
+  "timeout_wall_seconds": 28800,
+  "timed_out": false,
+  "exit_code": 0,
+  "wall_seconds": 9237.617874209,
+  "child_user_seconds": 4642.640654,
+  "child_system_seconds": 4347.432923,
+  "child_cpu_seconds": 8990.073577,
+  "peak_child_rss_bytes_macos": 5897256960,
+  "output_path": "<REPLICATION_ROOT>/anthropic/logs/build-topological-r1.txt",
+  "output_size_bytes": 902920,
+  "output_sha256": "ed2b692b098dfeb06806685f0e28be70c213f6fa5cd3725aa241332c33419e64",
+  "limitations": "Local command resource accounting excludes source authoring and model inference. Downloaded dependency objects are distinct from project-source re-elaboration."
+}

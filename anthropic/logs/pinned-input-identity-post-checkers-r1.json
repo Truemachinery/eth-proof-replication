@@ -1,0 +1,29 @@
+{
+  "format": "external-eth-command-v1",
+  "name": "pinned-input-identity-post-checkers-r1",
+  "started_utc": "2026-11-04T20:07:48.874239+00:00",
+  "finished_utc": "2026-11-04T20:07:50.006933+00:00",
+  "argv": [
+    "python3",
+    "<REPLICATION_ROOT>/anthropic/verify_source_identity.py"
+  ],
+  "cwd": "<REPLICATION_ROOT>/anthropic/source/eth",
+  "environment_overrides": {
+    "ELAN_HOME": "<REPLICATION_ROOT>/anthropic/elan",
+    "XDG_CACHE_HOME": "<REPLICATION_ROOT>/anthropic/cache",
+    "MATHLIB_CACHE_DIR": "<REPLICATION_ROOT>/anthropic/cache/mathlib",
+    "PATH": "<REDACTED FIELD>"
+  },
+  "timeout_wall_seconds": 28800,
+  "timed_out": false,
+  "exit_code": 0,
+  "wall_seconds": 1.132648333,
+  "child_user_seconds": 0.27020299999999997,
+  "child_system_seconds": 0.475504,
+  "child_cpu_seconds": 0.7457069999999999,
+  "peak_child_rss_bytes_macos": 22642688,
+  "output_path": "<REPLICATION_ROOT>/anthropic/logs/pinned-input-identity-post-checkers-r1.txt",
+  "output_size_bytes": 2580,
+  "output_sha256": "c873227507d8e2573c8d76831b11ab0c3327cea926fc36ec46bcda407713e7b9",
+  "limitations": "Local command resource accounting excludes source authoring and model inference. Downloaded dependency objects are distinct from project-source re-elaboration."
+}

@@ -39,11 +39,14 @@ REPORTS = {
     "ci/runs/41888029999/DIAGNOSIS-R1.md",
     "ci/runs/41891445823/DIAGNOSIS-R3.md",
     "ci/runs/41891445823/POLICY-ADDENDUM-R4.md",
+    "anthropic/native-replication-report-r1.md",
+    "anthropic/native-saved-evidence-review-r1.md",
 }
 SOURCES = CI_SOURCES | {
     "publish_package.py", "openai/prepare.py", "openai/in_workspace.py", "openai/build_ready.py",
     "openai/run_gated_build.py",
-    "anthropic/stage.py", "anthropic/build_topological.py", "verification/AuditTargets.lean",
+    "anthropic/stage.py", "anthropic/build_topological.py", "anthropic/verify_source_identity.py",
+    "verification/AuditTargets.lean",
     "verification/check_trusted_probe.py", "verification/run_scheduler_smoke.py",
     "verification/compiler-gate/create_gate.py", "verification/compiler-gate/lean_gate.c",
     "verification/compiler-gate/check_gate.py", "verification/compiler-gate/check_lake_parallel_r2.py",
@@ -58,6 +61,12 @@ MANIFESTS = {
     "anthropic/ci-cache-review-r2.json",
     "anthropic/ci-cache-review-r3.json", "anthropic/ci-cache-review-r4.json",
     "anthropic/landrun-abi8-source-review-r1.json",
+    "anthropic/basic-model-scope-r1.json", "anthropic/build-completion-artifacts-r1.json",
+    "anthropic/native-replication-result-r1.json", "anthropic/native-replication-artifacts-r1.json",
+    "anthropic/native-saved-input-review-r1.json", "anthropic/native-saved-evidence-review-r1.json",
+    "anthropic/checker-records/nanoda-64425-0dvr445m/00-prepared.json",
+    "anthropic/checker-records/nanoda-64425-0dvr445m/01-started.json",
+    "anthropic/checker-records/nanoda-64425-0dvr445m/effective-config.json",
     "verification-tools/tool-manifest-r1.json", "verification-tools/compiler-identities.json",
     "verification-tools/runtime-identities.json", "verification-tools/recording-manifest-r1.json",
     "verification-tools/recorder-probe-r1/probe-results.json", "verification/trusted-probe-controls-r1.json",
@@ -74,6 +83,7 @@ MANIFESTS = {
     "ci/control-result-landlock-policy-r4.json",
     "PUBLICATION_RECEIPT-r1.json",
     "PUBLICATION_RECEIPT-r2.json",
+    "PUBLICATION_RECEIPT-r3.json",
 }
 DENIED_PARTS = {"source", "workspace", "elan", "cache", "cargo", "rustup", "tools", ".git", ".lake",
                 "comparator-source", "nanoda-source", "lean4export-433-source", "lean4export-434-source"}

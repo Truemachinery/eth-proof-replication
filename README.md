@@ -2,13 +2,23 @@
 
 Prepared by Nathaniel Jose with OpenAI Codex assistance, 2026-11-04. No additional human coauthors are asserted. This is a reproducibility record of the published proofs, not a new proof or a first-replication claim.
 
-**Proof verification is in progress. No positive external-proof verdict is asserted by this draft.** A completed download, dependency-cache check or control fixture is not a completed ETH proof check. Failed attempts remain part of the evidence; missing stages remain unverified.
+**Native Anthropic verification passed the stated checks. OpenAI and both Linux attempts remain in progress.** The Anthropic result covers its existing formal contracts at the pinned source below. Failed attempts remain part of the evidence; missing stages remain unverified.
+
+| Execution | Source rebuild | Target axiom audit | Statement/definition comparison | Lean kernel checks | Nanoda |
+| --- | --- | --- | --- | --- | --- |
+| Native macOS, Anthropic | PASS: all 1,050 project targets and original default Lake build | PASS: both targets, only the three permitted standard axioms | PASS: original Comparator configuration | PASS: Comparator post-check and original 4.33.1 fresh replay | PASS: exact checked export retained locally |
+| Native macOS, OpenAI | IN PROGRESS | Pending | Pending | Pending | Pending |
+| Linux, Anthropic and OpenAI | IN PROGRESS; consult the run's completed receipts | Pending | Pending | Pending | Pending |
+
+See [Anthropic's native report](anthropic/native-replication-report-r1.md), [machine-readable result](anthropic/native-replication-result-r1.json), and the separate [saved-evidence review](anthropic/native-saved-evidence-review-r1.json). The last is another agent's audit within this Codex-assisted team, not another independently executed kernel check. The original-version fresh replay finished at 20:05:20 UTC on 2026-11-04; source, dependency and runtime identity checks passed again afterward. See `PUBLIC_MANIFEST.json` for which original evidence files and public derivatives were actually included.
 
 The public repository is [Truemachinery/eth-proof-replication](https://github.com/Truemachinery/eth-proof-replication). [Initial commit f340decb](https://github.com/Truemachinery/eth-proof-replication/tree/f340decb2b354bf154b4290e59cc8e260fdd867a) contains the first reviewed 91-file package; `PUBLICATION_RECEIPT-r1.json` records independent byte-by-byte verification of that publication.
 
 The [first public Linux run](https://github.com/Truemachinery/eth-proof-replication/actions/runs/41888029999) failed in both jobs before downloading Lean because our recorder rejected dots in version labels. See `ci/runs/41888029999/DIAGNOSIS-R1.md` for the exact failure, correction and retained-log hashes. Neither job reached a theorem check. The original failed commit and run remain visible. Passing a harness regression or a green `continue-on-error` step does not establish proof acceptance.
 
 The [second Linux run](https://github.com/Truemachinery/eth-proof-replication/actions/runs/41891445823) at [6dfd0f7](https://github.com/Truemachinery/eth-proof-replication/tree/6dfd0f7b6a80bb8629aaa7fc29ca59e772006df7) acquired dependencies and built the four checking tools, then stopped before project-source compilation because Landrun requested ABI 9 while the hosted kernel supplies ABI 8. See `ci/runs/41891445823/DIAGNOSIS-R3.md`. This remains an incomplete setup result, not a proof verdict.
+
+The [third Linux run](https://github.com/Truemachinery/eth-proof-replication/actions/runs/41894905159) uses the reviewed ABI compatibility policy at [d9a4ad18](https://github.com/Truemachinery/eth-proof-replication/tree/d9a4ad18e3668320bf9d084c7e454ff05e34f2e8). Both jobs were still running when this native Anthropic result was prepared. Its source builds, enforcement controls and proof-check outcomes require their own completed receipts; the native result does not supply them.
 
 The Linux pipeline has two manually dispatched Ubuntu 24.04 jobs, at most 350 minutes each, using public standard runners. The resource plan retains owned build caches of at most 2 GiB per proof and 4 GiB total, within this repository's 10 GB included cache allowance, so later manual runs can continue unfinished work. GitHub documents free standard runners for public repositories and a separate 10 GB cache allowance. [GitHub Actions billing](https://docs.github.com/en/billing/concepts/product-billing/github-actions) There are no Actions artifact uploads or paid runners. These are configured limits, not a completed build or independent billing audit. Inspect actual run logs, summaries and cache accounting before recording a Linux verdict.
 

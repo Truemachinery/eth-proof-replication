@@ -1,0 +1,51 @@
+{
+  "format": "anthropic-eth-closed-build-artifacts-v1",
+  "observed_utc": "2026-11-04T19:40:57.766062+00:00",
+  "completed_source_target_count": 1050,
+  "all_source_target_commands_exit_zero": true,
+  "default_build_exit_zero": true,
+  "pinned_input_identity_passed": true,
+  "files": [
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/verify_source_identity.py",
+      "bytes": 3291,
+      "sha256": "9f0d6e947100087f268a07af4374861a59f339481dcb5add35586133f765ce6b"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/build-topological-r1.json",
+      "bytes": 2855,
+      "sha256": "83a2db6db64d488fd798042639cfcec377a2fa3d6f264cedae6d3b11932381b1"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/build-topological-r1.txt",
+      "bytes": 902920,
+      "sha256": "ed2b692b098dfeb06806685f0e28be70c213f6fa5cd3725aa241332c33419e64"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/build-topological-r1.jsonl",
+      "bytes": 652583,
+      "sha256": "3724487b949228eefb3f81bb965c299a3ac7515dda03afed7d8fe71d5b057067"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/default-build-r1.json",
+      "bytes": 2765,
+      "sha256": "03c11516c46e0667f255adb2c9465520d4aed5da4d9633737e580f48989c75c1"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/default-build-r1.txt",
+      "bytes": 187,
+      "sha256": "7663818f919ad8f5e1c7f4da68b57c1417becb88e04ac6737fffec33998ad698"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/pinned-input-identity-r1.json",
+      "bytes": 2851,
+      "sha256": "f09e2f9bf10bd37a4e5469849bb5267da61dcf1f21854e003bba720e8a98c3ca"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/anthropic/logs/pinned-input-identity-r1.txt",
+      "bytes": 2580,
+      "sha256": "2f455608444b63fcd8a4f6e633e124c9659c1f7d7a16b8cb0c07c57582a327cc"
+    }
+  ],
+  "scope": "Closed source/default build and pinned input identity only; target axioms, statement comparison, kernel and external checker verdicts pending."
+}

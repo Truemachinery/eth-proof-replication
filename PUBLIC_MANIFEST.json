@@ -1,10 +1,10 @@
 {
   "schema": "eth-public-export/1",
-  "release": "in-progress-20261104-r4",
+  "release": "anthropic-native-pass-20261104-r5",
   "status": "prepared_for_review_not_published",
   "verification_verdict": "Not inferred; missing or unfinished stages are not passes",
-  "exporter_sha256": "9bf5c3cf690b9f4249f2e704d393f8cfd066f69d88169d1708d4d3f4edb26f37",
-  "plan_sha256": "ed8f6b4a476406c1f6e1fce8feeb30e246a6d89a6915bcf78ec444ab55632f23",
+  "exporter_sha256": "06080187683bf0e0d474623d620f44e872dd233e708b29d9c60bdcc7e70e0cd3",
+  "plan_sha256": "7ffdc934436be3cd0155d17af8b942595dc2ccad216377b4852224589dd5368c",
   "files": [
     {
       "path": "PLAN.md",
@@ -52,13 +52,28 @@
       "private_ledger_dependency_in_original": false
     },
     {
+      "path": "PUBLICATION_RECEIPT-r3.json",
+      "kind": "manifest",
+      "original_sha256": "c6c725b17509f9d5e943175335846cfcddd28efdce01b27aeabac2f24d21a030",
+      "original_size_bytes": 70671,
+      "public_path": "PUBLICATION_RECEIPT-r3.json",
+      "public_sha256": "c6c725b17509f9d5e943175335846cfcddd28efdce01b27aeabac2f24d21a030",
+      "public_size_bytes": 70671,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
       "path": "PUBLIC_README_TEMPLATE.md",
       "kind": "report",
-      "original_sha256": "f397b88ec25e0c1612388ace5a9e28b1dae26fd1cdc26ff27813d3e553131a88",
-      "original_size_bytes": 9442,
+      "original_sha256": "68946e7c7a60bac6f808f6e54057365095b6533ecf9882988f7ac280531f9d79",
+      "original_size_bytes": 11196,
       "public_path": "README.md",
-      "public_sha256": "f397b88ec25e0c1612388ace5a9e28b1dae26fd1cdc26ff27813d3e553131a88",
-      "public_size_bytes": 9442,
+      "public_sha256": "68946e7c7a60bac6f808f6e54057365095b6533ecf9882988f7ac280531f9d79",
+      "public_size_bytes": 11196,
       "public_mode": "644",
       "copy_kind": "byte_identical",
       "redactions": [],
@@ -127,6 +142,36 @@
       "private_ledger_dependency_in_original": false
     },
     {
+      "path": "anthropic/basic-model-scope-r1.json",
+      "kind": "manifest",
+      "original_sha256": "20381eee6e6a66adc5c2cddd1d653a3804c2165704efe89329fdbb135ce2996e",
+      "original_size_bytes": 2829,
+      "public_path": "anthropic/basic-model-scope-r1.json",
+      "public_sha256": "20381eee6e6a66adc5c2cddd1d653a3804c2165704efe89329fdbb135ce2996e",
+      "public_size_bytes": 2829,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/build-completion-artifacts-r1.json",
+      "kind": "manifest",
+      "original_sha256": "b01c0cbb12be652bf434321d6da9cdd639fbb4220daa9b386f3360f4d9ae53e1",
+      "original_size_bytes": 2190,
+      "public_path": "anthropic/build-completion-artifacts-r1.json",
+      "public_sha256": "b01c0cbb12be652bf434321d6da9cdd639fbb4220daa9b386f3360f4d9ae53e1",
+      "public_size_bytes": 2190,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
       "path": "anthropic/build-graph.json",
       "kind": "manifest",
       "original_sha256": "2490a1fbb7e79a7abc7976b11eb76e71f548293530393a1da4df619a946c9348",
@@ -152,6 +197,189 @@
       "public_mode": "644",
       "copy_kind": "byte_identical",
       "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/checker-records/nanoda-64425-0dvr445m/00-prepared.json",
+      "kind": "manifest",
+      "original_sha256": "4d996f55d93f8f0a8d7642de666dc0d99a56475715bc076860873a905c08306c",
+      "original_size_bytes": 4278,
+      "public_path": "anthropic/checker-records/nanoda-64425-0dvr445m/00-prepared.json",
+      "public_sha256": "eb7966d3195c5a0e5b0a856d1d52392e235f15e53e19ed91637b42f6d5e4cc1b",
+      "public_size_bytes": 3340,
+      "public_mode": "644",
+      "copy_kind": "sanitized_derivative",
+      "redactions": [
+        {
+          "rule": "local_replication_prefix",
+          "input_sha256": "4d996f55d93f8f0a8d7642de666dc0d99a56475715bc076860873a905c08306c",
+          "output_sha256": "d7be1cd4205e6512d407e690fe7bf14b99d0601e56688556cc1be28dc06276d6",
+          "replacements": [
+            {
+              "input_byte_start": 124,
+              "input_byte_end": 198,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 345,
+              "input_byte_end": 419,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 675,
+              "input_byte_end": 749,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 825,
+              "input_byte_end": 899,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 1182,
+              "input_byte_end": 1256,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 1401,
+              "input_byte_end": 1475,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 1533,
+              "input_byte_end": 1607,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 2200,
+              "input_byte_end": 2274,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 3033,
+              "input_byte_end": 3107,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 3830,
+              "input_byte_end": 3904,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 3995,
+              "input_byte_end": 4069,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 4170,
+              "input_byte_end": 4244,
+              "replacement": "<REPLICATION_ROOT>"
+            }
+          ]
+        },
+        {
+          "rule": "temporary_os_path",
+          "input_sha256": "d7be1cd4205e6512d407e690fe7bf14b99d0601e56688556cc1be28dc06276d6",
+          "output_sha256": "eb7966d3195c5a0e5b0a856d1d52392e235f15e53e19ed91637b42f6d5e4cc1b",
+          "replacements": [
+            {
+              "input_byte_start": 186,
+              "input_byte_end": 247,
+              "replacement": "<TEMP_PATH>"
+            },
+            {
+              "input_byte_start": 1043,
+              "input_byte_end": 1104,
+              "replacement": "<TEMP_PATH>"
+            },
+            {
+              "input_byte_start": 1508,
+              "input_byte_end": 1577,
+              "replacement": "<TEMP_PATH>"
+            },
+            {
+              "input_byte_start": 2126,
+              "input_byte_end": 2195,
+              "replacement": "<TEMP_PATH>"
+            },
+            {
+              "input_byte_start": 2935,
+              "input_byte_end": 2996,
+              "replacement": "<TEMP_PATH>"
+            }
+          ]
+        }
+      ],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/checker-records/nanoda-64425-0dvr445m/01-started.json",
+      "kind": "manifest",
+      "original_sha256": "5ec4e359905e24f8faf52a4a6446ebaaea3d3cc16a48793950123a21f8ee1267",
+      "original_size_bytes": 305,
+      "public_path": "anthropic/checker-records/nanoda-64425-0dvr445m/01-started.json",
+      "public_sha256": "7ab57e39fac5028cc0cadc46e9dd22e31487ad735aed588d1f5d56d6ae116e93",
+      "public_size_bytes": 199,
+      "public_mode": "644",
+      "copy_kind": "sanitized_derivative",
+      "redactions": [
+        {
+          "rule": "local_replication_prefix",
+          "input_sha256": "5ec4e359905e24f8faf52a4a6446ebaaea3d3cc16a48793950123a21f8ee1267",
+          "output_sha256": "f1bd243d68ae84dbdccb6e52a372b888a0f43581645ee9586c61fa2b66dcfdb5",
+          "replacements": [
+            {
+              "input_byte_start": 95,
+              "input_byte_end": 169,
+              "replacement": "<REPLICATION_ROOT>"
+            }
+          ]
+        },
+        {
+          "rule": "temporary_os_path",
+          "input_sha256": "f1bd243d68ae84dbdccb6e52a372b888a0f43581645ee9586c61fa2b66dcfdb5",
+          "output_sha256": "7ab57e39fac5028cc0cadc46e9dd22e31487ad735aed588d1f5d56d6ae116e93",
+          "replacements": [
+            {
+              "input_byte_start": 180,
+              "input_byte_end": 241,
+              "replacement": "<TEMP_PATH>"
+            }
+          ]
+        }
+      ],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/checker-records/nanoda-64425-0dvr445m/effective-config.json",
+      "kind": "manifest",
+      "original_sha256": "a641e911dc5a747f0d9e59b5db381aba8707bce13ebc6087e9c30307b768f020",
+      "original_size_bytes": 246,
+      "public_path": "anthropic/checker-records/nanoda-64425-0dvr445m/effective-config.json",
+      "public_sha256": "c7f362ab923e8e9ba3c611135dffc5205b8f58fab2aaeaabb5097d188da19fa8",
+      "public_size_bytes": 196,
+      "public_mode": "644",
+      "copy_kind": "sanitized_derivative",
+      "redactions": [
+        {
+          "rule": "temporary_os_path",
+          "input_sha256": "a641e911dc5a747f0d9e59b5db381aba8707bce13ebc6087e9c30307b768f020",
+          "output_sha256": "c7f362ab923e8e9ba3c611135dffc5205b8f58fab2aaeaabb5097d188da19fa8",
+          "replacements": [
+            {
+              "input_byte_start": 21,
+              "input_byte_end": 82,
+              "replacement": "<TEMP_PATH>"
+            }
+          ]
+        }
+      ],
       "redacted_source_view": null,
       "portable_transform": null,
       "private_ledger_dependency_in_original": false
@@ -340,6 +568,184 @@
       "private_ledger_dependency_in_original": false
     },
     {
+      "path": "anthropic/native-replication-artifacts-r1.json",
+      "kind": "manifest",
+      "original_sha256": "d507667b2467f30fd20952fd8d7b128d45b1b968fae48424f6ba518b6e864c8c",
+      "original_size_bytes": 11977,
+      "public_path": "anthropic/native-replication-artifacts-r1.json",
+      "public_sha256": "d507667b2467f30fd20952fd8d7b128d45b1b968fae48424f6ba518b6e864c8c",
+      "public_size_bytes": 11977,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/native-replication-report-r1.md",
+      "kind": "report",
+      "original_sha256": "5bac43c501df2d1f67687cd71bf6090593a79e4324244ff7bcf33abc86c2a2c7",
+      "original_size_bytes": 5502,
+      "public_path": "anthropic/native-replication-report-r1.md",
+      "public_sha256": "5bac43c501df2d1f67687cd71bf6090593a79e4324244ff7bcf33abc86c2a2c7",
+      "public_size_bytes": 5502,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/native-replication-result-r1.json",
+      "kind": "manifest",
+      "original_sha256": "95c9afd9e6b0187835cfa4d223cec06e5549d313a9da5fb373e77df321e271e6",
+      "original_size_bytes": 19264,
+      "public_path": "anthropic/native-replication-result-r1.json",
+      "public_sha256": "d99e10d67ca623c8dd2b79eb6b7336363be676527740dafeab01f990c3c6ee4b",
+      "public_size_bytes": 18654,
+      "public_mode": "644",
+      "copy_kind": "sanitized_derivative",
+      "redactions": [
+        {
+          "rule": "local_replication_prefix",
+          "input_sha256": "95c9afd9e6b0187835cfa4d223cec06e5549d313a9da5fb373e77df321e271e6",
+          "output_sha256": "19a6be71fb7c5839f1d1595af0c3656fee1d369d5856815498a2b1f831f4afb1",
+          "replacements": [
+            {
+              "input_byte_start": 8619,
+              "input_byte_end": 8693,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 10523,
+              "input_byte_end": 10597,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 11597,
+              "input_byte_end": 11671,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 13710,
+              "input_byte_end": 13784,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 13880,
+              "input_byte_end": 13954,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 14054,
+              "input_byte_end": 14128,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 14195,
+              "input_byte_end": 14269,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 14371,
+              "input_byte_end": 14445,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 14514,
+              "input_byte_end": 14588,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 16594,
+              "input_byte_end": 16668,
+              "replacement": "<REPLICATION_ROOT>"
+            }
+          ]
+        },
+        {
+          "rule": "temporary_os_path",
+          "input_sha256": "19a6be71fb7c5839f1d1595af0c3656fee1d369d5856815498a2b1f831f4afb1",
+          "output_sha256": "d99e10d67ca623c8dd2b79eb6b7336363be676527740dafeab01f990c3c6ee4b",
+          "replacements": [
+            {
+              "input_byte_start": 5533,
+              "input_byte_end": 5594,
+              "replacement": "<TEMP_PATH>"
+            }
+          ]
+        }
+      ],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/native-saved-evidence-review-r1.json",
+      "kind": "manifest",
+      "original_sha256": "9ab09853bf8add7f9353fa434441ac2cbd899da94ad3f9208f976874f19bb403",
+      "original_size_bytes": 15793,
+      "public_path": "anthropic/native-saved-evidence-review-r1.json",
+      "public_sha256": "9ab09853bf8add7f9353fa434441ac2cbd899da94ad3f9208f976874f19bb403",
+      "public_size_bytes": 15793,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/native-saved-evidence-review-r1.md",
+      "kind": "report",
+      "original_sha256": "cc9aac40268c987bd6fe412846daafb88b825c601f8397424be155214cd11869",
+      "original_size_bytes": 3445,
+      "public_path": "anthropic/native-saved-evidence-review-r1.md",
+      "public_sha256": "cc9aac40268c987bd6fe412846daafb88b825c601f8397424be155214cd11869",
+      "public_size_bytes": 3445,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/native-saved-input-review-r1.json",
+      "kind": "manifest",
+      "original_sha256": "24f19d42b1f539578b01b51471f1d27ba49d98f02cca481e942d32337a4655f5",
+      "original_size_bytes": 6438,
+      "public_path": "anthropic/native-saved-input-review-r1.json",
+      "public_sha256": "d4b59cdee2e4b36b3c669ac38d3b48c76fc4d43b2a7e4a0c40c5c60f2efc68d2",
+      "public_size_bytes": 6326,
+      "public_mode": "644",
+      "copy_kind": "sanitized_derivative",
+      "redactions": [
+        {
+          "rule": "local_replication_prefix",
+          "input_sha256": "24f19d42b1f539578b01b51471f1d27ba49d98f02cca481e942d32337a4655f5",
+          "output_sha256": "d4b59cdee2e4b36b3c669ac38d3b48c76fc4d43b2a7e4a0c40c5c60f2efc68d2",
+          "replacements": [
+            {
+              "input_byte_start": 3240,
+              "input_byte_end": 3314,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 4873,
+              "input_byte_end": 4947,
+              "replacement": "<REPLICATION_ROOT>"
+            }
+          ]
+        }
+      ],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
       "path": "anthropic/source-manifest.json",
       "kind": "manifest",
       "original_sha256": "9e47b16125e4969f06fa8ebba53a0cded954d61de9238c5a3d4f8416b245d779",
@@ -384,6 +790,21 @@
         "size_bytes": 4697
       },
       "portable_transform": "Python AST literal transformation plus ast.unparse",
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/verify_source_identity.py",
+      "kind": "source",
+      "original_sha256": "9f0d6e947100087f268a07af4374861a59f339481dcb5add35586133f765ce6b",
+      "original_size_bytes": 3291,
+      "public_path": "anthropic/verify_source_identity.py",
+      "public_sha256": "9f0d6e947100087f268a07af4374861a59f339481dcb5add35586133f765ce6b",
+      "public_size_bytes": 3291,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
       "private_ledger_dependency_in_original": false
     },
     {
@@ -1090,46 +1511,46 @@
     {
       "path": "publish_package.py",
       "kind": "source",
-      "original_sha256": "9bf5c3cf690b9f4249f2e704d393f8cfd066f69d88169d1708d4d3f4edb26f37",
-      "original_size_bytes": 31534,
+      "original_sha256": "06080187683bf0e0d474623d620f44e872dd233e708b29d9c60bdcc7e70e0cd3",
+      "original_size_bytes": 32226,
       "public_path": "publish_package.py",
-      "public_sha256": "20a5ffd722b7c423a5ec472322c3dcf058267304c8b1a8293f0306ee83d8961e",
-      "public_size_bytes": 30865,
+      "public_sha256": "40826387899f2c579aac57321e026187ea4846465a6e10d3aaa52ea3c30f9e27",
+      "public_size_bytes": 31517,
       "public_mode": "644",
       "copy_kind": "explicit_portable_python_derivative",
       "redactions": [
         {
           "rule": "remove_sensitive_json_fields_including_full_PATH",
-          "input_sha256": "9bf5c3cf690b9f4249f2e704d393f8cfd066f69d88169d1708d4d3f4edb26f37",
-          "output_sha256": "d6a7f13d0bf2d5e263f0bbd1bd1b13fb765ee7ca7be5fea6a33cccde8c3cbfc3",
+          "input_sha256": "06080187683bf0e0d474623d620f44e872dd233e708b29d9c60bdcc7e70e0cd3",
+          "output_sha256": "33b4012e3027393bbc482e84a0d6a268642332428e48a864f8dcc968c0b68aca",
           "replacements": [
             {
-              "input_byte_start": 26816,
-              "input_byte_end": 26853,
+              "input_byte_start": 27508,
+              "input_byte_end": 27545,
               "replacement": "\"<REDACTED FIELD>\""
             }
           ]
         },
         {
           "rule": "home_prefix",
-          "input_sha256": "d6a7f13d0bf2d5e263f0bbd1bd1b13fb765ee7ca7be5fea6a33cccde8c3cbfc3",
-          "output_sha256": "b0b909b8c685c757fb2057446e07ddd19ff883b7114cbd7ef6f3a5bd0148d251",
+          "input_sha256": "33b4012e3027393bbc482e84a0d6a268642332428e48a864f8dcc968c0b68aca",
+          "output_sha256": "25428ed0363306acb821ef8a81776230652bac1e4a69a4f31303b7f78c1b42d2",
           "replacements": [
             {
-              "input_byte_start": 26111,
-              "input_byte_end": 26129,
+              "input_byte_start": 26803,
+              "input_byte_end": 26821,
               "replacement": "<HOME>"
             }
           ]
         },
         {
           "rule": "sensitive_plaintext_field",
-          "input_sha256": "b0b909b8c685c757fb2057446e07ddd19ff883b7114cbd7ef6f3a5bd0148d251",
-          "output_sha256": "8e48ed8adc39694662932927b7566aa91d8ebf98176f91b5d55259051aba15db",
+          "input_sha256": "25428ed0363306acb821ef8a81776230652bac1e4a69a4f31303b7f78c1b42d2",
+          "output_sha256": "8b35d92b6c56026b4bab4d09ef3d32965c3bcd3b649ee9b628e0cebe1d788ec9",
           "replacements": [
             {
-              "input_byte_start": 4971,
-              "input_byte_end": 5097,
+              "input_byte_start": 5663,
+              "input_byte_end": 5789,
               "replacement": "<SENSITIVE FIELD REDACTED>"
             }
           ]
@@ -1137,8 +1558,8 @@
       ],
       "redacted_source_view": {
         "path": "source-views/publish_package.py.txt",
-        "sha256": "8e48ed8adc39694662932927b7566aa91d8ebf98176f91b5d55259051aba15db",
-        "size_bytes": 31403
+        "sha256": "8b35d92b6c56026b4bab4d09ef3d32965c3bcd3b649ee9b628e0cebe1d788ec9",
+        "size_bytes": 32095
       },
       "portable_transform": "Python AST literal transformation plus ast.unparse",
       "private_ledger_dependency_in_original": true
@@ -2809,9 +3230,1154 @@
       "redacted_source_view": null,
       "portable_transform": null,
       "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/logs/build-topological-r1.json",
+      "kind": "completed_receipt",
+      "original_sha256": "83a2db6db64d488fd798042639cfcec377a2fa3d6f264cedae6d3b11932381b1",
+      "original_size_bytes": 2855,
+      "public_path": "anthropic/logs/build-topological-r1.json",
+      "public_sha256": "9c73aceed267f5bcb98430bfd3f6a0d9022dba3ab122aab5a65bf2f4cdfd0ee9",
+      "public_size_bytes": 1213,
+      "public_mode": "644",
+      "copy_kind": "sanitized_derivative",
+      "redactions": [
+        {
+          "rule": "remove_sensitive_json_fields_including_full_PATH",
+          "input_sha256": "83a2db6db64d488fd798042639cfcec377a2fa3d6f264cedae6d3b11932381b1",
+          "output_sha256": "7fa35038b93001e1ed85281a261611312da2a405f0d7511264a26c85f334722b",
+          "replacements": [
+            {
+              "input_byte_start": 828,
+              "input_byte_end": 2152,
+              "replacement": "\"<REDACTED FIELD>\""
+            }
+          ]
+        },
+        {
+          "rule": "local_replication_prefix",
+          "input_sha256": "7fa35038b93001e1ed85281a261611312da2a405f0d7511264a26c85f334722b",
+          "output_sha256": "9c73aceed267f5bcb98430bfd3f6a0d9022dba3ab122aab5a65bf2f4cdfd0ee9",
+          "replacements": [
+            {
+              "input_byte_start": 214,
+              "input_byte_end": 288,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 336,
+              "input_byte_end": 410,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 481,
+              "input_byte_end": 555,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 596,
+              "input_byte_end": 670,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 715,
+              "input_byte_end": 789,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 1133,
+              "input_byte_end": 1207,
+              "replacement": "<REPLICATION_ROOT>"
+            }
+          ]
+        }
+      ],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/logs/build-topological-r1.txt",
+      "kind": "completed_log",
+      "original_sha256": "ed2b692b098dfeb06806685f0e28be70c213f6fa5cd3725aa241332c33419e64",
+      "original_size_bytes": 902920,
+      "public_path": "anthropic/logs/build-topological-r1.txt",
+      "public_sha256": "ed2b692b098dfeb06806685f0e28be70c213f6fa5cd3725aa241332c33419e64",
+      "public_size_bytes": 902920,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/logs/default-build-r1.json",
+      "kind": "completed_receipt",
+      "original_sha256": "03c11516c46e0667f255adb2c9465520d4aed5da4d9633737e580f48989c75c1",
+      "original_size_bytes": 2765,
+      "public_path": "anthropic/logs/default-build-r1.json",
+      "public_sha256": "135be1d0c10ec674b75fda7472edaec64345df2b3ab30f7738ece1754fe55dda",
+      "public_size_bytes": 1179,
+      "public_mode": "644",
+      "copy_kind": "sanitized_derivative",
+      "redactions": [
+        {
+          "rule": "remove_sensitive_json_fields_including_full_PATH",
+          "input_sha256": "03c11516c46e0667f255adb2c9465520d4aed5da4d9633737e580f48989c75c1",
+          "output_sha256": "2d4550704f67206f0fd1b8419b936e404a2673bb475dc4bea138dad6e1258843",
+          "replacements": [
+            {
+              "input_byte_start": 758,
+              "input_byte_end": 2082,
+              "replacement": "\"<REDACTED FIELD>\""
+            }
+          ]
+        },
+        {
+          "rule": "local_replication_prefix",
+          "input_sha256": "2d4550704f67206f0fd1b8419b936e404a2673bb475dc4bea138dad6e1258843",
+          "output_sha256": "135be1d0c10ec674b75fda7472edaec64345df2b3ab30f7738ece1754fe55dda",
+          "replacements": [
+            {
+              "input_byte_start": 266,
+              "input_byte_end": 340,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 411,
+              "input_byte_end": 485,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 526,
+              "input_byte_end": 600,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 645,
+              "input_byte_end": 719,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 1050,
+              "input_byte_end": 1124,
+              "replacement": "<REPLICATION_ROOT>"
+            }
+          ]
+        }
+      ],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/logs/default-build-r1.txt",
+      "kind": "completed_log",
+      "original_sha256": "7663818f919ad8f5e1c7f4da68b57c1417becb88e04ac6737fffec33998ad698",
+      "original_size_bytes": 187,
+      "public_path": "anthropic/logs/default-build-r1.txt",
+      "public_sha256": "7663818f919ad8f5e1c7f4da68b57c1417becb88e04ac6737fffec33998ad698",
+      "public_size_bytes": 187,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/logs/pinned-input-identity-r1.json",
+      "kind": "completed_receipt",
+      "original_sha256": "f09e2f9bf10bd37a4e5469849bb5267da61dcf1f21854e003bba720e8a98c3ca",
+      "original_size_bytes": 2851,
+      "public_path": "anthropic/logs/pinned-input-identity-r1.json",
+      "public_sha256": "5fe2071658ec69a805709d7955a3eb53839d0c0ab49e1036044bfa36bff72af4",
+      "public_size_bytes": 1209,
+      "public_mode": "644",
+      "copy_kind": "sanitized_derivative",
+      "redactions": [
+        {
+          "rule": "remove_sensitive_json_fields_including_full_PATH",
+          "input_sha256": "f09e2f9bf10bd37a4e5469849bb5267da61dcf1f21854e003bba720e8a98c3ca",
+          "output_sha256": "a5c9cb8c839740cb13d9bf980225fea236c0380c2be3f48bb90eb9345975b7fb",
+          "replacements": [
+            {
+              "input_byte_start": 837,
+              "input_byte_end": 2161,
+              "replacement": "\"<REDACTED FIELD>\""
+            }
+          ]
+        },
+        {
+          "rule": "local_replication_prefix",
+          "input_sha256": "a5c9cb8c839740cb13d9bf980225fea236c0380c2be3f48bb90eb9345975b7fb",
+          "output_sha256": "5fe2071658ec69a805709d7955a3eb53839d0c0ab49e1036044bfa36bff72af4",
+          "replacements": [
+            {
+              "input_byte_start": 218,
+              "input_byte_end": 292,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 345,
+              "input_byte_end": 419,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 490,
+              "input_byte_end": 564,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 605,
+              "input_byte_end": 679,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 724,
+              "input_byte_end": 798,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 1127,
+              "input_byte_end": 1201,
+              "replacement": "<REPLICATION_ROOT>"
+            }
+          ]
+        }
+      ],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/logs/pinned-input-identity-r1.txt",
+      "kind": "completed_log",
+      "original_sha256": "2f455608444b63fcd8a4f6e633e124c9659c1f7d7a16b8cb0c07c57582a327cc",
+      "original_size_bytes": 2580,
+      "public_path": "anthropic/logs/pinned-input-identity-r1.txt",
+      "public_sha256": "2f455608444b63fcd8a4f6e633e124c9659c1f7d7a16b8cb0c07c57582a327cc",
+      "public_size_bytes": 2580,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/logs/target-axiom-audit-r1.json",
+      "kind": "completed_receipt",
+      "original_sha256": "c4f699876562a2576b9502a4d86a106a6d8ed53df7aecd7d0a7ddb8a217eaf5b",
+      "original_size_bytes": 3006,
+      "public_path": "anthropic/logs/target-axiom-audit-r1.json",
+      "public_sha256": "373bc85cdbeb94d7afbf0e828a46035d2e225a657ed27ed55d130ce798b8a5ed",
+      "public_size_bytes": 1364,
+      "public_mode": "644",
+      "copy_kind": "sanitized_derivative",
+      "redactions": [
+        {
+          "rule": "remove_sensitive_json_fields_including_full_PATH",
+          "input_sha256": "c4f699876562a2576b9502a4d86a106a6d8ed53df7aecd7d0a7ddb8a217eaf5b",
+          "output_sha256": "a52a4d848850f132e186485db81c07958c17b8ad246e4f5cbeb698ce647dcd7e",
+          "replacements": [
+            {
+              "input_byte_start": 976,
+              "input_byte_end": 2300,
+              "replacement": "\"<REDACTED FIELD>\""
+            }
+          ]
+        },
+        {
+          "rule": "local_replication_prefix",
+          "input_sha256": "a52a4d848850f132e186485db81c07958c17b8ad246e4f5cbeb698ce647dcd7e",
+          "output_sha256": "373bc85cdbeb94d7afbf0e828a46035d2e225a657ed27ed55d130ce798b8a5ed",
+          "replacements": [
+            {
+              "input_byte_start": 285,
+              "input_byte_end": 359,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 484,
+              "input_byte_end": 558,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 629,
+              "input_byte_end": 703,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 744,
+              "input_byte_end": 818,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 863,
+              "input_byte_end": 937,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 1286,
+              "input_byte_end": 1360,
+              "replacement": "<REPLICATION_ROOT>"
+            }
+          ]
+        }
+      ],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/logs/target-axiom-audit-r1.txt",
+      "kind": "completed_log",
+      "original_sha256": "0bfd5fff304f3737544ba1138bc3ccbc8fb339f2d86bce9322671ba52782a24f",
+      "original_size_bytes": 917,
+      "public_path": "anthropic/logs/target-axiom-audit-r1.txt",
+      "public_sha256": "0bfd5fff304f3737544ba1138bc3ccbc8fb339f2d86bce9322671ba52782a24f",
+      "public_size_bytes": 917,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/logs/upstream-print-axioms-r1.json",
+      "kind": "completed_receipt",
+      "original_sha256": "22e8d6ba5e6dfa127b09524aba04f3db3cc4f044c7d6bc0bb07839e10b10f0ed",
+      "original_size_bytes": 2824,
+      "public_path": "anthropic/logs/upstream-print-axioms-r1.json",
+      "public_sha256": "fc9719a97b3d52fa1e3a4734f291e0a3c2e811e3cae497ef1ce4bcfa161d57f1",
+      "public_size_bytes": 1238,
+      "public_mode": "644",
+      "copy_kind": "sanitized_derivative",
+      "redactions": [
+        {
+          "rule": "remove_sensitive_json_fields_including_full_PATH",
+          "input_sha256": "22e8d6ba5e6dfa127b09524aba04f3db3cc4f044c7d6bc0bb07839e10b10f0ed",
+          "output_sha256": "fab2eb99d7539624f55ccb9330266242161d005578eb8067255ef43a1021649d",
+          "replacements": [
+            {
+              "input_byte_start": 808,
+              "input_byte_end": 2132,
+              "replacement": "\"<REDACTED FIELD>\""
+            }
+          ]
+        },
+        {
+          "rule": "local_replication_prefix",
+          "input_sha256": "fab2eb99d7539624f55ccb9330266242161d005578eb8067255ef43a1021649d",
+          "output_sha256": "fc9719a97b3d52fa1e3a4734f291e0a3c2e811e3cae497ef1ce4bcfa161d57f1",
+          "replacements": [
+            {
+              "input_byte_start": 316,
+              "input_byte_end": 390,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 461,
+              "input_byte_end": 535,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 576,
+              "input_byte_end": 650,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 695,
+              "input_byte_end": 769,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 1101,
+              "input_byte_end": 1175,
+              "replacement": "<REPLICATION_ROOT>"
+            }
+          ]
+        }
+      ],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/logs/upstream-print-axioms-r1.txt",
+      "kind": "completed_log",
+      "original_sha256": "ce9d0d587c18393a59a0cfa1ef45563189578b5752126dbf219f6f18495a89a8",
+      "original_size_bytes": 169,
+      "public_path": "anthropic/logs/upstream-print-axioms-r1.txt",
+      "public_sha256": "ce9d0d587c18393a59a0cfa1ef45563189578b5752126dbf219f6f18495a89a8",
+      "public_size_bytes": 169,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/logs/comparator-native-r1.json",
+      "kind": "completed_receipt",
+      "original_sha256": "aacc3c3489a4fb00a2f4cbf55ec7a926d7318a67931b44116b5b0e4c05d24699",
+      "original_size_bytes": 3722,
+      "public_path": "anthropic/logs/comparator-native-r1.json",
+      "public_sha256": "ba861a8dd4f97140a5061f930e90e51feb73771c5ace8c7523bcbf629411b01f",
+      "public_size_bytes": 1800,
+      "public_mode": "644",
+      "copy_kind": "sanitized_derivative",
+      "redactions": [
+        {
+          "rule": "remove_sensitive_json_fields_including_full_PATH",
+          "input_sha256": "aacc3c3489a4fb00a2f4cbf55ec7a926d7318a67931b44116b5b0e4c05d24699",
+          "output_sha256": "0d802f57f95606592ac371902a6b1f04e434a5a68afb13c4171a50088f5ccfcc",
+          "replacements": [
+            {
+              "input_byte_start": 1701,
+              "input_byte_end": 3025,
+              "replacement": "\"<REDACTED FIELD>\""
+            }
+          ]
+        },
+        {
+          "rule": "local_replication_prefix",
+          "input_sha256": "0d802f57f95606592ac371902a6b1f04e434a5a68afb13c4171a50088f5ccfcc",
+          "output_sha256": "ba861a8dd4f97140a5061f930e90e51feb73771c5ace8c7523bcbf629411b01f",
+          "replacements": [
+            {
+              "input_byte_start": 255,
+              "input_byte_end": 329,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 421,
+              "input_byte_end": 495,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 591,
+              "input_byte_end": 665,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 728,
+              "input_byte_end": 802,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 900,
+              "input_byte_end": 974,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 1031,
+              "input_byte_end": 1105,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 1209,
+              "input_byte_end": 1283,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 1354,
+              "input_byte_end": 1428,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 1469,
+              "input_byte_end": 1543,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 1588,
+              "input_byte_end": 1662,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 2002,
+              "input_byte_end": 2076,
+              "replacement": "<REPLICATION_ROOT>"
+            }
+          ]
+        }
+      ],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/logs/comparator-native-r1.txt",
+      "kind": "completed_log",
+      "original_sha256": "cd1a5122e528f6df70d1df470926f2a0b49eb11e446aebfdf0a7f22787efbf47",
+      "original_size_bytes": 2605,
+      "public_path": "anthropic/logs/comparator-native-r1.txt",
+      "public_sha256": "666b5bc38f6ed82048de34ed2013b4a4bd58864984d82792141e34d4fbc78531",
+      "public_size_bytes": 2387,
+      "public_mode": "644",
+      "copy_kind": "sanitized_derivative",
+      "redactions": [
+        {
+          "rule": "local_replication_prefix",
+          "input_sha256": "cd1a5122e528f6df70d1df470926f2a0b49eb11e446aebfdf0a7f22787efbf47",
+          "output_sha256": "78ae6c47dd4e953b1b9fafc6a2915214eabf2c02bef04b4abde24585189cc6cb",
+          "replacements": [
+            {
+              "input_byte_start": 341,
+              "input_byte_end": 415,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 1369,
+              "input_byte_end": 1443,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 2292,
+              "input_byte_end": 2366,
+              "replacement": "<REPLICATION_ROOT>"
+            }
+          ]
+        },
+        {
+          "rule": "temporary_os_path",
+          "input_sha256": "78ae6c47dd4e953b1b9fafc6a2915214eabf2c02bef04b4abde24585189cc6cb",
+          "output_sha256": "666b5bc38f6ed82048de34ed2013b4a4bd58864984d82792141e34d4fbc78531",
+          "replacements": [
+            {
+              "input_byte_start": 2235,
+              "input_byte_end": 2296,
+              "replacement": "<TEMP_PATH>"
+            }
+          ]
+        }
+      ],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/logs/leanchecker-fresh-r1.json",
+      "kind": "completed_receipt",
+      "original_sha256": "f03ad388578e947d982c4e6950e686f6b7a224ea93fa8aba0840b431b97a42e1",
+      "original_size_bytes": 2829,
+      "public_path": "anthropic/logs/leanchecker-fresh-r1.json",
+      "public_sha256": "0f6c413c288eb4f15806fe317b58794b746ed4d602aebcaef60e1c5964ba1047",
+      "public_size_bytes": 1243,
+      "public_mode": "644",
+      "copy_kind": "sanitized_derivative",
+      "redactions": [
+        {
+          "rule": "remove_sensitive_json_fields_including_full_PATH",
+          "input_sha256": "f03ad388578e947d982c4e6950e686f6b7a224ea93fa8aba0840b431b97a42e1",
+          "output_sha256": "5704623d9571fbef630411299b6f9c4cbf5976d732510cb75f32f216e31e74e1",
+          "replacements": [
+            {
+              "input_byte_start": 810,
+              "input_byte_end": 2134,
+              "replacement": "\"<REDACTED FIELD>\""
+            }
+          ]
+        },
+        {
+          "rule": "local_replication_prefix",
+          "input_sha256": "5704623d9571fbef630411299b6f9c4cbf5976d732510cb75f32f216e31e74e1",
+          "output_sha256": "0f6c413c288eb4f15806fe317b58794b746ed4d602aebcaef60e1c5964ba1047",
+          "replacements": [
+            {
+              "input_byte_start": 318,
+              "input_byte_end": 392,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 463,
+              "input_byte_end": 537,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 578,
+              "input_byte_end": 652,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 697,
+              "input_byte_end": 771,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 1112,
+              "input_byte_end": 1186,
+              "replacement": "<REPLICATION_ROOT>"
+            }
+          ]
+        }
+      ],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/logs/leanchecker-fresh-r1.txt",
+      "kind": "completed_log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_size_bytes": 0,
+      "public_path": "anthropic/logs/leanchecker-fresh-r1.txt",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_size_bytes": 0,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/logs/pinned-input-identity-post-checkers-r1.json",
+      "kind": "completed_receipt",
+      "original_sha256": "437182ced6435ad055fa792861f57342224f8d194de6b36556791619b74d1c93",
+      "original_size_bytes": 2901,
+      "public_path": "anthropic/logs/pinned-input-identity-post-checkers-r1.json",
+      "public_sha256": "b8780a65afcbc9a43523d1a2a10672af7a5f8a2f789baa94dc963e283e898f77",
+      "public_size_bytes": 1259,
+      "public_mode": "644",
+      "copy_kind": "sanitized_derivative",
+      "redactions": [
+        {
+          "rule": "remove_sensitive_json_fields_including_full_PATH",
+          "input_sha256": "437182ced6435ad055fa792861f57342224f8d194de6b36556791619b74d1c93",
+          "output_sha256": "2eca2fbc531f1f83e64e664048bdb0fbeb1f116944eb29681f03d2036c47ad90",
+          "replacements": [
+            {
+              "input_byte_start": 851,
+              "input_byte_end": 2175,
+              "replacement": "\"<REDACTED FIELD>\""
+            }
+          ]
+        },
+        {
+          "rule": "local_replication_prefix",
+          "input_sha256": "2eca2fbc531f1f83e64e664048bdb0fbeb1f116944eb29681f03d2036c47ad90",
+          "output_sha256": "b8780a65afcbc9a43523d1a2a10672af7a5f8a2f789baa94dc963e283e898f77",
+          "replacements": [
+            {
+              "input_byte_start": 232,
+              "input_byte_end": 306,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 359,
+              "input_byte_end": 433,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 504,
+              "input_byte_end": 578,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 619,
+              "input_byte_end": 693,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 738,
+              "input_byte_end": 812,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 1163,
+              "input_byte_end": 1237,
+              "replacement": "<REPLICATION_ROOT>"
+            }
+          ]
+        }
+      ],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/logs/pinned-input-identity-post-checkers-r1.txt",
+      "kind": "completed_log",
+      "original_sha256": "c873227507d8e2573c8d76831b11ab0c3327cea926fc36ec46bcda407713e7b9",
+      "original_size_bytes": 2580,
+      "public_path": "anthropic/logs/pinned-input-identity-post-checkers-r1.txt",
+      "public_sha256": "c873227507d8e2573c8d76831b11ab0c3327cea926fc36ec46bcda407713e7b9",
+      "public_size_bytes": 2580,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/logs/comparator-ci-build-r1.json",
+      "kind": "completed_receipt",
+      "original_sha256": "59c78f3d7b5054d701a7113c1c92cc207b42d1dd1113f48824ceddeb792bf459",
+      "original_size_bytes": 2947,
+      "public_path": "anthropic/logs/comparator-ci-build-r1.json",
+      "public_sha256": "4ab19261f53aefdd94c28301acbf535737e4a2be1558e5e6c4a38e02ee5cf6c7",
+      "public_size_bytes": 1305,
+      "public_mode": "644",
+      "copy_kind": "sanitized_derivative",
+      "redactions": [
+        {
+          "rule": "remove_sensitive_json_fields_including_full_PATH",
+          "input_sha256": "59c78f3d7b5054d701a7113c1c92cc207b42d1dd1113f48824ceddeb792bf459",
+          "output_sha256": "132dec32e0902096d09493c0b5617be286d777ec6ca8d4b42e81fd260355e142",
+          "replacements": [
+            {
+              "input_byte_start": 928,
+              "input_byte_end": 2252,
+              "replacement": "\"<REDACTED FIELD>\""
+            }
+          ]
+        },
+        {
+          "rule": "local_replication_prefix",
+          "input_sha256": "132dec32e0902096d09493c0b5617be286d777ec6ca8d4b42e81fd260355e142",
+          "output_sha256": "4ab19261f53aefdd94c28301acbf535737e4a2be1558e5e6c4a38e02ee5cf6c7",
+          "replacements": [
+            {
+              "input_byte_start": 238,
+              "input_byte_end": 312,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 420,
+              "input_byte_end": 494,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 581,
+              "input_byte_end": 655,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 696,
+              "input_byte_end": 770,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 815,
+              "input_byte_end": 889,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 1227,
+              "input_byte_end": 1301,
+              "replacement": "<REPLICATION_ROOT>"
+            }
+          ]
+        }
+      ],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/logs/comparator-ci-build-r1.txt",
+      "kind": "completed_log",
+      "original_sha256": "39186b7ebc9c3c08c18c8aef7829d8552da65172f8bc5ba97ce2c69c2d53e7e5",
+      "original_size_bytes": 38,
+      "public_path": "anthropic/logs/comparator-ci-build-r1.txt",
+      "public_sha256": "39186b7ebc9c3c08c18c8aef7829d8552da65172f8bc5ba97ce2c69c2d53e7e5",
+      "public_size_bytes": 38,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/logs/comparator-ci-build-r2.json",
+      "kind": "completed_receipt",
+      "original_sha256": "e9d8fa98d431386202b48e88ab11c9ed199492e4eb432a223d116991c8f8e93c",
+      "original_size_bytes": 2985,
+      "public_path": "anthropic/logs/comparator-ci-build-r2.json",
+      "public_sha256": "68da15deb733a0a68b4db7a26b0f33a00d3f57a79addb9bf98e24c18ab0dc1fa",
+      "public_size_bytes": 1343,
+      "public_mode": "644",
+      "copy_kind": "sanitized_derivative",
+      "redactions": [
+        {
+          "rule": "remove_sensitive_json_fields_including_full_PATH",
+          "input_sha256": "e9d8fa98d431386202b48e88ab11c9ed199492e4eb432a223d116991c8f8e93c",
+          "output_sha256": "421eb491e7d74cd9e200d8cf11803c14be143f9790f576b7f975e9e76100241d",
+          "replacements": [
+            {
+              "input_byte_start": 963,
+              "input_byte_end": 2287,
+              "replacement": "\"<REDACTED FIELD>\""
+            }
+          ]
+        },
+        {
+          "rule": "local_replication_prefix",
+          "input_sha256": "421eb491e7d74cd9e200d8cf11803c14be143f9790f576b7f975e9e76100241d",
+          "output_sha256": "68da15deb733a0a68b4db7a26b0f33a00d3f57a79addb9bf98e24c18ab0dc1fa",
+          "replacements": [
+            {
+              "input_byte_start": 273,
+              "input_byte_end": 347,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 455,
+              "input_byte_end": 529,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 616,
+              "input_byte_end": 690,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 731,
+              "input_byte_end": 805,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 850,
+              "input_byte_end": 924,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 1264,
+              "input_byte_end": 1338,
+              "replacement": "<REPLICATION_ROOT>"
+            }
+          ]
+        }
+      ],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/logs/comparator-ci-build-r2.txt",
+      "kind": "completed_log",
+      "original_sha256": "a615b95b280e7a4913058da69efef4c98f99b0349f512b06e6ff30a9f4e8e89c",
+      "original_size_bytes": 797,
+      "public_path": "anthropic/logs/comparator-ci-build-r2.txt",
+      "public_sha256": "a615b95b280e7a4913058da69efef4c98f99b0349f512b06e6ff30a9f4e8e89c",
+      "public_size_bytes": 797,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/logs/comparator-ci-compiler-version-r1.json",
+      "kind": "completed_receipt",
+      "original_sha256": "310016b678991fc3f0ec97e02789e2dd4ac9e26170dbca5516f963ef37c9d330",
+      "original_size_bytes": 2944,
+      "public_path": "anthropic/logs/comparator-ci-compiler-version-r1.json",
+      "public_sha256": "ab4d1e4084a05868ad3f5b007d29d7b8aefcb3cefc9d033836ba5666e38575be",
+      "public_size_bytes": 1302,
+      "public_mode": "644",
+      "copy_kind": "sanitized_derivative",
+      "redactions": [
+        {
+          "rule": "remove_sensitive_json_fields_including_full_PATH",
+          "input_sha256": "310016b678991fc3f0ec97e02789e2dd4ac9e26170dbca5516f963ef37c9d330",
+          "output_sha256": "6a9b05fe63337a572355b978048bbe41ae1217eb13442e3a8305faa22a688ccd",
+          "replacements": [
+            {
+              "input_byte_start": 911,
+              "input_byte_end": 2235,
+              "replacement": "\"<REDACTED FIELD>\""
+            }
+          ]
+        },
+        {
+          "rule": "local_replication_prefix",
+          "input_sha256": "6a9b05fe63337a572355b978048bbe41ae1217eb13442e3a8305faa22a688ccd",
+          "output_sha256": "ab4d1e4084a05868ad3f5b007d29d7b8aefcb3cefc9d033836ba5666e38575be",
+          "replacements": [
+            {
+              "input_byte_start": 212,
+              "input_byte_end": 286,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 403,
+              "input_byte_end": 477,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 564,
+              "input_byte_end": 638,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 679,
+              "input_byte_end": 753,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 798,
+              "input_byte_end": 872,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 1212,
+              "input_byte_end": 1286,
+              "replacement": "<REPLICATION_ROOT>"
+            }
+          ]
+        }
+      ],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/logs/comparator-ci-compiler-version-r1.txt",
+      "kind": "completed_log",
+      "original_sha256": "20f42f897511ec814f7616bd9a193ae7504aa2f52fb05299eb752936eb77ca6e",
+      "original_size_bytes": 106,
+      "public_path": "anthropic/logs/comparator-ci-compiler-version-r1.txt",
+      "public_sha256": "20f42f897511ec814f7616bd9a193ae7504aa2f52fb05299eb752936eb77ca6e",
+      "public_size_bytes": 106,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/logs/comparator-ci-smoke-r1.json",
+      "kind": "completed_receipt",
+      "original_sha256": "50efd9f0753bbbf661799e4ff4ab0749825d49db0f08fdedc0f0b7ceca83afd7",
+      "original_size_bytes": 2898,
+      "public_path": "anthropic/logs/comparator-ci-smoke-r1.json",
+      "public_sha256": "bda1c406c2bff6c7e4bfb8e743271e3e66bdb4559fb2d9604c15015d3aee500e",
+      "public_size_bytes": 1256,
+      "public_mode": "644",
+      "copy_kind": "sanitized_derivative",
+      "redactions": [
+        {
+          "rule": "remove_sensitive_json_fields_including_full_PATH",
+          "input_sha256": "50efd9f0753bbbf661799e4ff4ab0749825d49db0f08fdedc0f0b7ceca83afd7",
+          "output_sha256": "a5e61ac7302e686ec43f47030ce7780ac6b93fab24f71d105aaf8797ceeb3ad6",
+          "replacements": [
+            {
+              "input_byte_start": 864,
+              "input_byte_end": 2188,
+              "replacement": "\"<REDACTED FIELD>\""
+            }
+          ]
+        },
+        {
+          "rule": "local_replication_prefix",
+          "input_sha256": "a5e61ac7302e686ec43f47030ce7780ac6b93fab24f71d105aaf8797ceeb3ad6",
+          "output_sha256": "bda1c406c2bff6c7e4bfb8e743271e3e66bdb4559fb2d9604c15015d3aee500e",
+          "replacements": [
+            {
+              "input_byte_start": 201,
+              "input_byte_end": 275,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 356,
+              "input_byte_end": 430,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 517,
+              "input_byte_end": 591,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 632,
+              "input_byte_end": 706,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 751,
+              "input_byte_end": 825,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 1178,
+              "input_byte_end": 1252,
+              "replacement": "<REPLICATION_ROOT>"
+            }
+          ]
+        }
+      ],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/logs/comparator-ci-smoke-r1.txt",
+      "kind": "completed_log",
+      "original_sha256": "13bedbf32f58187fa4467476fc0a46865944d61bd63763b88b2b85d5cdbb65eb",
+      "original_size_bytes": 65,
+      "public_path": "anthropic/logs/comparator-ci-smoke-r1.txt",
+      "public_sha256": "13bedbf32f58187fa4467476fc0a46865944d61bd63763b88b2b85d5cdbb65eb",
+      "public_size_bytes": 65,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/checker-records/nanoda-64425-0dvr445m/02-finished.json",
+      "kind": "completed_receipt",
+      "original_sha256": "aa31fe1b0ab3b9acd1d10745ffd45f0669c6fbea4cbe3c643395dc0c2cb42070",
+      "original_size_bytes": 5575,
+      "public_path": "anthropic/checker-records/nanoda-64425-0dvr445m/02-finished.json",
+      "public_sha256": "6118868cb06c77d69a10be9937090edcf014915f8e2cb88796ade49224555265",
+      "public_size_bytes": 4465,
+      "public_mode": "644",
+      "copy_kind": "sanitized_derivative",
+      "redactions": [
+        {
+          "rule": "local_replication_prefix",
+          "input_sha256": "aa31fe1b0ab3b9acd1d10745ffd45f0669c6fbea4cbe3c643395dc0c2cb42070",
+          "output_sha256": "607d6ff9b9050dcb01c590e181a5f714a7dbfcc580c453ff448aedeae4a07168",
+          "replacements": [
+            {
+              "input_byte_start": 124,
+              "input_byte_end": 198,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 345,
+              "input_byte_end": 419,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 675,
+              "input_byte_end": 749,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 825,
+              "input_byte_end": 899,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 1182,
+              "input_byte_end": 1256,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 1401,
+              "input_byte_end": 1475,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 1533,
+              "input_byte_end": 1607,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 2200,
+              "input_byte_end": 2274,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 3033,
+              "input_byte_end": 3107,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 3830,
+              "input_byte_end": 3904,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 3995,
+              "input_byte_end": 4069,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 4170,
+              "input_byte_end": 4244,
+              "replacement": "<REPLICATION_ROOT>"
+            },
+            {
+              "input_byte_start": 4411,
+              "input_byte_end": 4485,
+              "replacement": "<REPLICATION_ROOT>"
+            }
+          ]
+        },
+        {
+          "rule": "temporary_os_path",
+          "input_sha256": "607d6ff9b9050dcb01c590e181a5f714a7dbfcc580c453ff448aedeae4a07168",
+          "output_sha256": "6118868cb06c77d69a10be9937090edcf014915f8e2cb88796ade49224555265",
+          "replacements": [
+            {
+              "input_byte_start": 186,
+              "input_byte_end": 247,
+              "replacement": "<TEMP_PATH>"
+            },
+            {
+              "input_byte_start": 1043,
+              "input_byte_end": 1104,
+              "replacement": "<TEMP_PATH>"
+            },
+            {
+              "input_byte_start": 1508,
+              "input_byte_end": 1577,
+              "replacement": "<TEMP_PATH>"
+            },
+            {
+              "input_byte_start": 2126,
+              "input_byte_end": 2195,
+              "replacement": "<TEMP_PATH>"
+            },
+            {
+              "input_byte_start": 2935,
+              "input_byte_end": 2996,
+              "replacement": "<TEMP_PATH>"
+            },
+            {
+              "input_byte_start": 4049,
+              "input_byte_end": 4118,
+              "replacement": "<TEMP_PATH>"
+            },
+            {
+              "input_byte_start": 4347,
+              "input_byte_end": 4416,
+              "replacement": "<TEMP_PATH>"
+            }
+          ]
+        }
+      ],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
     }
   ],
-  "omitted_large_assets": [],
+  "omitted_large_assets": [
+    {
+      "receipt": "anthropic/checker-records/nanoda-64425-0dvr445m/02-finished.json",
+      "availability": "Export bytes retained locally; not in this package or a published asset yet",
+      "identity_source": "Reported completed-recorder receipt; packager did not rehash large export",
+      "raw_sha256": "e5cc12cb057e47d08780ce6e807186b5be0074bcc2dcddeffea1a0b3191641e6",
+      "raw_size_bytes": 583355033,
+      "gzip_sha256": "c625a4755f8ccbf05a95760d59b8a3af42643d9f702f7bbaccb7aa682db814f3",
+      "gzip_size_bytes": 118800833
+    }
+  ],
   "skipped": [],
   "redaction_contract": "Ordered rules record input/output hashes and exact input-byte spans. Removed private values are not repeated. Original evidence is unchanged and retained locally.",
   "excluded": [
