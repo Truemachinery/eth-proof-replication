@@ -1,0 +1,154 @@
+{
+  "schema": "eth-ancestor-cache-actual-implementation-review/1",
+  "observed_utc": "2026-11-04T20:49:53.350026+00:00",
+  "reviewer_label": "codex-eth-anthropic-replication",
+  "verdict": "No remaining material blocker in the final frozen Ant-only implementation; actual Linux restoration and continuation remain unexecuted by this review",
+  "scope": "Read-only source, hash, structural comparison and saved author-control evidence review; no control rerun, code edit, cache download/API, proof/checker execution, export or dispatch",
+  "final_inputs": [
+    {
+      "path": "research/eth-external-replication-20261104/ci/owned_cache.py",
+      "size_bytes": 11489,
+      "sha256": "dd9b47b1da0240e2fc2bf79a4e6de40543beb37cd5e316eb055f092040f382be"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/ci/workflow-template.yml",
+      "size_bytes": 9681,
+      "sha256": "68335be10ee348456b4ffc21f3a4cc5d5c39394a1bb7e5f9fd825338afb26e30"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/ci/ancestor-cache-compatibility.json",
+      "size_bytes": 8513,
+      "sha256": "114a49bae310c444c5468258df7fddd74c98077370102055d051f5c46eb52d4a"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/ci/README.md",
+      "size_bytes": 15914,
+      "sha256": "c8c2e4a5fdeb2c64683ea1afcadf1df6f5f515072086cd9064b626af3857c931"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/ci/replicate.py",
+      "size_bytes": 21177,
+      "sha256": "d3d38d581b583891fad340a377ff799dab8d396a26a947b2fffe04d74cd7b77c"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/verification/ancestor_cache_control_r1.py",
+      "size_bytes": 12037,
+      "sha256": "70e14ed028189eb9c67a77c26d5c8610915ec8e013c270da14626b3c461e0cc8"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/verification/ancestor-cache-control-result-r1.json",
+      "size_bytes": 3828,
+      "sha256": "c63bbb1a7b72c17f74a3890c6895b9192a421584f52e9b47fa3b10863ed2a24e"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/verification/cache_policy_control_r3.py",
+      "size_bytes": 8915,
+      "sha256": "186bd828553661cb833f18b891e1389197f1dc61b56a8d354bc81bfec5ce6a2f"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/verification/cache-policy-control-result-r3.json",
+      "size_bytes": 20057,
+      "sha256": "924d90ef084aaff69b752d8e6f6ee41aa282d42e5f4bf62c8458a9d67fc651b2"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/ci/runs/41894905159/anthropic-job-summary-r1.json",
+      "size_bytes": 78346,
+      "sha256": "2e387e95f158710151a01b926b89f65b146445e0dcad5fa9ed64b75b766421f8"
+    }
+  ],
+  "conditions_checked": [
+    {
+      "name": "exact-key-and-manifest-before-parse",
+      "source": "owned_cache.py25-40,150-160;workflow121-145",
+      "finding": "Only the explicit Anthropic entry and exact matched full key select ancestor handling. Raw manifest SHA is verified before its JSON parse. Workflow fallback has no restore-prefix list and independently rejects a non-exact matched key."
+    },
+    {
+      "name": "current-producer-workflow-and-context",
+      "source": "owned_cache.py41-68",
+      "finding": "Exactly23 reviewed current public CI files plus ledger are required, each current file SHA and the actual published workflow SHA are checked. Current source/config/proof-runtime context hash and recomputed predecessor fingerprint must match the approved fixed entry. No generic migration or fingerprint relabel."
+    },
+    {
+      "name": "production-receipt-binding",
+      "source": "ancestor-cache-compatibility.json;closed41894905159summary",
+      "finding": "Old23 rows equal the actual RUN receipt, not24 private CI inputs. Entry key, manifest SHA, context and old fingerprint match saved closed cache metadata. Only Anthropic is registered."
+    },
+    {
+      "name": "actual-context-reconstruction",
+      "source": "pinnedAnthropic source tree + savedLinux proof runtime",
+      "finding": "Independently rebuilt1055 source/config identities (1052 Lean files plus3configs) and original ordered runtime object; reproduced context b5c68d05e79b3971cbc05a95dc8aedcc4b9188cfe9912bad1b27efbd398c2f73 and predecessor fingerprint9c0011429218dd9eb6addf639baad7c55358ef35c15cc96c783dca1ba61af4c0. This is data-hash consistency, not a cache restore."
+    },
+    {
+      "name": "full-old-payload-guards",
+      "source": "owned_cache.py150-183,194-199",
+      "finding": "Schema/proof/context/status/caps plus owned module/suffix paths, duplicate rejection, regular files, link checks, per-file sizes/SHA, exact totals, absence of unmanifested files and no overwrite remain. Fingerprint/modules/allowed/snapshot functions are AST-identical to frozenr4; restore adds stricter explicit context validation."
+    },
+    {
+      "name": "old-manifest-preserved",
+      "source": "owned_cache.py184-205",
+      "finding": "Exact old bytes are exclusively written and fsynced under runner records outside cache staging before copying; an acceptance receipt is written only after restoration. Original manifest is not mutated. Later normal snapshot uses ordinary current fingerprint including ledger. Availability is explicitly ephemeral runner records/log hashes."
+    },
+    {
+      "name": "both-availability-failures-closed",
+      "source": "workflow cache_policy58-80,148-170",
+      "finding": "Skipped/cancelled replication cannot start maintenance. Even a failure outcome requires this invocation finished schema/proof, ready snapshot proof/status and exact staging manifest SHA before invoking trusted maintenance. Missing/invalid/early-failure records exit without API/prune/save. Normal partial-ready snapshots remain eligible. Save/audit still require ready output."
+    },
+    {
+      "name": "fixed-job-concurrency-and-transition",
+      "source": "workflow jobconcurrency;README24-30",
+      "finding": "Global workflow lock removed; fixed repository-plus-openai and repository-plus-anthropic job groups are distinct, both cancel-in-progress false. All-new jobs have one running job per proof. Root operator restriction launches only new Anthropic while the older globally grouped OpenAI job runs; this transition restriction is documented and is not automatically enforced across old/new workflow generations."
+    },
+    {
+      "name": "no-proof-or-token-policy-expansion",
+      "source": "replicate.py34-41,258-262;unchangedmaintenance",
+      "finding": "The sole producer driver delta is propagation of existing trusted real LEAN_SYSROOT into additional export, after required proof checks; no new write/execute grant. Metadata key stays outside clean proof environment, API token remains in trusted maintenance, owned backend limits2GiB/proof and4GiB total unchanged."
+    }
+  ],
+  "saved_controls": {
+    "ancestor_protocol": {
+      "count": 19,
+      "passed": true,
+      "result_sha256": "c63bbb1a7b72c17f74a3890c6895b9192a421584f52e9b47fa3b10863ed2a24e",
+      "scope": "Author-run synthetic owned-output and exact-workflow-key controls at unchanged helperdd9; original workflow/ledger pair was earlier e8fb/4f50. Not rerun by reviewer."
+    },
+    "final_availability_and_concurrency": {
+      "count": 29,
+      "passed": true,
+      "result_sha256": "924d90ef084aaff69b752d8e6f6ee41aa282d42e5f4bf62c8458a9d67fc651b2",
+      "scope": "Author-run28 actual YAML receipt/outcome guard fixture cases with harmless maintenance stub plus fixed distinct per-proof group check, bound to final workflow68335 and ledger114a. Full script and r2-to-r3 delta read; no actual GitHub scheduler/API/cache restore or proof run."
+    }
+  },
+  "resolved_findings": [
+    {
+      "origin": "Root actual review",
+      "issue": "Exact-key guard failure skips replication while old always maintenance could prune/resave unvalidated restored staging.",
+      "resolution": "Outcome gate plus finalized matching snapshot guard before any maintenance."
+    },
+    {
+      "origin": "This reviewer and CI owner independently",
+      "issue": "Early failure before project/cache_context also leaves old staging despite replication failure outcome.",
+      "resolution": "Require finished owned_cache ready receipt bound to actual staging manifest SHA; preserve old backend when absent/mismatched."
+    },
+    {
+      "origin": "This reviewer",
+      "issue": "Repository-wide concurrency would queue intended Ant continuation behind old OpenAI.",
+      "resolution": "Root-authorized fixed per-proof job concurrency with explicit manual old/new transition restriction."
+    }
+  ],
+  "primary_sources": [
+    {
+      "url": "https://raw.githubusercontent.com/actions/cache/0400d5f644dc74513175e3cd8d07132dd4860809/restore/README.md",
+      "supports": "Prefix nature of restore keys and exact matched-key outputs."
+    },
+    {
+      "url": "https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/control-workflow-concurrency",
+      "supports": "Job-level concurrency group and cancel-in-progress behavior."
+    }
+  ],
+  "remaining_limits": [
+    "Actual predecessor manifest/payload bytes are not local; complete file validation and real-prefix trace check must still execute on the Linux continuation.",
+    "Final normal trace/fresh/Comparator/Nanoda and final source identities/success seal must remain required; no new proof verdict is inferred from this review.",
+    "Any CI producer/workflow/README/ledger bytes changed after these pins require an updated binding/review; adding OpenAI requires an observed closed receipt and separate explicit entry.",
+    "Frozen public export must contain exactly23 reviewed CI files plus ledger and publish workflow bytes matching the ledger pin; private workflow-template must not be included as an extra CI file.",
+    "Review/read/hash/authoring overhead was small and not fully metered; no heavy execution or paid cloud spend."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "eth-ci-job-log-download/1",
+  "run_id": 41894905159,
+  "job_id": 126801716984,
+  "command": [
+    "gh",
+    "api",
+    "repos/Truemachinery/eth-proof-replication/actions/jobs/126801716984/logs"
+  ],
+  "started_utc": "2026-11-04T20:19:17.821083+00:00",
+  "finished_utc": "2026-11-04T20:19:18.810420+00:00",
+  "exit_code": 0,
+  "body_path": "anthropic-job-126801716984.raw.log",
+  "body_sha256": "96b5a97a88747174e013598c24e73eba3c2f1e2943e112f5f80ade7a44cf0574",
+  "body_bytes": 241386,
+  "body_magic_hex": "efbbbf32",
+  "stderr": ""
+}

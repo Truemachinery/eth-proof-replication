@@ -17,14 +17,14 @@ env:
 permissions:
   contents: read
   actions: write  # Only the dedicated bounded-cache maintenance step uses the token.
-concurrency:
-  group: eth-public-replication-${{ github.repository }}
-  cancel-in-progress: false
 jobs:
   openai:
     if: github.event.repository.visibility == 'public' && (inputs.proof == 'both' || inputs.proof == 'openai')
     runs-on: ubuntu-24.04
     timeout-minutes: 350
+    concurrency:
+      group: eth-public-replication-${{ github.repository }}-openai
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -39,6 +39,7 @@ jobs:
           public_runner_guard(json.load(open(os.environ['GITHUB_EVENT_PATH'])), os.environ)
           PY
       - name: Restore newest matching bounded owned-output cache
+        id: current_cache_restore
         uses: actions/cache/restore@0400d5f644dc74513175e3cd8d07132dd4860809 # v4.2.4
         with:
           path: .ci-cache/openai
@@ -50,13 +51,34 @@ jobs:
         continue-on-error: true
         env:
           ETH_REPLICATION_MODE: ${{ inputs.mode }}
+          ETH_RESTORED_CACHE_KEY: ${{ steps.current_cache_restore.outputs.cache-matched-key }}
         run: python3 ci/replicate.py openai --mode "$ETH_REPLICATION_MODE" --cache-directory "$GITHUB_WORKSPACE/.ci-cache/openai" --cleanup-disposable-sdks
       - name: Bound retention and prune previous own-proof snapshots
         id: cache_policy
-        if: always()
+        if: always() && (steps.replication.outcome == 'success' || steps.replication.outcome == 'failure')
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python3 ci/cache_maintenance.py openai --directory "$GITHUB_WORKSPACE/.ci-cache/openai"
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, os, subprocess, sys
+          from pathlib import Path
+          proof = 'openai'
+          directory = Path(os.environ['GITHUB_WORKSPACE']) / '.ci-cache' / proof
+          finished = Path(os.environ['RUNNER_TEMP']) / ('eth-replication-' + proof) / 'finished.json'
+          manifest = directory / 'manifest.json'
+          try:
+              record = json.loads(finished.read_text())
+              snapshot = record.get('owned_cache', {})
+              ready = (record.get('schema') == 'eth-ci-run/1' and record.get('proof') == proof
+                       and snapshot.get('proof') == proof and snapshot.get('status') == 'ready'
+                       and snapshot.get('manifest_sha256') == hashlib.sha256(manifest.read_bytes()).hexdigest())
+          except (OSError, ValueError, TypeError, AttributeError):
+              ready = False
+          if not ready:
+              print('CACHE_RETENTION_SKIPPED no finalized matching snapshot; predecessor backend unchanged')
+              raise SystemExit(0)
+          subprocess.run([sys.executable, 'ci/cache_maintenance.py', proof, '--directory', str(directory)], check=True)
+          PY
       - name: Save at most2GiB of this proof's completed outputs
         if: always() && steps.cache_policy.outputs.ready == 'true'
         uses: actions/cache/save@0400d5f644dc74513175e3cd8d07132dd4860809 # v4.2.4
@@ -75,6 +97,9 @@ jobs:
     if: github.event.repository.visibility == 'public' && (inputs.proof == 'both' || inputs.proof == 'anthropic')
     runs-on: ubuntu-24.04
     timeout-minutes: 350
+    concurrency:
+      group: eth-public-replication-${{ github.repository }}-anthropic
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
@@ -89,24 +114,64 @@ jobs:
           public_runner_guard(json.load(open(os.environ['GITHUB_EVENT_PATH'])), os.environ)
           PY
       - name: Restore newest matching bounded owned-output cache
+        id: current_cache_restore
         uses: actions/cache/restore@0400d5f644dc74513175e3cd8d07132dd4860809 # v4.2.4
         with:
           path: .ci-cache/anthropic
           key: eth-owned-anthropic-${{ hashFiles('ci/*.py', 'ci/*.c', 'ci/*.json', 'ci/*.md', 'ci/*.yml') }}-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: |
             eth-owned-anthropic-${{ hashFiles('ci/*.py', 'ci/*.c', 'ci/*.json', 'ci/*.md', 'ci/*.yml') }}-
+      - name: Restore the one reviewed predecessor cache
+        id: ancestor_cache_restore
+        if: steps.current_cache_restore.outputs.cache-matched-key == ''
+        uses: actions/cache/restore@0400d5f644dc74513175e3cd8d07132dd4860809 # v4.2.4
+        with:
+          path: .ci-cache/anthropic
+          key: eth-owned-anthropic-dd4d7b438fa94c8ca1a9ea561fb4028a8e17cbce3be307a03ce84651ea925bf0-41894905159-1
+      - name: Require exact predecessor cache selection
+        if: steps.ancestor_cache_restore.outputs.cache-matched-key != ''
+        env:
+          MATCHED_ANCESTOR_CACHE_KEY: ${{ steps.ancestor_cache_restore.outputs.cache-matched-key }}
+        run: |
+          python3 - <<'PY'
+          import os
+          expected = 'eth-owned-anthropic-dd4d7b438fa94c8ca1a9ea561fb4028a8e17cbce3be307a03ce84651ea925bf0-41894905159-1'
+          if os.environ['MATCHED_ANCESTOR_CACHE_KEY'] != expected:
+              raise SystemExit('refusing a non-exact predecessor cache key')
+          PY
       - name: Build and check pinned public proof
         id: replication
         continue-on-error: true
         env:
           ETH_REPLICATION_MODE: ${{ inputs.mode }}
+          ETH_RESTORED_CACHE_KEY: ${{ steps.current_cache_restore.outputs.cache-matched-key || steps.ancestor_cache_restore.outputs.cache-matched-key }}
         run: python3 ci/replicate.py anthropic --mode "$ETH_REPLICATION_MODE" --cache-directory "$GITHUB_WORKSPACE/.ci-cache/anthropic" --cleanup-disposable-sdks
       - name: Bound retention and prune previous own-proof snapshots
         id: cache_policy
-        if: always()
+        if: always() && (steps.replication.outcome == 'success' || steps.replication.outcome == 'failure')
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python3 ci/cache_maintenance.py anthropic --directory "$GITHUB_WORKSPACE/.ci-cache/anthropic"
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, os, subprocess, sys
+          from pathlib import Path
+          proof = 'anthropic'
+          directory = Path(os.environ['GITHUB_WORKSPACE']) / '.ci-cache' / proof
+          finished = Path(os.environ['RUNNER_TEMP']) / ('eth-replication-' + proof) / 'finished.json'
+          manifest = directory / 'manifest.json'
+          try:
+              record = json.loads(finished.read_text())
+              snapshot = record.get('owned_cache', {})
+              ready = (record.get('schema') == 'eth-ci-run/1' and record.get('proof') == proof
+                       and snapshot.get('proof') == proof and snapshot.get('status') == 'ready'
+                       and snapshot.get('manifest_sha256') == hashlib.sha256(manifest.read_bytes()).hexdigest())
+          except (OSError, ValueError, TypeError, AttributeError):
+              ready = False
+          if not ready:
+              print('CACHE_RETENTION_SKIPPED no finalized matching snapshot; predecessor backend unchanged')
+              raise SystemExit(0)
+          subprocess.run([sys.executable, 'ci/cache_maintenance.py', proof, '--directory', str(directory)], check=True)
+          PY
       - name: Save at most2GiB of this proof's completed outputs
         if: always() && steps.cache_policy.outputs.ready == 'true'
         uses: actions/cache/save@0400d5f644dc74513175e3cd8d07132dd4860809 # v4.2.4

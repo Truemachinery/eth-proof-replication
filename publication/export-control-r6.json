@@ -1,0 +1,20 @@
+{
+  "schema": "eth-workflow-export-control/1",
+  "scope": "Synthetic allowlisted GitHub-display-response export controls only; no proof/checker/tool execution or real cache restore.",
+  "created_utc": "2026-11-04T20:51:33.870956+00:00",
+  "exporter_sha256": "a9ef5079f3c760d1b5b84ca3ec4d866d7de996b343563fd180d98c983789f875",
+  "checks": [
+    "named response bound to successful timed download SHA and size",
+    "public derivative has own hash and ordered PATH span; original unchanged",
+    "quoted PATH rule applies only to data derivatives, never executable-source transform",
+    "other .log paths rejected",
+    "download receipt omission rejected",
+    "download SHA mismatch excludes response",
+    "unfinished, failed, wrong-job and noninteger completion receipts rejected",
+    "frozen response drift rejected before destination creation"
+  ],
+  "passed": true,
+  "cpu_seconds": 0.03069999999999999,
+  "wall_seconds": 0.03201450000000001,
+  "command": "python3 heredoc: import publisher, create temporary exact-named log/download fixture, exercise successful export/redaction and invalid completion, omission, mismatch, unknown path and drift rejection; no proof execution."
+}

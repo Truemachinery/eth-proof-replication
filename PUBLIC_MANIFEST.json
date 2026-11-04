@@ -1,10 +1,10 @@
 {
   "schema": "eth-public-export/1",
-  "release": "anthropic-native-pass-20261104-r5",
+  "release": "sandbox-export-fix-20261104-r6",
   "status": "prepared_for_review_not_published",
   "verification_verdict": "Not inferred; missing or unfinished stages are not passes",
-  "exporter_sha256": "06080187683bf0e0d474623d620f44e872dd233e708b29d9c60bdcc7e70e0cd3",
-  "plan_sha256": "7ffdc934436be3cd0155d17af8b942595dc2ccad216377b4852224589dd5368c",
+  "exporter_sha256": "a9ef5079f3c760d1b5b84ca3ec4d866d7de996b343563fd180d98c983789f875",
+  "plan_sha256": "e615b059e57f7c884ef3c2217b62fb858209035e31aa49b91b2a591eeafcb7ec",
   "files": [
     {
       "path": "PLAN.md",
@@ -67,13 +67,28 @@
       "private_ledger_dependency_in_original": false
     },
     {
+      "path": "PUBLICATION_RECEIPT-r4.json",
+      "kind": "manifest",
+      "original_sha256": "35ce6726df7ee00a3755aeb7b787da8670474c0ca4caf62c81b6f92f6a25df46",
+      "original_size_bytes": 95920,
+      "public_path": "PUBLICATION_RECEIPT-r4.json",
+      "public_sha256": "35ce6726df7ee00a3755aeb7b787da8670474c0ca4caf62c81b6f92f6a25df46",
+      "public_size_bytes": 95920,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
       "path": "PUBLIC_README_TEMPLATE.md",
       "kind": "report",
-      "original_sha256": "68946e7c7a60bac6f808f6e54057365095b6533ecf9882988f7ac280531f9d79",
-      "original_size_bytes": 11196,
+      "original_sha256": "2d4cf25395a00ca78dcac8c01432135c1b37618c315e9af066a628fa27aed41e",
+      "original_size_bytes": 13599,
       "public_path": "README.md",
-      "public_sha256": "68946e7c7a60bac6f808f6e54057365095b6533ecf9882988f7ac280531f9d79",
-      "public_size_bytes": 11196,
+      "public_sha256": "2d4cf25395a00ca78dcac8c01432135c1b37618c315e9af066a628fa27aed41e",
+      "public_size_bytes": 13599,
       "public_mode": "644",
       "copy_kind": "byte_identical",
       "redactions": [],
@@ -134,6 +149,21 @@
       "public_path": "anthropic/COMPARATOR_TOOL.md",
       "public_sha256": "b62be412db58eba0e7f0f840d1c31a543bc1911e2bea5dd1f9d27776e1daa970",
       "public_size_bytes": 2942,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/ancestor-cache-review-r1.json",
+      "kind": "manifest",
+      "original_sha256": "fbd9639fa691d71a013ce364c73b28e052565625ac36dca6f3a0e8dd3c2ac27b",
+      "original_size_bytes": 10831,
+      "public_path": "anthropic/ancestor-cache-review-r1.json",
+      "public_sha256": "fbd9639fa691d71a013ce364c73b28e052565625ac36dca6f3a0e8dd3c2ac27b",
+      "public_size_bytes": 10831,
       "public_mode": "644",
       "copy_kind": "byte_identical",
       "redactions": [],
@@ -810,11 +840,26 @@
     {
       "path": "ci/README.md",
       "kind": "report",
-      "original_sha256": "610b71b4ea6a002d60d5d931f519dc0b68e21aada8e3afb0fff6e0c615cce239",
-      "original_size_bytes": 13542,
+      "original_sha256": "c8c2e4a5fdeb2c64683ea1afcadf1df6f5f515072086cd9064b626af3857c931",
+      "original_size_bytes": 15914,
       "public_path": "ci/README.md",
-      "public_sha256": "610b71b4ea6a002d60d5d931f519dc0b68e21aada8e3afb0fff6e0c615cce239",
-      "public_size_bytes": 13542,
+      "public_sha256": "c8c2e4a5fdeb2c64683ea1afcadf1df6f5f515072086cd9064b626af3857c931",
+      "public_size_bytes": 15914,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "ci/ancestor-cache-compatibility.json",
+      "kind": "manifest",
+      "original_sha256": "114a49bae310c444c5468258df7fddd74c98077370102055d051f5c46eb52d4a",
+      "original_size_bytes": 8513,
+      "public_path": "ci/ancestor-cache-compatibility.json",
+      "public_sha256": "114a49bae310c444c5468258df7fddd74c98077370102055d051f5c46eb52d4a",
+      "public_size_bytes": 8513,
       "public_mode": "644",
       "copy_kind": "byte_identical",
       "redactions": [],
@@ -1080,11 +1125,11 @@
     {
       "path": "ci/owned_cache.py",
       "kind": "source",
-      "original_sha256": "7854df30f6d14c791547e0672b19ad5f34d2b41fc1aacc264f2fdb60bb6d2bb3",
-      "original_size_bytes": 7274,
+      "original_sha256": "dd9b47b1da0240e2fc2bf79a4e6de40543beb37cd5e316eb055f092040f382be",
+      "original_size_bytes": 11489,
       "public_path": "ci/owned_cache.py",
-      "public_sha256": "7854df30f6d14c791547e0672b19ad5f34d2b41fc1aacc264f2fdb60bb6d2bb3",
-      "public_size_bytes": 7274,
+      "public_sha256": "dd9b47b1da0240e2fc2bf79a4e6de40543beb37cd5e316eb055f092040f382be",
+      "public_size_bytes": 11489,
       "public_mode": "644",
       "copy_kind": "byte_identical",
       "redactions": [],
@@ -1140,11 +1185,11 @@
     {
       "path": "ci/replicate.py",
       "kind": "source",
-      "original_sha256": "89a68dcc753d1b543d7262f4893da5b15275dc8f3dc23bdc5872761f84b41b28",
-      "original_size_bytes": 21152,
+      "original_sha256": "d3d38d581b583891fad340a377ff799dab8d396a26a947b2fffe04d74cd7b77c",
+      "original_size_bytes": 21177,
       "public_path": "ci/replicate.py",
-      "public_sha256": "89a68dcc753d1b543d7262f4893da5b15275dc8f3dc23bdc5872761f84b41b28",
-      "public_size_bytes": 21152,
+      "public_sha256": "d3d38d581b583891fad340a377ff799dab8d396a26a947b2fffe04d74cd7b77c",
+      "public_size_bytes": 21177,
       "public_mode": "644",
       "copy_kind": "byte_identical",
       "redactions": [],
@@ -1241,13 +1286,873 @@
       "private_ledger_dependency_in_original": false
     },
     {
+      "path": "ci/runs/41894905159/DIAGNOSIS-R4-ANTHROPIC.md",
+      "kind": "report",
+      "original_sha256": "ac39520d80d0fec72fb19b6cfedd09f6ba7662a5dbff97028ff5aa545501e783",
+      "original_size_bytes": 5519,
+      "public_path": "ci/runs/41894905159/DIAGNOSIS-R4-ANTHROPIC.md",
+      "public_sha256": "ac39520d80d0fec72fb19b6cfedd09f6ba7662a5dbff97028ff5aa545501e783",
+      "public_size_bytes": 5519,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "ci/runs/41894905159/anthropic-job-download-r1.json",
+      "kind": "manifest",
+      "original_sha256": "a69c0d7622572682f86fd831212311ad41f3b4e5ec9914c382b93dca3d0e67b9",
+      "original_size_bytes": 550,
+      "public_path": "ci/runs/41894905159/anthropic-job-download-r1.json",
+      "public_sha256": "a69c0d7622572682f86fd831212311ad41f3b4e5ec9914c382b93dca3d0e67b9",
+      "public_size_bytes": 550,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "ci/runs/41894905159/anthropic-job-summary-r1.json",
+      "kind": "manifest",
+      "original_sha256": "2e387e95f158710151a01b926b89f65b146445e0dcad5fa9ed64b75b766421f8",
+      "original_size_bytes": 78346,
+      "public_path": "ci/runs/41894905159/anthropic-job-summary-r1.json",
+      "public_sha256": "d07d1761d007ba8e8acd6c3e6b790ae0422471f5dcba0bbd4acad1eebaa4be06",
+      "public_size_bytes": 75152,
+      "public_mode": "644",
+      "copy_kind": "sanitized_derivative",
+      "redactions": [
+        {
+          "rule": "full_PATH_quoted_argv_data_only",
+          "input_sha256": "2e387e95f158710151a01b926b89f65b146445e0dcad5fa9ed64b75b766421f8",
+          "output_sha256": "07078bed2a12baea2b47b7d22308313c4a4b5afbb134c61f83fcc2ea874fa7c6",
+          "replacements": [
+            {
+              "input_byte_start": 3285,
+              "input_byte_end": 3595,
+              "replacement": "PATH=<PATH FIELD REDACTED>"
+            },
+            {
+              "input_byte_start": 6181,
+              "input_byte_end": 6491,
+              "replacement": "PATH=<PATH FIELD REDACTED>"
+            },
+            {
+              "input_byte_start": 40036,
+              "input_byte_end": 40421,
+              "replacement": "PATH=<PATH FIELD REDACTED>"
+            },
+            {
+              "input_byte_start": 44539,
+              "input_byte_end": 44921,
+              "replacement": "PATH=<PATH FIELD REDACTED>"
+            },
+            {
+              "input_byte_start": 48056,
+              "input_byte_end": 48438,
+              "replacement": "PATH=<PATH FIELD REDACTED>"
+            },
+            {
+              "input_byte_start": 50884,
+              "input_byte_end": 51266,
+              "replacement": "PATH=<PATH FIELD REDACTED>"
+            },
+            {
+              "input_byte_start": 54184,
+              "input_byte_end": 54566,
+              "replacement": "PATH=<PATH FIELD REDACTED>"
+            }
+          ]
+        },
+        {
+          "rule": "home_prefix",
+          "input_sha256": "07078bed2a12baea2b47b7d22308313c4a4b5afbb134c61f83fcc2ea874fa7c6",
+          "output_sha256": "d07d1761d007ba8e8acd6c3e6b790ae0422471f5dcba0bbd4acad1eebaa4be06",
+          "replacements": [
+            {
+              "input_byte_start": 375,
+              "input_byte_end": 387,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 665,
+              "input_byte_end": 677,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 1613,
+              "input_byte_end": 1625,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 2798,
+              "input_byte_end": 2810,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 2946,
+              "input_byte_end": 2958,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 3096,
+              "input_byte_end": 3108,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 3337,
+              "input_byte_end": 3349,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 3378,
+              "input_byte_end": 3390,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 3427,
+              "input_byte_end": 3436,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 3450,
+              "input_byte_end": 3462,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 3915,
+              "input_byte_end": 3927,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 4211,
+              "input_byte_end": 4223,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 5410,
+              "input_byte_end": 5422,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 5558,
+              "input_byte_end": 5570,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 5708,
+              "input_byte_end": 5720,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 5949,
+              "input_byte_end": 5961,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 5990,
+              "input_byte_end": 6002,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 6039,
+              "input_byte_end": 6048,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 6449,
+              "input_byte_end": 6461,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 7466,
+              "input_byte_end": 7478,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 8426,
+              "input_byte_end": 8438,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 9150,
+              "input_byte_end": 9162,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 9536,
+              "input_byte_end": 9548,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 10200,
+              "input_byte_end": 10212,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 10305,
+              "input_byte_end": 10317,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 10573,
+              "input_byte_end": 10585,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 11299,
+              "input_byte_end": 11311,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 11707,
+              "input_byte_end": 11719,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 12374,
+              "input_byte_end": 12386,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 12483,
+              "input_byte_end": 12495,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 12751,
+              "input_byte_end": 12763,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 13363,
+              "input_byte_end": 13375,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 13683,
+              "input_byte_end": 13695,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 14297,
+              "input_byte_end": 14309,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 14621,
+              "input_byte_end": 14633,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 15269,
+              "input_byte_end": 15281,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 15548,
+              "input_byte_end": 15560,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 16183,
+              "input_byte_end": 16195,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 16578,
+              "input_byte_end": 16590,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 17213,
+              "input_byte_end": 17225,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 17559,
+              "input_byte_end": 17571,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 18200,
+              "input_byte_end": 18212,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 18563,
+              "input_byte_end": 18575,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 19203,
+              "input_byte_end": 19215,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 19629,
+              "input_byte_end": 19641,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 20265,
+              "input_byte_end": 20277,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 20610,
+              "input_byte_end": 20622,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 21216,
+              "input_byte_end": 21228,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 21557,
+              "input_byte_end": 21569,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 22216,
+              "input_byte_end": 22228,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 22498,
+              "input_byte_end": 22510,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 23138,
+              "input_byte_end": 23150,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 23535,
+              "input_byte_end": 23547,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 24175,
+              "input_byte_end": 24187,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 24604,
+              "input_byte_end": 24616,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 25243,
+              "input_byte_end": 25255,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 25592,
+              "input_byte_end": 25604,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 26236,
+              "input_byte_end": 26248,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 26517,
+              "input_byte_end": 26529,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 27154,
+              "input_byte_end": 27166,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 27550,
+              "input_byte_end": 27562,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 28188,
+              "input_byte_end": 28200,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 28615,
+              "input_byte_end": 28627,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 29253,
+              "input_byte_end": 29265,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 29601,
+              "input_byte_end": 29613,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 30243,
+              "input_byte_end": 30255,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 30521,
+              "input_byte_end": 30533,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 31156,
+              "input_byte_end": 31168,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 31550,
+              "input_byte_end": 31562,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 32186,
+              "input_byte_end": 32198,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 32611,
+              "input_byte_end": 32623,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 33247,
+              "input_byte_end": 33259,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 33593,
+              "input_byte_end": 33605,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 34198,
+              "input_byte_end": 34210,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 34541,
+              "input_byte_end": 34553,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 35158,
+              "input_byte_end": 35170,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 35497,
+              "input_byte_end": 35509,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 36455,
+              "input_byte_end": 36467,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 37095,
+              "input_byte_end": 37107,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 37215,
+              "input_byte_end": 37227,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 37318,
+              "input_byte_end": 37330,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 37602,
+              "input_byte_end": 37614,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 38806,
+              "input_byte_end": 38818,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 38965,
+              "input_byte_end": 38977,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 39145,
+              "input_byte_end": 39157,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 39384,
+              "input_byte_end": 39396,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 39520,
+              "input_byte_end": 39532,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 39561,
+              "input_byte_end": 39573,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 39610,
+              "input_byte_end": 39619,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 39633,
+              "input_byte_end": 39645,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 39829,
+              "input_byte_end": 39841,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 39928,
+              "input_byte_end": 39940,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 40024,
+              "input_byte_end": 40036,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 40525,
+              "input_byte_end": 40537,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 40841,
+              "input_byte_end": 40853,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 41468,
+              "input_byte_end": 41480,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 41807,
+              "input_byte_end": 41819,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 43020,
+              "input_byte_end": 43032,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 43179,
+              "input_byte_end": 43191,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 43329,
+              "input_byte_end": 43341,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 43531,
+              "input_byte_end": 43543,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 43664,
+              "input_byte_end": 43676,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 43705,
+              "input_byte_end": 43717,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 43754,
+              "input_byte_end": 43763,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 43777,
+              "input_byte_end": 43789,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 43884,
+              "input_byte_end": 43896,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 44279,
+              "input_byte_end": 44291,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 44627,
+              "input_byte_end": 44639,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 45844,
+              "input_byte_end": 45856,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 46003,
+              "input_byte_end": 46015,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 46097,
+              "input_byte_end": 46109,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 46201,
+              "input_byte_end": 46213,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 46319,
+              "input_byte_end": 46331,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 46490,
+              "input_byte_end": 46502,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 46692,
+              "input_byte_end": 46704,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 46825,
+              "input_byte_end": 46837,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 46866,
+              "input_byte_end": 46878,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 46915,
+              "input_byte_end": 46924,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 46938,
+              "input_byte_end": 46950,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 47045,
+              "input_byte_end": 47057,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 47146,
+              "input_byte_end": 47158,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 47444,
+              "input_byte_end": 47456,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 48653,
+              "input_byte_end": 48665,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 48812,
+              "input_byte_end": 48824,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 48962,
+              "input_byte_end": 48974,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 49164,
+              "input_byte_end": 49176,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 49297,
+              "input_byte_end": 49309,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 49338,
+              "input_byte_end": 49350,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 49387,
+              "input_byte_end": 49396,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 49410,
+              "input_byte_end": 49422,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 49517,
+              "input_byte_end": 49529,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 49867,
+              "input_byte_end": 49879,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 50286,
+              "input_byte_end": 50298,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 50412,
+              "input_byte_end": 50424,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 51727,
+              "input_byte_end": 51739,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 51846,
+              "input_byte_end": 51858,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 51966,
+              "input_byte_end": 51978,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 52118,
+              "input_byte_end": 52130,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 52231,
+              "input_byte_end": 52243,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 52262,
+              "input_byte_end": 52274,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 52311,
+              "input_byte_end": 52320,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 52324,
+              "input_byte_end": 52336,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 52411,
+              "input_byte_end": 52423,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 52611,
+              "input_byte_end": 52623,
+              "replacement": "<HOME>"
+            }
+          ]
+        }
+      ],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "ci/runs/41894905159/anthropic-saved-log-review-addendum-r2.md",
+      "kind": "report",
+      "original_sha256": "8efceb49749249c9c56cde77c34327e48ae940b98d2fdd70f642d6d7b5b7b149",
+      "original_size_bytes": 2044,
+      "public_path": "ci/runs/41894905159/anthropic-saved-log-review-addendum-r2.md",
+      "public_sha256": "8efceb49749249c9c56cde77c34327e48ae940b98d2fdd70f642d6d7b5b7b149",
+      "public_size_bytes": 2044,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "ci/runs/41894905159/anthropic-saved-log-review-r1.json",
+      "kind": "manifest",
+      "original_sha256": "74cbe83b912386bc724841f6484ff1f37244f18978bd4acf216a237ddfff1bf3",
+      "original_size_bytes": 32458,
+      "public_path": "ci/runs/41894905159/anthropic-saved-log-review-r1.json",
+      "public_sha256": "74cbe83b912386bc724841f6484ff1f37244f18978bd4acf216a237ddfff1bf3",
+      "public_size_bytes": 32458,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "ci/runs/41894905159/anthropic-saved-log-review-r1.md",
+      "kind": "report",
+      "original_sha256": "b3487b4086b714e6e75293502ffe318f1453de5cf67baba696f4758260097b90",
+      "original_size_bytes": 5569,
+      "public_path": "ci/runs/41894905159/anthropic-saved-log-review-r1.md",
+      "public_sha256": "b3487b4086b714e6e75293502ffe318f1453de5cf67baba696f4758260097b90",
+      "public_size_bytes": 5569,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
       "path": "ci/workflow-template.yml",
       "kind": "source",
-      "original_sha256": "64d401c279f97d584c800f3900899eeeb7204e5489b83ec0ad129dceee73eacf",
-      "original_size_bytes": 5836,
+      "original_sha256": "68335be10ee348456b4ffc21f3a4cc5d5c39394a1bb7e5f9fd825338afb26e30",
+      "original_size_bytes": 9681,
       "public_path": ".github/workflows/replicate.yml",
-      "public_sha256": "64d401c279f97d584c800f3900899eeeb7204e5489b83ec0ad129dceee73eacf",
-      "public_size_bytes": 5836,
+      "public_sha256": "68335be10ee348456b4ffc21f3a4cc5d5c39394a1bb7e5f9fd825338afb26e30",
+      "public_size_bytes": 9681,
       "public_mode": "644",
       "copy_kind": "byte_identical",
       "redactions": [],
@@ -1434,6 +2339,34 @@
       "private_ledger_dependency_in_original": false
     },
     {
+      "path": "openai/verification-readiness-r1.md",
+      "kind": "report",
+      "original_sha256": "a62df7e19e7f6881c8c286b4b69826ec43a261bea5dd81d796fae247f3fa6031",
+      "original_size_bytes": 8626,
+      "public_path": "openai/verification-readiness-r1.md",
+      "public_sha256": "c4d8f8bf7b5e7431170257b3c6f4781d359a551cedd92fd8afb221e0c1df19c1",
+      "public_size_bytes": 8570,
+      "public_mode": "644",
+      "copy_kind": "sanitized_derivative",
+      "redactions": [
+        {
+          "rule": "local_replication_prefix",
+          "input_sha256": "a62df7e19e7f6881c8c286b4b69826ec43a261bea5dd81d796fae247f3fa6031",
+          "output_sha256": "c4d8f8bf7b5e7431170257b3c6f4781d359a551cedd92fd8afb221e0c1df19c1",
+          "replacements": [
+            {
+              "input_byte_start": 4872,
+              "input_byte_end": 4946,
+              "replacement": "<REPLICATION_ROOT>"
+            }
+          ]
+        }
+      ],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
       "path": "openai/workspace-config-r2.json",
       "kind": "manifest",
       "original_sha256": "a56c999ec870742bee9c51be2bb3199d358d77876d5e7d49492f5ad880938413",
@@ -1509,48 +2442,63 @@
       "private_ledger_dependency_in_original": false
     },
     {
+      "path": "publication/export-control-r6.json",
+      "kind": "manifest",
+      "original_sha256": "a7371e72618842f38b84bb51c05a0d7c0fb3363a14638f30790ce412970fd1b7",
+      "original_size_bytes": 1188,
+      "public_path": "publication/export-control-r6.json",
+      "public_sha256": "a7371e72618842f38b84bb51c05a0d7c0fb3363a14638f30790ce412970fd1b7",
+      "public_size_bytes": 1188,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
       "path": "publish_package.py",
       "kind": "source",
-      "original_sha256": "06080187683bf0e0d474623d620f44e872dd233e708b29d9c60bdcc7e70e0cd3",
-      "original_size_bytes": 32226,
+      "original_sha256": "a9ef5079f3c760d1b5b84ca3ec4d866d7de996b343563fd180d98c983789f875",
+      "original_size_bytes": 36144,
       "public_path": "publish_package.py",
-      "public_sha256": "40826387899f2c579aac57321e026187ea4846465a6e10d3aaa52ea3c30f9e27",
-      "public_size_bytes": 31517,
+      "public_sha256": "29bec3a9796706ec3cfdb4bf1ce54e2129c3609e46e08afb06d1486ca6242988",
+      "public_size_bytes": 35050,
       "public_mode": "644",
       "copy_kind": "explicit_portable_python_derivative",
       "redactions": [
         {
           "rule": "remove_sensitive_json_fields_including_full_PATH",
-          "input_sha256": "06080187683bf0e0d474623d620f44e872dd233e708b29d9c60bdcc7e70e0cd3",
-          "output_sha256": "33b4012e3027393bbc482e84a0d6a268642332428e48a864f8dcc968c0b68aca",
+          "input_sha256": "a9ef5079f3c760d1b5b84ca3ec4d866d7de996b343563fd180d98c983789f875",
+          "output_sha256": "076d630ebabf62805c325e15f8e224323c6030febb1fbf53b5d9dd1b9797181f",
           "replacements": [
             {
-              "input_byte_start": 27508,
-              "input_byte_end": 27545,
+              "input_byte_start": 31426,
+              "input_byte_end": 31463,
               "replacement": "\"<REDACTED FIELD>\""
             }
           ]
         },
         {
           "rule": "home_prefix",
-          "input_sha256": "33b4012e3027393bbc482e84a0d6a268642332428e48a864f8dcc968c0b68aca",
-          "output_sha256": "25428ed0363306acb821ef8a81776230652bac1e4a69a4f31303b7f78c1b42d2",
+          "input_sha256": "076d630ebabf62805c325e15f8e224323c6030febb1fbf53b5d9dd1b9797181f",
+          "output_sha256": "44c3e383beabea6c63e54394e84004492565dc2523ea44b72d1b628142193c1f",
           "replacements": [
             {
-              "input_byte_start": 26803,
-              "input_byte_end": 26821,
+              "input_byte_start": 30721,
+              "input_byte_end": 30739,
               "replacement": "<HOME>"
             }
           ]
         },
         {
           "rule": "sensitive_plaintext_field",
-          "input_sha256": "25428ed0363306acb821ef8a81776230652bac1e4a69a4f31303b7f78c1b42d2",
-          "output_sha256": "8b35d92b6c56026b4bab4d09ef3d32965c3bcd3b649ee9b628e0cebe1d788ec9",
+          "input_sha256": "44c3e383beabea6c63e54394e84004492565dc2523ea44b72d1b628142193c1f",
+          "output_sha256": "8197b62d069351a76e48f4b368918fcb0e477b3b41bf6f6324eeb75ed50a03b6",
           "replacements": [
             {
-              "input_byte_start": 5663,
-              "input_byte_end": 5789,
+              "input_byte_start": 7165,
+              "input_byte_end": 7291,
               "replacement": "<SENSITIVE FIELD REDACTED>"
             }
           ]
@@ -1558,8 +2506,8 @@
       ],
       "redacted_source_view": {
         "path": "source-views/publish_package.py.txt",
-        "sha256": "8b35d92b6c56026b4bab4d09ef3d32965c3bcd3b649ee9b628e0cebe1d788ec9",
-        "size_bytes": 32095
+        "sha256": "8197b62d069351a76e48f4b368918fcb0e477b3b41bf6f6324eeb75ed50a03b6",
+        "size_bytes": 36013
       },
       "portable_transform": "Python AST literal transformation plus ast.unparse",
       "private_ledger_dependency_in_original": true
@@ -2188,6 +3136,51 @@
       "private_ledger_dependency_in_original": true
     },
     {
+      "path": "verification/ANCESTOR_CACHE-r1.md",
+      "kind": "report",
+      "original_sha256": "b0a932abc1d0df3894570b0aa48511abe38adcc720b7156585e9c6964afe2893",
+      "original_size_bytes": 4609,
+      "public_path": "verification/ANCESTOR_CACHE-r1.md",
+      "public_sha256": "b0a932abc1d0df3894570b0aa48511abe38adcc720b7156585e9c6964afe2893",
+      "public_size_bytes": 4609,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": true
+    },
+    {
+      "path": "verification/ANCESTOR_CACHE_AVAILABILITY-r2.md",
+      "kind": "report",
+      "original_sha256": "4c287077ba3568550a30125296d5b87123f8e0defce9ec8ab7276a58a5d35b9f",
+      "original_size_bytes": 2687,
+      "public_path": "verification/ANCESTOR_CACHE_AVAILABILITY-r2.md",
+      "public_sha256": "4c287077ba3568550a30125296d5b87123f8e0defce9ec8ab7276a58a5d35b9f",
+      "public_size_bytes": 2687,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "verification/ANTHROPIC_CONTINUATION-r3.md",
+      "kind": "report",
+      "original_sha256": "ce437a83a4b80c437e9285046f9e22f7b37c141bb8957c396e4353aa5a9d7fd4",
+      "original_size_bytes": 2038,
+      "public_path": "verification/ANTHROPIC_CONTINUATION-r3.md",
+      "public_sha256": "ce437a83a4b80c437e9285046f9e22f7b37c141bb8957c396e4353aa5a9d7fd4",
+      "public_size_bytes": 2038,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
       "path": "verification/AuditTargets.lean",
       "kind": "source",
       "original_sha256": "a78f30e0439e85d3a9ae51828e0e42c248c027a7fcfeb4c4fb16cb776fae0b05",
@@ -2225,6 +3218,126 @@
       "public_path": "verification/REVIEW_UPDATE_R2.md",
       "public_sha256": "35d09414c59c9aa9379d3f6864998dec0e4fdab02b2962ae7ef33777dc4b11d9",
       "public_size_bytes": 5509,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "verification/ancestor-cache-actual-implementation-review-r1.json",
+      "kind": "manifest",
+      "original_sha256": "d0033596b533bf092943de436ea97d356e834698907b4b302db6b8d88b32db65",
+      "original_size_bytes": 9966,
+      "public_path": "verification/ancestor-cache-actual-implementation-review-r1.json",
+      "public_sha256": "d0033596b533bf092943de436ea97d356e834698907b4b302db6b8d88b32db65",
+      "public_size_bytes": 9966,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "verification/ancestor-cache-actual-implementation-review-r2.json",
+      "kind": "manifest",
+      "original_sha256": "003f92355acaf58922487c37dcca192dd9f8006ea75eef8ff43c19ffe1a1f6cb",
+      "original_size_bytes": 10351,
+      "public_path": "verification/ancestor-cache-actual-implementation-review-r2.json",
+      "public_sha256": "003f92355acaf58922487c37dcca192dd9f8006ea75eef8ff43c19ffe1a1f6cb",
+      "public_size_bytes": 10351,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "verification/ancestor-cache-control-result-r1.json",
+      "kind": "manifest",
+      "original_sha256": "c63bbb1a7b72c17f74a3890c6895b9192a421584f52e9b47fa3b10863ed2a24e",
+      "original_size_bytes": 3828,
+      "public_path": "verification/ancestor-cache-control-result-r1.json",
+      "public_sha256": "c63bbb1a7b72c17f74a3890c6895b9192a421584f52e9b47fa3b10863ed2a24e",
+      "public_size_bytes": 3828,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "verification/ancestor_cache_control_r1.py",
+      "kind": "source",
+      "original_sha256": "70e14ed028189eb9c67a77c26d5c8610915ec8e013c270da14626b3c461e0cc8",
+      "original_size_bytes": 12037,
+      "public_path": "verification/ancestor_cache_control_r1.py",
+      "public_sha256": "70e14ed028189eb9c67a77c26d5c8610915ec8e013c270da14626b3c461e0cc8",
+      "public_size_bytes": 12037,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "verification/cache-policy-control-result-r2.json",
+      "kind": "manifest",
+      "original_sha256": "9b472c23ea355e55893a8e8b68e3d9446bdcde0d9f361d8887ab4aae71f856d4",
+      "original_size_bytes": 19667,
+      "public_path": "verification/cache-policy-control-result-r2.json",
+      "public_sha256": "9b472c23ea355e55893a8e8b68e3d9446bdcde0d9f361d8887ab4aae71f856d4",
+      "public_size_bytes": 19667,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "verification/cache-policy-control-result-r3.json",
+      "kind": "manifest",
+      "original_sha256": "924d90ef084aaff69b752d8e6f6ee41aa282d42e5f4bf62c8458a9d67fc651b2",
+      "original_size_bytes": 20057,
+      "public_path": "verification/cache-policy-control-result-r3.json",
+      "public_sha256": "924d90ef084aaff69b752d8e6f6ee41aa282d42e5f4bf62c8458a9d67fc651b2",
+      "public_size_bytes": 20057,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "verification/cache_policy_control_r2.py",
+      "kind": "source",
+      "original_sha256": "52bf6fda2d435a61ba95a1db3f26d1562df71fe0745e8f5a5758c7d724105e2e",
+      "original_size_bytes": 7791,
+      "public_path": "verification/cache_policy_control_r2.py",
+      "public_sha256": "52bf6fda2d435a61ba95a1db3f26d1562df71fe0745e8f5a5758c7d724105e2e",
+      "public_size_bytes": 7791,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "verification/cache_policy_control_r3.py",
+      "kind": "source",
+      "original_sha256": "186bd828553661cb833f18b891e1389197f1dc61b56a8d354bc81bfec5ce6a2f",
+      "original_size_bytes": 8915,
+      "public_path": "verification/cache_policy_control_r3.py",
+      "public_sha256": "186bd828553661cb833f18b891e1389197f1dc61b56a8d354bc81bfec5ce6a2f",
+      "public_size_bytes": 8915,
       "public_mode": "644",
       "copy_kind": "byte_identical",
       "redactions": [],
@@ -2381,6 +3494,51 @@
       "public_path": "verification/compiler-gate/lean_gate.c",
       "public_sha256": "54b033bd6f90cd3d88682d5ba17256fd1583489692d8bea32a6e41f0268d1908",
       "public_size_bytes": 5927,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "verification/export-sysroot-control-result-r1.json",
+      "kind": "manifest",
+      "original_sha256": "78294fd4de5afe05d40c4a10af897eb094945d245c90437d7cb4724b359556de",
+      "original_size_bytes": 8505,
+      "public_path": "verification/export-sysroot-control-result-r1.json",
+      "public_sha256": "78294fd4de5afe05d40c4a10af897eb094945d245c90437d7cb4724b359556de",
+      "public_size_bytes": 8505,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "verification/export_sysroot_control_r1.py",
+      "kind": "source",
+      "original_sha256": "01c8f500356e9a6a23f9faafbd586281f31563f55a0f4685c8ebfc342d8bd1d2",
+      "original_size_bytes": 5391,
+      "public_path": "verification/export_sysroot_control_r1.py",
+      "public_sha256": "01c8f500356e9a6a23f9faafbd586281f31563f55a0f4685c8ebfc342d8bd1d2",
+      "public_size_bytes": 5391,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "verification/r6-input-identities-r1.json",
+      "kind": "manifest",
+      "original_sha256": "9c189e1cd67595a8820a3c5220182a32b8c17393bb721f5bca52ab31ba652952",
+      "original_size_bytes": 12592,
+      "public_path": "verification/r6-input-identities-r1.json",
+      "public_sha256": "9c189e1cd67595a8820a3c5220182a32b8c17393bb721f5bca52ab31ba652952",
+      "public_size_bytes": 12592,
       "public_mode": "644",
       "copy_kind": "byte_identical",
       "redactions": [],
@@ -2987,6 +4145,1718 @@
             {
               "input_byte_start": 2083,
               "input_byte_end": 2119,
+              "replacement": "<UUID REDACTED>"
+            }
+          ]
+        }
+      ],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "ci/runs/41894905159/anthropic-job-126801716984.raw.log",
+      "kind": "completed_log",
+      "original_sha256": "96b5a97a88747174e013598c24e73eba3c2f1e2943e112f5f80ade7a44cf0574",
+      "original_size_bytes": 241386,
+      "public_path": "ci/runs/41894905159/anthropic-job-126801716984.raw.log",
+      "public_sha256": "58e5cc3dfb465a8277d9a1a4ca579f4c4bc72ee88c5169938414f3bee30b731c",
+      "public_size_bytes": 234755,
+      "public_mode": "644",
+      "copy_kind": "sanitized_derivative",
+      "redactions": [
+        {
+          "rule": "full_PATH_quoted_argv_data_only",
+          "input_sha256": "96b5a97a88747174e013598c24e73eba3c2f1e2943e112f5f80ade7a44cf0574",
+          "output_sha256": "87ccf9c864725d99983c25ce17a22b69d728fbfb465a603fbeea21bffddbcd56",
+          "replacements": [
+            {
+              "input_byte_start": 19781,
+              "input_byte_end": 20091,
+              "replacement": "PATH=<PATH FIELD REDACTED>"
+            },
+            {
+              "input_byte_start": 22278,
+              "input_byte_end": 22588,
+              "replacement": "PATH=<PATH FIELD REDACTED>"
+            },
+            {
+              "input_byte_start": 24523,
+              "input_byte_end": 24833,
+              "replacement": "PATH=<PATH FIELD REDACTED>"
+            },
+            {
+              "input_byte_start": 26730,
+              "input_byte_end": 27040,
+              "replacement": "PATH=<PATH FIELD REDACTED>"
+            },
+            {
+              "input_byte_start": 105796,
+              "input_byte_end": 106181,
+              "replacement": "PATH=<PATH FIELD REDACTED>"
+            },
+            {
+              "input_byte_start": 196266,
+              "input_byte_end": 196651,
+              "replacement": "PATH=<PATH FIELD REDACTED>"
+            },
+            {
+              "input_byte_start": 200507,
+              "input_byte_end": 200889,
+              "replacement": "PATH=<PATH FIELD REDACTED>"
+            },
+            {
+              "input_byte_start": 203154,
+              "input_byte_end": 203536,
+              "replacement": "PATH=<PATH FIELD REDACTED>"
+            },
+            {
+              "input_byte_start": 205890,
+              "input_byte_end": 206272,
+              "replacement": "PATH=<PATH FIELD REDACTED>"
+            },
+            {
+              "input_byte_start": 210278,
+              "input_byte_end": 210660,
+              "replacement": "PATH=<PATH FIELD REDACTED>"
+            },
+            {
+              "input_byte_start": 212932,
+              "input_byte_end": 213314,
+              "replacement": "PATH=<PATH FIELD REDACTED>"
+            },
+            {
+              "input_byte_start": 215809,
+              "input_byte_end": 216191,
+              "replacement": "PATH=<PATH FIELD REDACTED>"
+            },
+            {
+              "input_byte_start": 219068,
+              "input_byte_end": 219450,
+              "replacement": "PATH=<PATH FIELD REDACTED>"
+            },
+            {
+              "input_byte_start": 234954,
+              "input_byte_end": 235336,
+              "replacement": "PATH=<PATH FIELD REDACTED>"
+            }
+          ]
+        },
+        {
+          "rule": "home_prefix",
+          "input_sha256": "87ccf9c864725d99983c25ce17a22b69d728fbfb465a603fbeea21bffddbcd56",
+          "output_sha256": "f3c299d8f8806f20ffa4450f9e7052665a98b194162ed64f755afc6861cd517f",
+          "replacements": [
+            {
+              "input_byte_start": 3279,
+              "input_byte_end": 3291,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 3549,
+              "input_byte_end": 3561,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 3851,
+              "input_byte_end": 3863,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 3968,
+              "input_byte_end": 3980,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 4153,
+              "input_byte_end": 4165,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 5243,
+              "input_byte_end": 5255,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 15794,
+              "input_byte_end": 15806,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 16020,
+              "input_byte_end": 16032,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 16499,
+              "input_byte_end": 16511,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 16756,
+              "input_byte_end": 16768,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 17432,
+              "input_byte_end": 17444,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 18419,
+              "input_byte_end": 18431,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 19414,
+              "input_byte_end": 19426,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 19522,
+              "input_byte_end": 19534,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 19642,
+              "input_byte_end": 19654,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 19823,
+              "input_byte_end": 19835,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 19854,
+              "input_byte_end": 19866,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 19903,
+              "input_byte_end": 19912,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 19916,
+              "input_byte_end": 19928,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 20261,
+              "input_byte_end": 20273,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 20481,
+              "input_byte_end": 20493,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 21627,
+              "input_byte_end": 21639,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 21735,
+              "input_byte_end": 21747,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 21855,
+              "input_byte_end": 21867,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 22036,
+              "input_byte_end": 22048,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 22067,
+              "input_byte_end": 22079,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 22116,
+              "input_byte_end": 22125,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 22129,
+              "input_byte_end": 22141,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 22474,
+              "input_byte_end": 22486,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 22737,
+              "input_byte_end": 22749,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 23588,
+              "input_byte_end": 23600,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 23696,
+              "input_byte_end": 23708,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 23816,
+              "input_byte_end": 23828,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 23997,
+              "input_byte_end": 24009,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 24028,
+              "input_byte_end": 24040,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 24077,
+              "input_byte_end": 24086,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 24382,
+              "input_byte_end": 24394,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 25511,
+              "input_byte_end": 25523,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 25619,
+              "input_byte_end": 25631,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 25739,
+              "input_byte_end": 25751,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 25920,
+              "input_byte_end": 25932,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 25951,
+              "input_byte_end": 25963,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 26000,
+              "input_byte_end": 26009,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 26347,
+              "input_byte_end": 26359,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 27041,
+              "input_byte_end": 27053,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 27599,
+              "input_byte_end": 27611,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 28390,
+              "input_byte_end": 28402,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 34890,
+              "input_byte_end": 34902,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 35376,
+              "input_byte_end": 35388,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 35688,
+              "input_byte_end": 35700,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 36771,
+              "input_byte_end": 36783,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 37114,
+              "input_byte_end": 37126,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 37814,
+              "input_byte_end": 37826,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 37899,
+              "input_byte_end": 37911,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 38094,
+              "input_byte_end": 38106,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 38375,
+              "input_byte_end": 38387,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 38460,
+              "input_byte_end": 38472,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 38695,
+              "input_byte_end": 38707,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 39183,
+              "input_byte_end": 39195,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 39507,
+              "input_byte_end": 39519,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 40673,
+              "input_byte_end": 40685,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 41038,
+              "input_byte_end": 41050,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 41749,
+              "input_byte_end": 41761,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 41838,
+              "input_byte_end": 41850,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 42033,
+              "input_byte_end": 42045,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 42319,
+              "input_byte_end": 42331,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 42408,
+              "input_byte_end": 42420,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 42643,
+              "input_byte_end": 42655,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 43077,
+              "input_byte_end": 43089,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 43312,
+              "input_byte_end": 43324,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 43710,
+              "input_byte_end": 43722,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 43987,
+              "input_byte_end": 43999,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 44423,
+              "input_byte_end": 44435,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 44662,
+              "input_byte_end": 44674,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 45063,
+              "input_byte_end": 45075,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 45344,
+              "input_byte_end": 45356,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 48089,
+              "input_byte_end": 48101,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 48291,
+              "input_byte_end": 48303,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 49543,
+              "input_byte_end": 49555,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 49675,
+              "input_byte_end": 49687,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 49921,
+              "input_byte_end": 49933,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 50358,
+              "input_byte_end": 50370,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 50636,
+              "input_byte_end": 50648,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 50901,
+              "input_byte_end": 50913,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 51223,
+              "input_byte_end": 51235,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 51660,
+              "input_byte_end": 51672,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 51899,
+              "input_byte_end": 51911,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 52169,
+              "input_byte_end": 52181,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 52452,
+              "input_byte_end": 52464,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 52895,
+              "input_byte_end": 52907,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 53141,
+              "input_byte_end": 53153,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 53410,
+              "input_byte_end": 53422,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 53700,
+              "input_byte_end": 53712,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 54142,
+              "input_byte_end": 54154,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 54442,
+              "input_byte_end": 54454,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 54891,
+              "input_byte_end": 54903,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 55234,
+              "input_byte_end": 55246,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 55672,
+              "input_byte_end": 55684,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 55912,
+              "input_byte_end": 55924,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 56318,
+              "input_byte_end": 56330,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 56600,
+              "input_byte_end": 56612,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 60225,
+              "input_byte_end": 60237,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 60470,
+              "input_byte_end": 60482,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 67461,
+              "input_byte_end": 67473,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 67739,
+              "input_byte_end": 67751,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 68200,
+              "input_byte_end": 68212,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 68406,
+              "input_byte_end": 68418,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 69662,
+              "input_byte_end": 69674,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 69798,
+              "input_byte_end": 69810,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 70047,
+              "input_byte_end": 70059,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 70489,
+              "input_byte_end": 70501,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 70770,
+              "input_byte_end": 70782,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 71039,
+              "input_byte_end": 71051,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 71363,
+              "input_byte_end": 71375,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 71805,
+              "input_byte_end": 71817,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 72109,
+              "input_byte_end": 72121,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 72560,
+              "input_byte_end": 72572,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 72906,
+              "input_byte_end": 72918,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 73347,
+              "input_byte_end": 73359,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 73591,
+              "input_byte_end": 73603,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 73971,
+              "input_byte_end": 73983,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 74257,
+              "input_byte_end": 74269,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 74703,
+              "input_byte_end": 74715,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 74907,
+              "input_byte_end": 74919,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 76160,
+              "input_byte_end": 76172,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 76294,
+              "input_byte_end": 76306,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 76542,
+              "input_byte_end": 76554,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 76981,
+              "input_byte_end": 76993,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 77261,
+              "input_byte_end": 77273,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 77528,
+              "input_byte_end": 77540,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 77851,
+              "input_byte_end": 77863,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 78291,
+              "input_byte_end": 78303,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 78593,
+              "input_byte_end": 78605,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 79043,
+              "input_byte_end": 79055,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 79387,
+              "input_byte_end": 79399,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 79827,
+              "input_byte_end": 79839,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 80069,
+              "input_byte_end": 80081,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 80431,
+              "input_byte_end": 80443,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 80716,
+              "input_byte_end": 80728,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 81160,
+              "input_byte_end": 81172,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 81362,
+              "input_byte_end": 81374,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 82614,
+              "input_byte_end": 82626,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 82746,
+              "input_byte_end": 82758,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 82991,
+              "input_byte_end": 83003,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 83428,
+              "input_byte_end": 83440,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 83705,
+              "input_byte_end": 83717,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 83970,
+              "input_byte_end": 83982,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 84291,
+              "input_byte_end": 84303,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 84729,
+              "input_byte_end": 84741,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 85029,
+              "input_byte_end": 85041,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 85477,
+              "input_byte_end": 85489,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 85819,
+              "input_byte_end": 85831,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 86257,
+              "input_byte_end": 86269,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 86497,
+              "input_byte_end": 86509,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 86855,
+              "input_byte_end": 86867,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 87138,
+              "input_byte_end": 87150,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 87565,
+              "input_byte_end": 87577,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 87814,
+              "input_byte_end": 87826,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 89298,
+              "input_byte_end": 89310,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 89588,
+              "input_byte_end": 89600,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 90027,
+              "input_byte_end": 90039,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 90273,
+              "input_byte_end": 90285,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 90944,
+              "input_byte_end": 90956,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 91230,
+              "input_byte_end": 91242,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 91886,
+              "input_byte_end": 91898,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 95142,
+              "input_byte_end": 95154,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 95589,
+              "input_byte_end": 95601,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 96582,
+              "input_byte_end": 96594,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 96682,
+              "input_byte_end": 96694,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 96765,
+              "input_byte_end": 96777,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 96974,
+              "input_byte_end": 96986,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 97386,
+              "input_byte_end": 97398,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 97757,
+              "input_byte_end": 97769,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 98139,
+              "input_byte_end": 98151,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 98508,
+              "input_byte_end": 98520,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 98883,
+              "input_byte_end": 98895,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 99209,
+              "input_byte_end": 99221,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 99928,
+              "input_byte_end": 99940,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 100034,
+              "input_byte_end": 100046,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 100202,
+              "input_byte_end": 100214,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 101159,
+              "input_byte_end": 101171,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 101326,
+              "input_byte_end": 101338,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 101494,
+              "input_byte_end": 101506,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 102056,
+              "input_byte_end": 102068,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 102858,
+              "input_byte_end": 102870,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 102958,
+              "input_byte_end": 102970,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 103041,
+              "input_byte_end": 103053,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 103292,
+              "input_byte_end": 103304,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 104148,
+              "input_byte_end": 104160,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 104267,
+              "input_byte_end": 104279,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 104407,
+              "input_byte_end": 104419,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 104586,
+              "input_byte_end": 104598,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 104702,
+              "input_byte_end": 104714,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 104733,
+              "input_byte_end": 104745,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 104782,
+              "input_byte_end": 104791,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 104795,
+              "input_byte_end": 104807,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 104921,
+              "input_byte_end": 104933,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 105000,
+              "input_byte_end": 105012,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 105076,
+              "input_byte_end": 105088,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 105377,
+              "input_byte_end": 105389,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 105608,
+              "input_byte_end": 105620,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 194259,
+              "input_byte_end": 194271,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 194378,
+              "input_byte_end": 194390,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 194518,
+              "input_byte_end": 194530,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 194697,
+              "input_byte_end": 194709,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 194813,
+              "input_byte_end": 194825,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 194844,
+              "input_byte_end": 194856,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 194893,
+              "input_byte_end": 194902,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 194906,
+              "input_byte_end": 194918,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 195032,
+              "input_byte_end": 195044,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 195111,
+              "input_byte_end": 195123,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 195187,
+              "input_byte_end": 195199,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 195488,
+              "input_byte_end": 195500,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 195761,
+              "input_byte_end": 195773,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 196210,
+              "input_byte_end": 196222,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 196455,
+              "input_byte_end": 196467,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 197040,
+              "input_byte_end": 197052,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 197326,
+              "input_byte_end": 197338,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 198191,
+              "input_byte_end": 198203,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 198310,
+              "input_byte_end": 198322,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 198430,
+              "input_byte_end": 198442,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 198582,
+              "input_byte_end": 198594,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 198695,
+              "input_byte_end": 198707,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 198726,
+              "input_byte_end": 198738,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 198775,
+              "input_byte_end": 198784,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 198788,
+              "input_byte_end": 198800,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 198875,
+              "input_byte_end": 198887,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 199100,
+              "input_byte_end": 199112,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 199352,
+              "input_byte_end": 199364,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 200482,
+              "input_byte_end": 200494,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 200601,
+              "input_byte_end": 200613,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 200721,
+              "input_byte_end": 200733,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 200873,
+              "input_byte_end": 200885,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 200986,
+              "input_byte_end": 200998,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 201017,
+              "input_byte_end": 201029,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 201066,
+              "input_byte_end": 201075,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 201079,
+              "input_byte_end": 201091,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 201166,
+              "input_byte_end": 201178,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 201391,
+              "input_byte_end": 201403,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 201686,
+              "input_byte_end": 201698,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 202555,
+              "input_byte_end": 202567,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 202674,
+              "input_byte_end": 202686,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 202758,
+              "input_byte_end": 202770,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 202852,
+              "input_byte_end": 202864,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 202960,
+              "input_byte_end": 202972,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 203101,
+              "input_byte_end": 203113,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 203253,
+              "input_byte_end": 203265,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 203366,
+              "input_byte_end": 203378,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 203397,
+              "input_byte_end": 203409,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 203446,
+              "input_byte_end": 203455,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 203459,
+              "input_byte_end": 203471,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 203546,
+              "input_byte_end": 203558,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 203637,
+              "input_byte_end": 203649,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 203859,
+              "input_byte_end": 203871,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 206587,
+              "input_byte_end": 206599,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 206706,
+              "input_byte_end": 206718,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 206790,
+              "input_byte_end": 206802,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 206884,
+              "input_byte_end": 206896,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 206992,
+              "input_byte_end": 207004,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 207133,
+              "input_byte_end": 207145,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 207285,
+              "input_byte_end": 207297,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 207398,
+              "input_byte_end": 207410,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 207429,
+              "input_byte_end": 207441,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 207478,
+              "input_byte_end": 207487,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 207491,
+              "input_byte_end": 207503,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 207578,
+              "input_byte_end": 207590,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 207669,
+              "input_byte_end": 207681,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 207934,
+              "input_byte_end": 207946,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 209192,
+              "input_byte_end": 209204,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 209311,
+              "input_byte_end": 209323,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 209431,
+              "input_byte_end": 209443,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 209583,
+              "input_byte_end": 209595,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 209696,
+              "input_byte_end": 209708,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 209727,
+              "input_byte_end": 209739,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 209776,
+              "input_byte_end": 209785,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 209789,
+              "input_byte_end": 209801,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 209876,
+              "input_byte_end": 209888,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 210076,
+              "input_byte_end": 210088,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 210379,
+              "input_byte_end": 210391,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 211713,
+              "input_byte_end": 211725,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 211832,
+              "input_byte_end": 211844,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 211952,
+              "input_byte_end": 211964,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 212104,
+              "input_byte_end": 212116,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 212217,
+              "input_byte_end": 212229,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 212248,
+              "input_byte_end": 212260,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 212297,
+              "input_byte_end": 212306,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 212310,
+              "input_byte_end": 212322,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 212397,
+              "input_byte_end": 212409,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 212597,
+              "input_byte_end": 212609,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 212943,
+              "input_byte_end": 212955,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 213042,
+              "input_byte_end": 213054,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 214616,
+              "input_byte_end": 214628,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 214735,
+              "input_byte_end": 214747,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 214855,
+              "input_byte_end": 214867,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 215007,
+              "input_byte_end": 215019,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 215120,
+              "input_byte_end": 215132,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 215151,
+              "input_byte_end": 215163,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 215200,
+              "input_byte_end": 215209,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 215213,
+              "input_byte_end": 215225,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 215300,
+              "input_byte_end": 215312,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 215500,
+              "input_byte_end": 215512,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 228711,
+              "input_byte_end": 228723,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 228890,
+              "input_byte_end": 228902,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 229166,
+              "input_byte_end": 229178,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 229489,
+              "input_byte_end": 229501,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 230146,
+              "input_byte_end": 230158,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 230265,
+              "input_byte_end": 230277,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 230385,
+              "input_byte_end": 230397,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 230537,
+              "input_byte_end": 230549,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 230650,
+              "input_byte_end": 230662,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 230681,
+              "input_byte_end": 230693,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 230730,
+              "input_byte_end": 230739,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 230743,
+              "input_byte_end": 230755,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 230830,
+              "input_byte_end": 230842,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 231030,
+              "input_byte_end": 231042,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 232930,
+              "input_byte_end": 232942,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 235103,
+              "input_byte_end": 235115,
+              "replacement": "<HOME>"
+            },
+            {
+              "input_byte_start": 235405,
+              "input_byte_end": 235417,
+              "replacement": "<HOME>"
+            }
+          ]
+        },
+        {
+          "rule": "uuid",
+          "input_sha256": "f3c299d8f8806f20ffa4450f9e7052665a98b194162ed64f755afc6861cd517f",
+          "output_sha256": "58e5cc3dfb465a8277d9a1a4ca579f4c4bc72ee88c5169938414f3bee30b731c",
+          "replacements": [
+            {
+              "input_byte_start": 411,
+              "input_byte_end": 447,
+              "replacement": "<UUID REDACTED>"
+            },
+            {
+              "input_byte_start": 3561,
+              "input_byte_end": 3597,
+              "replacement": "<UUID REDACTED>"
+            },
+            {
+              "input_byte_start": 233267,
+              "input_byte_end": 233303,
               "replacement": "<UUID REDACTED>"
             }
           ]

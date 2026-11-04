@@ -1,0 +1,196 @@
+{
+  "format": "eth-exact-ancestor-cache-readonly-review-v1",
+  "observed_utc": "2026-11-04T20:28:43.105813+00:00",
+  "author_label": "codex-eth-anthropic-replication",
+  "verdict": "Conditional design acknowledgment for one explicitly approved predecessor; actual cache restoration and payload validation remain unexecuted",
+  "scope": "Read-only code, frozen release diff and completed job metadata; no code edits, tests, cache download/deletion, proof execution or dispatch",
+  "reviewed_inputs": [
+    {
+      "path": "research/eth-external-replication-20261104/ci/owned_cache.py",
+      "size_bytes": 7274,
+      "sha256": "7854df30f6d14c791547e0672b19ad5f34d2b41fc1aacc264f2fdb60bb6d2bb3"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/ci/workflow-template.yml",
+      "size_bytes": 5836,
+      "sha256": "64d401c279f97d584c800f3900899eeeb7204e5489b83ec0ad129dceee73eacf"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/ci/replicate.py",
+      "size_bytes": 21177,
+      "sha256": "d3d38d581b583891fad340a377ff799dab8d396a26a947b2fffe04d74cd7b77c"
+    },
+    {
+      "path": "research/eth-external-replication-20261104/ci/runs/41894905159/anthropic-job-summary-r1.json",
+      "size_bytes": 78346,
+      "sha256": "2e387e95f158710151a01b926b89f65b146445e0dcad5fa9ed64b75b766421f8"
+    }
+  ],
+  "current_producer_delta": {
+    "file": "ci/replicate.py",
+    "old_sha256": "89a68dcc753d1b543d7262f4893da5b15275dc8f3dc23bdc5872761f84b41b28",
+    "current_sha256": "d3d38d581b583891fad340a377ff799dab8d396a26a947b2fffe04d74cd7b77c",
+    "observed_diff": "Only adds --env LEAN_SYSROOT to the harness-owned retained-export Landrun invocation, after required source/fresh/Comparator stages. Other23-row public-harness inputs match old release; workflow-template.yml is a private additional file."
+  },
+  "predecessor": {
+    "proof": "anthropic",
+    "run_id": 41894905159,
+    "cache_backend_id": 10020872295,
+    "exact_cache_key": "eth-owned-anthropic-dd4d7b438fa94c8ca1a9ea561fb4028a8e17cbce3be307a03ce84651ea925bf0-41894905159-1",
+    "backend_compressed_size_bytes": 124278111,
+    "manifest_sha256": "f03170368e5705c17d4354d5bf685822e4d4ffeb9c42f6b046413c5cd95e3ecb",
+    "python_cache_fingerprint": "9c0011429218dd9eb6addf639baad7c55358ef35c15cc96c783dca1ba61af4c0",
+    "context_sha256": "b5c68d05e79b3971cbc05a95dc8aedcc4b9188cfe9912bad1b27efbd398c2f73",
+    "completed_modules": 1050,
+    "payload_bytes": 422724863,
+    "total_uncompressed_staging_bytes": 425541455,
+    "actual_run_harness_row_count": 23,
+    "old_run_harness_rows": [
+      {
+        "path": "README.md",
+        "sha256": "610b71b4ea6a002d60d5d931f519dc0b68e21aada8e3afb0fff6e0c615cce239",
+        "size_bytes": 13542
+      },
+      {
+        "path": "cache_maintenance.py",
+        "sha256": "fc1321d4e9c687264a6517dda0ba98bf0ae7596ba519983bbdba4865f38ec6bf",
+        "size_bytes": 4631
+      },
+      {
+        "path": "check_bc_control.py",
+        "sha256": "20f71662ca0a007ea441f4217ae6605d31e0e72b3d5affb0a353079445f9d3a2",
+        "size_bytes": 4512
+      },
+      {
+        "path": "check_controls.py",
+        "sha256": "c5b5ab90b218758a43dfaab09bf72942a439cd6fe756fa0ae08408351a1ccbcb",
+        "size_bytes": 10960
+      },
+      {
+        "path": "check_display_control.py",
+        "sha256": "cbd5851a36d38e0ad5350eea64d7894d8b7708f618e1ca4210afbe46fc9f383b",
+        "size_bytes": 3795
+      },
+      {
+        "path": "check_landlock_policy_control.py",
+        "sha256": "d2471fa5e1424ef1758aa095318a1a81e07f46c1ef41525c507c803b4fcdc128",
+        "size_bytes": 4563
+      },
+      {
+        "path": "check_setup_omission_control.py",
+        "sha256": "4789ebe8874af41ac2d568403d85060b2a81f361ce3e27697b2f864a2deb8beb",
+        "size_bytes": 5400
+      },
+      {
+        "path": "check_stage_name_control.py",
+        "sha256": "749d1fb3f109f7c3878cf2b4dd3c543db3c173828af17b54756fed07413f2571",
+        "size_bytes": 3487
+      },
+      {
+        "path": "compiler_gate.c",
+        "sha256": "96947ead6565aa2d75b93c09e8bdccba31bc6558517db5df915368efc123dfb3",
+        "size_bytes": 6273
+      },
+      {
+        "path": "control-result-bc-r2.json",
+        "sha256": "71f34ef370ad5dd25b28f443960b37485c5a2f74a7a62b22345f38b31a15ba3b",
+        "size_bytes": 555
+      },
+      {
+        "path": "control-result-display-r3.json",
+        "sha256": "3e32a5e560e0e993a44738ea7eb8c69a73c68d229eaefd9c38c42f996e0ab327",
+        "size_bytes": 746
+      },
+      {
+        "path": "control-result-landlock-policy-r4.json",
+        "sha256": "868caed022e577c87af606a083497b658f495ad026ddbe176f27c11c334d8764",
+        "size_bytes": 708
+      },
+      {
+        "path": "control-result-r2.json",
+        "sha256": "be559a9f05600526547067307a10fddc94e465b5cf388c127eb614e64c36794b",
+        "size_bytes": 765
+      },
+      {
+        "path": "control-result-setup-omission-r3.json",
+        "sha256": "60560b19a484638d8cda6ce08e41be3af8ee5b1a30e7d25a055e8d2722629b6b",
+        "size_bytes": 1195
+      },
+      {
+        "path": "control-result-stage-names-r3.json",
+        "sha256": "b476322adfed7729b2b799e0044f042b0825678a40b685c2679d831af4dd60c3",
+        "size_bytes": 1934
+      },
+      {
+        "path": "control-result.json",
+        "sha256": "033bd03cc7f33daa0a7ac65413ff999beb8b81dc9c6f221a239b8c35be383aff",
+        "size_bytes": 533
+      },
+      {
+        "path": "create_gate.py",
+        "sha256": "c5af28dc306d384062ee53dbb34402ab895f82320fa2df015e0f09752959909a",
+        "size_bytes": 3524
+      },
+      {
+        "path": "landlock_abi.py",
+        "sha256": "d0853c1a67adcec4bbe22d1c44dc835f448b80eebe6502a32450faa59e17e0b0",
+        "size_bytes": 1265
+      },
+      {
+        "path": "owned_cache.py",
+        "sha256": "7854df30f6d14c791547e0672b19ad5f34d2b41fc1aacc264f2fdb60bb6d2bb3",
+        "size_bytes": 7274
+      },
+      {
+        "path": "pins.json",
+        "sha256": "e0b9f4d376b26247120dc97cee64595ea91b69fad24d5218e811d435a2910a0a",
+        "size_bytes": 1712
+      },
+      {
+        "path": "prepare_openai.py",
+        "sha256": "5c8830653d328d50dcf3c0cae1488a199ab9c9a4249bbcc3a06f6fd598369f6c",
+        "size_bytes": 5849
+      },
+      {
+        "path": "record.py",
+        "sha256": "1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0",
+        "size_bytes": 6474
+      },
+      {
+        "path": "replicate.py",
+        "sha256": "89a68dcc753d1b543d7262f4893da5b15275dc8f3dc23bdc5872761f84b41b28",
+        "size_bytes": 21152
+      }
+    ],
+    "manifest_availability": "Full manifest and cache bytes are not local; only the closed logged hash/metadata is inspected. Actual restore must verify exact bytes."
+  },
+  "fingerprint_recipe": {
+    "source": "ci/owned_cache.py:19-21",
+    "rows": "Sort the23 actual RUN_RECEIPT rows by path; use pairs (row.path,row.sha256), not full row objects or private24-file CI list.",
+    "context": "CURRENT exact project_identity (proof sources plus lean-toolchain/lakefile/lake-manifest) and CURRENT exact proof_runtime[0], using the existing serialization.",
+    "recipe": "sha256(json.dumps([proof,old_pairs,current_context],separators=(comma,colon)).encode()).hexdigest()",
+    "require": "Compare recomputed result to cached fingerprint and explicit predecessor fingerprint; separately require cached/current context SHA equality. Never replace fingerprint inside the restored manifest."
+  },
+  "minimum_acceptance_conditions": [
+    "Keep ordinary current-harness matching unchanged. Only the explicit Anthropic predecessor full key above is an additional fallback; do not infer an OpenAI key before its closed cache receipt exists.",
+    "Require actual cache-matched-key equality with that full predecessor key, or a separate exact-key restore with cache-hit=true and no restore keys. A full string placed in restore-keys is still a prefix query.",
+    "Before parsing or copying payload, verify exact predecessor manifest SHA, schema, proof and ready status. Recompute old fingerprint from pinned23 old pairs plus CURRENT exact source/config/proof-runtime context; require the current context SHA to match.",
+    "Bind compatibility to the reviewed producer delta/current driver SHA and unchanged source-build inputs; future driver/compiler/config changes require deliberate review rather than inheriting generic ancestor permission.",
+    "Retain every existing allowed-module/path, duplicate, regular-file, symlink/hardlink, exact size/SHA, total/payload cap, unmanifested-file and no-overwrite validation in owned_cache.restore103-139.",
+    "Preserve the actual restored old manifest and an old-key/old-fingerprint/current-context acceptance receipt outside the cache staging directory before finally.snapshot replaces that directory. Do not relabel or mutate old manifest identity.",
+    "Keep the normal real-prefix Lake trace check and all actual required source/fresh/Comparator/independent-kernel stages. New snapshots may use current fingerprint only through ordinary current snapshot production, with resumed-cache provenance explicit.",
+    "Preserve2GiB/proof,4GiB total owned-cache backend audits/retention and token-isolated trusted maintenance. Missing/mismatched ancestor must fail closed or follow an explicitly disclosed full rebuild, never a broad prefix fallback."
+  ],
+  "source_ranges": {
+    "owned_cache.py": "19-21 fingerprint;42-51 ownership suffixes;54-100 snapshot;103-139 restore validation/copy",
+    "replicate.py": "203-207 current project/runtime context;235 real-prefix tracecheck;258-262 one-line retained-export fix;284-288 finally snapshot",
+    "workflow-template.yml": "41-47 and91-97 current Actions key/restore prefixes"
+  },
+  "primary_actions_source": {
+    "url": "https://raw.githubusercontent.com/actions/cache/0400d5f644dc74513175e3cd8d07132dd4860809/restore/README.md",
+    "reviewed_facts": "Inputs/outputs documentation states restore-keys are prefix matched and cache-matched-key identifies the restored entry; exact cache-hit is tied to primary key.",
+    "source_url": "https://raw.githubusercontent.com/actions/cache/0400d5f644dc74513175e3cd8d07132dd4860809/src/restoreImpl.ts"
+  },
+  "smallest_alternative": "Without an explicit compatible predecessor exception, current strict harness fingerprint rejects this otherwise source-compatible cache; the simple alternative is rebuilding all source. Reusing unchanged original cache bytes under a tightly pinned compatibility rule avoids that repetition without changing the theorem or axiom policy.",
+  "limitations": "No actual old manifest payload or Linux restore was executed by this review. Conditions concern this measured post-build export-env fix, not a general cache migration mechanism. Small reads/hash/diff/authoring overhead was not fully metered; paid cloud spend USD0."
+}

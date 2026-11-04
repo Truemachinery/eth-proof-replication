@@ -1,0 +1,295 @@
+{
+  "schema": "eth-r6-input-identity-handoff/1",
+  "scope": "Final Ant-only CI candidate and named control/evidence inputs, frozen for peer/root review; no publication or dispatch by this task. Publisher may select named rows only and must retain original/public hashes for derivatives.",
+  "inputs": [
+    {
+      "path": "anthropic/ancestor-cache-review-r1.json",
+      "sha256": "fbd9639fa691d71a013ce364c73b28e052565625ac36dca6f3a0e8dd3c2ac27b",
+      "size_bytes": 10831,
+      "public_path": "anthropic/ancestor-cache-review-r1.json",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/README.md",
+      "sha256": "c8c2e4a5fdeb2c64683ea1afcadf1df6f5f515072086cd9064b626af3857c931",
+      "size_bytes": 15914,
+      "public_path": "ci/README.md",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/ancestor-cache-compatibility.json",
+      "sha256": "114a49bae310c444c5468258df7fddd74c98077370102055d051f5c46eb52d4a",
+      "size_bytes": 8513,
+      "public_path": "ci/ancestor-cache-compatibility.json",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/cache_maintenance.py",
+      "sha256": "fc1321d4e9c687264a6517dda0ba98bf0ae7596ba519983bbdba4865f38ec6bf",
+      "size_bytes": 4631,
+      "public_path": "ci/cache_maintenance.py",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/check_bc_control.py",
+      "sha256": "20f71662ca0a007ea441f4217ae6605d31e0e72b3d5affb0a353079445f9d3a2",
+      "size_bytes": 4512,
+      "public_path": "ci/check_bc_control.py",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/check_controls.py",
+      "sha256": "c5b5ab90b218758a43dfaab09bf72942a439cd6fe756fa0ae08408351a1ccbcb",
+      "size_bytes": 10960,
+      "public_path": "ci/check_controls.py",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/check_display_control.py",
+      "sha256": "cbd5851a36d38e0ad5350eea64d7894d8b7708f618e1ca4210afbe46fc9f383b",
+      "size_bytes": 3795,
+      "public_path": "ci/check_display_control.py",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/check_landlock_policy_control.py",
+      "sha256": "d2471fa5e1424ef1758aa095318a1a81e07f46c1ef41525c507c803b4fcdc128",
+      "size_bytes": 4563,
+      "public_path": "ci/check_landlock_policy_control.py",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/check_setup_omission_control.py",
+      "sha256": "4789ebe8874af41ac2d568403d85060b2a81f361ce3e27697b2f864a2deb8beb",
+      "size_bytes": 5400,
+      "public_path": "ci/check_setup_omission_control.py",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/check_stage_name_control.py",
+      "sha256": "749d1fb3f109f7c3878cf2b4dd3c543db3c173828af17b54756fed07413f2571",
+      "size_bytes": 3487,
+      "public_path": "ci/check_stage_name_control.py",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/compiler_gate.c",
+      "sha256": "96947ead6565aa2d75b93c09e8bdccba31bc6558517db5df915368efc123dfb3",
+      "size_bytes": 6273,
+      "public_path": "ci/compiler_gate.c",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/control-result-bc-r2.json",
+      "sha256": "71f34ef370ad5dd25b28f443960b37485c5a2f74a7a62b22345f38b31a15ba3b",
+      "size_bytes": 555,
+      "public_path": "ci/control-result-bc-r2.json",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/control-result-display-r3.json",
+      "sha256": "3e32a5e560e0e993a44738ea7eb8c69a73c68d229eaefd9c38c42f996e0ab327",
+      "size_bytes": 746,
+      "public_path": "ci/control-result-display-r3.json",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/control-result-landlock-policy-r4.json",
+      "sha256": "868caed022e577c87af606a083497b658f495ad026ddbe176f27c11c334d8764",
+      "size_bytes": 708,
+      "public_path": "ci/control-result-landlock-policy-r4.json",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/control-result-r2.json",
+      "sha256": "be559a9f05600526547067307a10fddc94e465b5cf388c127eb614e64c36794b",
+      "size_bytes": 765,
+      "public_path": "ci/control-result-r2.json",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/control-result-setup-omission-r3.json",
+      "sha256": "60560b19a484638d8cda6ce08e41be3af8ee5b1a30e7d25a055e8d2722629b6b",
+      "size_bytes": 1195,
+      "public_path": "ci/control-result-setup-omission-r3.json",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/control-result-stage-names-r3.json",
+      "sha256": "b476322adfed7729b2b799e0044f042b0825678a40b685c2679d831af4dd60c3",
+      "size_bytes": 1934,
+      "public_path": "ci/control-result-stage-names-r3.json",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/control-result.json",
+      "sha256": "033bd03cc7f33daa0a7ac65413ff999beb8b81dc9c6f221a239b8c35be383aff",
+      "size_bytes": 533,
+      "public_path": "ci/control-result.json",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/create_gate.py",
+      "sha256": "c5af28dc306d384062ee53dbb34402ab895f82320fa2df015e0f09752959909a",
+      "size_bytes": 3524,
+      "public_path": "ci/create_gate.py",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/landlock_abi.py",
+      "sha256": "d0853c1a67adcec4bbe22d1c44dc835f448b80eebe6502a32450faa59e17e0b0",
+      "size_bytes": 1265,
+      "public_path": "ci/landlock_abi.py",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/owned_cache.py",
+      "sha256": "dd9b47b1da0240e2fc2bf79a4e6de40543beb37cd5e316eb055f092040f382be",
+      "size_bytes": 11489,
+      "public_path": "ci/owned_cache.py",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/pins.json",
+      "sha256": "e0b9f4d376b26247120dc97cee64595ea91b69fad24d5218e811d435a2910a0a",
+      "size_bytes": 1712,
+      "public_path": "ci/pins.json",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/prepare_openai.py",
+      "sha256": "5c8830653d328d50dcf3c0cae1488a199ab9c9a4249bbcc3a06f6fd598369f6c",
+      "size_bytes": 5849,
+      "public_path": "ci/prepare_openai.py",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/record.py",
+      "sha256": "1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0",
+      "size_bytes": 6474,
+      "public_path": "ci/record.py",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/replicate.py",
+      "sha256": "d3d38d581b583891fad340a377ff799dab8d396a26a947b2fffe04d74cd7b77c",
+      "size_bytes": 21177,
+      "public_path": "ci/replicate.py",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/runs/41894905159/DIAGNOSIS-R4-ANTHROPIC.md",
+      "sha256": "ac39520d80d0fec72fb19b6cfedd09f6ba7662a5dbff97028ff5aa545501e783",
+      "size_bytes": 5519,
+      "public_path": "ci/runs/41894905159/DIAGNOSIS-R4-ANTHROPIC.md",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/runs/41894905159/anthropic-job-126801716984.raw.log",
+      "sha256": "96b5a97a88747174e013598c24e73eba3c2f1e2943e112f5f80ade7a44cf0574",
+      "size_bytes": 241386,
+      "public_path": "ci/runs/41894905159/anthropic-job-126801716984.raw.log",
+      "raw_job_response_requires_explicit_derivative_label": true
+    },
+    {
+      "path": "ci/runs/41894905159/anthropic-job-download-r1.json",
+      "sha256": "a69c0d7622572682f86fd831212311ad41f3b4e5ec9914c382b93dca3d0e67b9",
+      "size_bytes": 550,
+      "public_path": "ci/runs/41894905159/anthropic-job-download-r1.json",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/runs/41894905159/anthropic-job-summary-r1.json",
+      "sha256": "2e387e95f158710151a01b926b89f65b146445e0dcad5fa9ed64b75b766421f8",
+      "size_bytes": 78346,
+      "public_path": "ci/runs/41894905159/anthropic-job-summary-r1.json",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "ci/workflow-template.yml",
+      "sha256": "68335be10ee348456b4ffc21f3a4cc5d5c39394a1bb7e5f9fd825338afb26e30",
+      "size_bytes": 9681,
+      "public_path": ".github/workflows/replicate.yml",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "verification/ANCESTOR_CACHE-r1.md",
+      "sha256": "b0a932abc1d0df3894570b0aa48511abe38adcc720b7156585e9c6964afe2893",
+      "size_bytes": 4609,
+      "public_path": "verification/ANCESTOR_CACHE-r1.md",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "verification/ANCESTOR_CACHE_AVAILABILITY-r2.md",
+      "sha256": "4c287077ba3568550a30125296d5b87123f8e0defce9ec8ab7276a58a5d35b9f",
+      "size_bytes": 2687,
+      "public_path": "verification/ANCESTOR_CACHE_AVAILABILITY-r2.md",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "verification/ANTHROPIC_CONTINUATION-r3.md",
+      "sha256": "ce437a83a4b80c437e9285046f9e22f7b37c141bb8957c396e4353aa5a9d7fd4",
+      "size_bytes": 2038,
+      "public_path": "verification/ANTHROPIC_CONTINUATION-r3.md",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "verification/ancestor-cache-control-result-r1.json",
+      "sha256": "c63bbb1a7b72c17f74a3890c6895b9192a421584f52e9b47fa3b10863ed2a24e",
+      "size_bytes": 3828,
+      "public_path": "verification/ancestor-cache-control-result-r1.json",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "verification/ancestor_cache_control_r1.py",
+      "sha256": "70e14ed028189eb9c67a77c26d5c8610915ec8e013c270da14626b3c461e0cc8",
+      "size_bytes": 12037,
+      "public_path": "verification/ancestor_cache_control_r1.py",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "verification/cache-policy-control-result-r2.json",
+      "sha256": "9b472c23ea355e55893a8e8b68e3d9446bdcde0d9f361d8887ab4aae71f856d4",
+      "size_bytes": 19667,
+      "public_path": "verification/cache-policy-control-result-r2.json",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "verification/cache-policy-control-result-r3.json",
+      "sha256": "924d90ef084aaff69b752d8e6f6ee41aa282d42e5f4bf62c8458a9d67fc651b2",
+      "size_bytes": 20057,
+      "public_path": "verification/cache-policy-control-result-r3.json",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "verification/cache_policy_control_r2.py",
+      "sha256": "52bf6fda2d435a61ba95a1db3f26d1562df71fe0745e8f5a5758c7d724105e2e",
+      "size_bytes": 7791,
+      "public_path": "verification/cache_policy_control_r2.py",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "verification/cache_policy_control_r3.py",
+      "sha256": "186bd828553661cb833f18b891e1389197f1dc61b56a8d354bc81bfec5ce6a2f",
+      "size_bytes": 8915,
+      "public_path": "verification/cache_policy_control_r3.py",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "verification/export-sysroot-control-result-r1.json",
+      "sha256": "78294fd4de5afe05d40c4a10af897eb094945d245c90437d7cb4724b359556de",
+      "size_bytes": 8505,
+      "public_path": "verification/export-sysroot-control-result-r1.json",
+      "raw_job_response_requires_explicit_derivative_label": false
+    },
+    {
+      "path": "verification/export_sysroot_control_r1.py",
+      "sha256": "01c8f500356e9a6a23f9faafbd586281f31563f55a0f4685c8ebfc342d8bd1d2",
+      "size_bytes": 5391,
+      "public_path": "verification/export_sysroot_control_r1.py",
+      "raw_job_response_requires_explicit_derivative_label": false
+    }
+  ],
+  "ci_input_count": 25,
+  "peer_final_ack_pending": true
+}

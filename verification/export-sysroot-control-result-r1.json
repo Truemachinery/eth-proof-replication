@@ -1,0 +1,230 @@
+{
+  "schema": "eth-export-sysroot-control/1",
+  "scope": "Trusted Init export only; not ETH, kernel replay, or Linux Landrun execution.",
+  "script": {
+    "path": "verification/export_sysroot_control_r1.py",
+    "sha256": "01c8f500356e9a6a23f9faafbd586281f31563f55a0f4685c8ebfc342d8bd1d2",
+    "size_bytes": 5391
+  },
+  "versions": [
+    {
+      "lean_version": "4.33.1",
+      "exporter_commit": "15f6055e299ad5b89345e533cc2192f4cc00f659",
+      "inputs": [
+        {
+          "path": "verification-tools/lean4export-433-source/.lake/build/bin/lean4export",
+          "sha256": "fff1713600c157d77251a309a41031f7ff97320bfcc422a677d5adf0ba8a549a",
+          "size_bytes": 176836208
+        },
+        {
+          "path": "verification-tools/lean4export-433-source/Main.lean",
+          "sha256": "bd8e350903f1382b25fe767f9086dd9882000f01085f7046ea06545e7848842a",
+          "size_bytes": 751
+        },
+        {
+          "path": "anthropic/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+          "sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+          "size_bytes": 49968
+        },
+        {
+          "path": "anthropic/elan/toolchains/leanprover--lean4---v4.33.1/src/lean/Lean/Util/Path.lean",
+          "sha256": "52cf9aa41a82db18d0d3c93bf6257d064f773af9e62b8b43be89ce1b0e00055f",
+          "size_bytes": 7382
+        }
+      ],
+      "trials": [
+        {
+          "mode": "baseline",
+          "argv": [
+            "lean4export",
+            "Init",
+            "--",
+            "Nat.add_zero"
+          ],
+          "exit_code": 0,
+          "wall_seconds": 2.96920925,
+          "child_cpu_seconds": 1.0981150000000002,
+          "stdout_sha256": "b4b9654cc57c402f056c158e9122ced403b5291d74b69d14c31a32be0bb832e7",
+          "stdout_bytes": 36383,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_bytes": 0
+        },
+        {
+          "mode": "empty-path-no-sysroot",
+          "argv": [
+            "lean4export",
+            "Init",
+            "--",
+            "Nat.add_zero"
+          ],
+          "exit_code": 1,
+          "wall_seconds": 0.04434066699999972,
+          "child_cpu_seconds": 0.03828900000000002,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_bytes": 0,
+          "stderr_sha256": "ff52793c1359da73e2f47adc053207d541537af68801bd372345a867a5c7651a",
+          "stderr_bytes": 107
+        },
+        {
+          "mode": "empty-path-exact-sysroot",
+          "argv": [
+            "lean4export",
+            "Init",
+            "--",
+            "Nat.add_zero"
+          ],
+          "exit_code": 0,
+          "wall_seconds": 0.40858616700000017,
+          "child_cpu_seconds": 0.36687900000000007,
+          "stdout_sha256": "b4b9654cc57c402f056c158e9122ced403b5291d74b69d14c31a32be0bb832e7",
+          "stdout_bytes": 36383,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_bytes": 0,
+          "byte_identical_to_baseline": true
+        }
+      ]
+    },
+    {
+      "lean_version": "4.34.1",
+      "exporter_commit": "076e8e57707e813375e8f9da8bf989799ace9680",
+      "inputs": [
+        {
+          "path": "verification-tools/lean4export-434-source/.lake/build/bin/lean4export",
+          "sha256": "e6217f95bf55c5e165a62f12ec6ce1fb3c25a815cff0f9cb6f6dfcf4c8e55e25",
+          "size_bytes": 179096064
+        },
+        {
+          "path": "verification-tools/lean4export-434-source/Main.lean",
+          "sha256": "bd8e350903f1382b25fe767f9086dd9882000f01085f7046ea06545e7848842a",
+          "size_bytes": 751
+        },
+        {
+          "path": "openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean",
+          "sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+          "size_bytes": 49968
+        },
+        {
+          "path": "openai/elan/toolchains/leanprover--lean4---v4.34.1/src/lean/Lean/Util/Path.lean",
+          "sha256": "52cf9aa41a82db18d0d3c93bf6257d064f773af9e62b8b43be89ce1b0e00055f",
+          "size_bytes": 7382
+        }
+      ],
+      "trials": [
+        {
+          "mode": "baseline",
+          "argv": [
+            "lean4export",
+            "Init",
+            "--",
+            "Nat.add_zero"
+          ],
+          "exit_code": 0,
+          "wall_seconds": 0.5473915420000002,
+          "child_cpu_seconds": 0.4783839999999999,
+          "stdout_sha256": "bd31d7515834a46716cf2d95fb220eba0b6427fae7431c8d40a1647619e1028a",
+          "stdout_bytes": 36383,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_bytes": 0
+        },
+        {
+          "mode": "empty-path-no-sysroot",
+          "argv": [
+            "lean4export",
+            "Init",
+            "--",
+            "Nat.add_zero"
+          ],
+          "exit_code": 1,
+          "wall_seconds": 0.033643415999999426,
+          "child_cpu_seconds": 0.02940599999999982,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_bytes": 0,
+          "stderr_sha256": "ff52793c1359da73e2f47adc053207d541537af68801bd372345a867a5c7651a",
+          "stderr_bytes": 107
+        },
+        {
+          "mode": "empty-path-exact-sysroot",
+          "argv": [
+            "lean4export",
+            "Init",
+            "--",
+            "Nat.add_zero"
+          ],
+          "exit_code": 0,
+          "wall_seconds": 0.3738320420000001,
+          "child_cpu_seconds": 0.36372499999999985,
+          "stdout_sha256": "bd31d7515834a46716cf2d95fb220eba0b6427fae7431c8d40a1647619e1028a",
+          "stdout_bytes": 36383,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_bytes": 0,
+          "byte_identical_to_baseline": true
+        }
+      ]
+    }
+  ],
+  "passed": true,
+  "wall_seconds": 4.868929833,
+  "child_cpu_seconds": 2.402935,
+  "outputs": [
+    {
+      "path": "verification/export-sysroot-control-r1/433-baseline.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "verification/export-sysroot-control-r1/433-baseline.stdout",
+      "sha256": "b4b9654cc57c402f056c158e9122ced403b5291d74b69d14c31a32be0bb832e7",
+      "size_bytes": 36383
+    },
+    {
+      "path": "verification/export-sysroot-control-r1/433-empty-path-exact-sysroot.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "verification/export-sysroot-control-r1/433-empty-path-exact-sysroot.stdout",
+      "sha256": "b4b9654cc57c402f056c158e9122ced403b5291d74b69d14c31a32be0bb832e7",
+      "size_bytes": 36383
+    },
+    {
+      "path": "verification/export-sysroot-control-r1/433-empty-path-no-sysroot.stderr",
+      "sha256": "ff52793c1359da73e2f47adc053207d541537af68801bd372345a867a5c7651a",
+      "size_bytes": 107
+    },
+    {
+      "path": "verification/export-sysroot-control-r1/433-empty-path-no-sysroot.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "verification/export-sysroot-control-r1/434-baseline.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "verification/export-sysroot-control-r1/434-baseline.stdout",
+      "sha256": "bd31d7515834a46716cf2d95fb220eba0b6427fae7431c8d40a1647619e1028a",
+      "size_bytes": 36383
+    },
+    {
+      "path": "verification/export-sysroot-control-r1/434-empty-path-exact-sysroot.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "verification/export-sysroot-control-r1/434-empty-path-exact-sysroot.stdout",
+      "sha256": "bd31d7515834a46716cf2d95fb220eba0b6427fae7431c8d40a1647619e1028a",
+      "size_bytes": 36383
+    },
+    {
+      "path": "verification/export-sysroot-control-r1/434-empty-path-no-sysroot.stderr",
+      "sha256": "ff52793c1359da73e2f47adc053207d541537af68801bd372345a867a5c7651a",
+      "size_bytes": 107
+    },
+    {
+      "path": "verification/export-sysroot-control-r1/434-empty-path-no-sysroot.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    }
+  ]
+}

@@ -11,6 +11,7 @@ from record import sha, write_json
 MAX_BYTES = 2 * 1024**3
 # Leave room for the small manifest and Actions' container/archive metadata.
 PAYLOAD_LIMIT = MAX_BYTES - 32 * 1024**2
+ANCESTOR_LEDGER = 'ancestor-cache-compatibility.json'
 SUFFIXES = {'.olean', '.olean.private', '.olean.server', '.ilean', '.ir', '.trace',
             '.ir.sig', '.ir.sig.hash', '.olean.hash', '.olean.private.hash', '.olean.server.hash', '.ilean.hash', '.ir.hash',
             '.c', '.c.hash', '.c.o', '.c.o.hash', '.c.o.export', '.c.o.export.hash'}
@@ -19,6 +20,52 @@ SUFFIXES = {'.olean', '.olean.private', '.olean.server', '.ilean', '.ir', '.trac
 def fingerprint(harness, proof, context=None):
     rows = [(p.name, sha(p)) for p in sorted(Path(harness).iterdir()) if p.is_file()]
     return hashlib.sha256(json.dumps([proof, rows, context], separators=(',', ':')).encode()).hexdigest()
+
+
+def approved_ancestor(harness, proof, context, manifest_bytes):
+    """One reviewed predecessor, never a generic fingerprint migration."""
+    harness = Path(harness)
+    ledger_path = harness / ANCESTOR_LEDGER
+    if not ledger_path.exists():
+        return None
+    ledger = json.loads(ledger_path.read_text())
+    if ledger.get('schema') != 'eth-owned-ancestor-compatibility/1':
+        raise RuntimeError('invalid ancestor compatibility ledger')
+    entry = ledger['proofs'].get(proof)
+    actual_key = os.environ.get('ETH_RESTORED_CACHE_KEY', '')
+    if entry is None or actual_key != entry['exact_cache_key']:
+        return None
+    # Check raw manifest identity before parsing the restored predecessor manifest.
+    if hashlib.sha256(manifest_bytes).hexdigest() != entry['manifest_sha256']:
+        raise RuntimeError('ancestor manifest SHA mismatch')
+    expected = ledger['reviewed_current_harness_rows']
+    names = [x['path'] for x in expected]
+    if len(names) != len(set(names)) or any(Path(x).name != x for x in names):
+        raise RuntimeError('invalid reviewed current harness rows')
+    actual_names = {p.name for p in harness.iterdir() if p.is_file()}
+    if actual_names != set(names) | {ANCESTOR_LEDGER}:
+        raise RuntimeError('unreviewed current harness file set')
+    for row in expected:
+        path = harness / row['path']
+        if path.is_symlink() or sha(path) != row['sha256']:
+            raise RuntimeError('unreviewed current harness bytes: ' + row['path'])
+    workflow = harness.parent / '.github/workflows/replicate.yml'
+    if workflow.is_symlink() or sha(workflow) != ledger['reviewed_workflow_sha256']:
+        raise RuntimeError('unreviewed current workflow bytes')
+    context_sha = hashlib.sha256(json.dumps(context, sort_keys=True).encode()).hexdigest()
+    if context_sha != entry['context_sha256']:
+        raise RuntimeError('ancestor source/config/runtime context mismatch')
+    old_rows = ledger['producer_harness_rows']
+    old_names = [x['path'] for x in old_rows]
+    if len(old_rows) != 23 or set(old_names) != set(names) or len(set(old_names)) != 23:
+        raise RuntimeError('invalid pinned predecessor harness rows')
+    pairs = [(row['path'], row['sha256']) for row in sorted(old_rows, key=lambda x: x['path'])]
+    old_fingerprint = hashlib.sha256(json.dumps([proof, pairs, context], separators=(',', ':')).encode()).hexdigest()
+    if old_fingerprint != entry['fingerprint']:
+        raise RuntimeError('ancestor fingerprint does not match CURRENT context')
+    return dict(entry, producer_commit=ledger['producer_commit'],
+                ledger_sha256=sha(ledger_path), recomputed_fingerprint=old_fingerprint,
+                current_context_sha256=context_sha)
 
 
 def modules(project, proof):
@@ -105,8 +152,12 @@ def restore(project, proof, source, harness, context=None):
     if not source.exists():
         print('OWNED_CACHE_RESTORE missing', flush=True)
         return False
-    data = json.loads((source / 'manifest.json').read_text())
-    if data.get('schema') != 'eth-owned-cache/1' or data.get('proof') != proof or data.get('fingerprint') != fingerprint(harness, proof, context):
+    manifest_bytes = (source / 'manifest.json').read_bytes()
+    ancestor = approved_ancestor(harness, proof, context, manifest_bytes)
+    data = json.loads(manifest_bytes)
+    expected_fingerprint = ancestor['recomputed_fingerprint'] if ancestor else fingerprint(harness, proof, context)
+    context_sha = hashlib.sha256(json.dumps(context, sort_keys=True).encode()).hexdigest()
+    if data.get('schema') != 'eth-owned-cache/1' or data.get('proof') != proof or data.get('fingerprint') != expected_fingerprint or data.get('context_sha256') != context_sha:
         raise RuntimeError('cache identity does not match exact harness/source/toolchain/config pins')
     if data['status'] != 'ready' or data['payload_bytes'] > PAYLOAD_LIMIT:
         raise RuntimeError('invalid cache payload limit/status')
@@ -130,12 +181,27 @@ def restore(project, proof, source, harness, context=None):
     actual = {str(p.relative_to(source / 'files')) for p in (source / 'files').rglob('*') if p.is_file()}
     if actual != names:
         raise RuntimeError('unmanifested cache files')
+    if ancestor:
+        # finally.snapshot replaces cache staging; keep the original exact bytes elsewhere first.
+        records = Path(os.environ['RUNNER_TEMP']).resolve() / ('eth-replication-' + proof) / 'records'
+        records.mkdir(parents=True, exist_ok=True)
+        original = records / ('ancestor-cache-original-' + ancestor['manifest_sha256'] + '.json')
+        with original.open('xb') as handle:
+            handle.write(manifest_bytes)
+            handle.flush()
+            os.fsync(handle.fileno())
+        print('OWNED_CACHE_ANCESTOR_INPUT ' + json.dumps(ancestor, sort_keys=True), flush=True)
     for row in data['files']:
         target = project / '.lake/build' / row['path']
         if target.exists():
             raise RuntimeError('restore would overwrite an existing project output')
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(source / 'files' / row['path'], target)
+    if ancestor:
+        acceptance = dict(ancestor, status='payload-validated-and-restored', files=len(names), bytes=size,
+                          original_manifest_file=original.name, original_manifest_available='Ephemeral runner records; exact SHA and acceptance remain in logs.')
+        write_json(records / 'ancestor-cache-restore-receipt.json', acceptance)
+        print('OWNED_CACHE_ANCESTOR_RESTORE ' + json.dumps(acceptance, sort_keys=True), flush=True)
     print('OWNED_CACHE_RESTORE ' + json.dumps({'manifest_sha256': sha(source / 'manifest.json'), 'fingerprint': data['fingerprint'],
           'files': len(names), 'bytes': size, 'completed_modules': data['completed_modules']}), flush=True)
     return True

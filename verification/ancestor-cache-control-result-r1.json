@@ -1,0 +1,124 @@
+{
+  "schema": "eth-ancestor-cache-control/1",
+  "scope": "Synthetic owned-output identity/ownership and actual workflow-guard controls; no real Actions cache restore, Lean trace check or ETH verification.",
+  "script_sha256": "70e14ed028189eb9c67a77c26d5c8610915ec8e013c270da14626b3c461e0cc8",
+  "inputs": {
+    "owned_cache.py": "dd9b47b1da0240e2fc2bf79a4e6de40543beb37cd5e316eb055f092040f382be",
+    "replicate.py": "d3d38d581b583891fad340a377ff799dab8d396a26a947b2fffe04d74cd7b77c",
+    "workflow-template.yml": "e8fb095feb05d4076b62cc4c0f40cd13184754d6ed88081db0e181b09b36d1c9",
+    "ancestor-cache-compatibility.json": "4f50b3d6d70e38f0e1eff9d5bbfdbd134eab4af5f3fec45e07308de836da79cc"
+  },
+  "checks": [
+    {
+      "name": "closed-production-receipt-binding",
+      "passed": true,
+      "actual_cache_bytes_validated": false
+    },
+    {
+      "name": "normal-current-fingerprint-acceptance",
+      "passed": true
+    },
+    {
+      "name": "accept-and-preserve",
+      "passed": true,
+      "expected_acceptance": true,
+      "rejection": null
+    },
+    {
+      "name": "source-drift",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "ancestor source/config/runtime context mismatch"
+    },
+    {
+      "name": "config-drift",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "ancestor source/config/runtime context mismatch"
+    },
+    {
+      "name": "runtime-drift",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "ancestor source/config/runtime context mismatch"
+    },
+    {
+      "name": "wrong-proof",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "cache identity does not match exact harness/source/toolchain/config pins"
+    },
+    {
+      "name": "missing-key",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "cache identity does not match exact harness/source/toolchain/config pins"
+    },
+    {
+      "name": "prefix-only-key",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "cache identity does not match exact harness/source/toolchain/config pins"
+    },
+    {
+      "name": "manifest-drift",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "ancestor manifest SHA mismatch"
+    },
+    {
+      "name": "payload-hash-drift",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "cached file size/hash mismatch"
+    },
+    {
+      "name": "unowned-path",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "unexpected/duplicate cached path"
+    },
+    {
+      "name": "duplicate-path",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "unexpected/duplicate cached path"
+    },
+    {
+      "name": "producer-driver-drift",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "unreviewed current harness bytes: replicate.py"
+    },
+    {
+      "name": "producer-row-drift",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "ancestor fingerprint does not match CURRENT context"
+    },
+    {
+      "name": "workflow-drift",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "unreviewed current workflow bytes"
+    },
+    {
+      "name": "no-overwrite",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "restore would overwrite an existing project output"
+    },
+    {
+      "name": "metadata-excluded-from-proof-env",
+      "passed": true
+    },
+    {
+      "name": "actual-workflow-guard-exact-vs-prefix",
+      "passed": true,
+      "guard_sha256": "ea8829888389365f1cd7b3f73e9d64116126afc978655d948e39a99c7683f784"
+    }
+  ],
+  "passed": true,
+  "wall_seconds": 0.725916541996412,
+  "child_cpu_seconds": 0.139662
+}

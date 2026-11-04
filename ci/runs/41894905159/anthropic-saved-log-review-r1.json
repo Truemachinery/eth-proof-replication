@@ -1,0 +1,749 @@
+{
+  "created_utc": "2026-11-04T20:32:50.906645+00:00",
+  "evidence": [
+    {
+      "claim": "ABI 8 queried and accepted; real pinned Landrun built.",
+      "details": "Landrun811cfff51ceaf3d9843708aa6d22e9b84ccac8b4; reported executableSHA8fe67d5cfc7486932d503db24188313c7884cb22b6fa8118276a0e5d0bf2590a,6517255B.",
+      "lines": [
+        149,
+        160
+      ],
+      "status": "PASS"
+    },
+    {
+      "claim": "Read-only filesystem control denied attempted write.",
+      "lines": [
+        161,
+        170
+      ],
+      "sentinel_line": 163,
+      "status": "PASS"
+    },
+    {
+      "claim": "Separate systemd restriction denied socket(AF_UNIX) creation.",
+      "lines": [
+        171,
+        180
+      ],
+      "sentinel_line": 173,
+      "status": "PASS"
+    },
+    {
+      "claim": "All1050 project Lean modules built; default Lake target completed9768jobs.",
+      "completion_line": 1646,
+      "expected_challenge_sorry_warning_lines": [
+        1642,
+        1643
+      ],
+      "lines": [
+        592,
+        1653
+      ],
+      "status": "PASS"
+    },
+    {
+      "claim": "Original real proof-prefix lake --no-build build reports all targets up-to-date.",
+      "completion_line": 1658,
+      "isolation": "Trusted Lake config/trace evaluation outside Landrun and systemd.",
+      "lines": [
+        1654,
+        1659
+      ],
+      "status": "PASS"
+    },
+    {
+      "claim": "Original Lean4.33.1 leanchecker --fresh Solution completed with exit0.",
+      "lines": [
+        1660,
+        1668
+      ],
+      "status": "PASS",
+      "systemd_success_lines": [
+        1662,
+        1663
+      ]
+    },
+    {
+      "claim": "Exact575 Comparator on upstream original config completed statement/axiom/primitive checks plus configured Nanoda and default Lean checks.",
+      "config": {
+        "config": {
+          "challenge_module": "Challenge",
+          "definition_names": [],
+          "enable_nanoda": true,
+          "permitted_axioms": [
+            "propext",
+            "Quot.sound",
+            "Classical.choice"
+          ],
+          "solution_module": "Solution",
+          "theorem_names": [
+            "MainResults.ethIsFalse",
+            "MainResults.mainTheorem"
+          ]
+        },
+        "sha256": "757e5537ccf47d1946521b0b5fb91a230cdcfd8933dc9ab047710709c15ffa7e"
+      },
+      "lean_accept_line": 1683,
+      "lines": [
+        1669,
+        1692
+      ],
+      "nanoda_accept_line": 1681,
+      "required_final_sentinel_line": 1684,
+      "status": "PASS",
+      "systemd_exit_zero_line": 1686
+    },
+    {
+      "claim": "Additional retained-target-export failed to execute lean; subsequent overall RUN_RECEIPT is incomplete.",
+      "error_line": 1697,
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_size_bytes": 0,
+      "lines": [
+        1693,
+        1707
+      ],
+      "status": "FAILED_SETUP"
+    }
+  ],
+  "independent_parser_checks": {
+    "all_stage_receipts": 40,
+    "distinct_source_modules": 1050,
+    "first_failure_after_completed_original_checks": true,
+    "module_order_not_compared": "Parallel Linux output order need not match native topological order.",
+    "nonzero_stage_receipts": [
+      {
+        "exit_code": 1,
+        "line": 1705,
+        "name": "retained-target-export"
+      }
+    ],
+    "reason_null_for_all": true,
+    "source_built_module_lines": 1050,
+    "source_module_set_equals_pinned_build_graph_order": true,
+    "successful_stage_receipts": 39,
+    "summary_arrays_equal_actual_log": {
+      "cache_receipts": 2,
+      "original_config_receipts": 1,
+      "run_receipts": 1,
+      "runtime_receipts": 1,
+      "stage_receipts": 40
+    }
+  },
+  "input_identities": [
+    {
+      "path": "ci/runs/41894905159/anthropic-job-126801716984.raw.log",
+      "sha256": "96b5a97a88747174e013598c24e73eba3c2f1e2943e112f5f80ade7a44cf0574",
+      "size_bytes": 241386
+    },
+    {
+      "path": "ci/runs/41894905159/anthropic-job-summary-r1.json",
+      "sha256": "2e387e95f158710151a01b926b89f65b146445e0dcad5fa9ed64b75b766421f8",
+      "size_bytes": 78346
+    },
+    {
+      "path": "ci/runs/41894905159/anthropic-job-download-r1.json",
+      "sha256": "a69c0d7622572682f86fd831212311ad41f3b4e5ec9914c382b93dca3d0e67b9",
+      "size_bytes": 550
+    },
+    {
+      "path": "anthropic/build-graph.json",
+      "sha256": "2490a1fbb7e79a7abc7976b11eb76e71f548293530393a1da4df619a946c9348",
+      "size_bytes": 487670
+    },
+    {
+      "path": "publication/in-progress-20261104-r4/ci/replicate.py",
+      "sha256": "89a68dcc753d1b543d7262f4893da5b15275dc8f3dc23bdc5872761f84b41b28",
+      "size_bytes": 21152
+    },
+    {
+      "path": "anthropic/tools/comparator-ci-source/Main.lean",
+      "sha256": "b95ab1b6293f97fa16ecae548cf452b009ba035fc0273fe83b894769435ef6ef",
+      "size_bytes": 12997
+    },
+    {
+      "path": "anthropic/elan/toolchains/leanprover--lean4---v4.33.1/src/lean/Lean/Util/Path.lean",
+      "sha256": "52cf9aa41a82db18d0d3c93bf6257d064f773af9e62b8b43be89ce1b0e00055f",
+      "size_bytes": 7382
+    }
+  ],
+  "reproduction": "Decode saved raw log UTF-8-sig; enumerate splitlines from1; partition each line at its first space into timestamp/body; parse exact STAGE_START/STAGE_RECEIPT/RUN_RECEIPT/CACHE_SAVE_ALLOWED/CACHE_BACKEND_AUDIT/RUNTIME_IDENTITIES/ORIGINAL_COMPARATOR_CONFIG JSON records. Require all receipt objects/timestamps equal corresponding summary arrays. Collect source-build bodies, extract modules with regex \\] Built (\\S+) \\(, require1050distinct names and set equality to pinned build-graph.json.order. Verify ordered completed-stage lines and only retained-target-export nonzero. Rehash all listed saved input bytes using SHA256.",
+  "resource_accounting": {
+    "all_40_reaped_child_cpu_sum_seconds": 230.22945200000007,
+    "all_40_stage_wall_sum_seconds": 3798.7760705947876,
+    "limits": "Stage wall sums exclude workflow/setup gaps and are not end-to-end Actions elapsed time. Service CPU counters are transcribed separately, not added into a claimed exact job CPU total. Systemd memory-peak lines were not validated as proof-process RSS; no whole-job peak RSS claim. GitHub-hosted compute already authorized by parent; reviewer localUSD0.",
+    "reaped_child_cpu_scope": "Excludes systemd-managed service CPU; not whole workflow CPU.",
+    "reported_systemd_service_cpu_seconds": {
+      "comparator-original-config": 277.396,
+      "fresh-original-version-leanchecker": 1681.496,
+      "source-build": 3781.61
+    },
+    "reported_systemd_service_runtime_seconds": {
+      "comparator-original-config": 272.194,
+      "fresh-original-version-leanchecker": 1701.537,
+      "source-build": 1506.069
+    }
+  },
+  "retained_export_failure_diagnosis": {
+    "does_not_invalidate_closed_original_checks": true,
+    "inner_environment_names": [
+      "PATH",
+      "HOME",
+      "LEAN_PATH"
+    ],
+    "observed": "Outer systemd clean environment sets LEAN_SYSROOT, but inner Landrun forwards only PATH/HOME/LEAN_PATH; exporter reports could not execute external process lean.",
+    "source_supported_inference": "Frozen driver259-262 omits LEAN_SYSROOT forwarding. Lean4.33.1 Lean/Util/Path.lean180-187 first uses LEAN_SYSROOT, otherwise executes lean --print-prefix. Thus omitted sysroot is a concrete setup defect consistent with the observed exception. This reviewer did not rerun or counterfactually repair the stage.",
+    "subsequent_extra_export_checks": "No successful retained target export or later retained-export verification is inferred."
+  },
+  "review_actions": {
+    "budget_cpu_seconds": 30,
+    "budget_execution_wall_seconds": 180,
+    "final_parse_and_report_preparation_cpu_seconds": 0.011191000000000006,
+    "final_parse_and_report_preparation_wall_seconds": 0.014953459000000002,
+    "measurement_scope": "This final parser/checksum/report-preparation process only; prior short read-only parsers, checkpoint CLI, tool and model time are excluded.",
+    "network_requests": 0,
+    "outputs": "Only distinct reviewJSON/Markdown; existing evidence preserved.",
+    "proof_reruns": 0,
+    "publication_or_dispatch": 0,
+    "source_or_CI_edits": 0
+  },
+  "review_kind": "Same-team independent review of preserved execution evidence; no new proof/checker execution.",
+  "reviewer": "codex-eth-public-package",
+  "schema": "eth-ci-saved-log-review/1",
+  "semantic_and_isolation_scope": [
+    "Original target names MainResults.ethIsFalse and MainResults.mainTheorem are compared against Challenge using original comparator.json, permitted axioms exactly propext/Quot.sound/Classical.choice and enable_nanoda=true. Challenge intentionally has two sorry placeholders; Comparator checks Solution target axiom dependencies. This transcript is not a novel proof or first replication claim.",
+    "Original-version fresh replay is a new empty Lean environment using the same Lean kernel and rechecks safe/nonpartial definitions; axiom declarations are admitted. Target axiom/statement requirements are supplied separately by the completed Comparator checks. No separate Linux target-audit stage is inferred.",
+    "Pinned575 Main.lean279-309 requires compareAt, checkAxioms, external kernels and builtin kernel before the final sentinel. Its Nanoda config source152-166 uses permitted standard axioms, hard-error=true and nat/string extensions; omitted num_threads uses pinned checker default. Actual Linux effective temporary config/export bytes were not retained.",
+    "Linux tool compiler output is exact upstream4.34.0-rc1 (3447a668783dbce1a8fdb97101dd067687b2b418), proof compiler4.33.1 (819816b2e0a3bf405af45ae5c7af2491d8f5bee6). Exporter source15f6055e299ad5b89345e533cc2192f4cc00f659 targets4.33.0 and is built with4.33.1 patch compiler per official procedure. This is distinct from native Mac driver built4.34.1 and fake-Landrun execution.",
+    "Real Linux Landrun best-effort ran on measured ABI8, with required filesystem write-denial and separate socket-creation controls. ABI8 omits ABI9 pathname Unix-socket permissions. RestrictAddressFamilies socket-creation denial does not cover inherited sockets, socketpair or io_uring; no full ABI9 replacement or complete isolation proof is claimed.",
+    "Dependencies include official Mathlib compiled-cache acquisition, not a claim that all dependency source files were rebuilt. Runtime and source/tool identities are transcript-reported; reviewer did not obtain/rebuild Linux VM binaries.",
+    "Neither actual Linux Comparator Nanoda export hash nor its temporary effective config was captured. The failed additional0B export cannot identify what Nanoda checked, and the separately captured native Mac export belongs to a different execution.",
+    "Formal check acceptance concerns pinned formal statements and their definitions; it does not by itself certify manuscript equivalence, practical SAT runtime, Bitcoin mining advantage, or new mathematical novelty."
+  ],
+  "stages": [
+    {
+      "child_cpu_seconds": 0.021219,
+      "exit_code": 0,
+      "name": "landlock-abi-preflight",
+      "raw_log_bytes": 138,
+      "raw_log_sha256": "2740bab22240687431e8706f19e11cf8cfcc5d22c987cae4fba221e41d15608c",
+      "reason": null,
+      "receipt_line": 152,
+      "start_line": 149,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 0.032416582107543945
+    },
+    {
+      "child_cpu_seconds": 19.263612000000002,
+      "exit_code": 0,
+      "name": "landrun-build",
+      "raw_log_bytes": 298,
+      "raw_log_sha256": "72f2972d201d7ffb5b61ef8e8bce7cac4783103dd16e921ede6efa3b49044b7b",
+      "reason": null,
+      "receipt_line": 159,
+      "start_line": 153,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 15.089603424072266
+    },
+    {
+      "child_cpu_seconds": 0.013190999999999953,
+      "exit_code": 0,
+      "name": "landrun-enforcement-control",
+      "raw_log_bytes": 222,
+      "raw_log_sha256": "68af06b06246964ff50153c06a28020fd70e0b86fefe0e70c7ed91957b14ba3d",
+      "reason": null,
+      "receipt_line": 170,
+      "start_line": 161,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 0.06474971771240234
+    },
+    {
+      "child_cpu_seconds": 0.01354599999999806,
+      "exit_code": 0,
+      "name": "af-unix-control",
+      "raw_log_bytes": 216,
+      "raw_log_sha256": "86a06cd7573932fdc60c6e1997af58442b0549633fb679ffe72434c70fd31329",
+      "reason": null,
+      "receipt_line": 180,
+      "start_line": 171,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 0.06459522247314453
+    },
+    {
+      "child_cpu_seconds": 11.355142,
+      "exit_code": 0,
+      "name": "cleanup-disposable-sdks",
+      "raw_log_bytes": 0,
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": null,
+      "receipt_line": 182,
+      "start_line": 181,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 102.25941944122314
+    },
+    {
+      "child_cpu_seconds": 0.06382399999999855,
+      "exit_code": 0,
+      "name": "host-inventory",
+      "raw_log_bytes": 4153,
+      "raw_log_sha256": "aff3a0add4d33207797663de7d237946467a20bc2d8c6f6e76969cba1ad32699",
+      "reason": null,
+      "receipt_line": 243,
+      "start_line": 184,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 4.52510142326355
+    },
+    {
+      "child_cpu_seconds": 1.113702,
+      "exit_code": 0,
+      "name": "lean-4.33.1-download",
+      "raw_log_bytes": 634,
+      "raw_log_sha256": "9873ffe5c100646edd3f87b7f405547c440c62c8343467e1bf138e56b6441d86",
+      "reason": null,
+      "receipt_line": 249,
+      "start_line": 244,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 2.870257616043091
+    },
+    {
+      "child_cpu_seconds": 8.842590999999999,
+      "exit_code": 0,
+      "name": "lean-4.33.1-extract",
+      "raw_log_bytes": 0,
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": null,
+      "receipt_line": 252,
+      "start_line": 251,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 8.331441164016724
+    },
+    {
+      "child_cpu_seconds": 1.3044990000000034,
+      "exit_code": 0,
+      "name": "lean-4.34.0-rc1-download",
+      "raw_log_bytes": 713,
+      "raw_log_sha256": "10c27de495a30500fd88d4302725e55a1a2e672177e48634171860bc6a0c0cd4",
+      "reason": null,
+      "receipt_line": 258,
+      "start_line": 253,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 3.906254291534424
+    },
+    {
+      "child_cpu_seconds": 9.098842999999999,
+      "exit_code": 0,
+      "name": "lean-4.34.0-rc1-extract",
+      "raw_log_bytes": 0,
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": null,
+      "receipt_line": 261,
+      "start_line": 260,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 12.542152643203735
+    },
+    {
+      "child_cpu_seconds": 0.03343299999999516,
+      "exit_code": 0,
+      "name": "proof-compiler-version",
+      "raw_log_bytes": 106,
+      "raw_log_sha256": "63f3e16bf0258e2cc0ab3010eb1830723df9bb85097b7b72b0137b9be25a78e9",
+      "reason": null,
+      "receipt_line": 264,
+      "start_line": 262,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 0.23650479316711426
+    },
+    {
+      "child_cpu_seconds": 0.03222700000000245,
+      "exit_code": 0,
+      "name": "tool-compiler-version",
+      "raw_log_bytes": 110,
+      "raw_log_sha256": "6cd69c5752c644291ede2418997a70e9994409d30b15fe5ef14a1be60f27f8ef",
+      "reason": null,
+      "receipt_line": 267,
+      "start_line": 265,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 0.08153033256530762
+    },
+    {
+      "child_cpu_seconds": 0.0029770000000048924,
+      "exit_code": 0,
+      "name": "source-init",
+      "raw_log_bytes": 685,
+      "raw_log_sha256": "8c70cdcfd8449a96617740c17ad7ca0c1f14260fa00816a4640378e76c555cc0",
+      "reason": null,
+      "receipt_line": 284,
+      "start_line": 269,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 0.5291976928710938
+    },
+    {
+      "child_cpu_seconds": 0.0019379999999955544,
+      "exit_code": 0,
+      "name": "source-remote",
+      "raw_log_bytes": 0,
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": null,
+      "receipt_line": 286,
+      "start_line": 285,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 0.3238644599914551
+    },
+    {
+      "child_cpu_seconds": 0.0019499999999972317,
+      "exit_code": 0,
+      "name": "source-sparse-init",
+      "raw_log_bytes": 0,
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": null,
+      "receipt_line": 288,
+      "start_line": 287,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 0.08286905288696289
+    },
+    {
+      "child_cpu_seconds": 0.0017649999999989063,
+      "exit_code": 0,
+      "name": "source-sparse-set",
+      "raw_log_bytes": 0,
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": null,
+      "receipt_line": 290,
+      "start_line": 289,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 0.06527447700500488
+    },
+    {
+      "child_cpu_seconds": 0.039664999999999395,
+      "exit_code": 0,
+      "name": "source-fetch",
+      "raw_log_bytes": 123,
+      "raw_log_sha256": "f96fe411bc6c29cf4bf3e5c893d3089588b5abb9069c0cde59d7e4d0adbd882d",
+      "reason": null,
+      "receipt_line": 294,
+      "start_line": 291,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 0.6780316829681396
+    },
+    {
+      "child_cpu_seconds": 0.18694799999999745,
+      "exit_code": 0,
+      "name": "source-checkout",
+      "raw_log_bytes": 108,
+      "raw_log_sha256": "264fd2eeb3948bd4cbae6fbf0285c0229f268bfdc6d0c775db192bedccdb6c26",
+      "reason": null,
+      "receipt_line": 297,
+      "start_line": 295,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 0.7849223613739014
+    },
+    {
+      "child_cpu_seconds": 129.159359,
+      "exit_code": 0,
+      "name": "mathlib-official-cache",
+      "raw_log_bytes": 5230,
+      "raw_log_sha256": "b386406b8a05e83a9960ec056268665652c4893f7045621467464a795c2258fe",
+      "reason": null,
+      "receipt_line": 349,
+      "start_line": 301,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 81.33756637573242
+    },
+    {
+      "child_cpu_seconds": 0.002975000000006389,
+      "exit_code": 0,
+      "name": "comparator-init",
+      "raw_log_bytes": 689,
+      "raw_log_sha256": "3c665a4ff0b8493cb2a39240256b2a7187e7074db189d47bb9e7df7d26651efc",
+      "reason": null,
+      "receipt_line": 365,
+      "start_line": 350,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 0.29927659034729004
+    },
+    {
+      "child_cpu_seconds": 0.002033999999987657,
+      "exit_code": 0,
+      "name": "comparator-remote",
+      "raw_log_bytes": 0,
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": null,
+      "receipt_line": 367,
+      "start_line": 366,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 0.14957690238952637
+    },
+    {
+      "child_cpu_seconds": 0.04206599999999128,
+      "exit_code": 0,
+      "name": "comparator-fetch",
+      "raw_log_bytes": 122,
+      "raw_log_sha256": "96da3d8eb7d5d368836f378545f3274a48ad8eda919f9b740c9d12512a0e0ce3",
+      "reason": null,
+      "receipt_line": 371,
+      "start_line": 368,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 0.8170871734619141
+    },
+    {
+      "child_cpu_seconds": 0.04295900000001751,
+      "exit_code": 0,
+      "name": "comparator-checkout",
+      "raw_log_bytes": 78,
+      "raw_log_sha256": "e6a222c285479852fbc10d0ebe8a8a9d35706250ec8f5d46e4fb5d7ae8257e8d",
+      "reason": null,
+      "receipt_line": 374,
+      "start_line": 372,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 0.3667263984680176
+    },
+    {
+      "child_cpu_seconds": 0.0028619999999861534,
+      "exit_code": 0,
+      "name": "exporter-init",
+      "raw_log_bytes": 687,
+      "raw_log_sha256": "f9f350bc4733d871ffc70e004fcde951d449d6816225127979342ac355d4e618",
+      "reason": null,
+      "receipt_line": 390,
+      "start_line": 375,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 0.19826793670654297
+    },
+    {
+      "child_cpu_seconds": 0.002013999999988414,
+      "exit_code": 0,
+      "name": "exporter-remote",
+      "raw_log_bytes": 0,
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": null,
+      "receipt_line": 392,
+      "start_line": 391,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 0.15206313133239746
+    },
+    {
+      "child_cpu_seconds": 0.03691199999999384,
+      "exit_code": 0,
+      "name": "exporter-fetch",
+      "raw_log_bytes": 123,
+      "raw_log_sha256": "114008cb89e1fd908977a3e1f6f1e2c9d60a0c2b367bb462cf19705ea1293de3",
+      "reason": null,
+      "receipt_line": 396,
+      "start_line": 393,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 0.42591428756713867
+    },
+    {
+      "child_cpu_seconds": 0.039230000000024745,
+      "exit_code": 0,
+      "name": "exporter-checkout",
+      "raw_log_bytes": 62,
+      "raw_log_sha256": "bf62a767eb8db1b91df05a613df37c7d74acd3a71bb8e204934b82c64a586bc9",
+      "reason": null,
+      "receipt_line": 399,
+      "start_line": 397,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 0.3841409683227539
+    },
+    {
+      "child_cpu_seconds": 0.002899999999996794,
+      "exit_code": 0,
+      "name": "nanoda-init",
+      "raw_log_bytes": 685,
+      "raw_log_sha256": "ad2379fa34b350adaa0da75d3ab5c5036a0f8d6a1ea569528dc37c885b7ffbd1",
+      "reason": null,
+      "receipt_line": 415,
+      "start_line": 400,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 0.3074362277984619
+    },
+    {
+      "child_cpu_seconds": 0.0019780000000011455,
+      "exit_code": 0,
+      "name": "nanoda-remote",
+      "raw_log_bytes": 0,
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": null,
+      "receipt_line": 417,
+      "start_line": 416,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 0.11222481727600098
+    },
+    {
+      "child_cpu_seconds": 0.03677099999998745,
+      "exit_code": 0,
+      "name": "nanoda-fetch",
+      "raw_log_bytes": 122,
+      "raw_log_sha256": "f8a318bd82fc2d085059746638d95b791559f9e8c9b31391ca394cbbd487fa47",
+      "reason": null,
+      "receipt_line": 421,
+      "start_line": 418,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 0.5219893455505371
+    },
+    {
+      "child_cpu_seconds": 0.043423000000011314,
+      "exit_code": 0,
+      "name": "nanoda-checkout",
+      "raw_log_bytes": 60,
+      "raw_log_sha256": "e63a510671721fdb751b020d742c2de4cef6bdcc6ee1c9df90101cdb0065b9d6",
+      "reason": null,
+      "receipt_line": 424,
+      "start_line": 422,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 0.6191487312316895
+    },
+    {
+      "child_cpu_seconds": 12.259375999999996,
+      "exit_code": 0,
+      "name": "comparator-build",
+      "raw_log_bytes": 722,
+      "raw_log_sha256": "906b082df2da9fb8bc70547779b7faffe44247f5403fb5cd5aec99fda07a6f07",
+      "reason": null,
+      "receipt_line": 442,
+      "start_line": 425,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 9.367020606994629
+    },
+    {
+      "child_cpu_seconds": 7.064844000000029,
+      "exit_code": 0,
+      "name": "exporter-build-exact-proof-compiler",
+      "raw_log_bytes": 203,
+      "raw_log_sha256": "1bed89f84f18b10bc7e148217f4be8af8e1a0973d89e2906b7d18f671d31b3f4",
+      "reason": null,
+      "receipt_line": 450,
+      "start_line": 443,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 16.508183479309082
+    },
+    {
+      "child_cpu_seconds": 21.922120999999983,
+      "exit_code": 0,
+      "name": "nanoda-build",
+      "raw_log_bytes": 1623,
+      "raw_log_sha256": "b29c1689ed9c1af8312de9ca6b7bf9dd63f6d06b00962bb2e6a00c31480fb55a",
+      "reason": null,
+      "receipt_line": 503,
+      "start_line": 451,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 37.39604425430298
+    },
+    {
+      "child_cpu_seconds": 0.19770500000001334,
+      "exit_code": 0,
+      "name": "create-two-slot-compiler-prefix",
+      "raw_log_bytes": 2959,
+      "raw_log_sha256": "21dc52c7e904021051770b79cbdaa553c209c7c09f199c0d3823a612712bf905",
+      "reason": null,
+      "receipt_line": 591,
+      "start_line": 505,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 0.691441535949707
+    },
+    {
+      "child_cpu_seconds": 0.01482200000002365,
+      "exit_code": 0,
+      "name": "source-build",
+      "raw_log_bytes": 55106,
+      "raw_log_sha256": "c99704b2bb42e0a64509eb0c1bb5c1b823f6412129621c624e77b9aefcafd961",
+      "reason": null,
+      "receipt_line": 1653,
+      "start_line": 592,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "systemd_service_cpu_seconds_reported": 3781.61,
+      "wall_seconds": 1506.1880214214325
+    },
+    {
+      "child_cpu_seconds": 7.9219520000000045,
+      "exit_code": 0,
+      "name": "normal-real-prefix-trace-check",
+      "raw_log_bytes": 181,
+      "raw_log_sha256": "b0c1e25797acc6c6d6270e45fc1a944eb15cc202aa0a0e401978fcb7eee2ccfa",
+      "reason": null,
+      "receipt_line": 1659,
+      "start_line": 1654,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 15.661242485046387
+    },
+    {
+      "child_cpu_seconds": 0.014355999999978053,
+      "exit_code": 0,
+      "name": "fresh-original-version-leanchecker",
+      "raw_log_bytes": 218,
+      "raw_log_sha256": "0e94ea5075bee643fce711bf3e9847875107bb7a9d6f044dd67b0792ef1667b0",
+      "reason": null,
+      "receipt_line": 1668,
+      "start_line": 1660,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "systemd_service_cpu_seconds_reported": 1681.496,
+      "wall_seconds": 1701.5860998630524
+    },
+    {
+      "child_cpu_seconds": 0.014150999999998248,
+      "exit_code": 0,
+      "name": "comparator-original-config",
+      "raw_log_bytes": 1390,
+      "raw_log_sha256": "9adacc0cf08acb3b8ffd484627a748c6f09144000d646cf58058b7dbb9f2d35c",
+      "reason": null,
+      "receipt_line": 1691,
+      "start_line": 1669,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "systemd_service_cpu_seconds_reported": 277.396,
+      "wall_seconds": 272.2501015663147
+    },
+    {
+      "child_cpu_seconds": 0.013570000000015625,
+      "exit_code": 1,
+      "name": "retained-target-export",
+      "raw_log_bytes": 312,
+      "raw_log_sha256": "4de5d52f1bdc17e322106755a16195acc81b2fc67dcbaf3b2ec929809efb32f6",
+      "reason": null,
+      "receipt_line": 1705,
+      "start_line": 1693,
+      "subprocess_raw_hash_status": "Reported by stage recorder; original stage bytes unavailable for independent rehash.",
+      "wall_seconds": 0.9683101177215576
+    }
+  ],
+  "subject": {
+    "job_id": 126801716984,
+    "job_url": "https://github.com/Truemachinery/eth-proof-replication/actions/runs/41894905159/job/126801716984",
+    "methods_commit": "d9a4ad18e3668320bf9d084c7e454ff05e34f2e8",
+    "pins": {
+      "challenge": "Challenge",
+      "commit": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+      "comparator": "575674928e239f5bc452aab72d1dd7b0f1326494",
+      "comparator_lean": "4.34.0-rc1",
+      "exporter": "15f6055e299ad5b89345e533cc2192f4cc00f659",
+      "lean": "4.33.1",
+      "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "module": "Solution",
+      "repository": "https://github.com/anthropics/formal-math.git",
+      "theorems": [
+        "MainResults.ethIsFalse",
+        "MainResults.mainTheorem"
+      ]
+    },
+    "proof": "anthropic",
+    "repository": "https://github.com/Truemachinery/eth-proof-replication",
+    "run_id": 41894905159
+  },
+  "task": "eth-linux-ant-saved-log-review-20261104",
+  "verdict": {
+    "additional_retained_export": "FAILED_SETUP",
+    "closed_source_build": "PASS_FROM_SAVED_EVIDENCE",
+    "fresh_original_lean_4_33_1": "PASS_FROM_SAVED_EVIDENCE",
+    "measured_abi8_write_and_socket_creation_controls": "PASS_FROM_SAVED_EVIDENCE",
+    "new_independent_kernel_execution_by_reviewer": false,
+    "normal_real_prefix_trace": "PASS_FROM_SAVED_EVIDENCE",
+    "original_config_comparator_with_nanoda": "PASS_FROM_SAVED_EVIDENCE",
+    "overall_run": "INCOMPLETE"
+  },
+  "workflow_log_provenance": {
+    "bom_hex": "efbbbf",
+    "byte_scope": "Exact saved GitHub job-log response, a timestamped workflow display derivative. It is not byte-identical to subprocess raw logs or proof exports. Recorder escapes legacy command markers/carriage returns; decoding may replace invalid UTF-8.",
+    "decoded_line_count": 1770,
+    "download": "CI owner download receipt records successful gh api job/logs; reviewer rehashed saved body but did not independently refetch from GitHub.",
+    "line_numbering": "1-based after UTF-8-sig decoding and splitlines().",
+    "reported_original_stage_hashes": "Recorded stage hashes are preserved below, but original ephemeral subprocess files were not independently rehashed by this review."
+  }
+}

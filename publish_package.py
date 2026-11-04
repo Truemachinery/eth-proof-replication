@@ -25,13 +25,14 @@ BASE = Path(__file__).resolve().parent
 SCHEMA = 'eth-public-export/1'
 MAX_FILE = 16 * 1024 * 1024
 MAX_TOTAL = 128 * 1024 * 1024
-EXTENSIONS = {'.md', '.json', '.txt', '.py', '.lean', '.c', '.toml', '.yml'}
+WORKFLOW_LOGS = {'ci/runs/41894905159/anthropic-job-126801716984.raw.log': 'ci/runs/41894905159/anthropic-job-download-r1.json'}
+EXTENSIONS = {'.md', '.json', '.txt', '.py', '.lean', '.c', '.toml', '.yml', '.log'}
 CI_SOURCES = {'ci/workflow-template.yml', 'ci/record.py', 'ci/replicate.py', 'ci/prepare_openai.py', 'ci/compiler_gate.c', 'ci/create_gate.py', 'ci/check_controls.py', 'ci/check_bc_control.py', 'ci/check_stage_name_control.py', 'ci/check_setup_omission_control.py', 'ci/check_display_control.py', 'ci/landlock_abi.py', 'ci/check_landlock_policy_control.py', 'ci/owned_cache.py', 'ci/cache_maintenance.py'}
-CI_REQUIRED = CI_SOURCES | {'ci/README.md', 'ci/pins.json'}
+CI_REQUIRED = CI_SOURCES | {'ci/README.md', 'ci/pins.json', 'ci/ancestor-cache-compatibility.json'}
 CI_ALL = CI_REQUIRED | {'ci/control-result.json', 'ci/control-result-r2.json', 'ci/control-result-bc-r2.json', 'ci/control-result-stage-names-r3.json', 'ci/control-result-setup-omission-r3.json', 'ci/control-result-display-r3.json', 'ci/control-result-landlock-policy-r4.json'}
-REPORTS = {'PLAN.md', 'STATEMENT_REVIEW.md', 'SHA256D_RELEVANCE.md', 'VERIFICATION_PLAN.md', 'PUBLIC_README_TEMPLATE.md', 'verification/REVIEW_HANDOFF.md', 'verification/REVIEW_UPDATE_R2.md', 'verification-tools/README.md', 'anthropic/COMPARATOR_TOOL.md', 'ci/README.md', 'ci/runs/41888029999/DIAGNOSIS-R1.md', 'ci/runs/41891445823/DIAGNOSIS-R3.md', 'ci/runs/41891445823/POLICY-ADDENDUM-R4.md', 'anthropic/native-replication-report-r1.md', 'anthropic/native-saved-evidence-review-r1.md'}
-SOURCES = CI_SOURCES | {'publish_package.py', 'openai/prepare.py', 'openai/in_workspace.py', 'openai/build_ready.py', 'openai/run_gated_build.py', 'anthropic/stage.py', 'anthropic/build_topological.py', 'anthropic/verify_source_identity.py', 'verification/AuditTargets.lean', 'verification/check_trusted_probe.py', 'verification/run_scheduler_smoke.py', 'verification/compiler-gate/create_gate.py', 'verification/compiler-gate/lean_gate.c', 'verification/compiler-gate/check_gate.py', 'verification/compiler-gate/check_lake_parallel_r2.py', 'verification-tools/tool_audit.py', 'verification-tools/runtime_identity.py', 'verification-tools/record_nanoda.py', 'verification-tools/probe_record_nanoda.py'}
-MANIFESTS = {'openai/source-manifest.json', 'openai/workspace-config-r2.json', 'openai/external-dependencies-ready.json', 'openai/compiler-gate-r1/manifest.json', 'anthropic/source-manifest.json', 'anthropic/dependency-provenance.json', 'anthropic/build-graph.json', 'anthropic/lexical-source-scan.json', 'anthropic/comparator-ci-tool-manifest-r1.json', 'anthropic/ci-cache-review-r2.json', 'anthropic/ci-cache-review-r3.json', 'anthropic/ci-cache-review-r4.json', 'anthropic/landrun-abi8-source-review-r1.json', 'anthropic/basic-model-scope-r1.json', 'anthropic/build-completion-artifacts-r1.json', 'anthropic/native-replication-result-r1.json', 'anthropic/native-replication-artifacts-r1.json', 'anthropic/native-saved-input-review-r1.json', 'anthropic/native-saved-evidence-review-r1.json', 'anthropic/checker-records/nanoda-64425-0dvr445m/00-prepared.json', 'anthropic/checker-records/nanoda-64425-0dvr445m/01-started.json', 'anthropic/checker-records/nanoda-64425-0dvr445m/effective-config.json', 'verification-tools/tool-manifest-r1.json', 'verification-tools/compiler-identities.json', 'verification-tools/runtime-identities.json', 'verification-tools/recording-manifest-r1.json', 'verification-tools/recorder-probe-r1/probe-results.json', 'verification/trusted-probe-controls-r1.json', 'verification/scheduler-smoke/result.json', 'verification/compiler-gate/controls/result.json', 'verification/compiler-gate/lake-parallel-r2/result.json', 'publication/export-control-r2.json', 'publication/export-control-r3.json', 'publication/export-control-r4.json', 'publication/export-control-r5.json', 'ci/pins.json', 'ci/control-result.json', 'ci/control-result-r2.json', 'ci/control-result-bc-r2.json', 'ci/control-result-stage-names-r3.json', 'ci/runs/41888029999/raw-log-manifest.json', 'ci/control-result-setup-omission-r3.json', 'ci/control-result-display-r3.json', 'ci/control-result-landlock-policy-r4.json', 'PUBLICATION_RECEIPT-r1.json', 'PUBLICATION_RECEIPT-r2.json', 'PUBLICATION_RECEIPT-r3.json'}
+REPORTS = {'PLAN.md', 'STATEMENT_REVIEW.md', 'SHA256D_RELEVANCE.md', 'VERIFICATION_PLAN.md', 'PUBLIC_README_TEMPLATE.md', 'verification/REVIEW_HANDOFF.md', 'verification/REVIEW_UPDATE_R2.md', 'verification-tools/README.md', 'anthropic/COMPARATOR_TOOL.md', 'ci/README.md', 'ci/runs/41888029999/DIAGNOSIS-R1.md', 'ci/runs/41891445823/DIAGNOSIS-R3.md', 'ci/runs/41891445823/POLICY-ADDENDUM-R4.md', 'anthropic/native-replication-report-r1.md', 'anthropic/native-saved-evidence-review-r1.md', 'ci/runs/41894905159/DIAGNOSIS-R4-ANTHROPIC.md', 'ci/runs/41894905159/anthropic-saved-log-review-r1.md', 'ci/runs/41894905159/anthropic-saved-log-review-addendum-r2.md', 'verification/ANCESTOR_CACHE-r1.md', 'verification/ANCESTOR_CACHE_AVAILABILITY-r2.md', 'verification/ANTHROPIC_CONTINUATION-r3.md', 'openai/verification-readiness-r1.md'}
+SOURCES = CI_SOURCES | {'publish_package.py', 'openai/prepare.py', 'openai/in_workspace.py', 'openai/build_ready.py', 'openai/run_gated_build.py', 'anthropic/stage.py', 'anthropic/build_topological.py', 'anthropic/verify_source_identity.py', 'verification/AuditTargets.lean', 'verification/check_trusted_probe.py', 'verification/run_scheduler_smoke.py', 'verification/compiler-gate/create_gate.py', 'verification/compiler-gate/lean_gate.c', 'verification/compiler-gate/check_gate.py', 'verification/compiler-gate/check_lake_parallel_r2.py', 'verification-tools/tool_audit.py', 'verification-tools/runtime_identity.py', 'verification-tools/record_nanoda.py', 'verification-tools/probe_record_nanoda.py', 'verification/export_sysroot_control_r1.py', 'verification/ancestor_cache_control_r1.py', 'verification/cache_policy_control_r2.py', 'verification/cache_policy_control_r3.py'}
+MANIFESTS = {'openai/source-manifest.json', 'openai/workspace-config-r2.json', 'openai/external-dependencies-ready.json', 'openai/compiler-gate-r1/manifest.json', 'anthropic/source-manifest.json', 'anthropic/dependency-provenance.json', 'anthropic/build-graph.json', 'anthropic/lexical-source-scan.json', 'anthropic/comparator-ci-tool-manifest-r1.json', 'anthropic/ci-cache-review-r2.json', 'anthropic/ci-cache-review-r3.json', 'anthropic/ci-cache-review-r4.json', 'anthropic/landrun-abi8-source-review-r1.json', 'anthropic/basic-model-scope-r1.json', 'anthropic/build-completion-artifacts-r1.json', 'anthropic/native-replication-result-r1.json', 'anthropic/native-replication-artifacts-r1.json', 'anthropic/native-saved-input-review-r1.json', 'anthropic/native-saved-evidence-review-r1.json', 'anthropic/checker-records/nanoda-64425-0dvr445m/00-prepared.json', 'anthropic/checker-records/nanoda-64425-0dvr445m/01-started.json', 'anthropic/checker-records/nanoda-64425-0dvr445m/effective-config.json', 'verification-tools/tool-manifest-r1.json', 'verification-tools/compiler-identities.json', 'verification-tools/runtime-identities.json', 'verification-tools/recording-manifest-r1.json', 'verification-tools/recorder-probe-r1/probe-results.json', 'verification/trusted-probe-controls-r1.json', 'verification/scheduler-smoke/result.json', 'verification/compiler-gate/controls/result.json', 'verification/compiler-gate/lake-parallel-r2/result.json', 'publication/export-control-r2.json', 'publication/export-control-r3.json', 'publication/export-control-r4.json', 'publication/export-control-r5.json', 'ci/pins.json', 'ci/control-result.json', 'ci/control-result-r2.json', 'ci/control-result-bc-r2.json', 'ci/ancestor-cache-compatibility.json', 'ci/control-result-stage-names-r3.json', 'ci/runs/41888029999/raw-log-manifest.json', 'ci/control-result-setup-omission-r3.json', 'ci/control-result-display-r3.json', 'ci/control-result-landlock-policy-r4.json', 'PUBLICATION_RECEIPT-r1.json', 'PUBLICATION_RECEIPT-r2.json', 'PUBLICATION_RECEIPT-r3.json', 'PUBLICATION_RECEIPT-r4.json', 'ci/runs/41894905159/anthropic-job-download-r1.json', 'ci/runs/41894905159/anthropic-job-summary-r1.json', 'ci/runs/41894905159/anthropic-saved-log-review-r1.json', 'anthropic/ancestor-cache-review-r1.json', 'verification/ancestor-cache-actual-implementation-review-r1.json', 'verification/ancestor-cache-actual-implementation-review-r2.json', 'verification/export-sysroot-control-result-r1.json', 'verification/ancestor-cache-control-result-r1.json', 'verification/cache-policy-control-result-r2.json', 'verification/cache-policy-control-result-r3.json', 'verification/r6-input-identities-r1.json', 'publication/export-control-r6.json'}
 DENIED_PARTS = {'source', 'workspace', 'elan', 'cache', 'cargo', 'rustup', 'tools', '.git', '.lake', 'comparator-source', 'nanoda-source', 'lean4export-433-source', 'lean4export-434-source'}
 LOG_ROOTS = ('openai/logs/', 'anthropic/logs/', 'verification-tools/logs/', 'verification/scheduler-smoke/logs/', 'verification/compiler-gate/')
 RECEIPT_RE = re.compile('(?:openai|anthropic)/logs/[A-Za-z0-9_.-]+\\.json\\Z')
@@ -63,6 +64,8 @@ def relative_path(name):
         raise ValueError('excluded input class')
     if p.suffix not in EXTENSIONS:
         raise ValueError('unapproved extension')
+    if p.suffix == '.log' and p.as_posix() not in WORKFLOW_LOGS:
+        raise ValueError('workflow log is not explicitly named')
     if any((pattern.search(name.encode()) for pattern in [EMAIL, UUID, TOKEN])):
         raise ValueError('sensitive identifier in filename')
     return p.as_posix()
@@ -124,6 +127,14 @@ def closed_times(start, finish):
     except (AttributeError, TypeError, ValueError):
         return False
 
+def completed_workflow_log(base, name):
+    """Bind the one named saved response to its successful download receipt."""
+    receipt = WORKFLOW_LOGS[name]
+    d = json.loads(read_stable(base, receipt))
+    if d.get('schema') != 'eth-ci-job-log-download/1' or type(d.get('exit_code')) is not int or d.get('exit_code') != 0 or (d.get('run_id') != 41894905159) or (d.get('job_id') != 126801716984) or (not closed_times(d.get('started_utc'), d.get('finished_utc'))) or (d.get('body_path') != PurePosixPath(name).name) or (not re.fullmatch('[0-9a-f]{64}', str(d.get('body_sha256')))) or (type(d.get('body_bytes')) is not int) or (d['body_bytes'] < 1):
+        raise ValueError('unfinished or mismatched workflow-log download receipt')
+    return (receipt, d['body_sha256'], d['body_bytes'])
+
 def make_plan(base, receipts, with_ci=False):
     (items, skipped, bound_logs) = ({}, [], {})
 
@@ -151,6 +162,14 @@ def make_plan(base, receipts, with_ci=False):
                 add(name, 'completed_log', run['log_sha256'], run['log_size'])
                 if name in items:
                     bound_logs[name] = {'receipt': tool_name, 'exit_code': run['exit_code'], 'timed_out': run['timed_out']}
+    for name in WORKFLOW_LOGS:
+        try:
+            (receipt, expected, size) = completed_workflow_log(base, name)
+            add(name, 'completed_log', expected, size)
+            if name in items:
+                bound_logs[name] = {'receipt': receipt, 'exit_code': 0, 'timed_out': False, 'scope': 'Completed GitHub job-log response; display derivative, not subprocess raw bytes'}
+        except (OSError, ValueError, UnicodeError) as error:
+            skipped.append({'path': name, 'reason': type(error).__name__})
     for name in receipts:
         (d, logs) = completed_receipt(base, name)
         add(name, 'completed_receipt')
@@ -160,7 +179,7 @@ def make_plan(base, receipts, with_ci=False):
                 bound_logs[log] = {'receipt': name, 'exit_code': d['exit_code'], 'timed_out': d['timed_out']}
     return {'schema': SCHEMA, 'created_at': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'verdict': 'No positive proof verdict inferred by exporter', 'items': list(items.values()), 'completed_log_bindings': bound_logs, 'receipt_paths': receipts, 'skipped': skipped, 'with_ci': with_ci, 'review': 'Inspect this frozen selection before export. Export rechecks identities and allowlists.'}
 
-def transform(data, base):
+def transform(data, base, data_derivative=False):
     actions = []
 
     def replace_spans(rule, spans):
@@ -190,6 +209,9 @@ def transform(data, base):
             except ValueError:
                 pass
     replace_spans('remove_sensitive_json_fields_including_full_PATH', spans)
+    if data_derivative:
+        quoted_path = re.compile(b'(?<=[\\"\'])PATH=[^\\"\'\\r\\n]*')
+        replace_spans('full_PATH_quoted_argv_data_only', [(m.start(), m.end(), b'PATH=<PATH FIELD REDACTED>') for m in quoted_path.finditer(data) if b':/' in m.group(0)])
     for (rule, pattern, replacement) in [('local_replication_prefix', re.compile(re.escape(str(base.resolve()).encode())), b'<REPLICATION_ROOT>'), ('local_private_project_prefix', re.compile(re.escape(str(base.resolve().parents[1]).encode())), b'<PRIVATE_PROJECT_ROOT>'), ('home_prefix', HOME, b'<HOME>'), ('temporary_os_path', TEMP, b'<TEMP_PATH>'), ('email', EMAIL, b'<EMAIL REDACTED>'), ('uuid', UUID, b'<UUID REDACTED>'), ('credential_token', TOKEN, b'<TOKEN REDACTED>'), ('full_PATH_plaintext', re.compile(b'(?m)^\\s*(?:export\\s+)?PATH\\s*[:=][^\\r\\n]*'), b'<PATH FIELD REDACTED>'), ('sensitive_plaintext_field', re.compile(b'(?im)^\\s*(?:HOSTNAME|COMPUTER[ _-]*NAME|(?:[A-Z_]*(?:TOKEN|PASSWORD|PASSPHRASE|SECRET|SERIAL[ _-]*NUMBER|HARDWARE[ _-]*UUID)))\\s*[:=][^\\r\\n]*'), b'<SENSITIVE FIELD REDACTED>')]:
         matches = [(m.start(), m.end(), replacement) for m in pattern.finditer(data) if not (rule == 'sensitive_plaintext_field' and PUBLIC_CREDENTIAL_REFERENCE.fullmatch(m.group(0)))]
         replace_spans(rule, matches)
@@ -279,6 +301,11 @@ def export_plan(base, plan, release):
             if receipt == 'verification-tools/tool-manifest-r1.json':
                 d = json.loads(read_stable(base, receipt))
                 refs = [(log_relative(base, receipt, r['log_path']), r['log_sha256'], r['log_size']) for r in d['build_and_acquisition_runs'] if closed_times(r.get('started_at'), r.get('finished_at')) and type(r.get('exit_code')) is int and (type(r.get('timed_out')) is bool)]
+            elif WORKFLOW_LOGS.get(name) == receipt:
+                if receipt not in {item['path'] for item in plan['items']}:
+                    raise ValueError('workflow response omitted its download receipt')
+                (_, expected_hash, expected_size) = completed_workflow_log(base, name)
+                refs = [(name, expected_hash, expected_size)]
             else:
                 (_, refs) = completed_receipt(base, receipt)
             expected = next(((h, size) for (log, h, size) in refs if log == name), None)
@@ -300,7 +327,7 @@ def export_plan(base, plan, release):
     for item in plan['items']:
         name = item['path']
         raw = originals[name]
-        (public, actions) = transform(raw, base)
+        (public, actions) = transform(raw, base, data_derivative=name not in SOURCES)
         if name in CI_SOURCES and public != raw:
             raise ValueError('CI execution source requires redaction; author a portable reviewed source and freeze a new plan')
         output = 'README.md' if name == 'PUBLIC_README_TEMPLATE.md' else '.github/workflows/replicate.yml' if name == 'ci/workflow-template.yml' else name

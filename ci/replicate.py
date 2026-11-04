@@ -256,7 +256,7 @@ def main():
             raise RuntimeError('unexpected upstream independent-kernel setting')
         print('ORIGINAL_COMPARATOR_CONFIG ' + json.dumps({'sha256': sha(original_config), 'config': config}), flush=True)
         export = work / 'selected-solution.ndjson'
-        export_command = [landrun, '--best-effort', '--ro', '/', '--rw', '/dev', '-ldd', '-add-exec', '--env', 'PATH', '--env', 'HOME', '--env', 'LEAN_PATH',
+        export_command = [landrun, '--best-effort', '--ro', '/', '--rw', '/dev', '-ldd', '-add-exec', '--env', 'PATH', '--env', 'HOME', '--env', 'LEAN_PATH', '--env', 'LEAN_SYSROOT',
                           '--', str(expbin), spec['module'], '--', *spec['theorems']]
         run('retained-target-export', isolated([proof_prefix / 'bin/lake', 'env', *export_command], project, penv),
             project, timeout=1800, stdout_file=export)
