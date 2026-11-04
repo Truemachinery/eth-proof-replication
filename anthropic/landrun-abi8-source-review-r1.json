@@ -1,0 +1,95 @@
+{
+  "schema": "landrun-abi8-source-review/1",
+  "scope": "Bounded read-only source/document review only; no Linux or sandbox execution by reviewer and no proof acceptance claim",
+  "reviewer": "codex-eth-anthropic-replication",
+  "recorded_utc": "2026-11-04T19:07:08.321533+00:00",
+  "landrun": {
+    "commit": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4",
+    "origin": "https://github.com/zouuup/landrun.git",
+    "tracked_changes": "",
+    "files": [
+      {
+        "path": "go.mod",
+        "sha256": "92873259cb8ed0f2765cd99a1b3dc36b768fef859d13ffecb155df33b5b309b1",
+        "bytes": 252
+      },
+      {
+        "path": "go.sum",
+        "sha256": "a6a5ec06c4b78ca140c76fdbe171b82a5521a808abc5805ea6eba568e29763e5",
+        "bytes": 1394
+      },
+      {
+        "path": "internal/sandbox/sandbox.go",
+        "sha256": "a6ee5899479d44fc3fdd0011dfb7586716df00235cddb59997c115f5a4f430cc",
+        "bytes": 10229
+      },
+      {
+        "path": "cmd/landrun/main.go",
+        "sha256": "40ecf8680ef5857512f13c8391105404d907074f03535d95e0f0dd570cc441ff",
+        "bytes": 6559
+      },
+      {
+        "path": "README.md",
+        "sha256": "4998ce929009857536053620a9648a3efa17d04d229185be0978cdf38ec431cc",
+        "bytes": 18933
+      }
+    ]
+  },
+  "landlock_dependency": {
+    "commit": "e573f52a61e3072813de11359239d2ccae9705d2",
+    "origin": "https://github.com/landlock-lsm/go-landlock.git",
+    "tracked_changes": "",
+    "files": [
+      {
+        "path": "landlock/abi_versions.go",
+        "sha256": "7f2fa7b4573253abca761acf1099cc20c35167f4bf816c5745c68d185ea5689a",
+        "bytes": 2097
+      },
+      {
+        "path": "landlock/restrict.go",
+        "sha256": "b50df91ec7eef592215081fd90bd7afcb0277cfbd1b6e0fafb3a4b878ae2aab2",
+        "bytes": 3960
+      },
+      {
+        "path": "landlock/config.go",
+        "sha256": "2e5aafe4b50ad0520d832b1a9cd2bbf1054962fff3a9c720e5f63f7532e4d8be",
+        "bytes": 20353
+      },
+      {
+        "path": "landlock/syscall/landlock.go",
+        "sha256": "9f8762e85846b34c15411266a1e33c62c408f8a4364ca724181effdcf72f1576",
+        "bytes": 2922
+      }
+    ]
+  },
+  "dependency_version": "github.com/landlock-lsm/go-landlock v0.9.0",
+  "declared_module_go_sum": "h1:2q8G8yx9Hsd5bV+R6PJfgQl0zszNxC8KO+SIqGwfxlw=",
+  "module_zip_checksum_independently_recomputed_by_reviewer": false,
+  "source_observations": [
+    "Landrun811 handles all known V9 filesystem rights, both classic TCP rights and both IPC scopes unless corresponding unrestricted flags are explicitly set. BestEffort is applied only when requested.",
+    "go-landlock v0.9.0 restrictTo intersects config masks with actual ABI support. OnABI8 versus9, FS mask is0xffff versus0x1ffff; only bit16 AccessFSResolveUnix is omitted. Net mask0x3, Scoped mask0x3 and supported restriction flags0xf are unchanged.",
+    "restrict.go takes TSYNC enforcement path for actualABI>=8. Existing filesystem path rules do not request new --unix access; prior filesystem rights remain available onABI8.",
+    "Exact upstream Comparator575 and865 already include --best-effort in their Landrun argument constructor."
+  ],
+  "coverage": {
+    "abi8_filesystem": "All known filesystem rights through ABI8, including refer/truncate/device-ioctl, retain specified read/write/execute path restrictions. Not the ABI9 ResolveUnix pathname socket connect/sendmsg right.",
+    "tcp": "Both classic TCP bind/connect rights remain handled. This is not an assertion that UDP/all networking is denied.",
+    "scopes": "Abstract UNIX socket and outside-domain signal scopes remain handled.",
+    "missing_abi9_feature": "Pathname UNIX connect/sendmsg mediation (AccessFSResolveUnix).",
+    "systemd_qualification": "RestrictAddressFamilies affects socket(2) creation. Official systemd documentation excludes inherited sockets, socketpair and io_uring; the existing AF_UNIX probe establishes creation denial only, not full ABI9-equivalent UNIX socket mediation."
+  },
+  "reviewed_policy": "No source-level objection to adding --best-effort to the five harness-owned Landrun calls while requiring Linuxx86_64 plus an explicit detectedABI>=8 floor and actual write-denial/AF_UNIX-creation controls. Keep all path/environment restrictions, source pins and theorem/checker policies unchanged. Disclose narrower ABI8 platform coverage; do not claim fullV9 or a complete UNIX barrier.",
+  "runtime_observation": "Parent reported run41891445823 stopped before project source build because kernelABI8 could not satisfy strictV9 request. Reviewer did not independently run Linux.",
+  "primary_documentation": [
+    "https://github.com/zouuup/landrun/tree/811cfff51ceaf3d9843708aa6d22e9b84ccac8b4",
+    "https://github.com/landlock-lsm/go-landlock/tree/e573f52a61e3072813de11359239d2ccae9705d2",
+    "https://raw.githubusercontent.com/systemd/systemd/v255/man/systemd.exec.xml",
+    "https://www.freedesktop.org/software/systemd/man/latest/systemd.exec.html#RestrictAddressFamilies="
+  ],
+  "limitations": [
+    "Source review and hashes attest inspected code identity, not actual kernel enforcement.",
+    "Mandatory runtime controls must still pass on each Linux job.",
+    "No fake-Landrun/unrestricted mode, mathematical source change or native build interruption was proposed."
+  ],
+  "cost": "No purchased compute; source acquisition/read/hash/model costs not separately metered. Native Anthropic exec14274 left untouched."
+}

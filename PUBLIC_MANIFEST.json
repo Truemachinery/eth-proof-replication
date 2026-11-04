@@ -1,19 +1,19 @@
 {
   "schema": "eth-public-export/1",
-  "release": "in-progress-20261104-r3",
+  "release": "in-progress-20261104-r4",
   "status": "prepared_for_review_not_published",
   "verification_verdict": "Not inferred; missing or unfinished stages are not passes",
-  "exporter_sha256": "b9e201649233bc83d53893667ac94491dd8370e9fff62d6cacff23e496ed5c2b",
-  "plan_sha256": "4e4709b6d3f24b9062c705e271f1c68d1923fb2127bbe21ff1340855f353931d",
+  "exporter_sha256": "9bf5c3cf690b9f4249f2e704d393f8cfd066f69d88169d1708d4d3f4edb26f37",
+  "plan_sha256": "ed8f6b4a476406c1f6e1fce8feeb30e246a6d89a6915bcf78ec444ab55632f23",
   "files": [
     {
       "path": "PLAN.md",
       "kind": "report",
-      "original_sha256": "88b520a8a45521e2114d8bfffe796730168fd29e797faa28f50f2d8b2d8b65d9",
-      "original_size_bytes": 6465,
+      "original_sha256": "01479b206b9517ca4aeb0ef686a627568ad6fb8e56bf9ec09b2ad281020cdfe5",
+      "original_size_bytes": 7945,
       "public_path": "PLAN.md",
-      "public_sha256": "88b520a8a45521e2114d8bfffe796730168fd29e797faa28f50f2d8b2d8b65d9",
-      "public_size_bytes": 6465,
+      "public_sha256": "01479b206b9517ca4aeb0ef686a627568ad6fb8e56bf9ec09b2ad281020cdfe5",
+      "public_size_bytes": 7945,
       "public_mode": "644",
       "copy_kind": "byte_identical",
       "redactions": [],
@@ -37,13 +37,28 @@
       "private_ledger_dependency_in_original": false
     },
     {
+      "path": "PUBLICATION_RECEIPT-r2.json",
+      "kind": "manifest",
+      "original_sha256": "bbba28df5521bcebadaa71154b0fa5c5dad62b80b974a465c24cf42f70b4b423",
+      "original_size_bytes": 66651,
+      "public_path": "PUBLICATION_RECEIPT-r2.json",
+      "public_sha256": "bbba28df5521bcebadaa71154b0fa5c5dad62b80b974a465c24cf42f70b4b423",
+      "public_size_bytes": 66651,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
       "path": "PUBLIC_README_TEMPLATE.md",
       "kind": "report",
-      "original_sha256": "cbe991396456f9db05e3db3f92f8610334dd2fe3a123bbf63112cef5378479bc",
-      "original_size_bytes": 8142,
+      "original_sha256": "f397b88ec25e0c1612388ace5a9e28b1dae26fd1cdc26ff27813d3e553131a88",
+      "original_size_bytes": 9442,
       "public_path": "README.md",
-      "public_sha256": "cbe991396456f9db05e3db3f92f8610334dd2fe3a123bbf63112cef5378479bc",
-      "public_size_bytes": 8142,
+      "public_sha256": "f397b88ec25e0c1612388ace5a9e28b1dae26fd1cdc26ff27813d3e553131a88",
+      "public_size_bytes": 9442,
       "public_mode": "644",
       "copy_kind": "byte_identical",
       "redactions": [],
@@ -295,6 +310,21 @@
       "private_ledger_dependency_in_original": false
     },
     {
+      "path": "anthropic/landrun-abi8-source-review-r1.json",
+      "kind": "manifest",
+      "original_sha256": "dedc943747374632274f4d25d5757b30051da3f27eb51cbd029b1be60450772f",
+      "original_size_bytes": 5414,
+      "public_path": "anthropic/landrun-abi8-source-review-r1.json",
+      "public_sha256": "dedc943747374632274f4d25d5757b30051da3f27eb51cbd029b1be60450772f",
+      "public_size_bytes": 5414,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
       "path": "anthropic/lexical-source-scan.json",
       "kind": "manifest",
       "original_sha256": "05fcb6d04b3660a58315f8f9f61a17b1f53293a1b9d22933a64159d1d934be13",
@@ -359,11 +389,11 @@
     {
       "path": "ci/README.md",
       "kind": "report",
-      "original_sha256": "e2659499a8726b51947c051eecaa527b4094ae5030787ab96db2b1586c19c88f",
-      "original_size_bytes": 11353,
+      "original_sha256": "610b71b4ea6a002d60d5d931f519dc0b68e21aada8e3afb0fff6e0c615cce239",
+      "original_size_bytes": 13542,
       "public_path": "ci/README.md",
-      "public_sha256": "e2659499a8726b51947c051eecaa527b4094ae5030787ab96db2b1586c19c88f",
-      "public_size_bytes": 11353,
+      "public_sha256": "610b71b4ea6a002d60d5d931f519dc0b68e21aada8e3afb0fff6e0c615cce239",
+      "public_size_bytes": 13542,
       "public_mode": "644",
       "copy_kind": "byte_identical",
       "redactions": [],
@@ -424,6 +454,21 @@
       "public_path": "ci/check_display_control.py",
       "public_sha256": "cbd5851a36d38e0ad5350eea64d7894d8b7708f618e1ca4210afbe46fc9f383b",
       "public_size_bytes": 3795,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "ci/check_landlock_policy_control.py",
+      "kind": "source",
+      "original_sha256": "d2471fa5e1424ef1758aa095318a1a81e07f46c1ef41525c507c803b4fcdc128",
+      "original_size_bytes": 4563,
+      "public_path": "ci/check_landlock_policy_control.py",
+      "public_sha256": "d2471fa5e1424ef1758aa095318a1a81e07f46c1ef41525c507c803b4fcdc128",
+      "public_size_bytes": 4563,
       "public_mode": "644",
       "copy_kind": "byte_identical",
       "redactions": [],
@@ -507,6 +552,21 @@
       "private_ledger_dependency_in_original": false
     },
     {
+      "path": "ci/control-result-landlock-policy-r4.json",
+      "kind": "manifest",
+      "original_sha256": "868caed022e577c87af606a083497b658f495ad026ddbe176f27c11c334d8764",
+      "original_size_bytes": 708,
+      "public_path": "ci/control-result-landlock-policy-r4.json",
+      "public_sha256": "868caed022e577c87af606a083497b658f495ad026ddbe176f27c11c334d8764",
+      "public_size_bytes": 708,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
       "path": "ci/control-result-r2.json",
       "kind": "manifest",
       "original_sha256": "be559a9f05600526547067307a10fddc94e465b5cf388c127eb614e64c36794b",
@@ -582,6 +642,21 @@
       "private_ledger_dependency_in_original": false
     },
     {
+      "path": "ci/landlock_abi.py",
+      "kind": "source",
+      "original_sha256": "d0853c1a67adcec4bbe22d1c44dc835f448b80eebe6502a32450faa59e17e0b0",
+      "original_size_bytes": 1265,
+      "public_path": "ci/landlock_abi.py",
+      "public_sha256": "d0853c1a67adcec4bbe22d1c44dc835f448b80eebe6502a32450faa59e17e0b0",
+      "public_size_bytes": 1265,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
       "path": "ci/owned_cache.py",
       "kind": "source",
       "original_sha256": "7854df30f6d14c791547e0672b19ad5f34d2b41fc1aacc264f2fdb60bb6d2bb3",
@@ -644,11 +719,11 @@
     {
       "path": "ci/replicate.py",
       "kind": "source",
-      "original_sha256": "0cadbd0ced012a80d9a7f843d99c53daf0956247ce72b8e6c3e729631994dde0",
-      "original_size_bytes": 20803,
+      "original_sha256": "89a68dcc753d1b543d7262f4893da5b15275dc8f3dc23bdc5872761f84b41b28",
+      "original_size_bytes": 21152,
       "public_path": "ci/replicate.py",
-      "public_sha256": "0cadbd0ced012a80d9a7f843d99c53daf0956247ce72b8e6c3e729631994dde0",
-      "public_size_bytes": 20803,
+      "public_sha256": "89a68dcc753d1b543d7262f4893da5b15275dc8f3dc23bdc5872761f84b41b28",
+      "public_size_bytes": 21152,
       "public_mode": "644",
       "copy_kind": "byte_identical",
       "redactions": [],
@@ -710,6 +785,36 @@
           ]
         }
       ],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "ci/runs/41891445823/DIAGNOSIS-R3.md",
+      "kind": "report",
+      "original_sha256": "fb71c6f7c931782df05a220f210324c770f76cc86a6507bf4174c2a90fd7ed6a",
+      "original_size_bytes": 3894,
+      "public_path": "ci/runs/41891445823/DIAGNOSIS-R3.md",
+      "public_sha256": "fb71c6f7c931782df05a220f210324c770f76cc86a6507bf4174c2a90fd7ed6a",
+      "public_size_bytes": 3894,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "ci/runs/41891445823/POLICY-ADDENDUM-R4.md",
+      "kind": "report",
+      "original_sha256": "817c1db53fe6da93ed7d3c31cdbbf223f67fceaf5c9f2b88c805fac594666d24",
+      "original_size_bytes": 2158,
+      "public_path": "ci/runs/41891445823/POLICY-ADDENDUM-R4.md",
+      "public_sha256": "817c1db53fe6da93ed7d3c31cdbbf223f67fceaf5c9f2b88c805fac594666d24",
+      "public_size_bytes": 2158,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
       "redacted_source_view": null,
       "portable_transform": null,
       "private_ledger_dependency_in_original": false
@@ -985,46 +1090,46 @@
     {
       "path": "publish_package.py",
       "kind": "source",
-      "original_sha256": "b9e201649233bc83d53893667ac94491dd8370e9fff62d6cacff23e496ed5c2b",
-      "original_size_bytes": 31186,
+      "original_sha256": "9bf5c3cf690b9f4249f2e704d393f8cfd066f69d88169d1708d4d3f4edb26f37",
+      "original_size_bytes": 31534,
       "public_path": "publish_package.py",
-      "public_sha256": "35fb2dd426e670070fd3e038afe946c2d95ac80f016f8a5d555e8c58baa56477",
-      "public_size_bytes": 30551,
+      "public_sha256": "20a5ffd722b7c423a5ec472322c3dcf058267304c8b1a8293f0306ee83d8961e",
+      "public_size_bytes": 30865,
       "public_mode": "644",
       "copy_kind": "explicit_portable_python_derivative",
       "redactions": [
         {
           "rule": "remove_sensitive_json_fields_including_full_PATH",
-          "input_sha256": "b9e201649233bc83d53893667ac94491dd8370e9fff62d6cacff23e496ed5c2b",
-          "output_sha256": "f679b800515e0b22bbd94a586333eac189caa7bcb49ae1f3b1dcb6c57d47c07a",
+          "input_sha256": "9bf5c3cf690b9f4249f2e704d393f8cfd066f69d88169d1708d4d3f4edb26f37",
+          "output_sha256": "d6a7f13d0bf2d5e263f0bbd1bd1b13fb765ee7ca7be5fea6a33cccde8c3cbfc3",
           "replacements": [
             {
-              "input_byte_start": 26468,
-              "input_byte_end": 26505,
+              "input_byte_start": 26816,
+              "input_byte_end": 26853,
               "replacement": "\"<REDACTED FIELD>\""
             }
           ]
         },
         {
           "rule": "home_prefix",
-          "input_sha256": "f679b800515e0b22bbd94a586333eac189caa7bcb49ae1f3b1dcb6c57d47c07a",
-          "output_sha256": "ea4ac1581f2820522ef50827df7b0f7b94dced3ccd3ec56692342de968c91b57",
+          "input_sha256": "d6a7f13d0bf2d5e263f0bbd1bd1b13fb765ee7ca7be5fea6a33cccde8c3cbfc3",
+          "output_sha256": "b0b909b8c685c757fb2057446e07ddd19ff883b7114cbd7ef6f3a5bd0148d251",
           "replacements": [
             {
-              "input_byte_start": 25763,
-              "input_byte_end": 25781,
+              "input_byte_start": 26111,
+              "input_byte_end": 26129,
               "replacement": "<HOME>"
             }
           ]
         },
         {
           "rule": "sensitive_plaintext_field",
-          "input_sha256": "ea4ac1581f2820522ef50827df7b0f7b94dced3ccd3ec56692342de968c91b57",
-          "output_sha256": "eb45528c45d008a20bf722c3487103e8ab7040e2c6d8fd7086fe2670624e4ff1",
+          "input_sha256": "b0b909b8c685c757fb2057446e07ddd19ff883b7114cbd7ef6f3a5bd0148d251",
+          "output_sha256": "8e48ed8adc39694662932927b7566aa91d8ebf98176f91b5d55259051aba15db",
           "replacements": [
             {
-              "input_byte_start": 4623,
-              "input_byte_end": 4749,
+              "input_byte_start": 4971,
+              "input_byte_end": 5097,
               "replacement": "<SENSITIVE FIELD REDACTED>"
             }
           ]
@@ -1032,8 +1137,8 @@
       ],
       "redacted_source_view": {
         "path": "source-views/publish_package.py.txt",
-        "sha256": "eb45528c45d008a20bf722c3487103e8ab7040e2c6d8fd7086fe2670624e4ff1",
-        "size_bytes": 31055
+        "sha256": "8e48ed8adc39694662932927b7566aa91d8ebf98176f91b5d55259051aba15db",
+        "size_bytes": 31403
       },
       "portable_transform": "Python AST literal transformation plus ast.unparse",
       "private_ledger_dependency_in_original": true

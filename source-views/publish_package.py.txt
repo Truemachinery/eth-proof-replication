@@ -26,16 +26,19 @@ CI_SOURCES = {"ci/workflow-template.yml", "ci/record.py", "ci/replicate.py", "ci
               "ci/check_stage_name_control.py",
               "ci/check_setup_omission_control.py",
               "ci/check_display_control.py",
+              "ci/landlock_abi.py", "ci/check_landlock_policy_control.py",
               "ci/owned_cache.py", "ci/cache_maintenance.py"}
 CI_REQUIRED = CI_SOURCES | {"ci/README.md", "ci/pins.json"}
 CI_ALL = CI_REQUIRED | {"ci/control-result.json", "ci/control-result-r2.json", "ci/control-result-bc-r2.json",
                         "ci/control-result-stage-names-r3.json", "ci/control-result-setup-omission-r3.json",
-                        "ci/control-result-display-r3.json"}
+                        "ci/control-result-display-r3.json", "ci/control-result-landlock-policy-r4.json"}
 REPORTS = {
     "PLAN.md", "STATEMENT_REVIEW.md", "SHA256D_RELEVANCE.md", "VERIFICATION_PLAN.md",
     "PUBLIC_README_TEMPLATE.md", "verification/REVIEW_HANDOFF.md", "verification/REVIEW_UPDATE_R2.md",
     "verification-tools/README.md", "anthropic/COMPARATOR_TOOL.md", "ci/README.md",
     "ci/runs/41888029999/DIAGNOSIS-R1.md",
+    "ci/runs/41891445823/DIAGNOSIS-R3.md",
+    "ci/runs/41891445823/POLICY-ADDENDUM-R4.md",
 }
 SOURCES = CI_SOURCES | {
     "publish_package.py", "openai/prepare.py", "openai/in_workspace.py", "openai/build_ready.py",
@@ -54,6 +57,7 @@ MANIFESTS = {
     "anthropic/lexical-source-scan.json", "anthropic/comparator-ci-tool-manifest-r1.json",
     "anthropic/ci-cache-review-r2.json",
     "anthropic/ci-cache-review-r3.json", "anthropic/ci-cache-review-r4.json",
+    "anthropic/landrun-abi8-source-review-r1.json",
     "verification-tools/tool-manifest-r1.json", "verification-tools/compiler-identities.json",
     "verification-tools/runtime-identities.json", "verification-tools/recording-manifest-r1.json",
     "verification-tools/recorder-probe-r1/probe-results.json", "verification/trusted-probe-controls-r1.json",
@@ -67,7 +71,9 @@ MANIFESTS = {
     "ci/control-result-stage-names-r3.json", "ci/runs/41888029999/raw-log-manifest.json",
     "ci/control-result-setup-omission-r3.json",
     "ci/control-result-display-r3.json",
+    "ci/control-result-landlock-policy-r4.json",
     "PUBLICATION_RECEIPT-r1.json",
+    "PUBLICATION_RECEIPT-r2.json",
 }
 DENIED_PARTS = {"source", "workspace", "elan", "cache", "cargo", "rustup", "tools", ".git", ".lake",
                 "comparator-source", "nanoda-source", "lean4export-433-source", "lean4export-434-source"}

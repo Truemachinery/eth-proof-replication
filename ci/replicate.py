@@ -128,6 +128,27 @@ def main():
         for version in [spec['lean'], spec['comparator_lean']]:
             for suffix in ['download', 'extract']:
                 validate_stage_name('lean-' + version + '-' + suffix)
+        for exe in ['git', 'curl', 'tar', 'zstd', 'cc', 'go', 'cargo', 'sudo', 'systemd-run']:
+            if not shutil.which(exe, path=env['PATH']):
+                raise RuntimeError('missing runner dependency: ' + exe)
+        run('landlock-abi-preflight', [sys.executable, HERE / 'landlock_abi.py'], timeout=30, required_text='LANDLOCK_ABI_ACCEPTED')
+        tools_bin = work / 'tools-bin'
+        tools_bin.mkdir()
+        run('landrun-build', ['go', 'install', 'github.com/zouuup/landrun/cmd/landrun@' + PINS['tools']['landrun']],
+            environment=dict(env, GOBIN=str(tools_bin), CGO_ENABLED='0'), timeout=1200)
+        landrun = tools_bin / 'landrun'
+        print('PREFLIGHT_LANDRUN_IDENTITY ' + json.dumps({'sha256': sha(landrun), 'size_bytes': landrun.stat().st_size}), flush=True)
+        # Require actual write denial and separately tested AF_UNIX socket creation denial.
+        denied = work / 'landrun-denied'
+        denied.mkdir()
+        probe = [sys.executable, '-c', 'from pathlib import Path\nimport sys\ntry: Path(sys.argv[1]).write_text("forbidden")\nexcept PermissionError: print("LANDRUN_WRITE_DENIED")\nelse: raise SystemExit(92)', str(denied / 'forbidden')]
+        run('landrun-enforcement-control', isolated([landrun, '--best-effort', '--ro', '/', '--rw', '/dev', '-ldd', '-add-exec', '--', *probe], work, env),
+            required_text='LANDRUN_WRITE_DENIED')
+        if (denied / 'forbidden').exists():
+            raise RuntimeError('Landrun write isolation failed')
+        run('af-unix-control', isolated([sys.executable, '-c',
+            'import socket\ntry: socket.socket(socket.AF_UNIX)\nexcept OSError: print("AF_UNIX_DENIED")\nelse: raise SystemExit(93)'], work, env),
+            required_text='AF_UNIX_DENIED')
         if args.cleanup_disposable_sdks:
             # Guard above is mandatory before even constructing this fixed disposable-VM cleanup.
             run('cleanup-disposable-sdks', ['sudo', '-n', 'rm', '-rf', '--',
@@ -136,9 +157,6 @@ def main():
         print('DISK_PREFLIGHT ' + json.dumps({'free_bytes': free, 'required_bytes': 26 * 1024**3}), flush=True)
         if free < 26 * 1024**3:
             raise RuntimeError('insufficient free disk: need26GiB after optional disposable SDK cleanup')
-        for exe in ['git', 'curl', 'tar', 'zstd', 'cc', 'go', 'cargo', 'sudo', 'systemd-run']:
-            if not shutil.which(exe, path=env['PATH']):
-                raise RuntimeError('missing runner dependency: ' + exe)
         run('host-inventory', ['bash', '-c', 'uname -a; lscpu; free -b; df -B1 .; go version; cargo --version; rustc --version; cc --version'])
         proof_prefix = toolchain(spec['lean'])
         tool_prefix = toolchain(spec['comparator_lean'])
@@ -195,34 +213,18 @@ def main():
         run('comparator-build', [tool_prefix / 'bin/lake', 'build', 'comparator'], comparator, tenv, timeout=1800)
         run('exporter-build-exact-proof-compiler', [proof_prefix / 'bin/lake', 'build', 'lean4export'], exporter, penv, timeout=1800)
         run('nanoda-build', ['cargo', 'build', '--release', '--locked', '--jobs', '2'], nanoda, env, timeout=1800)
-        tools_bin = work / 'tools-bin'
-        tools_bin.mkdir()
-        run('landrun-build', ['go', 'install', 'github.com/zouuup/landrun/cmd/landrun@' + PINS['tools']['landrun']],
-            environment=dict(env, GOBIN=str(tools_bin), CGO_ENABLED='0'), timeout=1200)
-        landrun = tools_bin / 'landrun'
         compbin, expbin, nanobin = (comparator / '.lake/build/bin/comparator', exporter / '.lake/build/bin/lean4export',
                                   nanoda / 'target/release/nanoda_bin')
         identities = [{'tool': n, 'sha256': sha(x), 'size_bytes': x.stat().st_size}
                       for n, x in [('comparator', compbin), ('exporter', expbin), ('nanoda', nanobin), ('landrun', landrun)]]
         write_json(work / 'tool-identities.json', identities)
         print('TOOL_IDENTITIES ' + json.dumps(identities), flush=True)
-        # No weaker fallback: test real Landlock enforcement and seccomp AF_UNIX denial first.
-        denied = work / 'landrun-denied'
-        denied.mkdir()
-        probe = [sys.executable, '-c', 'from pathlib import Path\nimport sys\ntry: Path(sys.argv[1]).write_text("forbidden")\nexcept PermissionError: print("LANDRUN_WRITE_DENIED")\nelse: raise SystemExit(92)', str(denied / 'forbidden')]
-        run('landrun-enforcement-control', isolated([landrun, '--ro', '/', '--rw', '/dev', '-ldd', '-add-exec', '--', *probe], work, env),
-            required_text='LANDRUN_WRITE_DENIED')
-        if (denied / 'forbidden').exists():
-            raise RuntimeError('Landrun write isolation failed')
-        run('af-unix-control', isolated([sys.executable, '-c',
-            'import socket\ntry: socket.socket(socket.AF_UNIX)\nexcept OSError: print("AF_UNIX_DENIED")\nelse: raise SystemExit(93)'], work, env),
-            required_text='AF_UNIX_DENIED')
         run('create-two-slot-compiler-prefix', [sys.executable, HERE / 'create_gate.py', '--real-prefix', proof_prefix, '--output', work / 'compiler-gate'])
         genv = dict(penv, LEAN_SYSROOT=str(work / 'compiler-gate/prefix'), LAKE_OVERRIDE_LEAN='true',
                     ETH_LEAN_SLOTS='2', PATH=str(work / 'compiler-gate/prefix/bin') + ':' + env['PATH'])
         targets = ['+OAI.Algorithms.SubexponentialSAT.Main', '+ComparatorChallenges.SubexponentialSAT'] if args.proof == 'openai' else []
         if args.mode != 'verify':
-            build_command = [landrun, '--ro', '/', '--rw', '/dev', '--rwx', str(project / '.lake'),
+            build_command = [landrun, '--best-effort', '--ro', '/', '--rw', '/dev', '--rwx', str(project / '.lake'),
                              '--rwx', str(work / 'compiler-gate'), '--rox', str(proof_prefix),
                              '--rox', str(Path(shutil.which('git', path=env['PATH'])).resolve()), '-ldd', '-add-exec']
             for key in ['PATH', 'HOME', 'LEAN_SYSROOT', 'LAKE_OVERRIDE_LEAN', 'ETH_LEAN_SLOTS', 'LEAN_NUM_THREADS', 'LEAN_ABORT_ON_PANIC']:
@@ -236,7 +238,7 @@ def main():
         if args.mode == 'build':
             summary['status'] = 'source-built-checks-pending'
             return
-        fresh_command = [proof_prefix / 'bin/lake', 'env', landrun, '--ro', '/', '--rw', '/dev', '-ldd', '-add-exec']
+        fresh_command = [proof_prefix / 'bin/lake', 'env', landrun, '--best-effort', '--ro', '/', '--rw', '/dev', '-ldd', '-add-exec']
         for key in ['PATH', 'HOME', 'LEAN_PATH', 'LEAN_SYSROOT']:
             fresh_command.extend(['--env', key])
         fresh_command.extend(['--', proof_prefix / 'bin/leanchecker', '--fresh', spec['module']])
@@ -254,7 +256,7 @@ def main():
             raise RuntimeError('unexpected upstream independent-kernel setting')
         print('ORIGINAL_COMPARATOR_CONFIG ' + json.dumps({'sha256': sha(original_config), 'config': config}), flush=True)
         export = work / 'selected-solution.ndjson'
-        export_command = [landrun, '--ro', '/', '--rw', '/dev', '-ldd', '-add-exec', '--env', 'PATH', '--env', 'HOME', '--env', 'LEAN_PATH',
+        export_command = [landrun, '--best-effort', '--ro', '/', '--rw', '/dev', '-ldd', '-add-exec', '--env', 'PATH', '--env', 'HOME', '--env', 'LEAN_PATH',
                           '--', str(expbin), spec['module'], '--', *spec['theorems']]
         run('retained-target-export', isolated([proof_prefix / 'bin/lake', 'env', *export_command], project, penv),
             project, timeout=1800, stdout_file=export)
@@ -263,7 +265,7 @@ def main():
                             'unpermitted_axiom_hard_error': True, 'num_threads': 2, 'nat_extension': True, 'string_extension': True})
         print('RETAINED_NANODA_CONFIG ' + json.dumps({'sha256': sha(nconfig), 'config': json.loads(nconfig.read_text())}), flush=True)
         if args.proof == 'openai':
-            run('additional-retained-export-nanoda', isolated([landrun, '--ro', '/', '--rw', '/dev', '-ldd', '-add-exec', '--', nanobin, nconfig], project, env),
+            run('additional-retained-export-nanoda', isolated([landrun, '--best-effort', '--ro', '/', '--rw', '/dev', '-ldd', '-add-exec', '--', nanobin, nconfig], project, env),
                 project, timeout=120 * 60)
             summary['independent_kernel'] = 'Pinned Nanoda on separately retained selected-target export; original Comparator config disables Nanoda.'
         else:
