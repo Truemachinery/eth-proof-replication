@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "checks": [
+    "fixed allowlist",
+    "live log excluded",
+    "failure preserved",
+    "sensitive data redacted",
+    "portable derivative distinguished and syntax checked",
+    "original source unchanged",
+    "incomplete receipt rejected",
+    "plan expansion rejected",
+    "source drift rejected"
+  ],
+  "no_proof_execution": true
+}

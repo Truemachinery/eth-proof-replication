@@ -1,0 +1,86 @@
+{
+  "scope": "Compiler executable identity, not a proof check",
+  "compilers": [
+    {
+      "label": "lean435",
+      "name": "lean",
+      "path": "<HOME>/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+      "sha256": "d1d9c26a539f54fe839d2aa7760bf1ac1dd76a30b26e2c9684bebf2900038fcf",
+      "size_bytes": 49968,
+      "version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+      "stderr": ""
+    },
+    {
+      "label": "lean435",
+      "name": "lake",
+      "path": "<HOME>/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+      "sha256": "d2d63c80ca10bd2cc9557d11d59221b95c6eefb078c9652a11ef887ab8a068a5",
+      "size_bytes": 51664,
+      "version": "Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)",
+      "stderr": ""
+    },
+    {
+      "label": "lean4341",
+      "name": "lean",
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean",
+      "sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+      "size_bytes": 49968,
+      "version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+      "stderr": ""
+    },
+    {
+      "label": "lean4341",
+      "name": "lake",
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lake",
+      "sha256": "c8c24f1398162ab4004e2a869952d8469f54293651151feaad4526f2b8474c6e",
+      "size_bytes": 51824,
+      "version": "Lake version 5.0.0-src+5045d00 (Lean version 4.34.1)",
+      "stderr": ""
+    },
+    {
+      "label": "lean4331",
+      "name": "lean",
+      "path": "<REPLICATION_ROOT>/anthropic/elan/toolchains/leanprover--lean4---v4.33.1/bin/lean",
+      "sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+      "size_bytes": 49968,
+      "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+      "stderr": ""
+    },
+    {
+      "label": "lean4331",
+      "name": "lake",
+      "path": "<REPLICATION_ROOT>/anthropic/elan/toolchains/leanprover--lean4---v4.33.1/bin/lake",
+      "sha256": "58261a1a2fa1a362376c71e02ca854a093e71cc5e6ea64b287a931cb2565273d",
+      "size_bytes": 51840,
+      "version": "Lake version 5.0.0-src+819816b (Lean version 4.33.1)",
+      "stderr": ""
+    },
+    {
+      "label": "rust1991",
+      "name": "rustc",
+      "path": "<REPLICATION_ROOT>/verification-tools/rustup/toolchains/1.99.1-aarch64-apple-darwin/bin/rustc",
+      "sha256": "1ba7bb8e273bd64125f4048d2ecce530e0a6470e565ab1b3aecf0b82b532f7b1",
+      "size_bytes": 413480,
+      "version": "rustc 1.99.1 (58cf8f9c3 2026-10-13)",
+      "stderr": ""
+    },
+    {
+      "label": "rust1991",
+      "name": "cargo",
+      "path": "<REPLICATION_ROOT>/verification-tools/rustup/toolchains/1.99.1-aarch64-apple-darwin/bin/cargo",
+      "sha256": "6d576d8058f8ca643e8fce55b64ee3c614ba64c9da2e536bae843e6a2e1f3951",
+      "size_bytes": 32182376,
+      "version": "cargo 1.99.1 (5f94df478 2026-08-27)",
+      "stderr": ""
+    }
+  ],
+  "effective_build_environment": {
+    "LEAN_NUM_THREADS": "2",
+    "CARGO_BUILD_JOBS": "2",
+    "RUSTUP_HOME": "<REPLICATION_ROOT>/verification-tools/rustup",
+    "CARGO_HOME": "<REPLICATION_ROOT>/verification-tools/cargo",
+    "RUSTC": "<REPLICATION_ROOT>/verification-tools/rustup/toolchains/1.99.1-aarch64-apple-darwin/bin/rustc"
+  },
+  "source_mutation": "No upstream tracked source changes in tool-manifest-r1.json",
+  "isolation": "Task-local Rust installation; no shell-profile modification requested (--no-modify-path)"
+}

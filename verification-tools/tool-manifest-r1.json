@@ -1,0 +1,1167 @@
+{
+  "scope": "Tool source/build provenance and trivial CLI smoke only; no ETH proof verification",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "python": "3.9.6 (default, Oct 19 2026, 19:18:13) \n[Clang 21.0.0 (clang-2100.4.1.1)]",
+  "sources": [
+    {
+      "path": "comparator-source",
+      "commit": "865edc14486c3388e9225daa971da8e157488c3e",
+      "origin": "https://github.com/leanprover/comparator.git",
+      "tracked_changes": "",
+      "tracked_files": [
+        {
+          "path": ".github/workflows/lean_action_ci.yml",
+          "sha256": "7ce521043efd6fce6ec6d18607678f208d286a470bdca401cdd5044a9d21ac6d",
+          "size_bytes": 1301
+        },
+        {
+          "path": ".gitignore",
+          "sha256": "b3ad09fc93f83fdbd0bee771258dd4a58d3798fd7e6048611dde5a804bb43f1e",
+          "size_bytes": 7
+        },
+        {
+          "path": "Comparator.lean",
+          "sha256": "6c73ecd5bd429cf85e0aaa75b7c6f874ec0598d5afca60dcf5711d44e6bdef23",
+          "size_bytes": 204
+        },
+        {
+          "path": "Comparator/Axioms.lean",
+          "sha256": "863c5e1329811be0427880e08c171de733343491c5a3619b5dbf2e12b34c6125",
+          "size_bytes": 2389
+        },
+        {
+          "path": "Comparator/Compare.lean",
+          "sha256": "9bc34cb7de5a069a6fef7f3b13b20fea22f1d52603f74320a93d519b735ad3dd",
+          "size_bytes": 4089
+        },
+        {
+          "path": "Comparator/Util.lean",
+          "sha256": "693d845330dd7122565aeb19314a3e3de4b49f9a8a7ac6e1fadbc9ab374b9f88",
+          "size_bytes": 788
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "size_bytes": 11357
+        },
+        {
+          "path": "Main.lean",
+          "sha256": "bb97e3e56d35431cfc7fbef9153935f85e82cde8cc0fc588ceb0119022646cec",
+          "size_bytes": 13109
+        },
+        {
+          "path": "README.md",
+          "sha256": "39e03761a9b24379478d88ceaa02b3b1051f39d7c21e698118e39e145a4aec58",
+          "size_bytes": 10290
+        },
+        {
+          "path": "lake-manifest.json",
+          "sha256": "e8dfe7ee0e3584812c2ca87c1c2240446ccd9eb890b994e637476841a4d519d9",
+          "size_bytes": 461
+        },
+        {
+          "path": "lakefile.toml",
+          "sha256": "66841e3d86d93c4e1e1de9db1a377ec5c513772c073d64c2d7e040406cc29891",
+          "size_bytes": 222
+        },
+        {
+          "path": "lean-toolchain",
+          "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+          "size_bytes": 25
+        },
+        {
+          "path": "runtests.lean",
+          "sha256": "8540bee573b302716dc3db78845229e3f6df20e3df962b342dd42d780848177c",
+          "size_bytes": 5595
+        },
+        {
+          "path": "scripts/fake-landrun.sh",
+          "sha256": "167507c89d8b3c7667ad78b50df7b19f89883751a01efd1457404fa34a994e8b",
+          "size_bytes": 1431
+        },
+        {
+          "path": "tests/projects/char_ofnat_issue/Challenge.lean",
+          "sha256": "6d3f403b66c51ef62a99b25a72bf750da3250ef8e865834815107eae9c4846d9",
+          "size_bytes": 30
+        },
+        {
+          "path": "tests/projects/char_ofnat_issue/Solution.lean",
+          "sha256": "3974fcfd64870a4eb4ad6b8e9cc8172440d8780367a515a5ab1b9727883b1b4a",
+          "size_bytes": 1701
+        },
+        {
+          "path": "tests/projects/char_ofnat_issue/config.json",
+          "sha256": "f2070f20090cff4d93a7da2285e1f1c3d81fed8ccb409ac823f3caa0a53c78a1",
+          "size_bytes": 205
+        },
+        {
+          "path": "tests/projects/char_ofnat_issue/test.json",
+          "sha256": "2f23c866623acb1f410e8d54f7264126e525966f38589837bb2bac5a12d90cba",
+          "size_bytes": 27
+        },
+        {
+          "path": "tests/projects/def_hole/Challenge.lean",
+          "sha256": "29fff4cddd757df3d46238e95bc5cc9e1786f7624d56750d5a5d8249aab77603",
+          "size_bytes": 57
+        },
+        {
+          "path": "tests/projects/def_hole/Solution.lean",
+          "sha256": "79da193e9d9aaf132d9326621cba38a4a567142091c2bfb604454685649c6ef1",
+          "size_bytes": 52
+        },
+        {
+          "path": "tests/projects/def_hole/config.json",
+          "sha256": "66a608a529952fdbe475961e0844b7140338928c6c6338fdedeb80fb65165dc9",
+          "size_bytes": 235
+        },
+        {
+          "path": "tests/projects/def_hole/test.json",
+          "sha256": "66eedf861d9f204e07568b236433dd99adc1fc925cef72ddc760b39a3799958c",
+          "size_bytes": 27
+        },
+        {
+          "path": "tests/projects/def_hole_axiom_issue/Challenge.lean",
+          "sha256": "29fff4cddd757df3d46238e95bc5cc9e1786f7624d56750d5a5d8249aab77603",
+          "size_bytes": 57
+        },
+        {
+          "path": "tests/projects/def_hole_axiom_issue/Solution.lean",
+          "sha256": "570f8c0e1af5709001c09e27a5642b129806fc3967f5e60e47fa70a15fd3a04b",
+          "size_bytes": 557
+        },
+        {
+          "path": "tests/projects/def_hole_axiom_issue/config.json",
+          "sha256": "66a608a529952fdbe475961e0844b7140338928c6c6338fdedeb80fb65165dc9",
+          "size_bytes": 235
+        },
+        {
+          "path": "tests/projects/def_hole_axiom_issue/test.json",
+          "sha256": "2f23c866623acb1f410e8d54f7264126e525966f38589837bb2bac5a12d90cba",
+          "size_bytes": 27
+        },
+        {
+          "path": "tests/projects/def_hole_kind_mismatch/Challenge.lean",
+          "sha256": "29fff4cddd757df3d46238e95bc5cc9e1786f7624d56750d5a5d8249aab77603",
+          "size_bytes": 57
+        },
+        {
+          "path": "tests/projects/def_hole_kind_mismatch/Solution.lean",
+          "sha256": "bff56308e449aed84cd0b8e19c6df1e6b2f1af82fb44d0579cb168d1097659b7",
+          "size_bytes": 176
+        },
+        {
+          "path": "tests/projects/def_hole_kind_mismatch/config.json",
+          "sha256": "66a608a529952fdbe475961e0844b7140338928c6c6338fdedeb80fb65165dc9",
+          "size_bytes": 235
+        },
+        {
+          "path": "tests/projects/def_hole_kind_mismatch/test.json",
+          "sha256": "2f23c866623acb1f410e8d54f7264126e525966f38589837bb2bac5a12d90cba",
+          "size_bytes": 27
+        },
+        {
+          "path": "tests/projects/def_hole_type_mismatch/Challenge.lean",
+          "sha256": "e237fcb5ffeb8af2ac0d4fa7e492fb053a1520de7f9df8566dfacc8bb8cad703",
+          "size_bytes": 58
+        },
+        {
+          "path": "tests/projects/def_hole_type_mismatch/Solution.lean",
+          "sha256": "c90008c42c1b34c03dc17c4f8207e51fe40d21b30ccb13f2e8d928cf027fcf4c",
+          "size_bytes": 159
+        },
+        {
+          "path": "tests/projects/def_hole_type_mismatch/config.json",
+          "sha256": "66a608a529952fdbe475961e0844b7140338928c6c6338fdedeb80fb65165dc9",
+          "size_bytes": 235
+        },
+        {
+          "path": "tests/projects/def_hole_type_mismatch/test.json",
+          "sha256": "2f23c866623acb1f410e8d54f7264126e525966f38589837bb2bac5a12d90cba",
+          "size_bytes": 27
+        },
+        {
+          "path": "tests/projects/numeric_namespace/Challenge/12.34/5.lean",
+          "sha256": "ea3373717a56ec47b5ef567a7e73be87cdffd15082afe6bf396831e601ef98b1",
+          "size_bytes": 68
+        },
+        {
+          "path": "tests/projects/numeric_namespace/Solution.lean",
+          "sha256": "da5338f6dd7240a29d221983d33e30d45d78b2d8f461fc4eef23718df3a4a4c5",
+          "size_bytes": 66
+        },
+        {
+          "path": "tests/projects/numeric_namespace/config.json",
+          "sha256": "442b517c4ac96670bf56ead2a0a54a6dd71c035d997c0140a9a7cc5852f82ba0",
+          "size_bytes": 228
+        },
+        {
+          "path": "tests/projects/numeric_namespace/lakefile.toml",
+          "sha256": "269a41291cd30a69bccfe48144ffa0117ba472326629b2447598ba456114e4bd",
+          "size_bytes": 131
+        },
+        {
+          "path": "tests/projects/numeric_namespace/test.json",
+          "sha256": "d171fb83751c9f89af63bc2cdb61c18fb41643a8845fb43899e298cc135334a1",
+          "size_bytes": 20
+        },
+        {
+          "path": "tests/projects/olean_issue/Challenge.lean",
+          "sha256": "6d3f403b66c51ef62a99b25a72bf750da3250ef8e865834815107eae9c4846d9",
+          "size_bytes": 30
+        },
+        {
+          "path": "tests/projects/olean_issue/Solution.lean",
+          "sha256": "721377c985fd778c9e334a324d1320183095cae74ea69eb3ec433f0979a0df88",
+          "size_bytes": 560
+        },
+        {
+          "path": "tests/projects/olean_issue/config.json",
+          "sha256": "f2070f20090cff4d93a7da2285e1f1c3d81fed8ccb409ac823f3caa0a53c78a1",
+          "size_bytes": 205
+        },
+        {
+          "path": "tests/projects/olean_issue/test.json",
+          "sha256": "2f23c866623acb1f410e8d54f7264126e525966f38589837bb2bac5a12d90cba",
+          "size_bytes": 27
+        },
+        {
+          "path": "tests/projects/opaque_value/Challenge.lean",
+          "sha256": "6d3f403b66c51ef62a99b25a72bf750da3250ef8e865834815107eae9c4846d9",
+          "size_bytes": 30
+        },
+        {
+          "path": "tests/projects/opaque_value/Solution.lean",
+          "sha256": "9f4e3bca2f5332b4351af422fb8e4de988fe16348425084267bad5bc5df5e56c",
+          "size_bytes": 64
+        },
+        {
+          "path": "tests/projects/opaque_value/config.json",
+          "sha256": "f2070f20090cff4d93a7da2285e1f1c3d81fed8ccb409ac823f3caa0a53c78a1",
+          "size_bytes": 205
+        },
+        {
+          "path": "tests/projects/opaque_value/test.json",
+          "sha256": "2f23c866623acb1f410e8d54f7264126e525966f38589837bb2bac5a12d90cba",
+          "size_bytes": 27
+        },
+        {
+          "path": "tests/projects/primitive_issue/Challenge.lean",
+          "sha256": "6d3f403b66c51ef62a99b25a72bf750da3250ef8e865834815107eae9c4846d9",
+          "size_bytes": 30
+        },
+        {
+          "path": "tests/projects/primitive_issue/Solution.lean",
+          "sha256": "13ce508c4c4f1f1614cc697c6b71c0253a854e6e56a3baa917a218baf2bcc47c",
+          "size_bytes": 521
+        },
+        {
+          "path": "tests/projects/primitive_issue/config.json",
+          "sha256": "f2070f20090cff4d93a7da2285e1f1c3d81fed8ccb409ac823f3caa0a53c78a1",
+          "size_bytes": 205
+        },
+        {
+          "path": "tests/projects/primitive_issue/test.json",
+          "sha256": "2f23c866623acb1f410e8d54f7264126e525966f38589837bb2bac5a12d90cba",
+          "size_bytes": 27
+        },
+        {
+          "path": "tests/projects/proj_trick/Challenge.lean",
+          "sha256": "3130ae1cd994683288d33afbf6458d4478a13cbcfea94b1f3f9661f09b289049",
+          "size_bytes": 416
+        },
+        {
+          "path": "tests/projects/proj_trick/Solution.lean",
+          "sha256": "a5ca409063ad930b99d253510f107b904dea0f6ecb8fa546298ffd86df7c89b5",
+          "size_bytes": 314
+        },
+        {
+          "path": "tests/projects/proj_trick/config.json",
+          "sha256": "b718810b7e285620416f1e693d0fb296d344afeb9375a401e5a0daaa788130ea",
+          "size_bytes": 192
+        },
+        {
+          "path": "tests/projects/proj_trick/test.json",
+          "sha256": "2f23c866623acb1f410e8d54f7264126e525966f38589837bb2bac5a12d90cba",
+          "size_bytes": 27
+        },
+        {
+          "path": "tests/projects/quot_mismatch/Challenge.lean",
+          "sha256": "9b6b6a1c3f6b70b53b2c5e975fa0bf5facf3a47b2bb3537aada5508d4c9bb814",
+          "size_bytes": 1177
+        },
+        {
+          "path": "tests/projects/quot_mismatch/Solution.lean",
+          "sha256": "9b6b6a1c3f6b70b53b2c5e975fa0bf5facf3a47b2bb3537aada5508d4c9bb814",
+          "size_bytes": 1177
+        },
+        {
+          "path": "tests/projects/quot_mismatch/config.json",
+          "sha256": "0ee69db0bc89c62d29989687a537cb18b0dbdbc87988b69babffb4d06e94d88d",
+          "size_bytes": 167
+        },
+        {
+          "path": "tests/projects/quot_mismatch/test.json",
+          "sha256": "2f23c866623acb1f410e8d54f7264126e525966f38589837bb2bac5a12d90cba",
+          "size_bytes": 27
+        },
+        {
+          "path": "tests/projects/simple_axiom_issue/Challenge.lean",
+          "sha256": "d6400c174574f3216a2c02f61f559415c0352f74051baeee3f959055d8534b9c",
+          "size_bytes": 55
+        },
+        {
+          "path": "tests/projects/simple_axiom_issue/Solution.lean",
+          "sha256": "005b3b1b863f37c16fc6330cdc84d05e060f4a779d942a219432f8858325e244",
+          "size_bytes": 96
+        },
+        {
+          "path": "tests/projects/simple_axiom_issue/config.json",
+          "sha256": "6e0c311b855acc0446e352844d77a625007466f759ce985d071895bc0f70991c",
+          "size_bytes": 205
+        },
+        {
+          "path": "tests/projects/simple_axiom_issue/test.json",
+          "sha256": "2f23c866623acb1f410e8d54f7264126e525966f38589837bb2bac5a12d90cba",
+          "size_bytes": 27
+        },
+        {
+          "path": "tests/projects/simple_kind_mismatch/Challenge.lean",
+          "sha256": "d6400c174574f3216a2c02f61f559415c0352f74051baeee3f959055d8534b9c",
+          "size_bytes": 55
+        },
+        {
+          "path": "tests/projects/simple_kind_mismatch/Solution.lean",
+          "sha256": "005b3b1b863f37c16fc6330cdc84d05e060f4a779d942a219432f8858325e244",
+          "size_bytes": 96
+        },
+        {
+          "path": "tests/projects/simple_kind_mismatch/config.json",
+          "sha256": "6e0c311b855acc0446e352844d77a625007466f759ce985d071895bc0f70991c",
+          "size_bytes": 205
+        },
+        {
+          "path": "tests/projects/simple_kind_mismatch/test.json",
+          "sha256": "2f23c866623acb1f410e8d54f7264126e525966f38589837bb2bac5a12d90cba",
+          "size_bytes": 27
+        },
+        {
+          "path": "tests/projects/simple_match/Challenge.lean",
+          "sha256": "d6400c174574f3216a2c02f61f559415c0352f74051baeee3f959055d8534b9c",
+          "size_bytes": 55
+        },
+        {
+          "path": "tests/projects/simple_match/Solution.lean",
+          "sha256": "4460098a661949cca3d8d81a104c666bc2f42ae3ca1c988a20c66b0f8ad2e4d6",
+          "size_bytes": 55
+        },
+        {
+          "path": "tests/projects/simple_match/config.json",
+          "sha256": "6e0c311b855acc0446e352844d77a625007466f759ce985d071895bc0f70991c",
+          "size_bytes": 205
+        },
+        {
+          "path": "tests/projects/simple_match/test.json",
+          "sha256": "66eedf861d9f204e07568b236433dd99adc1fc925cef72ddc760b39a3799958c",
+          "size_bytes": 27
+        },
+        {
+          "path": "tests/projects/simple_mismatch/Challenge.lean",
+          "sha256": "d6400c174574f3216a2c02f61f559415c0352f74051baeee3f959055d8534b9c",
+          "size_bytes": 55
+        },
+        {
+          "path": "tests/projects/simple_mismatch/Solution.lean",
+          "sha256": "f4f32cc82b9fe2012a2b9901c6e51d7b2fbe3d5b3aca105745c513554d6055ca",
+          "size_bytes": 39
+        },
+        {
+          "path": "tests/projects/simple_mismatch/config.json",
+          "sha256": "6e0c311b855acc0446e352844d77a625007466f759ce985d071895bc0f70991c",
+          "size_bytes": 205
+        },
+        {
+          "path": "tests/projects/simple_mismatch/test.json",
+          "sha256": "2f23c866623acb1f410e8d54f7264126e525966f38589837bb2bac5a12d90cba",
+          "size_bytes": 27
+        },
+        {
+          "path": "tests/projects/simple_multi_nanoda/Challenge.lean",
+          "sha256": "d6400c174574f3216a2c02f61f559415c0352f74051baeee3f959055d8534b9c",
+          "size_bytes": 55
+        },
+        {
+          "path": "tests/projects/simple_multi_nanoda/Solution.lean",
+          "sha256": "4460098a661949cca3d8d81a104c666bc2f42ae3ca1c988a20c66b0f8ad2e4d6",
+          "size_bytes": 55
+        },
+        {
+          "path": "tests/projects/simple_multi_nanoda/config.json",
+          "sha256": "680ea44e28f798d062547e2b85e59e4ea280c0d35ea3b9bce53c1f51eb3cf064",
+          "size_bytes": 287
+        },
+        {
+          "path": "tests/projects/simple_multi_nanoda/test.json",
+          "sha256": "66eedf861d9f204e07568b236433dd99adc1fc925cef72ddc760b39a3799958c",
+          "size_bytes": 27
+        },
+        {
+          "path": "tests/projects/simple_nanoda/Challenge.lean",
+          "sha256": "d6400c174574f3216a2c02f61f559415c0352f74051baeee3f959055d8534b9c",
+          "size_bytes": 55
+        },
+        {
+          "path": "tests/projects/simple_nanoda/Solution.lean",
+          "sha256": "4460098a661949cca3d8d81a104c666bc2f42ae3ca1c988a20c66b0f8ad2e4d6",
+          "size_bytes": 55
+        },
+        {
+          "path": "tests/projects/simple_nanoda/config.json",
+          "sha256": "f546954bc15677db0a2f4b03ea027c50e3172b91e643ff38a6443602d3f14730",
+          "size_bytes": 243
+        },
+        {
+          "path": "tests/projects/simple_nanoda/test.json",
+          "sha256": "66eedf861d9f204e07568b236433dd99adc1fc925cef72ddc760b39a3799958c",
+          "size_bytes": 27
+        },
+        {
+          "path": "tests/projects/simple_nanoda_compat/Challenge.lean",
+          "sha256": "d6400c174574f3216a2c02f61f559415c0352f74051baeee3f959055d8534b9c",
+          "size_bytes": 55
+        },
+        {
+          "path": "tests/projects/simple_nanoda_compat/Solution.lean",
+          "sha256": "4460098a661949cca3d8d81a104c666bc2f42ae3ca1c988a20c66b0f8ad2e4d6",
+          "size_bytes": 55
+        },
+        {
+          "path": "tests/projects/simple_nanoda_compat/config.json",
+          "sha256": "9e9d12590405cc5a91ec7974a31166f05b728cb6870b61a53cba031049f0df6a",
+          "size_bytes": 204
+        },
+        {
+          "path": "tests/projects/simple_nanoda_compat/test.json",
+          "sha256": "66eedf861d9f204e07568b236433dd99adc1fc925cef72ddc760b39a3799958c",
+          "size_bytes": 27
+        },
+        {
+          "path": "tests/projects/simple_nanoda_mismatch/Challenge.lean",
+          "sha256": "d6400c174574f3216a2c02f61f559415c0352f74051baeee3f959055d8534b9c",
+          "size_bytes": 55
+        },
+        {
+          "path": "tests/projects/simple_nanoda_mismatch/Solution.lean",
+          "sha256": "f4f32cc82b9fe2012a2b9901c6e51d7b2fbe3d5b3aca105745c513554d6055ca",
+          "size_bytes": 39
+        },
+        {
+          "path": "tests/projects/simple_nanoda_mismatch/config.json",
+          "sha256": "f546954bc15677db0a2f4b03ea027c50e3172b91e643ff38a6443602d3f14730",
+          "size_bytes": 243
+        },
+        {
+          "path": "tests/projects/simple_nanoda_mismatch/test.json",
+          "sha256": "2f23c866623acb1f410e8d54f7264126e525966f38589837bb2bac5a12d90cba",
+          "size_bytes": 27
+        },
+        {
+          "path": "tests/projects/theorem_hole_issue/Challenge.lean",
+          "sha256": "d24fae6576e509d57f880225bd217a5559082e4eaf54b40fcfd9992a0e0a761d",
+          "size_bytes": 266
+        },
+        {
+          "path": "tests/projects/theorem_hole_issue/Solution.lean",
+          "sha256": "d8c4d52686cfb5c700852dfd308e2d66f68b4ecfc232de1d0f01856c1879c8eb",
+          "size_bytes": 149
+        },
+        {
+          "path": "tests/projects/theorem_hole_issue/config.json",
+          "sha256": "e51295f536ba579f2a84cef3fc4c1f83d9ce29dcc3a01097853ab95042df121d",
+          "size_bytes": 210
+        },
+        {
+          "path": "tests/projects/theorem_hole_issue/test.json",
+          "sha256": "66eedf861d9f204e07568b236433dd99adc1fc925cef72ddc760b39a3799958c",
+          "size_bytes": 27
+        }
+      ]
+    },
+    {
+      "path": "lean4export-434-source",
+      "commit": "076e8e57707e813375e8f9da8bf989799ace9680",
+      "origin": "https://github.com/leanprover/lean4export.git",
+      "tracked_changes": "",
+      "tracked_files": [
+        {
+          "path": ".github/workflows/ci.yml",
+          "sha256": "39dc12eb359375d8c018e7f608f2d3c88a9580057d3b14f5c9f892795bb0870e",
+          "size_bytes": 238
+        },
+        {
+          "path": ".gitignore",
+          "sha256": "fde850d24186b6e99c8c0debd641fb3ab85198b109eb66f71a1fea02bd6ea1b3",
+          "size_bytes": 7
+        },
+        {
+          "path": "Export.lean",
+          "sha256": "6e9f24262253678960b05b8392a1774a3cbf36b21ed2fc1b834906659b8ca95a",
+          "size_bytes": 16016
+        },
+        {
+          "path": "Export/Parse.lean",
+          "sha256": "1f943b5cc776eece6d528937b976509c8bd57d10bc69a39b1c119bfb6d664286",
+          "size_bytes": 20491
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "size_bytes": 11357
+        },
+        {
+          "path": "Main.lean",
+          "sha256": "bd8e350903f1382b25fe767f9086dd9882000f01085f7046ea06545e7848842a",
+          "size_bytes": 751
+        },
+        {
+          "path": "README.md",
+          "sha256": "98833b66efc1289df582d85faa79b253c83bcca27c9fdb073ba42bdf0ffe77c9",
+          "size_bytes": 1414
+        },
+        {
+          "path": "Test.lean",
+          "sha256": "44f8995f47633ca77364740af03a719e90a2c58690fa90b237487b541bb04804",
+          "size_bytes": 18368
+        },
+        {
+          "path": "examples/Nat.add_succ.ndjson",
+          "sha256": "4ef6d64908b3b120c23fb383eea6a56b059efc51c87b01b39d1427e4e39bf49b",
+          "size_bytes": 32437
+        },
+        {
+          "path": "format_ndjson.md",
+          "sha256": "f82a21e17e4258a1043895d0653ea4333bef8cb07aad2e3d6c1fc4be52b138e3",
+          "size_bytes": 6098
+        },
+        {
+          "path": "lake-manifest.json",
+          "sha256": "f1b9d60d0ebd46f79f48e6833deefeaa835fdee12b4078241635ee14b6a0f07a",
+          "size_bytes": 117
+        },
+        {
+          "path": "lakefile.toml",
+          "sha256": "54dde3aba280f32035c882dcd2f2039e738e20ed45ca538337b65cc69c02f7df",
+          "size_bytes": 207
+        },
+        {
+          "path": "lean-toolchain",
+          "sha256": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+          "size_bytes": 25
+        }
+      ]
+    },
+    {
+      "path": "lean4export-433-source",
+      "commit": "15f6055e299ad5b89345e533cc2192f4cc00f659",
+      "origin": "https://github.com/leanprover/lean4export.git",
+      "tracked_changes": "",
+      "tracked_files": [
+        {
+          "path": ".github/workflows/ci.yml",
+          "sha256": "39dc12eb359375d8c018e7f608f2d3c88a9580057d3b14f5c9f892795bb0870e",
+          "size_bytes": 238
+        },
+        {
+          "path": ".gitignore",
+          "sha256": "fde850d24186b6e99c8c0debd641fb3ab85198b109eb66f71a1fea02bd6ea1b3",
+          "size_bytes": 7
+        },
+        {
+          "path": "Export.lean",
+          "sha256": "1c60d571dc24bfb99e7cbb218d8d489919bbc871238f6db9c76248521fbea998",
+          "size_bytes": 15994
+        },
+        {
+          "path": "Export/Parse.lean",
+          "sha256": "1f943b5cc776eece6d528937b976509c8bd57d10bc69a39b1c119bfb6d664286",
+          "size_bytes": 20491
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "size_bytes": 11357
+        },
+        {
+          "path": "Main.lean",
+          "sha256": "bd8e350903f1382b25fe767f9086dd9882000f01085f7046ea06545e7848842a",
+          "size_bytes": 751
+        },
+        {
+          "path": "README.md",
+          "sha256": "98833b66efc1289df582d85faa79b253c83bcca27c9fdb073ba42bdf0ffe77c9",
+          "size_bytes": 1414
+        },
+        {
+          "path": "Test.lean",
+          "sha256": "91332dbda96660288614fe4f74c9d471b2ca0110912e042491ab3887c3c14c5b",
+          "size_bytes": 18358
+        },
+        {
+          "path": "examples/Nat.add_succ.ndjson",
+          "sha256": "4ef6d64908b3b120c23fb383eea6a56b059efc51c87b01b39d1427e4e39bf49b",
+          "size_bytes": 32437
+        },
+        {
+          "path": "format_ndjson.md",
+          "sha256": "f82a21e17e4258a1043895d0653ea4333bef8cb07aad2e3d6c1fc4be52b138e3",
+          "size_bytes": 6098
+        },
+        {
+          "path": "lake-manifest.json",
+          "sha256": "f1b9d60d0ebd46f79f48e6833deefeaa835fdee12b4078241635ee14b6a0f07a",
+          "size_bytes": 117
+        },
+        {
+          "path": "lakefile.toml",
+          "sha256": "54dde3aba280f32035c882dcd2f2039e738e20ed45ca538337b65cc69c02f7df",
+          "size_bytes": 207
+        },
+        {
+          "path": "lean-toolchain",
+          "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+          "size_bytes": 25
+        }
+      ]
+    },
+    {
+      "path": "nanoda-source",
+      "commit": "68d5ca9db226849b41a6fff59d796ff19d0a8840",
+      "origin": "https://github.com/robsimmons/nanoda_lib.git",
+      "tracked_changes": "",
+      "tracked_files": [
+        {
+          "path": ".github/workflows/release.yml",
+          "sha256": "3ac7ccfc95653d33b910efd69d541e22ba66b72d88422f54f4eafbe5be5eae0c",
+          "size_bytes": 710
+        },
+        {
+          "path": ".gitignore",
+          "sha256": "cc0528de53769499a02da6fbaaf0dab13434675fe571e276e13845f95f0b601b",
+          "size_bytes": 27
+        },
+        {
+          "path": "Cargo.lock",
+          "sha256": "f9df05457e9aae9acaa1039f10dd21dec4465e339a354f01c3f7c77c3bf0bed0",
+          "size_bytes": 6446
+        },
+        {
+          "path": "Cargo.toml",
+          "sha256": "27aedf28f3b13f6c29edd73681e48b3b3769a01bd27235eec932c98f3c1842cd",
+          "size_bytes": 857
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "c8858a5a76440bbca484e134cf7df46385d090dd18b2c58e650f939258802e5b",
+          "size_bytes": 10141
+        },
+        {
+          "path": "README.md",
+          "sha256": "b91487520d495d8726fedfaa87462d81acf0ffab3a3cad942ae7232461f15fae",
+          "size_bytes": 6228
+        },
+        {
+          "path": "rustfmt.toml",
+          "sha256": "8bc492625b7a601b5147aa68f32a05fb90e7e95f55693c89619adea72ae230a5",
+          "size_bytes": 248
+        },
+        {
+          "path": "src/debug_printer.rs",
+          "sha256": "184918c06946c0efcc57868e47098428bd1d98179725344ba81b1103eb940c81",
+          "size_bytes": 8921
+        },
+        {
+          "path": "src/env.rs",
+          "sha256": "687edb90f3a8a2c665eacad66e021ec20c15819b6da7f2c152cb82fb24c3de5b",
+          "size_bytes": 10890
+        },
+        {
+          "path": "src/expr.rs",
+          "sha256": "8e79e45afd043cd464f1e3af4597df3d4b09dfe087886cd32139f20746c6529e",
+          "size_bytes": 30985
+        },
+        {
+          "path": "src/inductive.rs",
+          "sha256": "abef916af384d1d3ce339d9ca79a74e943e6cad6b79b67c5c95e717a8d2c4fb1",
+          "size_bytes": 80162
+        },
+        {
+          "path": "src/level.rs",
+          "sha256": "801452fb06c25e037fc9f0136fd60ca1f720692f2341a3ead9aaf6e1a68a399c",
+          "size_bytes": 10847
+        },
+        {
+          "path": "src/lib.rs",
+          "sha256": "ca7a3ba8754a06ee08c85fbc5af9debdefc372629c50b02142bdc8aad55cb69e",
+          "size_bytes": 397
+        },
+        {
+          "path": "src/main.rs",
+          "sha256": "245ceaef34e8925cacaa3c5b99ce096a8c744710ce1f9184423e5a0333e8b35a",
+          "size_bytes": 2524
+        },
+        {
+          "path": "src/name.rs",
+          "sha256": "e6397a691030820156aa84574f2de3b510f9989e5bef61b99a0db37d2a014bd7",
+          "size_bytes": 2365
+        },
+        {
+          "path": "src/parser.rs",
+          "sha256": "22b17bd188152fb3ded36a060fc1ade5e064aef7cc411aecf64c5730c40ea3e2",
+          "size_bytes": 33896
+        },
+        {
+          "path": "src/pretty_printer.rs",
+          "sha256": "b6284a0a27de2a40d714035577e29f259f47e872c2ececc9dfef9a5c479ed778",
+          "size_bytes": 36961
+        },
+        {
+          "path": "src/quot.rs",
+          "sha256": "0131ae36f3daea5262f280aca44085c15e5335a8657cefd2afcec4c2bc388463",
+          "size_bytes": 10612
+        },
+        {
+          "path": "src/tc.rs",
+          "sha256": "73f00401263871e533eb0f2cfa38162866204ee3fe7e7dd146755c5690f0b696",
+          "size_bytes": 56610
+        },
+        {
+          "path": "src/tests.rs",
+          "sha256": "594aac68cef5af3c6c9513c09846c27b041d43b855828e2ec742ca1dd4173e56",
+          "size_bytes": 33
+        },
+        {
+          "path": "src/tests/level.rs",
+          "sha256": "0b532b157ce6b1b40d27e8acea78ac18c56b92de1bc9439f644b860c1f2a2d92",
+          "size_bytes": 6209
+        },
+        {
+          "path": "src/tests/natlit.rs",
+          "sha256": "49e012cf9af881c4d3205795d2ced385e39128baa53770806489b69aaa1674fe",
+          "size_bytes": 27965
+        },
+        {
+          "path": "src/tests/util.rs",
+          "sha256": "f2de3d3bc76336ef82e34374ba6f50a8b185e30f17f68bb1e517e2b48f6666c2",
+          "size_bytes": 4345
+        },
+        {
+          "path": "src/union_find.rs",
+          "sha256": "2728ab1d2dcd84489a6bb4fa984af22c40236bf813205e42a1c55ca825bdc757",
+          "size_bytes": 5571
+        },
+        {
+          "path": "src/unique_hasher.rs",
+          "sha256": "e457ec69139dee08c4f21f3fee5bc9a2cfe6bb14e5d5bd217ca35d6a368daea5",
+          "size_bytes": 881
+        },
+        {
+          "path": "src/util.rs",
+          "sha256": "b93e18f18c59286412109041daf31a5f90686d13f23cf378ce6a6a0c78f25d3d",
+          "size_bytes": 41176
+        },
+        {
+          "path": "test_resources/Empty/export",
+          "sha256": "6ecdb8d4389e5c525cd9dfd05bb610c8a9c74739d9a62dbecc6a049ceb0b9837",
+          "size_bytes": 176
+        },
+        {
+          "path": "test_resources/ProjFromProp/config.json",
+          "sha256": "c898525fcb5347fc9f60961201d93d7663afb1867197a46a5753e21b24fc3cc8",
+          "size_bytes": 186
+        },
+        {
+          "path": "test_resources/ProjFromProp/export",
+          "sha256": "5fc8f25b717c2dd56880064e43d87489b1bea202f5b5ef96d0d06a6ba7ce2022",
+          "size_bytes": 4509
+        }
+      ]
+    }
+  ],
+  "binaries": {
+    "comparator435": {
+      "path": "comparator-source/.lake/build/bin/comparator",
+      "sha256": "bdf09ee3e725f1480792db7b5befcbf6e4f77db90d9f1f4986bda5a1e6315f4c",
+      "size_bytes": 101846512
+    },
+    "lean4export4341": {
+      "path": "lean4export-434-source/.lake/build/bin/lean4export",
+      "sha256": "e6217f95bf55c5e165a62f12ec6ce1fb3c25a815cff0f9cb6f6dfcf4c8e55e25",
+      "size_bytes": 179096064
+    },
+    "lean4export4331": {
+      "path": "lean4export-433-source/.lake/build/bin/lean4export",
+      "sha256": "fff1713600c157d77251a309a41031f7ff97320bfcc422a677d5adf0ba8a549a",
+      "size_bytes": 176836208
+    },
+    "nanoda": {
+      "path": "nanoda-source/target/release/nanoda_bin",
+      "sha256": "d9a1fc5371b84c9eb0687a7630eb724fa88886d9f5d665f09f9f926730573b80",
+      "size_bytes": 1260088
+    }
+  },
+  "official_development_shim": {
+    "path": "comparator-source/scripts/fake-landrun.sh",
+    "sha256": "167507c89d8b3c7667ad78b50df7b19f89883751a01efd1457404fa34a994e8b",
+    "size_bytes": 1431,
+    "isolation": "none; upstream development shim runs child commands unsandboxed"
+  },
+  "reviewed_inputs": {
+    "rustup-init.sh": {
+      "sha256": "d890e2fef6fa991b19cde2e608199bc1dca4e37f41f884edf8849ff693048de6",
+      "size_bytes": 29915
+    },
+    "rustup-init": {
+      "sha256": "63752a1919a3a4793173ec70f8f212621a7ce38ba6a246095984482f4de20f9f",
+      "size_bytes": 11408656
+    },
+    "rustup-init.sha256": {
+      "sha256": "f3c8b31d37b798f20ad8eaf8db3fef00e1186f37910e67623e02dddcdcac51ad",
+      "size_bytes": 80
+    },
+    "rust-stable-channel.toml": {
+      "sha256": "fb152be80975c194aa5fc684b2aec3a6e14e2b855efe2faa4e5f8ae6e590f463",
+      "size_bytes": 943486
+    },
+    "tool_audit.py": {
+      "sha256": "5a8671ac6f4d43b03a19224563e383cb6bf8a37828efbf53c1512ef4081c63a2",
+      "size_bytes": 7246
+    }
+  },
+  "build_and_acquisition_runs": [
+    {
+      "command": "git clone --depth 1 --branch v4.34.0 https://github.com/leanprover/lean4export.git research/eth-external-replication-20261104/verification-tools/lean4export-434-source",
+      "summary": "Acquire official Lean4export v4.34.0 source; no code execution",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-11-04T17:07:28.521149Z",
+      "finished_at": "2026-11-04T17:07:29.244731Z",
+      "wall_seconds": 0.723573,
+      "cpu_seconds": 0.07425,
+      "log_path": "research/eth-external-replication-20261104/verification-tools/logs/acquire-exporter.txt",
+      "log_sha256": "f395950fa9f1a500dd2be06766fee04d1507c647619f5f659029d4bfb46e3556",
+      "log_size": 996,
+      "log_total_lines": 24
+    },
+    {
+      "command": "git clone --no-checkout https://github.com/leanprover/comparator.git research/eth-external-replication-20261104/verification-tools/comparator-source",
+      "summary": "Acquire official comparator source; no checkout execution",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-11-04T17:07:27.826283Z",
+      "finished_at": "2026-11-04T17:07:29.737738Z",
+      "wall_seconds": 1.911448,
+      "cpu_seconds": 0.08062,
+      "log_path": "research/eth-external-replication-20261104/verification-tools/logs/acquire-comparator.txt",
+      "log_sha256": "94da4f85604aa16faacacef16552b7711386899db4371c35dd55059bbaec9875",
+      "log_size": 392,
+      "log_total_lines": 7
+    },
+    {
+      "command": "env LEAN_NUM_THREADS=2 <REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lake build lean4export",
+      "summary": "Build official Lean4export v4.34.0 source with exact proof Lean4.34.1 compiler; no tool source edits",
+      "exit_code": 127,
+      "timed_out": false,
+      "started_at": "2026-11-04T17:08:41.451896Z",
+      "finished_at": "2026-11-04T17:08:41.465463Z",
+      "wall_seconds": 0.01356,
+      "cpu_seconds": 0.006196,
+      "log_path": "research/eth-external-replication-20261104/verification-tools/logs/build-exporter-4341.txt",
+      "log_sha256": "51c45080531a535f632bd3f3e21dd8dcf48b582801469a1619c29d2c9b6b9839",
+      "log_size": 359,
+      "log_total_lines": 7
+    },
+    {
+      "command": "env LEAN_NUM_THREADS=2 <HOME>/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake build comparator",
+      "summary": "Build official Comparator with its pinned parser dependency under Lean4.35.0",
+      "exit_code": 1,
+      "timed_out": false,
+      "started_at": "2026-11-04T17:08:46.298676Z",
+      "finished_at": "2026-11-04T17:08:46.722196Z",
+      "wall_seconds": 0.423508,
+      "cpu_seconds": 0.192569,
+      "log_path": "research/eth-external-replication-20261104/verification-tools/logs/build-comparator-435.txt",
+      "log_sha256": "3b2e5552b06d30e2d8aff8fce5a71bb18d74f87dbfc1ac635816835f6139b2c2",
+      "log_size": 417,
+      "log_total_lines": 9
+    },
+    {
+      "command": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lake --dir <REPLICATION_ROOT>/verification-tools/lean4export-434-source build lean4export",
+      "summary": "Official exporter4340 source with exact4341compiler; explicit source directory, inherited2Leanthreads",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-11-04T17:09:36.069849Z",
+      "finished_at": "2026-11-04T17:09:49.221154Z",
+      "wall_seconds": 13.151267,
+      "cpu_seconds": 8.896153,
+      "log_path": "research/eth-external-replication-20261104/verification-tools/logs/build-exporter-4341-v2.txt",
+      "log_sha256": "0fe7f5f1f6bfae02af45d48e23207a4961f889b7dd13f91271294a45030f8089",
+      "log_size": 705,
+      "log_total_lines": 14
+    },
+    {
+      "command": "<HOME>/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake --dir <REPLICATION_ROOT>/verification-tools/comparator-source build comparator",
+      "summary": "Official Comparator435 targeted build; explicit source directory, inherited2Leanthreads",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-11-04T17:09:38.660224Z",
+      "finished_at": "2026-11-04T17:09:56.534394Z",
+      "wall_seconds": 17.874118,
+      "cpu_seconds": 12.593234,
+      "log_path": "research/eth-external-replication-20261104/verification-tools/logs/build-comparator-435-v2.txt",
+      "log_sha256": "8079eb527e2258db5a5178f3505d41b29a9dd0b03987c22ace37243d9531320f",
+      "log_size": 1264,
+      "log_total_lines": 25
+    },
+    {
+      "command": "git clone --depth 1 --branch v4.33.0 https://github.com/leanprover/lean4export.git research/eth-external-replication-20261104/verification-tools/lean4export-433-source",
+      "summary": "Acquire public official verification tool input, source only",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-11-04T17:11:28.303541Z",
+      "finished_at": "2026-11-04T17:11:29.322882Z",
+      "wall_seconds": 1.019334,
+      "cpu_seconds": 0.113106,
+      "log_path": "research/eth-external-replication-20261104/verification-tools/logs/acquire-exporter433.txt",
+      "log_sha256": "9f64891bc88b5c7405768105cd4cde99a050a4aea0010a224fa90ca5679a3cdc",
+      "log_size": 996,
+      "log_total_lines": 24
+    },
+    {
+      "command": "curl --proto =https --tlsv1.2 -fsSL https://sh.rustup.rs -o research/eth-external-replication-20261104/verification-tools/rustup-init.sh",
+      "summary": "Acquire public official verification tool input, source only",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-11-04T17:11:33.468327Z",
+      "finished_at": "2026-11-04T17:11:33.718100Z",
+      "wall_seconds": 0.249767,
+      "cpu_seconds": 0.021641,
+      "log_path": "research/eth-external-replication-20261104/verification-tools/logs/download-rust-installer.txt",
+      "log_sha256": "56a4d42873313082e1f6c9ac330161b195a74891e2a6548b00599228bba2c773",
+      "log_size": 282,
+      "log_total_lines": 6
+    },
+    {
+      "command": "curl --proto =https --tlsv1.2 -fsSL https://static.rust-lang.org/dist/channel-rust-stable.toml -o research/eth-external-replication-20261104/verification-tools/rust-stable-channel.toml",
+      "summary": "Acquire public official verification tool input, source only",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-11-04T17:11:33.438067Z",
+      "finished_at": "2026-11-04T17:11:33.719212Z",
+      "wall_seconds": 0.281142,
+      "cpu_seconds": 0.029796,
+      "log_path": "research/eth-external-replication-20261104/verification-tools/logs/download-rust-channel.txt",
+      "log_sha256": "8d5faf19313d58a62e03a095bd1be7cd0cb1635ffa4d3a4f57d1910d43654486",
+      "log_size": 330,
+      "log_total_lines": 6
+    },
+    {
+      "command": "git clone --no-checkout https://github.com/robsimmons/nanoda_lib.git research/eth-external-replication-20261104/verification-tools/nanoda-source",
+      "summary": "Acquire public official verification tool input, source only",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-11-04T17:11:33.681831Z",
+      "finished_at": "2026-11-04T17:11:37.351035Z",
+      "wall_seconds": 3.669193,
+      "cpu_seconds": 0.48425,
+      "log_path": "research/eth-external-replication-20261104/verification-tools/logs/acquire-nanoda.txt",
+      "log_sha256": "a7cbfd9bb7351fb4e5e6e3ff3b5681271545793abff211a7cbc29d2ef7cd0dfb",
+      "log_size": 384,
+      "log_total_lines": 7
+    },
+    {
+      "command": "curl --proto =https --tlsv1.2 -fsSL https://static.rust-lang.org/rustup/archive/1.29.3/aarch64-apple-darwin/rustup-init -o research/eth-external-replication-20261104/verification-tools/rustup-init",
+      "summary": "Download pinned official rustup1.29.3 aarch64Mac installer binary; do not execute yet",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-11-04T17:13:14.731140Z",
+      "finished_at": "2026-11-04T17:13:15.046202Z",
+      "wall_seconds": 0.315058,
+      "cpu_seconds": 0.123923,
+      "log_path": "research/eth-external-replication-20261104/verification-tools/logs/download-rustup-binary.txt",
+      "log_sha256": "b097766128ab09cbbbc929abfedc9068d1014ccd4685f09841404fd340a5ee47",
+      "log_size": 342,
+      "log_total_lines": 6
+    },
+    {
+      "command": "curl --proto =https --tlsv1.2 -fsSL https://static.rust-lang.org/rustup/archive/1.29.3/aarch64-apple-darwin/rustup-init.sha256 -o research/eth-external-replication-20261104/verification-tools/rustup-init.sha256",
+      "summary": "Download official checksum for pinned Rust installer",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-11-04T17:13:15.350916Z",
+      "finished_at": "2026-11-04T17:13:15.405163Z",
+      "wall_seconds": 0.054241,
+      "cpu_seconds": 0.019668,
+      "log_path": "research/eth-external-replication-20261104/verification-tools/logs/download-rustup-checksum.txt",
+      "log_sha256": "2ce9c044c255111ebd488a99b0088e1a78ecf044db3c298d6fbcc3dc6a6c10d4",
+      "log_size": 356,
+      "log_total_lines": 6
+    },
+    {
+      "command": "<REPLICATION_ROOT>/anthropic/elan/toolchains/leanprover--lean4---v4.33.1/bin/lake --dir <REPLICATION_ROOT>/verification-tools/lean4export-433-source build lean4export",
+      "summary": "Build officialv4.33.0 exporter with exactAnthropic4.33.1compiler; inherited2Leanthreads",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-11-04T17:13:11.558678Z",
+      "finished_at": "2026-11-04T17:13:26.354244Z",
+      "wall_seconds": 14.795523,
+      "cpu_seconds": 10.62825,
+      "log_path": "research/eth-external-replication-20261104/verification-tools/logs/build-exporter-4331.txt",
+      "log_sha256": "5ae5ceea1fd3b941759c81aa2ad797c0b4ec99c181af8c11ef296b1bfae8437d",
+      "log_size": 708,
+      "log_total_lines": 14
+    },
+    {
+      "command": "<REPLICATION_ROOT>/verification-tools/rustup-init --yes --default-host aarch64-apple-darwin --default-toolchain 1.99.1 --profile minimal --no-modify-path --no-update-default-toolchain",
+      "summary": "Install official pinnedRust1.99.1 aarch64Mac minimal toolchain into task-onlyRustup/Cargo directories; noPATH/profile changes",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-11-04T17:14:05.017739Z",
+      "finished_at": "2026-11-04T17:14:16.318088Z",
+      "wall_seconds": 11.300313,
+      "cpu_seconds": 6.256877,
+      "log_path": "research/eth-external-replication-20261104/verification-tools/logs/install-rust-1991.txt",
+      "log_sha256": "31e41bfcc102f28e799bf010a35ceb89e423217096c5d4f5e8be29c5ffb8fe46",
+      "log_size": 1567,
+      "log_total_lines": 34
+    },
+    {
+      "command": "<REPLICATION_ROOT>/verification-tools/rustup/toolchains/1.99.1-aarch64-apple-darwin/bin/cargo build --release --locked --jobs 2 --manifest-path <REPLICATION_ROOT>/verification-tools/nanoda-source/Cargo.toml",
+      "summary": "Build official pinnednanoda68d5 release locked with isolatedRust1.99.1 and2Cargo jobs; no source edits",
+      "exit_code": 101,
+      "timed_out": false,
+      "started_at": "2026-11-04T17:15:41.479720Z",
+      "finished_at": "2026-11-04T17:15:41.955433Z",
+      "wall_seconds": 0.475709,
+      "cpu_seconds": 0.019534,
+      "log_path": "research/eth-external-replication-20261104/verification-tools/logs/build-nanoda-locked.txt",
+      "log_sha256": "aa67a7ff7628c27f73be90713e9216a63d8aa57c3beb988de54951790e41ad91",
+      "log_size": 579,
+      "log_total_lines": 10
+    },
+    {
+      "command": "<REPLICATION_ROOT>/verification-tools/rustup/toolchains/1.99.1-aarch64-apple-darwin/bin/cargo build --release --locked --jobs 2 --manifest-path <REPLICATION_ROOT>/verification-tools/nanoda-source/Cargo.toml",
+      "summary": "Pinnednanoda68d5 release locked; explicit isolatedRustc1.99.1 and2Cargo jobs",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-11-04T17:16:05.281844Z",
+      "finished_at": "2026-11-04T17:16:27.948726Z",
+      "wall_seconds": 22.666822,
+      "cpu_seconds": 28.989273,
+      "log_path": "research/eth-external-replication-20261104/verification-tools/logs/build-nanoda-locked-v2.txt",
+      "log_sha256": "5b792ebcb48f9d1d824605671babe6402fd52e876f498ba599a5fe4e34a254c7",
+      "log_size": 3397,
+      "log_total_lines": 65
+    }
+  ],
+  "cli_smoke": [
+    {
+      "name": "comparator_missing_config",
+      "command": [
+        "<REPLICATION_ROOT>/verification-tools/comparator-source/.lake/build/bin/comparator"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "stdout": "",
+      "stderr": "uncaught exception: Expected config file path as first argument.\n",
+      "wall_seconds": 1.598173625
+    },
+    {
+      "name": "exporter4341_empty_environment",
+      "command": [
+        "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lake",
+        "--dir",
+        "<REPLICATION_ROOT>/verification-tools/lean4export-434-source",
+        "env",
+        "<REPLICATION_ROOT>/verification-tools/lean4export-434-source/.lake/build/bin/lean4export"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\"meta\":{\"exporter\":{\"name\":\"lean4export\",\"version\":\"3.1.0\"},\"format\":{\"version\":\"3.1.0\"},\"lean\":{\"githash\":\"5045d0056413266e57c625dcd7c365b10e377c52\",\"version\":\"4.34.1\"}}}\n",
+      "stderr": "",
+      "wall_seconds": 3.022125667,
+      "metadata": {
+        "meta": {
+          "exporter": {
+            "name": "lean4export",
+            "version": "3.1.0"
+          },
+          "format": {
+            "version": "3.1.0"
+          },
+          "lean": {
+            "githash": "5045d0056413266e57c625dcd7c365b10e377c52",
+            "version": "4.34.1"
+          }
+        }
+      }
+    },
+    {
+      "name": "exporter4331_empty_environment",
+      "command": [
+        "<REPLICATION_ROOT>/anthropic/elan/toolchains/leanprover--lean4---v4.33.1/bin/lake",
+        "--dir",
+        "<REPLICATION_ROOT>/verification-tools/lean4export-433-source",
+        "env",
+        "<REPLICATION_ROOT>/verification-tools/lean4export-433-source/.lake/build/bin/lean4export"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\"meta\":{\"exporter\":{\"name\":\"lean4export\",\"version\":\"3.1.0\"},\"format\":{\"version\":\"3.1.0\"},\"lean\":{\"githash\":\"819816b2e0a3bf405af45ae5c7af2491d8f5bee6\",\"version\":\"4.33.1\"}}}\n",
+      "stderr": "",
+      "wall_seconds": 2.3659832090000004,
+      "metadata": {
+        "meta": {
+          "exporter": {
+            "name": "lean4export",
+            "version": "3.1.0"
+          },
+          "format": {
+            "version": "3.1.0"
+          },
+          "lean": {
+            "githash": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+            "version": "4.33.1"
+          }
+        }
+      }
+    },
+    {
+      "name": "nanoda_missing_config",
+      "command": [
+        "nanoda-source/target/release/nanoda_bin"
+      ],
+      "exit_code": 1,
+      "expected": "nonzero: missing config",
+      "stdout": "",
+      "stderr": "Error: This program expects a path to a configuration file.\n\nrun with `-h` or `--help` for help\n"
+    },
+    {
+      "name": "nanoda_help",
+      "command": [
+        "<REPLICATION_ROOT>/verification-tools/nanoda-source/target/release/nanoda_bin",
+        "--help"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "nanoda_bin 0.4.6-beta\n\nA type checker for the Lean 4 programming language and theorem prover\n\nget more help at https://github.com/ammkrn/nanoda_lib\n\n# About\n\nThis is an external type checker for the [Lean 4](https://lean-lang.org/) programming language and theorem prover. You can read more about what an external type checker is and why you might want to use one in [this book](https://ammkrn.github.io/type_checking_in_lean4/).\n\n# Usage\n\n## Building and running the binary\n\nEither run the binary directly through cargo `cargo run --release -- <path_to_config>`, or build the binary using `cargo build --release`, then run the built binary, passing a path to a [configuration](#configuration-file). Building with cargo should just work on all modern platforms without requiring additional build steps.\n\nThe binary takes a single argument, which is a path to a json configuration file describing the resource locations and desired options needed to run the type checker. Export files can be streamed via stdin rather than by file path by setting the configuration option `use_stdin: true`, at which point the executable will expect to receive the contents of the export file via stdin.\n\nExport files can be created with [lean4export](https://github.com/ammkrn/lean4export/tree/format2024). The format in the linked fork is expected by this type checker, and is under review for inclusion upstream. The link will be updated if/when the changes are merged.\n\n## Using the library\n\nThe library component can be imported and used as a normal rust crate by specifying it as a dependency in a `Cargo.toml` file.\n\n# Configuration file\n\nThe execution conditions of `nanoda_bin` are determined by a json configuration file, there is no old school CLI. This was a conscious design choice to accommodate modern development practices (checking in to version control, use with CI and automation) and what we envision to be the most likely use case for external type checkers (running a suite of external checkers). The UI for external checkers is somewhat TBD and is expected to evolve as the community starts to integrate these into what they're doing.\n\nThere is ongoing discussion about migrating the export format to json [here](https://github.com/leanprover/lean4export/issues/3), so I don't consider the introduction of a json parser to be a huge deal.\n\n## Configuration options\n\nUsers can either specify a path to the export file to be checked, or set `\"use_stdin\": true`, in which case the program will wait for the export file to be passed via stdin. If the `\"export_file_path\"` key is not defined, then `\"use_stdin\"` must be set to `true`. Specifying an export file and setting `\"use_stdin\": true` are mutually exclusive, and will result in a hard error.\n\nThe `\"permitted_axioms\"` list is where users specify the axioms an export file is permitted to use. For axioms to be permitted, they must be identified in the config file. The average Lean user will want to permit the three semi-official axioms, which are `Quot.sound`, `Classical.choice`, and `propext`, and most export files will also rely on `Lean.trustCompiler`.\n\nif `\"unpermitted_axiom_hard_error\"` is set to `true`, the presence of an axiom in the export file that is not in the `permitted_axioms` list will cause a hard error and abort checking, regardless of whether it's used by any later declarations. If set to `false`, the unpermitted axiom will simply be ignored, meaning it will not be checked, will not be added to the environment, and will cause a hard error only if another exported declaration actually tries to use it. This value is currently set to `true` by default out of an abundance of caution, but this may change; most users will probably want to set this to `false`, since things like the prelude's `sorryAx` are declared so that they may be used by metaprograms, but will not actually be invoked by other declarations in the file and are therefore safe to just skip.\n\n`\"nat_extension\"` and `\"string_extension\"` enable or disable the Nat and String kernel extensions. While we expect most users to opt into the Nat and String kernel extensions, they are disabled by default.\n\n`\"pp_declars\"` is a list of declarations to be printed back by the pretty printer.\n\n`\"pp_options\"` are the options to be used by the pretty printer.\n\n`\"pp_to_stdout\"` determines whether the pretty printer output is written to stdout. This is not mutually exclusive with `\"pp_output_path\"`; if both options are set, the pretty printer output will be written to both stdout and the specified path.\n\n`\"pp_output_path\"` can be set if the pretty printer output should be written to a file path. This is not mutually exclusive with `\"pp_output_path\"`; if both options are set, the pretty printer output will be written to both stdout and the specified path.\n\n`\"declar_sep\"` is a separator to print between each pretty printed declaration. A default of \"\\n\\n\" will end each declaration with a newline, then put a blank line between successive declarations. While this does allow for the injection of arbitrary strings into the pretty printer output, it's rejected if not valid UTF-8, and the configuration file is controlled entirely by the operator of the type checker, so I don't consider this any more of a vector for attack than specifying an incorrect export file path or knowingly whitelisting an unsound axiom.\n\nIf `\"print_success_message\"` is set to false, no additional output will be printed on success, and users should look to the platform-specific exit code. If `\"pp_to_stdout\"` is `true` and `\"print_success_message\"` is `false` the pretty printer output will still be written to stdout.\n\nAn example configuration file:\n\n```\n{\n    \"export_file_path\": \"MyLeanProject/export\",\n    \"use_stdin\": false,\n    \"permitted_axioms\": [\n        \"propext\",\n        \"Classical.choice\",\n        \"Quot.sound\",\n        \"Lean.trustCompiler\"\n    ],\n    \"unpermitted_axiom_hard_error\": true,\n    \"nat_extension\": true,\n    \"string_extension\": true,\n    \"pp_declars\": [\"Nat.add_zero\", \"Eq.symm\"],\n    \"pp_output_path\": \"<HOME>/file.txt\",\n    \"pp_to_stdout\": false,\n    \"pp_options\": {\n        \"all\": null,\n        \"explicit\": false,\n        \"universes\": null,\n        \"notation\": null,\n        \"proofs\": false,\n        \"indent\": 2,\n        \"width\": 100,\n        \"declar_sep\": \"\\n\\n\",\n    },\n    \"print_success_message\": false\n}\n```\n\n",
+      "stderr": "",
+      "wall_seconds": 0.009550124999999632
+    }
+  ],
+  "limitations": [
+    "No external proof was executed by this audit.",
+    "CLI acceptance/rejection is not a checker correctness proof.",
+    "Mac native mode has no Landrun operating-system sandbox.",
+    "Compiler toolchain provenance is supplied separately by the proof owners.",
+    "Source/binary hashes attest file identity, not semantic correctness."
+  ]
+}

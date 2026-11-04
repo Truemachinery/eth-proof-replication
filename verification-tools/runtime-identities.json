@@ -1,0 +1,193 @@
+{
+  "scope": "Shared Lean kernel/runtime and replay-checker executable identities; no proof execution",
+  "reason": "bin/lean is a small launcher; different patch versions can have identical launcher bytes",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "toolchains": {
+    "lean435": {
+      "prefix": "<HOME>/.elan/toolchains/leanprover--lean4---v4.35.0",
+      "runtime_files": [
+        {
+          "path": "<HOME>/.elan/toolchains/leanprover--lean4---v4.35.0/lib/lean/libleanshared.dylib",
+          "sha256": "cd332259fb604bf910288efdbf6f840dc35e00972a7df13aea2b717dacf8cddb",
+          "size_bytes": 177273680,
+          "exists": true,
+          "otool_exit_code": 0,
+          "linked_libraries": "<HOME>/.elan/toolchains/leanprover--lean4---v4.35.0/lib/lean/libleanshared.dylib:\n\t@rpath/libleanshared.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/libc++.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+          "otool_stderr": ""
+        },
+        {
+          "path": "<HOME>/.elan/toolchains/leanprover--lean4---v4.35.0/lib/lean/libleanshared_1.dylib",
+          "sha256": "2a10216dd8fd3dadae11dbbe4863162db13eaaf3cecfa82a691bb22cbf062f2a",
+          "size_bytes": 16736,
+          "exists": true,
+          "otool_exit_code": 0,
+          "linked_libraries": "<HOME>/.elan/toolchains/leanprover--lean4---v4.35.0/lib/lean/libleanshared_1.dylib:\n\t@rpath/libleanshared_1.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/libc++.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+          "otool_stderr": ""
+        },
+        {
+          "path": "<HOME>/.elan/toolchains/leanprover--lean4---v4.35.0/lib/lean/libleanshared_2.dylib",
+          "sha256": "7e5de27f8138151784f77cdfb9ea1f630cf32d36e8fe6acdc862bba51a65d566",
+          "size_bytes": 16736,
+          "exists": true,
+          "otool_exit_code": 0,
+          "linked_libraries": "<HOME>/.elan/toolchains/leanprover--lean4---v4.35.0/lib/lean/libleanshared_2.dylib:\n\t@rpath/libleanshared_2.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/libc++.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+          "otool_stderr": ""
+        },
+        {
+          "path": "<HOME>/.elan/toolchains/leanprover--lean4---v4.35.0/lib/lean/libInit_shared.dylib",
+          "sha256": "b788cf0d038e33afe699fa994c52bcee3bf072d84ac71901739d870369ec318b",
+          "size_bytes": 16736,
+          "exists": true,
+          "otool_exit_code": 0,
+          "linked_libraries": "<HOME>/.elan/toolchains/leanprover--lean4---v4.35.0/lib/lean/libInit_shared.dylib:\n\t@rpath/libInit_shared.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/libc++.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+          "otool_stderr": ""
+        },
+        {
+          "path": "<HOME>/.elan/toolchains/leanprover--lean4---v4.35.0/lib/lean/libLake_shared.dylib",
+          "sha256": "43e2aa2877eccaeb9d57a6d01b5947e02b71070e99099939a07bfad113bab270",
+          "size_bytes": 11274320,
+          "exists": true,
+          "otool_exit_code": 0,
+          "linked_libraries": "<HOME>/.elan/toolchains/leanprover--lean4---v4.35.0/lib/lean/libLake_shared.dylib:\n\t@rpath/libLake_shared.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/libleanshared.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/libleanshared_2.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/libleanshared_1.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/libInit_shared.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/libc++.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+          "otool_stderr": ""
+        },
+        {
+          "path": "<HOME>/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker",
+          "sha256": "d70e645ea2b0e597d0ff4cf67aa0c268483fac0b5b2b991ca2d4cd7fb78ab73c",
+          "size_bytes": 81520,
+          "exists": true,
+          "otool_exit_code": 0,
+          "linked_libraries": "<HOME>/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanchecker:\n\t@rpath/libLake_shared.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/libInit_shared.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/libleanshared_2.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/libleanshared_1.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/libleanshared.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+          "otool_stderr": ""
+        }
+      ]
+    },
+    "lean4341": {
+      "prefix": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1",
+      "runtime_files": [
+        {
+          "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared.dylib",
+          "sha256": "6588b7e38450ea749006dcd90bbaea9393a5ca1b64727a2e7138f3c9427c2b50",
+          "size_bytes": 179077552,
+          "exists": true,
+          "otool_exit_code": 0,
+          "linked_libraries": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared.dylib:\n\t@rpath/libleanshared.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/libc++.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+          "otool_stderr": ""
+        },
+        {
+          "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared_1.dylib",
+          "sha256": "e44858e227323a23ce7416c5678415d2d022582b1627ad3690117ce73cd6345a",
+          "size_bytes": 16736,
+          "exists": true,
+          "otool_exit_code": 0,
+          "linked_libraries": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared_1.dylib:\n\t@rpath/libleanshared_1.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/libc++.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+          "otool_stderr": ""
+        },
+        {
+          "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared_2.dylib",
+          "sha256": "be68927a4f282b99383e82af4d481b4ffe59f2a243aea20dae0e60b39c2ae182",
+          "size_bytes": 16736,
+          "exists": true,
+          "otool_exit_code": 0,
+          "linked_libraries": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared_2.dylib:\n\t@rpath/libleanshared_2.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/libc++.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+          "otool_stderr": ""
+        },
+        {
+          "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libInit_shared.dylib",
+          "sha256": "cb203e0bc0e6ab3250b2804d3e5398ad3a91544b5e049674532f73b7a062ef7f",
+          "size_bytes": 16736,
+          "exists": true,
+          "otool_exit_code": 0,
+          "linked_libraries": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libInit_shared.dylib:\n\t@rpath/libInit_shared.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/libc++.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+          "otool_stderr": ""
+        },
+        {
+          "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libLake_shared.dylib",
+          "sha256": "60a94628397814203d86428fa6015f9d844c4c4c74cda8667e687a4ea5b5f5ac",
+          "size_bytes": 10072896,
+          "exists": true,
+          "otool_exit_code": 0,
+          "linked_libraries": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libLake_shared.dylib:\n\t@rpath/libLake_shared.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/libleanshared.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/libleanshared_2.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/libleanshared_1.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/libInit_shared.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/libc++.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+          "otool_stderr": ""
+        },
+        {
+          "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/leanchecker",
+          "sha256": "cfde41cb11dde58c84e9c60c551fd104bb2fc1104ad44dca932a923120272a35",
+          "size_bytes": 78224,
+          "exists": true,
+          "otool_exit_code": 0,
+          "linked_libraries": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/leanchecker:\n\t@rpath/libLake_shared.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/libInit_shared.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/libleanshared_2.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/libleanshared_1.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/libleanshared.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+          "otool_stderr": ""
+        }
+      ]
+    },
+    "lean4331": {
+      "prefix": "<REPLICATION_ROOT>/anthropic/elan/toolchains/leanprover--lean4---v4.33.1",
+      "runtime_files": [
+        {
+          "path": "<REPLICATION_ROOT>/anthropic/elan/toolchains/leanprover--lean4---v4.33.1/lib/lean/libleanshared.dylib",
+          "sha256": "5a23395d981dbeeba03fc5247acc4a909063e0f0da9ca5a1cc93c8663ec446f8",
+          "size_bytes": 176796288,
+          "exists": true,
+          "otool_exit_code": 0,
+          "linked_libraries": "<REPLICATION_ROOT>/anthropic/elan/toolchains/leanprover--lean4---v4.33.1/lib/lean/libleanshared.dylib:\n\t@rpath/libleanshared.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/libc++.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+          "otool_stderr": ""
+        },
+        {
+          "path": "<REPLICATION_ROOT>/anthropic/elan/toolchains/leanprover--lean4---v4.33.1/lib/lean/libleanshared_1.dylib",
+          "sha256": "e44858e227323a23ce7416c5678415d2d022582b1627ad3690117ce73cd6345a",
+          "size_bytes": 16736,
+          "exists": true,
+          "otool_exit_code": 0,
+          "linked_libraries": "<REPLICATION_ROOT>/anthropic/elan/toolchains/leanprover--lean4---v4.33.1/lib/lean/libleanshared_1.dylib:\n\t@rpath/libleanshared_1.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/libc++.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+          "otool_stderr": ""
+        },
+        {
+          "path": "<REPLICATION_ROOT>/anthropic/elan/toolchains/leanprover--lean4---v4.33.1/lib/lean/libleanshared_2.dylib",
+          "sha256": "be68927a4f282b99383e82af4d481b4ffe59f2a243aea20dae0e60b39c2ae182",
+          "size_bytes": 16736,
+          "exists": true,
+          "otool_exit_code": 0,
+          "linked_libraries": "<REPLICATION_ROOT>/anthropic/elan/toolchains/leanprover--lean4---v4.33.1/lib/lean/libleanshared_2.dylib:\n\t@rpath/libleanshared_2.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/libc++.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+          "otool_stderr": ""
+        },
+        {
+          "path": "<REPLICATION_ROOT>/anthropic/elan/toolchains/leanprover--lean4---v4.33.1/lib/lean/libInit_shared.dylib",
+          "sha256": "cb203e0bc0e6ab3250b2804d3e5398ad3a91544b5e049674532f73b7a062ef7f",
+          "size_bytes": 16736,
+          "exists": true,
+          "otool_exit_code": 0,
+          "linked_libraries": "<REPLICATION_ROOT>/anthropic/elan/toolchains/leanprover--lean4---v4.33.1/lib/lean/libInit_shared.dylib:\n\t@rpath/libInit_shared.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/libc++.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+          "otool_stderr": ""
+        },
+        {
+          "path": "<REPLICATION_ROOT>/anthropic/elan/toolchains/leanprover--lean4---v4.33.1/lib/lean/libLake_shared.dylib",
+          "sha256": "e7cae8d015b954e51699703eabc42edfb37812c9af8fe9a44ed8a9eced416357",
+          "size_bytes": 10006944,
+          "exists": true,
+          "otool_exit_code": 0,
+          "linked_libraries": "<REPLICATION_ROOT>/anthropic/elan/toolchains/leanprover--lean4---v4.33.1/lib/lean/libLake_shared.dylib:\n\t@rpath/libLake_shared.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/libleanshared.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/libleanshared_2.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/libleanshared_1.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/libInit_shared.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/libc++.dylib (compatibility version 1.0.0, current version 1.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+          "otool_stderr": ""
+        },
+        {
+          "path": "<REPLICATION_ROOT>/anthropic/elan/toolchains/leanprover--lean4---v4.33.1/bin/leanchecker",
+          "sha256": "9b9a22ecb11e8e5962ddfa09ed547851e599495e7eeb5eba2ee82ccf5ec930a1",
+          "size_bytes": 78128,
+          "exists": true,
+          "otool_exit_code": 0,
+          "linked_libraries": "<REPLICATION_ROOT>/anthropic/elan/toolchains/leanprover--lean4---v4.33.1/bin/leanchecker:\n\t@rpath/libLake_shared.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/libInit_shared.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/libleanshared_2.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/libleanshared_1.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t@rpath/libleanshared.dylib (compatibility version 0.0.0, current version 0.0.0)\n\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)\n",
+          "otool_stderr": ""
+        }
+      ]
+    }
+  },
+  "capture_script": {
+    "path": "<REPLICATION_ROOT>/verification-tools/runtime_identity.py",
+    "sha256": "1d31734682218fd5318958decb6d2eacfad6f7dbda3ea7251b0c553764a9a1e6",
+    "size_bytes": 2848
+  },
+  "limitations": [
+    "System libraries/OS/hardware remain outside this file inventory.",
+    "Hash identity does not establish correctness or proof acceptance."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "format": "lexical-only-not-soundness-proof-v1",
+  "scope": "1050project modules; comments included, scripts excluded",
+  "matches": {
+    "sorry": [
+      {
+        "path": "Challenge.lean",
+        "line": 8,
+        "text": "/-! What is claimed: 2 theorems, with `sorry` in place of their proofs."
+      },
+      {
+        "path": "Challenge.lean",
+        "line": 13,
+        "text": "  sorry"
+      },
+      {
+        "path": "Challenge.lean",
+        "line": 17,
+        "text": "  sorry"
+      }
+    ],
+    "axiom": [],
+    "initialize": [],
+    "implemented_by": [],
+    "extern": [],
+    "skipKernelTC": [],
+    "unsafe": [],
+    "native_decide": [],
+    "bv_decide": [],
+    "#eval": [],
+    "run_cmd": []
+  }
+}

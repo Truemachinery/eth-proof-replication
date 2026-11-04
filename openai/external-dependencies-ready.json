@@ -1,0 +1,29 @@
+{
+  "recorded_utc": "2026-11-04T17:13:36.540470+00:00",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "exit_code": 0,
+  "checkpoint_event_id": 3701,
+  "command": [
+    "python3",
+    "research/eth-external-replication-20261104/openai/in_workspace.py",
+    "lake",
+    "build",
+    "+Mathlib"
+  ],
+  "cache_files_downloaded_and_decompressed": 8908,
+  "cache_source": "https://cache.mathlib.org/mathlib4-master",
+  "workspace_manifest_sha256": "4aa8b01a11ed34de463651ed6396d9da61f365cccfd158e82e96bbd17bcb14bc",
+  "proof_project_modules_built": 0,
+  "logs": [
+    {
+      "path": "logs/cache-r4.txt",
+      "sha256": "94062bbf74ad2e65cf505d44c83671c5f1c7ebe44430d6dd42ce9140635e14ba",
+      "bytes": 21331
+    },
+    {
+      "path": "logs/external-cache-check-r1.txt",
+      "sha256": "419a4796ddcc8723b62f0f9b85f505453e83ce442b4e508af79733a26401de85",
+      "bytes": 290
+    }
+  ]
+}

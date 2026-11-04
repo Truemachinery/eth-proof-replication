@@ -1,0 +1,32 @@
+{
+  "format": "external-eth-command-v1",
+  "name": "upstream-comparator-preflight-r1",
+  "started_utc": "2026-11-04T17:04:44.477168+00:00",
+  "finished_utc": "2026-11-04T17:04:44.490213+00:00",
+  "argv": [
+    "env",
+    "TOOLS_DIR=<REPLICATION_ROOT>/anthropic/tools",
+    "LOG_DIR=<REPLICATION_ROOT>/anthropic/comparator-logs",
+    "bash",
+    "../.github/scripts/comparator-check.sh"
+  ],
+  "cwd": "<REPLICATION_ROOT>/anthropic/source/eth",
+  "environment_overrides": {
+    "ELAN_HOME": "<REPLICATION_ROOT>/anthropic/elan",
+    "XDG_CACHE_HOME": "<REPLICATION_ROOT>/anthropic/cache",
+    "MATHLIB_CACHE_DIR": "<REPLICATION_ROOT>/anthropic/cache/mathlib",
+    "PATH": "<REDACTED FIELD>"
+  },
+  "timeout_wall_seconds": 28800,
+  "timed_out": false,
+  "exit_code": 1,
+  "wall_seconds": 0.013002,
+  "child_user_seconds": 0.00141,
+  "child_system_seconds": 0.00551,
+  "child_cpu_seconds": 0.00692,
+  "peak_child_rss_bytes_macos": 2375680,
+  "output_path": "<REPLICATION_ROOT>/anthropic/logs/upstream-comparator-preflight-r1.txt",
+  "output_size_bytes": 22,
+  "output_sha256": "0a66d437ffc4cd65c84d2aa6db6f0688b048fc8c6559c3806fcebc6f7930c32d",
+  "limitations": "Local command resource accounting excludes source authoring and model inference. Downloaded dependency objects are distinct from project-source re-elaboration."
+}

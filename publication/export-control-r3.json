@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "checks": [
+    "fixed allowlist",
+    "live log excluded",
+    "failure preserved",
+    "sensitive data redacted",
+    "portable derivative distinguished and syntax checked",
+    "ordinary path variable source remains byte-identical",
+    "original source unchanged",
+    "incomplete receipt rejected",
+    "plan expansion rejected",
+    "source drift rejected"
+  ],
+  "no_proof_execution": true,
+  "exporter_sha256": "500d07539be6df907e73ccab9c925af3559dfc323fbfb8ef52844cb7a45d231e"
+}

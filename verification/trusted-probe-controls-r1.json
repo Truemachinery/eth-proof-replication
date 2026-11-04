@@ -1,0 +1,140 @@
+{
+  "schema": "eth-trusted-probe-controls/1",
+  "cases": [
+    {
+      "case": "trusted-theorem",
+      "argv": [
+        "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean",
+        "--run",
+        "<REPLICATION_ROOT>/verification/AuditTargets.lean",
+        "Init",
+        "Nat.add_zero"
+      ],
+      "expected_exit_code": 0,
+      "exit_code": 0,
+      "wall_seconds": 7.534782208,
+      "stdout": "{\"event\":\"environment\",\"initializer_execution_enabled\":false,\"load_extensions\":false,\"load_level\":\"private\",\"module\":\"Init\",\"permitted_axioms\":[\"propext\",\"Quot.sound\",\"Classical.choice\"],\"schema\":\"eth-target-axiom-audit/1\",\"standard_axiom_signature_check\":true}\n{\"axioms\":[],\"disallowed_axioms\":[],\"event\":\"target\",\"module\":\"Init\",\"passed\":true,\"schema\":\"eth-target-axiom-audit/1\",\"target\":\"Nat.add_zero\",\"visited_constants\":32}\n{\"event\":\"complete\",\"module\":\"Init\",\"passed\":true,\"schema\":\"eth-target-axiom-audit/1\",\"scope\":\"named-theorem transitive axiom audit; no statement comparison or kernel replay\",\"targets_checked\":1}\n",
+      "stderr": "",
+      "records": [
+        {
+          "event": "environment",
+          "initializer_execution_enabled": false,
+          "load_extensions": false,
+          "load_level": "private",
+          "module": "Init",
+          "permitted_axioms": [
+            "propext",
+            "Quot.sound",
+            "Classical.choice"
+          ],
+          "schema": "eth-target-axiom-audit/1",
+          "standard_axiom_signature_check": true
+        },
+        {
+          "axioms": [],
+          "disallowed_axioms": [],
+          "event": "target",
+          "module": "Init",
+          "passed": true,
+          "schema": "eth-target-axiom-audit/1",
+          "target": "Nat.add_zero",
+          "visited_constants": 32
+        },
+        {
+          "event": "complete",
+          "module": "Init",
+          "passed": true,
+          "schema": "eth-target-axiom-audit/1",
+          "scope": "named-theorem transitive axiom audit; no statement comparison or kernel replay",
+          "targets_checked": 1
+        }
+      ],
+      "control_passed": true
+    },
+    {
+      "case": "missing-theorem",
+      "argv": [
+        "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean",
+        "--run",
+        "<REPLICATION_ROOT>/verification/AuditTargets.lean",
+        "Init",
+        "EthReplicationAudit.NoSuchTheorem"
+      ],
+      "expected_exit_code": 2,
+      "exit_code": 2,
+      "wall_seconds": 2.457628957999999,
+      "stdout": "{\"event\":\"environment\",\"initializer_execution_enabled\":false,\"load_extensions\":false,\"load_level\":\"private\",\"module\":\"Init\",\"permitted_axioms\":[\"propext\",\"Quot.sound\",\"Classical.choice\"],\"schema\":\"eth-target-axiom-audit/1\",\"standard_axiom_signature_check\":true}\n{\"event\":\"error\",\"message\":\"requested target is missing or is not a theorem: EthReplicationAudit.NoSuchTheorem\",\"passed\":false,\"schema\":\"eth-target-axiom-audit/1\"}\n",
+      "stderr": "",
+      "records": [
+        {
+          "event": "environment",
+          "initializer_execution_enabled": false,
+          "load_extensions": false,
+          "load_level": "private",
+          "module": "Init",
+          "permitted_axioms": [
+            "propext",
+            "Quot.sound",
+            "Classical.choice"
+          ],
+          "schema": "eth-target-axiom-audit/1",
+          "standard_axiom_signature_check": true
+        },
+        {
+          "event": "error",
+          "message": "requested target is missing or is not a theorem: EthReplicationAudit.NoSuchTheorem",
+          "passed": false,
+          "schema": "eth-target-axiom-audit/1"
+        }
+      ],
+      "control_passed": true
+    },
+    {
+      "case": "definition-is-not-theorem",
+      "argv": [
+        "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean",
+        "--run",
+        "<REPLICATION_ROOT>/verification/AuditTargets.lean",
+        "Init",
+        "Nat.add"
+      ],
+      "expected_exit_code": 2,
+      "exit_code": 2,
+      "wall_seconds": 1.7683524590000008,
+      "stdout": "{\"event\":\"environment\",\"initializer_execution_enabled\":false,\"load_extensions\":false,\"load_level\":\"private\",\"module\":\"Init\",\"permitted_axioms\":[\"propext\",\"Quot.sound\",\"Classical.choice\"],\"schema\":\"eth-target-axiom-audit/1\",\"standard_axiom_signature_check\":true}\n{\"event\":\"error\",\"message\":\"requested target is missing or is not a theorem: Nat.add\",\"passed\":false,\"schema\":\"eth-target-axiom-audit/1\"}\n",
+      "stderr": "",
+      "records": [
+        {
+          "event": "environment",
+          "initializer_execution_enabled": false,
+          "load_extensions": false,
+          "load_level": "private",
+          "module": "Init",
+          "permitted_axioms": [
+            "propext",
+            "Quot.sound",
+            "Classical.choice"
+          ],
+          "schema": "eth-target-axiom-audit/1",
+          "standard_axiom_signature_check": true
+        },
+        {
+          "event": "error",
+          "message": "requested target is missing or is not a theorem: Nat.add",
+          "passed": false,
+          "schema": "eth-target-axiom-audit/1"
+        }
+      ],
+      "control_passed": true
+    }
+  ],
+  "probe_sha256": "a78f30e0439e85d3a9ae51828e0e42c248c027a7fcfeb4c4fb16cb776fae0b05",
+  "toolchain": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1",
+  "environment": {
+    "PATH_front": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin",
+    "LEAN_SYSROOT": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1",
+    "LEAN_NUM_THREADS": "1",
+    "inherited_lean_paths_removed": true
+  },
+  "all_controls_passed": true
+}

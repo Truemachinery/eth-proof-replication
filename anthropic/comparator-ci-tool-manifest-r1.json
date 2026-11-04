@@ -1,0 +1,695 @@
+{
+  "format": "anthropic-exact-ci-comparator-native-tool-v1",
+  "scope": "Tool acquisition/build and negative CLI smoke only; no external proof check yet",
+  "official_ci_source_commit": "575674928e239f5bc452aab72d1dd7b0f1326494",
+  "source": {
+    "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source",
+    "commit": "575674928e239f5bc452aab72d1dd7b0f1326494",
+    "origin": "https://github.com/leanprover/comparator.git",
+    "tracked_changes": "",
+    "files": [
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/.github/workflows/lean_action_ci.yml",
+        "sha256": "7ce521043efd6fce6ec6d18607678f208d286a470bdca401cdd5044a9d21ac6d",
+        "size_bytes": 1301
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/.gitignore",
+        "sha256": "b3ad09fc93f83fdbd0bee771258dd4a58d3798fd7e6048611dde5a804bb43f1e",
+        "size_bytes": 7
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/Comparator.lean",
+        "sha256": "6c73ecd5bd429cf85e0aaa75b7c6f874ec0598d5afca60dcf5711d44e6bdef23",
+        "size_bytes": 204
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/Comparator/Axioms.lean",
+        "sha256": "863c5e1329811be0427880e08c171de733343491c5a3619b5dbf2e12b34c6125",
+        "size_bytes": 2389
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/Comparator/Compare.lean",
+        "sha256": "9bc34cb7de5a069a6fef7f3b13b20fea22f1d52603f74320a93d519b735ad3dd",
+        "size_bytes": 4089
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/Comparator/Util.lean",
+        "sha256": "693d845330dd7122565aeb19314a3e3de4b49f9a8a7ac6e1fadbc9ab374b9f88",
+        "size_bytes": 788
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "size_bytes": 11357
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/Main.lean",
+        "sha256": "b95ab1b6293f97fa16ecae548cf452b009ba035fc0273fe83b894769435ef6ef",
+        "size_bytes": 12997
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/README.md",
+        "sha256": "cfdf0ff608755d56f3bad62acc86273bc0c11591335678344bf53cb733b61772",
+        "size_bytes": 9960
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/lake-manifest.json",
+        "sha256": "bbfb90d0bf6d86e8d909e48e5e13a178edbfc8f204fcb231b4b08531e48aaf27",
+        "size_bytes": 461
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/lakefile.toml",
+        "sha256": "66841e3d86d93c4e1e1de9db1a377ec5c513772c073d64c2d7e040406cc29891",
+        "size_bytes": 222
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/lean-toolchain",
+        "sha256": "cdbc6c372a2b37ad94430a6cec69cedfa4d36f255bfd968773fd91bf7a1746bf",
+        "size_bytes": 29
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/runtests.lean",
+        "sha256": "8540bee573b302716dc3db78845229e3f6df20e3df962b342dd42d780848177c",
+        "size_bytes": 5595
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/scripts/fake-landrun.sh",
+        "sha256": "167507c89d8b3c7667ad78b50df7b19f89883751a01efd1457404fa34a994e8b",
+        "size_bytes": 1431
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/char_ofnat_issue/Challenge.lean",
+        "sha256": "6d3f403b66c51ef62a99b25a72bf750da3250ef8e865834815107eae9c4846d9",
+        "size_bytes": 30
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/char_ofnat_issue/Solution.lean",
+        "sha256": "3974fcfd64870a4eb4ad6b8e9cc8172440d8780367a515a5ab1b9727883b1b4a",
+        "size_bytes": 1701
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/char_ofnat_issue/config.json",
+        "sha256": "f2070f20090cff4d93a7da2285e1f1c3d81fed8ccb409ac823f3caa0a53c78a1",
+        "size_bytes": 205
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/char_ofnat_issue/test.json",
+        "sha256": "2f23c866623acb1f410e8d54f7264126e525966f38589837bb2bac5a12d90cba",
+        "size_bytes": 27
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/def_hole/Challenge.lean",
+        "sha256": "29fff4cddd757df3d46238e95bc5cc9e1786f7624d56750d5a5d8249aab77603",
+        "size_bytes": 57
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/def_hole/Solution.lean",
+        "sha256": "79da193e9d9aaf132d9326621cba38a4a567142091c2bfb604454685649c6ef1",
+        "size_bytes": 52
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/def_hole/config.json",
+        "sha256": "66a608a529952fdbe475961e0844b7140338928c6c6338fdedeb80fb65165dc9",
+        "size_bytes": 235
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/def_hole/test.json",
+        "sha256": "66eedf861d9f204e07568b236433dd99adc1fc925cef72ddc760b39a3799958c",
+        "size_bytes": 27
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/def_hole_axiom_issue/Challenge.lean",
+        "sha256": "29fff4cddd757df3d46238e95bc5cc9e1786f7624d56750d5a5d8249aab77603",
+        "size_bytes": 57
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/def_hole_axiom_issue/Solution.lean",
+        "sha256": "570f8c0e1af5709001c09e27a5642b129806fc3967f5e60e47fa70a15fd3a04b",
+        "size_bytes": 557
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/def_hole_axiom_issue/config.json",
+        "sha256": "66a608a529952fdbe475961e0844b7140338928c6c6338fdedeb80fb65165dc9",
+        "size_bytes": 235
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/def_hole_axiom_issue/test.json",
+        "sha256": "2f23c866623acb1f410e8d54f7264126e525966f38589837bb2bac5a12d90cba",
+        "size_bytes": 27
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/def_hole_kind_mismatch/Challenge.lean",
+        "sha256": "29fff4cddd757df3d46238e95bc5cc9e1786f7624d56750d5a5d8249aab77603",
+        "size_bytes": 57
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/def_hole_kind_mismatch/Solution.lean",
+        "sha256": "bff56308e449aed84cd0b8e19c6df1e6b2f1af82fb44d0579cb168d1097659b7",
+        "size_bytes": 176
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/def_hole_kind_mismatch/config.json",
+        "sha256": "66a608a529952fdbe475961e0844b7140338928c6c6338fdedeb80fb65165dc9",
+        "size_bytes": 235
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/def_hole_kind_mismatch/test.json",
+        "sha256": "2f23c866623acb1f410e8d54f7264126e525966f38589837bb2bac5a12d90cba",
+        "size_bytes": 27
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/def_hole_type_mismatch/Challenge.lean",
+        "sha256": "e237fcb5ffeb8af2ac0d4fa7e492fb053a1520de7f9df8566dfacc8bb8cad703",
+        "size_bytes": 58
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/def_hole_type_mismatch/Solution.lean",
+        "sha256": "c90008c42c1b34c03dc17c4f8207e51fe40d21b30ccb13f2e8d928cf027fcf4c",
+        "size_bytes": 159
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/def_hole_type_mismatch/config.json",
+        "sha256": "66a608a529952fdbe475961e0844b7140338928c6c6338fdedeb80fb65165dc9",
+        "size_bytes": 235
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/def_hole_type_mismatch/test.json",
+        "sha256": "2f23c866623acb1f410e8d54f7264126e525966f38589837bb2bac5a12d90cba",
+        "size_bytes": 27
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/numeric_namespace/Challenge/12.34/5.lean",
+        "sha256": "ea3373717a56ec47b5ef567a7e73be87cdffd15082afe6bf396831e601ef98b1",
+        "size_bytes": 68
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/numeric_namespace/Solution.lean",
+        "sha256": "da5338f6dd7240a29d221983d33e30d45d78b2d8f461fc4eef23718df3a4a4c5",
+        "size_bytes": 66
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/numeric_namespace/config.json",
+        "sha256": "442b517c4ac96670bf56ead2a0a54a6dd71c035d997c0140a9a7cc5852f82ba0",
+        "size_bytes": 228
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/numeric_namespace/lakefile.toml",
+        "sha256": "269a41291cd30a69bccfe48144ffa0117ba472326629b2447598ba456114e4bd",
+        "size_bytes": 131
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/numeric_namespace/test.json",
+        "sha256": "d171fb83751c9f89af63bc2cdb61c18fb41643a8845fb43899e298cc135334a1",
+        "size_bytes": 20
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/olean_issue/Challenge.lean",
+        "sha256": "6d3f403b66c51ef62a99b25a72bf750da3250ef8e865834815107eae9c4846d9",
+        "size_bytes": 30
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/olean_issue/Solution.lean",
+        "sha256": "721377c985fd778c9e334a324d1320183095cae74ea69eb3ec433f0979a0df88",
+        "size_bytes": 560
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/olean_issue/config.json",
+        "sha256": "f2070f20090cff4d93a7da2285e1f1c3d81fed8ccb409ac823f3caa0a53c78a1",
+        "size_bytes": 205
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/olean_issue/test.json",
+        "sha256": "2f23c866623acb1f410e8d54f7264126e525966f38589837bb2bac5a12d90cba",
+        "size_bytes": 27
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/opaque_value/Challenge.lean",
+        "sha256": "6d3f403b66c51ef62a99b25a72bf750da3250ef8e865834815107eae9c4846d9",
+        "size_bytes": 30
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/opaque_value/Solution.lean",
+        "sha256": "9f4e3bca2f5332b4351af422fb8e4de988fe16348425084267bad5bc5df5e56c",
+        "size_bytes": 64
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/opaque_value/config.json",
+        "sha256": "f2070f20090cff4d93a7da2285e1f1c3d81fed8ccb409ac823f3caa0a53c78a1",
+        "size_bytes": 205
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/opaque_value/test.json",
+        "sha256": "2f23c866623acb1f410e8d54f7264126e525966f38589837bb2bac5a12d90cba",
+        "size_bytes": 27
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/primitive_issue/Challenge.lean",
+        "sha256": "6d3f403b66c51ef62a99b25a72bf750da3250ef8e865834815107eae9c4846d9",
+        "size_bytes": 30
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/primitive_issue/Solution.lean",
+        "sha256": "13ce508c4c4f1f1614cc697c6b71c0253a854e6e56a3baa917a218baf2bcc47c",
+        "size_bytes": 521
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/primitive_issue/config.json",
+        "sha256": "f2070f20090cff4d93a7da2285e1f1c3d81fed8ccb409ac823f3caa0a53c78a1",
+        "size_bytes": 205
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/primitive_issue/test.json",
+        "sha256": "2f23c866623acb1f410e8d54f7264126e525966f38589837bb2bac5a12d90cba",
+        "size_bytes": 27
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/proj_trick/Challenge.lean",
+        "sha256": "3130ae1cd994683288d33afbf6458d4478a13cbcfea94b1f3f9661f09b289049",
+        "size_bytes": 416
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/proj_trick/Solution.lean",
+        "sha256": "a5ca409063ad930b99d253510f107b904dea0f6ecb8fa546298ffd86df7c89b5",
+        "size_bytes": 314
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/proj_trick/config.json",
+        "sha256": "b718810b7e285620416f1e693d0fb296d344afeb9375a401e5a0daaa788130ea",
+        "size_bytes": 192
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/proj_trick/test.json",
+        "sha256": "2f23c866623acb1f410e8d54f7264126e525966f38589837bb2bac5a12d90cba",
+        "size_bytes": 27
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/quot_mismatch/Challenge.lean",
+        "sha256": "9b6b6a1c3f6b70b53b2c5e975fa0bf5facf3a47b2bb3537aada5508d4c9bb814",
+        "size_bytes": 1177
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/quot_mismatch/Solution.lean",
+        "sha256": "9b6b6a1c3f6b70b53b2c5e975fa0bf5facf3a47b2bb3537aada5508d4c9bb814",
+        "size_bytes": 1177
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/quot_mismatch/config.json",
+        "sha256": "0ee69db0bc89c62d29989687a537cb18b0dbdbc87988b69babffb4d06e94d88d",
+        "size_bytes": 167
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/quot_mismatch/test.json",
+        "sha256": "2f23c866623acb1f410e8d54f7264126e525966f38589837bb2bac5a12d90cba",
+        "size_bytes": 27
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_axiom_issue/Challenge.lean",
+        "sha256": "d6400c174574f3216a2c02f61f559415c0352f74051baeee3f959055d8534b9c",
+        "size_bytes": 55
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_axiom_issue/Solution.lean",
+        "sha256": "005b3b1b863f37c16fc6330cdc84d05e060f4a779d942a219432f8858325e244",
+        "size_bytes": 96
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_axiom_issue/config.json",
+        "sha256": "6e0c311b855acc0446e352844d77a625007466f759ce985d071895bc0f70991c",
+        "size_bytes": 205
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_axiom_issue/test.json",
+        "sha256": "2f23c866623acb1f410e8d54f7264126e525966f38589837bb2bac5a12d90cba",
+        "size_bytes": 27
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_kind_mismatch/Challenge.lean",
+        "sha256": "d6400c174574f3216a2c02f61f559415c0352f74051baeee3f959055d8534b9c",
+        "size_bytes": 55
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_kind_mismatch/Solution.lean",
+        "sha256": "005b3b1b863f37c16fc6330cdc84d05e060f4a779d942a219432f8858325e244",
+        "size_bytes": 96
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_kind_mismatch/config.json",
+        "sha256": "6e0c311b855acc0446e352844d77a625007466f759ce985d071895bc0f70991c",
+        "size_bytes": 205
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_kind_mismatch/test.json",
+        "sha256": "2f23c866623acb1f410e8d54f7264126e525966f38589837bb2bac5a12d90cba",
+        "size_bytes": 27
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_match/Challenge.lean",
+        "sha256": "d6400c174574f3216a2c02f61f559415c0352f74051baeee3f959055d8534b9c",
+        "size_bytes": 55
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_match/Solution.lean",
+        "sha256": "4460098a661949cca3d8d81a104c666bc2f42ae3ca1c988a20c66b0f8ad2e4d6",
+        "size_bytes": 55
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_match/config.json",
+        "sha256": "6e0c311b855acc0446e352844d77a625007466f759ce985d071895bc0f70991c",
+        "size_bytes": 205
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_match/test.json",
+        "sha256": "66eedf861d9f204e07568b236433dd99adc1fc925cef72ddc760b39a3799958c",
+        "size_bytes": 27
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_mismatch/Challenge.lean",
+        "sha256": "d6400c174574f3216a2c02f61f559415c0352f74051baeee3f959055d8534b9c",
+        "size_bytes": 55
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_mismatch/Solution.lean",
+        "sha256": "f4f32cc82b9fe2012a2b9901c6e51d7b2fbe3d5b3aca105745c513554d6055ca",
+        "size_bytes": 39
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_mismatch/config.json",
+        "sha256": "6e0c311b855acc0446e352844d77a625007466f759ce985d071895bc0f70991c",
+        "size_bytes": 205
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_mismatch/test.json",
+        "sha256": "2f23c866623acb1f410e8d54f7264126e525966f38589837bb2bac5a12d90cba",
+        "size_bytes": 27
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_multi_nanoda/Challenge.lean",
+        "sha256": "d6400c174574f3216a2c02f61f559415c0352f74051baeee3f959055d8534b9c",
+        "size_bytes": 55
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_multi_nanoda/Solution.lean",
+        "sha256": "4460098a661949cca3d8d81a104c666bc2f42ae3ca1c988a20c66b0f8ad2e4d6",
+        "size_bytes": 55
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_multi_nanoda/config.json",
+        "sha256": "680ea44e28f798d062547e2b85e59e4ea280c0d35ea3b9bce53c1f51eb3cf064",
+        "size_bytes": 287
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_multi_nanoda/test.json",
+        "sha256": "66eedf861d9f204e07568b236433dd99adc1fc925cef72ddc760b39a3799958c",
+        "size_bytes": 27
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_nanoda/Challenge.lean",
+        "sha256": "d6400c174574f3216a2c02f61f559415c0352f74051baeee3f959055d8534b9c",
+        "size_bytes": 55
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_nanoda/Solution.lean",
+        "sha256": "4460098a661949cca3d8d81a104c666bc2f42ae3ca1c988a20c66b0f8ad2e4d6",
+        "size_bytes": 55
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_nanoda/config.json",
+        "sha256": "f546954bc15677db0a2f4b03ea027c50e3172b91e643ff38a6443602d3f14730",
+        "size_bytes": 243
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_nanoda/test.json",
+        "sha256": "66eedf861d9f204e07568b236433dd99adc1fc925cef72ddc760b39a3799958c",
+        "size_bytes": 27
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_nanoda_compat/Challenge.lean",
+        "sha256": "d6400c174574f3216a2c02f61f559415c0352f74051baeee3f959055d8534b9c",
+        "size_bytes": 55
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_nanoda_compat/Solution.lean",
+        "sha256": "4460098a661949cca3d8d81a104c666bc2f42ae3ca1c988a20c66b0f8ad2e4d6",
+        "size_bytes": 55
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_nanoda_compat/config.json",
+        "sha256": "9e9d12590405cc5a91ec7974a31166f05b728cb6870b61a53cba031049f0df6a",
+        "size_bytes": 204
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_nanoda_compat/test.json",
+        "sha256": "66eedf861d9f204e07568b236433dd99adc1fc925cef72ddc760b39a3799958c",
+        "size_bytes": 27
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_nanoda_mismatch/Challenge.lean",
+        "sha256": "d6400c174574f3216a2c02f61f559415c0352f74051baeee3f959055d8534b9c",
+        "size_bytes": 55
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_nanoda_mismatch/Solution.lean",
+        "sha256": "f4f32cc82b9fe2012a2b9901c6e51d7b2fbe3d5b3aca105745c513554d6055ca",
+        "size_bytes": 39
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_nanoda_mismatch/config.json",
+        "sha256": "f546954bc15677db0a2f4b03ea027c50e3172b91e643ff38a6443602d3f14730",
+        "size_bytes": 243
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/simple_nanoda_mismatch/test.json",
+        "sha256": "2f23c866623acb1f410e8d54f7264126e525966f38589837bb2bac5a12d90cba",
+        "size_bytes": 27
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/theorem_hole_issue/Challenge.lean",
+        "sha256": "d24fae6576e509d57f880225bd217a5559082e4eaf54b40fcfd9992a0e0a761d",
+        "size_bytes": 266
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/theorem_hole_issue/Solution.lean",
+        "sha256": "d8c4d52686cfb5c700852dfd308e2d66f68b4ecfc232de1d0f01856c1879c8eb",
+        "size_bytes": 149
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/theorem_hole_issue/config.json",
+        "sha256": "e51295f536ba579f2a84cef3fc4c1f83d9ce29dcc3a01097853ab95042df121d",
+        "size_bytes": 210
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/tests/projects/theorem_hole_issue/test.json",
+        "sha256": "66eedf861d9f204e07568b236433dd99adc1fc925cef72ddc760b39a3799958c",
+        "size_bytes": 27
+      }
+    ]
+  },
+  "dependency": {
+    "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/.lake/packages/lean4export",
+    "commit": "b18d673bd29b476466a51a3be1012df2ed322b10",
+    "origin": "https://github.com/leanprover/lean4export",
+    "tracked_changes": "",
+    "files": [
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/.lake/packages/lean4export/.github/workflows/ci.yml",
+        "sha256": "39dc12eb359375d8c018e7f608f2d3c88a9580057d3b14f5c9f892795bb0870e",
+        "size_bytes": 238
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/.lake/packages/lean4export/.gitignore",
+        "sha256": "fde850d24186b6e99c8c0debd641fb3ab85198b109eb66f71a1fea02bd6ea1b3",
+        "size_bytes": 7
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/.lake/packages/lean4export/Export.lean",
+        "sha256": "1c60d571dc24bfb99e7cbb218d8d489919bbc871238f6db9c76248521fbea998",
+        "size_bytes": 15994
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/.lake/packages/lean4export/Export/Parse.lean",
+        "sha256": "1f943b5cc776eece6d528937b976509c8bd57d10bc69a39b1c119bfb6d664286",
+        "size_bytes": 20491
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/.lake/packages/lean4export/LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "size_bytes": 11357
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/.lake/packages/lean4export/Main.lean",
+        "sha256": "bd8e350903f1382b25fe767f9086dd9882000f01085f7046ea06545e7848842a",
+        "size_bytes": 751
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/.lake/packages/lean4export/README.md",
+        "sha256": "98833b66efc1289df582d85faa79b253c83bcca27c9fdb073ba42bdf0ffe77c9",
+        "size_bytes": 1414
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/.lake/packages/lean4export/Test.lean",
+        "sha256": "44f8995f47633ca77364740af03a719e90a2c58690fa90b237487b541bb04804",
+        "size_bytes": 18368
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/.lake/packages/lean4export/examples/Nat.add_succ.ndjson",
+        "sha256": "4ef6d64908b3b120c23fb383eea6a56b059efc51c87b01b39d1427e4e39bf49b",
+        "size_bytes": 32437
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/.lake/packages/lean4export/format_ndjson.md",
+        "sha256": "f82a21e17e4258a1043895d0653ea4333bef8cb07aad2e3d6c1fc4be52b138e3",
+        "size_bytes": 6098
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/.lake/packages/lean4export/lake-manifest.json",
+        "sha256": "f1b9d60d0ebd46f79f48e6833deefeaa835fdee12b4078241635ee14b6a0f07a",
+        "size_bytes": 117
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/.lake/packages/lean4export/lakefile.toml",
+        "sha256": "54dde3aba280f32035c882dcd2f2039e738e20ed45ca538337b65cc69c02f7df",
+        "size_bytes": 207
+      },
+      {
+        "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/.lake/packages/lean4export/lean-toolchain",
+        "sha256": "cdbc6c372a2b37ad94430a6cec69cedfa4d36f255bfd968773fd91bf7a1746bf",
+        "size_bytes": 29
+      }
+    ]
+  },
+  "compiler_pinned_in_source": "leanprover/lean4:v4.34.0-rc1",
+  "compiler_actually_used": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_deviation": "Existing isolated Lean4.34.1 used instead of4.34.0-rc1; source/manifests unchanged. Native macOS, not exact Linux CI environment.",
+  "actual_compiler_commands_from_trace": [
+    ".> LEAN_PATH=<REPLICATION_ROOT>/anthropic/tools/comparator-ci-source/.lake/packages/lean4export/.lake/build/lib/lean:<REPLICATION_ROOT>/anthropic/tools/comparator-ci-source/.lake/build/lib/lean <REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean <REPLICATION_ROOT>/anthropic/tools/comparator-ci-source/Main.lean -o <REPLICATION_ROOT>/anthropic/tools/comparator-ci-source/.lake/build/lib/lean/Main.olean -i <REPLICATION_ROOT>/anthropic/tools/comparator-ci-source/.lake/build/lib/lean/Main.ilean -c <REPLICATION_ROOT>/anthropic/tools/comparator-ci-source/.lake/build/ir/Main.c --setup <REPLICATION_ROOT>/anthropic/tools/comparator-ci-source/.lake/build/ir/Main.setup.json --json"
+  ],
+  "compiler_trace": {
+    "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/.lake/build/lib/lean/Main.trace",
+    "sha256": "6f830678e0c38f01a87e5f8445fcf968ee15596447fb71d3f0a98ea3eddded1a",
+    "size_bytes": 2476
+  },
+  "runtime_files": [
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared.dylib",
+      "sha256": "6588b7e38450ea749006dcd90bbaea9393a5ca1b64727a2e7138f3c9427c2b50",
+      "size_bytes": 179077552,
+      "matches_previous_tool_inventory": true
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared_1.dylib",
+      "sha256": "e44858e227323a23ce7416c5678415d2d022582b1627ad3690117ce73cd6345a",
+      "size_bytes": 16736,
+      "matches_previous_tool_inventory": true
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared_2.dylib",
+      "sha256": "be68927a4f282b99383e82af4d481b4ffe59f2a243aea20dae0e60b39c2ae182",
+      "size_bytes": 16736,
+      "matches_previous_tool_inventory": true
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libInit_shared.dylib",
+      "sha256": "cb203e0bc0e6ab3250b2804d3e5398ad3a91544b5e049674532f73b7a062ef7f",
+      "size_bytes": 16736,
+      "matches_previous_tool_inventory": true
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libLake_shared.dylib",
+      "sha256": "60a94628397814203d86428fa6015f9d844c4c4c74cda8667e687a4ea5b5f5ac",
+      "size_bytes": 10072896,
+      "matches_previous_tool_inventory": true
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/leanchecker",
+      "sha256": "cfde41cb11dde58c84e9c60c551fd104bb2fc1104ad44dca932a923120272a35",
+      "size_bytes": 78224,
+      "matches_previous_tool_inventory": true
+    }
+  ],
+  "binary": {
+    "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/.lake/build/bin/comparator",
+    "sha256": "8401e6d3e3d435daa3f41af613972fcd90432e98d3b29bdc107773f715c1f7a7",
+    "size_bytes": 104371552
+  },
+  "official_native_development_shim": {
+    "path": "research/eth-external-replication-20261104/anthropic/tools/comparator-ci-source/scripts/fake-landrun.sh",
+    "sha256": "167507c89d8b3c7667ad78b50df7b19f89883751a01efd1457404fa34a994e8b",
+    "size_bytes": 1431
+  },
+  "native_shim_limitation": "Upstream development shim discards Linux sandbox flags; no Landrun operating-system isolation.",
+  "nanoda_effective_thread_policy_from_this_driver": "Comparator575 omits num_threads; pinned Nanoda serde usize default0 takes serial branch. No checker policy rewritten.",
+  "runs": [
+    {
+      "record": {
+        "path": "research/eth-external-replication-20261104/anthropic/logs/comparator-ci-build-r1.json",
+        "sha256": "59c78f3d7b5054d701a7113c1c92cc207b42d1dd1113f48824ceddeb792bf459",
+        "size_bytes": 2947
+      },
+      "output": {
+        "path": "research/eth-external-replication-20261104/anthropic/logs/comparator-ci-build-r1.txt",
+        "sha256": "39186b7ebc9c3c08c18c8aef7829d8552da65172f8bc5ba97ce2c69c2d53e7e5",
+        "size_bytes": 38
+      },
+      "exit_code": 127,
+      "child_cpu_seconds": 0.012731,
+      "wall_seconds": 0.2419209590000001
+    },
+    {
+      "record": {
+        "path": "research/eth-external-replication-20261104/anthropic/logs/comparator-ci-build-r2.json",
+        "sha256": "e9d8fa98d431386202b48e88ab11c9ed199492e4eb432a223d116991c8f8e93c",
+        "size_bytes": 2985
+      },
+      "output": {
+        "path": "research/eth-external-replication-20261104/anthropic/logs/comparator-ci-build-r2.txt",
+        "sha256": "a615b95b280e7a4913058da69efef4c98f99b0349f512b06e6ff30a9f4e8e89c",
+        "size_bytes": 797
+      },
+      "exit_code": 0,
+      "child_cpu_seconds": 23.349228,
+      "wall_seconds": 37.229074041000004
+    },
+    {
+      "record": {
+        "path": "research/eth-external-replication-20261104/anthropic/logs/comparator-ci-compiler-version-r1.json",
+        "sha256": "310016b678991fc3f0ec97e02789e2dd4ac9e26170dbca5516f963ef37c9d330",
+        "size_bytes": 2944
+      },
+      "output": {
+        "path": "research/eth-external-replication-20261104/anthropic/logs/comparator-ci-compiler-version-r1.txt",
+        "sha256": "20f42f897511ec814f7616bd9a193ae7504aa2f52fb05299eb752936eb77ca6e",
+        "size_bytes": 106
+      },
+      "exit_code": 0,
+      "child_cpu_seconds": 0.341418,
+      "wall_seconds": 1.021591917
+    },
+    {
+      "record": {
+        "path": "research/eth-external-replication-20261104/anthropic/logs/comparator-ci-smoke-r1.json",
+        "sha256": "50efd9f0753bbbf661799e4ff4ab0749825d49db0f08fdedc0f0b7ceca83afd7",
+        "size_bytes": 2898
+      },
+      "output": {
+        "path": "research/eth-external-replication-20261104/anthropic/logs/comparator-ci-smoke-r1.txt",
+        "sha256": "13bedbf32f58187fa4467476fc0a46865944d61bd63763b88b2b85d5cdbb65eb",
+        "size_bytes": 65
+      },
+      "exit_code": 1,
+      "child_cpu_seconds": 0.10500199999999998,
+      "wall_seconds": 2.988953125
+    }
+  ],
+  "negative_smoke_passed": true,
+  "failures": [
+    "First tool-build launcher exited127 before compilation: env treated executable path containing = as an assignment; second uses native arch launcher.",
+    "Original unchanged upstream CI script separately fails native preflight: go is required."
+  ],
+  "paid_cost_usd": 0,
+  "provenance_limitations": [
+    "Source/binary hashes attest identity, not semantic correctness.",
+    "Negative CLI smoke is not an ETH proof check.",
+    "Source acquisition and metadata preparation costs not separately metered."
+  ]
+}

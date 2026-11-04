@@ -1,0 +1,47 @@
+{
+  "scope": "Recorder/helper identity and probe artifact manifest; no ETH verdict",
+  "files": [
+    {
+      "path": "record_nanoda.py",
+      "sha256": "c34f36d630d182708937a5280b6eda8d0723fa0ffdd85caf8fc54af17b332f48",
+      "size_bytes": 8494
+    },
+    {
+      "path": "probe_record_nanoda.py",
+      "sha256": "176daba08e945e8e31747ce66613b58c31c5056c6b25356d5f04152ca9d70931",
+      "size_bytes": 5439
+    },
+    {
+      "path": "runtime_identity.py",
+      "sha256": "1d31734682218fd5318958decb6d2eacfad6f7dbda3ea7251b0c553764a9a1e6",
+      "size_bytes": 2848
+    },
+    {
+      "path": "runtime-identities.json",
+      "sha256": "1445280d0a1011fbaf16717610885e10f5f7fe1a1e555a087a21e2ce504fb271",
+      "size_bytes": 17496
+    },
+    {
+      "path": "compiler-identities.json",
+      "sha256": "cdaf3f2ff7f04431d79b4f64b6bf730b586e3f8d14b1bbb511bf925819c90762",
+      "size_bytes": 4165
+    },
+    {
+      "path": "recorder-probe-r1/probe-results.json",
+      "sha256": "9734d84e20e6d8bcbaa460541569ccce6eea6080678fe02d6123fdb047d834f5",
+      "size_bytes": 2320
+    },
+    {
+      "path": "logs/recorder-probe-r1.txt",
+      "sha256": "7c80b3ee1dd5103ba2f550cba405fa19b4bc3a3bcf77126d1c89e9b285e72c61",
+      "size_bytes": 308
+    },
+    {
+      "path": "README.md",
+      "sha256": "d18f59bd8d3552f0cb24c7dabb5511ac7d88f3333e21293d56a9afcaea2ab147",
+      "size_bytes": 13179
+    }
+  ],
+  "no_upstream_source_edits": true,
+  "native_mode": "official fake-landrun, no OS sandbox"
+}

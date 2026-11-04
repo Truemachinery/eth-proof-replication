@@ -1,0 +1,25 @@
+# checkpoint run log
+# agent: codex-eth-tools
+# task: eth-native-comparator-tools-20261104
+# started_at: 2026-11-04T17:09:38.660224Z
+# command: <HOME>/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake --dir <REPLICATION_ROOT>/verification-tools/comparator-source build comparator
+
+info: lean4export: materializing new dependency
+info: lean4export: fetching revision '5a9a355dc6c5fd82b69058d433e2ae2e8dfbf8fe' from https://github.com/leanprover/lean4export
+info: lean4export: checking out revision '5a9a355dc6c5fd82b69058d433e2ae2e8dfbf8fe'
+✔ [4/16] Built Comparator.Util (2.4s)
+✔ [5/16] Built Export.Parse (3.2s)
+✔ [6/16] Built Comparator.Util:c.o (1.9s)
+✔ [7/16] Built Comparator.Axioms (514ms)
+✔ [8/16] Built Comparator.Axioms:c.o (365ms)
+✔ [9/16] Built Comparator.Compare (854ms)
+✔ [10/16] Built Comparator.Compare:c.o (340ms)
+✔ [11/16] Built Comparator (438ms)
+✔ [12/16] Built Comparator:c.o (142ms)
+✔ [13/16] Built Export.Parse:c.o (3.7s)
+✔ [14/16] Built Main (5.8s)
+✔ [15/16] Built Main:c.o (494ms)
+ℹ [16/16] Built comparator:exe (1.6s)
+info: stderr:
+ld64.lld: warning: directory not found for option -L/usr/local/lib
+Build completed successfully (16 jobs).

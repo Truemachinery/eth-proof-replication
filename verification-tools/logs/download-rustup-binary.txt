@@ -1,0 +1,6 @@
+# checkpoint run log
+# agent: codex-eth-tools
+# task: eth-native-comparator-tools-20261104
+# started_at: 2026-11-04T17:13:14.731140Z
+# command: curl --proto =https --tlsv1.2 -fsSL https://static.rust-lang.org/rustup/archive/1.29.3/aarch64-apple-darwin/rustup-init -o research/eth-external-replication-20261104/verification-tools/rustup-init
+

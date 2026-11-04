@@ -1,0 +1,45 @@
+{
+  "scope": "Real Nanoda recorder probe on trusted Init.Nat.add_zero and malformed text; no ETH checks",
+  "started": 1793813098.405086,
+  "status": "pass",
+  "cases": [
+    {
+      "name": "trusted_core",
+      "wrapped_exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "receipt": "<REPLICATION_ROOT>/verification-tools/recorder-probe-r1/records/nanoda-17663-prmivqx3/02-finished.json",
+      "receipt_sha256": "9fbb0265b339333566f7864704c0929516ff7dd7431926bb543142ac060af3f5",
+      "config_sha256": "6f07bb7d15ed7566def9362806a8bcd4eb07d5cd28381d6d9af85dad72e851c7",
+      "export_sha256": "bd31d7515834a46716cf2d95fb220eba0b6427fae7431c8d40a1647619e1028a"
+    },
+    {
+      "name": "malformed",
+      "wrapped_exit_code": 1,
+      "stdout": "",
+      "stderr": "Error: expected ident at line 1 column 2\n\nrun with `-h` or `--help` for help\n",
+      "receipt": "<REPLICATION_ROOT>/verification-tools/recorder-probe-r1/records/nanoda-17667-arp5slw8/02-finished.json",
+      "receipt_sha256": "82aea181896bc8ff863b455b4a605cb5de4a6ec75eed4b796a137c6db2aa542b",
+      "config_sha256": "66a1e0592334a84a462cfd0da5f66ebb5bb0dcb41d0f7c28fc112284fc555aa7",
+      "export_sha256": "fb15204b5a0511be5239eebba77490cdbc7a4c9ed586e53a1d17e0ee887ea404",
+      "direct_exit_code": 1,
+      "direct_stdout": "",
+      "direct_stderr": "Error: expected ident at line 1 column 2\n\nrun with `-h` or `--help` for help\n"
+    }
+  ],
+  "export_command": [
+    "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lake",
+    "--dir",
+    "<REPLICATION_ROOT>/verification-tools/lean4export-434-source",
+    "env",
+    "<REPLICATION_ROOT>/verification-tools/lean4export-434-source/.lake/build/bin/lean4export",
+    "Init",
+    "--",
+    "Nat.add_zero"
+  ],
+  "export_exit_code": 0,
+  "export_stderr": "",
+  "export_sha256": "bd31d7515834a46716cf2d95fb220eba0b6427fae7431c8d40a1647619e1028a",
+  "wrapper_sha256": "c34f36d630d182708937a5280b6eda8d0723fa0ffdd85caf8fc54af17b332f48",
+  "elapsed_seconds": 1.8439960479736328
+}

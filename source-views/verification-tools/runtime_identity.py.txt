@@ -1,0 +1,67 @@
+"""Codex-owned identity capture for Lean shared runtimes, not a proof checker."""
+from pathlib import Path
+import argparse
+import hashlib
+import json
+import platform
+import subprocess
+
+BASE = Path(__file__).resolve().parent
+
+
+def fingerprint(path):
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        for block in iter(lambda: f.read(1024 * 1024), b""):
+            h.update(block)
+    return {"path": str(path), "sha256": h.hexdigest(), "size_bytes": path.stat().st_size}
+
+
+def main():
+    p = argparse.ArgumentParser()
+    p.add_argument("--output", required=True)
+    args = p.parse_args()
+    target = Path(args.output)
+    if target.exists():
+        raise SystemExit("refusing to overwrite runtime identity evidence")
+    prefixes = {
+        "lean435": Path("<HOME>/.elan/toolchains/leanprover--lean4---v4.35.0"),
+        "lean4341": BASE.parent / "openai/elan/toolchains/leanprover--lean4---v4.34.1",
+        "lean4331": BASE.parent / "anthropic/elan/toolchains/leanprover--lean4---v4.33.1",
+    }
+    names = ["libleanshared.dylib", "libleanshared_1.dylib", "libleanshared_2.dylib",
+             "libInit_shared.dylib", "libLake_shared.dylib"]
+    records = {}
+    for label, prefix in prefixes.items():
+        files = [prefix / "lib/lean" / name for name in names]
+        files.append(prefix / "bin/leanchecker")
+        entries = []
+        for path in files:
+            if not path.is_file():
+                entries.append({"path": str(path), "exists": False})
+                continue
+            item = {**fingerprint(path), "exists": True}
+            linked = subprocess.run(["/usr/bin/otool", "-L", str(path)], capture_output=True,
+                                    text=True, timeout=30)
+            item["otool_exit_code"] = linked.returncode
+            item["linked_libraries"] = linked.stdout
+            item["otool_stderr"] = linked.stderr
+            entries.append(item)
+        records[label] = {"prefix": str(prefix), "runtime_files": entries}
+    result = {
+        "scope": "Shared Lean kernel/runtime and replay-checker executable identities; no proof execution",
+        "reason": "bin/lean is a small launcher; different patch versions can have identical launcher bytes",
+        "platform": platform.platform(), "toolchains": records,
+        "capture_script": fingerprint(Path(__file__)),
+        "limitations": ["System libraries/OS/hardware remain outside this file inventory.",
+                        "Hash identity does not establish correctness or proof acceptance."],
+    }
+    with target.open("x") as f:
+        json.dump(result, f, indent=2)
+        f.write("\n")
+    print(json.dumps({"output": str(target), "present_counts": {
+        label: sum(item["exists"] for item in r["runtime_files"]) for label, r in records.items()}}))
+
+
+if __name__ == "__main__":
+    main()

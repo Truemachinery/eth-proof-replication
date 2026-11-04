@@ -1,0 +1,11 @@
+{
+  "checks": [
+    "conditional bitcode accepted only under existing ir directory and owned module",
+    "owned bitcode and sidecar roundtrip byte-identically; foreign paths and dependencies excluded",
+    "bitcode tamper rejected by existing per-file size/hash validation",
+    "same 2GiB cap and existing oversize skip remain active"
+  ],
+  "owned_cache_sha256": "c301f01fb7c47711f821f5c03daecead401e7898412f4f4415ac13d7ded68bc7",
+  "passed": true,
+  "scope": "Synthetic cache ownership/restore/bound controls only; no Lean, Linux or LLVM execution"
+}

@@ -1,0 +1,31 @@
+{
+  "format": "external-eth-command-v1",
+  "name": "actual-lean-version-r1",
+  "started_utc": "2026-11-04T17:14:35.780977+00:00",
+  "finished_utc": "2026-11-04T17:14:37.128054+00:00",
+  "argv": [
+    "lake",
+    "env",
+    "lean",
+    "--version"
+  ],
+  "cwd": "<REPLICATION_ROOT>/anthropic/source/eth",
+  "environment_overrides": {
+    "ELAN_HOME": "<REPLICATION_ROOT>/anthropic/elan",
+    "XDG_CACHE_HOME": "<REPLICATION_ROOT>/anthropic/cache",
+    "MATHLIB_CACHE_DIR": "<REPLICATION_ROOT>/anthropic/cache/mathlib",
+    "PATH": "<REDACTED FIELD>"
+  },
+  "timeout_wall_seconds": 28800,
+  "timed_out": false,
+  "exit_code": 0,
+  "wall_seconds": 1.347053625,
+  "child_user_seconds": 0.496619,
+  "child_system_seconds": 0.6593979999999999,
+  "child_cpu_seconds": 1.1560169999999999,
+  "peak_child_rss_bytes_macos": 698187776,
+  "output_path": "<REPLICATION_ROOT>/anthropic/logs/actual-lean-version-r1.txt",
+  "output_size_bytes": 106,
+  "output_sha256": "4762d596346ad354e28668de62b7eeae7de5d531b9a7b1c182ca59cfacd81bdd",
+  "limitations": "Local command resource accounting excludes source authoring and model inference. Downloaded dependency objects are distinct from project-source re-elaboration."
+}

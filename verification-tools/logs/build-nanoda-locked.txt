@@ -1,0 +1,10 @@
+# checkpoint run log
+# agent: codex-eth-tools
+# task: eth-native-comparator-tools-20261104
+# started_at: 2026-11-04T17:15:41.479720Z
+# command: <REPLICATION_ROOT>/verification-tools/rustup/toolchains/1.99.1-aarch64-apple-darwin/bin/cargo build --release --locked --jobs 2 --manifest-path <REPLICATION_ROOT>/verification-tools/nanoda-source/Cargo.toml
+
+error: could not execute process `rustc -vV` (never executed)
+
+Caused by:
+  No such file or directory (os error 2)

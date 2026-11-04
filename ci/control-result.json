@@ -1,0 +1,14 @@
+{
+  "scope": "Local harness controls only; no Linux/Landrun or external proof replication",
+  "checks": [
+    "python syntax",
+    "public/manual/hosted guards",
+    "proof environment drops credentials",
+    "streamed/fsynced exit, timeout, exact-line and export receipts",
+    "owned-only bounded cache, SHA/context rejection, oversize skip",
+    "public preparer3092-module exact closure and byte identity",
+    "local gate C compile and exact real-compiler metadata"
+  ],
+  "passed": true,
+  "wall_seconds": 17.977419291972183
+}

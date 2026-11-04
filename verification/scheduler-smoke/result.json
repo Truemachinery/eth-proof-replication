@@ -1,0 +1,159 @@
+{
+  "schema": "eth-scheduler-smoke/1",
+  "scheduler_sha256": "c4542d7d1409e55d42b80f3214a5b62b07fd932995b77a1a603822fe48bdb389",
+  "toolchain": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1",
+  "runs": [
+    {
+      "label": "missing-external-failure",
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "<REPLICATION_ROOT>/verification/scheduler-smoke/build_ready.py",
+        "--workers",
+        "2",
+        "--timeout",
+        "25"
+      ],
+      "exit_code": 1,
+      "expected": "failure",
+      "wall_seconds": 5.135264791999999,
+      "log": "logs/missing-external-failure.txt",
+      "log_sha256": "116bb9c999324e941217bf6a553a2c7cd5302d922cb2325c46c96f69648fed85",
+      "passed": true
+    },
+    {
+      "label": "supply-external",
+      "argv": [
+        "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lake",
+        "build",
+        "+External"
+      ],
+      "exit_code": 0,
+      "expected": "success",
+      "wall_seconds": 0.9211222909999996,
+      "log": "logs/supply-external.txt",
+      "log_sha256": "63e1946ab82e558d27129dfe5a1ba162a89a946da4dd72c28c23312f1c8274da",
+      "passed": true
+    },
+    {
+      "label": "resume-success",
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "<REPLICATION_ROOT>/verification/scheduler-smoke/build_ready.py",
+        "--workers",
+        "2",
+        "--timeout",
+        "25",
+        "--resume"
+      ],
+      "exit_code": 0,
+      "expected": "success",
+      "wall_seconds": 5.1046056669999995,
+      "log": "logs/resume-success.txt",
+      "log_sha256": "a952c909d84477ea1db2d24b2ce9f3739b4fcfc6e54a34f89927da17d43b4879",
+      "passed": true
+    },
+    {
+      "label": "final-lake-check",
+      "argv": [
+        "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lake",
+        "build",
+        "+C"
+      ],
+      "exit_code": 0,
+      "expected": "success",
+      "wall_seconds": 0.6227137499999991,
+      "log": "logs/final-lake-check.txt",
+      "log_sha256": "b85945e1c1d9430164575c7d01e44a0c37beab1d169a9a9f2329d607d79eaab1",
+      "passed": true
+    },
+    {
+      "label": "source-drift-rejected",
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "<REPLICATION_ROOT>/verification/scheduler-smoke/build_ready.py",
+        "--workers",
+        "2",
+        "--timeout",
+        "25",
+        "--resume"
+      ],
+      "exit_code": 1,
+      "expected": "failure",
+      "wall_seconds": 0.05665595900000042,
+      "log": "logs/source-drift-rejected.txt",
+      "log_sha256": "6144ff530a9dcc6f12324a22ca543b11f996b48150e03a34ad1f94e8e4003f6f",
+      "passed": true
+    },
+    {
+      "label": "ledger-drift-rejected",
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "<REPLICATION_ROOT>/verification/scheduler-smoke/build_ready.py",
+        "--workers",
+        "2",
+        "--timeout",
+        "25",
+        "--resume"
+      ],
+      "exit_code": 1,
+      "expected": "failure",
+      "wall_seconds": 0.04683304199999938,
+      "log": "logs/ledger-drift-rejected.txt",
+      "log_sha256": "657107650d9357ee97ee9a954104ce0f03e9afa524481062cf1ac6ac2649860f",
+      "passed": true
+    },
+    {
+      "label": "final-resume-no-work",
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "<REPLICATION_ROOT>/verification/scheduler-smoke/build_ready.py",
+        "--workers",
+        "2",
+        "--timeout",
+        "25",
+        "--resume"
+      ],
+      "exit_code": 0,
+      "expected": "success",
+      "wall_seconds": 0.047038915999999986,
+      "log": "logs/final-resume-no-work.txt",
+      "log_sha256": "66a070e61b700923c11567b891199327ea2e896abd590859fa7411e0dc24a996",
+      "passed": true
+    }
+  ],
+  "checks": {
+    "all_three_modules_completed": true,
+    "two_ready_starts_before_completion": true,
+    "c_scheduled_only_after_a_b": true,
+    "cancelled_sibling_recorded": true,
+    "cancelled_groups_drained": true,
+    "no_process_groups_remaining": true,
+    "unique_recorded_log_paths": true,
+    "ledger_source_hashes_match_manifest": true,
+    "source_drift_guard_message": true,
+    "ledger_drift_guard_message": true
+  },
+  "process_groups": [
+    {
+      "pid": 12914,
+      "process_group_absent": true
+    },
+    {
+      "pid": 12915,
+      "process_group_absent": true
+    },
+    {
+      "pid": 12981,
+      "process_group_absent": true
+    },
+    {
+      "pid": 12983,
+      "process_group_absent": true
+    },
+    {
+      "pid": 13038,
+      "process_group_absent": true
+    }
+  ],
+  "all_checks_passed": true
+}

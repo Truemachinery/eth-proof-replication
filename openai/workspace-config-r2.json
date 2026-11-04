@@ -1,0 +1,16 @@
+{
+  "recorded_utc": "2026-11-04T17:17:13.206199+00:00",
+  "revision": "r2",
+  "reason": "Add library globs so Lake recognizes individual unchanged imported modules as explicit build targets. First source attempt reported unknown module before elaboration. No proof source, upstream options or dependency pins changed.",
+  "original_source_manifest_sha256": "bf7f36120177010243e52dd9053bd3e9f97f92fa35184abf173a8a57ef4843e1",
+  "workspace_config": [
+    {
+      "path": "lean-toolchain",
+      "sha256": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+    },
+    {
+      "path": "lakefile.lean",
+      "sha256": "aea9d368f24768ab9d51d8c9216c1dd60e598a983e63c463dc8de3f605d268fb"
+    }
+  ]
+}

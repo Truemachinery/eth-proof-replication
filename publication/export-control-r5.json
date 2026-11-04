@@ -1,0 +1,21 @@
+{
+  "status": "pass",
+  "checks": [
+    "fixed allowlist",
+    "live log excluded",
+    "failure preserved",
+    "sensitive data redacted",
+    "portable derivative distinguished and syntax checked",
+    "ordinary path variable source remains byte-identical",
+    "exact credential-reference syntax remains byte-identical",
+    "literal credential values still redacted",
+    "original source unchanged",
+    "incomplete receipt rejected",
+    "incomplete CI bundle rejected",
+    "exact workflow destination mapping",
+    "plan expansion rejected",
+    "source drift rejected"
+  ],
+  "no_proof_execution": true,
+  "exporter_sha256": "a3df2962a2a7a95e9c21997d02b02fb74e4803b81b79a6f5d7f70e96c254cec5"
+}

@@ -1,0 +1,83 @@
+{
+  "schema": "lean-compiler-gate/1",
+  "real_compiler": {
+    "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean",
+    "sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+    "size_bytes": 49968
+  },
+  "source": {
+    "path": "<REPLICATION_ROOT>/verification/compiler-gate/lean_gate.c",
+    "sha256": "54b033bd6f90cd3d88682d5ba17256fd1583489692d8bea32a6e41f0268d1908",
+    "size_bytes": 5927
+  },
+  "configuration": {
+    "path": "<REPLICATION_ROOT>/openai/compiler-gate-r1/gate_config.h",
+    "sha256": "82bdc1ee6ea1b3140f5bceaeaa3fe9e1cc6ab45b5dd2f6e167f08b8c03aa66ee",
+    "size_bytes": 521
+  },
+  "gate": {
+    "path": "<REPLICATION_ROOT>/openai/compiler-gate-r1/prefix/bin/lean",
+    "sha256": "a7f5f3b9e0db18e55d276489abeb074e07c4ce43f38af682eb25af557208918f",
+    "size_bytes": 35560
+  },
+  "status": {
+    "path": "<REPLICATION_ROOT>/openai/compiler-gate-r1/gate-status",
+    "sha256": "272294fca7c2da088f0a3bbc6350b1a3a6d6ba6940068ac80c5821f6e9bb7c6b",
+    "size_bytes": 33976
+  },
+  "prefix": "<REPLICATION_ROOT>/openai/compiler-gate-r1/prefix",
+  "build_commands": [
+    {
+      "argv": [
+        "/usr/bin/clang",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-deprecated-declarations",
+        "-Wno-unused-function",
+        "-I",
+        "<REPLICATION_ROOT>/openai/compiler-gate-r1",
+        "<REPLICATION_ROOT>/verification/compiler-gate/lean_gate.c",
+        "-o",
+        "<REPLICATION_ROOT>/openai/compiler-gate-r1/prefix/bin/lean"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/usr/bin/clang",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-deprecated-declarations",
+        "-Wno-unused-function",
+        "-I",
+        "<REPLICATION_ROOT>/openai/compiler-gate-r1",
+        "-DGATE_STATUS_EXEC",
+        "<REPLICATION_ROOT>/verification/compiler-gate/lean_gate.c",
+        "-o",
+        "<REPLICATION_ROOT>/openai/compiler-gate-r1/gate-status"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "environment": {
+    "LAKE_OVERRIDE_LEAN": "true",
+    "LEAN_SYSROOT": "<REPLICATION_ROOT>/openai/compiler-gate-r1/prefix",
+    "MINING_LAB_LEAN_SLOTS": "2"
+  },
+  "scope": "Compiler admission only; same argv, sources, compiler and normal Lake traces.",
+  "limitations": [
+    "No throughput prediction or proof verdict.",
+    "Change slot count only at a recorded boundary; existing holders retain their slots.",
+    "Kernel/runtime library identities are supplied by the parent toolchain manifest."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "scope": "Read-only static cache-helper review; no execution by reviewer and no Linux proof verification",
+  "reviewer": "codex-eth-anthropic-replication",
+  "reviewed_utc": "2026-11-04T18:17:26.327809+00:00",
+  "inputs": [
+    {
+      "path": "ci/owned_cache.py",
+      "sha256": "e9b46c46a7b9a0a481ce0443d642a2d2566e58c655d386a22416cf4d39c32097",
+      "bytes": 7118
+    },
+    {
+      "path": "ci/cache_maintenance.py",
+      "sha256": "fc1321d4e9c687264a6517dda0ba98bf0ae7596ba519983bbdba4865f38ec6bf",
+      "bytes": 4631
+    },
+    {
+      "path": "ci/check_controls.py",
+      "sha256": "c5b5ab90b218758a43dfaab09bf72942a439cd6fe756fa0ae08408351a1ccbcb",
+      "bytes": 10960
+    },
+    {
+      "path": "ci/control-result-r2.json",
+      "sha256": "be559a9f05600526547067307a10fddc94e465b5cf388c127eb614e64c36794b",
+      "bytes": 765
+    },
+    {
+      "path": "ci/workflow-template.yml",
+      "sha256": "64d401c279f97d584c800f3900899eeeb7204e5489b83ec0ad129dceee73eacf",
+      "bytes": 5836
+    }
+  ],
+  "verdict": "No remaining material blocker for fixed trusted CI callers after IR-signature correction. Linux behavior remains unexecuted.",
+  "closed_finding": {
+    "initial_owner_declared_owned_cache_sha256": "da2e679249e08ba34b8873ce9a32b154196449a6ddeadac5494cf75da70de143",
+    "finding": "Whitelist omitted ir.sig and ir.sig.hash required for module-mode Lean output reuse.",
+    "independent_static_evidence": "Actual local Lean4.33.1 PartitionStatement trace includes outputs.rs and its .ir.sig file. Pinned Lake/Build/Module.lean checkArtifactsExist requires irSigFile for module mode.",
+    "correction": "Both suffixes present in reviewed e9b46c46 source.",
+    "owner_execution_evidence": "control-result-r2.json reports successful real module-mode snapshot/delete/restore/no-build on4.34.1 and4.33.1, missing-signature rejection and restoration success. Reviewer inspected source/assertions and saved report; did not rerun."
+  },
+  "token_scope": "GH_TOKEN occurs only in trusted maintenance step, Authorization header, not argv/log serialization; checkout persist-credentials=false; proof environment is a credential-stripping allowlist; Linux proof subprocesses are planned inside real Landrun/systemd restrictions. No claim these Linux controls have executed.",
+  "identity_and_cleanup": "Restore validates exact project/harness/selected-runtime context and per-file SHA/length, forbids unexpected files, overwrite and symlinked cache inputs; normal real-prefix Lake tracecheck follows. API mutation targets only the current proof namespace, and post-save audit checks API-observed entry sizes and bounded retention.",
+  "limitations": [
+    "Snapshot destination and restore target-parent containment rely on fixed trusted CI caller paths; helpers are not a general untrusted-path API.",
+    "Post-save size enforcement measures API-observed cache state after upload, not a pre-upload proof about backend archive size.",
+    "This is same-team static review, not independent human review or an external ETH proof replication."
+  ]
+}
