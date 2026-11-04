@@ -1,0 +1,208 @@
+{
+  "repository": "Truemachinery/eth-proof-replication",
+  "run_id": 41888029999,
+  "head_commit": "f340decb2b354bf154b4290e59cc8e260fdd867a",
+  "archive_sha256": "6b035375aaa5c9e2e983f225a82fe94693bdf9e25348c70e1a4cbb2ee02d9146",
+  "files": [
+    {
+      "path": "raw/0_anthropic.txt",
+      "bytes": 30527,
+      "sha256": "a35b802decba9f4ef41cceeba95783c3aa95c1b1385da6d34ac409354bc75e82"
+    },
+    {
+      "path": "raw/anthropic/system.txt",
+      "bytes": 865,
+      "sha256": "50317a96ebff7d36b5a2ab4cfcf3d698decb8bc9f3bb1fbb15c6ce1da2a95ad7"
+    },
+    {
+      "path": "raw/anthropic/1_Set up job.txt",
+      "bytes": 2145,
+      "sha256": "48eee238513f6d1e1fb91f7466c4947a9ffe89f85a399fed62d8f2293f854461"
+    },
+    {
+      "path": "raw/anthropic/2_Run <EMAIL REDACTED>",
+      "bytes": 6852,
+      "sha256": "0b00a0cd5c1e57042a5b64e1261a7299ebfe70b60b18d689e3d69aad8932b1cb"
+    },
+    {
+      "path": "raw/anthropic/3_Verify public manual hosted runner.txt",
+      "bytes": 683,
+      "sha256": "7f1e91290019cf12811ab0921f0539b6db483a998ed9acf50aac05f48cc987ca"
+    },
+    {
+      "path": "raw/anthropic/4_Restore newest matching bounded owned-output cache.txt",
+      "bytes": 1269,
+      "sha256": "c9d4f182767dec9dfa008194dcd9880195c794f915040ef4e055bcee213c2843"
+    },
+    {
+      "path": "raw/anthropic/5_Build and check pinned public proof.txt",
+      "bytes": 16912,
+      "sha256": "27ba40a47e9b8e1c1ca794f5af98c734fc2bb395b3b0b1a0755f2c87e09ee41d"
+    },
+    {
+      "path": "raw/anthropic/6_Bound retention and prune previous own-proof snapshots.txt",
+      "bytes": 588,
+      "sha256": "ca6b45f565e1036fe039d301fe777f662128ed9052f33d9a4e2fb9cf5ac46dbf"
+    },
+    {
+      "path": "raw/anthropic/9_Preserve unsuccessful replication result.txt",
+      "bytes": 364,
+      "sha256": "2dcac80f26f65162a66fc1e2c159e7bf1a13364af4776473337950d5521842cc"
+    },
+    {
+      "path": "raw/anthropic/18_Post Run <EMAIL REDACTED>",
+      "bytes": 1288,
+      "sha256": "070c55fc2ca64fd2d5c023a05c8260299030ead64bb4c9d7fc169ae2e3bf35ca"
+    },
+    {
+      "path": "raw/anthropic/19_Complete job.txt",
+      "bytes": 450,
+      "sha256": "c0c90dcbdaa693669cf91d786335e6a62d0295ffc5974f1b615b3b5cbc5446e1"
+    },
+    {
+      "path": "raw/1_openai.txt",
+      "bytes": 30810,
+      "sha256": "3805eefdfad669119ff1fdd186c88c0051f6beb56cb4e19ca2fad5c103ab3a60"
+    },
+    {
+      "path": "raw/openai/system.txt",
+      "bytes": 856,
+      "sha256": "3702c3a5cdb23f9adfa57ddff40a738744e7fd641b0fbe4b8cc72a2aa4028c4f"
+    },
+    {
+      "path": "raw/openai/1_Set up job.txt",
+      "bytes": 2137,
+      "sha256": "393ee7df5fb246d6903dfd493c7a149fef533515b81b4863f875a9206082e09b"
+    },
+    {
+      "path": "raw/openai/2_Run <EMAIL REDACTED>",
+      "bytes": 6852,
+      "sha256": "cc5c31f4d587d572df29e891a84c305e45f8cd0901551cf3ee5d5f7bd149ffe7"
+    },
+    {
+      "path": "raw/openai/3_Verify public manual hosted runner.txt",
+      "bytes": 683,
+      "sha256": "30084049e7b82e50c9f802f19527120e1b8fe85b0aa0096e7ff0748ef3d59a9b"
+    },
+    {
+      "path": "raw/openai/4_Restore newest matching bounded owned-output cache.txt",
+      "bytes": 1254,
+      "sha256": "f9d51377f3168d4f1b9129a94ee4bbde25e757c1d07691ab8b63d666a1d2326b"
+    },
+    {
+      "path": "raw/openai/5_Build and check pinned public proof.txt",
+      "bytes": 17230,
+      "sha256": "1979290e8cc6c2876413f59408e2aeabb2e50ffc5652ad37f4ebf447ad7b45b2"
+    },
+    {
+      "path": "raw/openai/6_Bound retention and prune previous own-proof snapshots.txt",
+      "bytes": 576,
+      "sha256": "e143b84d984ac00f30077e239df955f83736a94cfbcb964c1d3c8782426468b1"
+    },
+    {
+      "path": "raw/openai/9_Preserve unsuccessful replication result.txt",
+      "bytes": 364,
+      "sha256": "38bddfd48e793fcbf4bc4ae60dd5cc1e0feb0402af78344bcab4227fcad9f33c"
+    },
+    {
+      "path": "raw/openai/18_Post Run <EMAIL REDACTED>",
+      "bytes": 1288,
+      "sha256": "b8aa0a0b20c78ef812f5305cd74cd4adf8fe19a63ecb9854815454c8e7e76ae5"
+    },
+    {
+      "path": "raw/openai/19_Complete job.txt",
+      "bytes": 450,
+      "sha256": "6d853e01dfabda860020a1c4fc48e1740844f4306fadd8f979053c1b897a7421"
+    }
+  ],
+  "observed_run_receipts": [
+    {
+      "proof": "anthropic",
+      "status": "incomplete",
+      "error": "ValueError('invalid stage name')",
+      "stages": [
+        {
+          "child_cpu_seconds": 10.995965,
+          "exit_code": 0,
+          "name": "cleanup-disposable-sdks",
+          "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "wall_seconds": 295.18725204467773
+        },
+        {
+          "child_cpu_seconds": 0.07102899999999934,
+          "exit_code": 0,
+          "name": "host-inventory",
+          "raw_log_sha256": "bbad6f722af2b3494f78c59e5ef6972f7ff71870774c448a9ad1b732f4014a3e",
+          "wall_seconds": 12.885911464691162
+        }
+      ],
+      "source_member": "0_anthropic.txt"
+    },
+    {
+      "proof": "anthropic",
+      "status": "incomplete",
+      "error": "ValueError('invalid stage name')",
+      "stages": [
+        {
+          "child_cpu_seconds": 10.995965,
+          "exit_code": 0,
+          "name": "cleanup-disposable-sdks",
+          "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "wall_seconds": 295.18725204467773
+        },
+        {
+          "child_cpu_seconds": 0.07102899999999934,
+          "exit_code": 0,
+          "name": "host-inventory",
+          "raw_log_sha256": "bbad6f722af2b3494f78c59e5ef6972f7ff71870774c448a9ad1b732f4014a3e",
+          "wall_seconds": 12.885911464691162
+        }
+      ],
+      "source_member": "anthropic/5_Build and check pinned public proof.txt"
+    },
+    {
+      "proof": "openai",
+      "status": "incomplete",
+      "error": "ValueError('invalid stage name')",
+      "stages": [
+        {
+          "child_cpu_seconds": 11.087041000000001,
+          "exit_code": 0,
+          "name": "cleanup-disposable-sdks",
+          "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "wall_seconds": 135.0191204547882
+        },
+        {
+          "child_cpu_seconds": 0.06958899999999879,
+          "exit_code": 0,
+          "name": "host-inventory",
+          "raw_log_sha256": "4328468e626026fa6877bda0cf84acf8a1226cb877c2198d0a12a44fadb1253f",
+          "wall_seconds": 4.574927091598511
+        }
+      ],
+      "source_member": "1_openai.txt"
+    },
+    {
+      "proof": "openai",
+      "status": "incomplete",
+      "error": "ValueError('invalid stage name')",
+      "stages": [
+        {
+          "child_cpu_seconds": 11.087041000000001,
+          "exit_code": 0,
+          "name": "cleanup-disposable-sdks",
+          "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "wall_seconds": 135.0191204547882
+        },
+        {
+          "child_cpu_seconds": 0.06958899999999879,
+          "exit_code": 0,
+          "name": "host-inventory",
+          "raw_log_sha256": "4328468e626026fa6877bda0cf84acf8a1226cb877c2198d0a12a44fadb1253f",
+          "wall_seconds": 4.574927091598511
+        }
+      ],
+      "source_member": "openai/5_Build and check pinned public proof.txt"
+    }
+  ]
+}

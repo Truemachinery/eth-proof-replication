@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "modern prefix and legacy marker/CR display neutralization",
+    "invalid UTF8 affects display only; raw bytes and SHA remain exact",
+    "required success line checked against unchanged raw stream",
+    "nonzero child exit preserved",
+    "export stdout bytes and SHA unchanged"
+  ],
+  "passed": true,
+  "primary_sources": [
+    "https://github.com/actions/runner/blob/v2.338.2/src/Runner.Common/ActionCommand.cs#L119",
+    "https://github.com/actions/runner/blob/v2.338.2/src/Runner.Worker/ActionCommandManager.cs#L62"
+  ],
+  "record_py_sha256": "1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0",
+  "scope": "Local recorder display/raw-byte regression only; no GitHub runner, Lean, Linux or proof checks"
+}

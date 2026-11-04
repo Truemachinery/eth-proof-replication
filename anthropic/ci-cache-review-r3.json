@@ -1,0 +1,28 @@
+{
+  "scope": "Read-only static follow-up on conditional LLVM cache artifacts; no reviewer execution",
+  "reviewer": "codex-eth-anthropic-replication",
+  "reviewed_utc": "2026-11-04T18:25:06.117817+00:00",
+  "prior_review_sha256": "bd7fe1c6be2d667448f9caedd046eea372c9b9eb5812d89bc9174e105276ee7d",
+  "inputs": [
+    {
+      "path": "ci/owned_cache.py",
+      "sha256": "c301f01fb7c47711f821f5c03daecead401e7898412f4f4415ac13d7ded68bc7",
+      "bytes": 7289
+    },
+    {
+      "path": "ci/check_bc_control.py",
+      "sha256": "20f71662ca0a007ea441f4217ae6605d31e0e72b3d5affb0a353079445f9d3a2",
+      "bytes": 4512
+    },
+    {
+      "path": "ci/control-result-bc-r2.json",
+      "sha256": "71f34ef370ad5dd25b28f443960b37485c5a2f74a7a62b22345f38b31a15ba3b",
+      "bytes": 555
+    }
+  ],
+  "verdict": "No material blocker for the narrow module-owned bitcode correction. Prior fixed-caller path and post-save API-observation limitations remain.",
+  "reviewed_change": "Only ir/ prefix additionally admits .bc and .bc.hash; lib/lean/ and non-owned module paths remain excluded. Existing regular-file/hash/size/identity checks and2GiB cap unchanged.",
+  "evidence": "Pinned Lake Module.checkArtifactsExist conditionally requires bcFile when Lean.Internal.hasLLVMBackend is true; module config locates bcFile under irDir. This review does not establish that official Linux releases enable this flag.",
+  "owner_control_scope": "Saved synthetic-byte controls cover ownership/directory restrictions, exact restore, tamper rejection and unchanged bounds; no actual Lean LLVM execution or Linux pass claimed.",
+  "result": "Read-only source and saved-control review only, same team; no independent numerical/test reproduction by this reviewer."
+}

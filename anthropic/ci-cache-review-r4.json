@@ -1,0 +1,31 @@
+{
+  "scope": "Read-only narrow cache setup-inventory omission review; no reviewer execution",
+  "reviewer": "codex-eth-anthropic-replication",
+  "reviewed_utc": "2026-11-04T18:47:18.935160+00:00",
+  "inputs": [
+    {
+      "path": "ci/owned_cache.py",
+      "sha256": "7854df30f6d14c791547e0672b19ad5f34d2b41fc1aacc264f2fdb60bb6d2bb3",
+      "bytes": 7274
+    },
+    {
+      "path": "ci/check_setup_omission_control.py",
+      "sha256": "4789ebe8874af41ac2d568403d85060b2a81f361ce3e27697b2f864a2deb8beb",
+      "bytes": 5400
+    },
+    {
+      "path": "ci/control-result-setup-omission-r3.json",
+      "sha256": "60560b19a484638d8cda6ce08e41be3af8ee5b1a30e7d25a055e8d2722629b6b",
+      "bytes": 1195
+    }
+  ],
+  "verdict": "No material blocker for removing generated .setup.json compiler inputs from owned completed-output caches.",
+  "change_reviewed": "Only .setup.json removed from SUFFIXES; all normal outputs, IR signatures, conditional bitcode, identity/size/hash and2GiB limits remain.",
+  "independent_static_evidence": "Pinned Lean4.33.1 Lake Module.recFetchSetup computes module setup; Module.buildLean passes setup into compileLeanModule; checkArtifactsExist requires normal outputs and conditional bitcode but does not require setup.json.",
+  "owner_execution_evidence": "Saved tiny real module-mode controls at4.34.1 and4.33.1 report successful restored no-build and ordinary reuse without modifying restored artifact hashes/mtimes, followed by a new dependent producing only its own setup. Ten Lake invocations exit0. Reviewer inspected source and saved report, did not rerun.",
+  "limitations": [
+    "The control uses tiny native modules, not Mathlib or either external ETH proof.",
+    "No Linux execution is established by this review.",
+    "Prior fixed-trusted-caller path and API-observed backend-size scope remains."
+  ]
+}

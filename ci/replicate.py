@@ -10,7 +10,7 @@ import shutil
 import subprocess
 import sys
 import time
-from record import Recorder, sha, write_json
+from record import Recorder, sha, write_json, validate_stage_name
 from owned_cache import snapshot, restore
 
 HERE = Path(__file__).resolve().parent
@@ -124,6 +124,10 @@ def main():
         return command + [k + '=' + v for k, v in sorted(environment.items())] + list(map(str, argv))
 
     try:
+        # Exercise every version-derived stage label before SDK cleanup or any acquisition.
+        for version in [spec['lean'], spec['comparator_lean']]:
+            for suffix in ['download', 'extract']:
+                validate_stage_name('lean-' + version + '-' + suffix)
         if args.cleanup_disposable_sdks:
             # Guard above is mandatory before even constructing this fixed disposable-VM cleanup.
             run('cleanup-disposable-sdks', ['sudo', '-n', 'rm', '-rf', '--',

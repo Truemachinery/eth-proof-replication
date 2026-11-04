@@ -13,7 +13,7 @@ MAX_BYTES = 2 * 1024**3
 PAYLOAD_LIMIT = MAX_BYTES - 32 * 1024**2
 SUFFIXES = {'.olean', '.olean.private', '.olean.server', '.ilean', '.ir', '.trace',
             '.ir.sig', '.ir.sig.hash', '.olean.hash', '.olean.private.hash', '.olean.server.hash', '.ilean.hash', '.ir.hash',
-            '.c', '.c.hash', '.setup.json', '.c.o', '.c.o.hash', '.c.o.export', '.c.o.export.hash'}
+            '.c', '.c.hash', '.c.o', '.c.o.hash', '.c.o.export', '.c.o.export.hash'}
 
 
 def fingerprint(harness, proof, context=None):

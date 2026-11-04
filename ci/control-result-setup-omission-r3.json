@@ -1,0 +1,32 @@
+{
+  "candidate_policy": "Exclude generated .setup.json inventories; preserve all normal outputs/traces",
+  "control_source_sha256": "4789ebe8874af41ac2d568403d85060b2a81f361ce3e27697b2f864a2deb8beb",
+  "passed": true,
+  "scope": "Tiny real native Lean module-mode cache continuation controls only; no Mathlib or external ETH proof build and no Linux execution",
+  "versions": [
+    {
+      "cached_payload_bytes_without_setups": 24761,
+      "generated_setup_bytes_before": 827,
+      "generated_setups_before": 2,
+      "lean_version": "4.34.1",
+      "new_dependent_built": true,
+      "passed": true,
+      "restored_artifact_bytes_and_mtimes_unchanged": true,
+      "setups_after_new_dependent": 1,
+      "setups_after_no_build": 0,
+      "setups_after_ordinary_resume": 0
+    },
+    {
+      "cached_payload_bytes_without_setups": 24621,
+      "generated_setup_bytes_before": 827,
+      "generated_setups_before": 2,
+      "lean_version": "4.33.1",
+      "new_dependent_built": true,
+      "passed": true,
+      "restored_artifact_bytes_and_mtimes_unchanged": true,
+      "setups_after_new_dependent": 1,
+      "setups_after_no_build": 0,
+      "setups_after_ordinary_resume": 0
+    }
+  ]
+}

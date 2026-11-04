@@ -1,10 +1,10 @@
 {
   "schema": "eth-public-export/1",
-  "release": "in-progress-20261104-r2",
+  "release": "in-progress-20261104-r3",
   "status": "prepared_for_review_not_published",
   "verification_verdict": "Not inferred; missing or unfinished stages are not passes",
-  "exporter_sha256": "7f209a0662d621e6c74f7ce35c76fa75205833eb2951e888fc1809325e237685",
-  "plan_sha256": "67b69c45bb9049a4e7eaf22740279e9355f16c260b006c88990c2f6462b62fb1",
+  "exporter_sha256": "b9e201649233bc83d53893667ac94491dd8370e9fff62d6cacff23e496ed5c2b",
+  "plan_sha256": "4e4709b6d3f24b9062c705e271f1c68d1923fb2127bbe21ff1340855f353931d",
   "files": [
     {
       "path": "PLAN.md",
@@ -22,13 +22,28 @@
       "private_ledger_dependency_in_original": false
     },
     {
+      "path": "PUBLICATION_RECEIPT-r1.json",
+      "kind": "manifest",
+      "original_sha256": "c4e29c69b55a58568c11930594b78c1ae569d232e141942f416b21aa39da77fe",
+      "original_size_bytes": 43783,
+      "public_path": "PUBLICATION_RECEIPT-r1.json",
+      "public_sha256": "c4e29c69b55a58568c11930594b78c1ae569d232e141942f416b21aa39da77fe",
+      "public_size_bytes": 43783,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
       "path": "PUBLIC_README_TEMPLATE.md",
       "kind": "report",
-      "original_sha256": "cb470c0e49aba91f4df89bfdc0658591db23218610e040072187847e4a4935d0",
-      "original_size_bytes": 7516,
+      "original_sha256": "cbe991396456f9db05e3db3f92f8610334dd2fe3a123bbf63112cef5378479bc",
+      "original_size_bytes": 8142,
       "public_path": "README.md",
-      "public_sha256": "cb470c0e49aba91f4df89bfdc0658591db23218610e040072187847e4a4935d0",
-      "public_size_bytes": 7516,
+      "public_sha256": "cbe991396456f9db05e3db3f92f8610334dd2fe3a123bbf63112cef5378479bc",
+      "public_size_bytes": 8142,
       "public_mode": "644",
       "copy_kind": "byte_identical",
       "redactions": [],
@@ -134,6 +149,36 @@
       "public_path": "anthropic/ci-cache-review-r2.json",
       "public_sha256": "bd7fe1c6be2d667448f9caedd046eea372c9b9eb5812d89bc9174e105276ee7d",
       "public_size_bytes": 3067,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/ci-cache-review-r3.json",
+      "kind": "manifest",
+      "original_sha256": "4b69dc5bcabacc22e47282aabfee9e06d45aae13432ca07e9ea5661f71e499b4",
+      "original_size_bytes": 1738,
+      "public_path": "anthropic/ci-cache-review-r3.json",
+      "public_sha256": "4b69dc5bcabacc22e47282aabfee9e06d45aae13432ca07e9ea5661f71e499b4",
+      "public_size_bytes": 1738,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "anthropic/ci-cache-review-r4.json",
+      "kind": "manifest",
+      "original_sha256": "756e2d4eeefd0b331ceb86750b68d02aa5bb5b7510b0ce37513e59db96e42697",
+      "original_size_bytes": 1846,
+      "public_path": "anthropic/ci-cache-review-r4.json",
+      "public_sha256": "756e2d4eeefd0b331ceb86750b68d02aa5bb5b7510b0ce37513e59db96e42697",
+      "public_size_bytes": 1846,
       "public_mode": "644",
       "copy_kind": "byte_identical",
       "redactions": [],
@@ -314,11 +359,11 @@
     {
       "path": "ci/README.md",
       "kind": "report",
-      "original_sha256": "95cf944cc235af0ef1068992eb3ea19d829375ace94b4f42c472194e67d624d9",
-      "original_size_bytes": 9412,
+      "original_sha256": "e2659499a8726b51947c051eecaa527b4094ae5030787ab96db2b1586c19c88f",
+      "original_size_bytes": 11353,
       "public_path": "ci/README.md",
-      "public_sha256": "95cf944cc235af0ef1068992eb3ea19d829375ace94b4f42c472194e67d624d9",
-      "public_size_bytes": 9412,
+      "public_sha256": "e2659499a8726b51947c051eecaa527b4094ae5030787ab96db2b1586c19c88f",
+      "public_size_bytes": 11353,
       "public_mode": "644",
       "copy_kind": "byte_identical",
       "redactions": [],
@@ -372,6 +417,51 @@
       "private_ledger_dependency_in_original": false
     },
     {
+      "path": "ci/check_display_control.py",
+      "kind": "source",
+      "original_sha256": "cbd5851a36d38e0ad5350eea64d7894d8b7708f618e1ca4210afbe46fc9f383b",
+      "original_size_bytes": 3795,
+      "public_path": "ci/check_display_control.py",
+      "public_sha256": "cbd5851a36d38e0ad5350eea64d7894d8b7708f618e1ca4210afbe46fc9f383b",
+      "public_size_bytes": 3795,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "ci/check_setup_omission_control.py",
+      "kind": "source",
+      "original_sha256": "4789ebe8874af41ac2d568403d85060b2a81f361ce3e27697b2f864a2deb8beb",
+      "original_size_bytes": 5400,
+      "public_path": "ci/check_setup_omission_control.py",
+      "public_sha256": "4789ebe8874af41ac2d568403d85060b2a81f361ce3e27697b2f864a2deb8beb",
+      "public_size_bytes": 5400,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "ci/check_stage_name_control.py",
+      "kind": "source",
+      "original_sha256": "749d1fb3f109f7c3878cf2b4dd3c543db3c173828af17b54756fed07413f2571",
+      "original_size_bytes": 3487,
+      "public_path": "ci/check_stage_name_control.py",
+      "public_sha256": "749d1fb3f109f7c3878cf2b4dd3c543db3c173828af17b54756fed07413f2571",
+      "public_size_bytes": 3487,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
       "path": "ci/compiler_gate.c",
       "kind": "source",
       "original_sha256": "96947ead6565aa2d75b93c09e8bdccba31bc6558517db5df915368efc123dfb3",
@@ -402,6 +492,21 @@
       "private_ledger_dependency_in_original": false
     },
     {
+      "path": "ci/control-result-display-r3.json",
+      "kind": "manifest",
+      "original_sha256": "3e32a5e560e0e993a44738ea7eb8c69a73c68d229eaefd9c38c42f996e0ab327",
+      "original_size_bytes": 746,
+      "public_path": "ci/control-result-display-r3.json",
+      "public_sha256": "3e32a5e560e0e993a44738ea7eb8c69a73c68d229eaefd9c38c42f996e0ab327",
+      "public_size_bytes": 746,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
       "path": "ci/control-result-r2.json",
       "kind": "manifest",
       "original_sha256": "be559a9f05600526547067307a10fddc94e465b5cf388c127eb614e64c36794b",
@@ -409,6 +514,36 @@
       "public_path": "ci/control-result-r2.json",
       "public_sha256": "be559a9f05600526547067307a10fddc94e465b5cf388c127eb614e64c36794b",
       "public_size_bytes": 765,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "ci/control-result-setup-omission-r3.json",
+      "kind": "manifest",
+      "original_sha256": "60560b19a484638d8cda6ce08e41be3af8ee5b1a30e7d25a055e8d2722629b6b",
+      "original_size_bytes": 1195,
+      "public_path": "ci/control-result-setup-omission-r3.json",
+      "public_sha256": "60560b19a484638d8cda6ce08e41be3af8ee5b1a30e7d25a055e8d2722629b6b",
+      "public_size_bytes": 1195,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "ci/control-result-stage-names-r3.json",
+      "kind": "manifest",
+      "original_sha256": "b476322adfed7729b2b799e0044f042b0825678a40b685c2679d831af4dd60c3",
+      "original_size_bytes": 1934,
+      "public_path": "ci/control-result-stage-names-r3.json",
+      "public_sha256": "b476322adfed7729b2b799e0044f042b0825678a40b685c2679d831af4dd60c3",
+      "public_size_bytes": 1934,
       "public_mode": "644",
       "copy_kind": "byte_identical",
       "redactions": [],
@@ -449,11 +584,11 @@
     {
       "path": "ci/owned_cache.py",
       "kind": "source",
-      "original_sha256": "c301f01fb7c47711f821f5c03daecead401e7898412f4f4415ac13d7ded68bc7",
-      "original_size_bytes": 7289,
+      "original_sha256": "7854df30f6d14c791547e0672b19ad5f34d2b41fc1aacc264f2fdb60bb6d2bb3",
+      "original_size_bytes": 7274,
       "public_path": "ci/owned_cache.py",
-      "public_sha256": "c301f01fb7c47711f821f5c03daecead401e7898412f4f4415ac13d7ded68bc7",
-      "public_size_bytes": 7289,
+      "public_sha256": "7854df30f6d14c791547e0672b19ad5f34d2b41fc1aacc264f2fdb60bb6d2bb3",
+      "public_size_bytes": 7274,
       "public_mode": "644",
       "copy_kind": "byte_identical",
       "redactions": [],
@@ -494,11 +629,11 @@
     {
       "path": "ci/record.py",
       "kind": "source",
-      "original_sha256": "fa86aec3c1db09adae56615ce5295c969e2fd7df4bde74d39a1892a3c5093154",
-      "original_size_bytes": 5991,
+      "original_sha256": "1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0",
+      "original_size_bytes": 6474,
       "public_path": "ci/record.py",
-      "public_sha256": "fa86aec3c1db09adae56615ce5295c969e2fd7df4bde74d39a1892a3c5093154",
-      "public_size_bytes": 5991,
+      "public_sha256": "1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0",
+      "public_size_bytes": 6474,
       "public_mode": "644",
       "copy_kind": "byte_identical",
       "redactions": [],
@@ -509,14 +644,72 @@
     {
       "path": "ci/replicate.py",
       "kind": "source",
-      "original_sha256": "eed7b807442b784894f0150ed4cf14363dcb02776a053055e628b4e145df09d3",
-      "original_size_bytes": 20505,
+      "original_sha256": "0cadbd0ced012a80d9a7f843d99c53daf0956247ce72b8e6c3e729631994dde0",
+      "original_size_bytes": 20803,
       "public_path": "ci/replicate.py",
-      "public_sha256": "eed7b807442b784894f0150ed4cf14363dcb02776a053055e628b4e145df09d3",
-      "public_size_bytes": 20505,
+      "public_sha256": "0cadbd0ced012a80d9a7f843d99c53daf0956247ce72b8e6c3e729631994dde0",
+      "public_size_bytes": 20803,
       "public_mode": "644",
       "copy_kind": "byte_identical",
       "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "ci/runs/41888029999/DIAGNOSIS-R1.md",
+      "kind": "report",
+      "original_sha256": "be132e5cd9150b4f867723ec7aabb092f4622dc6fa1d87bbbfc7d5eedc32b2b3",
+      "original_size_bytes": 3922,
+      "public_path": "ci/runs/41888029999/DIAGNOSIS-R1.md",
+      "public_sha256": "be132e5cd9150b4f867723ec7aabb092f4622dc6fa1d87bbbfc7d5eedc32b2b3",
+      "public_size_bytes": 3922,
+      "public_mode": "644",
+      "copy_kind": "byte_identical",
+      "redactions": [],
+      "redacted_source_view": null,
+      "portable_transform": null,
+      "private_ledger_dependency_in_original": false
+    },
+    {
+      "path": "ci/runs/41888029999/raw-log-manifest.json",
+      "kind": "manifest",
+      "original_sha256": "4ca9c38e5cef146f9846d19a8665be947a63f68719748228ecca4b47addb1ede",
+      "original_size_bytes": 7421,
+      "public_path": "ci/runs/41888029999/raw-log-manifest.json",
+      "public_sha256": "b7221a0f71c03b76952e4c41d566cb8503a075850b44dea692fb3bbd3463df82",
+      "public_size_bytes": 7241,
+      "public_mode": "644",
+      "copy_kind": "sanitized_derivative",
+      "redactions": [
+        {
+          "rule": "email",
+          "input_sha256": "4ca9c38e5cef146f9846d19a8665be947a63f68719748228ecca4b47addb1ede",
+          "output_sha256": "b7221a0f71c03b76952e4c41d566cb8503a075850b44dea692fb3bbd3463df82",
+          "replacements": [
+            {
+              "input_byte_start": 763,
+              "input_byte_end": 824,
+              "replacement": "<EMAIL REDACTED>"
+            },
+            {
+              "input_byte_start": 1971,
+              "input_byte_end": 2032,
+              "replacement": "<EMAIL REDACTED>"
+            },
+            {
+              "input_byte_start": 2820,
+              "input_byte_end": 2881,
+              "replacement": "<EMAIL REDACTED>"
+            },
+            {
+              "input_byte_start": 4010,
+              "input_byte_end": 4071,
+              "replacement": "<EMAIL REDACTED>"
+            }
+          ]
+        }
+      ],
       "redacted_source_view": null,
       "portable_transform": null,
       "private_ledger_dependency_in_original": false
@@ -792,46 +985,46 @@
     {
       "path": "publish_package.py",
       "kind": "source",
-      "original_sha256": "7f209a0662d621e6c74f7ce35c76fa75205833eb2951e888fc1809325e237685",
-      "original_size_bytes": 30536,
+      "original_sha256": "b9e201649233bc83d53893667ac94491dd8370e9fff62d6cacff23e496ed5c2b",
+      "original_size_bytes": 31186,
       "public_path": "publish_package.py",
-      "public_sha256": "9315af8fbbd0d8228ce01d1bd2ee42cc8c5fcc9824778e6adee18dbff05a1d5a",
-      "public_size_bytes": 30015,
+      "public_sha256": "35fb2dd426e670070fd3e038afe946c2d95ac80f016f8a5d555e8c58baa56477",
+      "public_size_bytes": 30551,
       "public_mode": "644",
       "copy_kind": "explicit_portable_python_derivative",
       "redactions": [
         {
           "rule": "remove_sensitive_json_fields_including_full_PATH",
-          "input_sha256": "7f209a0662d621e6c74f7ce35c76fa75205833eb2951e888fc1809325e237685",
-          "output_sha256": "72123417fa52ba9371b5414b577b5c2e3bec7d7662c3229aed49404644eddbc3",
+          "input_sha256": "b9e201649233bc83d53893667ac94491dd8370e9fff62d6cacff23e496ed5c2b",
+          "output_sha256": "f679b800515e0b22bbd94a586333eac189caa7bcb49ae1f3b1dcb6c57d47c07a",
           "replacements": [
             {
-              "input_byte_start": 25818,
-              "input_byte_end": 25855,
+              "input_byte_start": 26468,
+              "input_byte_end": 26505,
               "replacement": "\"<REDACTED FIELD>\""
             }
           ]
         },
         {
           "rule": "home_prefix",
-          "input_sha256": "72123417fa52ba9371b5414b577b5c2e3bec7d7662c3229aed49404644eddbc3",
-          "output_sha256": "dff65825be702ff7e304c652474f235f3f9f67f12d49b8c3c958dd32f378cfea",
+          "input_sha256": "f679b800515e0b22bbd94a586333eac189caa7bcb49ae1f3b1dcb6c57d47c07a",
+          "output_sha256": "ea4ac1581f2820522ef50827df7b0f7b94dced3ccd3ec56692342de968c91b57",
           "replacements": [
             {
-              "input_byte_start": 25113,
-              "input_byte_end": 25131,
+              "input_byte_start": 25763,
+              "input_byte_end": 25781,
               "replacement": "<HOME>"
             }
           ]
         },
         {
           "rule": "sensitive_plaintext_field",
-          "input_sha256": "dff65825be702ff7e304c652474f235f3f9f67f12d49b8c3c958dd32f378cfea",
-          "output_sha256": "b21ba623148be5ac1f3982c93e7f8affbbb48d3367fc44b15f9982c9b626668a",
+          "input_sha256": "ea4ac1581f2820522ef50827df7b0f7b94dced3ccd3ec56692342de968c91b57",
+          "output_sha256": "eb45528c45d008a20bf722c3487103e8ab7040e2c6d8fd7086fe2670624e4ff1",
           "replacements": [
             {
-              "input_byte_start": 3973,
-              "input_byte_end": 4099,
+              "input_byte_start": 4623,
+              "input_byte_end": 4749,
               "replacement": "<SENSITIVE FIELD REDACTED>"
             }
           ]
@@ -839,8 +1032,8 @@
       ],
       "redacted_source_view": {
         "path": "source-views/publish_package.py.txt",
-        "sha256": "b21ba623148be5ac1f3982c93e7f8affbbb48d3367fc44b15f9982c9b626668a",
-        "size_bytes": 30405
+        "sha256": "eb45528c45d008a20bf722c3487103e8ab7040e2c6d8fd7086fe2670624e4ff1",
+        "size_bytes": 31055
       },
       "portable_transform": "Python AST literal transformation plus ast.unparse",
       "private_ledger_dependency_in_original": true

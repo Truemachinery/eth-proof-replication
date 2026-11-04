@@ -5,6 +5,7 @@ import json
 import os
 from pathlib import Path
 import resource
+import re
 import signal
 import subprocess
 import sys
@@ -28,6 +29,19 @@ def write_json(path, value):
         os.fsync(f.fileno())
 
 
+def validate_stage_name(name):
+    # Single ASCII path component; version dots are legal, traversal/separators are not.
+    if not isinstance(name, str) or not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._-]{0,119}', name):
+        raise ValueError('invalid stage name')
+
+
+def display_output(line):
+    # Display only: legacy Actions commands can be recognized anywhere in a line.
+    # Escape CR too so the runner cannot split away the modern-command prefix.
+    text = line.decode('utf-8', errors='replace').replace('\r', r'\r')
+    return '| ' + text.replace('##[', r'##\x5b')
+
+
 class Recorder:
     def __init__(self, directory, deadline=None):
         self.directory = Path(directory)
@@ -37,8 +51,7 @@ class Recorder:
 
     def run(self, name, argv, cwd, env, timeout=1800, stdout_file=None, required_text=None):
         """Emit full textual output with a harmless prefix; preserve raw bytes locally."""
-        if not name.replace('-', '').replace('_', '').isalnum():
-            raise ValueError('invalid stage name')
+        validate_stage_name(name)
         folder = self.directory / name
         folder.mkdir(exist_ok=False)
         started = time.time()
@@ -63,8 +76,8 @@ class Recorder:
                     destination.flush()
                     os.fsync(destination.fileno())
                     if echo:
-                        # A prefix prevents untrusted compiler output acting as Actions commands.
-                        sys.stdout.write('| ' + line.decode('utf-8', errors='replace'))
+                        # Neutralize both Actions command syntaxes in display; retain raw bytes above.
+                        sys.stdout.write(display_output(line))
                         sys.stdout.flush()
             except BaseException as e:
                 errors.append(repr(e))
