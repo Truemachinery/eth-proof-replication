@@ -1,0 +1,574 @@
+{
+  "schema": "eth-openai-linux-saved-log-review/1",
+  "reviewer": "codex-eth-anthropic-replication",
+  "same_team_review": true,
+  "observed_utc": "2026-11-04T22:19:49.522013+00:00",
+  "status": "No material contradiction in claimed saved evidence; replication incomplete",
+  "run_id": 41894905159,
+  "job_id": 126801717400,
+  "inputs": {
+    "openai-job-126801717400.raw.log": {
+      "path": "research/eth-external-replication-20261104/linux-runs/41894905159/openai-job-126801717400.raw.log",
+      "sha256": "c5b6d74be5996d77cd7cb7e421d88dde529793f4d9849772f99bdd69f5ae4bac",
+      "size_bytes": 513886
+    },
+    "openai-job-summary-r1.json": {
+      "path": "research/eth-external-replication-20261104/linux-runs/41894905159/openai-job-summary-r1.json",
+      "sha256": "2647a7c4e8a4626ebb8c9cc9756699b64a66835f9911938caca166d8e1afbf2f",
+      "size_bytes": 448505
+    },
+    "DIAGNOSIS-R4-OPENAI.md": {
+      "path": "research/eth-external-replication-20261104/linux-runs/41894905159/DIAGNOSIS-R4-OPENAI.md",
+      "sha256": "b8e693b1d1a561430ec2b314a5f8425519efb931747f2e4c73ee00ea95fc9935",
+      "size_bytes": 5264
+    },
+    "workflow-41894905159.logs.zip": {
+      "path": "research/eth-external-replication-20261104/linux-runs/41894905159/workflow-41894905159.logs.zip",
+      "sha256": "0a18fdb544c960346bdc235b6e29a116d322fb5a77ab74351a53526c445c2194",
+      "size_bytes": 246432
+    },
+    "parse_completed_log_r1.py": {
+      "path": "research/eth-external-replication-20261104/linux-runs/41894905159/parse_completed_log_r1.py",
+      "sha256": "e25554e5f4a88445085f62bc48953e0ea7647957cafd44a02e75149017fa8816",
+      "size_bytes": 4241
+    }
+  },
+  "supplemental_inputs": [
+    {
+      "path": "research/eth-external-replication-20261104/linux-runs/41894905159/workflow-log-members-r1.json",
+      "sha256": "c31c0ac7055c280b8c1f8405db0ac57b2d35ebfac3bd8303fabcf48c9f74214f",
+      "size_bytes": 4404
+    },
+    {
+      "path": "research/eth-external-replication-20261104/linux-runs/41894905159/openai-job-126801717400-download-r1.json",
+      "sha256": "2c9de374a67794693bc021d5df8ca42c4a6e8fa41abba3247fb278f7c8ba832e",
+      "size_bytes": 728
+    },
+    {
+      "path": "research/eth-external-replication-20261104/linux-runs/41894905159/workflow-41894905159-download-r1.json",
+      "sha256": "63c38add32901411150551d6a64aac203a4058160d7aa085c1784a6fc815e877",
+      "size_bytes": 725
+    }
+  ],
+  "all_checks_passed": true,
+  "checks": [
+    {
+      "name": "input openai-job-126801717400.raw.log",
+      "passed": true
+    },
+    {
+      "name": "input openai-job-summary-r1.json",
+      "passed": true
+    },
+    {
+      "name": "input DIAGNOSIS-R4-OPENAI.md",
+      "passed": true
+    },
+    {
+      "name": "input workflow-41894905159.logs.zip",
+      "passed": true
+    },
+    {
+      "name": "input parse_completed_log_r1.py",
+      "passed": true
+    },
+    {
+      "name": "BOM and 3666 lines",
+      "passed": true
+    },
+    {
+      "name": "object-only summary exactly reproduced",
+      "passed": true
+    },
+    {
+      "name": "array identity markers parsed separately",
+      "passed": true
+    },
+    {
+      "name": "38 unique stage pairs",
+      "passed": true
+    },
+    {
+      "name": "pair landlock-abi-preflight",
+      "passed": true
+    },
+    {
+      "name": "pair landrun-build",
+      "passed": true
+    },
+    {
+      "name": "pair landrun-enforcement-control",
+      "passed": true
+    },
+    {
+      "name": "pair af-unix-control",
+      "passed": true
+    },
+    {
+      "name": "pair cleanup-disposable-sdks",
+      "passed": true
+    },
+    {
+      "name": "pair host-inventory",
+      "passed": true
+    },
+    {
+      "name": "pair lean-4.34.1-download",
+      "passed": true
+    },
+    {
+      "name": "pair lean-4.34.1-extract",
+      "passed": true
+    },
+    {
+      "name": "pair lean-4.35.0-download",
+      "passed": true
+    },
+    {
+      "name": "pair lean-4.35.0-extract",
+      "passed": true
+    },
+    {
+      "name": "pair proof-compiler-version",
+      "passed": true
+    },
+    {
+      "name": "pair tool-compiler-version",
+      "passed": true
+    },
+    {
+      "name": "pair source-init",
+      "passed": true
+    },
+    {
+      "name": "pair source-remote",
+      "passed": true
+    },
+    {
+      "name": "pair source-sparse-init",
+      "passed": true
+    },
+    {
+      "name": "pair source-sparse-set",
+      "passed": true
+    },
+    {
+      "name": "pair source-fetch",
+      "passed": true
+    },
+    {
+      "name": "pair source-checkout",
+      "passed": true
+    },
+    {
+      "name": "pair prepare-byte-identical-workspace",
+      "passed": true
+    },
+    {
+      "name": "pair dependency-update",
+      "passed": true
+    },
+    {
+      "name": "pair mathlib-official-cache",
+      "passed": true
+    },
+    {
+      "name": "pair comparator-init",
+      "passed": true
+    },
+    {
+      "name": "pair comparator-remote",
+      "passed": true
+    },
+    {
+      "name": "pair comparator-fetch",
+      "passed": true
+    },
+    {
+      "name": "pair comparator-checkout",
+      "passed": true
+    },
+    {
+      "name": "pair exporter-init",
+      "passed": true
+    },
+    {
+      "name": "pair exporter-remote",
+      "passed": true
+    },
+    {
+      "name": "pair exporter-fetch",
+      "passed": true
+    },
+    {
+      "name": "pair exporter-checkout",
+      "passed": true
+    },
+    {
+      "name": "pair nanoda-init",
+      "passed": true
+    },
+    {
+      "name": "pair nanoda-remote",
+      "passed": true
+    },
+    {
+      "name": "pair nanoda-fetch",
+      "passed": true
+    },
+    {
+      "name": "pair nanoda-checkout",
+      "passed": true
+    },
+    {
+      "name": "pair comparator-build",
+      "passed": true
+    },
+    {
+      "name": "pair exporter-build-exact-proof-compiler",
+      "passed": true
+    },
+    {
+      "name": "pair nanoda-build",
+      "passed": true
+    },
+    {
+      "name": "pair create-two-slot-compiler-prefix",
+      "passed": true
+    },
+    {
+      "name": "pair source-build",
+      "passed": true
+    },
+    {
+      "name": "37 success then source-build exit1",
+      "passed": true
+    },
+    {
+      "name": "one run start/end",
+      "passed": true
+    },
+    {
+      "name": "incomplete all-mode unchanged run pins",
+      "passed": true
+    },
+    {
+      "name": "original target/compiler/tool pins",
+      "passed": true
+    },
+    {
+      "name": "run aggregate agrees with all 38 stages",
+      "passed": true
+    },
+    {
+      "name": "14G limit/two slots/two threads",
+      "passed": true
+    },
+    {
+      "name": "not Recorder deadline",
+      "passed": true
+    },
+    {
+      "name": "explicit OOM resource tail",
+      "passed": true
+    },
+    {
+      "name": "no displayed compiler/theorem error in source stage",
+      "passed": true
+    },
+    {
+      "name": "2880 distinct exact owned Built events",
+      "passed": true
+    },
+    {
+      "name": "lexical inventory separately3092",
+      "passed": true
+    },
+    {
+      "name": "all named checking stages unstarted",
+      "passed": true
+    },
+    {
+      "name": "one snapshot equals run",
+      "passed": true
+    },
+    {
+      "name": "oversize snapshot no ready/cache identity",
+      "passed": true
+    },
+    {
+      "name": "restore missed and save explicitly skipped",
+      "passed": true
+    },
+    {
+      "name": "no emitted backend save/audit record",
+      "passed": true
+    },
+    {
+      "name": "resource totals reconcile",
+      "passed": true
+    },
+    {
+      "name": "13 unique relative ZIP members",
+      "passed": true
+    },
+    {
+      "name": "ZIP/member/extracted 0_openai.txt",
+      "passed": true
+    },
+    {
+      "name": "ZIP/member/extracted openai/system.txt",
+      "passed": true
+    },
+    {
+      "name": "ZIP/member/extracted openai/1_Set up job.txt",
+      "passed": true
+    },
+    {
+      "name": "ZIP/member/extracted openai/2_Run <EMAIL REDACTED>",
+      "passed": true
+    },
+    {
+      "name": "ZIP/member/extracted openai/3_Verify public manual hosted runner.txt",
+      "passed": true
+    },
+    {
+      "name": "ZIP/member/extracted openai/4_Restore newest matching bounded owned-output cache.txt",
+      "passed": true
+    },
+    {
+      "name": "ZIP/member/extracted openai/5_Build and check pinned public proof.txt",
+      "passed": true
+    },
+    {
+      "name": "ZIP/member/extracted openai/6_Bound retention and prune previous own-proof snapshots.txt",
+      "passed": true
+    },
+    {
+      "name": "ZIP/member/extracted openai/9_Preserve unsuccessful replication result.txt",
+      "passed": true
+    },
+    {
+      "name": "ZIP/member/extracted openai/18_Post Run <EMAIL REDACTED>",
+      "passed": true
+    },
+    {
+      "name": "ZIP/member/extracted openai/19_Complete job.txt",
+      "passed": true
+    },
+    {
+      "name": "ZIP/member/extracted 1_anthropic.txt",
+      "passed": true
+    },
+    {
+      "name": "ZIP/member/extracted anthropic/system.txt",
+      "passed": true
+    },
+    {
+      "name": "ZIP aggregate equals exact job response",
+      "passed": true
+    },
+    {
+      "name": "no save/audit step member",
+      "passed": true
+    },
+    {
+      "name": "download receipt binds exact response",
+      "passed": true
+    },
+    {
+      "name": "producer revision observed",
+      "passed": true
+    }
+  ],
+  "stage_count": 38,
+  "successful_stage_count": 37,
+  "first_failed_stage": {
+    "name": "source-build",
+    "start_line": 694,
+    "receipt_line": 3625,
+    "exit_code": 1,
+    "reason": null,
+    "wall_seconds": 10166.2605073452,
+    "timeout_seconds": 18580.769665287,
+    "service_tail": [
+      {
+        "line": 3619,
+        "text": "Finished with result: oom-kill"
+      },
+      {
+        "line": 3620,
+        "text": "Main processes terminated with: code=killed/status=TERM"
+      },
+      {
+        "line": 3621,
+        "text": "Service runtime: 2h 49min 26.195s"
+      },
+      {
+        "line": 3622,
+        "text": "CPU time consumed: 6h 24min 57.178s"
+      },
+      {
+        "line": 3623,
+        "text": "Memory peak: 14.0G"
+      },
+      {
+        "line": 3624,
+        "text": "Memory swap peak: 2.6G"
+      }
+    ],
+    "reported_ephemeral_raw_sha256": "caffbce51fe44960a0d0222d6b8ffb511ecc2572f46e0432ee7e6d70ef44e2ce",
+    "reported_ephemeral_raw_bytes": 276678
+  },
+  "unrun_checking_stages": [
+    "normal-real-prefix-trace-check",
+    "fresh-original-version-leanchecker",
+    "comparator-original-config",
+    "retained-target-export",
+    "additional-retained-export-nanoda"
+  ],
+  "owned_build_events": {
+    "distinct": 2880,
+    "OAI": 2879,
+    "ComparatorChallenges": 1,
+    "first": {
+      "line": 696,
+      "module": "OAI.Algorithms.SubexponentialSAT.SqrtLog.MomentsAssemblyFoldRel"
+    },
+    "last": {
+      "line": 3618,
+      "module": "OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.HighQueryReturnReplay"
+    },
+    "recorded_lexical_inventory": 3092,
+    "scope": "Displayed successful Built events only. Separate from copied lexical inventory, Lake job count11803/12015 and inspected .olean bytes/full closure."
+  },
+  "snapshot": {
+    "cap_bytes": 2147483648,
+    "completed_modules": 2880,
+    "context_sha256": "aa5fab3860eddccf2a16596c69e2b3b6d8ff7ea107b01ede0231132cc10f4bcf",
+    "fingerprint": "e0bea202958d514063c5d020c64b2b5ad5489deff43306d3d805069e71baae04",
+    "payload_bytes": 3718194367,
+    "proof": "openai",
+    "schema": "eth-owned-cache/1",
+    "status": "skipped-empty-or-oversize"
+  },
+  "cache_scope": "No cache saved by this run in recovered logs: restore missed, oversized snapshot not ready, save explicitly skipped and save/audit step members absent. Candidate restore-key strings exist, but no saved key/backend/manifest identity. No global cache API query or assertion about unrelated caches. No OpenAI ancestor-cache entry supported.",
+  "resources": {
+    "sum_stage_wall_seconds": 10469.15457367897,
+    "sum_reaped_child_cpu_seconds": 364.6535550000001,
+    "source_service_cpu_seconds": 23097.178,
+    "source_service_runtime_seconds": 10166.195,
+    "source_service_memory_peak": "14.0G",
+    "source_service_swap_peak": "2.6G",
+    "scope": "Recorder child CPU excludes separately reported systemd service CPU; no per-compiler peak or concurrency counterfactual measured."
+  },
+  "archive_members": [
+    {
+      "name": "0_openai.txt",
+      "sha256": "c5b6d74be5996d77cd7cb7e421d88dde529793f4d9849772f99bdd69f5ae4bac",
+      "size_bytes": 513886
+    },
+    {
+      "name": "openai/system.txt",
+      "sha256": "7e5628aba2e45df08eff3bafb6bb612ca2fd1a19c27c4b8bb3b2f2eb09f7d0b0",
+      "size_bytes": 856
+    },
+    {
+      "name": "openai/1_Set up job.txt",
+      "sha256": "6358a2ab3549c4405eb5aa332a85278513c7887d369ceb92cf0d47edaaf0eb80",
+      "size_bytes": 2134
+    },
+    {
+      "name": "openai/2_Run <EMAIL REDACTED>",
+      "sha256": "a8d25e77696975d7ec981b30c8753b9ab91f73d13146584f0fbaaa3a33e9de38",
+      "size_bytes": 6852
+    },
+    {
+      "name": "openai/3_Verify public manual hosted runner.txt",
+      "sha256": "29a5dd799aa62a78ad74e9226fec1e6b392525f30fd6de953956e6ad27c2fbfb",
+      "size_bytes": 683
+    },
+    {
+      "name": "openai/4_Restore newest matching bounded owned-output cache.txt",
+      "sha256": "de50a812d6de0a682ce10d26b6b1abf53df9bcc569c907093205a41955f64921",
+      "size_bytes": 1254
+    },
+    {
+      "name": "openai/5_Build and check pinned public proof.txt",
+      "sha256": "e2bc2b92044c197e44261c99e6bd2dec6ad1260188509f79c1c88ee03405ef82",
+      "size_bytes": 500309
+    },
+    {
+      "name": "openai/6_Bound retention and prune previous own-proof snapshots.txt",
+      "sha256": "936c846bf54de1abfe6aff241450f9485bcb6278894738e2a83c21828165e3e7",
+      "size_bytes": 576
+    },
+    {
+      "name": "openai/9_Preserve unsuccessful replication result.txt",
+      "sha256": "4b641d67e6acad8abda2231956dcdee5ca21e07839fe96c2810e6e4981207d12",
+      "size_bytes": 364
+    },
+    {
+      "name": "openai/18_Post Run <EMAIL REDACTED>",
+      "sha256": "7453a6e3c8dfd14975025510a95f993e2737a3d1ac13584db479b0b4838287f2",
+      "size_bytes": 1288
+    },
+    {
+      "name": "openai/19_Complete job.txt",
+      "sha256": "b0be9da48fa21f945d5fc37a1032712b150056eca5561ad3c348bdb76191df2e",
+      "size_bytes": 450
+    },
+    {
+      "name": "1_anthropic.txt",
+      "sha256": "96b5a97a88747174e013598c24e73eba3c2f1e2943e112f5f80ade7a44cf0574",
+      "size_bytes": 241386
+    },
+    {
+      "name": "anthropic/system.txt",
+      "sha256": "5acbdc6460767e6ce83336ad0e4ef3775371eeae95d8caa57a3c877d1bc05be0",
+      "size_bytes": 865
+    }
+  ],
+  "array_json_markers": [
+    [
+      "RUNTIME_IDENTITIES",
+      268
+    ],
+    [
+      "TOOL_IDENTITIES",
+      606
+    ]
+  ],
+  "error_scan_pattern": "(?i)\\berror\\b|unsolved goals|failed to synthesize|unknown constant",
+  "provenance_limits": [
+    "Exact saved GitHub endpoint response and archive checked locally; no fresh network/API query. ZIP aggregate is duplicate packaging of the same run.",
+    "Ephemeral source-build subprocess raw276678B/caffbce51fe44960a0d0222d6b8ffb511ecc2572f46e0432ee7e6d70ef44e2ce is reported inside a receipt, not a local recovered raw file independently rehashed here.",
+    "Source/tool identities are logged pins, not proof recompilation evidence from this review. No source/default/trace/audit/fresh/Comparator/export/Nanoda execution, retry or CI/source edit.",
+    "No displayed Lean error in scanned source output does not imply the remaining unbuilt sources pass or fail. Explicit OOM does not identify the responsible in-flight compiler.",
+    "No full source closure, target verdict or final input seal was reached.",
+    "Object-only summary intentionally omits array runtime/tool identity markers; reviewer parsed those separately."
+  ],
+  "negative_review_attempt": {
+    "checkpoint": 3957,
+    "log": {
+      "path": "research/checkpoints/codex-eth-anthropic-replication--eth-linux-openai-saved-log-review-20261104--20261104T221753Z-374747-96455.txt",
+      "sha256": "cf16dbebec3318de45a8a4e538cc0a8589eebac8767b70e169e5ed0f0b5c5d57",
+      "size_bytes": 353
+    },
+    "scope": "Report-writer triple-quote SyntaxError before Python execution or output-file creation; corrected delimiter only.",
+    "cpu_seconds": 0.028498,
+    "wall_seconds": 0.035373
+  },
+  "environment": {
+    "python": "3.9.6",
+    "system": "Darwin",
+    "machine": "arm64"
+  },
+  "review_cpu_seconds": 0.033889,
+  "review_wall_seconds": 0.039267583,
+  "review_resource_scope": "Final parse/hash/report subprocess only; earlier bounded reads/model/board overhead excluded. Outer checkpoint includes this child, do not double-count.",
+  "proof_runs": 0,
+  "new_downloads": 0,
+  "incremental_usd": 0,
+  "reproduction_python": "\nimport collections,datetime,hashlib,json,os,platform,re,sys,time,zipfile\nfrom pathlib import Path\nstarted=time.monotonic(); cpu_started=time.process_time()\nb=Path('research/eth-external-replication-20261104/linux-runs/41894905159');stem='openai-saved-log-review-r1'\ndef sha(v): return hashlib.sha256(v).hexdigest()\ndef ident(p): return {'path':str(p),'sha256':sha(p.read_bytes()),'size_bytes':p.stat().st_size}\nexpected={'openai-job-126801717400.raw.log':('c5b6d74be5996d77cd7cb7e421d88dde529793f4d9849772f99bdd69f5ae4bac',513886),'openai-job-summary-r1.json':('2647a7c4e8a4626ebb8c9cc9756699b64a66835f9911938caca166d8e1afbf2f',448505),'DIAGNOSIS-R4-OPENAI.md':('b8e693b1d1a561430ec2b314a5f8425519efb931747f2e4c73ee00ea95fc9935',5264),'workflow-41894905159.logs.zip':('0a18fdb544c960346bdc235b6e29a116d322fb5a77ab74351a53526c445c2194',246432),'parse_completed_log_r1.py':('e25554e5f4a88445085f62bc48953e0ea7647957cafd44a02e75149017fa8816',4241)}\nchecks=[]\ndef require(name,passed):\n if not passed: raise AssertionError(name)\n checks.append({'name':name,'passed':True})\ninputs={name:ident(b/name) for name in expected}\nfor name,(digest,size) in expected.items(): require('input '+name,inputs[name]['sha256']==digest and inputs[name]['size_bytes']==size)\nraw=(b/'openai-job-126801717400.raw.log').read_bytes();lines=raw.decode('utf-8-sig').splitlines()\nrequire('BOM and 3666 lines',raw.startswith(b'\\xef\\xbb\\xbf') and len(lines)==3666)\nevents=[]\nfor n,line in enumerate(lines,1):\n m=re.fullmatch(r'(\\S+Z) ([A-Z][A-Z0-9_]*) ([\\[{].*)',line)\n if m: events.append({'line':n,'timestamp':m[1],'marker':m[2],'data':json.loads(m[3])})\nobjects=[e for e in events if isinstance(e['data'],dict)];arrays=[e for e in events if isinstance(e['data'],list)]\nsummary=json.loads((b/'openai-job-summary-r1.json').read_text())\nrequire('object-only summary exactly reproduced',objects==summary['receipts'])\nrequire('array identity markers parsed separately',[(e['marker'],e['line']) for e in arrays]==[('RUNTIME_IDENTITIES',268),('TOOL_IDENTITIES',606)])\nstarts=[e for e in events if e['marker']=='STAGE_START'];ends=[e for e in events if e['marker']=='STAGE_RECEIPT']\nrequire('38 unique stage pairs',len(starts)==len(ends)==38 and len({e['data']['name'] for e in ends})==38)\nfor i,(start,end) in enumerate(zip(starts,ends)):\n require('pair '+start['data']['name'],start['line']<end['line'] and all(end['data'].get(k)==v for k,v in start['data'].items()) and (i==0 or ends[i-1]['line']<start['line']))\nrequire('37 success then source-build exit1',all(e['data']['exit_code']==0 for e in ends[:-1]) and ends[-1]['data']['name']=='source-build' and ends[-1]['data']['exit_code']==1)\nrunstarts=[e for e in events if e['marker']=='RUN_START'];runends=[e for e in events if e['marker']=='RUN_RECEIPT']\nrequire('one run start/end',len(runstarts)==len(runends)==1)\nrun=runends[0]['data'];pins=run['pins']\nrequire('incomplete all-mode unchanged run pins',run['status']=='incomplete' and run['proof']=='openai' and run['mode']=='all' and pins==runstarts[0]['data']['pins'] and run['harness']==runstarts[0]['data']['harness'])\nrequire('original target/compiler/tool pins',pins['commit']=='4eaee87548250b2682affda7d05d947c05554bae' and pins['lean']=='4.34.1' and pins['mathlib']=='d13f23b723b8a846827a245b89c10fc7d3f11612' and pins['module']=='OAI.Algorithms.SubexponentialSAT.Main' and pins['theorems']==['OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.exact_count_and_sat'] and pins['comparator']=='865edc14486c3388e9225daa971da8e157488c3e' and pins['exporter']=='076e8e57707e813375e8f9da8bf989799ace9680')\nrequire('run aggregate agrees with all 38 stages',len(run['stages'])==38 and all(all(e['data'].get(k)==v for k,v in r.items()) for e,r in zip(ends,run['stages'])))\nbuild=ends[-1];buildstart=starts[-1];d=build['data'];argv=d['argv']\nrequire('14G limit/two slots/two threads','--property=MemoryMax=14G' in argv and 'ETH_LEAN_SLOTS=2' in argv and 'LEAN_NUM_THREADS=2' in argv and '--property=KillMode=control-group' in argv)\nrequire('not Recorder deadline',d['reason'] is None and d['wall_seconds']<d['timeout_seconds'])\nservice=[{'line':n,'text':lines[n-1].split(' | ',1)[-1]} for n in range(3619,3625)]\nrequire('explicit OOM resource tail',[e['text'] for e in service]==['Finished with result: oom-kill','Main processes terminated with: code=killed/status=TERM','Service runtime: 2h 49min 26.195s','CPU time consumed: 6h 24min 57.178s','Memory peak: 14.0G','Memory swap peak: 2.6G'])\nerror_pattern=r'(?i)\\berror\\b|unsolved goals|failed to synthesize|unknown constant'\nbody=lines[buildstart['line']:build['line']-1]\nrequire('no displayed compiler/theorem error in source stage',not any(re.search(error_pattern,line) for line in body))\nmodules=[]\nfor n,line in enumerate(body,buildstart['line']+1):\n m=re.search(r'\\bBuilt ((?:OAI|ComparatorChallenges)\\.[A-Za-z0-9_.]+) \\(',line)\n if m: modules.append({'line':n,'module':m[1]})\ncounts=collections.Counter(e['module'].split('.')[0] for e in modules)\nrequire('2880 distinct exact owned Built events',len(modules)==len({e['module'] for e in modules})==2880 and counts=={'OAI':2879,'ComparatorChallenges':1} and modules==summary['successful_owned_module_build_events'])\nrequire('lexical inventory separately3092',pins['closure_files']==3092)\nunrun=['normal-real-prefix-trace-check','fresh-original-version-leanchecker','comparator-original-config','retained-target-export','additional-retained-export-nanoda']\nrequire('all named checking stages unstarted',not set(unrun)&{e['data']['name'] for e in starts})\nsnapshots=[e for e in events if e['marker']=='OWNED_CACHE_SNAPSHOT'];require('one snapshot equals run',len(snapshots)==1 and snapshots[0]['data']==run['owned_cache'])\nsnapshot=snapshots[0]['data']\nrequire('oversize snapshot no ready/cache identity',snapshot['status']=='skipped-empty-or-oversize' and snapshot['completed_modules']==2880 and snapshot['payload_bytes']==3718194367 and snapshot['cap_bytes']==2147483648 and snapshot['payload_bytes']>snapshot['cap_bytes'] and not any(k in snapshot for k in ['manifest_sha256','key','backend_id','id','ready']))\nrequire('restore missed and save explicitly skipped','OWNED_CACHE_RESTORE missing' in lines[443] and 'CACHE_SAVE skipped: no completed bounded snapshot' in lines[3646])\nrequire('no emitted backend save/audit record',not any(e['marker'].startswith('CACHE_') for e in events))\nwall=sum(e['data']['wall_seconds'] for e in ends);cpu=sum(e['data']['child_cpu_seconds'] for e in ends)\nrequire('resource totals reconcile',abs(wall-summary['sum_stage_wall_seconds'])<1e-8 and abs(cpu-summary['sum_reaped_child_cpu_seconds'])<1e-8 and abs(wall-10469.15457367897)<1e-8 and abs(cpu-364.6535550000001)<1e-8)\nmanifest=json.loads((b/'workflow-log-members-r1.json').read_text());ziprows=[]\nwith zipfile.ZipFile(b/'workflow-41894905159.logs.zip') as archive:\n members=archive.infolist();expected_members={e['name']:e for e in manifest['members']}\n require('13 unique relative ZIP members',len(members)==len({m.filename for m in members})==13 and all(not Path(m.filename).is_absolute() and '..' not in Path(m.filename).parts for m in members) and set(expected_members)=={m.filename for m in members})\n for member in members:\n  payload=archive.read(member);r=expected_members[member.filename];p=Path(r['path'])\n  require('ZIP/member/extracted '+member.filename,len(payload)==r['bytes']==member.file_size and sha(payload)==r['sha256'] and p.is_file() and not p.is_symlink() and p.read_bytes()==payload)\n  ziprows.append({'name':member.filename,'sha256':sha(payload),'size_bytes':len(payload)})\n require('ZIP aggregate equals exact job response',archive.read('0_openai.txt')==raw)\n require('no save/audit step member',not any('Save current' in m.filename or 'Audit saved' in m.filename for m in members))\nrequire('download receipt binds exact response',json.loads((b/'openai-job-126801717400-download-r1.json').read_text())['sha256']==sha(raw))\nrequire('producer revision observed',any(line.endswith(' d9a4ad18e3668320bf9d084c7e454ff05e34f2e8') for line in lines))\nprior=Path('research/checkpoints/codex-eth-anthropic-replication--eth-linux-openai-saved-log-review-20261104--20261104T221753Z-374747-96455.txt')\nreport={'schema':'eth-openai-linux-saved-log-review/1','reviewer':'codex-eth-anthropic-replication','same_team_review':True,'observed_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'status':'No material contradiction in claimed saved evidence; replication incomplete','run_id':41894905159,'job_id':126801717400,'inputs':inputs,'supplemental_inputs':[ident(b/name) for name in ['workflow-log-members-r1.json','openai-job-126801717400-download-r1.json','workflow-41894905159-download-r1.json']],'all_checks_passed':True,'checks':checks,'stage_count':38,'successful_stage_count':37,'first_failed_stage':{'name':'source-build','start_line':buildstart['line'],'receipt_line':build['line'],'exit_code':1,'reason':None,'wall_seconds':d['wall_seconds'],'timeout_seconds':d['timeout_seconds'],'service_tail':service,'reported_ephemeral_raw_sha256':d['raw_log_sha256'],'reported_ephemeral_raw_bytes':d['raw_log_bytes']},'unrun_checking_stages':unrun,'owned_build_events':{'distinct':2880,'OAI':2879,'ComparatorChallenges':1,'first':modules[0],'last':modules[-1],'recorded_lexical_inventory':3092,'scope':'Displayed successful Built events only. Separate from copied lexical inventory, Lake job count11803/12015 and inspected .olean bytes/full closure.'},'snapshot':snapshot,'cache_scope':'No cache saved by this run in recovered logs: restore missed, oversized snapshot not ready, save explicitly skipped and save/audit step members absent. Candidate restore-key strings exist, but no saved key/backend/manifest identity. No global cache API query or assertion about unrelated caches. No OpenAI ancestor-cache entry supported.','resources':{'sum_stage_wall_seconds':wall,'sum_reaped_child_cpu_seconds':cpu,'source_service_cpu_seconds':23097.178,'source_service_runtime_seconds':10166.195,'source_service_memory_peak':'14.0G','source_service_swap_peak':'2.6G','scope':'Recorder child CPU excludes separately reported systemd service CPU; no per-compiler peak or concurrency counterfactual measured.'},'archive_members':ziprows,'array_json_markers':[(e['marker'],e['line']) for e in arrays],'error_scan_pattern':error_pattern,'provenance_limits':['Exact saved GitHub endpoint response and archive checked locally; no fresh network/API query. ZIP aggregate is duplicate packaging of the same run.','Ephemeral source-build subprocess raw276678B/caffbce51fe44960a0d0222d6b8ffb511ecc2572f46e0432ee7e6d70ef44e2ce is reported inside a receipt, not a local recovered raw file independently rehashed here.','Source/tool identities are logged pins, not proof recompilation evidence from this review. No source/default/trace/audit/fresh/Comparator/export/Nanoda execution, retry or CI/source edit.','No displayed Lean error in scanned source output does not imply the remaining unbuilt sources pass or fail. Explicit OOM does not identify the responsible in-flight compiler.','No full source closure, target verdict or final input seal was reached.','Object-only summary intentionally omits array runtime/tool identity markers; reviewer parsed those separately.'],'negative_review_attempt':{'checkpoint':3957,'log':ident(prior),'scope':'Report-writer triple-quote SyntaxError before Python execution or output-file creation; corrected delimiter only.','cpu_seconds':0.028498,'wall_seconds':0.035373},'environment':{'python':sys.version.split()[0],'system':platform.system(),'machine':platform.machine()},'review_cpu_seconds':time.process_time()-cpu_started,'review_wall_seconds':time.monotonic()-started,'review_resource_scope':'Final parse/hash/report subprocess only; earlier bounded reads/model/board overhead excluded. Outer checkpoint includes this child, do not double-count.','proof_runs':0,'new_downloads':0,'incremental_usd':0,'reproduction_python':review_source}\nmd='''# Saved OpenAI Linux failure review\n\nIndependent same-team review of workflow `41894905159`, OpenAI job `126801717400`. All announced raw, summary, diagnosis and ZIP identities match; all saved-evidence assertions passed. No proof execution, retry, download or CI edit was performed.\n\nThere are 38 matched stage starts/results: 37 exit zero, then `source-build` exits 1 at raw line 3625. Systemd lines 3619\u20133624 explicitly report `oom-kill`, memory peak 14.0G and swap 2.6G. The command records a 14G limit, two compiler slots and two Lean threads. Recorder duration 10166.260507 s is below its 18580.769665 s budget, with no timeout reason. No displayed Lean/compiler error was found in the source-stage scan. This establishes a resource failure for this attempt; it does not identify the peak compiler or guarantee a different concurrency fits.\n\nThe response contains 2880 distinct displayed successful owned Built events: 2879 OAI modules and one challenge. Their exact names/line numbers reproduce the summary and snapshot count. Last event: `OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.HighQueryReturnReplay`, line 3618. The recorded 3092 lexical source files and Lake job progress are different counts. No full target closure is established. No normal real-prefix trace, original fresh checker, Comparator, selected export or extra Nanoda stage started.\n\nSnapshot line 3626 records 3718194367 bytes, above the 2147483648 cap, and `skipped-empty-or-oversize`. Restore missed at line 444 and line 3647 explicitly skips save. No ready manifest/backend identity was emitted and no save/audit job member exists. Thus no OpenAI continuation cache from this run is supported. Attempted lookup-key strings are not saved cache identities. No global cache API query was performed; an OpenAI ancestor-ledger entry based on this run would be unsupported.\n\nSummed stage wall is 10469.154574 s and reaped-child CPU 364.653555 s. Separately reported systemd service CPU is 23097.178 s; it is excluded from Recorder child CPU. These scopes remain separate. No individual compiler memory measurement or performance comparison follows.\n\nThe BOM-prefixed endpoint response has 3666 decoded lines and SHA c5b6d74b\u2026. All 13 ZIP members match the saved member manifest and extracted bytes. ZIP `0_openai.txt` is byte-identical to the job response: duplicate packaging, not another run. The ephemeral subprocess raw hash caffbce5\u2026 is reported inside that response and was not independently rehashed as a recovered file. The derived summary is intentionally object-only; this review separately parsed array runtime/tool markers.\n\nThe supplied diagnosis is consistent with the recovered evidence; no material correction requested. Overall replication and all OpenAI target-check outcomes remain incomplete. The companion JSON preserves exact hashes, assertions, source-line references, full metadata reproduction program and measured review resources. An initial report-writer delimiter SyntaxError before execution is separately preserved, then corrected; it changed no input artifact.\n'''\nfor target,value in [(b/(stem+'.md'),md),(b/(stem+'.json'),report)]:\n with target.open('x') as stream:\n  stream.write(value if isinstance(value,str) else json.dumps(value,indent=2));stream.write('\\n');stream.flush();os.fsync(stream.fileno())\nprint(json.dumps({'passed':True,'checks':len(checks),'json':ident(b/(stem+'.json')),'markdown':ident(b/(stem+'.md')),'review_cpu_seconds':report['review_cpu_seconds'],'review_wall_seconds':report['review_wall_seconds']}))\n"
+}

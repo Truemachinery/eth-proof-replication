@@ -107,7 +107,7 @@ def main():
                     pass
                 else:
                     raise AssertionError('invalid cache accepted')
-            with mock.patch.object(owned_cache, 'PAYLOAD_LIMIT', 1):
+            with mock.patch.object(owned_cache, 'payload_limit', return_value=1):
                 over = owned_cache.snapshot(project, 'openai', tmp / 'oversize', HERE)
                 assert over['status'] == 'skipped-empty-or-oversize' and not (tmp / 'oversize').exists()
         checks.append('owned-only bounded cache, SHA/context rejection, oversize skip')

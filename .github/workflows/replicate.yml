@@ -79,7 +79,7 @@ jobs:
               raise SystemExit(0)
           subprocess.run([sys.executable, 'ci/cache_maintenance.py', proof, '--directory', str(directory)], check=True)
           PY
-      - name: Save at most2GiB of this proof's completed outputs
+      - name: Save at most 6GiB of OpenAI completed outputs
         if: always() && steps.cache_policy.outputs.ready == 'true'
         uses: actions/cache/save@0400d5f644dc74513175e3cd8d07132dd4860809 # v4.2.4
         with:
@@ -127,7 +127,7 @@ jobs:
         uses: actions/cache/restore@0400d5f644dc74513175e3cd8d07132dd4860809 # v4.2.4
         with:
           path: .ci-cache/anthropic
-          key: eth-owned-anthropic-dd4d7b438fa94c8ca1a9ea561fb4028a8e17cbce3be307a03ce84651ea925bf0-41894905159-1
+          key: eth-owned-anthropic-9fbd29ee32ef2ea4fe15afa713145c3cfcc69aad02da8ac94dad8500bd76f92a-41911047958-1
       - name: Require exact predecessor cache selection
         if: steps.ancestor_cache_restore.outputs.cache-matched-key != ''
         env:
@@ -135,7 +135,7 @@ jobs:
         run: |
           python3 - <<'PY'
           import os
-          expected = 'eth-owned-anthropic-dd4d7b438fa94c8ca1a9ea561fb4028a8e17cbce3be307a03ce84651ea925bf0-41894905159-1'
+          expected = 'eth-owned-anthropic-9fbd29ee32ef2ea4fe15afa713145c3cfcc69aad02da8ac94dad8500bd76f92a-41911047958-1'
           if os.environ['MATCHED_ANCESTOR_CACHE_KEY'] != expected:
               raise SystemExit('refusing a non-exact predecessor cache key')
           PY
@@ -172,7 +172,7 @@ jobs:
               raise SystemExit(0)
           subprocess.run([sys.executable, 'ci/cache_maintenance.py', proof, '--directory', str(directory)], check=True)
           PY
-      - name: Save at most2GiB of this proof's completed outputs
+      - name: Save at most 2GiB of Anthropic completed outputs
         if: always() && steps.cache_policy.outputs.ready == 'true'
         uses: actions/cache/save@0400d5f644dc74513175e3cd8d07132dd4860809 # v4.2.4
         with:

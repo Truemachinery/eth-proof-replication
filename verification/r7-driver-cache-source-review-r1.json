@@ -1,0 +1,73 @@
+{
+  "all_source_rows_rehashed": 25,
+  "created_utc": "2026-11-04T22:36:59.787947+00:00",
+  "findings": [
+    "Driver791007e3 keeps original proof/config/compiler pins and enforcement policy. Changes are resource description, gated source admission1OpenAI/2Anthropic(both2runtime threads), stage label and explicit1800s retained-export service budget. One frontend does not establish memory fit.",
+    "Existing isolated builder honors earlier global deadline; explicit1800for retained export yields RuntimeMaxSec<=1795 plus5stop. MemoryMax14G/controlgroup/nonroot/AF_UNIX/Landrun remain. Recorder CLI group kill is distinct from service-manager lifetime; no global service kills were added.",
+    "Recorder timed_out identifies only its own Popen.wait cap; shorter service timeout can fail withflagFalse and raw service evidence. Transport/timeout provenance was authored here and independently reviewed425aca58, not independently certified here.",
+    "Cachecc765ac2/1f43bb2c adds explicitOpenAI6GiB/Anthropic2GiB,total8GiB and32MiB reserves. Backend entries use their own proof cap; cleanup only deletes caller-owned prefix entries and rejects foreign namespaces/multiple snapshots. Existing ownership/path/hash/no-overwrite guards remain.",
+    "Ancestor validation requires24old producer rows includingoldledger,23current nonledger rows+newledger, exact current workflow and metadata/context/fingerprint. All24old rows match frozenpublishedR6 and all23newrows/workflow match staging.",
+    "Ledger247130dc authorizes only actualR6Ant cache46a5/fingerprint4da5/contextb5/backend10025744473/exact savedkey, matching independently reviewed terminal records. No OpenAI predecessor or prunedR4cache is authorized.",
+    "Workflow33c8581f retains dispatch-only standard hostedjobs/per-proof concurrency and existing finalized-ready-snapshot-before-prune/save guards. Deltas are proof-specific cache labels and exactR6Ant restore/matched-key literals. No proof-token exposure or artifact upload was added.",
+    "README39787e0e correctly distinguishes actual14G OOM/noOAIcache, R6Ant originalchecks versus unfinishedexport/seal, hypothetical memoryfit and unmeasured Linux fsync cause. No R7Linux success or mining advantage is asserted.",
+    "Saved7driverAST/resource,27cachemock/boundary and22R6protocol controls are small fixtures/mocks, not real cache/Lean/Linux proof runs. Historical real-Lean result bytes remain history; two sourcefixtures adapt only for new cap API."
+  ],
+  "frozen_input_map": {
+    "bytes": 10164,
+    "path": "verification/ci-repair-candidate-r7-inputs-r1.json",
+    "sha256": "68e3cfd1b03d66e45bcfe21a93ad212d2342a67de2061e67547d2cfbe8ca6713"
+  },
+  "limits": [
+    "Source/control review is not actualLinuxR7execution, memory-fit measurement or proof verdict.",
+    "Cache fixtures are tiny/mocked; actual backend size and service behavior require future production receipts.",
+    "Helpers retain fixed trusted project/cache path caller contracts, not a generalized untrusted destination API."
+  ],
+  "metadata_correction": "Initial report writer used path instead of source_path for the new handoff map; KeyError occurred before output creation. Corrected field lookup only; no source/test changes.",
+  "recorder_independent_peer": {
+    "bytes": 13231,
+    "path": "verification/record-r7-independent-review-r1.json",
+    "sha256": "425aca58bfd9c0e30c5e847648876da949274d4fa9017058a1baf6f7959d401d"
+  },
+  "review_resources": {
+    "final_metadata_report_CPU_seconds": 0.004353999999999997,
+    "final_metadata_report_wall_seconds": 0.007808958999999997,
+    "incremental_USD": 0,
+    "scope": "Final small checksum/report process; earlier source reads, initial writer field correction and coordination excluded."
+  },
+  "reviewer": "codex-eth-public-package",
+  "saved_control_reports": [
+    {
+      "identity": {
+        "bytes": 1852,
+        "path": "verification/r7-driver-resource-control-result-r1.json",
+        "sha256": "76c6dd146e56fe3af32cbacaac36fb9acf510eb0226066dd04aad33b0f5097cf"
+      },
+      "reported_checks": 7,
+      "reviewer_reran": false,
+      "scope": "Actual AST expressions and service-command builder evaluated with harmless values; no service, compiler, proof tool, API or Linux runner executed. Single compiler memory fit remains unmeasured."
+    },
+    {
+      "identity": {
+        "bytes": 2428,
+        "path": "verification/cache-policy-r7-control-result-r1.json",
+        "sha256": "7f60bb58ef3449a8dea05c493be972992403476480559d807de84555b452882e"
+      },
+      "reported_checks": 27,
+      "reviewer_reran": false,
+      "scope": "Production staged cache functions and fully mocked maintenance API; synthetic tiny files only. No network, proof tools, multiGiB allocation or live CI edits. Full actual-R6 ancestor protocol is a separate control after final ledger freeze."
+    },
+    {
+      "identity": {
+        "bytes": 4278,
+        "path": "verification/ancestor-cache-control-result-r7-r1.json",
+        "sha256": "2e4314359325d22202077b072e2b282204e8be5a63c6f1bb1d6b742c6f32b9a1"
+      },
+      "reported_checks": 22,
+      "reviewer_reran": false,
+      "scope": "Synthetic owned-output identity/ownership and actual workflow-guard controls; no real Actions cache restore, Lean trace check or ETH verification."
+    }
+  ],
+  "schema": "eth-r7-staged-source-review/1",
+  "scope": "Same-team read-only driver/cache/workflow/docs/ledger source-delta and saved-control review. This agent authored the recorder; its independent peer review is linked separately. No new controls, source imports/execution, proof tools, network or publication.",
+  "status": "NO_MATERIAL_SOURCE_BLOCKER_CANDIDATE_UNEXECUTED"
+}

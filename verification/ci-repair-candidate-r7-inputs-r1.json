@@ -1,0 +1,220 @@
+{
+  "schema": "eth-ci-r7-frozen-inputs/1",
+  "status": "STAGED_ONLY_UNAPPLIED",
+  "source_baseline_sha256": "6d6f4f2727df01770750cbe152f2394550aaca3d36ea3b1b8e88c7918fa84925",
+  "live_r6_identity_check": "All25 original selected input bytes still match frozen R6; no live CI/public checkout edits.",
+  "inputs": [
+    {
+      "source_path": "verification/ci-repair-candidate-r7/ci/README.md",
+      "public_path": "ci/README.md",
+      "sha256": "39787e0e4b5a5e96f5835fbc9b485f2df7e6d6e84874c5ec61cc68f6b8868409",
+      "size_bytes": 18436,
+      "baseline_sha256": "c8c2e4a5fdeb2c64683ea1afcadf1df6f5f515072086cd9064b626af3857c931",
+      "changed": true
+    },
+    {
+      "source_path": "verification/ci-repair-candidate-r7/ci/ancestor-cache-compatibility.json",
+      "public_path": "ci/ancestor-cache-compatibility.json",
+      "sha256": "247130dc03d737b2ab46ec0898cb5d3438b3faa8b2618dc9b04495ccef5cdd40",
+      "size_bytes": 8775,
+      "baseline_sha256": "114a49bae310c444c5468258df7fddd74c98077370102055d051f5c46eb52d4a",
+      "changed": true
+    },
+    {
+      "source_path": "verification/ci-repair-candidate-r7/ci/cache_maintenance.py",
+      "public_path": "ci/cache_maintenance.py",
+      "sha256": "1f43bb2c4fa70afb0e999e5a7675987dbf46654672ba340f1f739045eb08e82d",
+      "size_bytes": 4925,
+      "baseline_sha256": "fc1321d4e9c687264a6517dda0ba98bf0ae7596ba519983bbdba4865f38ec6bf",
+      "changed": true
+    },
+    {
+      "source_path": "verification/ci-repair-candidate-r7/ci/check_bc_control.py",
+      "public_path": "ci/check_bc_control.py",
+      "sha256": "192dae99efa59b41db476f891b3e398fc5cc63fab4236474763846167c63cf76",
+      "size_bytes": 4620,
+      "baseline_sha256": "20f71662ca0a007ea441f4217ae6605d31e0e72b3d5affb0a353079445f9d3a2",
+      "changed": true
+    },
+    {
+      "source_path": "verification/ci-repair-candidate-r7/ci/check_controls.py",
+      "public_path": "ci/check_controls.py",
+      "sha256": "2ebe619f909dd48cfebabf857ade809b5e8f082b443d01689d99a89f0213023a",
+      "size_bytes": 10973,
+      "baseline_sha256": "c5b5ab90b218758a43dfaab09bf72942a439cd6fe756fa0ae08408351a1ccbcb",
+      "changed": true
+    },
+    {
+      "source_path": "verification/ci-repair-candidate-r7/ci/check_display_control.py",
+      "public_path": "ci/check_display_control.py",
+      "sha256": "cbd5851a36d38e0ad5350eea64d7894d8b7708f618e1ca4210afbe46fc9f383b",
+      "size_bytes": 3795,
+      "baseline_sha256": "cbd5851a36d38e0ad5350eea64d7894d8b7708f618e1ca4210afbe46fc9f383b",
+      "changed": false
+    },
+    {
+      "source_path": "verification/ci-repair-candidate-r7/ci/check_landlock_policy_control.py",
+      "public_path": "ci/check_landlock_policy_control.py",
+      "sha256": "d2471fa5e1424ef1758aa095318a1a81e07f46c1ef41525c507c803b4fcdc128",
+      "size_bytes": 4563,
+      "baseline_sha256": "d2471fa5e1424ef1758aa095318a1a81e07f46c1ef41525c507c803b4fcdc128",
+      "changed": false
+    },
+    {
+      "source_path": "verification/ci-repair-candidate-r7/ci/check_setup_omission_control.py",
+      "public_path": "ci/check_setup_omission_control.py",
+      "sha256": "4789ebe8874af41ac2d568403d85060b2a81f361ce3e27697b2f864a2deb8beb",
+      "size_bytes": 5400,
+      "baseline_sha256": "4789ebe8874af41ac2d568403d85060b2a81f361ce3e27697b2f864a2deb8beb",
+      "changed": false
+    },
+    {
+      "source_path": "verification/ci-repair-candidate-r7/ci/check_stage_name_control.py",
+      "public_path": "ci/check_stage_name_control.py",
+      "sha256": "749d1fb3f109f7c3878cf2b4dd3c543db3c173828af17b54756fed07413f2571",
+      "size_bytes": 3487,
+      "baseline_sha256": "749d1fb3f109f7c3878cf2b4dd3c543db3c173828af17b54756fed07413f2571",
+      "changed": false
+    },
+    {
+      "source_path": "verification/ci-repair-candidate-r7/ci/compiler_gate.c",
+      "public_path": "ci/compiler_gate.c",
+      "sha256": "96947ead6565aa2d75b93c09e8bdccba31bc6558517db5df915368efc123dfb3",
+      "size_bytes": 6273,
+      "baseline_sha256": "96947ead6565aa2d75b93c09e8bdccba31bc6558517db5df915368efc123dfb3",
+      "changed": false
+    },
+    {
+      "source_path": "verification/ci-repair-candidate-r7/ci/control-result-bc-r2.json",
+      "public_path": "ci/control-result-bc-r2.json",
+      "sha256": "71f34ef370ad5dd25b28f443960b37485c5a2f74a7a62b22345f38b31a15ba3b",
+      "size_bytes": 555,
+      "baseline_sha256": "71f34ef370ad5dd25b28f443960b37485c5a2f74a7a62b22345f38b31a15ba3b",
+      "changed": false
+    },
+    {
+      "source_path": "verification/ci-repair-candidate-r7/ci/control-result-display-r3.json",
+      "public_path": "ci/control-result-display-r3.json",
+      "sha256": "3e32a5e560e0e993a44738ea7eb8c69a73c68d229eaefd9c38c42f996e0ab327",
+      "size_bytes": 746,
+      "baseline_sha256": "3e32a5e560e0e993a44738ea7eb8c69a73c68d229eaefd9c38c42f996e0ab327",
+      "changed": false
+    },
+    {
+      "source_path": "verification/ci-repair-candidate-r7/ci/control-result-landlock-policy-r4.json",
+      "public_path": "ci/control-result-landlock-policy-r4.json",
+      "sha256": "868caed022e577c87af606a083497b658f495ad026ddbe176f27c11c334d8764",
+      "size_bytes": 708,
+      "baseline_sha256": "868caed022e577c87af606a083497b658f495ad026ddbe176f27c11c334d8764",
+      "changed": false
+    },
+    {
+      "source_path": "verification/ci-repair-candidate-r7/ci/control-result-r2.json",
+      "public_path": "ci/control-result-r2.json",
+      "sha256": "be559a9f05600526547067307a10fddc94e465b5cf388c127eb614e64c36794b",
+      "size_bytes": 765,
+      "baseline_sha256": "be559a9f05600526547067307a10fddc94e465b5cf388c127eb614e64c36794b",
+      "changed": false
+    },
+    {
+      "source_path": "verification/ci-repair-candidate-r7/ci/control-result-setup-omission-r3.json",
+      "public_path": "ci/control-result-setup-omission-r3.json",
+      "sha256": "60560b19a484638d8cda6ce08e41be3af8ee5b1a30e7d25a055e8d2722629b6b",
+      "size_bytes": 1195,
+      "baseline_sha256": "60560b19a484638d8cda6ce08e41be3af8ee5b1a30e7d25a055e8d2722629b6b",
+      "changed": false
+    },
+    {
+      "source_path": "verification/ci-repair-candidate-r7/ci/control-result-stage-names-r3.json",
+      "public_path": "ci/control-result-stage-names-r3.json",
+      "sha256": "b476322adfed7729b2b799e0044f042b0825678a40b685c2679d831af4dd60c3",
+      "size_bytes": 1934,
+      "baseline_sha256": "b476322adfed7729b2b799e0044f042b0825678a40b685c2679d831af4dd60c3",
+      "changed": false
+    },
+    {
+      "source_path": "verification/ci-repair-candidate-r7/ci/control-result.json",
+      "public_path": "ci/control-result.json",
+      "sha256": "033bd03cc7f33daa0a7ac65413ff999beb8b81dc9c6f221a239b8c35be383aff",
+      "size_bytes": 533,
+      "baseline_sha256": "033bd03cc7f33daa0a7ac65413ff999beb8b81dc9c6f221a239b8c35be383aff",
+      "changed": false
+    },
+    {
+      "source_path": "verification/ci-repair-candidate-r7/ci/create_gate.py",
+      "public_path": "ci/create_gate.py",
+      "sha256": "c5af28dc306d384062ee53dbb34402ab895f82320fa2df015e0f09752959909a",
+      "size_bytes": 3524,
+      "baseline_sha256": "c5af28dc306d384062ee53dbb34402ab895f82320fa2df015e0f09752959909a",
+      "changed": false
+    },
+    {
+      "source_path": "verification/ci-repair-candidate-r7/ci/landlock_abi.py",
+      "public_path": "ci/landlock_abi.py",
+      "sha256": "d0853c1a67adcec4bbe22d1c44dc835f448b80eebe6502a32450faa59e17e0b0",
+      "size_bytes": 1265,
+      "baseline_sha256": "d0853c1a67adcec4bbe22d1c44dc835f448b80eebe6502a32450faa59e17e0b0",
+      "changed": false
+    },
+    {
+      "source_path": "verification/ci-repair-candidate-r7/ci/owned_cache.py",
+      "public_path": "ci/owned_cache.py",
+      "sha256": "cc765ac2b127eeb171afa43f40d1ad15e435c94c14dedd070a647a5ecdb32431",
+      "size_bytes": 11796,
+      "baseline_sha256": "dd9b47b1da0240e2fc2bf79a4e6de40543beb37cd5e316eb055f092040f382be",
+      "changed": true
+    },
+    {
+      "source_path": "verification/ci-repair-candidate-r7/ci/pins.json",
+      "public_path": "ci/pins.json",
+      "sha256": "e0b9f4d376b26247120dc97cee64595ea91b69fad24d5218e811d435a2910a0a",
+      "size_bytes": 1712,
+      "baseline_sha256": "e0b9f4d376b26247120dc97cee64595ea91b69fad24d5218e811d435a2910a0a",
+      "changed": false
+    },
+    {
+      "source_path": "verification/ci-repair-candidate-r7/ci/prepare_openai.py",
+      "public_path": "ci/prepare_openai.py",
+      "sha256": "5c8830653d328d50dcf3c0cae1488a199ab9c9a4249bbcc3a06f6fd598369f6c",
+      "size_bytes": 5849,
+      "baseline_sha256": "5c8830653d328d50dcf3c0cae1488a199ab9c9a4249bbcc3a06f6fd598369f6c",
+      "changed": false
+    },
+    {
+      "source_path": "verification/ci-repair-candidate-r7/ci/record.py",
+      "public_path": "ci/record.py",
+      "sha256": "753330742a44e50bd48ed4a0cd6b55b5998938475e7cb463c56e4e65979075f6",
+      "size_bytes": 6798,
+      "baseline_sha256": "1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0",
+      "changed": true
+    },
+    {
+      "source_path": "verification/ci-repair-candidate-r7/ci/replicate.py",
+      "public_path": "ci/replicate.py",
+      "sha256": "791007e37c684caa0001f0f34af40c81b2ebce84c854303fe5a7d448f429417f",
+      "size_bytes": 21251,
+      "baseline_sha256": "d3d38d581b583891fad340a377ff799dab8d396a26a947b2fffe04d74cd7b77c",
+      "changed": true
+    },
+    {
+      "source_path": "verification/ci-repair-candidate-r7/.github/workflows/replicate.yml",
+      "public_path": ".github/workflows/replicate.yml",
+      "sha256": "33c8581f513743184a8c198778e015613e39533a24f7047ac340506a746a0412",
+      "size_bytes": 9674,
+      "baseline_sha256": "68335be10ee348456b4ffc21f3a4cc5d5c39394a1bb7e5f9fd825338afb26e30",
+      "changed": true
+    }
+  ],
+  "changed_public_paths": [
+    "ci/README.md",
+    "ci/ancestor-cache-compatibility.json",
+    "ci/cache_maintenance.py",
+    "ci/check_bc_control.py",
+    "ci/check_controls.py",
+    "ci/owned_cache.py",
+    "ci/record.py",
+    "ci/replicate.py",
+    ".github/workflows/replicate.yml"
+  ],
+  "scope": "Frozen separate public-layout repair source; protocol controls and read-only review are separate evidence. No Linux proof run or dispatch; no performance/completion verdict."
+}

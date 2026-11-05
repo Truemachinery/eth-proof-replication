@@ -1,0 +1,755 @@
+﻿2026-11-04T20:54:41.8826896Z Current runner version: '2.338.2'
+2026-11-04T20:54:41.8845374Z ##[group]Runner Image Provisioner
+2026-11-04T20:54:41.8846157Z Hosted Compute Agent
+2026-11-04T20:54:41.8846699Z Version: 20261028.624
+2026-11-04T20:54:41.8847266Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+2026-11-04T20:54:41.8847961Z Build Date: 2026-10-28T21:51:42Z
+2026-11-04T20:54:41.8848581Z Worker ID: {<UUID REDACTED>}
+2026-11-04T20:54:41.8849215Z Region: centralus
+2026-11-04T20:54:41.8849685Z Cloud: Azure
+2026-11-04T20:54:41.8850157Z ##[endgroup]
+2026-11-04T20:54:41.8851393Z ##[group]Operating System
+2026-11-04T20:54:41.8851923Z Ubuntu
+2026-11-04T20:54:41.8852738Z 24.04.5
+2026-11-04T20:54:41.8853305Z LTS
+2026-11-04T20:54:41.8854054Z ##[endgroup]
+2026-11-04T20:54:41.8854595Z ##[group]Runner Image
+2026-11-04T20:54:41.8855103Z Image: ubuntu-24.04
+2026-11-04T20:54:41.8855629Z Version: 20261101.360.1
+2026-11-04T20:54:41.8856662Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261101.360/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-04T20:54:41.8858005Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261101.360
+2026-11-04T20:54:41.8858823Z ##[endgroup]
+2026-11-04T20:54:41.8859845Z ##[group]GITHUB_TOKEN Permissions
+2026-11-04T20:54:41.8861870Z Actions: write
+2026-11-04T20:54:41.8862698Z Contents: read
+2026-11-04T20:54:41.8863199Z Metadata: read
+2026-11-04T20:54:41.8863674Z ##[endgroup]
+2026-11-04T20:54:41.8865473Z Secret source: Actions
+2026-11-04T20:54:41.8866279Z Cache mode: write
+2026-11-04T20:54:41.8866858Z Prepare workflow directory
+2026-11-04T20:54:41.9190708Z Prepare all required actions
+2026-11-04T20:54:41.9231180Z Getting action download info
+2026-11-04T20:54:42.1898293Z Download action repository 'actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683' (SHA:11bd71901bbe5b1630ceea73d27597364c9af683)
+2026-11-04T20:54:42.3200414Z Download action repository 'actions/cache@0400d5f644dc74513175e3cd8d07132dd4860809' (SHA:0400d5f644dc74513175e3cd8d07132dd4860809)
+2026-11-04T20:54:42.6216733Z Complete job name: anthropic
+2026-11-04T20:54:42.6898022Z ##[group]Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+2026-11-04T20:54:42.6898846Z with:
+2026-11-04T20:54:42.6899388Z   persist-credentials: false
+2026-11-04T20:54:42.6899884Z   fetch-depth: 1
+2026-11-04T20:54:42.6900389Z   repository: Truemachinery/eth-proof-replication
+2026-11-04T20:54:42.6903902Z   token: ***
+2026-11-04T20:54:42.6904329Z   ssh-strict: true
+2026-11-04T20:54:42.6904819Z   ssh-user: git
+2026-11-04T20:54:42.6905248Z   clean: true
+2026-11-04T20:54:42.6905696Z   sparse-checkout-cone-mode: true
+2026-11-04T20:54:42.6906220Z   fetch-tags: false
+2026-11-04T20:54:42.6906669Z   show-progress: true
+2026-11-04T20:54:42.6907149Z   lfs: false
+2026-11-04T20:54:42.6907575Z   submodules: false
+2026-11-04T20:54:42.6908051Z   set-safe-directory: true
+2026-11-04T20:54:42.6908678Z env:
+2026-11-04T20:54:42.6909128Z   PYTHONDONTWRITEBYTECODE: 1
+2026-11-04T20:54:42.6909630Z ##[endgroup]
+2026-11-04T20:54:42.8857315Z Syncing repository: Truemachinery/eth-proof-replication
+2026-11-04T20:54:42.8859020Z ##[group]Getting Git version info
+2026-11-04T20:54:42.8860300Z Working directory is '<HOME>/work/eth-proof-replication/eth-proof-replication'
+2026-11-04T20:54:42.8861760Z [command]/usr/bin/git version
+2026-11-04T20:54:42.8927369Z git version 2.56.0
+2026-11-04T20:54:42.8947052Z ##[endgroup]
+2026-11-04T20:54:42.8959899Z Temporarily overriding HOME='<HOME>/work/_temp/<UUID REDACTED>' before making global git config changes
+2026-11-04T20:54:42.8961107Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-04T20:54:42.8964746Z [command]/usr/bin/git config --global --add safe.directory <HOME>/work/eth-proof-replication/eth-proof-replication
+2026-11-04T20:54:42.9017838Z Deleting the contents of '<HOME>/work/eth-proof-replication/eth-proof-replication'
+2026-11-04T20:54:42.9022822Z ##[group]Initializing the repository
+2026-11-04T20:54:42.9026937Z [command]/usr/bin/git init <HOME>/work/eth-proof-replication/eth-proof-replication
+2026-11-04T20:54:42.9095208Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-04T20:54:42.9126342Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-04T20:54:42.9133900Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-04T20:54:42.9135023Z hint: call:
+2026-11-04T20:54:42.9135648Z hint:
+2026-11-04T20:54:42.9136734Z hint: 	git config --global init.defaultBranch <name>
+2026-11-04T20:54:42.9137643Z hint:
+2026-11-04T20:54:42.9138503Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-04T20:54:42.9139736Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-04T20:54:42.9140784Z hint:
+2026-11-04T20:54:42.9141486Z hint: 	git branch -m <name>
+2026-11-04T20:54:42.9142197Z hint:
+2026-11-04T20:54:42.9143530Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-04T20:54:42.9145361Z Initialized empty Git repository in <HOME>/work/eth-proof-replication/eth-proof-replication/.git/
+2026-11-04T20:54:42.9165979Z [command]/usr/bin/git remote add origin https://github.com/Truemachinery/eth-proof-replication
+2026-11-04T20:54:42.9168837Z ##[endgroup]
+2026-11-04T20:54:42.9169965Z ##[group]Disabling automatic garbage collection
+2026-11-04T20:54:42.9176589Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-04T20:54:42.9209231Z ##[endgroup]
+2026-11-04T20:54:42.9210652Z ##[group]Setting up auth
+2026-11-04T20:54:42.9214514Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-04T20:54:42.9240570Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-04T20:54:42.9566587Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-04T20:54:42.9605971Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-04T20:54:42.9814490Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-04T20:54:42.9848518Z ##[endgroup]
+2026-11-04T20:54:42.9849673Z ##[group]Fetching the repository
+2026-11-04T20:54:42.9859553Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +309670f70aa79d85752dbdc61799ad8cc56772c2:refs/remotes/origin/codex/eth-replication
+2026-11-04T20:54:43.5324193Z From https://github.com/Truemachinery/eth-proof-replication
+2026-11-04T20:54:43.5326212Z  * [new ref]         309670f70aa79d85752dbdc61799ad8cc56772c2 -> origin/codex/eth-replication
+2026-11-04T20:54:43.5331926Z ##[endgroup]
+2026-11-04T20:54:43.5334043Z ##[group]Determining the checkout info
+2026-11-04T20:54:43.5335868Z ##[endgroup]
+2026-11-04T20:54:43.5339861Z [command]/usr/bin/git sparse-checkout disable
+2026-11-04T20:54:43.5394102Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-04T20:54:43.5424172Z ##[group]Checking out the ref
+2026-11-04T20:54:43.5427673Z [command]/usr/bin/git checkout --progress --force -B codex/eth-replication refs/remotes/origin/codex/eth-replication
+2026-11-04T20:54:43.5708662Z Switched to a new branch 'codex/eth-replication'
+2026-11-04T20:54:43.5711733Z branch 'codex/eth-replication' set up to track 'origin/codex/eth-replication'.
+2026-11-04T20:54:43.5718026Z ##[endgroup]
+2026-11-04T20:54:43.5749835Z [command]/usr/bin/git log -1 --format=%H
+2026-11-04T20:54:43.5778509Z 309670f70aa79d85752dbdc61799ad8cc56772c2
+2026-11-04T20:54:43.5788136Z ##[group]Removing auth
+2026-11-04T20:54:43.5791964Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-04T20:54:43.5818218Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-04T20:54:43.5981467Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-04T20:54:43.6001249Z http.https://github.com/.extraheader
+2026-11-04T20:54:43.6038071Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-04T20:54:43.6068734Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-04T20:54:43.6229595Z ##[endgroup]
+2026-11-04T20:54:43.6453709Z ##[group]Run python3 - <<'PY'
+2026-11-04T20:54:43.6455199Z [36;1mpython3 - <<'PY'[0m
+2026-11-04T20:54:43.6456590Z [36;1mimport json, os, sys[0m
+2026-11-04T20:54:43.6457921Z [36;1msys.path.insert(0, 'ci')[0m
+2026-11-04T20:54:43.6459230Z [36;1mfrom replicate import public_runner_guard[0m
+2026-11-04T20:54:43.6461062Z [36;1mpublic_runner_guard(json.load(open(os.environ['GITHUB_EVENT_PATH'])), os.environ)[0m
+2026-11-04T20:54:43.6462954Z [36;1mPY[0m
+2026-11-04T20:54:43.6480101Z shell: /usr/bin/bash -e {0}
+2026-11-04T20:54:43.6481216Z env:
+2026-11-04T20:54:43.6482118Z   PYTHONDONTWRITEBYTECODE: 1
+2026-11-04T20:54:43.6483525Z ##[endgroup]
+2026-11-04T20:54:43.8646093Z ##[group]Run actions/cache/restore@0400d5f644dc74513175e3cd8d07132dd4860809
+2026-11-04T20:54:43.8647438Z with:
+2026-11-04T20:54:43.8648344Z   path: .ci-cache/anthropic
+2026-11-04T20:54:43.8650084Z   key: eth-owned-anthropic-9fbd29ee32ef2ea4fe15afa713145c3cfcc69aad02da8ac94dad8500bd76f92a-41911047958-1
+2026-11-04T20:54:43.8652851Z   restore-keys: eth-owned-anthropic-9fbd29ee32ef2ea4fe15afa713145c3cfcc69aad02da8ac94dad8500bd76f92a-
+
+2026-11-04T20:54:43.8654659Z   enableCrossOsArchive: false
+2026-11-04T20:54:43.8655626Z   fail-on-cache-miss: false
+2026-11-04T20:54:43.8656643Z   lookup-only: false
+2026-11-04T20:54:43.8657491Z env:
+2026-11-04T20:54:43.8658302Z   PYTHONDONTWRITEBYTECODE: 1
+2026-11-04T20:54:43.8659264Z ##[endgroup]
+2026-11-04T20:54:43.9537975Z (node:2177) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-04T20:54:43.9540439Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-04T20:54:44.1137278Z Cache not found for input keys: eth-owned-anthropic-9fbd29ee32ef2ea4fe15afa713145c3cfcc69aad02da8ac94dad8500bd76f92a-41911047958-1, eth-owned-anthropic-9fbd29ee32ef2ea4fe15afa713145c3cfcc69aad02da8ac94dad8500bd76f92a-
+2026-11-04T20:54:44.1265235Z ##[group]Run actions/cache/restore@0400d5f644dc74513175e3cd8d07132dd4860809
+2026-11-04T20:54:44.1265682Z with:
+2026-11-04T20:54:44.1265968Z   path: .ci-cache/anthropic
+2026-11-04T20:54:44.1266540Z   key: eth-owned-anthropic-dd4d7b438fa94c8ca1a9ea561fb4028a8e17cbce3be307a03ce84651ea925bf0-41894905159-1
+2026-11-04T20:54:44.1267097Z   enableCrossOsArchive: false
+2026-11-04T20:54:44.1267470Z   fail-on-cache-miss: false
+2026-11-04T20:54:44.1267798Z   lookup-only: false
+2026-11-04T20:54:44.1268083Z env:
+2026-11-04T20:54:44.1268384Z   PYTHONDONTWRITEBYTECODE: 1
+2026-11-04T20:54:44.1268737Z ##[endgroup]
+2026-11-04T20:54:44.2149933Z (node:2190) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-04T20:54:44.2150727Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-04T20:54:44.3924300Z Cache hit for: eth-owned-anthropic-dd4d7b438fa94c8ca1a9ea561fb4028a8e17cbce3be307a03ce84651ea925bf0-41894905159-1
+2026-11-04T20:54:44.3987424Z (node:2190) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-04T20:54:45.5614022Z Received 120083807 of 124278111 (96.6%), 114.5 MBs/sec
+2026-11-04T20:54:45.5976071Z Received 124278111 of 124278111 (100.0%), 114.3 MBs/sec
+2026-11-04T20:54:45.5977664Z Cache Size: ~119 MB (124278111 B)
+2026-11-04T20:54:45.6082564Z [command]/usr/bin/tar -xf <HOME>/work/_temp/<UUID REDACTED>/cache.tzst -P -C <HOME>/work/eth-proof-replication/eth-proof-replication --use-compress-program unzstd
+2026-11-04T20:54:46.2444504Z Cache restored successfully
+2026-11-04T20:54:46.2623927Z Cache restored from key: eth-owned-anthropic-dd4d7b438fa94c8ca1a9ea561fb4028a8e17cbce3be307a03ce84651ea925bf0-41894905159-1
+2026-11-04T20:54:46.2748170Z ##[group]Run python3 - <<'PY'
+2026-11-04T20:54:46.2748559Z [36;1mpython3 - <<'PY'[0m
+2026-11-04T20:54:46.2748875Z [36;1mimport os[0m
+2026-11-04T20:54:46.2749414Z [36;1mexpected = 'eth-owned-anthropic-dd4d7b438fa94c8ca1a9ea561fb4028a8e17cbce3be307a03ce84651ea925bf0-41894905159-1'[0m
+2026-11-04T20:54:46.2750033Z [36;1mif os.environ['MATCHED_ANCESTOR_CACHE_KEY'] != expected:[0m
+2026-11-04T20:54:46.2750492Z [36;1m    raise SystemExit('refusing a non-exact predecessor cache key')[0m
+2026-11-04T20:54:46.2750953Z [36;1mPY[0m
+2026-11-04T20:54:46.2764054Z shell: /usr/bin/bash -e {0}
+2026-11-04T20:54:46.2764347Z env:
+2026-11-04T20:54:46.2764696Z   PYTHONDONTWRITEBYTECODE: 1
+2026-11-04T20:54:46.2765337Z   MATCHED_ANCESTOR_CACHE_KEY: eth-owned-anthropic-dd4d7b438fa94c8ca1a9ea561fb4028a8e17cbce3be307a03ce84651ea925bf0-41894905159-1
+2026-11-04T20:54:46.2765941Z ##[endgroup]
+2026-11-04T20:54:46.3048153Z ##[group]Run python3 ci/replicate.py anthropic --mode "$ETH_REPLICATION_MODE" --cache-directory "$GITHUB_WORKSPACE/.ci-cache/anthropic" --cleanup-disposable-sdks
+2026-11-04T20:54:46.3049392Z [36;1mpython3 ci/replicate.py anthropic --mode "$ETH_REPLICATION_MODE" --cache-directory "$GITHUB_WORKSPACE/.ci-cache/anthropic" --cleanup-disposable-sdks[0m
+2026-11-04T20:54:46.3063667Z shell: /usr/bin/bash -e {0}
+2026-11-04T20:54:46.3064037Z env:
+2026-11-04T20:54:46.3064352Z   PYTHONDONTWRITEBYTECODE: 1
+2026-11-04T20:54:46.3064792Z   ETH_REPLICATION_MODE: verify
+2026-11-04T20:54:46.3065516Z   ETH_RESTORED_CACHE_KEY: eth-owned-anthropic-dd4d7b438fa94c8ca1a9ea561fb4028a8e17cbce3be307a03ce84651ea925bf0-41894905159-1
+2026-11-04T20:54:46.3066217Z ##[endgroup]
+2026-11-04T20:54:46.3849372Z RUN_START {"actions_cache": "Project-owned completed outputs only,2GiB/proof,4GiB retained total.", "artifact_uploads": false, "export_retention": "Ephemeral VM only; hashes and receipts remain in Actions logs.", "harness": [{"path": "README.md", "sha256": "c8c2e4a5fdeb2c64683ea1afcadf1df6f5f515072086cd9064b626af3857c931", "size_bytes": 15914}, {"path": "ancestor-cache-compatibility.json", "sha256": "114a49bae310c444c5468258df7fddd74c98077370102055d051f5c46eb52d4a", "size_bytes": 8513}, {"path": "cache_maintenance.py", "sha256": "fc1321d4e9c687264a6517dda0ba98bf0ae7596ba519983bbdba4865f38ec6bf", "size_bytes": 4631}, {"path": "check_bc_control.py", "sha256": "20f71662ca0a007ea441f4217ae6605d31e0e72b3d5affb0a353079445f9d3a2", "size_bytes": 4512}, {"path": "check_controls.py", "sha256": "c5b5ab90b218758a43dfaab09bf72942a439cd6fe756fa0ae08408351a1ccbcb", "size_bytes": 10960}, {"path": "check_display_control.py", "sha256": "cbd5851a36d38e0ad5350eea64d7894d8b7708f618e1ca4210afbe46fc9f383b", "size_bytes": 3795}, {"path": "check_landlock_policy_control.py", "sha256": "d2471fa5e1424ef1758aa095318a1a81e07f46c1ef41525c507c803b4fcdc128", "size_bytes": 4563}, {"path": "check_setup_omission_control.py", "sha256": "4789ebe8874af41ac2d568403d85060b2a81f361ce3e27697b2f864a2deb8beb", "size_bytes": 5400}, {"path": "check_stage_name_control.py", "sha256": "749d1fb3f109f7c3878cf2b4dd3c543db3c173828af17b54756fed07413f2571", "size_bytes": 3487}, {"path": "compiler_gate.c", "sha256": "96947ead6565aa2d75b93c09e8bdccba31bc6558517db5df915368efc123dfb3", "size_bytes": 6273}, {"path": "control-result-bc-r2.json", "sha256": "71f34ef370ad5dd25b28f443960b37485c5a2f74a7a62b22345f38b31a15ba3b", "size_bytes": 555}, {"path": "control-result-display-r3.json", "sha256": "3e32a5e560e0e993a44738ea7eb8c69a73c68d229eaefd9c38c42f996e0ab327", "size_bytes": 746}, {"path": "control-result-landlock-policy-r4.json", "sha256": "868caed022e577c87af606a083497b658f495ad026ddbe176f27c11c334d8764", "size_bytes": 708}, {"path": "control-result-r2.json", "sha256": "be559a9f05600526547067307a10fddc94e465b5cf388c127eb614e64c36794b", "size_bytes": 765}, {"path": "control-result-setup-omission-r3.json", "sha256": "60560b19a484638d8cda6ce08e41be3af8ee5b1a30e7d25a055e8d2722629b6b", "size_bytes": 1195}, {"path": "control-result-stage-names-r3.json", "sha256": "b476322adfed7729b2b799e0044f042b0825678a40b685c2679d831af4dd60c3", "size_bytes": 1934}, {"path": "control-result.json", "sha256": "033bd03cc7f33daa0a7ac65413ff999beb8b81dc9c6f221a239b8c35be383aff", "size_bytes": 533}, {"path": "create_gate.py", "sha256": "c5af28dc306d384062ee53dbb34402ab895f82320fa2df015e0f09752959909a", "size_bytes": 3524}, {"path": "landlock_abi.py", "sha256": "d0853c1a67adcec4bbe22d1c44dc835f448b80eebe6502a32450faa59e17e0b0", "size_bytes": 1265}, {"path": "owned_cache.py", "sha256": "dd9b47b1da0240e2fc2bf79a4e6de40543beb37cd5e316eb055f092040f382be", "size_bytes": 11489}, {"path": "pins.json", "sha256": "e0b9f4d376b26247120dc97cee64595ea91b69fad24d5218e811d435a2910a0a", "size_bytes": 1712}, {"path": "prepare_openai.py", "sha256": "5c8830653d328d50dcf3c0cae1488a199ab9c9a4249bbcc3a06f6fd598369f6c", "size_bytes": 5849}, {"path": "record.py", "sha256": "1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0", "size_bytes": 6474}, {"path": "replicate.py", "sha256": "d3d38d581b583891fad340a377ff799dab8d396a26a947b2fffe04d74cd7b77c", "size_bytes": 21177}], "host": {"cpu_count": 4, "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39", "uid": 1001, "uname": ["Linux", "runnervm7aw5e", "7.0.0-1017-azure", "#17~24.04.1-Ubuntu SMP PREEMPT Thu Sep 24 18:46:57 UTC 2026", "x86_64", "x86_64"]}, "mode": "verify", "pins": {"challenge": "Challenge", "commit": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5", "comparator": "575674928e239f5bc452aab72d1dd7b0f1326494", "comparator_lean": "4.34.0-rc1", "exporter": "15f6055e299ad5b89345e533cc2192f4cc00f659", "lean": "4.33.1", "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474", "module": "Solution", "repository": "https://github.com/anthropics/formal-math.git", "theorems": ["MainResults.ethIsFalse", "MainResults.mainTheorem"]}, "proof": "anthropic", "repository": "Truemachinery/eth-proof-replication", "schema": "eth-ci-run/1", "status": "incomplete"}
+2026-11-04T20:54:46.3864077Z STAGE_START {"argv": ["/usr/bin/python3", "<HOME>/work/eth-proof-replication/eth-proof-replication/ci/landlock_abi.py"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "landlock-abi-preflight", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825686.3850052, "stdout_is_export": false, "timeout_seconds": 30}
+2026-11-04T20:54:46.4064228Z | LANDLOCK_ABI {"abi": 8, "minimum_required": 8, "platform": "Linux x86_64", "syscall": 444, "version_query_flag": 1}
+2026-11-04T20:54:46.4067503Z | LANDLOCK_ABI_ACCEPTED
+2026-11-04T20:54:46.4320863Z STAGE_RECEIPT {"argv": ["/usr/bin/python3", "<HOME>/work/eth-proof-replication/eth-proof-replication/ci/landlock_abi.py"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.021552999999999996, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "landlock-abi-preflight", "raw_log_bytes": 138, "raw_log_sha256": "2740bab22240687431e8706f19e11cf8cfcc5d22c987cae4fba221e41d15608c", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825686.3850052, "stdout_is_export": false, "timeout_seconds": 30, "wall_seconds": 0.03288626670837402}
+2026-11-04T20:54:46.4335014Z STAGE_START {"argv": ["go", "install", "github.com/zouuup/landrun/cmd/landrun@811cfff51ceaf3d9843708aa6d22e9b84ccac8b4"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "landrun-build", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825686.4318352, "stdout_is_export": false, "timeout_seconds": 1200}
+2026-11-04T20:54:48.8291719Z | go: downloading github.com/zouuup/landrun v0.1.18-0.20260723122309-811cfff51cea
+2026-11-04T20:54:49.4540467Z | go: downloading github.com/urfave/cli/v3 v3.6.2
+2026-11-04T20:54:49.5981470Z | go: downloading github.com/landlock-lsm/go-landlock v0.9.0
+2026-11-04T20:54:50.8674027Z | go: downloading golang.org/x/sys v0.40.0
+2026-11-04T20:54:50.8685122Z | go: downloading kernel.org/pub/linux/libs/security/libcap/psx v1.2.77
+2026-11-04T20:55:00.5508676Z STAGE_RECEIPT {"argv": ["go", "install", "github.com/zouuup/landrun/cmd/landrun@811cfff51ceaf3d9843708aa6d22e9b84ccac8b4"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 19.627362999999995, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "landrun-build", "raw_log_bytes": 298, "raw_log_sha256": "72f2972d201d7ffb5b61ef8e8bce7cac4783103dd16e921ede6efa3b49044b7b", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825686.4318352, "stdout_is_export": false, "timeout_seconds": 1200, "wall_seconds": 14.108494281768799}
+2026-11-04T20:55:00.5564896Z PREFLIGHT_LANDRUN_IDENTITY {"sha256": "8fe67d5cfc7486932d503db24188313c7884cb22b6fa8118276a0e5d0bf2590a", "size_bytes": 6517255}
+2026-11-04T20:55:00.5578398Z STAGE_START {"argv": ["sudo", "-n", "systemd-run", "--wait", "--pipe", "--collect", "--service-type=exec", "--uid=1001", "--gid=1001", "--property=CPUAccounting=yes", "--property=MemoryAccounting=yes", "--property=RestrictAddressFamilies=~AF_UNIX", "--property=NoNewPrivileges=yes", "--property=RuntimeMaxSec=7195", "--property=TimeoutStopSec=5s", "--property=KillMode=control-group", "--property=MemoryMax=14G", "--working-directory=<HOME>/work/_temp/eth-replication-anthropic", "/usr/bin/env", "-i", "CARGO_BUILD_JOBS=2", "CARGO_HOME=<HOME>/work/_temp/eth-replication-anthropic/home/.cargo", "GIT_CONFIG_NOSYSTEM=1", "GIT_TERMINAL_PROMPT=0", "HOME=<HOME>/work/_temp/eth-replication-anthropic/home", "LANG=C.UTF-8", "LC_ALL=C.UTF-8", "LEAN_ABORT_ON_PANIC=1", "LEAN_NUM_THREADS=2", "PATH=<PATH FIELD REDACTED>", "RUSTUP_HOME=<HOME>/.rustup", "TMPDIR=<HOME>/work/_temp/eth-replication-anthropic<HOME>", "<HOME>/work/_temp/eth-replication-anthropic/tools-bin/landrun", "--best-effort", "--ro", "/", "--rw", "/dev", "-ldd", "-add-exec", "--", "/usr/bin/python3", "-c", "from pathlib import Path\nimport sys\ntry: Path(sys.argv[1]).write_text(\"forbidden\")\nexcept PermissionError: print(\"LANDRUN_WRITE_DENIED\")\nelse: raise SystemExit(92)", "<HOME>/work/_temp/eth-replication-anthropic/landrun-denied/forbidden"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "landrun-enforcement-control", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825700.556415, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:55:00.5673752Z | Running as unit: run-u17.service
+2026-11-04T20:55:00.5993075Z | LANDRUN_WRITE_DENIED
+2026-11-04T20:55:00.6052673Z | Finished with result: success
+2026-11-04T20:55:00.6057160Z | Main processes terminated with: code=exited/status=0
+2026-11-04T20:55:00.6060060Z | Service runtime: 26ms
+2026-11-04T20:55:00.6063376Z | CPU time consumed: 25ms
+2026-11-04T20:55:00.6066862Z | Memory peak: 3.1M
+2026-11-04T20:55:00.6070048Z | Memory swap peak: 0B
+2026-11-04T20:55:00.6232871Z STAGE_RECEIPT {"argv": ["sudo", "-n", "systemd-run", "--wait", "--pipe", "--collect", "--service-type=exec", "--uid=1001", "--gid=1001", "--property=CPUAccounting=yes", "--property=MemoryAccounting=yes", "--property=RestrictAddressFamilies=~AF_UNIX", "--property=NoNewPrivileges=yes", "--property=RuntimeMaxSec=7195", "--property=TimeoutStopSec=5s", "--property=KillMode=control-group", "--property=MemoryMax=14G", "--working-directory=<HOME>/work/_temp/eth-replication-anthropic", "/usr/bin/env", "-i", "CARGO_BUILD_JOBS=2", "CARGO_HOME=<HOME>/work/_temp/eth-replication-anthropic/home/.cargo", "GIT_CONFIG_NOSYSTEM=1", "GIT_TERMINAL_PROMPT=0", "HOME=<HOME>/work/_temp/eth-replication-anthropic/home", "LANG=C.UTF-8", "LC_ALL=C.UTF-8", "LEAN_ABORT_ON_PANIC=1", "LEAN_NUM_THREADS=2", "PATH=<PATH FIELD REDACTED>", "RUSTUP_HOME=<HOME>/.rustup", "TMPDIR=<HOME>/work/_temp/eth-replication-anthropic<HOME>", "<HOME>/work/_temp/eth-replication-anthropic/tools-bin/landrun", "--best-effort", "--ro", "/", "--rw", "/dev", "-ldd", "-add-exec", "--", "/usr/bin/python3", "-c", "from pathlib import Path\nimport sys\ntry: Path(sys.argv[1]).write_text(\"forbidden\")\nexcept PermissionError: print(\"LANDRUN_WRITE_DENIED\")\nelse: raise SystemExit(92)", "<HOME>/work/_temp/eth-replication-anthropic/landrun-denied/forbidden"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.011673000000004041, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "landrun-enforcement-control", "raw_log_bytes": 222, "raw_log_sha256": "d383e5c18fdf6ca6b0262404399042bf2b6120fa217b750e552ddb8ad254d2f9", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825700.556415, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 0.06491637229919434}
+2026-11-04T20:55:00.6247084Z STAGE_START {"argv": ["sudo", "-n", "systemd-run", "--wait", "--pipe", "--collect", "--service-type=exec", "--uid=1001", "--gid=1001", "--property=CPUAccounting=yes", "--property=MemoryAccounting=yes", "--property=RestrictAddressFamilies=~AF_UNIX", "--property=NoNewPrivileges=yes", "--property=RuntimeMaxSec=7195", "--property=TimeoutStopSec=5s", "--property=KillMode=control-group", "--property=MemoryMax=14G", "--working-directory=<HOME>/work/_temp/eth-replication-anthropic", "/usr/bin/env", "-i", "CARGO_BUILD_JOBS=2", "CARGO_HOME=<HOME>/work/_temp/eth-replication-anthropic/home/.cargo", "GIT_CONFIG_NOSYSTEM=1", "GIT_TERMINAL_PROMPT=0", "HOME=<HOME>/work/_temp/eth-replication-anthropic/home", "LANG=C.UTF-8", "LC_ALL=C.UTF-8", "LEAN_ABORT_ON_PANIC=1", "LEAN_NUM_THREADS=2", "PATH=<PATH FIELD REDACTED>", "RUSTUP_HOME=<HOME>/.rustup", "TMPDIR=<HOME>/work/_temp/eth-replication-anthropic<HOME>", "/usr/bin/python3", "-c", "import socket\ntry: socket.socket(socket.AF_UNIX)\nexcept OSError: print(\"AF_UNIX_DENIED\")\nelse: raise SystemExit(93)"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "af-unix-control", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825700.6224117, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:55:00.6317706Z | Running as unit: run-u18.service
+2026-11-04T20:55:00.6563534Z | AF_UNIX_DENIED
+2026-11-04T20:55:00.6614503Z | Finished with result: success
+2026-11-04T20:55:00.6618234Z | Main processes terminated with: code=exited/status=0
+2026-11-04T20:55:00.6622713Z | Service runtime: 20ms
+2026-11-04T20:55:00.6633155Z | CPU time consumed: 19ms
+2026-11-04T20:55:00.6637451Z | Memory peak: 2.8M
+2026-11-04T20:55:00.6644210Z | Memory swap peak: 0B
+2026-11-04T20:55:00.6884619Z STAGE_RECEIPT {"argv": ["sudo", "-n", "systemd-run", "--wait", "--pipe", "--collect", "--service-type=exec", "--uid=1001", "--gid=1001", "--property=CPUAccounting=yes", "--property=MemoryAccounting=yes", "--property=RestrictAddressFamilies=~AF_UNIX", "--property=NoNewPrivileges=yes", "--property=RuntimeMaxSec=7195", "--property=TimeoutStopSec=5s", "--property=KillMode=control-group", "--property=MemoryMax=14G", "--working-directory=<HOME>/work/_temp/eth-replication-anthropic", "/usr/bin/env", "-i", "CARGO_BUILD_JOBS=2", "CARGO_HOME=<HOME>/work/_temp/eth-replication-anthropic/home/.cargo", "GIT_CONFIG_NOSYSTEM=1", "GIT_TERMINAL_PROMPT=0", "HOME=<HOME>/work/_temp/eth-replication-anthropic/home", "LANG=C.UTF-8", "LC_ALL=C.UTF-8", "LEAN_ABORT_ON_PANIC=1", "LEAN_NUM_THREADS=2", "PATH=<PATH FIELD REDACTED>", "RUSTUP_HOME=<HOME>/.rustup", "TMPDIR=<HOME>/work/_temp/eth-replication-anthropic<HOME>", "/usr/bin/python3", "-c", "import socket\ntry: socket.socket(socket.AF_UNIX)\nexcept OSError: print(\"AF_UNIX_DENIED\")\nelse: raise SystemExit(93)"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.01015499999999836, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "af-unix-control", "raw_log_bytes": 216, "raw_log_sha256": "4b4ad00382dc6d7535442ad87c8e7693b8efb23b5b6462c4fe36577c1e6bc8e9", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825700.6224117, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 0.06466150283813477}
+2026-11-04T20:55:00.6891299Z STAGE_START {"argv": ["sudo", "-n", "rm", "-rf", "--", "/usr/local/lib/android", "/usr/share/dotnet", "/opt/ghc", "/opt/hostedtoolcache/CodeQL"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "cleanup-disposable-sdks", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825700.6879797, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:57:42.6554998Z STAGE_RECEIPT {"argv": ["sudo", "-n", "rm", "-rf", "--", "/usr/local/lib/android", "/usr/share/dotnet", "/opt/ghc", "/opt/hostedtoolcache/CodeQL"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 5.319072000000003, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "cleanup-disposable-sdks", "raw_log_bytes": 0, "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825700.6879797, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 161.95195317268372}
+2026-11-04T20:57:42.6557604Z DISK_PREFLIGHT {"free_bytes": 110998269952, "required_bytes": 27917287424}
+2026-11-04T20:57:42.8349521Z STAGE_START {"argv": ["bash", "-c", "uname -a; lscpu; free -b; df -B1 .; go version; cargo --version; rustc --version; cc --version"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "host-inventory", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825862.8338373, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:57:42.8374648Z | Linux runnervm7aw5e 7.0.0-1017-azure #17~24.04.1-Ubuntu SMP PREEMPT Thu Sep 24 18:46:57 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+2026-11-04T20:57:42.8399731Z | Architecture:                            x86_64
+2026-11-04T20:57:42.8402824Z | CPU op-mode(s):                          32-bit, 64-bit
+2026-11-04T20:57:42.8405071Z | Address sizes:                           48 bits physical, 57 bits virtual
+2026-11-04T20:57:42.8408692Z | Byte Order:                              Little Endian
+2026-11-04T20:57:42.8415058Z | CPU(s):                                  4
+2026-11-04T20:57:42.8416011Z | On-line CPU(s) list:                     0-3
+2026-11-04T20:57:42.8417166Z | Vendor ID:                               GenuineIntel
+2026-11-04T20:57:42.8420503Z | Model name:                              INTEL(R) XEON(R) PLATINUM 8573C
+2026-11-04T20:57:42.8423502Z | CPU family:                              6
+2026-11-04T20:57:42.8426291Z | Model:                                   207
+2026-11-04T20:57:42.8428751Z | Thread(s) per core:                      2
+2026-11-04T20:57:42.8431432Z | Core(s) per socket:                      2
+2026-11-04T20:57:42.8433706Z | Socket(s):                               1
+2026-11-04T20:57:42.8436154Z | Stepping:                                2
+2026-11-04T20:57:42.8439165Z | CPU(s) scaling MHz:                      155%
+2026-11-04T20:57:42.8441377Z | CPU max MHz:                             2300.0000
+2026-11-04T20:57:42.8444052Z | CPU min MHz:                             800.0000
+2026-11-04T20:57:42.8446415Z | BogoMIPS:                                4599.99
+2026-11-04T20:57:42.8451357Z | Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch tpr_shadow ept vpid ept_ad fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves user_shstk avx_vnni avx512_bf16 vnmi avx512vbmi umip waitpkg avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq la57 rdpid cldemote movdiri movdir64b fsrm serialize tsxldtrk ibt amx_bf16 avx512_fp16 amx_tile amx_int8 arch_capabilities
+2026-11-04T20:57:42.8454461Z | Virtualization:                          VT-x
+2026-11-04T20:57:42.8455078Z | Hypervisor vendor:                       Microsoft
+2026-11-04T20:57:42.8457675Z | Virtualization type:                     full
+2026-11-04T20:57:42.8460115Z | L1d cache:                               96 KiB (2 instances)
+2026-11-04T20:57:42.8462944Z | L1i cache:                               64 KiB (2 instances)
+2026-11-04T20:57:42.8465126Z | L2 cache:                                4 MiB (2 instances)
+2026-11-04T20:57:42.8467721Z | L3 cache:                                260 MiB (1 instance)
+2026-11-04T20:57:42.8470541Z | NUMA node(s):                            1
+2026-11-04T20:57:42.8473423Z | NUMA node0 CPU(s):                       0-3
+2026-11-04T20:57:42.8476253Z | Vulnerability Gather data sampling:      Not affected
+2026-11-04T20:57:42.8478908Z | Vulnerability Ghostwrite:                Not affected
+2026-11-04T20:57:42.8481529Z | Vulnerability Indirect target selection: Mitigation; Aligned branch/return thunks
+2026-11-04T20:57:42.8484152Z | Vulnerability Itlb multihit:             Not affected
+2026-11-04T20:57:42.8487054Z | Vulnerability L1tf:                      Not affected
+2026-11-04T20:57:42.8489491Z | Vulnerability Mds:                       Not affected
+2026-11-04T20:57:42.8492185Z | Vulnerability Meltdown:                  Not affected
+2026-11-04T20:57:42.8494471Z | Vulnerability Mmio stale data:           Not affected
+2026-11-04T20:57:42.8497088Z | Vulnerability Old microcode:             Not affected
+2026-11-04T20:57:42.8500561Z | Vulnerability Reg file data sampling:    Not affected
+2026-11-04T20:57:42.8503512Z | Vulnerability Retbleed:                  Vulnerable
+2026-11-04T20:57:42.8506082Z | Vulnerability Spec rstack overflow:      Not affected
+2026-11-04T20:57:42.8508657Z | Vulnerability Spec store bypass:         Vulnerable
+2026-11-04T20:57:42.8511645Z | Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+2026-11-04T20:57:42.8515069Z | Vulnerability Spectre v2:                Mitigation; Retpolines; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Retpoline
+2026-11-04T20:57:42.8517087Z | Vulnerability Srbds:                     Not affected
+2026-11-04T20:57:42.8519129Z | Vulnerability Tsa:                       Not affected
+2026-11-04T20:57:42.8521619Z | Vulnerability Tsx async abort:           Not affected
+2026-11-04T20:57:42.8524283Z | Vulnerability Vmscape:                   Not affected
+2026-11-04T20:57:42.8527609Z |                total        used        free      shared  buff/cache   available
+2026-11-04T20:57:42.8543456Z | Mem:     16759308288  1000521728 14064586752    48390144  2071113728 15758786560
+2026-11-04T20:57:42.8544150Z | Swap:     3221221376           0  3221221376
+2026-11-04T20:57:42.8545053Z | Filesystem        1B-blocks        Used    Available Use% Mounted on
+2026-11-04T20:57:42.8545893Z | /dev/root      154894188544 43879178240 110998233088  29% /
+2026-11-04T20:57:42.8556484Z | go version go1.24.13 linux/amd64
+2026-11-04T20:57:43.5874151Z | cargo 1.99.1 (5f94df478 2026-08-27)
+2026-11-04T20:57:44.8196758Z | rustc 1.99.1 (58cf8f9c3 2026-10-13)
+2026-11-04T20:57:45.4937386Z | cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+2026-11-04T20:57:45.4940051Z | Copyright (C) 2023 Free Software Foundation, Inc.
+2026-11-04T20:57:45.4943096Z | This is free software; see the source for copying conditions.  There is NO
+2026-11-04T20:57:45.4945768Z | warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+2026-11-04T20:57:45.4948682Z | 
+2026-11-04T20:57:45.5053772Z STAGE_RECEIPT {"argv": ["bash", "-c", "uname -a; lscpu; free -b; df -B1 .; go version; cargo --version; rustc --version; cc --version"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.050237000000000975, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "host-inventory", "raw_log_bytes": 4279, "raw_log_sha256": "1261e6b678eafee0c0e73a69bf6f6b7b4b351d8fac412d4efdaae76c5e624d33", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825862.8338373, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 2.6704421043395996}
+2026-11-04T20:57:45.5058463Z STAGE_START {"argv": ["curl", "--fail", "--location", "--retry", "3", "--output", "<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux.tar.zst", "https://github.com/leanprover/lean4/releases/download/v4.33.1/lean-4.33.1-linux.tar.zst"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "lean-4.33.1-download", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825865.5051215, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:57:45.5122675Z |   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+2026-11-04T20:57:45.5125111Z |                                  Dload  Upload   Total   Spent    Left  Speed
+2026-11-04T20:57:45.7317120Z | \r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+2026-11-04T20:57:47.5320627Z | \r  6  543M    6 33.2M    0     0  73.7M      0  0:00:07 --:--:--  0:00:07 73.7M\r 66  543M   66  361M    0     0   249M      0  0:00:02  0:00:01  0:00:01  328M\r100  543M  100  543M    0     0   269M      0  0:00:02  0:00:02 --:--:--  325M
+2026-11-04T20:57:47.5758015Z STAGE_RECEIPT {"argv": ["curl", "--fail", "--location", "--retry", "3", "--output", "<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux.tar.zst", "https://github.com/leanprover/lean4/releases/download/v4.33.1/lean-4.33.1-linux.tar.zst"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.7625169999999999, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "lean-4.33.1-download", "raw_log_bytes": 555, "raw_log_sha256": "cc290652d9e9d6d9659544d1e63da2bc3a5193ac28e665ed565a38792f89464d", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825865.5051215, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 2.069462537765503}
+2026-11-04T20:57:47.9755765Z DOWNLOAD_IDENTITY {"url": "https://github.com/leanprover/lean4/releases/download/v4.33.1/lean-4.33.1-linux.tar.zst", "sha256": "890afd185370f85666025b883914ab4f4b339136f8c96167b69cfb62aecaf235", "bytes": 570405234}
+2026-11-04T20:57:47.9765390Z STAGE_START {"argv": ["tar", "--zstd", "-xf", "<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux.tar.zst", "-C", "<HOME>/work/_temp/eth-replication-anthropic"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "lean-4.33.1-extract", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825867.975464, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:57:56.4543393Z STAGE_RECEIPT {"argv": ["tar", "--zstd", "-xf", "<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux.tar.zst", "-C", "<HOME>/work/_temp/eth-replication-anthropic"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 7.72829, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "lean-4.33.1-extract", "raw_log_bytes": 0, "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825867.975464, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 8.180300235748291}
+2026-11-04T20:57:56.6515423Z STAGE_START {"argv": ["curl", "--fail", "--location", "--retry", "3", "--output", "<HOME>/work/_temp/eth-replication-anthropic/lean-4.34.0-rc1-linux.tar.zst", "https://github.com/leanprover/lean4/releases/download/v4.34.0-rc1/lean-4.34.0-rc1-linux.tar.zst"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "lean-4.34.0-rc1-download", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825876.5026317, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:57:56.8844037Z |   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+2026-11-04T20:57:56.8949257Z |                                  Dload  Upload   Total   Spent    Left  Speed
+2026-11-04T20:57:57.0300723Z | \r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+2026-11-04T20:57:58.4921368Z | \r  0  548M    0 16375    0     0  53492      0  2:59:16 --:--:--  2:59:16 53492\r 67  548M   67  370M    0     0   277M      0  0:00:01  0:00:01 --:--:--  361M\r100  548M  100  548M    0     0   313M      0  0:00:01  0:00:01 --:--:--  380M
+2026-11-04T20:57:58.5895584Z STAGE_RECEIPT {"argv": ["curl", "--fail", "--location", "--retry", "3", "--output", "<HOME>/work/_temp/eth-replication-anthropic/lean-4.34.0-rc1-linux.tar.zst", "https://github.com/leanprover/lean4/releases/download/v4.34.0-rc1/lean-4.34.0-rc1-linux.tar.zst"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.6738450000000018, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "lean-4.34.0-rc1-download", "raw_log_bytes": 555, "raw_log_sha256": "814d4979c6f0b5d77cbe32f338c46d52ddb24d28ad5d3f8b16d3789e570ff041", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825876.5026317, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 1.9893910884857178}
+2026-11-04T20:57:58.9957980Z DOWNLOAD_IDENTITY {"url": "https://github.com/leanprover/lean4/releases/download/v4.34.0-rc1/lean-4.34.0-rc1-linux.tar.zst", "sha256": "41dc6a6ec143ece8ed4ba4c4c6978c91f21ad5cbe3c4e7728ad31b869961dc17", "bytes": 575410932}
+2026-11-04T20:57:59.0321821Z STAGE_START {"argv": ["tar", "--zstd", "-xf", "<HOME>/work/_temp/eth-replication-anthropic/lean-4.34.0-rc1-linux.tar.zst", "-C", "<HOME>/work/_temp/eth-replication-anthropic"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "lean-4.34.0-rc1-extract", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825878.9956644, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:58:13.1336072Z STAGE_RECEIPT {"argv": ["tar", "--zstd", "-xf", "<HOME>/work/_temp/eth-replication-anthropic/lean-4.34.0-rc1-linux.tar.zst", "-C", "<HOME>/work/_temp/eth-replication-anthropic"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 7.952680999999998, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "lean-4.34.0-rc1-extract", "raw_log_bytes": 0, "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825878.9956644, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 13.776527166366577}
+2026-11-04T20:58:13.6416113Z STAGE_START {"argv": ["<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux/bin/lean", "--version"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "proof-compiler-version", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825893.4146936, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:58:13.7821941Z | Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+2026-11-04T20:58:13.7892879Z STAGE_RECEIPT {"argv": ["<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux/bin/lean", "--version"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.03426499999999777, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "proof-compiler-version", "raw_log_bytes": 106, "raw_log_sha256": "63f3e16bf0258e2cc0ab3010eb1830723df9bb85097b7b72b0137b9be25a78e9", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825893.4146936, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 0.3674314022064209}
+2026-11-04T20:58:13.8775035Z STAGE_START {"argv": ["<HOME>/work/_temp/eth-replication-anthropic/lean-4.34.0-rc1-linux/bin/lean", "--version"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "tool-compiler-version", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825893.7890923, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:58:14.0032072Z | Lean (version 4.34.0-rc1, x86_64-unknown-linux-gnu, commit 3447a668783dbce1a8fdb97101dd067687b2b418, Release)
+2026-11-04T20:58:14.0112547Z STAGE_RECEIPT {"argv": ["<HOME>/work/_temp/eth-replication-anthropic/lean-4.34.0-rc1-linux/bin/lean", "--version"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.043393000000000015, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "tool-compiler-version", "raw_log_bytes": 110, "raw_log_sha256": "6cd69c5752c644291ede2418997a70e9994409d30b15fe5ef14a1be60f27f8ef", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825893.7890923, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 0.2140505313873291}
+2026-11-04T20:58:14.3997783Z RUNTIME_IDENTITIES [{"files": [{"path": "bin/lake", "sha256": "60330ab6f07dce20f3fa9ebb08e8b984ea9549eac172afeb15d9d2227060e2b3", "size_bytes": 13840}, {"path": "bin/lean", "sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550", "size_bytes": 9024}, {"path": "bin/leanchecker", "sha256": "84bc3e7cd6efa5bfecd1e7c37571fed9428fb2b3e16da0ddf62f2163573486d0", "size_bytes": 50896}, {"path": "lib/lean/libInit_shared.so", "sha256": "2f96493ac9046f64ec7bcb78102a4c1e7cd9a7042487f246af45eda8a96667f5", "size_bytes": 6232}, {"path": "lib/lean/libLake_shared.so", "sha256": "b1d164bf248f35b9e9664e696f4cd05a79a7066065510fb9b459139c78beb354", "size_bytes": 12462304}, {"path": "lib/lean/libleanshared.so", "sha256": "23d636cac1cadcba37beac30eff9b9b20d66cee726cf5defb4ae39f1284a3e5a", "size_bytes": 230925168}, {"path": "lib/lean/libleanshared_1.so", "sha256": "2f96493ac9046f64ec7bcb78102a4c1e7cd9a7042487f246af45eda8a96667f5", "size_bytes": 6232}, {"path": "lib/lean/libleanshared_2.so", "sha256": "2f96493ac9046f64ec7bcb78102a4c1e7cd9a7042487f246af45eda8a96667f5", "size_bytes": 6232}], "version_prefix": "lean-4.33.1-linux"}, {"files": [{"path": "bin/lake", "sha256": "6f53827dab18010d6c690d14c8401cacabc1db958edb3552a877ed4cf1dd995d", "size_bytes": 13840}, {"path": "bin/lean", "sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550", "size_bytes": 9024}, {"path": "bin/leanchecker", "sha256": "722790fcf5d0dd8f5ff033997267e40d354ff365131a7510c551f584673884a4", "size_bytes": 50824}, {"path": "lib/lean/libInit_shared.so", "sha256": "07f8c1156271ab6ec36c14c3031b5572329325d5f73dde3e89a1615d88f4e5cb", "size_bytes": 6264}, {"path": "lib/lean/libLake_shared.so", "sha256": "48ffbc59fbd975fae0bfa86ec2551d0df117f5a781ad70445d9a8f1bcab7fe62", "size_bytes": 12391656}, {"path": "lib/lean/libleanshared.so", "sha256": "5b0640af7f6fcc7bf47e3bd7d1f3b68d5100da50c2f55968b340ac28f4e07bdd", "size_bytes": 231819744}, {"path": "lib/lean/libleanshared_1.so", "sha256": "69e900c025f40bf05c14f5b9ec48071b3130e34c96a7c45ee2eb5b6f307e19e6", "size_bytes": 6264}, {"path": "lib/lean/libleanshared_2.so", "sha256": "38d0a03750b2e8d51161885ad597a8b4f6d3b85215c5a52aecd2b3753273cf3f", "size_bytes": 6264}], "version_prefix": "lean-4.34.0-rc1-linux"}]
+2026-11-04T20:58:14.4593787Z STAGE_START {"argv": ["git", "init", "<HOME>/work/_temp/eth-replication-anthropic/source"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "source-init", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825894.3991575, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:58:14.7612057Z | hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-04T20:58:14.8822025Z | hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-04T20:58:14.8931213Z | hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-04T20:58:14.9604920Z | hint: call:
+2026-11-04T20:58:14.9670272Z | hint:
+2026-11-04T20:58:14.9750676Z | hint: 	git config --global init.defaultBranch <name>
+2026-11-04T20:58:15.0504034Z | hint:
+2026-11-04T20:58:15.0710673Z | hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-04T20:58:15.1411212Z | hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-04T20:58:15.1467251Z | hint:
+2026-11-04T20:58:15.2293778Z | hint: 	git branch -m <name>
+2026-11-04T20:58:15.2330881Z | hint:
+2026-11-04T20:58:15.3072640Z | hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-04T20:58:15.3171015Z | Initialized empty Git repository in <HOME>/work/_temp/eth-replication-anthropic/source/.git/
+2026-11-04T20:58:15.3985789Z STAGE_RECEIPT {"argv": ["git", "init", "<HOME>/work/_temp/eth-replication-anthropic/source"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.0026199999999985124, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "source-init", "raw_log_bytes": 685, "raw_log_sha256": "8c70cdcfd8449a96617740c17ad7ca0c1f14260fa00816a4640378e76c555cc0", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825894.3991575, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 0.9179437160491943}
+2026-11-04T20:58:15.4042793Z STAGE_START {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/source", "remote", "add", "origin", "https://github.com/anthropics/formal-math.git"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "source-remote", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825895.398373, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:58:15.5694882Z STAGE_RECEIPT {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/source", "remote", "add", "origin", "https://github.com/anthropics/formal-math.git"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.0017830000000014223, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "source-remote", "raw_log_bytes": 0, "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825895.398373, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 0.12000083923339844}
+2026-11-04T20:58:15.5822625Z STAGE_START {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/source", "sparse-checkout", "init", "--cone"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "source-sparse-init", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825895.5692635, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:58:15.8176468Z STAGE_RECEIPT {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/source", "sparse-checkout", "init", "--cone"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.0021750000000029246, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "source-sparse-init", "raw_log_bytes": 0, "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825895.5692635, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 0.12703752517700195}
+2026-11-04T20:58:15.8229654Z STAGE_START {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/source", "sparse-checkout", "set", "eth", ".github"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "source-sparse-set", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825895.817381, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:58:15.9543585Z STAGE_RECEIPT {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/source", "sparse-checkout", "set", "eth", ".github"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.001674000000003062, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "source-sparse-set", "raw_log_bytes": 0, "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825895.817381, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 0.11970329284667969}
+2026-11-04T20:58:15.9714061Z STAGE_START {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/source", "fetch", "--depth=1", "--filter=blob:none", "origin", "16a5ce41304fcdaea4e0be7c132e1c361dc26da5"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "source-fetch", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825895.954119, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:58:16.5461624Z | From https://github.com/anthropics/formal-math
+2026-11-04T20:58:16.5750872Z |  * branch            16a5ce41304fcdaea4e0be7c132e1c361dc26da5 -> FETCH_HEAD
+2026-11-04T20:58:16.5933463Z STAGE_RECEIPT {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/source", "fetch", "--depth=1", "--filter=blob:none", "origin", "16a5ce41304fcdaea4e0be7c132e1c361dc26da5"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.03740999999999772, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "source-fetch", "raw_log_bytes": 123, "raw_log_sha256": "f96fe411bc6c29cf4bf3e5c893d3089588b5abb9069c0cde59d7e4d0adbd882d", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825895.954119, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 0.6209487915039062}
+2026-11-04T20:58:16.6213481Z STAGE_START {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/source", "checkout", "--detach", "FETCH_HEAD"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "source-checkout", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825896.5931237, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:58:17.1792798Z | HEAD is now at 16a5ce4 Add eth: paper and Lean 4 formalization of "A 2^o(n) Time Algorithm for 3-SAT" (#31)
+2026-11-04T20:58:17.1869694Z STAGE_RECEIPT {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/source", "checkout", "--detach", "FETCH_HEAD"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.18581699999999834, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "source-checkout", "raw_log_bytes": 108, "raw_log_sha256": "264fd2eeb3948bd4cbae6fbf0285c0229f268bfdc6d0c775db192bedccdb6c26", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825896.5931237, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 0.5929207801818848}
+2026-11-04T20:58:17.2404235Z SOURCE_IDENTITIES {"files": 1069, "manifest_sha256": "ca8aebfcc1da22e53c1eac42382632d9642ea9a23707150a052f6f49adcf3145", "proof_commit": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5"}
+2026-11-04T20:58:17.2416417Z DEPENDENCY_LOCK {"fixedToolchain": false, "lakeDir": ".lake", "name": "eth", "packages": [{"configFile": "lakefile.lean", "inherited": false, "inputRev": "0df444a360eaa60ab8c11dca51a86af692955474", "manifestFile": "lake-manifest.json", "name": "mathlib", "rev": "0df444a360eaa60ab8c11dca51a86af692955474", "scope": "", "subDir": null, "type": "git", "url": "https://github.com/leanprover-community/mathlib4"}, {"configFile": "lakefile.toml", "inherited": true, "inputRev": "main", "manifestFile": "lake-manifest.json", "name": "plausible", "rev": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb", "scope": "leanprover-community", "subDir": null, "type": "git", "url": "https://github.com/leanprover-community/plausible"}, {"configFile": "lakefile.toml", "inherited": true, "inputRev": "main", "manifestFile": "lake-manifest.json", "name": "LeanSearchClient", "rev": "5f4d51b81cbd3f6b32b156bfad9056621a040404", "scope": "leanprover-community", "subDir": null, "type": "git", "url": "https://github.com/leanprover-community/LeanSearchClient"}, {"configFile": "lakefile.toml", "inherited": true, "inputRev": "main", "manifestFile": "lake-manifest.json", "name": "importGraph", "rev": "16f02aa7642864af59f1ff0e384a015994db9118", "scope": "leanprover-community", "subDir": null, "type": "git", "url": "https://github.com/leanprover-community/import-graph"}, {"configFile": "lakefile.lean", "inherited": true, "inputRev": "main", "manifestFile": "lake-manifest.json", "name": "proofwidgets", "rev": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957", "scope": "leanprover-community", "subDir": null, "type": "git", "url": "https://github.com/leanprover-community/ProofWidgets4"}, {"configFile": "lakefile.toml", "inherited": true, "inputRev": "master", "manifestFile": "lake-manifest.json", "name": "aesop", "rev": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e", "scope": "leanprover-community", "subDir": null, "type": "git", "url": "https://github.com/leanprover-community/aesop"}, {"configFile": "lakefile.toml", "inherited": true, "inputRev": "master", "manifestFile": "lake-manifest.json", "name": "Qq", "rev": "92c15be17b7caf78c2ad767ec40f89052d908d81", "scope": "leanprover-community", "subDir": null, "type": "git", "url": "https://github.com/leanprover-community/quote4"}, {"configFile": "lakefile.toml", "inherited": true, "inputRev": "main", "manifestFile": "lake-manifest.json", "name": "batteries", "rev": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d", "scope": "leanprover-community", "subDir": null, "type": "git", "url": "https://github.com/leanprover-community/batteries"}, {"configFile": "lakefile.toml", "inherited": true, "inputRev": "v4.33.0", "manifestFile": "lake-manifest.json", "name": "Cli", "rev": "6130a47896ce867c6a4a55373441e59e565bad0f", "scope": "leanprover", "subDir": null, "type": "git", "url": "https://github.com/leanprover/lean4-cli"}], "packagesDir": ".lake/packages", "version": "1.2.0"}
+2026-11-04T20:58:21.3440280Z OWNED_CACHE_ANCESTOR_INPUT {"cache_backend_id": 10020872295, "context_sha256": "b5c68d05e79b3971cbc05a95dc8aedcc4b9188cfe9912bad1b27efbd398c2f73", "current_context_sha256": "b5c68d05e79b3971cbc05a95dc8aedcc4b9188cfe9912bad1b27efbd398c2f73", "exact_cache_key": "eth-owned-anthropic-dd4d7b438fa94c8ca1a9ea561fb4028a8e17cbce3be307a03ce84651ea925bf0-41894905159-1", "fingerprint": "9c0011429218dd9eb6addf639baad7c55358ef35c15cc96c783dca1ba61af4c0", "job_id": 126801716984, "ledger_sha256": "114a49bae310c444c5468258df7fddd74c98077370102055d051f5c46eb52d4a", "manifest_sha256": "f03170368e5705c17d4354d5bf685822e4d4ffeb9c42f6b046413c5cd95e3ecb", "observed_backend_bytes": 124278111, "producer_commit": "d9a4ad18e3668320bf9d084c7e454ff05e34f2e8", "proof": "anthropic", "recomputed_fingerprint": "9c0011429218dd9eb6addf639baad7c55358ef35c15cc96c783dca1ba61af4c0", "run_id": 41894905159}
+2026-11-04T20:58:22.3138400Z OWNED_CACHE_ANCESTOR_RESTORE {"bytes": 422724863, "cache_backend_id": 10020872295, "context_sha256": "b5c68d05e79b3971cbc05a95dc8aedcc4b9188cfe9912bad1b27efbd398c2f73", "current_context_sha256": "b5c68d05e79b3971cbc05a95dc8aedcc4b9188cfe9912bad1b27efbd398c2f73", "exact_cache_key": "eth-owned-anthropic-dd4d7b438fa94c8ca1a9ea561fb4028a8e17cbce3be307a03ce84651ea925bf0-41894905159-1", "files": 15718, "fingerprint": "9c0011429218dd9eb6addf639baad7c55358ef35c15cc96c783dca1ba61af4c0", "job_id": 126801716984, "ledger_sha256": "114a49bae310c444c5468258df7fddd74c98077370102055d051f5c46eb52d4a", "manifest_sha256": "f03170368e5705c17d4354d5bf685822e4d4ffeb9c42f6b046413c5cd95e3ecb", "observed_backend_bytes": 124278111, "original_manifest_available": "Ephemeral runner records; exact SHA and acceptance remain in logs.", "original_manifest_file": "ancestor-cache-original-f03170368e5705c17d4354d5bf685822e4d4ffeb9c42f6b046413c5cd95e3ecb.json", "producer_commit": "d9a4ad18e3668320bf9d084c7e454ff05e34f2e8", "proof": "anthropic", "recomputed_fingerprint": "9c0011429218dd9eb6addf639baad7c55358ef35c15cc96c783dca1ba61af4c0", "run_id": 41894905159, "status": "payload-validated-and-restored"}
+2026-11-04T20:58:22.3159511Z OWNED_CACHE_RESTORE {"manifest_sha256": "f03170368e5705c17d4354d5bf685822e4d4ffeb9c42f6b046413c5cd95e3ecb", "fingerprint": "9c0011429218dd9eb6addf639baad7c55358ef35c15cc96c783dca1ba61af4c0", "files": 15718, "bytes": 422724863, "completed_modules": 1050}
+2026-11-04T20:58:22.4195836Z STAGE_START {"argv": ["<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux/bin/lake", "exe", "cache", "get"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic/source/eth", "name": "mathlib-official-cache", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825902.318048, "stdout_is_export": false, "timeout_seconds": 2400}
+2026-11-04T20:58:22.5063624Z | info: mathlib: cloning https://github.com/leanprover-community/mathlib4
+2026-11-04T20:58:51.2826208Z | info: mathlib: checking out revision '0df444a360eaa60ab8c11dca51a86af692955474'
+2026-11-04T20:58:52.9513512Z | info: plausible: cloning https://github.com/leanprover-community/plausible
+2026-11-04T20:58:53.4583331Z | info: plausible: checking out revision 'b7eb3304aeae834b12dda98993a37f6a41f6f0bb'
+2026-11-04T20:58:53.4793132Z | info: LeanSearchClient: cloning https://github.com/leanprover-community/LeanSearchClient
+2026-11-04T20:58:53.9113404Z | info: LeanSearchClient: checking out revision '5f4d51b81cbd3f6b32b156bfad9056621a040404'
+2026-11-04T20:58:53.9623327Z | info: importGraph: cloning https://github.com/leanprover-community/import-graph
+2026-11-04T20:58:54.5313769Z | info: importGraph: checking out revision '16f02aa7642864af59f1ff0e384a015994db9118'
+2026-11-04T20:58:54.5575514Z | info: proofwidgets: cloning https://github.com/leanprover-community/ProofWidgets4
+2026-11-04T20:58:55.2385542Z | info: proofwidgets: checking out revision '4be2e3d5087eeb272cf5a8853b8f9dd025ef5957'
+2026-11-04T20:58:55.7604227Z | info: aesop: cloning https://github.com/leanprover-community/aesop
+2026-11-04T20:58:56.8805419Z | info: aesop: checking out revision '3448c0bcc5ce01b2d1546e483ec3620e32df3d0e'
+2026-11-04T20:58:56.8945681Z | info: Qq: cloning https://github.com/leanprover-community/quote4
+2026-11-04T20:58:57.3514199Z | info: Qq: checking out revision '92c15be17b7caf78c2ad767ec40f89052d908d81'
+2026-11-04T20:58:57.3615560Z | info: batteries: cloning https://github.com/leanprover-community/batteries
+2026-11-04T20:58:59.7044325Z | info: batteries: checking out revision '4488d40d070b9700d4d5a6aa342f0d40c31b2a2d'
+2026-11-04T20:58:59.7314255Z | info: Cli: cloning https://github.com/leanprover/lean4-cli
+2026-11-04T20:59:00.0632499Z | info: Cli: checking out revision '6130a47896ce867c6a4a55373441e59e565bad0f'
+2026-11-04T20:59:00.3755137Z | ✔ [1/10] Built Cache.Cli (225ms)
+2026-11-04T20:59:00.8324994Z | ✔ [4/11] Built Cache.Lean (279ms)
+2026-11-04T20:59:01.1204037Z | ✔ [6/26] Built Cache.Infra (312ms)
+2026-11-04T20:59:01.2145019Z | ✔ [7/26] Built Cache.Cli:c.o (100ms)
+2026-11-04T20:59:01.3336007Z | ✔ [8/26] Built Batteries.Tactic.OpenPrivate (825ms)
+2026-11-04T20:59:01.4975589Z | ✔ [9/26] Built Cache.Lean:c.o (221ms)
+2026-11-04T20:59:01.6435300Z | ✔ [10/26] Built Cache.Infra:c.o (189ms)
+2026-11-04T20:59:02.2776880Z | ✔ [11/26] Built Batteries.Tactic.OpenPrivate:c.o (1.0s)
+2026-11-04T20:59:02.4779080Z | ✔ [12/26] Built Cache.IO (1.1s)
+2026-11-04T20:59:03.0788289Z | ✔ [13/26] Built Cache.Hashing (599ms)
+2026-11-04T20:59:03.3791914Z | ✔ [14/26] Built Cache.Hashing:c.o (327ms)
+2026-11-04T20:59:03.7794756Z | ✔ [15/26] Built Cache.IO:c.o (1.3s)
+2026-11-04T20:59:04.8810425Z | ✔ [16/26] Built Cache.Requests (1.5s)
+2026-11-04T20:59:05.3810809Z | ✔ [17/26] Built Cache.Marker (435ms)
+2026-11-04T20:59:05.4811892Z | ✔ [18/26] Built Cache.Marker:c.o (83ms)
+2026-11-04T20:59:05.9818052Z | ✔ [19/26] Built Cache.Query (517ms)
+2026-11-04T20:59:06.1821012Z | ✔ [20/26] Built Cache.Query:c.o (226ms)
+2026-11-04T20:59:06.6827758Z | ✔ [21/26] Built Cache.Warning (487ms)
+2026-11-04T20:59:06.8830305Z | ✔ [22/26] Built Cache.Warning:c.o (191ms)
+2026-11-04T20:59:07.2833965Z | ✔ [23/26] Built Cache.Requests:c.o (2.4s)
+2026-11-04T20:59:07.6837986Z | ✔ [24/26] Built Cache.Main (857ms)
+2026-11-04T20:59:08.4847298Z | ✔ [25/26] Built Cache.Main:c.o (751ms)
+2026-11-04T20:59:09.0874502Z | ✔ [26/26] Built cache:exe (607ms)
+2026-11-04T20:59:10.7179089Z | Current branch: HEAD
+2026-11-04T20:59:10.7181319Z | Using cache from origin: (some leanprover-community/mathlib4)
+2026-11-04T20:59:10.7185351Z | Attempting to download 8690 file(s) from leanprover-community/mathlib4 cache at https://lakecache.blob.core.windows.net/mathlib4-master
+2026-11-04T20:59:14.2982692Z | \rDownloaded: 1 file(s) [attempted 1/8690 = 0%, 35 KB/s], Decompressed: 0\rDownloaded: 96 file(s) [attempted 96/8690 = 1%, 1266 KB/s], Decompressed: 26\rDownloaded: 427 file(s) [attempted 427/8690 = 4%, 1816 KB/s], Decompressed: 26\rDownloaded: 751 file(s) [attempted 751/8690 = 8%, 3523 KB/s], Decompressed: 26\rDownloaded: 1099 file(s) [attempted 1099/8690 = 12%, 7002 KB/s], Decompressed: 89\rDownloaded: 1456 file(s) [attempted 1456/8690 = 16%, 6593 KB/s], Decompressed: 89\rDownloaded: 1773 file(s) [attempted 1773/8690 = 20%, 4611 KB/s], Decompressed: 89\rDownloaded: 2087 file(s) [attempted 2087/8690 = 24%, 9460 KB/s], Decompressed: 89\rDownloaded: 2383 file(s) [attempted 2383/8690 = 27%, 2394 KB/s], Decompressed: 89\rDownloaded: 2722 file(s) [attempted 2722/8690 = 31%, 4657 KB/s], Decompressed: 89\rDownloaded: 3150 file(s) [attempted 3150/8690 = 36%, 6798 KB/s], Decompressed: 89\rDownloaded: 3539 file(s) [attempted 3539/8690 = 40%, 25315 KB/s], Decompressed: 89\rDownloaded: 3986 file(s) [attempted 3986/8690 = 45%, 3598 KB/s], Decompressed: 89\rDownloaded: 4342 file(s) [attempted 4342/8690 = 49%, 5592 KB/s], Decompressed: 89\rDownloaded: 4680 file(s) [attempted 4680/8690 = 53%, 24729 KB/s], Decompressed: 89\rDownloaded: 5091 file(s) [attempted 5091/8690 = 58%, 8027 KB/s], Decompressed: 89\rDownloaded: 5466 file(s) [attempted 5466/8690 = 62%, 12099 KB/s], Decompressed: 89\rDownloaded: 5828 file(s) [attempted 5828/8690 = 67%, 1010 KB/s], Decompressed: 89\rDownloaded: 6223 file(s) [attempted 6223/8690 = 71%, 7485 KB/s], Decompressed: 89\rDownloaded: 6584 file(s) [attempted 6584/8690 = 75%, 302 KB/s], Decompressed: 89\rDownloaded: 6820 file(s) [attempted 6820/8690 = 78%, 270 KB/s], Decompressed: 89\rDownloaded: 7144 file(s) [attempted 7144/8690 = 82%, 1078 KB/s], Decompressed: 89\rDownloaded: 7596 file(s) [attempted 7596/8690 = 87%, 4933 KB/s], Decompressed: 89\rDownloaded: 7879 file(s) [attempted 7879/8690 = 90%, 7100 KB/s], Decompressed: 89\rDownloaded: 8109 file(s) [attempted 8109/8690 = 93%, 4182 KB/s], Decompressed: 89\rDownloaded: 8350 file(s) [attempted 8350/8690 = 96%, 4887 KB/s], Decompressed: 89\rDownloaded: 8689 file(s) [attempted 8689/8690 = 99%, 1858 KB/s], Decompressed: 89\rDownloaded: 8690 file(s) [attempted 8690/8690 = 100%, 1858 KB/s], Decompressed: 89
+2026-11-04T20:59:46.3384890Z | Decompressed 8690 file(s)
+2026-11-04T20:59:46.3639245Z | Already decompressed 8690 file(s)
+2026-11-04T20:59:46.4136403Z STAGE_RECEIPT {"argv": ["<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux/bin/lake", "exe", "cache", "get"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 142.478309, "cwd": "<HOME>/work/_temp/eth-replication-anthropic/source/eth", "exit_code": 0, "name": "mathlib-official-cache", "raw_log_bytes": 4892, "raw_log_sha256": "9b7d0cfeef301915dbada229c338f9521f8cfce7cd52eb779b54851ae3464bfb", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825902.318048, "stdout_is_export": false, "timeout_seconds": 2400, "wall_seconds": 84.0459794998169}
+2026-11-04T20:59:46.4310637Z STAGE_START {"argv": ["git", "init", "<HOME>/work/_temp/eth-replication-anthropic/comparator"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "comparator-init", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825986.4131193, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:59:46.5430678Z | hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-04T20:59:46.5501362Z | hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-04T20:59:46.5510336Z | hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-04T20:59:46.5689153Z | hint: call:
+2026-11-04T20:59:46.5758855Z | hint:
+2026-11-04T20:59:46.5770112Z | hint: 	git config --global init.defaultBranch <name>
+2026-11-04T20:59:46.5779650Z | hint:
+2026-11-04T20:59:46.6141271Z | hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-04T20:59:46.6168899Z | hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-04T20:59:46.6179007Z | hint:
+2026-11-04T20:59:46.6183313Z | hint: 	git branch -m <name>
+2026-11-04T20:59:46.6238771Z | hint:
+2026-11-04T20:59:46.7201647Z | hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-04T20:59:46.7530836Z | Initialized empty Git repository in <HOME>/work/_temp/eth-replication-anthropic/comparator/.git/
+2026-11-04T20:59:46.7681478Z STAGE_RECEIPT {"argv": ["git", "init", "<HOME>/work/_temp/eth-replication-anthropic/comparator"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.0023499999999856414, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "comparator-init", "raw_log_bytes": 689, "raw_log_sha256": "3c665a4ff0b8493cb2a39240256b2a7187e7074db189d47bb9e7df7d26651efc", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825986.4131193, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 0.3399479389190674}
+2026-11-04T20:59:46.7911329Z STAGE_START {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/comparator", "remote", "add", "origin", "https://github.com/leanprover/comparator.git"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "comparator-remote", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825986.767961, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:59:46.8473860Z STAGE_RECEIPT {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/comparator", "remote", "add", "origin", "https://github.com/leanprover/comparator.git"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.001594999999994684, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "comparator-remote", "raw_log_bytes": 0, "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825986.767961, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 0.038858652114868164}
+2026-11-04T20:59:46.8863335Z STAGE_START {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/comparator", "fetch", "--depth=1", "--filter=blob:none", "origin", "575674928e239f5bc452aab72d1dd7b0f1326494"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "comparator-fetch", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825986.8470075, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:59:47.3080599Z | From https://github.com/leanprover/comparator
+2026-11-04T20:59:47.3250313Z |  * branch            575674928e239f5bc452aab72d1dd7b0f1326494 -> FETCH_HEAD
+2026-11-04T20:59:47.3903168Z STAGE_RECEIPT {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/comparator", "fetch", "--depth=1", "--filter=blob:none", "origin", "575674928e239f5bc452aab72d1dd7b0f1326494"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.036746000000000834, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "comparator-fetch", "raw_log_bytes": 122, "raw_log_sha256": "96da3d8eb7d5d368836f378545f3274a48ad8eda919f9b740c9d12512a0e0ce3", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825986.8470075, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 0.47809767723083496}
+2026-11-04T20:59:47.4024890Z STAGE_START {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/comparator", "checkout", "--detach", "FETCH_HEAD"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "comparator-checkout", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825987.3900213, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:59:47.8741282Z | HEAD is now at 5756749 Merge pull request #75 from leanprover/hbv/multikernel
+2026-11-04T20:59:47.8811978Z STAGE_RECEIPT {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/comparator", "checkout", "--detach", "FETCH_HEAD"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.04005200000000997, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "comparator-checkout", "raw_log_bytes": 78, "raw_log_sha256": "e6a222c285479852fbc10d0ebe8a8a9d35706250ec8f5d46e4fb5d7ae8257e8d", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825987.3900213, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 0.4839811325073242}
+2026-11-04T20:59:47.9291886Z STAGE_START {"argv": ["git", "init", "<HOME>/work/_temp/eth-replication-anthropic/exporter"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "exporter-init", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825987.8822794, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:59:47.9970355Z | hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-04T20:59:48.0019537Z | hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-04T20:59:48.0340038Z | hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-04T20:59:48.0342468Z | hint: call:
+2026-11-04T20:59:48.0349673Z | hint:
+2026-11-04T20:59:48.0358270Z | hint: 	git config --global init.defaultBranch <name>
+2026-11-04T20:59:48.0360441Z | hint:
+2026-11-04T20:59:48.0368470Z | hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-04T20:59:48.0371047Z | hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-04T20:59:48.0443632Z | hint:
+2026-11-04T20:59:48.1060378Z | hint: 	git branch -m <name>
+2026-11-04T20:59:48.1192155Z | hint:
+2026-11-04T20:59:48.1389987Z | hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-04T20:59:48.1459199Z | Initialized empty Git repository in <HOME>/work/_temp/eth-replication-anthropic/exporter/.git/
+2026-11-04T20:59:48.1541863Z STAGE_RECEIPT {"argv": ["git", "init", "<HOME>/work/_temp/eth-replication-anthropic/exporter"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.0021720000000229334, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "exporter-init", "raw_log_bytes": 687, "raw_log_sha256": "f9f350bc4733d871ffc70e004fcde951d449d6816225127979342ac355d4e618", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825987.8822794, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 0.2636525630950928}
+2026-11-04T20:59:48.1832011Z STAGE_START {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/exporter", "remote", "add", "origin", "https://github.com/leanprover/lean4export.git"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "exporter-remote", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825988.153978, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:59:48.2342710Z STAGE_RECEIPT {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/exporter", "remote", "add", "origin", "https://github.com/leanprover/lean4export.git"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.0016439999999988686, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "exporter-remote", "raw_log_bytes": 0, "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825988.153978, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 0.06102919578552246}
+2026-11-04T20:59:48.2693760Z STAGE_START {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/exporter", "fetch", "--depth=1", "--filter=blob:none", "origin", "15f6055e299ad5b89345e533cc2192f4cc00f659"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "exporter-fetch", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825988.2340047, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:59:48.7010310Z | From https://github.com/leanprover/lean4export
+2026-11-04T20:59:48.7139375Z |  * branch            15f6055e299ad5b89345e533cc2192f4cc00f659 -> FETCH_HEAD
+2026-11-04T20:59:48.7224833Z STAGE_RECEIPT {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/exporter", "fetch", "--depth=1", "--filter=blob:none", "origin", "15f6055e299ad5b89345e533cc2192f4cc00f659"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.03391599999997652, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "exporter-fetch", "raw_log_bytes": 123, "raw_log_sha256": "114008cb89e1fd908977a3e1f6f1e2c9d60a0c2b367bb462cf19705ea1293de3", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825988.2340047, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 0.4798915386199951}
+2026-11-04T20:59:48.7443540Z STAGE_START {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/exporter", "checkout", "--detach", "FETCH_HEAD"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "exporter-checkout", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825988.7222831, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:59:49.0370995Z | HEAD is now at 15f6055 chore: bump toolchain to v4.33.0 (#44)
+2026-11-04T20:59:49.1283494Z STAGE_RECEIPT {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/exporter", "checkout", "--detach", "FETCH_HEAD"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.035962000000004934, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "exporter-checkout", "raw_log_bytes": 62, "raw_log_sha256": "bf62a767eb8db1b91df05a613df37c7d74acd3a71bb8e204934b82c64a586bc9", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825988.7222831, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 0.3363533020019531}
+2026-11-04T20:59:49.1330789Z STAGE_START {"argv": ["git", "init", "<HOME>/work/_temp/eth-replication-anthropic/nanoda"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "nanoda-init", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825989.129429, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:59:49.1689646Z | hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-04T20:59:49.1691903Z | hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-04T20:59:49.1700054Z | hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-04T20:59:49.1702766Z | hint: call:
+2026-11-04T20:59:49.1709627Z | hint:
+2026-11-04T20:59:49.1719719Z | hint: 	git config --global init.defaultBranch <name>
+2026-11-04T20:59:49.1730029Z | hint:
+2026-11-04T20:59:49.1750180Z | hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-04T20:59:49.1778032Z | hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-04T20:59:49.2089590Z | hint:
+2026-11-04T20:59:49.2108698Z | hint: 	git branch -m <name>
+2026-11-04T20:59:49.2199959Z | hint:
+2026-11-04T20:59:49.2489842Z | hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-04T20:59:49.2809347Z | Initialized empty Git repository in <HOME>/work/_temp/eth-replication-anthropic/nanoda/.git/
+2026-11-04T20:59:49.3143222Z STAGE_RECEIPT {"argv": ["git", "init", "<HOME>/work/_temp/eth-replication-anthropic/nanoda"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.0020280000000028053, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "nanoda-init", "raw_log_bytes": 685, "raw_log_sha256": "ad2379fa34b350adaa0da75d3ab5c5036a0f8d6a1ea569528dc37c885b7ffbd1", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825989.129429, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 0.1515185832977295}
+2026-11-04T20:59:49.3201104Z STAGE_START {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/nanoda", "remote", "add", "origin", "https://github.com/robsimmons/nanoda_lib.git"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "nanoda-remote", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825989.3141828, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:59:49.4322410Z STAGE_RECEIPT {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/nanoda", "remote", "add", "origin", "https://github.com/robsimmons/nanoda_lib.git"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.0015229999999988308, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "nanoda-remote", "raw_log_bytes": 0, "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825989.3141828, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 0.021608829498291016}
+2026-11-04T20:59:49.4691247Z STAGE_START {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/nanoda", "fetch", "--depth=1", "--filter=blob:none", "origin", "68d5ca9db226849b41a6fff59d796ff19d0a8840"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "nanoda-fetch", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825989.4320898, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:59:49.8540146Z | From https://github.com/robsimmons/nanoda_lib
+2026-11-04T20:59:49.8589970Z |  * branch            68d5ca9db226849b41a6fff59d796ff19d0a8840 -> FETCH_HEAD
+2026-11-04T20:59:49.9122791Z STAGE_RECEIPT {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/nanoda", "fetch", "--depth=1", "--filter=blob:none", "origin", "68d5ca9db226849b41a6fff59d796ff19d0a8840"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.034659999999973934, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "nanoda-fetch", "raw_log_bytes": 122, "raw_log_sha256": "f8a318bd82fc2d085059746638d95b791559f9e8c9b31391ca394cbbd487fa47", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825989.4320898, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 0.42684412002563477}
+2026-11-04T20:59:49.9160714Z STAGE_START {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/nanoda", "checkout", "--detach", "FETCH_HEAD"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "nanoda-checkout", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825989.9120026, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:59:50.3450860Z | HEAD is now at 68d5ca9 chore: even more misc. bounds checks
+2026-11-04T20:59:50.4124204Z STAGE_RECEIPT {"argv": ["git", "-C", "<HOME>/work/_temp/eth-replication-anthropic/nanoda", "checkout", "--detach", "FETCH_HEAD"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.03964600000002605, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "nanoda-checkout", "raw_log_bytes": 60, "raw_log_sha256": "e63a510671721fdb751b020d742c2de4cef6bdcc6ee1c9df90101cdb0065b9d6", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825989.9120026, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 0.4686007499694824}
+2026-11-04T20:59:50.4414616Z STAGE_START {"argv": ["<HOME>/work/_temp/eth-replication-anthropic/lean-4.34.0-rc1-linux/bin/lake", "build", "comparator"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic/comparator", "name": "comparator-build", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825990.413481, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T20:59:50.5120484Z | info: lean4export: cloning https://github.com/leanprover/lean4export
+2026-11-04T20:59:51.5060402Z | info: lean4export: checking out revision 'b18d673bd29b476466a51a3be1012df2ed322b10'
+2026-11-04T20:59:51.8335674Z | ✔ [1/4] Built Comparator.Util (224ms)
+2026-11-04T20:59:54.0305555Z | ✔ [5/16] Built Comparator.Util:c.o (94ms)
+2026-11-04T20:59:55.1313229Z | ✔ [6/16] Built Export.Parse (1.2s)
+2026-11-04T20:59:55.5124043Z | ✔ [7/16] Built Comparator.Axioms (385ms)
+2026-11-04T20:59:55.7124983Z | ✔ [8/16] Built Comparator.Axioms:c.o (236ms)
+2026-11-04T20:59:56.1128383Z | ✔ [9/16] Built Comparator.Compare (449ms)
+2026-11-04T20:59:56.5135582Z | ✔ [10/16] Built Comparator.Compare:c.o (319ms)
+2026-11-04T20:59:56.7134603Z | ✔ [11/16] Built Comparator (230ms)
+2026-11-04T20:59:56.7143836Z | ✔ [12/16] Built Comparator:c.o (40ms)
+2026-11-04T20:59:57.9245806Z | ✔ [13/16] Built Main (1.2s)
+2026-11-04T20:59:58.0157609Z | ✔ [14/16] Built Export.Parse:c.o (2.9s)
+2026-11-04T20:59:58.7165379Z | ✔ [15/16] Built Main:c.o (746ms)
+2026-11-04T20:59:59.2222219Z | ✔ [16/16] Built comparator:exe (565ms)
+2026-11-04T20:59:59.2240036Z | Build completed successfully (16 jobs).
+2026-11-04T20:59:59.2284394Z STAGE_RECEIPT {"argv": ["<HOME>/work/_temp/eth-replication-anthropic/lean-4.34.0-rc1-linux/bin/lake", "build", "comparator"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 12.008071999999999, "cwd": "<HOME>/work/_temp/eth-replication-anthropic/comparator", "exit_code": 0, "name": "comparator-build", "raw_log_bytes": 722, "raw_log_sha256": "1693675cc18207fd61de2178204a83d4edb73c0a3b11dc67fef3b4ef611a4f33", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825990.413481, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 8.81105089187622}
+2026-11-04T20:59:59.2402143Z STAGE_START {"argv": ["<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux/bin/lake", "build", "lean4export"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic/exporter", "name": "exporter-build-exact-proof-compiler", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825999.228259, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T21:00:06.5508600Z | ✔ [2/6] Built Export (7.1s)
+2026-11-04T21:00:07.2479788Z | ✔ [3/6] Built Main (693ms)
+2026-11-04T21:00:07.3429970Z | ✔ [4/6] Built Main:c.o (151ms)
+2026-11-04T21:00:08.5617164Z | ✔ [5/6] Built Export:c.o (1.0s)
+2026-11-04T21:00:15.6476814Z | ✔ [6/6] Built lean4export:exe (7.1s)
+2026-11-04T21:00:15.6488092Z | Build completed successfully (6 jobs).
+2026-11-04T21:00:15.6908458Z STAGE_RECEIPT {"argv": ["<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux/bin/lake", "build", "lean4export"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 6.780656999999991, "cwd": "<HOME>/work/_temp/eth-replication-anthropic/exporter", "exit_code": 0, "name": "exporter-build-exact-proof-compiler", "raw_log_bytes": 204, "raw_log_sha256": "5f0fd6284141555514b28de8f9f1d0699afb9fefa621d1e88307a96b9ae69272", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793825999.228259, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 16.461365461349487}
+2026-11-04T21:00:15.6913544Z STAGE_START {"argv": ["cargo", "build", "--release", "--locked", "--jobs", "2"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic/nanoda", "name": "nanoda-build", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793826015.6905754, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T21:00:18.3527785Z |     Updating crates.io index
+2026-11-04T21:00:19.0480618Z |  Downloading crates ...
+2026-11-04T21:00:19.1471194Z |   Downloaded equivalent v1.0.1
+2026-11-04T21:00:19.1599642Z |   Downloaded getrandom v0.2.11
+2026-11-04T21:00:19.1618211Z |   Downloaded autocfg v1.1.0
+2026-11-04T21:00:19.1677253Z |   Downloaded hashbrown v0.16.1
+2026-11-04T21:00:19.1710252Z |   Downloaded cfg-if v1.0.0
+2026-11-04T21:00:19.1724489Z |   Downloaded rustc-hash v1.1.0
+2026-11-04T21:00:19.1738130Z |   Downloaded rand_chacha v0.3.1
+2026-11-04T21:00:19.1745798Z |   Downloaded itoa v1.0.15
+2026-11-04T21:00:19.1770181Z |   Downloaded ppv-lite86 v0.2.17
+2026-11-04T21:00:19.1778567Z |   Downloaded semver v1.0.27
+2026-11-04T21:00:19.1803122Z |   Downloaded num-integer v0.1.46
+2026-11-04T21:00:19.1814647Z |   Downloaded rand_core v0.6.4
+2026-11-04T21:00:19.1824075Z |   Downloaded quote v1.0.35
+2026-11-04T21:00:19.1840586Z |   Downloaded ryu v1.0.20
+2026-11-04T21:00:19.1860045Z |   Downloaded unicode-ident v1.0.12
+2026-11-04T21:00:19.1876923Z |   Downloaded serde_derive v1.0.228
+2026-11-04T21:00:19.1896309Z |   Downloaded num-traits v0.2.17
+2026-11-04T21:00:19.1913534Z |   Downloaded serde_core v1.0.228
+2026-11-04T21:00:19.1932758Z |   Downloaded proc-macro2 v1.0.103
+2026-11-04T21:00:19.1951772Z |   Downloaded rand v0.8.5
+2026-11-04T21:00:19.1974519Z |   Downloaded serde v1.0.228
+2026-11-04T21:00:19.1995605Z |   Downloaded indexmap v2.13.0
+2026-11-04T21:00:19.2022462Z |   Downloaded memchr v2.7.6
+2026-11-04T21:00:19.2053596Z |   Downloaded num-bigint v0.4.4
+2026-11-04T21:00:19.2082407Z |   Downloaded serde_json v1.0.145
+2026-11-04T21:00:19.2124656Z |   Downloaded syn v2.0.111
+2026-11-04T21:00:19.2191167Z |   Downloaded libc v0.2.180
+2026-11-04T21:00:19.2849102Z |    Compiling proc-macro2 v1.0.103
+2026-11-04T21:00:19.2856341Z |    Compiling autocfg v1.1.0
+2026-11-04T21:00:27.9072853Z |    Compiling unicode-ident v1.0.12
+2026-11-04T21:00:28.1001378Z |    Compiling serde_core v1.0.228
+2026-11-04T21:00:32.1055563Z |    Compiling num-traits v0.2.17
+2026-11-04T21:00:33.8129906Z |    Compiling quote v1.0.35
+2026-11-04T21:00:33.9384807Z |    Compiling syn v2.0.111
+2026-11-04T21:00:35.5283073Z |    Compiling serde v1.0.228
+2026-11-04T21:00:35.6141899Z |    Compiling serde_derive v1.0.228
+2026-11-04T21:00:36.4613871Z |    Compiling num-bigint v0.4.4
+2026-11-04T21:00:36.5566796Z |    Compiling serde_json v1.0.145
+2026-11-04T21:00:36.7187905Z |    Compiling num-integer v0.1.46
+2026-11-04T21:00:37.3332759Z |    Compiling equivalent v1.0.1
+2026-11-04T21:00:37.3517753Z |    Compiling ryu v1.0.20
+2026-11-04T21:00:37.4687453Z |    Compiling memchr v2.7.6
+2026-11-04T21:00:37.8551840Z |    Compiling itoa v1.0.15
+2026-11-04T21:00:37.9179901Z |    Compiling hashbrown v0.16.1
+2026-11-04T21:00:38.3228558Z |    Compiling indexmap v2.13.0
+2026-11-04T21:00:39.3886297Z |    Compiling semver v1.0.27
+2026-11-04T21:00:39.6110195Z |    Compiling rustc-hash v1.1.0
+2026-11-04T21:00:40.1900085Z |    Compiling nanoda_lib v0.4.6-beta (<HOME>/work/_temp/eth-replication-anthropic/nanoda)
+2026-11-04T21:00:53.7957862Z |     Finished `release` profile [optimized] target(s) in 38.06s
+2026-11-04T21:00:53.8913511Z STAGE_RECEIPT {"argv": ["cargo", "build", "--release", "--locked", "--jobs", "2"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 23.604015000000004, "cwd": "<HOME>/work/_temp/eth-replication-anthropic/nanoda", "exit_code": 0, "name": "nanoda-build", "raw_log_bytes": 1623, "raw_log_sha256": "4b6430f75b394ffd3b7dbb0a5ecc75366fbaea121006309f09ca69d7094a9800", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793826015.6905754, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 38.19926381111145}
+2026-11-04T21:00:54.1435586Z TOOL_IDENTITIES [{"tool": "comparator", "sha256": "f25185592ce22b0d12c5801553c7caa5a5f7731a30a14226de2be68b27382430", "size_bytes": 121176328}, {"tool": "exporter", "sha256": "805ab4cc6a88dcef109644d201c3142261f524aecaf58b04913a9f029e21e9b5", "size_bytes": 231168568}, {"tool": "nanoda", "sha256": "96262f9654caf518ae97b62137197c65b3418765f9a34d552f3cfa004fa8ad30", "size_bytes": 1307824}, {"tool": "landrun", "sha256": "8fe67d5cfc7486932d503db24188313c7884cb22b6fa8118276a0e5d0bf2590a", "size_bytes": 6517255}]
+2026-11-04T21:00:54.1441635Z STAGE_START {"argv": ["/usr/bin/python3", "<HOME>/work/eth-proof-replication/eth-proof-replication/ci/create_gate.py", "--real-prefix", "<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux", "--output", "<HOME>/work/_temp/eth-replication-anthropic/compiler-gate"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "name": "create-two-slot-compiler-prefix", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793826054.1433856, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T21:00:56.3906210Z | {
+2026-11-04T21:00:56.3907820Z |   "schema": "lean-compiler-gate/1",
+2026-11-04T21:00:56.3916548Z |   "real_compiler": {
+2026-11-04T21:00:56.3919025Z |     "path": "<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux/bin/lean",
+2026-11-04T21:00:56.3921799Z |     "sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+2026-11-04T21:00:56.3925754Z |     "size_bytes": 9024
+2026-11-04T21:00:56.3927604Z |   },
+2026-11-04T21:00:56.3930785Z |   "source": {
+2026-11-04T21:00:56.3933941Z |     "path": "<HOME>/work/eth-proof-replication/eth-proof-replication/ci/compiler_gate.c",
+2026-11-04T21:00:56.3936678Z |     "sha256": "96947ead6565aa2d75b93c09e8bdccba31bc6558517db5df915368efc123dfb3",
+2026-11-04T21:00:56.3938904Z |     "size_bytes": 6273
+2026-11-04T21:00:56.3941312Z |   },
+2026-11-04T21:00:56.3943734Z |   "configuration": {
+2026-11-04T21:00:56.3946429Z |     "path": "<HOME>/work/_temp/eth-replication-anthropic/compiler-gate/gate_config.h",
+2026-11-04T21:00:56.3948778Z |     "sha256": "5d145f9f06b6a0345ed6e9096e6d26b70485d4742844198e42a457cac81a3283",
+2026-11-04T21:00:56.3950823Z |     "size_bytes": 393
+2026-11-04T21:00:56.3953410Z |   },
+2026-11-04T21:00:56.3955771Z |   "gate": {
+2026-11-04T21:00:56.3958947Z |     "path": "<HOME>/work/_temp/eth-replication-anthropic/compiler-gate/prefix/bin/lean",
+2026-11-04T21:00:56.3961449Z |     "sha256": "6839b06eeb37bfd079919c44b5614a2a6b81de5c301b0e447da06dea7307dce6",
+2026-11-04T21:00:56.3963996Z |     "size_bytes": 17280
+2026-11-04T21:00:56.3966793Z |   },
+2026-11-04T21:00:56.3969209Z |   "status": {
+2026-11-04T21:00:56.3971639Z |     "path": "<HOME>/work/_temp/eth-replication-anthropic/compiler-gate/gate-status",
+2026-11-04T21:00:56.3973956Z |     "sha256": "2bfc33a1931a8cdbecaea74a60b7ecebf07678030fe8a25283c2dfa5431de2f7",
+2026-11-04T21:00:56.3976391Z |     "size_bytes": 16496
+2026-11-04T21:00:56.3978942Z |   },
+2026-11-04T21:00:56.3982051Z |   "prefix": "<HOME>/work/_temp/eth-replication-anthropic/compiler-gate/prefix",
+2026-11-04T21:00:56.3983824Z |   "build_commands": [
+2026-11-04T21:00:56.3986303Z |     {
+2026-11-04T21:00:56.3988854Z |       "argv": [
+2026-11-04T21:00:56.3991336Z |         "cc",
+2026-11-04T21:00:56.3994243Z |         "-std=c11",
+2026-11-04T21:00:56.3996805Z |         "-O2",
+2026-11-04T21:00:56.3999264Z |         "-Wall",
+2026-11-04T21:00:56.4002237Z |         "-Wextra",
+2026-11-04T21:00:56.4004851Z |         "-Werror",
+2026-11-04T21:00:56.4007900Z |         "-Wno-deprecated-declarations",
+2026-11-04T21:00:56.4010460Z |         "-Wno-unused-function",
+2026-11-04T21:00:56.4013014Z |         "-I",
+2026-11-04T21:00:56.4015520Z |         "<HOME>/work/_temp/eth-replication-anthropic/compiler-gate",
+2026-11-04T21:00:56.4017871Z |         "<HOME>/work/eth-proof-replication/eth-proof-replication/ci/compiler_gate.c",
+2026-11-04T21:00:56.4020534Z |         "-o",
+2026-11-04T21:00:56.4023596Z |         "<HOME>/work/_temp/eth-replication-anthropic/compiler-gate/prefix/bin/lean",
+2026-11-04T21:00:56.4025952Z |         "-lcrypto"
+2026-11-04T21:00:56.4028211Z |       ],
+2026-11-04T21:00:56.4030477Z |       "exit_code": 0,
+2026-11-04T21:00:56.4033150Z |       "stdout": "",
+2026-11-04T21:00:56.4035343Z |       "stderr": ""
+2026-11-04T21:00:56.4038067Z |     },
+2026-11-04T21:00:56.4040500Z |     {
+2026-11-04T21:00:56.4043198Z |       "argv": [
+2026-11-04T21:00:56.4045541Z |         "cc",
+2026-11-04T21:00:56.4047922Z |         "-std=c11",
+2026-11-04T21:00:56.4050300Z |         "-O2",
+2026-11-04T21:00:56.4052864Z |         "-Wall",
+2026-11-04T21:00:56.4055210Z |         "-Wextra",
+2026-11-04T21:00:56.4057876Z |         "-Werror",
+2026-11-04T21:00:56.4060672Z |         "-Wno-deprecated-declarations",
+2026-11-04T21:00:56.4063198Z |         "-Wno-unused-function",
+2026-11-04T21:00:56.4065478Z |         "-I",
+2026-11-04T21:00:56.4068211Z |         "<HOME>/work/_temp/eth-replication-anthropic/compiler-gate",
+2026-11-04T21:00:56.4070848Z |         "-DGATE_STATUS_EXEC",
+2026-11-04T21:00:56.4073522Z |         "<HOME>/work/eth-proof-replication/eth-proof-replication/ci/compiler_gate.c",
+2026-11-04T21:00:56.4075798Z |         "-o",
+2026-11-04T21:00:56.4078393Z |         "<HOME>/work/_temp/eth-replication-anthropic/compiler-gate/gate-status",
+2026-11-04T21:00:56.4080183Z |         "-lcrypto"
+2026-11-04T21:00:56.4082833Z |       ],
+2026-11-04T21:00:56.4085140Z |       "exit_code": 0,
+2026-11-04T21:00:56.4087794Z |       "stdout": "",
+2026-11-04T21:00:56.4090566Z |       "stderr": ""
+2026-11-04T21:00:56.4093128Z |     }
+2026-11-04T21:00:56.4095798Z |   ],
+2026-11-04T21:00:56.4097992Z |   "environment": {
+2026-11-04T21:00:56.4100227Z |     "LAKE_OVERRIDE_LEAN": "true",
+2026-11-04T21:00:56.4102948Z |     "LEAN_SYSROOT": "<HOME>/work/_temp/eth-replication-anthropic/compiler-gate/prefix",
+2026-11-04T21:00:56.4105422Z |     "ETH_LEAN_SLOTS": "2"
+2026-11-04T21:00:56.4107957Z |   },
+2026-11-04T21:00:56.4110901Z |   "scope": "Compiler admission only; same argv, sources, compiler and normal Lake traces.",
+2026-11-04T21:00:56.4113645Z |   "limitations": [
+2026-11-04T21:00:56.4116850Z |     "No throughput prediction or proof verdict.",
+2026-11-04T21:00:56.4119641Z |     "Change slot count only at a recorded boundary; existing holders retain their slots.",
+2026-11-04T21:00:56.4121997Z |     "Kernel/runtime library identities are supplied by the parent toolchain manifest."
+2026-11-04T21:00:56.4124674Z |   ]
+2026-11-04T21:00:56.4127364Z | }
+2026-11-04T21:00:56.4138268Z STAGE_RECEIPT {"argv": ["/usr/bin/python3", "<HOME>/work/eth-proof-replication/eth-proof-replication/ci/create_gate.py", "--real-prefix", "<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux", "--output", "<HOME>/work/_temp/eth-replication-anthropic/compiler-gate"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.2032430000000005, "cwd": "<HOME>/work/_temp/eth-replication-anthropic", "exit_code": 0, "name": "create-two-slot-compiler-prefix", "raw_log_bytes": 2959, "raw_log_sha256": "21dc52c7e904021051770b79cbdaa553c209c7c09f199c0d3823a612712bf905", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793826054.1433856, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 2.2694780826568604}
+2026-11-04T21:00:56.4143477Z STAGE_START {"argv": ["<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux/bin/lake", "--no-build", "build"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic/source/eth", "name": "normal-real-prefix-trace-check", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793826056.413599, "stdout_is_export": false, "timeout_seconds": 1800}
+2026-11-04T21:01:01.0464576Z | ⚠ [9763/9768] Replayed Challenge
+2026-11-04T21:01:01.0465834Z | warning: Challenge.lean:12:8: declaration uses `sorry`
+2026-11-04T21:01:01.0468826Z | warning: Challenge.lean:16:8: declaration uses `sorry`
+2026-11-04T21:01:01.2141868Z | All targets up-to-date (9768 jobs).
+2026-11-04T21:01:01.2902755Z STAGE_RECEIPT {"argv": ["<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux/bin/lake", "--no-build", "build"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 7.208736000000023, "cwd": "<HOME>/work/_temp/eth-replication-anthropic/source/eth", "exit_code": 0, "name": "normal-real-prefix-trace-check", "raw_log_bytes": 181, "raw_log_sha256": "b0c1e25797acc6c6d6270e45fc1a944eb15cc202aa0a0e401978fcb7eee2ccfa", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793826056.413599, "stdout_is_export": false, "timeout_seconds": 1800, "wall_seconds": 4.875351190567017}
+2026-11-04T21:01:01.3223827Z STAGE_START {"argv": ["sudo", "-n", "systemd-run", "--wait", "--pipe", "--collect", "--service-type=exec", "--uid=1001", "--gid=1001", "--property=CPUAccounting=yes", "--property=MemoryAccounting=yes", "--property=RestrictAddressFamilies=~AF_UNIX", "--property=NoNewPrivileges=yes", "--property=RuntimeMaxSec=7195", "--property=TimeoutStopSec=5s", "--property=KillMode=control-group", "--property=MemoryMax=14G", "--working-directory=<HOME>/work/_temp/eth-replication-anthropic/source/eth", "/usr/bin/env", "-i", "CARGO_BUILD_JOBS=2", "CARGO_HOME=<HOME>/work/_temp/eth-replication-anthropic/home/.cargo", "GIT_CONFIG_NOSYSTEM=1", "GIT_TERMINAL_PROMPT=0", "HOME=<HOME>/work/_temp/eth-replication-anthropic/home", "LANG=C.UTF-8", "LC_ALL=C.UTF-8", "LEAN_ABORT_ON_PANIC=1", "LEAN_NUM_THREADS=2", "LEAN_SYSROOT=<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux", "PATH=<PATH FIELD REDACTED>", "RUSTUP_HOME=<HOME>/.rustup", "TMPDIR=<HOME>/work/_temp/eth-replication-anthropic<HOME>", "<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux/bin/lake", "env", "<HOME>/work/_temp/eth-replication-anthropic/tools-bin/landrun", "--best-effort", "--ro", "/", "--rw", "/dev", "-ldd", "-add-exec", "--env", "PATH", "--env", "HOME", "--env", "LEAN_PATH", "--env", "LEAN_SYSROOT", "--", "<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux/bin/leanchecker", "--fresh", "Solution"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic/source/eth", "name": "fresh-original-version-leanchecker", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793826061.3209379, "stdout_is_export": false, "timeout_seconds": 7200}
+2026-11-04T21:01:01.3346599Z | Running as unit: run-u19.service
+2026-11-04T21:28:36.7780645Z | Finished with result: success
+2026-11-04T21:28:36.7781318Z | Main processes terminated with: code=exited/status=0
+2026-11-04T21:28:36.7784951Z | Service runtime: 27min 35.423s
+2026-11-04T21:28:36.7786714Z | CPU time consumed: 27min 31.849s
+2026-11-04T21:28:36.7789232Z | Memory peak: 6.9M
+2026-11-04T21:28:36.7792558Z | Memory swap peak: 0B
+2026-11-04T21:28:36.8308679Z STAGE_RECEIPT {"argv": ["sudo", "-n", "systemd-run", "--wait", "--pipe", "--collect", "--service-type=exec", "--uid=1001", "--gid=1001", "--property=CPUAccounting=yes", "--property=MemoryAccounting=yes", "--property=RestrictAddressFamilies=~AF_UNIX", "--property=NoNewPrivileges=yes", "--property=RuntimeMaxSec=7195", "--property=TimeoutStopSec=5s", "--property=KillMode=control-group", "--property=MemoryMax=14G", "--working-directory=<HOME>/work/_temp/eth-replication-anthropic/source/eth", "/usr/bin/env", "-i", "CARGO_BUILD_JOBS=2", "CARGO_HOME=<HOME>/work/_temp/eth-replication-anthropic/home/.cargo", "GIT_CONFIG_NOSYSTEM=1", "GIT_TERMINAL_PROMPT=0", "HOME=<HOME>/work/_temp/eth-replication-anthropic/home", "LANG=C.UTF-8", "LC_ALL=C.UTF-8", "LEAN_ABORT_ON_PANIC=1", "LEAN_NUM_THREADS=2", "LEAN_SYSROOT=<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux", "PATH=<PATH FIELD REDACTED>", "RUSTUP_HOME=<HOME>/.rustup", "TMPDIR=<HOME>/work/_temp/eth-replication-anthropic<HOME>", "<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux/bin/lake", "env", "<HOME>/work/_temp/eth-replication-anthropic/tools-bin/landrun", "--best-effort", "--ro", "/", "--rw", "/dev", "-ldd", "-add-exec", "--env", "PATH", "--env", "HOME", "--env", "LEAN_PATH", "--env", "LEAN_SYSROOT", "--", "<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux/bin/leanchecker", "--fresh", "Solution"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.012567000000004214, "cwd": "<HOME>/work/_temp/eth-replication-anthropic/source/eth", "exit_code": 0, "name": "fresh-original-version-leanchecker", "raw_log_bytes": 219, "raw_log_sha256": "2dadef22794e8d9664207e14725a47422e29be3cf78d3fbc90925425e3ad7b62", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793826061.3209379, "stdout_is_export": false, "timeout_seconds": 7200, "wall_seconds": 1655.4832322597504}
+2026-11-04T21:28:36.8465717Z STAGE_START {"argv": ["sudo", "-n", "systemd-run", "--wait", "--pipe", "--collect", "--service-type=exec", "--uid=1001", "--gid=1001", "--property=CPUAccounting=yes", "--property=MemoryAccounting=yes", "--property=RestrictAddressFamilies=~AF_UNIX", "--property=NoNewPrivileges=yes", "--property=RuntimeMaxSec=7195", "--property=TimeoutStopSec=5s", "--property=KillMode=control-group", "--property=MemoryMax=14G", "--working-directory=<HOME>/work/_temp/eth-replication-anthropic/source/eth", "/usr/bin/env", "-i", "CARGO_BUILD_JOBS=2", "CARGO_HOME=<HOME>/work/_temp/eth-replication-anthropic/home/.cargo", "COMPARATOR_LANDRUN=<HOME>/work/_temp/eth-replication-anthropic/tools-bin/landrun", "COMPARATOR_LEAN4EXPORT=<HOME>/work/_temp/eth-replication-anthropic/exporter/.lake/build/bin/lean4export", "COMPARATOR_NANODA=<HOME>/work/_temp/eth-replication-anthropic/nanoda/target/release/nanoda_bin", "GIT_CONFIG_NOSYSTEM=1", "GIT_TERMINAL_PROMPT=0", "HOME=<HOME>/work/_temp/eth-replication-anthropic/home", "LANG=C.UTF-8", "LC_ALL=C.UTF-8", "LEAN_ABORT_ON_PANIC=1", "LEAN_NUM_THREADS=2", "LEAN_SYSROOT=<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux", "PATH=<PATH FIELD REDACTED>", "RUSTUP_HOME=<HOME>/.rustup", "TMPDIR=<HOME>/work/_temp/eth-replication-anthropic<HOME>", "<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux/bin/lake", "env", "<HOME>/work/_temp/eth-replication-anthropic/comparator/.lake/build/bin/comparator", "<HOME>/work/_temp/eth-replication-anthropic/source/eth/comparator.json"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic/source/eth", "name": "comparator-original-config", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793827716.8442776, "stdout_is_export": false, "timeout_seconds": 7200}
+2026-11-04T21:28:36.8649947Z | Running as unit: run-u20.service
+2026-11-04T21:28:37.6600888Z | Building Challenge
+2026-11-04T21:28:43.5668222Z | ⚠ [8707/8708] Replayed Challenge
+2026-11-04T21:28:43.5696192Z | warning: Challenge.lean:12:8: declaration uses `sorry`
+2026-11-04T21:28:43.5698849Z | warning: Challenge.lean:16:8: declaration uses `sorry`
+2026-11-04T21:28:43.5822876Z | Build completed successfully (8708 jobs).
+2026-11-04T21:28:48.9997433Z | Exporting #[Nat, String, String.mk, Char, Quot, Quot.mk, Quot.lift, Quot.ind, MainResults.ethIsFalse, MainResults.mainTheorem, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from Challenge
+2026-11-04T21:28:49.0001046Z | Building Solution
+2026-11-04T21:28:52.8543077Z | Build completed successfully (9516 jobs).
+2026-11-04T21:29:41.5988130Z | Exporting #[Nat, String, String.mk, Char, Quot, Quot.mk, Quot.lift, Quot.ind, MainResults.ethIsFalse, MainResults.mainTheorem, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from Solution
+2026-11-04T21:29:41.5990248Z | Running nanoda kernel on solution
+2026-11-04T21:32:44.9168089Z | nanoda kernel accepts the solution
+2026-11-04T21:32:44.9169646Z | Running Lean default kernel on solution.
+2026-11-04T21:32:44.9172959Z | Lean default kernel accepts the solution
+2026-11-04T21:32:44.9175547Z | Your solution is okay!
+2026-11-04T21:32:44.9493848Z | Finished with result: success
+2026-11-04T21:32:44.9494429Z | Main processes terminated with: code=exited/status=0
+2026-11-04T21:32:44.9495610Z | Service runtime: 4min 8.072s
+2026-11-04T21:32:44.9498867Z | CPU time consumed: 4min 13.410s
+2026-11-04T21:32:44.9501913Z | Memory peak: 6.6M
+2026-11-04T21:32:44.9504795Z | Memory swap peak: 0B
+2026-11-04T21:32:44.9545922Z STAGE_RECEIPT {"argv": ["sudo", "-n", "systemd-run", "--wait", "--pipe", "--collect", "--service-type=exec", "--uid=1001", "--gid=1001", "--property=CPUAccounting=yes", "--property=MemoryAccounting=yes", "--property=RestrictAddressFamilies=~AF_UNIX", "--property=NoNewPrivileges=yes", "--property=RuntimeMaxSec=7195", "--property=TimeoutStopSec=5s", "--property=KillMode=control-group", "--property=MemoryMax=14G", "--working-directory=<HOME>/work/_temp/eth-replication-anthropic/source/eth", "/usr/bin/env", "-i", "CARGO_BUILD_JOBS=2", "CARGO_HOME=<HOME>/work/_temp/eth-replication-anthropic/home/.cargo", "COMPARATOR_LANDRUN=<HOME>/work/_temp/eth-replication-anthropic/tools-bin/landrun", "COMPARATOR_LEAN4EXPORT=<HOME>/work/_temp/eth-replication-anthropic/exporter/.lake/build/bin/lean4export", "COMPARATOR_NANODA=<HOME>/work/_temp/eth-replication-anthropic/nanoda/target/release/nanoda_bin", "GIT_CONFIG_NOSYSTEM=1", "GIT_TERMINAL_PROMPT=0", "HOME=<HOME>/work/_temp/eth-replication-anthropic/home", "LANG=C.UTF-8", "LC_ALL=C.UTF-8", "LEAN_ABORT_ON_PANIC=1", "LEAN_NUM_THREADS=2", "LEAN_SYSROOT=<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux", "PATH=<PATH FIELD REDACTED>", "RUSTUP_HOME=<HOME>/.rustup", "TMPDIR=<HOME>/work/_temp/eth-replication-anthropic<HOME>", "<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux/bin/lake", "env", "<HOME>/work/_temp/eth-replication-anthropic/comparator/.lake/build/bin/comparator", "<HOME>/work/_temp/eth-replication-anthropic/source/eth/comparator.json"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.013127999999966278, "cwd": "<HOME>/work/_temp/eth-replication-anthropic/source/eth", "exit_code": 0, "name": "comparator-original-config", "raw_log_bytes": 1389, "raw_log_sha256": "9e850080d6cda0383698c3d556c361b48d46085316aace8527bf5f277b185614", "reason": null, "schema": "eth-ci-stage/1", "started_utc_epoch": 1793827716.8442776, "stdout_is_export": false, "timeout_seconds": 7200, "wall_seconds": 248.10851907730103}
+2026-11-04T21:32:44.9553881Z ORIGINAL_COMPARATOR_CONFIG {"sha256": "757e5537ccf47d1946521b0b5fb91a230cdcfd8933dc9ab047710709c15ffa7e", "config": {"challenge_module": "Challenge", "solution_module": "Solution", "theorem_names": ["MainResults.ethIsFalse", "MainResults.mainTheorem"], "definition_names": [], "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"], "enable_nanoda": true}}
+2026-11-04T21:32:44.9569986Z STAGE_START {"argv": ["sudo", "-n", "systemd-run", "--wait", "--pipe", "--collect", "--service-type=exec", "--uid=1001", "--gid=1001", "--property=CPUAccounting=yes", "--property=MemoryAccounting=yes", "--property=RestrictAddressFamilies=~AF_UNIX", "--property=NoNewPrivileges=yes", "--property=RuntimeMaxSec=7195", "--property=TimeoutStopSec=5s", "--property=KillMode=control-group", "--property=MemoryMax=14G", "--working-directory=<HOME>/work/_temp/eth-replication-anthropic/source/eth", "/usr/bin/env", "-i", "CARGO_BUILD_JOBS=2", "CARGO_HOME=<HOME>/work/_temp/eth-replication-anthropic/home/.cargo", "GIT_CONFIG_NOSYSTEM=1", "GIT_TERMINAL_PROMPT=0", "HOME=<HOME>/work/_temp/eth-replication-anthropic/home", "LANG=C.UTF-8", "LC_ALL=C.UTF-8", "LEAN_ABORT_ON_PANIC=1", "LEAN_NUM_THREADS=2", "LEAN_SYSROOT=<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux", "PATH=<PATH FIELD REDACTED>", "RUSTUP_HOME=<HOME>/.rustup", "TMPDIR=<HOME>/work/_temp/eth-replication-anthropic<HOME>", "<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux/bin/lake", "env", "<HOME>/work/_temp/eth-replication-anthropic/tools-bin/landrun", "--best-effort", "--ro", "/", "--rw", "/dev", "-ldd", "-add-exec", "--env", "PATH", "--env", "HOME", "--env", "LEAN_PATH", "--env", "LEAN_SYSROOT", "--", "<HOME>/work/_temp/eth-replication-anthropic/exporter/.lake/build/bin/lean4export", "Solution", "--", "MainResults.ethIsFalse", "MainResults.mainTheorem"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "cwd": "<HOME>/work/_temp/eth-replication-anthropic/source/eth", "name": "retained-target-export", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793827964.9555266, "stdout_is_export": true, "timeout_seconds": 1800}
+2026-11-04T21:32:44.9661117Z | Running as unit: run-u21.service
+2026-11-04T22:03:15.2549514Z STAGE_RECEIPT {"argv": ["sudo", "-n", "systemd-run", "--wait", "--pipe", "--collect", "--service-type=exec", "--uid=1001", "--gid=1001", "--property=CPUAccounting=yes", "--property=MemoryAccounting=yes", "--property=RestrictAddressFamilies=~AF_UNIX", "--property=NoNewPrivileges=yes", "--property=RuntimeMaxSec=7195", "--property=TimeoutStopSec=5s", "--property=KillMode=control-group", "--property=MemoryMax=14G", "--working-directory=<HOME>/work/_temp/eth-replication-anthropic/source/eth", "/usr/bin/env", "-i", "CARGO_BUILD_JOBS=2", "CARGO_HOME=<HOME>/work/_temp/eth-replication-anthropic/home/.cargo", "GIT_CONFIG_NOSYSTEM=1", "GIT_TERMINAL_PROMPT=0", "HOME=<HOME>/work/_temp/eth-replication-anthropic/home", "LANG=C.UTF-8", "LC_ALL=C.UTF-8", "LEAN_ABORT_ON_PANIC=1", "LEAN_NUM_THREADS=2", "LEAN_SYSROOT=<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux", "PATH=<PATH FIELD REDACTED>", "RUSTUP_HOME=<HOME>/.rustup", "TMPDIR=<HOME>/work/_temp/eth-replication-anthropic<HOME>", "<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux/bin/lake", "env", "<HOME>/work/_temp/eth-replication-anthropic/tools-bin/landrun", "--best-effort", "--ro", "/", "--rw", "/dev", "-ldd", "-add-exec", "--env", "PATH", "--env", "HOME", "--env", "LEAN_PATH", "--env", "LEAN_SYSROOT", "--", "<HOME>/work/_temp/eth-replication-anthropic/exporter/.lake/build/bin/lean4export", "Solution", "--", "MainResults.ethIsFalse", "MainResults.mainTheorem"], "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.", "child_cpu_seconds": 0.011509000000010872, "cwd": "<HOME>/work/_temp/eth-replication-anthropic/source/eth", "exit_code": 125, "export": {"path": "<HOME>/work/_temp/eth-replication-anthropic/selected-solution.ndjson", "sha256": "0036aef63c1f8566ee1bb9e1efd0cf0d5f0ac2ff60cf613865a4e9fa7e1db97b", "size_bytes": 388769780}, "name": "retained-target-export", "raw_log_bytes": 33, "raw_log_sha256": "70446e13a4238f750344b185c7231fe99c5acc476e131c670db3461467076f0d", "reason": "output pipe remained open after child exit; output pipe remained open after child exit", "schema": "eth-ci-stage/1", "started_utc_epoch": 1793827964.9555266, "stdout_is_export": true, "timeout_seconds": 1800, "wall_seconds": 1830.0090579986572}
+2026-11-04T22:03:21.8916634Z OWNED_CACHE_SNAPSHOT {"cap_bytes": 2147483648, "completed_modules": 1050, "context_sha256": "b5c68d05e79b3971cbc05a95dc8aedcc4b9188cfe9912bad1b27efbd398c2f73", "fingerprint": "4da5f828d783536022960c83ecf631d4d883cf70e8b8bf9f8ce5cdb016ebae9f", "manifest_sha256": "46a5d164e4d16098cc6b3352cf4a05f552f002dea02285b571a70650441a9912", "payload_bytes": 422724863, "proof": "anthropic", "schema": "eth-owned-cache/1", "status": "ready", "total_bytes": 425541455}
+2026-11-04T22:03:21.9016034Z RUN_RECEIPT {"actions_cache": "Project-owned completed outputs only,2GiB/proof,4GiB retained total.", "artifact_uploads": false, "error": "CalledProcessError(125, ['sudo', '-n', 'systemd-run', '--wait', '--pipe', '--collect', '--service-type=exec', '--uid=1001', '--gid=1001', '--property=CPUAccounting=yes', '--property=MemoryAccounting=yes', '--property=RestrictAddressFamilies=~AF_UNIX', '--property=NoNewPrivileges=yes', '--property=RuntimeMaxSec=7195', '--property=TimeoutStopSec=5s', '--property=KillMode=control-group', '--property=MemoryMax=14G', '--working-directory=<HOME>/work/_temp/eth-replication-anthropic/source/eth', '/usr/bin/env', '-i', 'CARGO_BUILD_JOBS=2', 'CARGO_HOME=<HOME>/work/_temp/eth-replication-anthropic/home/.cargo', 'GIT_CONFIG_NOSYSTEM=1', 'GIT_TERMINAL_PROMPT=0', 'HOME=<HOME>/work/_temp/eth-replication-anthropic/home', 'LANG=C.UTF-8', 'LC_ALL=C.UTF-8', 'LEAN_ABORT_ON_PANIC=1', 'LEAN_NUM_THREADS=2', 'LEAN_SYSROOT=<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux', 'PATH=<PATH FIELD REDACTED>', 'RUSTUP_HOME=<HOME>/.rustup', 'TMPDIR=<HOME>/work/_temp/eth-replication-anthropic<HOME>', '<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux/bin/lake', 'env', '<HOME>/work/_temp/eth-replication-anthropic/tools-bin/landrun', '--best-effort', '--ro', '/', '--rw', '/dev', '-ldd', '-add-exec', '--env', 'PATH', '--env', 'HOME', '--env', 'LEAN_PATH', '--env', 'LEAN_SYSROOT', '--', '<HOME>/work/_temp/eth-replication-anthropic/exporter/.lake/build/bin/lean4export', 'Solution', '--', 'MainResults.ethIsFalse', 'MainResults.mainTheorem'])", "export_retention": "Ephemeral VM only; hashes and receipts remain in Actions logs.", "harness": [{"path": "README.md", "sha256": "c8c2e4a5fdeb2c64683ea1afcadf1df6f5f515072086cd9064b626af3857c931", "size_bytes": 15914}, {"path": "ancestor-cache-compatibility.json", "sha256": "114a49bae310c444c5468258df7fddd74c98077370102055d051f5c46eb52d4a", "size_bytes": 8513}, {"path": "cache_maintenance.py", "sha256": "fc1321d4e9c687264a6517dda0ba98bf0ae7596ba519983bbdba4865f38ec6bf", "size_bytes": 4631}, {"path": "check_bc_control.py", "sha256": "20f71662ca0a007ea441f4217ae6605d31e0e72b3d5affb0a353079445f9d3a2", "size_bytes": 4512}, {"path": "check_controls.py", "sha256": "c5b5ab90b218758a43dfaab09bf72942a439cd6fe756fa0ae08408351a1ccbcb", "size_bytes": 10960}, {"path": "check_display_control.py", "sha256": "cbd5851a36d38e0ad5350eea64d7894d8b7708f618e1ca4210afbe46fc9f383b", "size_bytes": 3795}, {"path": "check_landlock_policy_control.py", "sha256": "d2471fa5e1424ef1758aa095318a1a81e07f46c1ef41525c507c803b4fcdc128", "size_bytes": 4563}, {"path": "check_setup_omission_control.py", "sha256": "4789ebe8874af41ac2d568403d85060b2a81f361ce3e27697b2f864a2deb8beb", "size_bytes": 5400}, {"path": "check_stage_name_control.py", "sha256": "749d1fb3f109f7c3878cf2b4dd3c543db3c173828af17b54756fed07413f2571", "size_bytes": 3487}, {"path": "compiler_gate.c", "sha256": "96947ead6565aa2d75b93c09e8bdccba31bc6558517db5df915368efc123dfb3", "size_bytes": 6273}, {"path": "control-result-bc-r2.json", "sha256": "71f34ef370ad5dd25b28f443960b37485c5a2f74a7a62b22345f38b31a15ba3b", "size_bytes": 555}, {"path": "control-result-display-r3.json", "sha256": "3e32a5e560e0e993a44738ea7eb8c69a73c68d229eaefd9c38c42f996e0ab327", "size_bytes": 746}, {"path": "control-result-landlock-policy-r4.json", "sha256": "868caed022e577c87af606a083497b658f495ad026ddbe176f27c11c334d8764", "size_bytes": 708}, {"path": "control-result-r2.json", "sha256": "be559a9f05600526547067307a10fddc94e465b5cf388c127eb614e64c36794b", "size_bytes": 765}, {"path": "control-result-setup-omission-r3.json", "sha256": "60560b19a484638d8cda6ce08e41be3af8ee5b1a30e7d25a055e8d2722629b6b", "size_bytes": 1195}, {"path": "control-result-stage-names-r3.json", "sha256": "b476322adfed7729b2b799e0044f042b0825678a40b685c2679d831af4dd60c3", "size_bytes": 1934}, {"path": "control-result.json", "sha256": "033bd03cc7f33daa0a7ac65413ff999beb8b81dc9c6f221a239b8c35be383aff", "size_bytes": 533}, {"path": "create_gate.py", "sha256": "c5af28dc306d384062ee53dbb34402ab895f82320fa2df015e0f09752959909a", "size_bytes": 3524}, {"path": "landlock_abi.py", "sha256": "d0853c1a67adcec4bbe22d1c44dc835f448b80eebe6502a32450faa59e17e0b0", "size_bytes": 1265}, {"path": "owned_cache.py", "sha256": "dd9b47b1da0240e2fc2bf79a4e6de40543beb37cd5e316eb055f092040f382be", "size_bytes": 11489}, {"path": "pins.json", "sha256": "e0b9f4d376b26247120dc97cee64595ea91b69fad24d5218e811d435a2910a0a", "size_bytes": 1712}, {"path": "prepare_openai.py", "sha256": "5c8830653d328d50dcf3c0cae1488a199ab9c9a4249bbcc3a06f6fd598369f6c", "size_bytes": 5849}, {"path": "record.py", "sha256": "1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0", "size_bytes": 6474}, {"path": "replicate.py", "sha256": "d3d38d581b583891fad340a377ff799dab8d396a26a947b2fffe04d74cd7b77c", "size_bytes": 21177}], "host": {"cpu_count": 4, "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39", "uid": 1001, "uname": ["Linux", "runnervm7aw5e", "7.0.0-1017-azure", "#17~24.04.1-Ubuntu SMP PREEMPT Thu Sep 24 18:46:57 UTC 2026", "x86_64", "x86_64"]}, "mode": "verify", "owned_cache": {"cap_bytes": 2147483648, "completed_modules": 1050, "context_sha256": "b5c68d05e79b3971cbc05a95dc8aedcc4b9188cfe9912bad1b27efbd398c2f73", "fingerprint": "4da5f828d783536022960c83ecf631d4d883cf70e8b8bf9f8ce5cdb016ebae9f", "manifest_sha256": "46a5d164e4d16098cc6b3352cf4a05f552f002dea02285b571a70650441a9912", "payload_bytes": 422724863, "proof": "anthropic", "schema": "eth-owned-cache/1", "status": "ready", "total_bytes": 425541455}, "pins": {"challenge": "Challenge", "commit": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5", "comparator": "575674928e239f5bc452aab72d1dd7b0f1326494", "comparator_lean": "4.34.0-rc1", "exporter": "15f6055e299ad5b89345e533cc2192f4cc00f659", "lean": "4.33.1", "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474", "module": "Solution", "repository": "https://github.com/anthropics/formal-math.git", "theorems": ["MainResults.ethIsFalse", "MainResults.mainTheorem"]}, "proof": "anthropic", "repository": "Truemachinery/eth-proof-replication", "schema": "eth-ci-run/1", "stages": [{"child_cpu_seconds": 0.021552999999999996, "exit_code": 0, "name": "landlock-abi-preflight", "raw_log_sha256": "2740bab22240687431e8706f19e11cf8cfcc5d22c987cae4fba221e41d15608c", "wall_seconds": 0.03288626670837402}, {"child_cpu_seconds": 19.627362999999995, "exit_code": 0, "name": "landrun-build", "raw_log_sha256": "72f2972d201d7ffb5b61ef8e8bce7cac4783103dd16e921ede6efa3b49044b7b", "wall_seconds": 14.108494281768799}, {"child_cpu_seconds": 0.011673000000004041, "exit_code": 0, "name": "landrun-enforcement-control", "raw_log_sha256": "d383e5c18fdf6ca6b0262404399042bf2b6120fa217b750e552ddb8ad254d2f9", "wall_seconds": 0.06491637229919434}, {"child_cpu_seconds": 0.01015499999999836, "exit_code": 0, "name": "af-unix-control", "raw_log_sha256": "4b4ad00382dc6d7535442ad87c8e7693b8efb23b5b6462c4fe36577c1e6bc8e9", "wall_seconds": 0.06466150283813477}, {"child_cpu_seconds": 5.319072000000003, "exit_code": 0, "name": "cleanup-disposable-sdks", "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "wall_seconds": 161.95195317268372}, {"child_cpu_seconds": 0.050237000000000975, "exit_code": 0, "name": "host-inventory", "raw_log_sha256": "1261e6b678eafee0c0e73a69bf6f6b7b4b351d8fac412d4efdaae76c5e624d33", "wall_seconds": 2.6704421043395996}, {"child_cpu_seconds": 0.7625169999999999, "exit_code": 0, "name": "lean-4.33.1-download", "raw_log_sha256": "cc290652d9e9d6d9659544d1e63da2bc3a5193ac28e665ed565a38792f89464d", "wall_seconds": 2.069462537765503}, {"child_cpu_seconds": 7.72829, "exit_code": 0, "name": "lean-4.33.1-extract", "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "wall_seconds": 8.180300235748291}, {"child_cpu_seconds": 0.6738450000000018, "exit_code": 0, "name": "lean-4.34.0-rc1-download", "raw_log_sha256": "814d4979c6f0b5d77cbe32f338c46d52ddb24d28ad5d3f8b16d3789e570ff041", "wall_seconds": 1.9893910884857178}, {"child_cpu_seconds": 7.952680999999998, "exit_code": 0, "name": "lean-4.34.0-rc1-extract", "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "wall_seconds": 13.776527166366577}, {"child_cpu_seconds": 0.03426499999999777, "exit_code": 0, "name": "proof-compiler-version", "raw_log_sha256": "63f3e16bf0258e2cc0ab3010eb1830723df9bb85097b7b72b0137b9be25a78e9", "wall_seconds": 0.3674314022064209}, {"child_cpu_seconds": 0.043393000000000015, "exit_code": 0, "name": "tool-compiler-version", "raw_log_sha256": "6cd69c5752c644291ede2418997a70e9994409d30b15fe5ef14a1be60f27f8ef", "wall_seconds": 0.2140505313873291}, {"child_cpu_seconds": 0.0026199999999985124, "exit_code": 0, "name": "source-init", "raw_log_sha256": "8c70cdcfd8449a96617740c17ad7ca0c1f14260fa00816a4640378e76c555cc0", "wall_seconds": 0.9179437160491943}, {"child_cpu_seconds": 0.0017830000000014223, "exit_code": 0, "name": "source-remote", "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "wall_seconds": 0.12000083923339844}, {"child_cpu_seconds": 0.0021750000000029246, "exit_code": 0, "name": "source-sparse-init", "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "wall_seconds": 0.12703752517700195}, {"child_cpu_seconds": 0.001674000000003062, "exit_code": 0, "name": "source-sparse-set", "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "wall_seconds": 0.11970329284667969}, {"child_cpu_seconds": 0.03740999999999772, "exit_code": 0, "name": "source-fetch", "raw_log_sha256": "f96fe411bc6c29cf4bf3e5c893d3089588b5abb9069c0cde59d7e4d0adbd882d", "wall_seconds": 0.6209487915039062}, {"child_cpu_seconds": 0.18581699999999834, "exit_code": 0, "name": "source-checkout", "raw_log_sha256": "264fd2eeb3948bd4cbae6fbf0285c0229f268bfdc6d0c775db192bedccdb6c26", "wall_seconds": 0.5929207801818848}, {"child_cpu_seconds": 142.478309, "exit_code": 0, "name": "mathlib-official-cache", "raw_log_sha256": "9b7d0cfeef301915dbada229c338f9521f8cfce7cd52eb779b54851ae3464bfb", "wall_seconds": 84.0459794998169}, {"child_cpu_seconds": 0.0023499999999856414, "exit_code": 0, "name": "comparator-init", "raw_log_sha256": "3c665a4ff0b8493cb2a39240256b2a7187e7074db189d47bb9e7df7d26651efc", "wall_seconds": 0.3399479389190674}, {"child_cpu_seconds": 0.001594999999994684, "exit_code": 0, "name": "comparator-remote", "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "wall_seconds": 0.038858652114868164}, {"child_cpu_seconds": 0.036746000000000834, "exit_code": 0, "name": "comparator-fetch", "raw_log_sha256": "96da3d8eb7d5d368836f378545f3274a48ad8eda919f9b740c9d12512a0e0ce3", "wall_seconds": 0.47809767723083496}, {"child_cpu_seconds": 0.04005200000000997, "exit_code": 0, "name": "comparator-checkout", "raw_log_sha256": "e6a222c285479852fbc10d0ebe8a8a9d35706250ec8f5d46e4fb5d7ae8257e8d", "wall_seconds": 0.4839811325073242}, {"child_cpu_seconds": 0.0021720000000229334, "exit_code": 0, "name": "exporter-init", "raw_log_sha256": "f9f350bc4733d871ffc70e004fcde951d449d6816225127979342ac355d4e618", "wall_seconds": 0.2636525630950928}, {"child_cpu_seconds": 0.0016439999999988686, "exit_code": 0, "name": "exporter-remote", "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "wall_seconds": 0.06102919578552246}, {"child_cpu_seconds": 0.03391599999997652, "exit_code": 0, "name": "exporter-fetch", "raw_log_sha256": "114008cb89e1fd908977a3e1f6f1e2c9d60a0c2b367bb462cf19705ea1293de3", "wall_seconds": 0.4798915386199951}, {"child_cpu_seconds": 0.035962000000004934, "exit_code": 0, "name": "exporter-checkout", "raw_log_sha256": "bf62a767eb8db1b91df05a613df37c7d74acd3a71bb8e204934b82c64a586bc9", "wall_seconds": 0.3363533020019531}, {"child_cpu_seconds": 0.0020280000000028053, "exit_code": 0, "name": "nanoda-init", "raw_log_sha256": "ad2379fa34b350adaa0da75d3ab5c5036a0f8d6a1ea569528dc37c885b7ffbd1", "wall_seconds": 0.1515185832977295}, {"child_cpu_seconds": 0.0015229999999988308, "exit_code": 0, "name": "nanoda-remote", "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "wall_seconds": 0.021608829498291016}, {"child_cpu_seconds": 0.034659999999973934, "exit_code": 0, "name": "nanoda-fetch", "raw_log_sha256": "f8a318bd82fc2d085059746638d95b791559f9e8c9b31391ca394cbbd487fa47", "wall_seconds": 0.42684412002563477}, {"child_cpu_seconds": 0.03964600000002605, "exit_code": 0, "name": "nanoda-checkout", "raw_log_sha256": "e63a510671721fdb751b020d742c2de4cef6bdcc6ee1c9df90101cdb0065b9d6", "wall_seconds": 0.4686007499694824}, {"child_cpu_seconds": 12.008071999999999, "exit_code": 0, "name": "comparator-build", "raw_log_sha256": "1693675cc18207fd61de2178204a83d4edb73c0a3b11dc67fef3b4ef611a4f33", "wall_seconds": 8.81105089187622}, {"child_cpu_seconds": 6.780656999999991, "exit_code": 0, "name": "exporter-build-exact-proof-compiler", "raw_log_sha256": "5f0fd6284141555514b28de8f9f1d0699afb9fefa621d1e88307a96b9ae69272", "wall_seconds": 16.461365461349487}, {"child_cpu_seconds": 23.604015000000004, "exit_code": 0, "name": "nanoda-build", "raw_log_sha256": "4b6430f75b394ffd3b7dbb0a5ecc75366fbaea121006309f09ca69d7094a9800", "wall_seconds": 38.19926381111145}, {"child_cpu_seconds": 0.2032430000000005, "exit_code": 0, "name": "create-two-slot-compiler-prefix", "raw_log_sha256": "21dc52c7e904021051770b79cbdaa553c209c7c09f199c0d3823a612712bf905", "wall_seconds": 2.2694780826568604}, {"child_cpu_seconds": 7.208736000000023, "exit_code": 0, "name": "normal-real-prefix-trace-check", "raw_log_sha256": "b0c1e25797acc6c6d6270e45fc1a944eb15cc202aa0a0e401978fcb7eee2ccfa", "wall_seconds": 4.875351190567017}, {"child_cpu_seconds": 0.012567000000004214, "exit_code": 0, "name": "fresh-original-version-leanchecker", "raw_log_sha256": "2dadef22794e8d9664207e14725a47422e29be3cf78d3fbc90925425e3ad7b62", "wall_seconds": 1655.4832322597504}, {"child_cpu_seconds": 0.013127999999966278, "exit_code": 0, "name": "comparator-original-config", "raw_log_sha256": "9e850080d6cda0383698c3d556c361b48d46085316aace8527bf5f277b185614", "wall_seconds": 248.10851907730103}, {"child_cpu_seconds": 0.011509000000010872, "exit_code": 125, "name": "retained-target-export", "raw_log_sha256": "70446e13a4238f750344b185c7231fe99c5acc476e131c670db3461467076f0d", "wall_seconds": 1830.0090579986572}], "status": "incomplete"}
+2026-11-04T22:03:21.9817666Z Traceback (most recent call last):
+2026-11-04T22:03:21.9819793Z   File "<HOME>/work/eth-proof-replication/eth-proof-replication/ci/replicate.py", line 296, in <module>
+2026-11-04T22:03:21.9820268Z     main()
+2026-11-04T22:03:21.9820625Z   File "<HOME>/work/eth-proof-replication/eth-proof-replication/ci/replicate.py", line 261, in main
+2026-11-04T22:03:21.9821498Z     run('retained-target-export', isolated([proof_prefix / 'bin/lake', 'env', *export_command], project, penv),
+2026-11-04T22:03:21.9822064Z   File "<HOME>/work/eth-proof-replication/eth-proof-replication/ci/replicate.py", line 83, in run
+2026-11-04T22:03:21.9822839Z     return rec.run(name, argv, cwd, environment or env, **kwargs)
+2026-11-04T22:03:21.9823148Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-04T22:03:21.9823552Z   File "<HOME>/work/eth-proof-replication/eth-proof-replication/ci/record.py", line 150, in run
+2026-11-04T22:03:21.9823967Z     raise subprocess.CalledProcessError(code, argv)
+2026-11-04T22:03:21.9828998Z subprocess.CalledProcessError: Command '['sudo', '-n', 'systemd-run', '--wait', '--pipe', '--collect', '--service-type=exec', '--uid=1001', '--gid=1001', '--property=CPUAccounting=yes', '--property=MemoryAccounting=yes', '--property=RestrictAddressFamilies=~AF_UNIX', '--property=NoNewPrivileges=yes', '--property=RuntimeMaxSec=7195', '--property=TimeoutStopSec=5s', '--property=KillMode=control-group', '--property=MemoryMax=14G', '--working-directory=<HOME>/work/_temp/eth-replication-anthropic/source/eth', '/usr/bin/env', '-i', 'CARGO_BUILD_JOBS=2', 'CARGO_HOME=<HOME>/work/_temp/eth-replication-anthropic/home/.cargo', 'GIT_CONFIG_NOSYSTEM=1', 'GIT_TERMINAL_PROMPT=0', 'HOME=<HOME>/work/_temp/eth-replication-anthropic/home', 'LANG=C.UTF-8', 'LC_ALL=C.UTF-8', 'LEAN_ABORT_ON_PANIC=1', 'LEAN_NUM_THREADS=2', 'LEAN_SYSROOT=<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux', 'PATH=<PATH FIELD REDACTED>', 'RUSTUP_HOME=<HOME>/.rustup', 'TMPDIR=<HOME>/work/_temp/eth-replication-anthropic<HOME>', '<HOME>/work/_temp/eth-replication-anthropic/lean-4.33.1-linux/bin/lake', 'env', '<HOME>/work/_temp/eth-replication-anthropic/tools-bin/landrun', '--best-effort', '--ro', '/', '--rw', '/dev', '-ldd', '-add-exec', '--env', 'PATH', '--env', 'HOME', '--env', 'LEAN_PATH', '--env', 'LEAN_SYSROOT', '--', '<HOME>/work/_temp/eth-replication-anthropic/exporter/.lake/build/bin/lean4export', 'Solution', '--', 'MainResults.ethIsFalse', 'MainResults.mainTheorem']' returned non-zero exit status 125.
+2026-11-04T22:03:22.0588383Z ##[error]Process completed with exit code 1.
+2026-11-04T22:03:22.1643597Z ##[group]Run python3 - <<'PY'
+2026-11-04T22:03:22.1643901Z [36;1mpython3 - <<'PY'[0m
+2026-11-04T22:03:22.1644146Z [36;1mimport hashlib, json, os, subprocess, sys[0m
+2026-11-04T22:03:22.1644422Z [36;1mfrom pathlib import Path[0m
+2026-11-04T22:03:22.1644660Z [36;1mproof = 'anthropic'[0m
+2026-11-04T22:03:22.1644967Z [36;1mdirectory = Path(os.environ['GITHUB_WORKSPACE']) / '.ci-cache' / proof[0m
+2026-11-04T22:03:22.1645495Z [36;1mfinished = Path(os.environ['RUNNER_TEMP']) / ('eth-replication-' + proof) / 'finished.json'[0m
+2026-11-04T22:03:22.1645898Z [36;1mmanifest = directory / 'manifest.json'[0m
+2026-11-04T22:03:22.1646140Z [36;1mtry:[0m
+2026-11-04T22:03:22.1646355Z [36;1m    record = json.loads(finished.read_text())[0m
+2026-11-04T22:03:22.1646644Z [36;1m    snapshot = record.get('owned_cache', {})[0m
+2026-11-04T22:03:22.1647016Z [36;1m    ready = (record.get('schema') == 'eth-ci-run/1' and record.get('proof') == proof[0m
+2026-11-04T22:03:22.1647495Z [36;1m             and snapshot.get('proof') == proof and snapshot.get('status') == 'ready'[0m
+2026-11-04T22:03:22.1647988Z [36;1m             and snapshot.get('manifest_sha256') == hashlib.sha256(manifest.read_bytes()).hexdigest())[0m
+2026-11-04T22:03:22.1648430Z [36;1mexcept (OSError, ValueError, TypeError, AttributeError):[0m
+2026-11-04T22:03:22.1648730Z [36;1m    ready = False[0m
+2026-11-04T22:03:22.1648933Z [36;1mif not ready:[0m
+2026-11-04T22:03:22.1649294Z [36;1m    print('CACHE_RETENTION_SKIPPED no finalized matching snapshot; predecessor backend unchanged')[0m
+2026-11-04T22:03:22.1649690Z [36;1m    raise SystemExit(0)[0m
+2026-11-04T22:03:22.1650118Z [36;1msubprocess.run([sys.executable, 'ci/cache_maintenance.py', proof, '--directory', str(directory)], check=True)[0m
+2026-11-04T22:03:22.1650524Z [36;1mPY[0m
+2026-11-04T22:03:22.1906136Z shell: /usr/bin/bash -e {0}
+2026-11-04T22:03:22.1906391Z env:
+2026-11-04T22:03:22.1906582Z   PYTHONDONTWRITEBYTECODE: 1
+2026-11-04T22:03:22.1908734Z   GH_TOKEN: ***
+2026-11-04T22:03:22.1908935Z ##[endgroup]
+2026-11-04T22:03:23.2961732Z CACHE_DELETED {"id": 10020872295, "key": "eth-owned-anthropic-dd4d7b438fa94c8ca1a9ea561fb4028a8e17cbce3be307a03ce84651ea925bf0-41894905159-1", "bytes": 124278111}
+2026-11-04T22:03:23.2963115Z CACHE_SAVE_ALLOWED {"proof": "anthropic", "manifest_sha256": "46a5d164e4d16098cc6b3352cf4a05f552f002dea02285b571a70650441a9912", "payload_bytes": 422724863, "max_each_bytes": 2147483648, "max_total_bytes": 4294967296}
+2026-11-04T22:03:23.3979651Z ##[group]Run actions/cache/save@0400d5f644dc74513175e3cd8d07132dd4860809
+2026-11-04T22:03:23.3979974Z with:
+2026-11-04T22:03:23.3980169Z   path: .ci-cache/anthropic
+2026-11-04T22:03:23.3980607Z   key: eth-owned-anthropic-9fbd29ee32ef2ea4fe15afa713145c3cfcc69aad02da8ac94dad8500bd76f92a-41911047958-1
+2026-11-04T22:03:23.3981058Z   enableCrossOsArchive: false
+2026-11-04T22:03:23.3981266Z env:
+2026-11-04T22:03:23.3981459Z   PYTHONDONTWRITEBYTECODE: 1
+2026-11-04T22:03:23.3981662Z ##[endgroup]
+2026-11-04T22:03:23.5271541Z (node:5894) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-04T22:03:23.5272132Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-04T22:03:23.5461749Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C <HOME>/work/eth-proof-replication/eth-proof-replication --files-from manifest.txt --use-compress-program zstdmt
+2026-11-04T22:03:24.6446653Z (node:5894) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-04T22:03:25.6385651Z Sent 65011712 of 124275878 (52.3%), 62.0 MBs/sec
+2026-11-04T22:03:26.6383755Z Sent 124275878 of 124275878 (100.0%), 59.3 MBs/sec
+2026-11-04T22:03:26.9379374Z Cache saved with key: eth-owned-anthropic-9fbd29ee32ef2ea4fe15afa713145c3cfcc69aad02da8ac94dad8500bd76f92a-41911047958-1
+2026-11-04T22:03:26.9467227Z ##[group]Run python3 ci/cache_maintenance.py anthropic --directory "$GITHUB_WORKSPACE/.ci-cache/anthropic" --audit-only
+2026-11-04T22:03:26.9468002Z [36;1mpython3 ci/cache_maintenance.py anthropic --directory "$GITHUB_WORKSPACE/.ci-cache/anthropic" --audit-only[0m
+2026-11-04T22:03:26.9481426Z shell: /usr/bin/bash -e {0}
+2026-11-04T22:03:26.9481659Z env:
+2026-11-04T22:03:26.9481857Z   PYTHONDONTWRITEBYTECODE: 1
+2026-11-04T22:03:26.9484219Z   GH_TOKEN: ***
+2026-11-04T22:03:26.9484442Z ##[endgroup]
+2026-11-04T22:03:27.8169650Z CACHE_BACKEND_AUDIT {"entries": [{"id": 10025744473, "key": "eth-owned-anthropic-9fbd29ee32ef2ea4fe15afa713145c3cfcc69aad02da8ac94dad8500bd76f92a-41911047958-1", "size_in_bytes": 124275878}], "total_bytes": 124275878, "max_each_bytes": 2147483648, "max_total_bytes": 4294967296}
+2026-11-04T22:03:27.8444965Z ##[group]Run exit 1
+2026-11-04T22:03:27.8445200Z [36;1mexit 1[0m
+2026-11-04T22:03:27.8456474Z shell: /usr/bin/bash -e {0}
+2026-11-04T22:03:27.8456694Z env:
+2026-11-04T22:03:27.8456912Z   PYTHONDONTWRITEBYTECODE: 1
+2026-11-04T22:03:27.8457131Z ##[endgroup]
+2026-11-04T22:03:27.8486682Z ##[error]Process completed with exit code 1.
+2026-11-04T22:03:27.8571576Z Post job cleanup.
+2026-11-04T22:03:27.9324340Z [command]/usr/bin/git version
+2026-11-04T22:03:27.9359540Z git version 2.56.0
+2026-11-04T22:03:27.9389438Z Temporarily overriding HOME='<HOME>/work/_temp/<UUID REDACTED>' before making global git config changes
+2026-11-04T22:03:27.9390668Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-04T22:03:27.9394838Z [command]/usr/bin/git config --global --add safe.directory <HOME>/work/eth-proof-replication/eth-proof-replication
+2026-11-04T22:03:27.9430022Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-04T22:03:27.9457568Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-04T22:03:27.9656875Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-04T22:03:27.9853003Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-04T22:03:27.9970579Z Cleaning up orphan processes
+2026-11-04T22:03:28.0456063Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/cache/restore@0400d5f644dc74513175e3cd8d07132dd4860809, actions/cache/save@0400d5f644dc74513175e3cd8d07132dd4860809, actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

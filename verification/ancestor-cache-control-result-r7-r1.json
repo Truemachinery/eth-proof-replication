@@ -1,0 +1,140 @@
+{
+  "schema": "eth-ancestor-cache-control/1",
+  "scope": "Synthetic owned-output identity/ownership and actual workflow-guard controls; no real Actions cache restore, Lean trace check or ETH verification.",
+  "script_sha256": "290c6b9c06c95c9471cd292d429c389369af454f043d2ee9d168a514539e94d8",
+  "inputs": {
+    "owned_cache.py": "cc765ac2b127eeb171afa43f40d1ad15e435c94c14dedd070a647a5ecdb32431",
+    "replicate.py": "791007e37c684caa0001f0f34af40c81b2ebce84c854303fe5a7d448f429417f",
+    "ancestor-cache-compatibility.json": "247130dc03d737b2ab46ec0898cb5d3438b3faa8b2618dc9b04495ccef5cdd40",
+    "workflow": "33c8581f513743184a8c198778e015613e39533a24f7047ac340506a746a0412"
+  },
+  "checks": [
+    {
+      "name": "closed-production-receipt-binding",
+      "passed": true,
+      "actual_cache_bytes_validated": false
+    },
+    {
+      "name": "exact-R6-old24-current23-row-shapes-and-baseline-hashes",
+      "passed": true
+    },
+    {
+      "name": "normal-current-fingerprint-acceptance",
+      "passed": true
+    },
+    {
+      "name": "accept-and-preserve",
+      "passed": true,
+      "expected_acceptance": true,
+      "rejection": null
+    },
+    {
+      "name": "source-drift",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "ancestor source/config/runtime context mismatch"
+    },
+    {
+      "name": "config-drift",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "ancestor source/config/runtime context mismatch"
+    },
+    {
+      "name": "runtime-drift",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "ancestor source/config/runtime context mismatch"
+    },
+    {
+      "name": "wrong-proof",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "cache identity does not match exact harness/source/toolchain/config pins"
+    },
+    {
+      "name": "missing-key",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "cache identity does not match exact harness/source/toolchain/config pins"
+    },
+    {
+      "name": "prefix-only-key",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "cache identity does not match exact harness/source/toolchain/config pins"
+    },
+    {
+      "name": "manifest-drift",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "ancestor manifest SHA mismatch"
+    },
+    {
+      "name": "payload-hash-drift",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "cached file size/hash mismatch"
+    },
+    {
+      "name": "unowned-path",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "unexpected/duplicate cached path"
+    },
+    {
+      "name": "duplicate-path",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "unexpected/duplicate cached path"
+    },
+    {
+      "name": "producer-driver-drift",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "unreviewed current harness bytes: replicate.py"
+    },
+    {
+      "name": "producer-row-drift",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "ancestor fingerprint does not match CURRENT context"
+    },
+    {
+      "name": "workflow-drift",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "unreviewed current workflow bytes"
+    },
+    {
+      "name": "no-overwrite",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "restore would overwrite an existing project output"
+    },
+    {
+      "name": "old-ledger-omission",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "invalid pinned predecessor harness rows"
+    },
+    {
+      "name": "current-ledger-row-inclusion",
+      "passed": true,
+      "expected_acceptance": false,
+      "rejection": "invalid reviewed current harness rows"
+    },
+    {
+      "name": "metadata-excluded-from-proof-env",
+      "passed": true
+    },
+    {
+      "name": "actual-workflow-guard-exact-vs-prefix",
+      "passed": true,
+      "guard_sha256": "bb14c0193778c3c039219c86fbfe603f65fa65a3aaa2d26d7ac736c435ee712f"
+    }
+  ],
+  "passed": true,
+  "wall_seconds": 1.106940250028856,
+  "child_cpu_seconds": 0.09362599999999999
+}

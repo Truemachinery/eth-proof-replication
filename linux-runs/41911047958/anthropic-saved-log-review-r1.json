@@ -1,0 +1,799 @@
+{
+  "cache_lineage": {
+    "ancestor_input": {
+      "data": {
+        "cache_backend_id": 10020872295,
+        "context_sha256": "b5c68d05e79b3971cbc05a95dc8aedcc4b9188cfe9912bad1b27efbd398c2f73",
+        "current_context_sha256": "b5c68d05e79b3971cbc05a95dc8aedcc4b9188cfe9912bad1b27efbd398c2f73",
+        "exact_cache_key": "eth-owned-anthropic-dd4d7b438fa94c8ca1a9ea561fb4028a8e17cbce3be307a03ce84651ea925bf0-41894905159-1",
+        "fingerprint": "9c0011429218dd9eb6addf639baad7c55358ef35c15cc96c783dca1ba61af4c0",
+        "job_id": 126801716984,
+        "ledger_sha256": "114a49bae310c444c5468258df7fddd74c98077370102055d051f5c46eb52d4a",
+        "manifest_sha256": "f03170368e5705c17d4354d5bf685822e4d4ffeb9c42f6b046413c5cd95e3ecb",
+        "observed_backend_bytes": 124278111,
+        "producer_commit": "d9a4ad18e3668320bf9d084c7e454ff05e34f2e8",
+        "proof": "anthropic",
+        "recomputed_fingerprint": "9c0011429218dd9eb6addf639baad7c55358ef35c15cc96c783dca1ba61af4c0",
+        "run_id": 41894905159
+      },
+      "line": 336,
+      "marker": "OWNED_CACHE_ANCESTOR_INPUT",
+      "timestamp": "2026-11-04T20:58:21.3440280Z"
+    },
+    "ancestor_restored": {
+      "data": {
+        "bytes": 422724863,
+        "cache_backend_id": 10020872295,
+        "context_sha256": "b5c68d05e79b3971cbc05a95dc8aedcc4b9188cfe9912bad1b27efbd398c2f73",
+        "current_context_sha256": "b5c68d05e79b3971cbc05a95dc8aedcc4b9188cfe9912bad1b27efbd398c2f73",
+        "exact_cache_key": "eth-owned-anthropic-dd4d7b438fa94c8ca1a9ea561fb4028a8e17cbce3be307a03ce84651ea925bf0-41894905159-1",
+        "files": 15718,
+        "fingerprint": "9c0011429218dd9eb6addf639baad7c55358ef35c15cc96c783dca1ba61af4c0",
+        "job_id": 126801716984,
+        "ledger_sha256": "114a49bae310c444c5468258df7fddd74c98077370102055d051f5c46eb52d4a",
+        "manifest_sha256": "f03170368e5705c17d4354d5bf685822e4d4ffeb9c42f6b046413c5cd95e3ecb",
+        "observed_backend_bytes": 124278111,
+        "original_manifest_available": "Ephemeral runner records; exact SHA and acceptance remain in logs.",
+        "original_manifest_file": "ancestor-cache-original-f03170368e5705c17d4354d5bf685822e4d4ffeb9c42f6b046413c5cd95e3ecb.json",
+        "producer_commit": "d9a4ad18e3668320bf9d084c7e454ff05e34f2e8",
+        "proof": "anthropic",
+        "recomputed_fingerprint": "9c0011429218dd9eb6addf639baad7c55358ef35c15cc96c783dca1ba61af4c0",
+        "run_id": 41894905159,
+        "status": "payload-validated-and-restored"
+      },
+      "line": 337,
+      "marker": "OWNED_CACHE_ANCESTOR_RESTORE",
+      "timestamp": "2026-11-04T20:58:22.3138400Z"
+    },
+    "backend_audit": {
+      "data": {
+        "entries": [
+          {
+            "id": 10025744473,
+            "key": "eth-owned-anthropic-9fbd29ee32ef2ea4fe15afa713145c3cfcc69aad02da8ac94dad8500bd76f92a-41911047958-1",
+            "size_in_bytes": 124275878
+          }
+        ],
+        "max_each_bytes": 2147483648,
+        "max_total_bytes": 4294967296,
+        "total_bytes": 124275878
+      },
+      "line": 736,
+      "marker": "CACHE_BACKEND_AUDIT",
+      "timestamp": "2026-11-04T22:03:27.8169650Z"
+    },
+    "completed_modules": {
+      "data": {
+        "bytes": 422724863,
+        "completed_modules": 1050,
+        "files": 15718,
+        "fingerprint": "9c0011429218dd9eb6addf639baad7c55358ef35c15cc96c783dca1ba61af4c0",
+        "manifest_sha256": "f03170368e5705c17d4354d5bf685822e4d4ffeb9c42f6b046413c5cd95e3ecb"
+      },
+      "line": 338,
+      "marker": "OWNED_CACHE_RESTORE",
+      "timestamp": "2026-11-04T20:58:22.3159511Z"
+    },
+    "new_save_allowed": {
+      "data": {
+        "manifest_sha256": "46a5d164e4d16098cc6b3352cf4a05f552f002dea02285b571a70650441a9912",
+        "max_each_bytes": 2147483648,
+        "max_total_bytes": 4294967296,
+        "payload_bytes": 422724863,
+        "proof": "anthropic"
+      },
+      "line": 713,
+      "marker": "CACHE_SAVE_ALLOWED",
+      "timestamp": "2026-11-04T22:03:23.2963115Z"
+    },
+    "new_snapshot": {
+      "data": {
+        "cap_bytes": 2147483648,
+        "completed_modules": 1050,
+        "context_sha256": "b5c68d05e79b3971cbc05a95dc8aedcc4b9188cfe9912bad1b27efbd398c2f73",
+        "fingerprint": "4da5f828d783536022960c83ecf631d4d883cf70e8b8bf9f8ce5cdb016ebae9f",
+        "manifest_sha256": "46a5d164e4d16098cc6b3352cf4a05f552f002dea02285b571a70650441a9912",
+        "payload_bytes": 422724863,
+        "proof": "anthropic",
+        "schema": "eth-owned-cache/1",
+        "status": "ready",
+        "total_bytes": 425541455
+      },
+      "line": 672,
+      "marker": "OWNED_CACHE_SNAPSHOT",
+      "timestamp": "2026-11-04T22:03:21.8916634Z"
+    },
+    "old_deleted": {
+      "data": {
+        "bytes": 124278111,
+        "id": 10020872295,
+        "key": "eth-owned-anthropic-dd4d7b438fa94c8ca1a9ea561fb4028a8e17cbce3be307a03ce84651ea925bf0-41894905159-1"
+      },
+      "line": 712,
+      "marker": "CACHE_DELETED",
+      "timestamp": "2026-11-04T22:03:23.2961732Z"
+    },
+    "save_success_line": 728,
+    "scope": "Observed job exercised real reuse; this saved review did not restore or independently fetch/hash remote payload. New cache availability is not whole-proof acceptance."
+  },
+  "closed_stages": [
+    {
+      "details": "ABI8 accepted, real Landrun write denial196 and AF_UNIX socket-creation denial206. This is narrower than ABI9; no inherited-socket/socketpair/io_uring or fullABI9 replacement claim.",
+      "lines": [
+        182,
+        213
+      ],
+      "name": "ABI8 controls",
+      "result": "PASS_SAVED_EVIDENCE"
+    },
+    {
+      "details": "Actual job records validated old manifest/context/fingerprint and15718files422724863B/1050completed modules. No new source-build stage ran in VERIFY. Reviewer did not download/revalidate payload bytes.",
+      "lines": [
+        336,
+        338
+      ],
+      "name": "exact ancestor-cache restore",
+      "result": "RESTORED_FROM_SAVED_EVIDENCE"
+    },
+    {
+      "details": "Original4.33.1 no-build check reports all9768targets up to date at634. Trusted config evaluation is outside Landrun/systemd.",
+      "lines": [
+        630,
+        635
+      ],
+      "name": "normal-real-prefix trace",
+      "result": "PASS_SAVED_EVIDENCE"
+    },
+    {
+      "details": "Original4.33.1 fresh Solution replay, service+receipt exit0. Same-kernel safe/nonpartial environment replay admits axiom declarations; separate Comparator checks remain required.",
+      "lines": [
+        636,
+        644
+      ],
+      "name": "fresh-original-version-leanchecker",
+      "result": "PASS_SAVED_EVIDENCE"
+    },
+    {
+      "details": "Original config enables Nanoda, targets both MainResults theorems and permits exactly standard3. Accept lines657/659, final success660, service+receipt exit0. Linux tool compiler original4.34.0-rc1 differs from native Mac compiler deviation.",
+      "lines": [
+        645,
+        668
+      ],
+      "name": "original575Comparator/Nanoda/Lean",
+      "result": "PASS_SAVED_EVIDENCE"
+    }
+  ],
+  "created_utc": "2026-11-04T22:14:17.879732+00:00",
+  "failure": {
+    "LEAN_SYSROOT_forwarding_present": true,
+    "accepted_export_identity": "Actual original Comparator/Nanoda temporary export has no separately captured SHA here. Later partial selected export does not identify it.",
+    "budget_seconds": 1800,
+    "exit_code": 125,
+    "later_NOT_reached": [
+      "Retained-export config/completion after driver263",
+      "Project source/config identity comparison273-274",
+      "Tracked upstream source rehash275-277",
+      "all-required-stages-passed seal278-279"
+    ],
+    "lines": [
+      669,
+      671
+    ],
+    "overall_RUN_RECEIPT_line": 673,
+    "overall_RUN_status": "incomplete",
+    "reason": "output pipe remained open after child exit; output pipe remained open after child exit",
+    "reported_partial_export": {
+      "bytes": 388769780,
+      "scope": "Failed-receipt observation only; bytes unavailable locally and not independently rehashed or kernel checked.",
+      "sha256": "0036aef63c1f8566ee1bb9e1efd0cf0d5f0ac2ff60cf613865a4e9fa7e1db97b"
+    },
+    "service_scope": "Recorder signals the systemd-run CLI process group; the service is separately managed with RuntimeMaxSec7195. This failed stage does not supply completed export-service accounting or verified final service state. CLI exit alone does not prove service termination.",
+    "stage": "retained-target-export",
+    "timeout_scope": "Wait-cap expiry is consistent with1830s timing and source wait1800+two10s/5s drains, but no retained timed_out flag exists. Recorder116-118 overwrites prior timeout/code124 with pipe errors/code125; timeout is timing/source inference, not a directly retained flag.",
+    "wall_seconds": 1830.0090579986572
+  },
+  "independent_checks": {
+    "ZIP_aggregate_equals_exact_job_body": true,
+    "ZIP_members_SHA_size_match": 15,
+    "actual_job_response_BOM_hex": "efbbbf",
+    "actual_job_response_lines": 755,
+    "additional_arrays": [
+      {
+        "entries": 2,
+        "line": 304,
+        "marker": "RUNTIME_IDENTITIES"
+      },
+      {
+        "entries": 4,
+        "line": 542,
+        "marker": "TOOL_IDENTITIES"
+      }
+    ],
+    "all_stage_start_finished_aggregate_records_match": 39,
+    "first_only_failed_receipt_line": 671,
+    "successful_stage_receipts": 38,
+    "summary_object_records_exactly_match": 94,
+    "total_JSON_records": 96
+  },
+  "input_identities": [
+    {
+      "bytes": 154647,
+      "path": "linux-runs/41911047958/anthropic-job-126858374463.raw.log",
+      "sha256": "cf44010f02577d29ffdf40f9288f97c98038bdc84bcd68dc0c8f6e539e228db5"
+    },
+    {
+      "bytes": 132925,
+      "path": "linux-runs/41911047958/anthropic-job-summary-r1.json",
+      "sha256": "ae43a88a950d8edae613becf894b8b105e4cfebf064b1818779fb560fc6fb028"
+    },
+    {
+      "bytes": 70398,
+      "path": "linux-runs/41911047958/workflow-41911047958.logs.zip",
+      "sha256": "3b1817dba175be522012b458222d6986b128af47fb2873df629cb47f75c83cdd"
+    },
+    {
+      "bytes": 5344,
+      "path": "linux-runs/41911047958/workflow-log-members-r1.json",
+      "sha256": "ff990a7ae7332d43685ddd03bda69b0b7ae6f38ef72e91da89b380019a8ccb14"
+    },
+    {
+      "bytes": 731,
+      "path": "linux-runs/41911047958/anthropic-job-126858374463-download-r1.json",
+      "sha256": "4d735ba29ac53e8b60cee252882ba1c1d9e7eb964f2850eb79166dc094eb7e1d"
+    },
+    {
+      "bytes": 3844,
+      "path": "linux-runs/41911047958/parse_completed_log_r1.py",
+      "sha256": "0294dd940d354dab3f93577576ec04c253f3518c34c281c5745980f332ec88a8"
+    },
+    {
+      "bytes": 6474,
+      "path": "ci/record.py",
+      "sha256": "1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0"
+    },
+    {
+      "bytes": 21177,
+      "path": "ci/replicate.py",
+      "sha256": "d3d38d581b583891fad340a377ff799dab8d396a26a947b2fffe04d74cd7b77c"
+    },
+    {
+      "bytes": 8513,
+      "path": "ci/ancestor-cache-compatibility.json",
+      "sha256": "114a49bae310c444c5468258df7fddd74c98077370102055d051f5c46eb52d4a"
+    },
+    {
+      "bytes": 6687,
+      "path": "verification/record_chunked_export_candidate_r1.py",
+      "sha256": "fa4117719489920030dc75cc9fac658d17f6153048838123e98f6c843663928a"
+    },
+    {
+      "bytes": 1000,
+      "path": "verification/record-chunked-export-candidate-r1.diff",
+      "sha256": "54429756ae74f61cc5ef9ebb3caaf0342566239cafc6494019f692352d9cdcd2"
+    },
+    {
+      "bytes": 5768,
+      "path": "verification/record-chunked-export-candidate-r1.json",
+      "sha256": "7294de5a7dbc0be89240b1eca519c458a7823403c0ecf132364d0326a1c246c9"
+    },
+    {
+      "bytes": 30023,
+      "path": "verification/chunked-export-candidate-control-result-r1.json",
+      "sha256": "dad2f1d3c667c5fe0f6e9062faa81d6e356bd15d621a51f5ffa9bfa7a9c182c4"
+    },
+    {
+      "bytes": 846,
+      "path": "verification/export-line-count-r1.json",
+      "sha256": "5e9ae4c1b7d69dbb05e0260e1eb8c34071b5d09268bdf69ccb52e7304e6f9655"
+    }
+  ],
+  "original_config": {
+    "data": {
+      "config": {
+        "challenge_module": "Challenge",
+        "definition_names": [],
+        "enable_nanoda": true,
+        "permitted_axioms": [
+          "propext",
+          "Quot.sound",
+          "Classical.choice"
+        ],
+        "solution_module": "Solution",
+        "theorem_names": [
+          "MainResults.ethIsFalse",
+          "MainResults.mainTheorem"
+        ]
+      },
+      "sha256": "757e5537ccf47d1946521b0b5fb91a230cdcfd8933dc9ab047710709c15ffa7e"
+    },
+    "line": 668,
+    "marker": "ORIGINAL_COMPARATOR_CONFIG",
+    "timestamp": "2026-11-04T21:32:44.9553881Z"
+  },
+  "provenance_limits": [
+    "Exact saved GitHub endpoint body is a timestamped/BOM workflow display derivative with recorder escaping, not original ephemeral subprocess raw bytes. Printed original-stage hashes are reported, not independently rehashed raw files.",
+    "ZIP member hashes match without extracting or executing code. No duplicate download was made.",
+    "Expected Challenge sorry warnings concern specification placeholders; actual Solution target axioms are checked separately by original Comparator.",
+    "Same Codex team saved-evidence audit; not a first replication, new proof, manuscript-equivalence certification or mining result."
+  ],
+  "resources": {
+    "all39_reaped_child_CPU_sum_seconds": 235.01905299999999,
+    "all39_stage_wall_sum_seconds": 4099.802754163742,
+    "reported_systemd_runtime_seconds": {
+      "Comparator": 248.072,
+      "fresh": 1655.423
+    },
+    "reported_systemd_service_CPU_seconds": {
+      "Comparator": 253.41,
+      "fresh": 1651.849
+    },
+    "scope": "Reaped-child counters exclude systemd service CPU. Failed export service CPU/completion and whole-job RSS unavailable; no complete CPU total or isolated speed claim."
+  },
+  "review_actions": {
+    "apply_publish_dispatch_outreach": 0,
+    "budget_CPU_seconds": 30,
+    "budget_command_wall_seconds": 180,
+    "final_parse_report_CPU_seconds": 0.006085999999999994,
+    "final_parse_report_wall_seconds": 0.007863207999999997,
+    "incremental_compute_USD": 0,
+    "initial_assembly_correction": "A preliminary expected-total assertion counted only one array. It failed before output creation; actual total is94objects+runtime/tool arrays=96. Corrected metadata only, stage/failure conclusions unchanged.",
+    "network_downloads": 0,
+    "proof_or_tool_reruns": 0,
+    "scope": "Final small saved-byte/source/ZIP/checksum/report process; earlier reads, failed metadata assembly, model/tool and checkpoint overhead excluded.",
+    "source_edits": 0,
+    "source_modules_imported_or_executed": 0
+  },
+  "reviewer": "codex-eth-public-package",
+  "schema": "eth-linux-saved-log-review/1",
+  "scope": "Independent same-team saved-byte/source review, not a new proof, cache restore, kernel execution or transport rerun.",
+  "stage_receipts": [
+    {
+      "child_cpu_seconds": 0.021552999999999996,
+      "exit_code": 0,
+      "name": "landlock-abi-preflight",
+      "raw_log_bytes": 138,
+      "raw_log_sha256": "2740bab22240687431e8706f19e11cf8cfcc5d22c987cae4fba221e41d15608c",
+      "reason": null,
+      "receipt_line": 185,
+      "start_line": 182,
+      "wall_seconds": 0.03288626670837402
+    },
+    {
+      "child_cpu_seconds": 19.627362999999995,
+      "exit_code": 0,
+      "name": "landrun-build",
+      "raw_log_bytes": 298,
+      "raw_log_sha256": "72f2972d201d7ffb5b61ef8e8bce7cac4783103dd16e921ede6efa3b49044b7b",
+      "reason": null,
+      "receipt_line": 192,
+      "start_line": 186,
+      "wall_seconds": 14.108494281768799
+    },
+    {
+      "child_cpu_seconds": 0.011673000000004041,
+      "exit_code": 0,
+      "name": "landrun-enforcement-control",
+      "raw_log_bytes": 222,
+      "raw_log_sha256": "d383e5c18fdf6ca6b0262404399042bf2b6120fa217b750e552ddb8ad254d2f9",
+      "reason": null,
+      "receipt_line": 203,
+      "start_line": 194,
+      "wall_seconds": 0.06491637229919434
+    },
+    {
+      "child_cpu_seconds": 0.01015499999999836,
+      "exit_code": 0,
+      "name": "af-unix-control",
+      "raw_log_bytes": 216,
+      "raw_log_sha256": "4b4ad00382dc6d7535442ad87c8e7693b8efb23b5b6462c4fe36577c1e6bc8e9",
+      "reason": null,
+      "receipt_line": 213,
+      "start_line": 204,
+      "wall_seconds": 0.06466150283813477
+    },
+    {
+      "child_cpu_seconds": 5.319072000000003,
+      "exit_code": 0,
+      "name": "cleanup-disposable-sdks",
+      "raw_log_bytes": 0,
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": null,
+      "receipt_line": 215,
+      "start_line": 214,
+      "wall_seconds": 161.95195317268372
+    },
+    {
+      "child_cpu_seconds": 0.050237000000000975,
+      "exit_code": 0,
+      "name": "host-inventory",
+      "raw_log_bytes": 4279,
+      "raw_log_sha256": "1261e6b678eafee0c0e73a69bf6f6b7b4b351d8fac412d4efdaae76c5e624d33",
+      "reason": null,
+      "receipt_line": 279,
+      "start_line": 217,
+      "wall_seconds": 2.6704421043395996
+    },
+    {
+      "child_cpu_seconds": 0.7625169999999999,
+      "exit_code": 0,
+      "name": "lean-4.33.1-download",
+      "raw_log_bytes": 555,
+      "raw_log_sha256": "cc290652d9e9d6d9659544d1e63da2bc3a5193ac28e665ed565a38792f89464d",
+      "reason": null,
+      "receipt_line": 285,
+      "start_line": 280,
+      "wall_seconds": 2.069462537765503
+    },
+    {
+      "child_cpu_seconds": 7.72829,
+      "exit_code": 0,
+      "name": "lean-4.33.1-extract",
+      "raw_log_bytes": 0,
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": null,
+      "receipt_line": 288,
+      "start_line": 287,
+      "wall_seconds": 8.180300235748291
+    },
+    {
+      "child_cpu_seconds": 0.6738450000000018,
+      "exit_code": 0,
+      "name": "lean-4.34.0-rc1-download",
+      "raw_log_bytes": 555,
+      "raw_log_sha256": "814d4979c6f0b5d77cbe32f338c46d52ddb24d28ad5d3f8b16d3789e570ff041",
+      "reason": null,
+      "receipt_line": 294,
+      "start_line": 289,
+      "wall_seconds": 1.9893910884857178
+    },
+    {
+      "child_cpu_seconds": 7.952680999999998,
+      "exit_code": 0,
+      "name": "lean-4.34.0-rc1-extract",
+      "raw_log_bytes": 0,
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": null,
+      "receipt_line": 297,
+      "start_line": 296,
+      "wall_seconds": 13.776527166366577
+    },
+    {
+      "child_cpu_seconds": 0.03426499999999777,
+      "exit_code": 0,
+      "name": "proof-compiler-version",
+      "raw_log_bytes": 106,
+      "raw_log_sha256": "63f3e16bf0258e2cc0ab3010eb1830723df9bb85097b7b72b0137b9be25a78e9",
+      "reason": null,
+      "receipt_line": 300,
+      "start_line": 298,
+      "wall_seconds": 0.3674314022064209
+    },
+    {
+      "child_cpu_seconds": 0.043393000000000015,
+      "exit_code": 0,
+      "name": "tool-compiler-version",
+      "raw_log_bytes": 110,
+      "raw_log_sha256": "6cd69c5752c644291ede2418997a70e9994409d30b15fe5ef14a1be60f27f8ef",
+      "reason": null,
+      "receipt_line": 303,
+      "start_line": 301,
+      "wall_seconds": 0.2140505313873291
+    },
+    {
+      "child_cpu_seconds": 0.0026199999999985124,
+      "exit_code": 0,
+      "name": "source-init",
+      "raw_log_bytes": 685,
+      "raw_log_sha256": "8c70cdcfd8449a96617740c17ad7ca0c1f14260fa00816a4640378e76c555cc0",
+      "reason": null,
+      "receipt_line": 320,
+      "start_line": 305,
+      "wall_seconds": 0.9179437160491943
+    },
+    {
+      "child_cpu_seconds": 0.0017830000000014223,
+      "exit_code": 0,
+      "name": "source-remote",
+      "raw_log_bytes": 0,
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": null,
+      "receipt_line": 322,
+      "start_line": 321,
+      "wall_seconds": 0.12000083923339844
+    },
+    {
+      "child_cpu_seconds": 0.0021750000000029246,
+      "exit_code": 0,
+      "name": "source-sparse-init",
+      "raw_log_bytes": 0,
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": null,
+      "receipt_line": 324,
+      "start_line": 323,
+      "wall_seconds": 0.12703752517700195
+    },
+    {
+      "child_cpu_seconds": 0.001674000000003062,
+      "exit_code": 0,
+      "name": "source-sparse-set",
+      "raw_log_bytes": 0,
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": null,
+      "receipt_line": 326,
+      "start_line": 325,
+      "wall_seconds": 0.11970329284667969
+    },
+    {
+      "child_cpu_seconds": 0.03740999999999772,
+      "exit_code": 0,
+      "name": "source-fetch",
+      "raw_log_bytes": 123,
+      "raw_log_sha256": "f96fe411bc6c29cf4bf3e5c893d3089588b5abb9069c0cde59d7e4d0adbd882d",
+      "reason": null,
+      "receipt_line": 330,
+      "start_line": 327,
+      "wall_seconds": 0.6209487915039062
+    },
+    {
+      "child_cpu_seconds": 0.18581699999999834,
+      "exit_code": 0,
+      "name": "source-checkout",
+      "raw_log_bytes": 108,
+      "raw_log_sha256": "264fd2eeb3948bd4cbae6fbf0285c0229f268bfdc6d0c775db192bedccdb6c26",
+      "reason": null,
+      "receipt_line": 333,
+      "start_line": 331,
+      "wall_seconds": 0.5929207801818848
+    },
+    {
+      "child_cpu_seconds": 142.478309,
+      "exit_code": 0,
+      "name": "mathlib-official-cache",
+      "raw_log_bytes": 4892,
+      "raw_log_sha256": "9b7d0cfeef301915dbada229c338f9521f8cfce7cd52eb779b54851ae3464bfb",
+      "reason": null,
+      "receipt_line": 387,
+      "start_line": 339,
+      "wall_seconds": 84.0459794998169
+    },
+    {
+      "child_cpu_seconds": 0.0023499999999856414,
+      "exit_code": 0,
+      "name": "comparator-init",
+      "raw_log_bytes": 689,
+      "raw_log_sha256": "3c665a4ff0b8493cb2a39240256b2a7187e7074db189d47bb9e7df7d26651efc",
+      "reason": null,
+      "receipt_line": 403,
+      "start_line": 388,
+      "wall_seconds": 0.3399479389190674
+    },
+    {
+      "child_cpu_seconds": 0.001594999999994684,
+      "exit_code": 0,
+      "name": "comparator-remote",
+      "raw_log_bytes": 0,
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": null,
+      "receipt_line": 405,
+      "start_line": 404,
+      "wall_seconds": 0.038858652114868164
+    },
+    {
+      "child_cpu_seconds": 0.036746000000000834,
+      "exit_code": 0,
+      "name": "comparator-fetch",
+      "raw_log_bytes": 122,
+      "raw_log_sha256": "96da3d8eb7d5d368836f378545f3274a48ad8eda919f9b740c9d12512a0e0ce3",
+      "reason": null,
+      "receipt_line": 409,
+      "start_line": 406,
+      "wall_seconds": 0.47809767723083496
+    },
+    {
+      "child_cpu_seconds": 0.04005200000000997,
+      "exit_code": 0,
+      "name": "comparator-checkout",
+      "raw_log_bytes": 78,
+      "raw_log_sha256": "e6a222c285479852fbc10d0ebe8a8a9d35706250ec8f5d46e4fb5d7ae8257e8d",
+      "reason": null,
+      "receipt_line": 412,
+      "start_line": 410,
+      "wall_seconds": 0.4839811325073242
+    },
+    {
+      "child_cpu_seconds": 0.0021720000000229334,
+      "exit_code": 0,
+      "name": "exporter-init",
+      "raw_log_bytes": 687,
+      "raw_log_sha256": "f9f350bc4733d871ffc70e004fcde951d449d6816225127979342ac355d4e618",
+      "reason": null,
+      "receipt_line": 428,
+      "start_line": 413,
+      "wall_seconds": 0.2636525630950928
+    },
+    {
+      "child_cpu_seconds": 0.0016439999999988686,
+      "exit_code": 0,
+      "name": "exporter-remote",
+      "raw_log_bytes": 0,
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": null,
+      "receipt_line": 430,
+      "start_line": 429,
+      "wall_seconds": 0.06102919578552246
+    },
+    {
+      "child_cpu_seconds": 0.03391599999997652,
+      "exit_code": 0,
+      "name": "exporter-fetch",
+      "raw_log_bytes": 123,
+      "raw_log_sha256": "114008cb89e1fd908977a3e1f6f1e2c9d60a0c2b367bb462cf19705ea1293de3",
+      "reason": null,
+      "receipt_line": 434,
+      "start_line": 431,
+      "wall_seconds": 0.4798915386199951
+    },
+    {
+      "child_cpu_seconds": 0.035962000000004934,
+      "exit_code": 0,
+      "name": "exporter-checkout",
+      "raw_log_bytes": 62,
+      "raw_log_sha256": "bf62a767eb8db1b91df05a613df37c7d74acd3a71bb8e204934b82c64a586bc9",
+      "reason": null,
+      "receipt_line": 437,
+      "start_line": 435,
+      "wall_seconds": 0.3363533020019531
+    },
+    {
+      "child_cpu_seconds": 0.0020280000000028053,
+      "exit_code": 0,
+      "name": "nanoda-init",
+      "raw_log_bytes": 685,
+      "raw_log_sha256": "ad2379fa34b350adaa0da75d3ab5c5036a0f8d6a1ea569528dc37c885b7ffbd1",
+      "reason": null,
+      "receipt_line": 453,
+      "start_line": 438,
+      "wall_seconds": 0.1515185832977295
+    },
+    {
+      "child_cpu_seconds": 0.0015229999999988308,
+      "exit_code": 0,
+      "name": "nanoda-remote",
+      "raw_log_bytes": 0,
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": null,
+      "receipt_line": 455,
+      "start_line": 454,
+      "wall_seconds": 0.021608829498291016
+    },
+    {
+      "child_cpu_seconds": 0.034659999999973934,
+      "exit_code": 0,
+      "name": "nanoda-fetch",
+      "raw_log_bytes": 122,
+      "raw_log_sha256": "f8a318bd82fc2d085059746638d95b791559f9e8c9b31391ca394cbbd487fa47",
+      "reason": null,
+      "receipt_line": 459,
+      "start_line": 456,
+      "wall_seconds": 0.42684412002563477
+    },
+    {
+      "child_cpu_seconds": 0.03964600000002605,
+      "exit_code": 0,
+      "name": "nanoda-checkout",
+      "raw_log_bytes": 60,
+      "raw_log_sha256": "e63a510671721fdb751b020d742c2de4cef6bdcc6ee1c9df90101cdb0065b9d6",
+      "reason": null,
+      "receipt_line": 462,
+      "start_line": 460,
+      "wall_seconds": 0.4686007499694824
+    },
+    {
+      "child_cpu_seconds": 12.008071999999999,
+      "exit_code": 0,
+      "name": "comparator-build",
+      "raw_log_bytes": 722,
+      "raw_log_sha256": "1693675cc18207fd61de2178204a83d4edb73c0a3b11dc67fef3b4ef611a4f33",
+      "reason": null,
+      "receipt_line": 480,
+      "start_line": 463,
+      "wall_seconds": 8.81105089187622
+    },
+    {
+      "child_cpu_seconds": 6.780656999999991,
+      "exit_code": 0,
+      "name": "exporter-build-exact-proof-compiler",
+      "raw_log_bytes": 204,
+      "raw_log_sha256": "5f0fd6284141555514b28de8f9f1d0699afb9fefa621d1e88307a96b9ae69272",
+      "reason": null,
+      "receipt_line": 488,
+      "start_line": 481,
+      "wall_seconds": 16.461365461349487
+    },
+    {
+      "child_cpu_seconds": 23.604015000000004,
+      "exit_code": 0,
+      "name": "nanoda-build",
+      "raw_log_bytes": 1623,
+      "raw_log_sha256": "4b6430f75b394ffd3b7dbb0a5ecc75366fbaea121006309f09ca69d7094a9800",
+      "reason": null,
+      "receipt_line": 541,
+      "start_line": 489,
+      "wall_seconds": 38.19926381111145
+    },
+    {
+      "child_cpu_seconds": 0.2032430000000005,
+      "exit_code": 0,
+      "name": "create-two-slot-compiler-prefix",
+      "raw_log_bytes": 2959,
+      "raw_log_sha256": "21dc52c7e904021051770b79cbdaa553c209c7c09f199c0d3823a612712bf905",
+      "reason": null,
+      "receipt_line": 629,
+      "start_line": 543,
+      "wall_seconds": 2.2694780826568604
+    },
+    {
+      "child_cpu_seconds": 7.208736000000023,
+      "exit_code": 0,
+      "name": "normal-real-prefix-trace-check",
+      "raw_log_bytes": 181,
+      "raw_log_sha256": "b0c1e25797acc6c6d6270e45fc1a944eb15cc202aa0a0e401978fcb7eee2ccfa",
+      "reason": null,
+      "receipt_line": 635,
+      "start_line": 630,
+      "wall_seconds": 4.875351190567017
+    },
+    {
+      "child_cpu_seconds": 0.012567000000004214,
+      "exit_code": 0,
+      "name": "fresh-original-version-leanchecker",
+      "raw_log_bytes": 219,
+      "raw_log_sha256": "2dadef22794e8d9664207e14725a47422e29be3cf78d3fbc90925425e3ad7b62",
+      "reason": null,
+      "receipt_line": 644,
+      "start_line": 636,
+      "wall_seconds": 1655.4832322597504
+    },
+    {
+      "child_cpu_seconds": 0.013127999999966278,
+      "exit_code": 0,
+      "name": "comparator-original-config",
+      "raw_log_bytes": 1389,
+      "raw_log_sha256": "9e850080d6cda0383698c3d556c361b48d46085316aace8527bf5f277b185614",
+      "reason": null,
+      "receipt_line": 667,
+      "start_line": 645,
+      "wall_seconds": 248.10851907730103
+    },
+    {
+      "child_cpu_seconds": 0.011509000000010872,
+      "exit_code": 125,
+      "name": "retained-target-export",
+      "raw_log_bytes": 33,
+      "raw_log_sha256": "70446e13a4238f750344b185c7231fe99c5acc476e131c670db3461467076f0d",
+      "reason": "output pipe remained open after child exit; output pipe remained open after child exit",
+      "receipt_line": 671,
+      "start_line": 669,
+      "wall_seconds": 1830.0090579986572
+    }
+  ],
+  "status": "ORIGINAL_CHECK_STAGES_PASSED_OVERALL_INCOMPLETE",
+  "subject": {
+    "job_id": 126858374463,
+    "methods_commit": "309670f70aa79d85752dbdc61799ad8cc56772c2",
+    "run_id": 41911047958,
+    "url": "https://github.com/Truemachinery/eth-proof-replication/actions/runs/41911047958/job/126858374463"
+  },
+  "unapplied_candidate_assessment": {
+    "candidate_sha256": "fa4117719489920030dc75cc9fac658d17f6153048838123e98f6c843663928a",
+    "change": "Only echoFalse binary stdout changes readline to4MiB reads/per-chunk+clean-EOF fsync. Text/stderr, timeout, reason overwrite, pipe drains and systemd lifecycle are unchanged.",
+    "limits": [
+      "Actual Linux fsync count, disk latency and isolated producer/consumer bottleneck were not measured.",
+      "Completed original pipeline248.108519s versus failed selected export1830.009058s is a different-pipeline observation, not an isolated benchmark.",
+      "Candidate does not repair timeout-cause overwrite or separate service lifecycle/worker-drain cleanup.",
+      "No Linux candidate execution, speedup estimate, full-export identity or promised success is inferred."
+    ],
+    "status": "PLAUSIBLE_IO_CORRECTION_NOT_LINUX_VALIDATED",
+    "support": "Prior11local transport fixtures preserve exact bytes/hashes, stderr and failure semantics;1.2MB400000newline fixture uses2export fsyncs and8,388,865Bbinary fixture4. Existing native583355033B export has10913508newline bytes."
+  }
+}

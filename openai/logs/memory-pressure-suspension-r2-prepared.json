@@ -1,0 +1,65 @@
+{
+  "schema": "owned-native-resource-scheduling/1",
+  "started_utc": "2026-11-04T22:57:05.218057+00:00",
+  "before": [
+    {
+      "pid": 996,
+      "ppid": 25130,
+      "pgid": 25130,
+      "state": "R",
+      "elapsed": "04:24",
+      "cpu": "0:08.55",
+      "rss_kib": 3393184,
+      "command": "<REPLICATION_ROOT>/openai/compiler-gate-r1/prefix/bin/lean <REPLICATION_ROOT>/openai/workspace/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/TupleRunBudgets.lean -o <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/TupleRunBudgets.olean -i <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/TupleRunBudgets.ilean -c <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/TupleRunBudgets.c --setup <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/TupleRunBudgets.setup.json --json"
+    },
+    {
+      "pid": 2172,
+      "ppid": 25130,
+      "pgid": 25130,
+      "state": "S",
+      "elapsed": "00:40",
+      "cpu": "0:00.05",
+      "rss_kib": 816,
+      "command": "<REPLICATION_ROOT>/openai/compiler-gate-r1/prefix/bin/lean <REPLICATION_ROOT>/openai/workspace/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/QueryEmittedSourceTarget.lean -o <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/QueryEmittedSourceTarget.olean -i <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/QueryEmittedSourceTarget.ilean -c <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/QueryEmittedSourceTarget.c --setup <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/QueryEmittedSourceTarget.setup.json --json"
+    },
+    {
+      "pid": 25130,
+      "ppid": 25125,
+      "pgid": 25130,
+      "state": "Ss",
+      "elapsed": "05:15:53",
+      "cpu": "11:56.65",
+      "rss_kib": 3856,
+      "command": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lake build +OAI.Algorithms.SubexponentialSAT.Main +ComparatorChallenges.SubexponentialSAT"
+    },
+    {
+      "pid": 98759,
+      "ppid": 25130,
+      "pgid": 25130,
+      "state": "U",
+      "elapsed": "18:14",
+      "cpu": "6:49.99",
+      "rss_kib": 803424,
+      "command": "<REPLICATION_ROOT>/openai/compiler-gate-r1/prefix/bin/lean <REPLICATION_ROOT>/openai/workspace/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQueryLoop.lean -o <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQueryLoop.olean -i <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQueryLoop.ilean -c <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQueryLoop.c --setup <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQueryLoop.setup.json --json"
+    },
+    {
+      "pid": 98770,
+      "ppid": 25130,
+      "pgid": 25130,
+      "state": "U",
+      "elapsed": "18:11",
+      "cpu": "7:30.76",
+      "rss_kib": 911696,
+      "command": "<REPLICATION_ROOT>/openai/compiler-gate-r1/prefix/bin/lean <REPLICATION_ROOT>/openai/workspace/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQuerySetup.lean -o <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQuerySetup.olean -i <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQuerySetup.ilean -c <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQuerySetup.c --setup <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQuerySetup.setup.json --json"
+    }
+  ],
+  "intended_signal": "SIGSTOP",
+  "selected": {
+    "98759": "HighQueryLoop.lean",
+    "98770": "HighQuerySetup.lean"
+  },
+  "group": 25130,
+  "reason": "Host swap used36872.75MiB, heavy paging, three frontend working sets; retain completed work and temporarily allow one active frontend through two stopped admission-lock holders.",
+  "proof_source_runtime_or_argv_changed": false,
+  "all_paused_pids_require_later_resumption": true
+}

@@ -1,0 +1,13 @@
+# R7 live apply and native readiness review
+
+All **25 current live CI files match** root's apply receipt, the frozen R7 staging and handoff. The receipt is SHA-256 `b8dbd3eb684aaa702d5a54566843faf2e757e3a1723ac4c23bb79eb9f49eff93`. All 17 handoff evidence hashes agree; the five preserved control results report **12 + 27 + 7 + 29 + 22 = 97 passing bounded checks**. No control was rerun. A separate same-team metadata check agrees.
+
+Native R2 fixed-file preflight also matches: **15 explicit pins, two workspace configuration files and eight original runtime files**. Launcher SHA-256 is `fe3b12c0b8312a6b0cdb5ec1c6d88933cbff796bc92e9403682735d25348c19c`. It pins/imports the owned frozen recorder `1a7c9f9d…`; applied live R7 recorder `75333074…` does not change native verification behavior. The selected export uses direct-FD capture and avoids that recorder's per-line export pump.
+
+The single native observation at **22:50:48 UTC** found process group **25130 still active**, **3040 owned OAI .olean files**, no Main or challenge .olean, and no final build-success marker. The observed log bytes were stable while read (291333 bytes, SHA-256 `30f0e8756926b0e9924c0393cd3bc3529941403e854db8162552ffd10f0ccc63`). This is historical progress, not successful build closure. Summed group RSS was about 2.62 GiB and includes shared pages. No PTY polling or signals occurred.
+
+**Wait for root's actual source-build exit zero.** The launcher deliberately executes one phase at a time and does not enforce global ordering or build closure. Root must retain and aggregate all successful phases and their common input identity, including final post-identity. Only extra-Nanoda automatically requires a closed selected-export lineage; its stage/raw/capture/export hashes and strict recorded checker policy are checked. No native phase-result files were present at this review.
+
+No material implementation blocker was found in the current runner/runbook. One wording detail is nonblocking: override exclusion comes from the launcher's constructed environment, while `in_workspace.py` itself prepends/resets selected paths. Native isolation and fresh-replay limits remain as documented; all separate checking phases are still required.
+
+Reviewed numbered source: runner 1–358, runbook 1–61, capture 1–86 and workspace wrapper 1–17. The JSON contains actual file hashes and the dated process/log observation. Measured own metadata scripts used about **0.510 CPU / 0.790 wall seconds**; source reading, ps child CPU and bookkeeping are excluded. No runner import, proof tool, build, dispatch, network or CI/proof-workspace edit was performed. **This review supplies no proof verdict.**

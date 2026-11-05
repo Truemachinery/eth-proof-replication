@@ -8,13 +8,22 @@ import shutil
 import tomllib
 from record import sha, write_json
 
-MAX_BYTES = 2 * 1024**3
+MAX_BYTES_BY_PROOF = {'openai': 6 * 1024**3, 'anthropic': 2 * 1024**3}
+TOTAL_MAX_BYTES = 8 * 1024**3
 # Leave room for the small manifest and Actions' container/archive metadata.
-PAYLOAD_LIMIT = MAX_BYTES - 32 * 1024**2
+OVERHEAD_RESERVE = 32 * 1024**2
 ANCESTOR_LEDGER = 'ancestor-cache-compatibility.json'
 SUFFIXES = {'.olean', '.olean.private', '.olean.server', '.ilean', '.ir', '.trace',
             '.ir.sig', '.ir.sig.hash', '.olean.hash', '.olean.private.hash', '.olean.server.hash', '.ilean.hash', '.ir.hash',
             '.c', '.c.hash', '.c.o', '.c.o.hash', '.c.o.export', '.c.o.export.hash'}
+
+
+def max_bytes(proof):
+    return MAX_BYTES_BY_PROOF[proof]
+
+
+def payload_limit(proof):
+    return max_bytes(proof) - OVERHEAD_RESERVE
 
 
 def fingerprint(harness, proof, context=None):
@@ -40,7 +49,7 @@ def approved_ancestor(harness, proof, context, manifest_bytes):
         raise RuntimeError('ancestor manifest SHA mismatch')
     expected = ledger['reviewed_current_harness_rows']
     names = [x['path'] for x in expected]
-    if len(names) != len(set(names)) or any(Path(x).name != x for x in names):
+    if len(names) != 23 or len(names) != len(set(names)) or ANCESTOR_LEDGER in names or any(Path(x).name != x for x in names):
         raise RuntimeError('invalid reviewed current harness rows')
     actual_names = {p.name for p in harness.iterdir() if p.is_file()}
     if actual_names != set(names) | {ANCESTOR_LEDGER}:
@@ -57,7 +66,7 @@ def approved_ancestor(harness, proof, context, manifest_bytes):
         raise RuntimeError('ancestor source/config/runtime context mismatch')
     old_rows = ledger['producer_harness_rows']
     old_names = [x['path'] for x in old_rows]
-    if len(old_rows) != 23 or set(old_names) != set(names) or len(set(old_names)) != 23:
+    if len(old_rows) != 24 or set(old_names) != set(names) | {ANCESTOR_LEDGER} or len(set(old_names)) != 24:
         raise RuntimeError('invalid pinned predecessor harness rows')
     pairs = [(row['path'], row['sha256']) for row in sorted(old_rows, key=lambda x: x['path'])]
     old_fingerprint = hashlib.sha256(json.dumps([proof, pairs, context], separators=(',', ':')).encode()).hexdigest()
@@ -125,8 +134,8 @@ def snapshot(project, proof, destination, harness, context=None):
                 rows.append({'path': name, 'size_bytes': p.stat().st_size, 'sha256': sha(p)})
     size = sum(x['size_bytes'] for x in rows)
     receipt = {'schema': 'eth-owned-cache/1', 'proof': proof, 'fingerprint': fingerprint(harness, proof, context),
-               'context_sha256': hashlib.sha256(json.dumps(context, sort_keys=True).encode()).hexdigest(), 'payload_bytes': size, 'cap_bytes': MAX_BYTES, 'completed_modules': len(complete),
-               'files': rows, 'status': 'ready' if rows and size <= PAYLOAD_LIMIT else 'skipped-empty-or-oversize'}
+               'context_sha256': hashlib.sha256(json.dumps(context, sort_keys=True).encode()).hexdigest(), 'payload_bytes': size, 'cap_bytes': max_bytes(proof), 'completed_modules': len(complete),
+               'files': rows, 'status': 'ready' if rows and size <= payload_limit(proof) else 'skipped-empty-or-oversize'}
     if receipt['status'] == 'ready':
         destination.mkdir(parents=True)
         for row in rows:
@@ -137,7 +146,7 @@ def snapshot(project, proof, destination, harness, context=None):
                 raise RuntimeError('snapshot changed while copying')
         write_json(destination / 'manifest.json', receipt)
         total = sum(p.stat().st_size for p in destination.rglob('*') if p.is_file())
-        if total > MAX_BYTES:
+        if total > max_bytes(proof):
             shutil.rmtree(destination)
             receipt['status'] = 'skipped-total-oversize'
         else:
@@ -159,7 +168,7 @@ def restore(project, proof, source, harness, context=None):
     context_sha = hashlib.sha256(json.dumps(context, sort_keys=True).encode()).hexdigest()
     if data.get('schema') != 'eth-owned-cache/1' or data.get('proof') != proof or data.get('fingerprint') != expected_fingerprint or data.get('context_sha256') != context_sha:
         raise RuntimeError('cache identity does not match exact harness/source/toolchain/config pins')
-    if data['status'] != 'ready' or data['payload_bytes'] > PAYLOAD_LIMIT:
+    if data['status'] != 'ready' or data['payload_bytes'] > payload_limit(proof):
         raise RuntimeError('invalid cache payload limit/status')
     names, size = set(), 0
     module_set = modules(project, proof)
@@ -176,7 +185,7 @@ def restore(project, proof, source, harness, context=None):
         if p.stat().st_size != row['size_bytes'] or sha(p) != row['sha256']:
             raise RuntimeError('cached file size/hash mismatch')
         size += row['size_bytes']
-    if size != data['payload_bytes'] or size > PAYLOAD_LIMIT:
+    if size != data['payload_bytes'] or size > payload_limit(proof):
         raise RuntimeError('cached total mismatch')
     actual = {str(p.relative_to(source / 'files')) for p in (source / 'files').rglob('*') if p.is_file()}
     if actual != names:

@@ -1,0 +1,46 @@
+{
+  "schema": "eth-public-linux-ci/1",
+  "openai": {
+    "repository": "https://github.com/openai/math.git",
+    "commit": "4eaee87548250b2682affda7d05d947c05554bae",
+    "lean": "4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "comparator": "865edc14486c3388e9225daa971da8e157488c3e",
+    "comparator_lean": "4.35.0",
+    "exporter": "076e8e57707e813375e8f9da8bf989799ace9680",
+    "module": "OAI.Algorithms.SubexponentialSAT.Main",
+    "challenge": "ComparatorChallenges.SubexponentialSAT",
+    "theorems": [
+      "OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.exact_count_and_sat"
+    ],
+    "closure_files": 3092,
+    "closure_sha256": "645bebfa8f08c208d3a135928b2d21d74777e72c8835a126d55ecfe79302692e"
+  },
+  "anthropic": {
+    "repository": "https://github.com/anthropics/formal-math.git",
+    "commit": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "comparator": "575674928e239f5bc452aab72d1dd7b0f1326494",
+    "comparator_lean": "4.34.0-rc1",
+    "exporter": "15f6055e299ad5b89345e533cc2192f4cc00f659",
+    "module": "Solution",
+    "challenge": "Challenge",
+    "theorems": [
+      "MainResults.ethIsFalse",
+      "MainResults.mainTheorem"
+    ]
+  },
+  "tools": {
+    "comparator_repository": "https://github.com/leanprover/comparator.git",
+    "exporter_repository": "https://github.com/leanprover/lean4export.git",
+    "nanoda_repository": "https://github.com/robsimmons/nanoda_lib.git",
+    "nanoda": "68d5ca9db226849b41a6fff59d796ff19d0a8840",
+    "landrun": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4"
+  },
+  "allowed_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

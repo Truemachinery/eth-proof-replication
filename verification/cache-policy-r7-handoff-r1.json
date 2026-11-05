@@ -1,0 +1,126 @@
+{
+  "schema": "eth-r7-cache-policy-handoff/1",
+  "author": "codex-eth-anthropic-replication",
+  "observed_utc": "2026-11-04T22:34:33.050238+00:00",
+  "status": "Staged source frozen,27cacheboundary and22actual-R6-bound syntheticprotocolchecks PASS; no actual Linux run/cache restore/proof execution",
+  "caps": {
+    "openai_bytes": 6442450944,
+    "anthropic_bytes": 2147483648,
+    "total_retained_backend_bytes": 8589934592,
+    "perproof_payload_reserve_bytes": 33554432
+  },
+  "ancestor": "Exact OLD24publicproducer rows include oldledger, CURRENT23nonledger rows exclude self ledger; normal current fingerprint includes newledger. Exact actual R6Antentry only, OAI entry absent.",
+  "modified_staged_files": [
+    "owned_cache.py",
+    "cache_maintenance.py",
+    "check_controls.py",
+    "check_bc_control.py"
+  ],
+  "unchanged_guards": "Ownership/path/perfilehash/size/status/currentcontext/exactkey/rawmanifestSHA/nooverwrite/currentworkflow/manifestpreservation checks retained.",
+  "control_environment": "Installed /opt/homebrew/bin/python3.13; first defaultXcodePython lacks tomllib and failed import before any fixtures, source unchanged and failure preserved.",
+  "control_checkpoint_runs": [
+    {
+      "event": 3968,
+      "exit_code": 1,
+      "cpu_seconds": 0.224229,
+      "wall_seconds": 0.325202,
+      "scope": "environment import failure, not policy failure"
+    },
+    {
+      "event": 3969,
+      "exit_code": 0,
+      "cpu_seconds": 0.666168,
+      "wall_seconds": 2.615183,
+      "scope": "27tiny/mocked cache boundary/guard checks"
+    },
+    {
+      "event": 3971,
+      "exit_code": 0,
+      "cpu_seconds": 0.727803,
+      "wall_seconds": 1.394841,
+      "scope": "22checks including17synthetic ancestor protocol cases, normalcurrent/metadata/exactworkflowguards and actualR6metadata bindings"
+    }
+  ],
+  "summed_control_outer_cpu_seconds": 1.6182,
+  "summed_control_outer_wall_seconds": 4.335226,
+  "resource_scope": "Outer control commands; innercontrol CPU is included and must not be added again. Prior reading/coordination/authoring overhead excluded. All within bounded8CPU45commandwall control budget.",
+  "recorder_review": "Read-only753source and saved12case hashes matched; no reruns/imports/signals. See record-r7-independent-review-r1.json. No material static blocker, no Linux timing/causalclaim.",
+  "peer_cache_review": "codex-eth-public-package read-only message reports no material static blocker for cc765ac2/1f43bb2c; actualR6protocolresult now closed for root/peer review.",
+  "artifacts": [
+    {
+      "path": "research/eth-external-replication-20261104/verification/ci-repair-candidate-r7/ci/owned_cache.py",
+      "sha256": "cc765ac2b127eeb171afa43f40d1ad15e435c94c14dedd070a647a5ecdb32431",
+      "size_bytes": 11796
+    },
+    {
+      "path": "research/eth-external-replication-20261104/verification/ci-repair-candidate-r7/ci/cache_maintenance.py",
+      "sha256": "1f43bb2c4fa70afb0e999e5a7675987dbf46654672ba340f1f739045eb08e82d",
+      "size_bytes": 4925
+    },
+    {
+      "path": "research/eth-external-replication-20261104/verification/ci-repair-candidate-r7/ci/check_controls.py",
+      "sha256": "2ebe619f909dd48cfebabf857ade809b5e8f082b443d01689d99a89f0213023a",
+      "size_bytes": 10973
+    },
+    {
+      "path": "research/eth-external-replication-20261104/verification/ci-repair-candidate-r7/ci/check_bc_control.py",
+      "sha256": "192dae99efa59b41db476f891b3e398fc5cc63fab4236474763846167c63cf76",
+      "size_bytes": 4620
+    },
+    {
+      "path": "research/eth-external-replication-20261104/verification/ci-repair-candidate-r7/ci/ancestor-cache-compatibility.json",
+      "sha256": "247130dc03d737b2ab46ec0898cb5d3438b3faa8b2618dc9b04495ccef5cdd40",
+      "size_bytes": 8775
+    },
+    {
+      "path": "research/eth-external-replication-20261104/verification/ci-repair-candidate-r7/ci/record.py",
+      "sha256": "753330742a44e50bd48ed4a0cd6b55b5998938475e7cb463c56e4e65979075f6",
+      "size_bytes": 6798
+    },
+    {
+      "path": "research/eth-external-replication-20261104/verification/ci-repair-candidate-r7/.github/workflows/replicate.yml",
+      "sha256": "33c8581f513743184a8c198778e015613e39533a24f7047ac340506a746a0412",
+      "size_bytes": 9674
+    },
+    {
+      "path": "research/eth-external-replication-20261104/verification/check_cache_policy_r7_r1.py",
+      "sha256": "ed100a39afdebb7999edf4897a368c7c9b2bd32b391eac3136068a47ce81c4e6",
+      "size_bytes": 10468
+    },
+    {
+      "path": "research/eth-external-replication-20261104/verification/cache-policy-r7-control-result-r1.json",
+      "sha256": "7f60bb58ef3449a8dea05c493be972992403476480559d807de84555b452882e",
+      "size_bytes": 2428
+    },
+    {
+      "path": "research/eth-external-replication-20261104/verification/ancestor_cache_control_r7_r1.py",
+      "sha256": "290c6b9c06c95c9471cd292d429c389369af454f043d2ee9d168a514539e94d8",
+      "size_bytes": 13646
+    },
+    {
+      "path": "research/eth-external-replication-20261104/verification/ancestor-cache-control-result-r7-r1.json",
+      "sha256": "2e4314359325d22202077b072e2b282204e8be5a63c6f1bb1d6b742c6f32b9a1",
+      "size_bytes": 4278
+    },
+    {
+      "path": "research/eth-external-replication-20261104/verification/record-r7-independent-review-r1.json",
+      "sha256": "425aca58bfd9c0e30c5e847648876da949274d4fa9017058a1baf6f7959d401d",
+      "size_bytes": 13231
+    },
+    {
+      "path": "research/eth-external-replication-20261104/verification/record-r7-independent-review-r1.md",
+      "sha256": "074ecaba5ea93be6bd57524712a17f8af556a697252395ccbf5d0ee5afa527f5",
+      "size_bytes": 1067
+    },
+    {
+      "path": "research/eth-external-replication-20261104/linux-runs/41911047958/anthropic-job-summary-r1.json",
+      "sha256": "ae43a88a950d8edae613becf894b8b105e4cfebf064b1818779fb560fc6fb028",
+      "size_bytes": 132925
+    }
+  ],
+  "proof_or_Lean_runs": 0,
+  "network_requests": 0,
+  "multiGiB_allocations": 0,
+  "live_CI_workspace_builder_edits": false,
+  "incremental_usd": 0
+}

@@ -1,0 +1,172 @@
+{
+  "schema": "openai-native-identity-expectations/1",
+  "created_utc": "2026-11-04T21:11:31.229991+00:00",
+  "source_commit": "4eaee87548250b2682affda7d05d947c05554bae",
+  "source_remote": "https://github.com/openai/math.git",
+  "source_manifest_sha256": "bf7f36120177010243e52dd9053bd3e9f97f92fa35184abf173a8a57ef4843e1",
+  "workspace_config_r2_sha256": "a56c999ec870742bee9c51be2bb3199d358d77876d5e7d49492f5ad880938413",
+  "original_comparator_config_sha256": "debbfdc9c01104d2369be80da5180978275106df8b685f693fba7ce7da7c5b19",
+  "workspace_lock_sha256": "4aa8b01a11ed34de463651ed6396d9da61f365cccfd158e82e96bbd17bcb14bc",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "module_count": 3092,
+  "dependency_expectations_source": {
+    "repository": "https://github.com/leanprover-community/mathlib4.git",
+    "commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "git_object": "lake-manifest.json",
+    "git_blob_oid": "de612f43de68d2b64dc65f74fc9b37d1f9d20898",
+    "blob_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+    "scope": "Dependency declarations read from the exact pinned commit object with lazy fetch and replacement objects disabled; blob hash newly recorded now, not a claimed earlier local observation."
+  },
+  "expected_dependencies": [
+    {
+      "name": "mathlib",
+      "rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "url": "https://github.com/leanprover-community/mathlib4.git",
+      "type": "git",
+      "subDir": null,
+      "manifestFile": "lake-manifest.json",
+      "configFile": "lakefile.lean"
+    },
+    {
+      "name": "plausible",
+      "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+      "url": "https://github.com/leanprover-community/plausible",
+      "type": "git",
+      "subDir": null,
+      "manifestFile": "lake-manifest.json",
+      "configFile": "lakefile.toml"
+    },
+    {
+      "name": "LeanSearchClient",
+      "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+      "url": "https://github.com/leanprover-community/LeanSearchClient",
+      "type": "git",
+      "subDir": null,
+      "manifestFile": "lake-manifest.json",
+      "configFile": "lakefile.toml"
+    },
+    {
+      "name": "importGraph",
+      "rev": "e928b72544873815af278d38681b31c0293588e3",
+      "url": "https://github.com/leanprover-community/import-graph",
+      "type": "git",
+      "subDir": null,
+      "manifestFile": "lake-manifest.json",
+      "configFile": "lakefile.toml"
+    },
+    {
+      "name": "proofwidgets",
+      "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+      "url": "https://github.com/leanprover-community/ProofWidgets4",
+      "type": "git",
+      "subDir": null,
+      "manifestFile": "lake-manifest.json",
+      "configFile": "lakefile.lean"
+    },
+    {
+      "name": "aesop",
+      "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+      "url": "https://github.com/leanprover-community/aesop",
+      "type": "git",
+      "subDir": null,
+      "manifestFile": "lake-manifest.json",
+      "configFile": "lakefile.toml"
+    },
+    {
+      "name": "Qq",
+      "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+      "url": "https://github.com/leanprover-community/quote4",
+      "type": "git",
+      "subDir": null,
+      "manifestFile": "lake-manifest.json",
+      "configFile": "lakefile.toml"
+    },
+    {
+      "name": "batteries",
+      "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+      "url": "https://github.com/leanprover-community/batteries",
+      "type": "git",
+      "subDir": null,
+      "manifestFile": "lake-manifest.json",
+      "configFile": "lakefile.toml"
+    },
+    {
+      "name": "Cli",
+      "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+      "url": "https://github.com/leanprover/lean4-cli",
+      "type": "git",
+      "subDir": null,
+      "manifestFile": "lake-manifest.json",
+      "configFile": "lakefile.toml"
+    }
+  ],
+  "runtime_pin_source": {
+    "primary_manifest": "../anthropic/comparator-ci-tool-manifest-r1.json",
+    "primary_manifest_sha256": "c1a08efe6be5abba717546cf7baae4b5a8045c0b5ffe41706a565148724631c2",
+    "shared_runtime_inventory_sha256": "1445280d0a1011fbaf16717610885e10f5f7fe1a1e555a087a21e2ce504fb271",
+    "shared_compiler_inventory_sha256": "cdaf3f2ff7f04431d79b4f64b6bf730b586e3f8d14b1bbb511bf925819c90762",
+    "scope": "Six runtime file expectations are from the already checkpoint-pinned tool manifest, which marks them matching a previous inventory; two launcher expectations are from the existing compiler inventory. Hashes of the shared inventory JSON files are newly recorded in this task; this does not assert a newly measured original-download archive hash."
+  },
+  "expected_runtime_files": [
+    {
+      "path": "lib/lean/libleanshared.dylib",
+      "sha256": "6588b7e38450ea749006dcd90bbaea9393a5ca1b64727a2e7138f3c9427c2b50",
+      "size_bytes": 179077552,
+      "provenance": "Already recorded in checkpoint-pinned Anthropic exact-CI Comparator tool manifest c1a08efe...; corroborates previous shared runtime inventory."
+    },
+    {
+      "path": "lib/lean/libleanshared_1.dylib",
+      "sha256": "e44858e227323a23ce7416c5678415d2d022582b1627ad3690117ce73cd6345a",
+      "size_bytes": 16736,
+      "provenance": "Already recorded in checkpoint-pinned Anthropic exact-CI Comparator tool manifest c1a08efe...; corroborates previous shared runtime inventory."
+    },
+    {
+      "path": "lib/lean/libleanshared_2.dylib",
+      "sha256": "be68927a4f282b99383e82af4d481b4ffe59f2a243aea20dae0e60b39c2ae182",
+      "size_bytes": 16736,
+      "provenance": "Already recorded in checkpoint-pinned Anthropic exact-CI Comparator tool manifest c1a08efe...; corroborates previous shared runtime inventory."
+    },
+    {
+      "path": "lib/lean/libInit_shared.dylib",
+      "sha256": "cb203e0bc0e6ab3250b2804d3e5398ad3a91544b5e049674532f73b7a062ef7f",
+      "size_bytes": 16736,
+      "provenance": "Already recorded in checkpoint-pinned Anthropic exact-CI Comparator tool manifest c1a08efe...; corroborates previous shared runtime inventory."
+    },
+    {
+      "path": "lib/lean/libLake_shared.dylib",
+      "sha256": "60a94628397814203d86428fa6015f9d844c4c4c74cda8667e687a4ea5b5f5ac",
+      "size_bytes": 10072896,
+      "provenance": "Already recorded in checkpoint-pinned Anthropic exact-CI Comparator tool manifest c1a08efe...; corroborates previous shared runtime inventory."
+    },
+    {
+      "path": "bin/leanchecker",
+      "sha256": "cfde41cb11dde58c84e9c60c551fd104bb2fc1104ad44dca932a923120272a35",
+      "size_bytes": 78224,
+      "provenance": "Already recorded in checkpoint-pinned Anthropic exact-CI Comparator tool manifest c1a08efe...; corroborates previous shared runtime inventory."
+    },
+    {
+      "path": "bin/lean",
+      "sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+      "size_bytes": 49968,
+      "recorded_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+      "provenance": "Previously existing shared compiler-identities.json record; inventory file SHA first rehashed in this identity-readiness task, values not sampled from current binaries."
+    },
+    {
+      "path": "bin/lake",
+      "sha256": "c8c24f1398162ab4004e2a869952d8469f54293651151feaad4526f2b8474c6e",
+      "size_bytes": 51824,
+      "recorded_version": "Lake version 5.0.0-src+5045d00 (Lean version 4.34.1)",
+      "provenance": "Previously existing shared compiler-identities.json record; inventory file SHA first rehashed in this identity-readiness task, values not sampled from current binaries."
+    }
+  ],
+  "prebuild_lock_provenance": {
+    "receipt": "external-dependencies-ready.json",
+    "recorded_utc": "2026-11-04T17:13:36.540470+00:00",
+    "checkpoint_event_id": 3701,
+    "workspace_manifest_sha256": "4aa8b01a11ed34de463651ed6396d9da61f365cccfd158e82e96bbd17bcb14bc",
+    "receipt_sha256_newly_observed": "f154a7d04c1991cbbfec5324045f4ba780099e4202a23ba56e022efd22864398",
+    "scope": "The lock digest was already recorded before source compilation. This receipt-file SHA is newly observed here; not fabricated as a historical pin."
+  },
+  "scope": "New immutable expectation assembly from specified historical records and immutable upstream Git objects. It is an identity baseline, not a completed source build or proof verification. Build11317 remains active and untouched."
+}

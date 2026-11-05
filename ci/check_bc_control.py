@@ -70,12 +70,13 @@ def main():
             else:
                 raise AssertionError('tampered bitcode cache accepted')
             checks.append('bitcode tamper rejected by existing per-file size/hash validation')
-            assert owned_cache.MAX_BYTES == 2 * 1024**3
-            with mock.patch.object(owned_cache, 'PAYLOAD_LIMIT', 1):
+            assert owned_cache.max_bytes('openai') == 6 * 1024**3
+            assert owned_cache.max_bytes('anthropic') == 2 * 1024**3
+            with mock.patch.object(owned_cache, 'payload_limit', return_value=1):
                 skipped = owned_cache.snapshot(project, 'openai', base / 'oversize', HERE, context)
                 assert skipped['status'] == 'skipped-empty-or-oversize'
                 assert not (base / 'oversize').exists()
-            checks.append('same 2GiB cap and existing oversize skip remain active')
+            checks.append('proof-specific 6GiB/2GiB caps and existing oversize skip remain active')
     result = {'scope': 'Synthetic cache ownership/restore/bound controls only; no Lean, Linux or LLVM execution',
               'passed': True, 'checks': checks, 'owned_cache_sha256': sha(HERE / 'owned_cache.py')}
     write_json(args.result, result)

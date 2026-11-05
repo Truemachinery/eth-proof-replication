@@ -1,0 +1,15 @@
+{
+  "schema": "retained-export-line-count/1",
+  "observed_utc": "2026-11-04T21:33:49.611248+00:00",
+  "source_gzip": {
+    "path": "research/eth-external-replication-20261104/anthropic/checker-records/nanoda-64425-0dvr445m/export.ndjson.gz",
+    "size_bytes": 118800833,
+    "sha256": "c625a4755f8ccbf05a95760d59b8a3af42643d9f702f7bbaccb7aa682db814f3"
+  },
+  "decompressed_sha256": "e5cc12cb057e47d08780ce6e807186b5be0074bcc2dcddeffea1a0b3191641e6",
+  "decompressed_bytes": 583355033,
+  "newline_count": 10913508,
+  "own_cpu_seconds": 1.6061720000000002,
+  "wall_seconds": 1.787887834,
+  "scope": "Read-only line count of the existing checked native Anthropic export; not another proof check, disk-fsync benchmark, or measured Linux exporter outcome. CI recorder stdout_file currently fsyncs per input line; runtime impact remains unmeasured."
+}

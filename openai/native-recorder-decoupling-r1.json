@@ -1,0 +1,126 @@
+{
+  "schema": "native-recorder-decoupling/1",
+  "author": "codex-eth-anthropic-replication",
+  "observed_utc": "2026-11-04T22:24:37.560594+00:00",
+  "status": "prepared; literal two-path delta and AST checks passed, awaiting independent source review/root execution",
+  "purpose": "Keep native recorder behavior fixed while future live CI recorder updates remain possible.",
+  "source_copy": "Frozen public R6 publication/sandbox-export-fix-20261104-r6/ci/record.py copied byte-for-byte, SHA1a7c9f9d; no import/execution.",
+  "literal_replacements": [
+    [
+      "\"../ci/record.py\":",
+      "\"native-recorder-r1/record.py\":"
+    ],
+    [
+      "TREE / \"ci/record.py\"",
+      "BASE / \"native-recorder-r1/record.py\""
+    ]
+  ],
+  "unified_diff": [
+    "--- verify_native_phase_r1.py\n",
+    "+++ verify_native_phase_r2.py\n",
+    "@@ -37,7 +37,7 @@\n",
+    "             \"selected-export\": 1800, \"extra-nanoda\": 7200, \"original-fresh\": 7200,\n",
+    "             \"post-identity\": 300}\n",
+    " PINS = {\n",
+    "-    \"../ci/record.py\": \"1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0\",\n",
+    "+    \"native-recorder-r1/record.py\": \"1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0\",\n",
+    "     \"in_workspace.py\": \"b4e80df9ed1f1c71e7a202feccd94f189113610679d4a28ac3728d8708e7d04a\",\n",
+    "     \"verify_source_identity_r3.py\": \"52cb3de32ef89c5fbb460032601693a9d2e740cda296b8dd44f9ab6fd1fa9174\",\n",
+    "     \"identity_expectations_r1.json\": \"e39147fee63287baea89a046c85c462090f1c443f15b53d809e613631f0cce47\",\n",
+    "@@ -307,7 +307,7 @@\n",
+    "                    \"environment_keys\": sorted(env), \"environment\": env,\n",
+    "                    \"timeout_seconds\": TIMEOUTS[args.phase], \"export_input\": export,\n",
+    "                    \"native_accounting\": NATIVE_CPU_SCOPE})\n",
+    "-        spec = importlib.util.spec_from_file_location(\"native_phase_recorder\", TREE / \"ci/record.py\")\n",
+    "+        spec = importlib.util.spec_from_file_location(\"native_phase_recorder\", BASE / \"native-recorder-r1/record.py\")\n",
+    "         module = importlib.util.module_from_spec(spec)\n",
+    "         spec.loader.exec_module(module)\n",
+    "         recorder = module.Recorder(folder / \"stages\")\n"
+  ],
+  "inverse_literal_delta_matches_original": true,
+  "copy_byte_identical": true,
+  "original_R1_preserved": true,
+  "unchanged_behavior": "All module/target/config/source/runtime/exporter/Comparator/Nanoda/capture/environment/timeout/receipt/group/accounting logic unchanged. Only native Recorder pin key and import path point to the identical owned copy.",
+  "original_peer_review": {
+    "path": "research/eth-external-replication-20261104/openai/native-phase-launcher-review-r1.json",
+    "sha256": "578329ba73b16656ffa7b8e219aefd6e59d3255ade2203a90d22732107bb60f1",
+    "size_bytes": 11466
+  },
+  "AST_validation": {
+    "passed": true,
+    "method": "ast.parse only; no imports or source/phase execution",
+    "sources": [
+      {
+        "path": "research/eth-external-replication-20261104/openai/verify_native_phase_r1.py",
+        "sha256": "9db0839d4e6f2e2ef6ff5552f08419bdc2ed3113d47da29afaf27ac20f036e49",
+        "size_bytes": 20231
+      },
+      {
+        "path": "research/eth-external-replication-20261104/openai/verify_native_phase_r2.py",
+        "sha256": "fe3b12c0b8312a6b0cdb5ec1c6d88933cbff796bc92e9403682735d25348c19c",
+        "size_bytes": 20260
+      },
+      {
+        "path": "research/eth-external-replication-20261104/openai/native-recorder-r1/record.py",
+        "sha256": "1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0",
+        "size_bytes": 6474
+      }
+    ]
+  },
+  "manual_preconditions": "Root verifies source/default build closure, runs/reviews preidentity and trace, enforces explicit phase order and aggregates all required closed checks.",
+  "runbook": "native-phase-runbook-r2.md uses R2 filename and exclusive r2-01..r2-08 folders.",
+  "new_tests": 0,
+  "proof_or_launcher_phase_executions": 0,
+  "CI_workspace_builder_edits": false,
+  "artifacts": [
+    {
+      "path": "research/eth-external-replication-20261104/openai/verify_native_phase_r1.py",
+      "sha256": "9db0839d4e6f2e2ef6ff5552f08419bdc2ed3113d47da29afaf27ac20f036e49",
+      "size_bytes": 20231
+    },
+    {
+      "path": "research/eth-external-replication-20261104/openai/verify_native_phase_r2.py",
+      "sha256": "fe3b12c0b8312a6b0cdb5ec1c6d88933cbff796bc92e9403682735d25348c19c",
+      "size_bytes": 20260
+    },
+    {
+      "path": "research/eth-external-replication-20261104/openai/native-recorder-r1/record.py",
+      "sha256": "1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0",
+      "size_bytes": 6474
+    },
+    {
+      "path": "research/eth-external-replication-20261104/publication/sandbox-export-fix-20261104-r6/ci/record.py",
+      "sha256": "1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0",
+      "size_bytes": 6474
+    },
+    {
+      "path": "research/eth-external-replication-20261104/openai/native-phase-runbook-r1.md",
+      "sha256": "adf38add7c916b9f501dc5f3b1542d8679d5b26cc9e4e83aa5b5baca7ce8ac96",
+      "size_bytes": 9315
+    },
+    {
+      "path": "research/eth-external-replication-20261104/openai/native-phase-runbook-r2.md",
+      "sha256": "3e6cb5a323792d649bdd7ebde72f8b2fc3b92428f3c20ae52b46fb2dbe341bac",
+      "size_bytes": 9958
+    },
+    {
+      "path": "research/eth-external-replication-20261104/openai/native-phase-launcher-review-r1.json",
+      "sha256": "578329ba73b16656ffa7b8e219aefd6e59d3255ade2203a90d22732107bb60f1",
+      "size_bytes": 11466
+    },
+    {
+      "path": "research/eth-external-replication-20261104/openai/native-phase-launcher-handoff-r1.json",
+      "sha256": "a63ca58cf4331ac7175c96420b27923bb7710abb9dd8a5b54d5a45d161ad7518",
+      "size_bytes": 12227
+    },
+    {
+      "path": "research/eth-external-replication-20261104/openai/native_export_capture_r2.py",
+      "sha256": "4755ba1dd43d18509cd1472bca98c269c79e3dc5a3c99f41faff5b2e6d78be74",
+      "size_bytes": 3279
+    }
+  ],
+  "preparation_cpu_seconds": 0.011103999999999989,
+  "preparation_wall_seconds": 0.012373208000000004,
+  "resource_scope": "This byte-copy/delta/AST/docs subprocess; earlier read/coordination overhead excluded.",
+  "incremental_usd": 0
+}

@@ -1,0 +1,19 @@
+{
+  "abi_floor": 8,
+  "abi_query_source_sha256": "d0853c1a67adcec4bbe22d1c44dc835f448b80eebe6502a32450faa59e17e0b0",
+  "architecture_guards_rejected_before_syscall": 2,
+  "mocked_query_calls": 6,
+  "official_comparator_unchanged": true,
+  "own_best_effort_calls": 5,
+  "passed": true,
+  "preflight_before_lean_acquisition": true,
+  "replicate_py_sha256": "89a68dcc753d1b543d7262f4893da5b15275dc8f3dc23bdc5872761f84b41b28",
+  "required_control_order": [
+    "landlock-abi-preflight",
+    "landrun-build",
+    "landrun-enforcement-control",
+    "af-unix-control",
+    "cleanup-disposable-sdks"
+  ],
+  "scope": "Local static/mock policy regression only; no Linux syscall, Landrun, sandbox or proof execution"
+}

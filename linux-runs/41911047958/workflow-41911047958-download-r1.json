@@ -1,0 +1,18 @@
+{
+  "schema": "github-terminal-log-download/1",
+  "started_utc": "2026-11-04T22:04:23.147517+00:00",
+  "finished_utc": "2026-11-04T22:04:24.147510+00:00",
+  "wall_seconds": 1.00000175,
+  "argv": [
+    "/opt/homebrew/bin/gh",
+    "api",
+    "repos/Truemachinery/eth-proof-replication/actions/runs/41911047958/logs"
+  ],
+  "exit_code": 0,
+  "timed_out": false,
+  "stderr": "",
+  "path": "research/eth-external-replication-20261104/linux-runs/41911047958/workflow-41911047958.logs.zip",
+  "sha256": "3b1817dba175be522012b458222d6986b128af47fb2873df629cb47f75c83cdd",
+  "bytes": 70398,
+  "scope": "Exact GitHub endpoint body; job response is distinguished from workflow ZIP and from ephemeral subprocess raw outputs."
+}

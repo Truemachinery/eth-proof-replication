@@ -1,0 +1,211 @@
+{
+  "schema": "openai-native-identity-provenance/1",
+  "observed_utc": "2026-11-04T21:21:46.541841+00:00",
+  "author_label": "codex-eth-anthropic-replication",
+  "recommended_helper": {
+    "path": "research/eth-external-replication-20261104/openai/verify_source_identity_r3.py",
+    "size_bytes": 12879,
+    "sha256": "52cb3de32ef89c5fbb460032601693a9d2e740cda296b8dd44f9ab6fd1fa9174"
+  },
+  "expectation_assembly": {
+    "path": "research/eth-external-replication-20261104/openai/identity_expectations_r1.json",
+    "size_bytes": 8435,
+    "sha256": "e39147fee63287baea89a046c85c462090f1c443f15b53d809e613631f0cce47"
+  },
+  "verdict": "Final r3 read-only identity metadata passed; source build and proof verification are not assessed.",
+  "historically_recorded_expectations": [
+    {
+      "item": "3092-file source closure manifest",
+      "sha256": "bf7f36120177010243e52dd9053bd3e9f97f92fa35184abf173a8a57ef4843e1",
+      "meaning": "Original parent-recorded manifest; both upstream selected files and workspace copies are hashed against it."
+    },
+    {
+      "item": "workspace config r2",
+      "sha256": "a56c999ec870742bee9c51be2bb3199d358d77876d5e7d49492f5ad880938413",
+      "meaning": "Preserves parent-recorded minimal-package library globs; original source manifest and configs were not edited."
+    },
+    {
+      "item": "original Comparator JSON",
+      "sha256": "debbfdc9c01104d2369be80da5180978275106df8b685f693fba7ce7da7c5b19",
+      "meaning": "Upstream trusted contract configuration, unchanged; original Nanoda false setting not changed."
+    },
+    {
+      "item": "prebuild dependency lock",
+      "sha256": "4aa8b01a11ed34de463651ed6396d9da61f365cccfd158e82e96bbd17bcb14bc",
+      "meaning": "Already recorded in external-dependencies-ready.json at17:13:36UTC, checkpoint3701, before project source compilation."
+    },
+    {
+      "item": "six original4341 runtime/checker files",
+      "provenance_manifest_sha256": "c1a08efe6be5abba717546cf7baae4b5a8045c0b5ffe41706a565148724631c2",
+      "meaning": "Expected values reused from already checkpoint-pinned Anthropic Comparator tool manifest runtime_files, marked matching previous shared runtime inventory. These were not sampled from current runtime bytes to define success."
+    },
+    {
+      "item": "two original4341 launchers",
+      "meaning": "Expected lean/lake bytes reused from existing compiler-identities.json records. Six full runtime/checker files disambiguate the identical lean launcher shared with4331."
+    }
+  ],
+  "newly_recorded_metadata_not_backdated": {
+    "expectations_assembly": "New file assembled during this task; its creation/digest is not called a historical pin.",
+    "dependency_git_object": {
+      "commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "path": "lake-manifest.json",
+      "blob_oid": "de612f43de68d2b64dc65f74fc9b37d1f9d20898",
+      "blob_sha256": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+      "meaning": "Newly recorded local object identity authenticated by exact pinned upstream commit. All8 transitive dependency expectations are derived from this object, with direct Mathlib pin added; current checkout HEADs are observations, never expectations."
+    },
+    "existing_inventory_file_hashes": "Hashes1445280d(runtime inventory),cdaf3f2f(compiler inventory),f154a7d0(prebuild receipt) are newly observed by this task and explicitly labeled so. Their existing recorded values are reused; no earlier first-observation timestamp is invented.",
+    "runtime_chronology_limit": "Do not infer capture before the first17:18 source attempt merely from a later saved review. The expected runtime values have an existing recorded/checkpoint-pinned tooling chain; the current observations are explicitly timed now.",
+    "observations": "R1/R2/R3 JSON files are new current metadata measurements, not prior baseline records."
+  },
+  "final_counts": {
+    "closure_modules": 3092,
+    "source_bytes_checked_copies": 2,
+    "module_file_hash_checks": 6184,
+    "workspace_configuration_files": 2,
+    "workspace_lean_configuration_files": 1,
+    "exact_workspace_lean_inventory": 3093,
+    "dependency_repositories": 9,
+    "selected_real_runtime_files": 8
+  },
+  "git_state_scope": "R3 separately records worktree-versus-pinned-commit differences and cached/index-versus-pinned-commit differences, plus exact HEAD, repository top-level and HTTPS remote identity. All are clean/matching in the observation. Optional Git locks, fsmonitor and lazy fetch are disabled; only Git metadata subcommands are invoked.",
+  "preserved_corrections": [
+    {
+      "revision": "r1",
+      "meaning": "Failed only because initial .lean inventory expectation omitted separately pinned lakefile.lean. All source copies, dependencies and runtime bytes matched. Initial source bytes remain both top-levelr1 and identity-revisions backup; no project source drift or edit."
+    },
+    {
+      "revision": "r2",
+      "meaning": "Union of module paths with recordedR2 .lean config paths fixes count3093; passed. During development exact corrected bytes executed at r1 filename, then frozen unchanged asr2 and initial r1 restored; distinct actual argv/source SHA association retained in run receipts."
+    },
+    {
+      "revision": "r3",
+      "meaning": "Adds explicit index/staged Git state and separate module/config counts to satisfy strict tracked cleanliness. This concrete new condition justified one final metadata run using actualr3filename; passed. No subsequent metadata rerun is needed before parent requested post-build boundary."
+    }
+  ],
+  "runs": [
+    {
+      "revision": "r1",
+      "actual_executed_argv": [
+        "env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "python3",
+        "research/eth-external-replication-20261104/openai/verify_source_identity_r1.py"
+      ],
+      "executed_helper_sha256": "4d5afc9bf15f14e6ad47e93c15f05eafda0da9372bff7b92ae157993fac3511d",
+      "source_snapshot": "research/eth-external-replication-20261104/openai/verify_source_identity_r1.py",
+      "full_checkpoint_log": {
+        "path": "research/checkpoints/codex-eth-anthropic-replication--eth-openai-native-identity-readiness-20261104--20261104T211355Z-598586-84630.txt",
+        "size_bytes": 6442,
+        "sha256": "5553d578361029dded7fcb8f03d1f23118015c1d856acb20b97006320bdc68b4"
+      },
+      "extracted_stdout_json": {
+        "path": "research/eth-external-replication-20261104/openai/identity-readiness-observation-r1.json",
+        "size_bytes": 6155,
+        "sha256": "b4c30646cd129d488469fcf28327473500f39a047c8d9e7eb0e6b974be2ca470"
+      },
+      "exit_code": 1,
+      "timed_out": false,
+      "checkpoint_cpu_seconds": 8.175547,
+      "checkpoint_wall_seconds": 4.464763,
+      "helper_own_cpu_seconds": 1.202379,
+      "helper_reaped_git_cpu_seconds": 6.919912,
+      "helper_wall_seconds": 4.403580875,
+      "all_pinned_input_checks_passed": false,
+      "failures": [
+        {
+          "kind": "workspace-lean-inventory-mismatch",
+          "unexpected": [
+            "lakefile.lean"
+          ],
+          "missing": [],
+          "symlink_directories": []
+        }
+      ]
+    },
+    {
+      "revision": "r2",
+      "actual_executed_argv": [
+        "env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "python3",
+        "research/eth-external-replication-20261104/openai/verify_source_identity_r1.py"
+      ],
+      "executed_helper_sha256": "e8cb2f6550f260e662b5afb6d260fa379889a59b54e55be7e3941cda0d5013aa",
+      "source_snapshot": "research/eth-external-replication-20261104/openai/verify_source_identity_r2.py",
+      "full_checkpoint_log": {
+        "path": "research/checkpoints/codex-eth-anthropic-replication--eth-openai-native-identity-readiness-20261104--20261104T211516Z-302391-84892.txt",
+        "size_bytes": 6338,
+        "sha256": "1a3433a45b905d5dc76f78d2ad407e36f523ae0a5b230b32345df516a01abb18"
+      },
+      "extracted_stdout_json": {
+        "path": "research/eth-external-replication-20261104/openai/identity-readiness-observation-r2.json",
+        "size_bytes": 6051,
+        "sha256": "9e3c2402c645537185ff65522f36413433e7024031222d24f0dc982386d8ccd4"
+      },
+      "exit_code": 0,
+      "timed_out": false,
+      "checkpoint_cpu_seconds": 7.44661,
+      "checkpoint_wall_seconds": 4.038997,
+      "helper_own_cpu_seconds": 1.2263140000000001,
+      "helper_reaped_git_cpu_seconds": 6.1685989999999995,
+      "helper_wall_seconds": 3.981473125,
+      "all_pinned_input_checks_passed": true,
+      "failures": []
+    },
+    {
+      "revision": "r3",
+      "actual_executed_argv": [
+        "env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "python3",
+        "research/eth-external-replication-20261104/openai/verify_source_identity_r3.py"
+      ],
+      "executed_helper_sha256": "52cb3de32ef89c5fbb460032601693a9d2e740cda296b8dd44f9ab6fd1fa9174",
+      "source_snapshot": "research/eth-external-replication-20261104/openai/verify_source_identity_r3.py",
+      "full_checkpoint_log": {
+        "path": "research/checkpoints/codex-eth-anthropic-replication--eth-openai-native-identity-readiness-20261104--20261104T211930Z-939396-85402.txt",
+        "size_bytes": 6918,
+        "sha256": "3c6c89e552874bc6cf512961b0c0d16f502e79842dcbe911805c4367d203263d"
+      },
+      "extracted_stdout_json": {
+        "path": "research/eth-external-replication-20261104/openai/identity-readiness-observation-r3.json",
+        "size_bytes": 6631,
+        "sha256": "b508dc8f0c355e66bd1a9eaa6727917b8ab07b23923c099104659cbc8f6ff6b5"
+      },
+      "exit_code": 0,
+      "timed_out": false,
+      "checkpoint_cpu_seconds": 7.452436,
+      "checkpoint_wall_seconds": 3.949739,
+      "helper_own_cpu_seconds": 1.103508,
+      "helper_reaped_git_cpu_seconds": 6.289156,
+      "helper_wall_seconds": 3.88260025,
+      "all_pinned_input_checks_passed": true,
+      "failures": []
+    }
+  ],
+  "resource_totals": {
+    "checkpoint_cpu_seconds": 23.074593,
+    "checkpoint_wall_seconds_summed": 12.453499,
+    "paid_cloud_spend_usd": 0,
+    "scope": "Three metadata command measurements; small authoring/read/assembly/checkpoint overhead not fully metered. No Lean/Lake/compiler/checker/exporter was executed and no active build was interrupted."
+  },
+  "future_command": [
+    "env",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "python3",
+    "research/eth-external-replication-20261104/openai/verify_source_identity_r3.py"
+  ],
+  "unchanged_scopes": [
+    "OpenAI source and workspace/config bytes",
+    "Live build11317 and gate configuration",
+    "CI inputs under active Ant continuation",
+    "Publisher and EXPERIMENTS",
+    "All dependency and runtime files"
+  ],
+  "limitations": [
+    "Metadata success does not establish project build completeness, exact target axioms/types, kernel replay, Comparator, Nanoda or mathematical-model faithfulness.",
+    "Dependency compiled object caches were not rederived. Selected source closure bytes are directly hashed; dependency tracked cleanliness is Git metadata, not full dependency-byte inventories.",
+    "Untracked dependency files/generated caches and system libraries lie outside these checks; workspace Lean inventory explicitly excludes.lake/.git.",
+    "Original downloaded toolchain archive hash is unavailable; no historical download digest is invented."
+  ]
+}

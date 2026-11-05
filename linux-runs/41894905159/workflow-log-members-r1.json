@@ -1,0 +1,84 @@
+{
+  "schema": "github-workflow-log-members/1",
+  "archive_sha256": "0a18fdb544c960346bdc235b6e29a116d322fb5a77ab74351a53526c445c2194",
+  "members": [
+    {
+      "name": "0_openai.txt",
+      "path": "research/eth-external-replication-20261104/linux-runs/41894905159/workflow-log-members-r1/0_openai.txt",
+      "sha256": "c5b6d74be5996d77cd7cb7e421d88dde529793f4d9849772f99bdd69f5ae4bac",
+      "bytes": 513886
+    },
+    {
+      "name": "openai/system.txt",
+      "path": "research/eth-external-replication-20261104/linux-runs/41894905159/workflow-log-members-r1/openai/system.txt",
+      "sha256": "7e5628aba2e45df08eff3bafb6bb612ca2fd1a19c27c4b8bb3b2f2eb09f7d0b0",
+      "bytes": 856
+    },
+    {
+      "name": "openai/1_Set up job.txt",
+      "path": "research/eth-external-replication-20261104/linux-runs/41894905159/workflow-log-members-r1/openai/1_Set up job.txt",
+      "sha256": "6358a2ab3549c4405eb5aa332a85278513c7887d369ceb92cf0d47edaaf0eb80",
+      "bytes": 2134
+    },
+    {
+      "name": "openai/2_Run <EMAIL REDACTED>",
+      "path": "research/eth-external-replication-20261104/linux-runs/41894905159/workflow-log-members-r1/openai/2_Run <EMAIL REDACTED>",
+      "sha256": "a8d25e77696975d7ec981b30c8753b9ab91f73d13146584f0fbaaa3a33e9de38",
+      "bytes": 6852
+    },
+    {
+      "name": "openai/3_Verify public manual hosted runner.txt",
+      "path": "research/eth-external-replication-20261104/linux-runs/41894905159/workflow-log-members-r1/openai/3_Verify public manual hosted runner.txt",
+      "sha256": "29a5dd799aa62a78ad74e9226fec1e6b392525f30fd6de953956e6ad27c2fbfb",
+      "bytes": 683
+    },
+    {
+      "name": "openai/4_Restore newest matching bounded owned-output cache.txt",
+      "path": "research/eth-external-replication-20261104/linux-runs/41894905159/workflow-log-members-r1/openai/4_Restore newest matching bounded owned-output cache.txt",
+      "sha256": "de50a812d6de0a682ce10d26b6b1abf53df9bcc569c907093205a41955f64921",
+      "bytes": 1254
+    },
+    {
+      "name": "openai/5_Build and check pinned public proof.txt",
+      "path": "research/eth-external-replication-20261104/linux-runs/41894905159/workflow-log-members-r1/openai/5_Build and check pinned public proof.txt",
+      "sha256": "e2bc2b92044c197e44261c99e6bd2dec6ad1260188509f79c1c88ee03405ef82",
+      "bytes": 500309
+    },
+    {
+      "name": "openai/6_Bound retention and prune previous own-proof snapshots.txt",
+      "path": "research/eth-external-replication-20261104/linux-runs/41894905159/workflow-log-members-r1/openai/6_Bound retention and prune previous own-proof snapshots.txt",
+      "sha256": "936c846bf54de1abfe6aff241450f9485bcb6278894738e2a83c21828165e3e7",
+      "bytes": 576
+    },
+    {
+      "name": "openai/9_Preserve unsuccessful replication result.txt",
+      "path": "research/eth-external-replication-20261104/linux-runs/41894905159/workflow-log-members-r1/openai/9_Preserve unsuccessful replication result.txt",
+      "sha256": "4b641d67e6acad8abda2231956dcdee5ca21e07839fe96c2810e6e4981207d12",
+      "bytes": 364
+    },
+    {
+      "name": "openai/18_Post Run <EMAIL REDACTED>",
+      "path": "research/eth-external-replication-20261104/linux-runs/41894905159/workflow-log-members-r1/openai/18_Post Run <EMAIL REDACTED>",
+      "sha256": "7453a6e3c8dfd14975025510a95f993e2737a3d1ac13584db479b0b4838287f2",
+      "bytes": 1288
+    },
+    {
+      "name": "openai/19_Complete job.txt",
+      "path": "research/eth-external-replication-20261104/linux-runs/41894905159/workflow-log-members-r1/openai/19_Complete job.txt",
+      "sha256": "b0be9da48fa21f945d5fc37a1032712b150056eca5561ad3c348bdb76191df2e",
+      "bytes": 450
+    },
+    {
+      "name": "1_anthropic.txt",
+      "path": "research/eth-external-replication-20261104/linux-runs/41894905159/workflow-log-members-r1/1_anthropic.txt",
+      "sha256": "96b5a97a88747174e013598c24e73eba3c2f1e2943e112f5f80ade7a44cf0574",
+      "bytes": 241386
+    },
+    {
+      "name": "anthropic/system.txt",
+      "path": "research/eth-external-replication-20261104/linux-runs/41894905159/workflow-log-members-r1/anthropic/system.txt",
+      "sha256": "5acbdc6460767e6ce83336ad0e4ef3775371eeae95d8caa57a3c877d1bc05be0",
+      "bytes": 865
+    }
+  ]
+}

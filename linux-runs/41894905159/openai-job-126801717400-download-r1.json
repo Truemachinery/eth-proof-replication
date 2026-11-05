@@ -1,0 +1,18 @@
+{
+  "schema": "github-terminal-log-download/1",
+  "started_utc": "2026-11-04T22:10:17.659147+00:00",
+  "finished_utc": "2026-11-04T22:10:18.790556+00:00",
+  "wall_seconds": 1.1310551249999998,
+  "argv": [
+    "/opt/homebrew/bin/gh",
+    "api",
+    "repos/Truemachinery/eth-proof-replication/actions/jobs/126801717400/logs"
+  ],
+  "exit_code": 0,
+  "timed_out": false,
+  "stderr": "",
+  "path": "research/eth-external-replication-20261104/linux-runs/41894905159/openai-job-126801717400.raw.log",
+  "sha256": "c5b6d74be5996d77cd7cb7e421d88dde529793f4d9849772f99bdd69f5ae4bac",
+  "bytes": 513886,
+  "scope": "Exact GitHub endpoint body; job response is distinguished from workflow ZIP and from ephemeral subprocess raw outputs."
+}

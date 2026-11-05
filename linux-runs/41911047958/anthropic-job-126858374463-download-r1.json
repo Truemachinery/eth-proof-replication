@@ -1,0 +1,18 @@
+{
+  "schema": "github-terminal-log-download/1",
+  "started_utc": "2026-11-04T22:04:22.280146+00:00",
+  "finished_utc": "2026-11-04T22:04:23.147172+00:00",
+  "wall_seconds": 0.8666506669999999,
+  "argv": [
+    "/opt/homebrew/bin/gh",
+    "api",
+    "repos/Truemachinery/eth-proof-replication/actions/jobs/126858374463/logs"
+  ],
+  "exit_code": 0,
+  "timed_out": false,
+  "stderr": "",
+  "path": "research/eth-external-replication-20261104/linux-runs/41911047958/anthropic-job-126858374463.raw.log",
+  "sha256": "cf44010f02577d29ffdf40f9288f97c98038bdc84bcd68dc0c8f6e539e228db5",
+  "bytes": 154647,
+  "scope": "Exact GitHub endpoint body; job response is distinguished from workflow ZIP and from ephemeral subprocess raw outputs."
+}

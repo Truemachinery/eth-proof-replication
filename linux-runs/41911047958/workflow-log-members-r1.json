@@ -1,0 +1,96 @@
+{
+  "schema": "github-workflow-log-members/1",
+  "archive_sha256": "3b1817dba175be522012b458222d6986b128af47fb2873df629cb47f75c83cdd",
+  "members": [
+    {
+      "name": "0_anthropic.txt",
+      "path": "research/eth-external-replication-20261104/linux-runs/41911047958/workflow-log-members-r1/0_anthropic.txt",
+      "sha256": "cf44010f02577d29ffdf40f9288f97c98038bdc84bcd68dc0c8f6e539e228db5",
+      "bytes": 154647
+    },
+    {
+      "name": "anthropic/system.txt",
+      "path": "research/eth-external-replication-20261104/linux-runs/41911047958/workflow-log-members-r1/anthropic/system.txt",
+      "sha256": "87509e7ff4ae1a8851342cb2ef54ab26c52610ebcd21a89505e1b7ca78cc462a",
+      "bytes": 869
+    },
+    {
+      "name": "anthropic/1_Set up job.txt",
+      "path": "research/eth-external-replication-20261104/linux-runs/41911047958/workflow-log-members-r1/anthropic/1_Set up job.txt",
+      "sha256": "b07f3bd72cdf85a48b45011ad63ed88d45ceb43be588a209016d182491c403d8",
+      "bytes": 2140
+    },
+    {
+      "name": "anthropic/2_Run <EMAIL REDACTED>",
+      "path": "research/eth-external-replication-20261104/linux-runs/41911047958/workflow-log-members-r1/anthropic/2_Run <EMAIL REDACTED>",
+      "sha256": "c1a59c4c20a2e1da32888e9c07935ada8d94ac725eabf78c0a5d5fabd2486136",
+      "bytes": 6852
+    },
+    {
+      "name": "anthropic/3_Verify public manual hosted runner.txt",
+      "path": "research/eth-external-replication-20261104/linux-runs/41911047958/workflow-log-members-r1/anthropic/3_Verify public manual hosted runner.txt",
+      "sha256": "56dbd16be5adadf25d16ea91e8f8be1c6758741067c0bfca7bd08c26030096d4",
+      "bytes": 683
+    },
+    {
+      "name": "anthropic/4_Restore newest matching bounded owned-output cache.txt",
+      "path": "research/eth-external-replication-20261104/linux-runs/41911047958/workflow-log-members-r1/anthropic/4_Restore newest matching bounded owned-output cache.txt",
+      "sha256": "08cefdf040c2c1980e10bc09222b9bbf71fd286fad44c57cceb1dd89a2ac50e4",
+      "bytes": 1269
+    },
+    {
+      "name": "anthropic/5_Restore the one reviewed predecessor cache.txt",
+      "path": "research/eth-external-replication-20261104/linux-runs/41911047958/workflow-log-members-r1/anthropic/5_Restore the one reviewed predecessor cache.txt",
+      "sha256": "20ea6df2c361826357919ecd1c2f53a912add6a83c6e34ffc05cf685ea8865ed",
+      "bytes": 1954
+    },
+    {
+      "name": "anthropic/6_Require exact predecessor cache selection.txt",
+      "path": "research/eth-external-replication-20261104/linux-runs/41911047958/workflow-log-members-r1/anthropic/6_Require exact predecessor cache selection.txt",
+      "sha256": "d9b9e8f02a19b24bc75ef7a35d16929b6727ed083c6addee1142b34322444490",
+      "bytes": 917
+    },
+    {
+      "name": "anthropic/7_Build and check pinned public proof.txt",
+      "path": "research/eth-external-replication-20261104/linux-runs/41911047958/workflow-log-members-r1/anthropic/7_Build and check pinned public proof.txt",
+      "sha256": "95945c24174242339a5b1c68d7767ed901ef0e19276fb741cd117325022584e8",
+      "bytes": 133763
+    },
+    {
+      "name": "anthropic/8_Bound retention and prune previous own-proof snapshots.txt",
+      "path": "research/eth-external-replication-20261104/linux-runs/41911047958/workflow-log-members-r1/anthropic/8_Bound retention and prune previous own-proof snapshots.txt",
+      "sha256": "5d8cc983afe0aac059c7f9c9b971e0c978c5c85f3786e17eb4678db16a31a297",
+      "bytes": 2538
+    },
+    {
+      "name": "anthropic/9_Save at most2GiB of this proof's completed outputs.txt",
+      "path": "research/eth-external-replication-20261104/linux-runs/41911047958/workflow-log-members-r1/anthropic/9_Save at most2GiB of this proof's completed outputs.txt",
+      "sha256": "995e5a48e94045186e36653bd6d9cc3ac01a014e6d22cd64c255fc14f3a2f647",
+      "bytes": 1561
+    },
+    {
+      "name": "anthropic/10_Audit actual backend cache size.txt",
+      "path": "research/eth-external-replication-20261104/linux-runs/41911047958/workflow-log-members-r1/anthropic/10_Audit actual backend cache size.txt",
+      "sha256": "7bfde1e939865b818a6fed3adfda6cf8d04ea694d3c9a9dc9a154eb3834d5459",
+      "bytes": 843
+    },
+    {
+      "name": "anthropic/11_Preserve unsuccessful replication result.txt",
+      "path": "research/eth-external-replication-20261104/linux-runs/41911047958/workflow-log-members-r1/anthropic/11_Preserve unsuccessful replication result.txt",
+      "sha256": "47ef7da0228d8e702d651ee1b8d890abb7db00beb7bd1ffa2102ec5f737c3021",
+      "bytes": 364
+    },
+    {
+      "name": "anthropic/22_Post Run <EMAIL REDACTED>",
+      "path": "research/eth-external-replication-20261104/linux-runs/41911047958/workflow-log-members-r1/anthropic/22_Post Run <EMAIL REDACTED>",
+      "sha256": "ae95590ac3bbe0309457eda7edce7519cc8dc3468a9dbacb49ab661b2ea3f576",
+      "bytes": 1288
+    },
+    {
+      "name": "anthropic/23_Complete job.txt",
+      "path": "research/eth-external-replication-20261104/linux-runs/41911047958/workflow-log-members-r1/anthropic/23_Complete job.txt",
+      "sha256": "7aaf8e33920c18fb68686cddd729a5fd2e033d5da1d041e6e404eeb1991439ca",
+      "bytes": 511
+    }
+  ]
+}

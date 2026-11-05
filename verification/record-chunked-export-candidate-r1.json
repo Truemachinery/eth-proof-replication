@@ -1,0 +1,161 @@
+{
+  "candidate": {
+    "path": "verification/record_chunked_export_candidate_r1.py",
+    "sha256": "fa4117719489920030dc75cc9fac658d17f6153048838123e98f6c843663928a",
+    "size_bytes": 6687
+  },
+  "change": "Only echoFalse binary-export stdout selects stream.read(4MiB) instead of readline; each consumed chunk is flushed/fsynced and clean EOF receives a final flush/fsync. EchoTrue textual/stderr readline/display and process/timeout/failure/required-line branches remain unchanged.",
+  "command_output": {
+    "path": "verification/chunked-export-control-command-r1.txt",
+    "sha256": "3e25636bddd6258e5645b64bcdabc2be9253770007a20eeeb9b3ef7a75df9fb3",
+    "size_bytes": 413
+  },
+  "control_cases": [
+    {
+      "expected_and_actual_exit": 0,
+      "expected_fsync_upper_bound": 1,
+      "export_fsync_calls": 1,
+      "name": "empty-export",
+      "passed": true,
+      "payload_bytes": 0,
+      "payload_newlines": 0
+    },
+    {
+      "expected_and_actual_exit": 0,
+      "expected_fsync_upper_bound": 2,
+      "export_fsync_calls": 2,
+      "name": "newline-heavy",
+      "passed": true,
+      "payload_bytes": 1200000,
+      "payload_newlines": 400000
+    },
+    {
+      "expected_and_actual_exit": 0,
+      "expected_fsync_upper_bound": 4,
+      "export_fsync_calls": 4,
+      "name": "binary-two-boundaries",
+      "passed": true,
+      "payload_bytes": 8388865,
+      "payload_newlines": 32769
+    },
+    {
+      "expected_and_actual_exit": 0,
+      "expected_fsync_upper_bound": 2,
+      "export_fsync_calls": 2,
+      "name": "exact-chunk-boundary",
+      "passed": true,
+      "payload_bytes": 4194304,
+      "payload_newlines": 0
+    },
+    {
+      "expected_and_actual_exit": 7,
+      "expected_fsync_upper_bound": 2,
+      "export_fsync_calls": 2,
+      "name": "nonzero-retains-bytes",
+      "passed": true,
+      "payload_bytes": 36000,
+      "payload_newlines": 2000
+    },
+    {
+      "expected_and_actual_exit": 124,
+      "expected_fsync_upper_bound": 2,
+      "export_fsync_calls": 2,
+      "name": "timeout-retains-partial",
+      "passed": true,
+      "payload_bytes": 11000,
+      "payload_newlines": 1000
+    },
+    {
+      "expected_and_actual_exit": 125,
+      "expected_fsync_upper_bound": 2,
+      "export_fsync_calls": 1,
+      "name": "fsync-error-retained-failure",
+      "passed": true,
+      "payload_bytes": 24,
+      "payload_newlines": 1
+    },
+    {
+      "expected_and_actual_exit": 0,
+      "expected_fsync_upper_bound": null,
+      "export_fsync_calls": 0,
+      "name": "original-text-success",
+      "passed": true,
+      "payload_bytes": 45,
+      "payload_newlines": 3
+    },
+    {
+      "expected_and_actual_exit": 0,
+      "expected_fsync_upper_bound": null,
+      "export_fsync_calls": 0,
+      "name": "candidate-text-success",
+      "passed": true,
+      "payload_bytes": 45,
+      "payload_newlines": 3
+    },
+    {
+      "expected_and_actual_exit": 125,
+      "expected_fsync_upper_bound": null,
+      "export_fsync_calls": 0,
+      "name": "original-required-line-failure",
+      "passed": true,
+      "payload_bytes": 10,
+      "payload_newlines": 1
+    },
+    {
+      "expected_and_actual_exit": 125,
+      "expected_fsync_upper_bound": null,
+      "export_fsync_calls": 0,
+      "name": "candidate-required-line-failure",
+      "passed": true,
+      "payload_bytes": 10,
+      "payload_newlines": 1
+    }
+  ],
+  "control_result": {
+    "path": "verification/chunked-export-candidate-control-result-r1.json",
+    "sha256": "dad2f1d3c667c5fe0f6e9062faa81d6e356bd15d621a51f5ffa9bfa7a9c182c4",
+    "size_bytes": 30023
+  },
+  "control_script": {
+    "path": "verification/check_chunked_export_candidate_r1.py",
+    "sha256": "b01fd213a215d09e2956fac7c559918e97e92223238dcff0a29552f0a72fac6c",
+    "size_bytes": 10284
+  },
+  "created_utc": "2026-11-04T21:44:36.708436+00:00",
+  "limits": [
+    "Observed10913508newlines in existing native583355033B export motivate potential per-line fsync cost only; no Linux exporter outcome or baseline disk-fsync timing was measured.",
+    "Fixture fsync counts are actual delegated file operations except one explicit export-fsync error injection, which yields retained failure125. No fsync performance ratio is claimed.",
+    "Per-chunk/EOF fsync is a bounded application-level durability policy; physical storage or host-crash durability is not guaranteed.",
+    "Candidate is not applied or published. Root and CI owner decide any later change only after reviewing actual production evidence."
+  ],
+  "motivating_observation": {
+    "path": "verification/export-line-count-r1.json",
+    "sha256": "5e9ae4c1b7d69dbb05e0260e1eb8c34071b5d09268bdf69ccb52e7304e6f9655",
+    "size_bytes": 846
+  },
+  "original": {
+    "path": "ci/record.py",
+    "sha256": "1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0",
+    "size_bytes": 6474
+  },
+  "resources": {
+    "checkpoint_run_revision": 3943,
+    "command_cpu_seconds": 1.56108,
+    "command_exit_code": 0,
+    "command_wall_seconds": 2.939245,
+    "inner_child_cpu_seconds": 1.352513,
+    "inner_own_cpu_seconds": 0.129198,
+    "inner_wall_seconds": 2.8303175,
+    "paid_compute_usd": 0,
+    "scope": "Single small transport-control command; preparation/source-reading/checkpoint/model overhead excluded. No proof tool execution.",
+    "timed_out": false
+  },
+  "schema": "eth-unapplied-recorder-candidate/1",
+  "scope": "Outside-ci candidate and local transport controls only. Production/frozenr6 inputs unchanged. No Linux/ETH proof, export, Nanoda, performance or continuation verdict.",
+  "status": "UNAPPLIED",
+  "unified_diff": {
+    "path": "verification/record-chunked-export-candidate-r1.diff",
+    "sha256": "54429756ae74f61cc5ef9ebb3caaf0342566239cafc6494019f692352d9cdcd2",
+    "size_bytes": 1000
+  }
+}

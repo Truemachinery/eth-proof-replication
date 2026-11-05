@@ -1,0 +1,13 @@
+# Native OpenAI launcher source/API review
+
+No material blocker remains for the **manual post-build protocol** in launcher`9db0839d4e6f2e2ef6ff5552f08419bdc2ed3113d47da29afaf27ac20f036e49` with captureR2`4755ba1dd43d18509cd1472bca98c269c79e3dc5a3c99f41faff5b2e6d78be74`. This is a same-team read-only source and saved-evidence review, not a proof check or another kernel execution.
+
+The launcher pins the real4.34.1 runtime/configs and existing865Comparator/exporter/Nanoda binary identities, constructs a credential-free environment and preserves original configSHAdebb… with Nanoda disabled. Additional strict standard3/Nat/String/two-thread Nanoda is a separately labelled phase bound to a nonempty, successful selected export with identical input fingerprint and exact closed receipt/raw/config/archive lineage. Original target and fresh-replay scopes remain separate.
+
+The initial capture cleanup concern is resolved in R2: original Lake env now surrounds capture, whose direct child is the exporter. Exceptions explicitly terminate/wait then kill/wait that child while preserving Recorder process-group ownership. The saved closed-pipe fsync-failure control exits1 normally, retains17B/no complete capture receipt and records child termination without relying on the Recorder pipe/timeout fallback. I matched the actual saved raw, finished, fault and partial artifacts. Preserved R1 success/exit7/timeout controls also match their actual logs and fixture bytes. I reran none of them; R1 and R2 execution coverage must retain their version distinction.
+
+Build closure and phase order are **operator preconditions**, not automatically enforced by this one-phase CLI. Root must close build11317, require R3 preidentity and the normal real-prefix no-build trace before normal checker work, and require every closed checker phase plus final postidentity before a complete verdict. Individual phase PASS is not overall replication PASS. No phase was executed by this reviewer.
+
+Recorder supplies process-group timeout/cleanup; export is capped1800s and heavy comparator/Nanoda/fresh7200s each. SIGTERM/INT marks interrupted phases failed. Native fake-Landrun has no Linux isolation. Per-stage reaped-childCPU excludes frontend input/archive hashing; nested Nanoda is counted once, and no RSS claim is made. Source meaning, manuscript correspondence and practical SAT/mining implications remain separate.
+
+All25frozenr6CI identities and the unapplied chunked-recorder candidate remain unchanged. No source edits/imports, tests, proof tools, network, publication, dispatch or outreach occurred in this review. The companion JSON binds exact inputs, line references, saved-control scope, limitations and small metadata resource accounting.

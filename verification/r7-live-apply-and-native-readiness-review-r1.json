@@ -1,0 +1,705 @@
+{
+  "schema": "eth-r7-live-apply-and-native-readiness-review/1",
+  "status": "LIVE_R7_IDENTITIES_MATCH_NATIVE_PINS_MATCH_BUILD_GATE_PENDING",
+  "scope": "Independent same-team read-only review. No control reruns, runner/helper imports, Lean/Lake/checker/export executions, PTY polls, signals, CI/proof-workspace edits, dispatch or network.",
+  "applied_r7": {
+    "observed_utc": "2026-11-04T22:53:17.450052+00:00",
+    "apply_receipt": {
+      "path": "verification/ci-repair-r7-apply-r1.json",
+      "sha256": "b8dbd3eb684aaa702d5a54566843faf2e757e3a1723ac4c23bb79eb9f49eff93",
+      "size_bytes": 9626,
+      "stable_during_read": true
+    },
+    "frozen_input_map": {
+      "path": "verification/ci-repair-candidate-r7-inputs-r1.json",
+      "sha256": "68e3cfd1b03d66e45bcfe21a93ad212d2342a67de2061e67547d2cfbe8ca6713",
+      "size_bytes": 10164,
+      "stable_during_read": true
+    },
+    "handoff": {
+      "path": "verification/ci-repair-candidate-r7-handoff-r1.json",
+      "sha256": "f12dbc407b42b9d3332b24e351a0a86654f5b0c6d426d29a6842f7df05344413",
+      "size_bytes": 15047,
+      "stable_during_read": true
+    },
+    "live_inputs": [
+      {
+        "public_path": ".github/workflows/replicate.yml",
+        "live_path": "research/eth-external-replication-20261104/ci/workflow-template.yml",
+        "sha256": "33c8581f513743184a8c198778e015613e39533a24f7047ac340506a746a0412",
+        "size_bytes": 9674,
+        "all_expected_identities_match": true
+      },
+      {
+        "public_path": "ci/README.md",
+        "live_path": "research/eth-external-replication-20261104/ci/README.md",
+        "sha256": "39787e0e4b5a5e96f5835fbc9b485f2df7e6d6e84874c5ec61cc68f6b8868409",
+        "size_bytes": 18436,
+        "all_expected_identities_match": true
+      },
+      {
+        "public_path": "ci/ancestor-cache-compatibility.json",
+        "live_path": "research/eth-external-replication-20261104/ci/ancestor-cache-compatibility.json",
+        "sha256": "247130dc03d737b2ab46ec0898cb5d3438b3faa8b2618dc9b04495ccef5cdd40",
+        "size_bytes": 8775,
+        "all_expected_identities_match": true
+      },
+      {
+        "public_path": "ci/cache_maintenance.py",
+        "live_path": "research/eth-external-replication-20261104/ci/cache_maintenance.py",
+        "sha256": "1f43bb2c4fa70afb0e999e5a7675987dbf46654672ba340f1f739045eb08e82d",
+        "size_bytes": 4925,
+        "all_expected_identities_match": true
+      },
+      {
+        "public_path": "ci/check_bc_control.py",
+        "live_path": "research/eth-external-replication-20261104/ci/check_bc_control.py",
+        "sha256": "192dae99efa59b41db476f891b3e398fc5cc63fab4236474763846167c63cf76",
+        "size_bytes": 4620,
+        "all_expected_identities_match": true
+      },
+      {
+        "public_path": "ci/check_controls.py",
+        "live_path": "research/eth-external-replication-20261104/ci/check_controls.py",
+        "sha256": "2ebe619f909dd48cfebabf857ade809b5e8f082b443d01689d99a89f0213023a",
+        "size_bytes": 10973,
+        "all_expected_identities_match": true
+      },
+      {
+        "public_path": "ci/check_display_control.py",
+        "live_path": "research/eth-external-replication-20261104/ci/check_display_control.py",
+        "sha256": "cbd5851a36d38e0ad5350eea64d7894d8b7708f618e1ca4210afbe46fc9f383b",
+        "size_bytes": 3795,
+        "all_expected_identities_match": true
+      },
+      {
+        "public_path": "ci/check_landlock_policy_control.py",
+        "live_path": "research/eth-external-replication-20261104/ci/check_landlock_policy_control.py",
+        "sha256": "d2471fa5e1424ef1758aa095318a1a81e07f46c1ef41525c507c803b4fcdc128",
+        "size_bytes": 4563,
+        "all_expected_identities_match": true
+      },
+      {
+        "public_path": "ci/check_setup_omission_control.py",
+        "live_path": "research/eth-external-replication-20261104/ci/check_setup_omission_control.py",
+        "sha256": "4789ebe8874af41ac2d568403d85060b2a81f361ce3e27697b2f864a2deb8beb",
+        "size_bytes": 5400,
+        "all_expected_identities_match": true
+      },
+      {
+        "public_path": "ci/check_stage_name_control.py",
+        "live_path": "research/eth-external-replication-20261104/ci/check_stage_name_control.py",
+        "sha256": "749d1fb3f109f7c3878cf2b4dd3c543db3c173828af17b54756fed07413f2571",
+        "size_bytes": 3487,
+        "all_expected_identities_match": true
+      },
+      {
+        "public_path": "ci/compiler_gate.c",
+        "live_path": "research/eth-external-replication-20261104/ci/compiler_gate.c",
+        "sha256": "96947ead6565aa2d75b93c09e8bdccba31bc6558517db5df915368efc123dfb3",
+        "size_bytes": 6273,
+        "all_expected_identities_match": true
+      },
+      {
+        "public_path": "ci/control-result-bc-r2.json",
+        "live_path": "research/eth-external-replication-20261104/ci/control-result-bc-r2.json",
+        "sha256": "71f34ef370ad5dd25b28f443960b37485c5a2f74a7a62b22345f38b31a15ba3b",
+        "size_bytes": 555,
+        "all_expected_identities_match": true
+      },
+      {
+        "public_path": "ci/control-result-display-r3.json",
+        "live_path": "research/eth-external-replication-20261104/ci/control-result-display-r3.json",
+        "sha256": "3e32a5e560e0e993a44738ea7eb8c69a73c68d229eaefd9c38c42f996e0ab327",
+        "size_bytes": 746,
+        "all_expected_identities_match": true
+      },
+      {
+        "public_path": "ci/control-result-landlock-policy-r4.json",
+        "live_path": "research/eth-external-replication-20261104/ci/control-result-landlock-policy-r4.json",
+        "sha256": "868caed022e577c87af606a083497b658f495ad026ddbe176f27c11c334d8764",
+        "size_bytes": 708,
+        "all_expected_identities_match": true
+      },
+      {
+        "public_path": "ci/control-result-r2.json",
+        "live_path": "research/eth-external-replication-20261104/ci/control-result-r2.json",
+        "sha256": "be559a9f05600526547067307a10fddc94e465b5cf388c127eb614e64c36794b",
+        "size_bytes": 765,
+        "all_expected_identities_match": true
+      },
+      {
+        "public_path": "ci/control-result-setup-omission-r3.json",
+        "live_path": "research/eth-external-replication-20261104/ci/control-result-setup-omission-r3.json",
+        "sha256": "60560b19a484638d8cda6ce08e41be3af8ee5b1a30e7d25a055e8d2722629b6b",
+        "size_bytes": 1195,
+        "all_expected_identities_match": true
+      },
+      {
+        "public_path": "ci/control-result-stage-names-r3.json",
+        "live_path": "research/eth-external-replication-20261104/ci/control-result-stage-names-r3.json",
+        "sha256": "b476322adfed7729b2b799e0044f042b0825678a40b685c2679d831af4dd60c3",
+        "size_bytes": 1934,
+        "all_expected_identities_match": true
+      },
+      {
+        "public_path": "ci/control-result.json",
+        "live_path": "research/eth-external-replication-20261104/ci/control-result.json",
+        "sha256": "033bd03cc7f33daa0a7ac65413ff999beb8b81dc9c6f221a239b8c35be383aff",
+        "size_bytes": 533,
+        "all_expected_identities_match": true
+      },
+      {
+        "public_path": "ci/create_gate.py",
+        "live_path": "research/eth-external-replication-20261104/ci/create_gate.py",
+        "sha256": "c5af28dc306d384062ee53dbb34402ab895f82320fa2df015e0f09752959909a",
+        "size_bytes": 3524,
+        "all_expected_identities_match": true
+      },
+      {
+        "public_path": "ci/landlock_abi.py",
+        "live_path": "research/eth-external-replication-20261104/ci/landlock_abi.py",
+        "sha256": "d0853c1a67adcec4bbe22d1c44dc835f448b80eebe6502a32450faa59e17e0b0",
+        "size_bytes": 1265,
+        "all_expected_identities_match": true
+      },
+      {
+        "public_path": "ci/owned_cache.py",
+        "live_path": "research/eth-external-replication-20261104/ci/owned_cache.py",
+        "sha256": "cc765ac2b127eeb171afa43f40d1ad15e435c94c14dedd070a647a5ecdb32431",
+        "size_bytes": 11796,
+        "all_expected_identities_match": true
+      },
+      {
+        "public_path": "ci/pins.json",
+        "live_path": "research/eth-external-replication-20261104/ci/pins.json",
+        "sha256": "e0b9f4d376b26247120dc97cee64595ea91b69fad24d5218e811d435a2910a0a",
+        "size_bytes": 1712,
+        "all_expected_identities_match": true
+      },
+      {
+        "public_path": "ci/prepare_openai.py",
+        "live_path": "research/eth-external-replication-20261104/ci/prepare_openai.py",
+        "sha256": "5c8830653d328d50dcf3c0cae1488a199ab9c9a4249bbcc3a06f6fd598369f6c",
+        "size_bytes": 5849,
+        "all_expected_identities_match": true
+      },
+      {
+        "public_path": "ci/record.py",
+        "live_path": "research/eth-external-replication-20261104/ci/record.py",
+        "sha256": "753330742a44e50bd48ed4a0cd6b55b5998938475e7cb463c56e4e65979075f6",
+        "size_bytes": 6798,
+        "all_expected_identities_match": true
+      },
+      {
+        "public_path": "ci/replicate.py",
+        "live_path": "research/eth-external-replication-20261104/ci/replicate.py",
+        "sha256": "791007e37c684caa0001f0f34af40c81b2ebce84c854303fe5a7d448f429417f",
+        "size_bytes": 21251,
+        "all_expected_identities_match": true
+      }
+    ],
+    "all25_live_files_match_apply_and_frozen_sources": true,
+    "evidence_count": 17,
+    "all17_handoff_evidence_hashes_match": true,
+    "controls": [
+      {
+        "path": "verification/record-r7-control-result-r1.json",
+        "sha256": "46fc3fe7c0c3d4e8dbf3856b62b6709170e6eb734562cd247daedb2558713f82",
+        "size_bytes": 31255,
+        "stable_during_read": true,
+        "passed": true,
+        "checks": 12,
+        "expected_checks": 12
+      },
+      {
+        "path": "verification/cache-policy-r7-control-result-r1.json",
+        "sha256": "7f60bb58ef3449a8dea05c493be972992403476480559d807de84555b452882e",
+        "size_bytes": 2428,
+        "stable_during_read": true,
+        "passed": true,
+        "checks": 27,
+        "expected_checks": 27
+      },
+      {
+        "path": "verification/r7-driver-resource-control-result-r1.json",
+        "sha256": "76c6dd146e56fe3af32cbacaac36fb9acf510eb0226066dd04aad33b0f5097cf",
+        "size_bytes": 1852,
+        "stable_during_read": true,
+        "passed": true,
+        "checks": 7,
+        "expected_checks": 7
+      },
+      {
+        "path": "verification/cache-policy-control-result-r7-r1.json",
+        "sha256": "d38796fdc93e1f8da2b1d4d0bbf3dc575d5fb3842a10b0dac1549591659bba14",
+        "size_bytes": 20047,
+        "stable_during_read": true,
+        "passed": true,
+        "checks": 29,
+        "expected_checks": 29
+      },
+      {
+        "path": "verification/ancestor-cache-control-result-r7-r1.json",
+        "sha256": "2e4314359325d22202077b072e2b282204e8be5a63c6f1bb1d6b742c6f32b9a1",
+        "size_bytes": 4278,
+        "stable_during_read": true,
+        "passed": true,
+        "checks": 22,
+        "expected_checks": 22
+      }
+    ],
+    "total_passed_bounded_controls": 97,
+    "own_cpu_seconds": 0.013467000000000007,
+    "wall_seconds": 0.034418624999999994,
+    "scope": "Read-only bytes/JSON; no imports, tests rerun, proof tools or other process execution."
+  },
+  "native_snapshot": {
+    "observed_utc": "2026-11-04T22:50:48.438709+00:00",
+    "finished_utc": "2026-11-04T22:50:48.664489+00:00",
+    "log": {
+      "path": "research/eth-external-replication-20261104/openai/logs/source-build-gated-r4.txt",
+      "bytes_read": 291333,
+      "sha256_of_observed_bytes": "30f0e8756926b0e9924c0393cd3bc3529941403e854db8162552ffd10f0ccc63",
+      "stable_during_read": true,
+      "line_count": 3094,
+      "tail": [
+        {
+          "line": 3090,
+          "text": "✔ [11958/11982] Built OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.QueryHeadSourceFacts (11s)"
+        },
+        {
+          "line": 3091,
+          "text": "✔ [11959/11982] Built OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.QueryVisitorSemantics (31s)"
+        },
+        {
+          "line": 3092,
+          "text": "✔ [11960/11982] Built OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.HighQueryRankCount (209s)"
+        },
+        {
+          "line": 3093,
+          "text": "✔ [11961/11983] Built OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.QueryHeadSourceSlots (377s)"
+        },
+        {
+          "line": 3094,
+          "text": "✔ [11962/11987] Built OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.QueryVisitorBudgets (389s)"
+        }
+      ],
+      "success_message_present": false
+    },
+    "project_olean_count": 3040,
+    "project_olean_by_topdir": {
+      "OAI": 3040,
+      "ComparatorChallenges": 0
+    },
+    "main_olean_present": false,
+    "challenge_olean_present": false,
+    "group": {
+      "pgid": 25130,
+      "ps_exit_code": 0,
+      "ps_stderr": "",
+      "processes": [
+        {
+          "pid": 25130,
+          "pgid": 25130,
+          "ppid": 25125,
+          "state": "Ss",
+          "elapsed": "05:09:36",
+          "rss_kib": 3920,
+          "comm_basename": "lake"
+        },
+        {
+          "pid": 98759,
+          "pgid": 25130,
+          "ppid": 25130,
+          "state": "U",
+          "elapsed": "11:57",
+          "rss_kib": 224592,
+          "comm_basename": "lean"
+        },
+        {
+          "pid": 98770,
+          "pgid": 25130,
+          "ppid": 25130,
+          "state": "U",
+          "elapsed": "11:54",
+          "rss_kib": 410992,
+          "comm_basename": "lean"
+        },
+        {
+          "pid": 99383,
+          "pgid": 25130,
+          "ppid": 25130,
+          "state": "R",
+          "elapsed": "05:12",
+          "rss_kib": 2107456,
+          "comm_basename": "lean"
+        },
+        {
+          "pid": 99865,
+          "pgid": 25130,
+          "ppid": 25130,
+          "state": "S",
+          "elapsed": "01:53",
+          "rss_kib": 816,
+          "comm_basename": "lean"
+        }
+      ],
+      "summed_rss_kib_includes_shared_pages": 2747776
+    },
+    "own_cpu_seconds": 0.08479500000000001,
+    "wall_seconds": 0.22722108299999996,
+    "scope": "One read-only file/process snapshot; no PTY polling, signals, builds, phase execution or proof verdict. Log can change after snapshot; source object presence alone does not close a build."
+  },
+  "native_r2_pins": {
+    "observed_utc": "2026-11-04T22:52:07.101871+00:00",
+    "launcher": {
+      "path": "openai/verify_native_phase_r2.py",
+      "sha256": "fe3b12c0b8312a6b0cdb5ec1c6d88933cbff796bc92e9403682735d25348c19c",
+      "size_bytes": 20260,
+      "stable_during_hash": true,
+      "regular_nonsymlink": true
+    },
+    "runbook": {
+      "path": "openai/native-phase-runbook-r2.md",
+      "sha256": "3e6cb5a323792d649bdd7ebde72f8b2fc3b92428f3c20ae52b46fb2dbe341bac",
+      "size_bytes": 9958,
+      "stable_during_hash": true,
+      "regular_nonsymlink": true
+    },
+    "pins": [
+      {
+        "path": "openai/native-recorder-r1/record.py",
+        "sha256": "1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0",
+        "size_bytes": 6474,
+        "stable_during_hash": true,
+        "regular_nonsymlink": true,
+        "pin_name": "native-recorder-r1/record.py",
+        "expected_sha256": "1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0",
+        "pin_passed": true
+      },
+      {
+        "path": "openai/in_workspace.py",
+        "sha256": "b4e80df9ed1f1c71e7a202feccd94f189113610679d4a28ac3728d8708e7d04a",
+        "size_bytes": 700,
+        "stable_during_hash": true,
+        "regular_nonsymlink": true,
+        "pin_name": "in_workspace.py",
+        "expected_sha256": "b4e80df9ed1f1c71e7a202feccd94f189113610679d4a28ac3728d8708e7d04a",
+        "pin_passed": true
+      },
+      {
+        "path": "openai/verify_source_identity_r3.py",
+        "sha256": "52cb3de32ef89c5fbb460032601693a9d2e740cda296b8dd44f9ab6fd1fa9174",
+        "size_bytes": 12879,
+        "stable_during_hash": true,
+        "regular_nonsymlink": true,
+        "pin_name": "verify_source_identity_r3.py",
+        "expected_sha256": "52cb3de32ef89c5fbb460032601693a9d2e740cda296b8dd44f9ab6fd1fa9174",
+        "pin_passed": true
+      },
+      {
+        "path": "openai/identity_expectations_r1.json",
+        "sha256": "e39147fee63287baea89a046c85c462090f1c443f15b53d809e613631f0cce47",
+        "size_bytes": 8435,
+        "stable_during_hash": true,
+        "regular_nonsymlink": true,
+        "pin_name": "identity_expectations_r1.json",
+        "expected_sha256": "e39147fee63287baea89a046c85c462090f1c443f15b53d809e613631f0cce47",
+        "pin_passed": true
+      },
+      {
+        "path": "openai/source-manifest.json",
+        "sha256": "bf7f36120177010243e52dd9053bd3e9f97f92fa35184abf173a8a57ef4843e1",
+        "size_bytes": 1892511,
+        "stable_during_hash": true,
+        "regular_nonsymlink": true,
+        "pin_name": "source-manifest.json",
+        "expected_sha256": "bf7f36120177010243e52dd9053bd3e9f97f92fa35184abf173a8a57ef4843e1",
+        "pin_passed": true
+      },
+      {
+        "path": "openai/workspace-config-r2.json",
+        "sha256": "a56c999ec870742bee9c51be2bb3199d358d77876d5e7d49492f5ad880938413",
+        "size_bytes": 709,
+        "stable_during_hash": true,
+        "regular_nonsymlink": true,
+        "pin_name": "workspace-config-r2.json",
+        "expected_sha256": "a56c999ec870742bee9c51be2bb3199d358d77876d5e7d49492f5ad880938413",
+        "pin_passed": true
+      },
+      {
+        "path": "openai/workspace/lake-manifest.json",
+        "sha256": "4aa8b01a11ed34de463651ed6396d9da61f365cccfd158e82e96bbd17bcb14bc",
+        "size_bytes": 3153,
+        "stable_during_hash": true,
+        "regular_nonsymlink": true,
+        "pin_name": "workspace/lake-manifest.json",
+        "expected_sha256": "4aa8b01a11ed34de463651ed6396d9da61f365cccfd158e82e96bbd17bcb14bc",
+        "pin_passed": true
+      },
+      {
+        "path": "openai/source/lean/ComparatorChallenges/SubexponentialSAT.json",
+        "sha256": "debbfdc9c01104d2369be80da5180978275106df8b685f693fba7ce7da7c5b19",
+        "size_bytes": 364,
+        "stable_during_hash": true,
+        "regular_nonsymlink": true,
+        "pin_name": "source/lean/ComparatorChallenges/SubexponentialSAT.json",
+        "expected_sha256": "debbfdc9c01104d2369be80da5180978275106df8b685f693fba7ce7da7c5b19",
+        "pin_passed": true
+      },
+      {
+        "path": "verification/AuditTargets.lean",
+        "sha256": "a78f30e0439e85d3a9ae51828e0e42c248c027a7fcfeb4c4fb16cb776fae0b05",
+        "size_bytes": 5663,
+        "stable_during_hash": true,
+        "regular_nonsymlink": true,
+        "pin_name": "../verification/AuditTargets.lean",
+        "expected_sha256": "a78f30e0439e85d3a9ae51828e0e42c248c027a7fcfeb4c4fb16cb776fae0b05",
+        "pin_passed": true
+      },
+      {
+        "path": "verification-tools/comparator-source/.lake/build/bin/comparator",
+        "sha256": "bdf09ee3e725f1480792db7b5befcbf6e4f77db90d9f1f4986bda5a1e6315f4c",
+        "size_bytes": 101846512,
+        "stable_during_hash": true,
+        "regular_nonsymlink": true,
+        "pin_name": "../verification-tools/comparator-source/.lake/build/bin/comparator",
+        "expected_sha256": "bdf09ee3e725f1480792db7b5befcbf6e4f77db90d9f1f4986bda5a1e6315f4c",
+        "pin_passed": true
+      },
+      {
+        "path": "verification-tools/lean4export-434-source/.lake/build/bin/lean4export",
+        "sha256": "e6217f95bf55c5e165a62f12ec6ce1fb3c25a815cff0f9cb6f6dfcf4c8e55e25",
+        "size_bytes": 179096064,
+        "stable_during_hash": true,
+        "regular_nonsymlink": true,
+        "pin_name": "../verification-tools/lean4export-434-source/.lake/build/bin/lean4export",
+        "expected_sha256": "e6217f95bf55c5e165a62f12ec6ce1fb3c25a815cff0f9cb6f6dfcf4c8e55e25",
+        "pin_passed": true
+      },
+      {
+        "path": "verification-tools/nanoda-source/target/release/nanoda_bin",
+        "sha256": "d9a1fc5371b84c9eb0687a7630eb724fa88886d9f5d665f09f9f926730573b80",
+        "size_bytes": 1260088,
+        "stable_during_hash": true,
+        "regular_nonsymlink": true,
+        "pin_name": "../verification-tools/nanoda-source/target/release/nanoda_bin",
+        "expected_sha256": "d9a1fc5371b84c9eb0687a7630eb724fa88886d9f5d665f09f9f926730573b80",
+        "pin_passed": true
+      },
+      {
+        "path": "verification-tools/comparator-source/scripts/fake-landrun.sh",
+        "sha256": "167507c89d8b3c7667ad78b50df7b19f89883751a01efd1457404fa34a994e8b",
+        "size_bytes": 1431,
+        "stable_during_hash": true,
+        "regular_nonsymlink": true,
+        "pin_name": "../verification-tools/comparator-source/scripts/fake-landrun.sh",
+        "expected_sha256": "167507c89d8b3c7667ad78b50df7b19f89883751a01efd1457404fa34a994e8b",
+        "pin_passed": true
+      },
+      {
+        "path": "verification-tools/record_nanoda.py",
+        "sha256": "c34f36d630d182708937a5280b6eda8d0723fa0ffdd85caf8fc54af17b332f48",
+        "size_bytes": 8494,
+        "stable_during_hash": true,
+        "regular_nonsymlink": true,
+        "pin_name": "../verification-tools/record_nanoda.py",
+        "expected_sha256": "c34f36d630d182708937a5280b6eda8d0723fa0ffdd85caf8fc54af17b332f48",
+        "pin_passed": true
+      },
+      {
+        "path": "openai/native_export_capture_r2.py",
+        "sha256": "4755ba1dd43d18509cd1472bca98c269c79e3dc5a3c99f41faff5b2e6d78be74",
+        "size_bytes": 3279,
+        "stable_during_hash": true,
+        "regular_nonsymlink": true,
+        "pin_name": "native_export_capture_r2.py",
+        "expected_sha256": "4755ba1dd43d18509cd1472bca98c269c79e3dc5a3c99f41faff5b2e6d78be74",
+        "pin_passed": true
+      }
+    ],
+    "workspace_configuration": [
+      {
+        "path": "openai/workspace/lean-toolchain",
+        "sha256": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+        "size_bytes": 25,
+        "stable_during_hash": true,
+        "regular_nonsymlink": true,
+        "pin_passed": true
+      },
+      {
+        "path": "openai/workspace/lakefile.lean",
+        "sha256": "aea9d368f24768ab9d51d8c9216c1dd60e598a983e63c463dc8de3f605d268fb",
+        "size_bytes": 534,
+        "stable_during_hash": true,
+        "regular_nonsymlink": true,
+        "pin_passed": true
+      }
+    ],
+    "original_runtime_files": [
+      {
+        "path": "openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared.dylib",
+        "sha256": "6588b7e38450ea749006dcd90bbaea9393a5ca1b64727a2e7138f3c9427c2b50",
+        "size_bytes": 179077552,
+        "stable_during_hash": true,
+        "regular_nonsymlink": true,
+        "expected_sha256": "6588b7e38450ea749006dcd90bbaea9393a5ca1b64727a2e7138f3c9427c2b50",
+        "pin_passed": true
+      },
+      {
+        "path": "openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared_1.dylib",
+        "sha256": "e44858e227323a23ce7416c5678415d2d022582b1627ad3690117ce73cd6345a",
+        "size_bytes": 16736,
+        "stable_during_hash": true,
+        "regular_nonsymlink": true,
+        "expected_sha256": "e44858e227323a23ce7416c5678415d2d022582b1627ad3690117ce73cd6345a",
+        "pin_passed": true
+      },
+      {
+        "path": "openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared_2.dylib",
+        "sha256": "be68927a4f282b99383e82af4d481b4ffe59f2a243aea20dae0e60b39c2ae182",
+        "size_bytes": 16736,
+        "stable_during_hash": true,
+        "regular_nonsymlink": true,
+        "expected_sha256": "be68927a4f282b99383e82af4d481b4ffe59f2a243aea20dae0e60b39c2ae182",
+        "pin_passed": true
+      },
+      {
+        "path": "openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libInit_shared.dylib",
+        "sha256": "cb203e0bc0e6ab3250b2804d3e5398ad3a91544b5e049674532f73b7a062ef7f",
+        "size_bytes": 16736,
+        "stable_during_hash": true,
+        "regular_nonsymlink": true,
+        "expected_sha256": "cb203e0bc0e6ab3250b2804d3e5398ad3a91544b5e049674532f73b7a062ef7f",
+        "pin_passed": true
+      },
+      {
+        "path": "openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libLake_shared.dylib",
+        "sha256": "60a94628397814203d86428fa6015f9d844c4c4c74cda8667e687a4ea5b5f5ac",
+        "size_bytes": 10072896,
+        "stable_during_hash": true,
+        "regular_nonsymlink": true,
+        "expected_sha256": "60a94628397814203d86428fa6015f9d844c4c4c74cda8667e687a4ea5b5f5ac",
+        "pin_passed": true
+      },
+      {
+        "path": "openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/leanchecker",
+        "sha256": "cfde41cb11dde58c84e9c60c551fd104bb2fc1104ad44dca932a923120272a35",
+        "size_bytes": 78224,
+        "stable_during_hash": true,
+        "regular_nonsymlink": true,
+        "expected_sha256": "cfde41cb11dde58c84e9c60c551fd104bb2fc1104ad44dca932a923120272a35",
+        "pin_passed": true
+      },
+      {
+        "path": "openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean",
+        "sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+        "size_bytes": 49968,
+        "stable_during_hash": true,
+        "regular_nonsymlink": true,
+        "expected_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+        "pin_passed": true
+      },
+      {
+        "path": "openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lake",
+        "sha256": "c8c24f1398162ab4004e2a869952d8469f54293651151feaad4526f2b8474c6e",
+        "size_bytes": 51824,
+        "stable_during_hash": true,
+        "regular_nonsymlink": true,
+        "expected_sha256": "c8c24f1398162ab4004e2a869952d8469f54293651151feaad4526f2b8474c6e",
+        "pin_passed": true
+      }
+    ],
+    "real_prefix_resolves_directly": true,
+    "frozen_recorder": {
+      "path": "openai/native-recorder-r1/record.py",
+      "sha256": "1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0",
+      "size_bytes": 6474,
+      "stable_during_hash": true,
+      "regular_nonsymlink": true
+    },
+    "live_r7_recorder": {
+      "path": "ci/record.py",
+      "sha256": "753330742a44e50bd48ed4a0cd6b55b5998938475e7cb463c56e4e65979075f6",
+      "size_bytes": 6798,
+      "stable_during_hash": true,
+      "regular_nonsymlink": true
+    },
+    "all_selected_pin_checks_passed": true,
+    "phase_result_files_currently_present": [],
+    "own_cpu_seconds": 0.412046,
+    "wall_seconds": 0.5281268339999999,
+    "scope": "Read-only AST literals and actual fixed-file/config/runtime hash comparison; no runner import, helper execution, Lean/Lake/export/phase or proof validation."
+  },
+  "reviewed_sources": [
+    {
+      "path": "openai/verify_native_phase_r2.py",
+      "ranges": "1-358",
+      "method": "Read numbered source windows; AST literals only used for file-pin extraction; no import."
+    },
+    {
+      "path": "openai/native-phase-runbook-r2.md",
+      "ranges": "1-61",
+      "method": "Read full runbook, including manual build/phase-order preconditions."
+    },
+    {
+      "path": "openai/native_export_capture_r2.py",
+      "ranges": "1-86",
+      "method": "Read full direct-FD capture and direct-child exception cleanup."
+    },
+    {
+      "path": "openai/in_workspace.py",
+      "ranges": "1-17",
+      "method": "Read full path/environment wrapper."
+    }
+  ],
+  "closure_findings": [
+    {
+      "kind": "required_operator_gate",
+      "finding": "Existing source builder must actually exit zero before pre-identity/trace/audit or later phases. Snapshot group remained active; no final build-success marker or Main/challenge outputs observed. Source object presence is progress only."
+    },
+    {
+      "kind": "manual_aggregation",
+      "finding": "Launcher executes one named phase and does not enforce overall order or source-build closure. Root must require every successful closed receipt, common pinned-input fingerprint, trace, audit, original Comparator, selected export, additional Nanoda, original fresh and final identity."
+    },
+    {
+      "kind": "closed_export_binding",
+      "finding": "extra-nanoda requires a successful selected-export phase with matching launcher/input fingerprint, exact capture argv, stage/raw/capture receipt hashes and nonempty unchanged export hash; Nanoda then checks strict policy and recorded input archive lineage."
+    },
+    {
+      "kind": "frozen_recorder",
+      "finding": "Native R2 pins/imports its owned recorder1a7c9f9d... and direct-FD export capture. Applied liveR7 recorder75333074... is intentionally different and does not invalidate the native pins."
+    },
+    {
+      "kind": "nonblocking_documentation_precision",
+      "finding": "Runbook attributes override clearing to in_workspace.py. Actual absence of inherited gate/loader variables comes from the launcher's constructed environment; wrapper only prepends/resets selected paths. Current effective environment is consistent; no edit made."
+    },
+    {
+      "kind": "scope",
+      "finding": "Native mode uses the official fake Landrun shim and has no Linux isolation. Original fresh replay remains a same-kernel safe/nonpartial imported-environment check; separate target axioms, statement comparison and Nanoda phases remain required."
+    }
+  ],
+  "material_implementation_blocker_found": false,
+  "proof_verdict": "NONE. Native source build was not closed at the snapshot, and no verification phase was executed by this review.",
+  "corroborating_peer": {
+    "agent": "codex-eth-anthropic-replication",
+    "scope": "Separate read-only live25-file/17-evidence/97-saved-control reconciliation; no controls or proof tools run.",
+    "result": "No drift, apply receipt b8dbd3eb... and all expected identities agree.",
+    "own_cpu_seconds": 0.010593,
+    "wall_seconds": 0.022429
+  },
+  "review_resources": {
+    "own_measured_script_cpu_seconds": 0.510308,
+    "measured_script_wall_seconds": 0.789766542,
+    "scope": "Own metadata/hash/snapshot scripts only; ps child CPU, source-reading/model/checkpoint bookkeeping excluded. No substantive compute or paid resources.",
+    "authorized_cpu_seconds": 60,
+    "authorized_wall_minutes": 10,
+    "paid_compute_usd": 0
+  },
+  "limitations": [
+    "Mutable log/group/object snapshot is historical at22:50:48UTC and may change afterward; no second process or PTY poll was performed.",
+    "Pin hashes do not replace the full pre/post source/dependency identity phases.",
+    "97 counts describe preserved bounded fixture results, not a rerun or a native/Linux proof verdict."
+  ]
+}

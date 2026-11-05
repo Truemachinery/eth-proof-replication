@@ -7,7 +7,7 @@ from pathlib import Path
 import urllib.request
 from record import sha
 from replicate import public_runner_guard
-from owned_cache import MAX_BYTES
+from owned_cache import MAX_BYTES_BY_PROOF, TOTAL_MAX_BYTES, max_bytes
 
 p = argparse.ArgumentParser()
 p.add_argument('proof', choices=['openai', 'anthropic'])
@@ -21,8 +21,8 @@ if not manifest.is_file():
     raise SystemExit(0)
 data = json.loads(manifest.read_text())
 files = list(a.directory.rglob('*'))
-if any(x.is_symlink() for x in files) or sum(x.stat().st_size for x in files if x.is_file()) > MAX_BYTES:
-    raise RuntimeError('cache staging exceeds2GiB or contains symlinks')
+if any(x.is_symlink() for x in files) or sum(x.stat().st_size for x in files if x.is_file()) > max_bytes(a.proof):
+    raise RuntimeError('cache staging exceeds proof-specific byte limit or contains symlinks')
 if data.get('proof') != a.proof or data.get('status') != 'ready':
     raise RuntimeError('cache staging identity/status mismatch')
 repo = os.environ['GITHUB_REPOSITORY']
@@ -54,20 +54,21 @@ if a.audit_only:
     legal = ['eth-owned-openai-', 'eth-owned-anthropic-']
     if any(not any(x['key'].startswith(prefix_) for prefix_ in legal) for x in items):
         raise RuntimeError('unexpected cache namespace during post-save audit')
-    invalid = [x for x in items if x['size_in_bytes'] > MAX_BYTES]
+    invalid = [x for x in items if x['size_in_bytes'] > max_bytes(next(proof for proof in MAX_BYTES_BY_PROOF
+               if x['key'].startswith('eth-owned-' + proof + '-')))]
     for item in invalid:
         if item['key'].startswith(prefix):
             api('/actions/caches/' + str(item['id']), 'DELETE')
             print('OVERSIZE_CACHE_DELETED ' + json.dumps({'id': item['id'], 'key': item['key'], 'bytes': item['size_in_bytes']}))
     if invalid:
-        raise RuntimeError('actual backend cache entry exceeded2GiB; own oversized entry deleted')
-    if any(sum(x['key'].startswith(prefix_) for x in items) > 1 for prefix_ in legal) or sum(x['size_in_bytes'] for x in items) > 2 * MAX_BYTES:
+        raise RuntimeError('actual backend cache entry exceeded proof-specific limit; own oversized entry deleted')
+    if any(sum(x['key'].startswith(prefix_) for x in items) > 1 for prefix_ in legal) or sum(x['size_in_bytes'] for x in items) > TOTAL_MAX_BYTES:
         for item in items:
             if item['key'].startswith(prefix):
                 api('/actions/caches/' + str(item['id']), 'DELETE')
-        raise RuntimeError('actual backend cache retention exceeded4GiB/two entries; own entries removed')
+        raise RuntimeError('actual backend cache retention exceeded8GiB/two entries; own entries removed')
     print('CACHE_BACKEND_AUDIT ' + json.dumps({'entries': [{k: x[k] for k in ['id', 'key', 'size_in_bytes']} for x in items],
-          'total_bytes': sum(x['size_in_bytes'] for x in items), 'max_each_bytes': MAX_BYTES, 'max_total_bytes': 2 * MAX_BYTES}))
+          'total_bytes': sum(x['size_in_bytes'] for x in items), 'max_bytes_by_proof': MAX_BYTES_BY_PROOF, 'max_total_bytes': TOTAL_MAX_BYTES}))
     raise SystemExit(0)
 for item in items:
     if item['key'].startswith(prefix):
@@ -77,9 +78,9 @@ remaining = [x for x in items if not x['key'].startswith(prefix)]
 other = 'anthropic' if a.proof == 'openai' else 'openai'
 if any(not x['key'].startswith('eth-owned-' + other + '-') for x in remaining):
     raise RuntimeError('unexpected cache namespace; refusing upload')
-if len(remaining) > 1 or sum(x['size_in_bytes'] for x in remaining) > MAX_BYTES:
-    raise RuntimeError('other proof retained cache exceeds2GiB or has multiple snapshots')
+if len(remaining) > 1 or sum(x['size_in_bytes'] for x in remaining) > max_bytes(other):
+    raise RuntimeError('other proof retained cache exceeds its proof-specific limit or has multiple snapshots')
 print('CACHE_SAVE_ALLOWED ' + json.dumps({'proof': a.proof, 'manifest_sha256': sha(manifest),
-      'payload_bytes': data['payload_bytes'], 'max_each_bytes': MAX_BYTES, 'max_total_bytes': 2 * MAX_BYTES}))
+      'payload_bytes': data['payload_bytes'], 'max_each_bytes': max_bytes(a.proof), 'max_bytes_by_proof': MAX_BYTES_BY_PROOF, 'max_total_bytes': TOTAL_MAX_BYTES}))
 with open(os.environ['GITHUB_OUTPUT'], 'a') as out:
     out.write('ready=true\n')

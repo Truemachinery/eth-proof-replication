@@ -1,0 +1,45 @@
+{
+  "schema": "eth-r7-public-export-control/1",
+  "status": "pass",
+  "scope": "Only local byte/allowlist/download-binding/redaction fixtures; no proof/network execution. Existing selftest is synthetic, not proof acceptance.",
+  "exporter_sha256": "78f3679a08a160efd680c0b0284e67764d09ead9b89a4d50562ffb7c94d3c58a",
+  "checks": [
+    "existing14export checks pass",
+    "three exact receipt/raw SHA-and-size bindings accepted",
+    "three receipt byte mutations rejected",
+    "three frozen response drifts rejected",
+    "three receipt omissions rejected",
+    "all three derivatives have independent hashes and span records",
+    "unlisted logs/private draft/other hidden workflow paths rejected",
+    "multiline executable PATH=str expression unchanged",
+    "actual plaintext and quoted PATH log dumps redact only in data mode",
+    "all25liveCI+25fixedcandidate inputs byte-identical through sanitizer"
+  ],
+  "legacy_selftest": {
+    "status": "pass",
+    "checks": [
+      "fixed allowlist",
+      "live log excluded",
+      "failure preserved",
+      "sensitive data redacted",
+      "portable derivative distinguished and syntax checked",
+      "ordinary path variable source remains byte-identical",
+      "exact credential-reference syntax remains byte-identical",
+      "literal credential values still redacted",
+      "original source unchanged",
+      "incomplete receipt rejected",
+      "incomplete CI bundle rejected",
+      "exact workflow destination mapping",
+      "plan expansion rejected",
+      "source drift rejected"
+    ],
+    "no_proof_execution": true,
+    "exporter_sha256": "78f3679a08a160efd680c0b0284e67764d09ead9b89a4d50562ffb7c94d3c58a"
+  },
+  "actual_fixed_log_inputs": 3,
+  "current_and_candidate_CI_identities": 50,
+  "negative_preflight": "Previous control attempt caught full_PATH_plaintext matching multiline executable PATH=str; no persistent release/control receipt was created. Rule now data-only and explicit source/log regression passes.",
+  "own_CPU_seconds": 0.312909,
+  "wall_seconds": 0.328467,
+  "incremental_USD": 0
+}

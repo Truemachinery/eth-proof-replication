@@ -1,0 +1,75 @@
+{
+  "schema": "owned-native-resource-scheduling/1",
+  "started_utc": "2026-11-05T14:13:29.543348+00:00",
+  "before": [
+    {
+      "pid": 25130,
+      "ppid": 25125,
+      "pgid": 25130,
+      "state": "Ss",
+      "elapsed": "20:32:17",
+      "cpu": "12:03.40",
+      "rss_kib": 4464,
+      "command": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lake build +OAI.Algorithms.SubexponentialSAT.Main +ComparatorChallenges.SubexponentialSAT"
+    },
+    {
+      "pid": 98759,
+      "ppid": 25130,
+      "pgid": 25130,
+      "state": "T",
+      "elapsed": "15:34:38",
+      "cpu": "6:50.01",
+      "rss_kib": 608,
+      "command": "<REPLICATION_ROOT>/openai/compiler-gate-r1/prefix/bin/lean <REPLICATION_ROOT>/openai/workspace/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQueryLoop.lean -o <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQueryLoop.olean -i <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQueryLoop.ilean -c <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQueryLoop.c --setup <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQueryLoop.setup.json --json"
+    },
+    {
+      "pid": 98770,
+      "ppid": 25130,
+      "pgid": 25130,
+      "state": "T",
+      "elapsed": "15:34:35",
+      "cpu": "7:30.78",
+      "rss_kib": 608,
+      "command": "<REPLICATION_ROOT>/openai/compiler-gate-r1/prefix/bin/lean <REPLICATION_ROOT>/openai/workspace/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQuerySetup.lean -o <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQuerySetup.olean -i <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQuerySetup.ilean -c <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQuerySetup.c --setup <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQuerySetup.setup.json --json"
+    }
+  ],
+  "intended_signal": "SIGCONT",
+  "selected_pid": 98770,
+  "remaining_deliberately_paused_pid": 98759,
+  "renewed_cpu_lease": "ce3e5857f941",
+  "reason": "Session continued after UTC gap; all ready remaining work drained, only two deliberately paused compilers remain. Resume one exact owned worker; retain other paused until a work boundary. Sourcebuild still not closed.",
+  "proof_source_runtime_or_argv_changed": false,
+  "finished_utc": "2026-11-05T14:13:29.746216+00:00",
+  "after": [
+    {
+      "pid": 25130,
+      "ppid": 25125,
+      "pgid": 25130,
+      "state": "Ss",
+      "elapsed": "20:32:17",
+      "cpu": "12:03.40",
+      "rss_kib": 4464,
+      "command": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lake build +OAI.Algorithms.SubexponentialSAT.Main +ComparatorChallenges.SubexponentialSAT"
+    },
+    {
+      "pid": 98759,
+      "ppid": 25130,
+      "pgid": 25130,
+      "state": "T",
+      "elapsed": "15:34:38",
+      "cpu": "6:50.01",
+      "rss_kib": 608,
+      "command": "<REPLICATION_ROOT>/openai/compiler-gate-r1/prefix/bin/lean <REPLICATION_ROOT>/openai/workspace/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQueryLoop.lean -o <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQueryLoop.olean -i <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQueryLoop.ilean -c <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQueryLoop.c --setup <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQueryLoop.setup.json --json"
+    },
+    {
+      "pid": 98770,
+      "ppid": 25130,
+      "pgid": 25130,
+      "state": "U",
+      "elapsed": "15:34:35",
+      "cpu": "7:30.81",
+      "rss_kib": 34064,
+      "command": "<REPLICATION_ROOT>/openai/compiler-gate-r1/prefix/bin/lean <REPLICATION_ROOT>/openai/workspace/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQuerySetup.lean -o <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQuerySetup.olean -i <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQuerySetup.ilean -c <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQuerySetup.c --setup <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/HighQuerySetup.setup.json --json"
+    }
+  ]
+}

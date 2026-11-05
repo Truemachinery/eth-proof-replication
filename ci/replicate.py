@@ -74,7 +74,7 @@ def main():
                'harness': tree_identity(HERE, [x.name for x in HERE.iterdir() if x.is_file()]),
                'repository': event['repository']['full_name'],
                'status': 'incomplete', 'mode': args.mode, 'artifact_uploads': False,
-               'actions_cache': 'Project-owned completed outputs only,2GiB/proof,4GiB retained total.',
+               'actions_cache': 'Project-owned completed outputs only,6GiB OpenAI/2GiB Anthropic,8GiB retained total.',
                'export_retention': 'Ephemeral VM only; hashes and receipts remain in Actions logs.'}
     write_json(work / 'started.json', summary)
     print('RUN_START ' + json.dumps(summary, sort_keys=True), flush=True)
@@ -219,9 +219,10 @@ def main():
                       for n, x in [('comparator', compbin), ('exporter', expbin), ('nanoda', nanobin), ('landrun', landrun)]]
         write_json(work / 'tool-identities.json', identities)
         print('TOOL_IDENTITIES ' + json.dumps(identities), flush=True)
-        run('create-two-slot-compiler-prefix', [sys.executable, HERE / 'create_gate.py', '--real-prefix', proof_prefix, '--output', work / 'compiler-gate'])
+        run('create-gated-compiler-prefix', [sys.executable, HERE / 'create_gate.py', '--real-prefix', proof_prefix, '--output', work / 'compiler-gate'])
         genv = dict(penv, LEAN_SYSROOT=str(work / 'compiler-gate/prefix'), LAKE_OVERRIDE_LEAN='true',
-                    ETH_LEAN_SLOTS='2', PATH=str(work / 'compiler-gate/prefix/bin') + ':' + env['PATH'])
+                    ETH_LEAN_SLOTS='1' if args.proof == 'openai' else '2',
+                    PATH=str(work / 'compiler-gate/prefix/bin') + ':' + env['PATH'])
         targets = ['+OAI.Algorithms.SubexponentialSAT.Main', '+ComparatorChallenges.SubexponentialSAT'] if args.proof == 'openai' else []
         if args.mode != 'verify':
             build_command = [landrun, '--best-effort', '--ro', '/', '--rw', '/dev', '--rwx', str(project / '.lake'),
@@ -258,7 +259,7 @@ def main():
         export = work / 'selected-solution.ndjson'
         export_command = [landrun, '--best-effort', '--ro', '/', '--rw', '/dev', '-ldd', '-add-exec', '--env', 'PATH', '--env', 'HOME', '--env', 'LEAN_PATH', '--env', 'LEAN_SYSROOT',
                           '--', str(expbin), spec['module'], '--', *spec['theorems']]
-        run('retained-target-export', isolated([proof_prefix / 'bin/lake', 'env', *export_command], project, penv),
+        run('retained-target-export', isolated([proof_prefix / 'bin/lake', 'env', *export_command], project, penv, 1800),
             project, timeout=1800, stdout_file=export)
         nconfig = work / 'retained-export-nanoda-config.json'
         write_json(nconfig, {'use_stdin': False, 'export_file_path': str(export), 'permitted_axioms': PINS['allowed_axioms'],

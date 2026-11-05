@@ -1,0 +1,56 @@
+{
+  "schema": "eth-r7-cache-policy-control/1",
+  "passed": true,
+  "checks": [
+    "openai exact cap/reserve",
+    "openai payload boundary",
+    "anthropic exact cap/reserve",
+    "anthropic payload boundary",
+    "8GiB total cap",
+    "observed OAI payload fits expanded limit",
+    "unknown proof fails closed",
+    "tiny actual snapshot owns two files only",
+    "openai scaled payload equality accepted",
+    "openai scaled payload plus-one skipped",
+    "tiny restore passes full existing validation",
+    "restore refuses overwrite",
+    "restore still rejects changed hash",
+    "openai backend equality6plus2 accepted",
+    "anthropic backend equality6plus2 accepted",
+    "openai rejects oversized openai without deleting other proof",
+    "anthropic rejects oversized anthropic without deleting other proof",
+    "openai rejects oversized anthropic without deleting other proof",
+    "anthropic rejects oversized openai without deleting other proof",
+    "duplicate own snapshots rejected/deleted at8GiB",
+    "unrelated namespace rejected without deletion",
+    "openai pre-save accepts other-proof equality",
+    "openai pre-save rejects other-proof plus-one",
+    "anthropic pre-save accepts other-proof equality",
+    "anthropic pre-save rejects other-proof plus-one",
+    "actual staging equality accepted scaled",
+    "actual staging plus-one rejected before API"
+  ],
+  "scope": "Production staged cache functions and fully mocked maintenance API; synthetic tiny files only. No network, proof tools, multiGiB allocation or live CI edits. Full actual-R6 ancestor protocol is a separate control after final ledger freeze.",
+  "sources": {
+    "owned_cache.py": {
+      "sha256": "cc765ac2b127eeb171afa43f40d1ad15e435c94c14dedd070a647a5ecdb32431",
+      "size_bytes": 11796
+    },
+    "cache_maintenance.py": {
+      "sha256": "1f43bb2c4fa70afb0e999e5a7675987dbf46654672ba340f1f739045eb08e82d",
+      "size_bytes": 4925
+    },
+    "check_controls.py": {
+      "sha256": "2ebe619f909dd48cfebabf857ade809b5e8f082b443d01689d99a89f0213023a",
+      "size_bytes": 10973
+    },
+    "check_bc_control.py": {
+      "sha256": "192dae99efa59b41db476f891b3e398fc5cc63fab4236474763846167c63cf76",
+      "size_bytes": 4620
+    }
+  },
+  "control_sha256": "ed100a39afdebb7999edf4897a368c7c9b2bd32b391eac3136068a47ce81c4e6",
+  "own_cpu_seconds": 0.10791300000000004,
+  "wall_seconds": 0.1744672919739969,
+  "incremental_usd": 0
+}

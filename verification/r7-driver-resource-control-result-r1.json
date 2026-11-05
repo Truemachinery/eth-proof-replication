@@ -1,0 +1,58 @@
+{
+  "checks": [
+    {
+      "deadline": 10000,
+      "effective_runtime_max": 1795,
+      "name": "actual-isolated-builder-budget",
+      "passed": true,
+      "seconds": 1800
+    },
+    {
+      "deadline": 10000,
+      "effective_runtime_max": 7195,
+      "name": "actual-isolated-builder-budget",
+      "passed": true,
+      "seconds": null
+    },
+    {
+      "deadline": 1010,
+      "effective_runtime_max": 1,
+      "name": "actual-isolated-builder-budget",
+      "passed": true,
+      "seconds": 1800
+    },
+    {
+      "name": "actual-export-call-explicit-service-and-recorder-budget-1800",
+      "passed": true
+    },
+    {
+      "frontends": 1,
+      "name": "actual-source-compiler-environment",
+      "passed": true,
+      "proof": "openai",
+      "runtime_threads": 2
+    },
+    {
+      "frontends": 2,
+      "name": "actual-source-compiler-environment",
+      "passed": true,
+      "proof": "anthropic",
+      "runtime_threads": 2
+    },
+    {
+      "name": "actual-workflow-limits-and-only-r6-anthropic-predecessor",
+      "passed": true
+    }
+  ],
+  "inputs": {
+    "verification/check_r7_driver_workflow_r1.py": "998ef85511d2c0ec75fb6f6399773da424eb720336c507386a7278351327b3ed",
+    "verification/ci-repair-candidate-r7/.github/workflows/replicate.yml": "33c8581f513743184a8c198778e015613e39533a24f7047ac340506a746a0412",
+    "verification/ci-repair-candidate-r7/ci/replicate.py": "791007e37c684caa0001f0f34af40c81b2ebce84c854303fe5a7d448f429417f"
+  },
+  "own_cpu_seconds": 0.013283000000000003,
+  "paid_compute_usd": 0,
+  "passed": true,
+  "schema": "eth-r7-driver-resource-controls/1",
+  "scope": "Actual AST expressions and service-command builder evaluated with harmless values; no service, compiler, proof tool, API or Linux runner executed. Single compiler memory fit remains unmeasured.",
+  "wall_seconds": 0.01954483299999999
+}

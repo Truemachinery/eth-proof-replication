@@ -1,0 +1,16 @@
+{
+  "scope": "Local harness controls only; no Linux/Landrun or external proof replication",
+  "checks": [
+    "python syntax",
+    "public/manual/hosted guards",
+    "proof environment drops credentials",
+    "streamed/fsynced exit, timeout, exact-line and export receipts",
+    "owned-only bounded cache, SHA/context rejection, oversize skip",
+    "local gate C compile and compiler metadata: leanprover--lean4---v4.34.1",
+    "real module-mode Lake cache roundtrip, IR-signature rejection and final no-build pass: 4.34.1",
+    "local gate C compile and compiler metadata: leanprover--lean4---v4.33.1",
+    "real module-mode Lake cache roundtrip, IR-signature rejection and final no-build pass: 4.33.1"
+  ],
+  "passed": true,
+  "wall_seconds": 7.361142874986399
+}

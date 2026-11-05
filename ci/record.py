@@ -68,10 +68,12 @@ class Recorder:
         export = Path(stdout_file).open('xb') if stdout_file else None
         proc = None
         reason = None
+        timed_out = False
         errors = []
         def pump(stream, destination, echo):
             try:
-                for line in iter(stream.readline, b''):
+                blocks = iter(stream.readline, b'') if echo else iter(lambda: stream.read(4 * 1024 * 1024), b'')
+                for line in blocks:
                     destination.write(line)
                     destination.flush()
                     os.fsync(destination.fileno())
@@ -79,6 +81,9 @@ class Recorder:
                         # Neutralize both Actions command syntaxes in display; retain raw bytes above.
                         sys.stdout.write(display_output(line))
                         sys.stdout.flush()
+                if not echo:
+                    destination.flush()
+                    os.fsync(destination.fileno())
             except BaseException as e:
                 errors.append(repr(e))
             finally:
@@ -96,6 +101,7 @@ class Recorder:
             try:
                 code = proc.wait(timeout=timeout)
             except subprocess.TimeoutExpired:
+                timed_out = True
                 reason = 'stage timeout'
                 os.killpg(proc.pid, signal.SIGTERM)
                 try:
@@ -114,7 +120,7 @@ class Recorder:
                         pass
                     worker.join(timeout=5)
             if errors:
-                reason = '; '.join(errors)
+                reason = '; '.join(([reason] if reason else []) + errors)
                 code = 125
         except BaseException as e:
             reason = repr(e)
@@ -135,7 +141,7 @@ class Recorder:
         if required_text is not None and code == 0:
             if required_text.encode() not in (folder / 'raw.log').read_bytes().splitlines():
                 code, reason = 125, 'required exact success line missing'
-        receipt = dict(prepared, exit_code=code, reason=reason,
+        receipt = dict(prepared, exit_code=code, reason=reason, timed_out=timed_out,
                        wall_seconds=time.time() - started,
                        child_cpu_seconds=(cpu1.ru_utime + cpu1.ru_stime - cpu0.ru_utime - cpu0.ru_stime),
                        raw_log_sha256=sha(folder / 'raw.log'),

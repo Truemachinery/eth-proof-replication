@@ -1,0 +1,1846 @@
+{
+  "branch_head": {
+    "ref": "refs/heads/codex/eth-replication",
+    "sha": "309670f70aa79d85752dbdc61799ad8cc56772c2"
+  },
+  "commit": {
+    "parents": [
+      "2e8744a6d7791b7e60fbbc632035ff49118ac947"
+    ],
+    "sha": "309670f70aa79d85752dbdc61799ad8cc56772c2",
+    "tree_sha": "41ea1eeb8776b1a30c97ea93e0c2f98c1021700e"
+  },
+  "created_at": "2026-11-04T20:57:38.956114+00:00",
+  "frozen_export": {
+    "files": 173,
+    "manifest_sha256": "7630e204c30fa413a2abdd1b6186380d08edd5e864cc804821eb9d7bfe86c666",
+    "relative_path": "publication/sandbox-export-fix-20261104-r6",
+    "total_bytes": 6961866
+  },
+  "previous_receipt": {
+    "commit": "2e8744a6d7791b7e60fbbc632035ff49118ac947",
+    "path": "PUBLICATION_RECEIPT-r4.json",
+    "sha256": "35ce6726df7ee00a3755aeb7b787da8670474c0ca4caf62c81b6f92f6a25df46"
+  },
+  "repository": {
+    "default_branch": "codex/eth-replication",
+    "id": 1446047359,
+    "owner_id": 245736990,
+    "private": false,
+    "url": "https://github.com/Truemachinery/eth-proof-replication",
+    "visibility": "public"
+  },
+  "resources": {
+    "finished_at": "2026-11-04T20:57:38.956114+00:00",
+    "local_checksum_process_cpu_seconds": 0.063863,
+    "paid_local_compute_usd": 0,
+    "scope": "Final local JSON/byte/tree/checksum/receipt-preparation process only. Excludes connector fetches, temporary-buffer preparation, review/model and bookkeeping overhead.",
+    "started_at": "2026-11-04T20:57:38.873790+00:00",
+    "wall_seconds": 0.0837255
+  },
+  "schema": "eth-publication-delta-receipt/1",
+  "scope": "Publication byte/tree identity audit only. Same-team saved-evidence reviews are not additional kernel executions. No proof/tool reruns, source execution, public mutation, workflow dispatch or outreach. Native Anthropic, incomplete prior Linux Anthropic, pending continuation and OpenAI retain separate evidence scopes.",
+  "sources": {
+    "branch_head": "https://api.github.com/repos/Truemachinery/eth-proof-replication/git/ref/heads/codex/eth-replication",
+    "changed_content_prefix": "https://github.com/Truemachinery/eth-proof-replication/blob/309670f70aa79d85752dbdc61799ad8cc56772c2/",
+    "commit": "https://api.github.com/repos/Truemachinery/eth-proof-replication/git/commits/309670f70aa79d85752dbdc61799ad8cc56772c2",
+    "repository": "https://api.github.com/repos/Truemachinery/eth-proof-replication",
+    "transport": "GitHub connector fetch_file encoding=utf-8, exact commit ref, no line limits. JSON metadata through approved read-only connector fetch. UTF-8 content reencoded and directly compared; BOM preserved when present.",
+    "tree": "https://api.github.com/repos/Truemachinery/eth-proof-replication/git/trees/309670f70aa79d85752dbdc61799ad8cc56772c2?recursive=1"
+  },
+  "verification": {
+    "changed_or_added_paths": [
+      ".github/workflows/replicate.yml",
+      "PUBLICATION_RECEIPT-r4.json",
+      "PUBLIC_MANIFEST.json",
+      "README.md",
+      "anthropic/ancestor-cache-review-r1.json",
+      "ci/README.md",
+      "ci/ancestor-cache-compatibility.json",
+      "ci/owned_cache.py",
+      "ci/replicate.py",
+      "ci/runs/41894905159/DIAGNOSIS-R4-ANTHROPIC.md",
+      "ci/runs/41894905159/anthropic-job-126801716984.raw.log",
+      "ci/runs/41894905159/anthropic-job-download-r1.json",
+      "ci/runs/41894905159/anthropic-job-summary-r1.json",
+      "ci/runs/41894905159/anthropic-saved-log-review-addendum-r2.md",
+      "ci/runs/41894905159/anthropic-saved-log-review-r1.json",
+      "ci/runs/41894905159/anthropic-saved-log-review-r1.md",
+      "openai/verification-readiness-r1.md",
+      "publication/export-control-r6.json",
+      "publish_package.py",
+      "source-views/publish_package.py.txt",
+      "verification/ANCESTOR_CACHE-r1.md",
+      "verification/ANCESTOR_CACHE_AVAILABILITY-r2.md",
+      "verification/ANTHROPIC_CONTINUATION-r3.md",
+      "verification/ancestor-cache-actual-implementation-review-r1.json",
+      "verification/ancestor-cache-actual-implementation-review-r2.json",
+      "verification/ancestor-cache-control-result-r1.json",
+      "verification/ancestor_cache_control_r1.py",
+      "verification/cache-policy-control-result-r2.json",
+      "verification/cache-policy-control-result-r3.json",
+      "verification/cache_policy_control_r2.py",
+      "verification/cache_policy_control_r3.py",
+      "verification/export-sysroot-control-result-r1.json",
+      "verification/export_sysroot_control_r1.py",
+      "verification/r6-input-identities-r1.json"
+    ],
+    "files": [
+      {
+        "frozen_sha256": "68335be10ee348456b4ffc21f3a4cc5d5c39394a1bb7e5f9fd825338afb26e30",
+        "git_blob_sha1": "885a90d6ba2d5185c87b15c019ba1e029ed9672d",
+        "git_mode": "100644",
+        "path": ".github/workflows/replicate.yml",
+        "published_sha256": "68335be10ee348456b4ffc21f3a4cc5d5c39394a1bb7e5f9fd825338afb26e30",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 9681,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "01479b206b9517ca4aeb0ef686a627568ad6fb8e56bf9ec09b2ad281020cdfe5",
+        "git_blob_sha1": "2a5ae51b2b8ef833080b5dad68e141a6e6f20f91",
+        "git_mode": "100644",
+        "path": "PLAN.md",
+        "published_sha256": "01479b206b9517ca4aeb0ef686a627568ad6fb8e56bf9ec09b2ad281020cdfe5",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 7945,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "c4e29c69b55a58568c11930594b78c1ae569d232e141942f416b21aa39da77fe",
+        "git_blob_sha1": "888338a251a9980dfa971018ed5d7bfc891687d8",
+        "git_mode": "100644",
+        "path": "PUBLICATION_RECEIPT-r1.json",
+        "published_sha256": "c4e29c69b55a58568c11930594b78c1ae569d232e141942f416b21aa39da77fe",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 43783,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "bbba28df5521bcebadaa71154b0fa5c5dad62b80b974a465c24cf42f70b4b423",
+        "git_blob_sha1": "2be911524d3eab3b0ec55da4d474b9dd2f3f4c55",
+        "git_mode": "100644",
+        "path": "PUBLICATION_RECEIPT-r2.json",
+        "published_sha256": "bbba28df5521bcebadaa71154b0fa5c5dad62b80b974a465c24cf42f70b4b423",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 66651,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "c6c725b17509f9d5e943175335846cfcddd28efdce01b27aeabac2f24d21a030",
+        "git_blob_sha1": "6b149a12ac4e5df9576c79f23ea6a3095eb0ca0a",
+        "git_mode": "100644",
+        "path": "PUBLICATION_RECEIPT-r3.json",
+        "published_sha256": "c6c725b17509f9d5e943175335846cfcddd28efdce01b27aeabac2f24d21a030",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 70671,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "35ce6726df7ee00a3755aeb7b787da8670474c0ca4caf62c81b6f92f6a25df46",
+        "git_blob_sha1": "7db73ed0fc2baf1f48d4d222178c76dbed65b459",
+        "git_mode": "100644",
+        "path": "PUBLICATION_RECEIPT-r4.json",
+        "published_sha256": "35ce6726df7ee00a3755aeb7b787da8670474c0ca4caf62c81b6f92f6a25df46",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 95920,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "7630e204c30fa413a2abdd1b6186380d08edd5e864cc804821eb9d7bfe86c666",
+        "git_blob_sha1": "857c69eac38568b33710105b7173d9536ad5c7e6",
+        "git_mode": "100644",
+        "path": "PUBLIC_MANIFEST.json",
+        "published_sha256": "7630e204c30fa413a2abdd1b6186380d08edd5e864cc804821eb9d7bfe86c666",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 255100,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "2d4cf25395a00ca78dcac8c01432135c1b37618c315e9af066a628fa27aed41e",
+        "git_blob_sha1": "f681b358e6b1f8d970efb5c1bcb68a0cc72002fc",
+        "git_mode": "100644",
+        "path": "README.md",
+        "published_sha256": "2d4cf25395a00ca78dcac8c01432135c1b37618c315e9af066a628fa27aed41e",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 13599,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "969ce17e04588d23d3da0e300abd7ca043600f95f72676b06c431638576352cd",
+        "git_blob_sha1": "e9ae5ee32af45a16ec45ad790b6ddc4ee9c19392",
+        "git_mode": "100644",
+        "path": "SHA256D_RELEVANCE.md",
+        "published_sha256": "969ce17e04588d23d3da0e300abd7ca043600f95f72676b06c431638576352cd",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 3687,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "d512dbfbc4b2628f3ed986662c90a30d60beeb2e1ba023f6c89f01c91368c414",
+        "git_blob_sha1": "a7742bbe6911e8ac76e6c6409b2d807c26b2b459",
+        "git_mode": "100644",
+        "path": "STATEMENT_REVIEW.md",
+        "published_sha256": "d512dbfbc4b2628f3ed986662c90a30d60beeb2e1ba023f6c89f01c91368c414",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 8687,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "ffec4ed0ad9b139f9f635379d6ed6be0d84fb30ed1abbcd18349257457f56f23",
+        "git_blob_sha1": "52a9e94de2d85764187c20c17b4ddcacf2a66b34",
+        "git_mode": "100644",
+        "path": "VERIFICATION_PLAN.md",
+        "published_sha256": "ffec4ed0ad9b139f9f635379d6ed6be0d84fb30ed1abbcd18349257457f56f23",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 23568,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "b62be412db58eba0e7f0f840d1c31a543bc1911e2bea5dd1f9d27776e1daa970",
+        "git_blob_sha1": "65815d26823376454d7fa2029382dafa4fbbcad9",
+        "git_mode": "100644",
+        "path": "anthropic/COMPARATOR_TOOL.md",
+        "published_sha256": "b62be412db58eba0e7f0f840d1c31a543bc1911e2bea5dd1f9d27776e1daa970",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 2942,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "fbd9639fa691d71a013ce364c73b28e052565625ac36dca6f3a0e8dd3c2ac27b",
+        "git_blob_sha1": "8f894c2fbc8a2c0495c570360d8a56d9dee584c3",
+        "git_mode": "100644",
+        "path": "anthropic/ancestor-cache-review-r1.json",
+        "published_sha256": "fbd9639fa691d71a013ce364c73b28e052565625ac36dca6f3a0e8dd3c2ac27b",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 10831,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "20381eee6e6a66adc5c2cddd1d653a3804c2165704efe89329fdbb135ce2996e",
+        "git_blob_sha1": "6bcbea1f424c39983a465e99a11ce7913bb2363a",
+        "git_mode": "100644",
+        "path": "anthropic/basic-model-scope-r1.json",
+        "published_sha256": "20381eee6e6a66adc5c2cddd1d653a3804c2165704efe89329fdbb135ce2996e",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 2829,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "b01c0cbb12be652bf434321d6da9cdd639fbb4220daa9b386f3360f4d9ae53e1",
+        "git_blob_sha1": "b6f1aca2825bc0d4563a2f4b7333576590bb52c6",
+        "git_mode": "100644",
+        "path": "anthropic/build-completion-artifacts-r1.json",
+        "published_sha256": "b01c0cbb12be652bf434321d6da9cdd639fbb4220daa9b386f3360f4d9ae53e1",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 2190,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "2490a1fbb7e79a7abc7976b11eb76e71f548293530393a1da4df619a946c9348",
+        "git_blob_sha1": "9cdc73f82824eb811fc558b1171ca59896a86efe",
+        "git_mode": "100644",
+        "path": "anthropic/build-graph.json",
+        "published_sha256": "2490a1fbb7e79a7abc7976b11eb76e71f548293530393a1da4df619a946c9348",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 487670,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "afa48d561f8d9219527f4ebe4cad38d5dc0dccd0ed7827f10cd9ea1e2976fde0",
+        "git_blob_sha1": "1eddb835d375d7ef29cdea495c19603b0af6ba8a",
+        "git_mode": "100644",
+        "path": "anthropic/build_topological.py",
+        "published_sha256": "afa48d561f8d9219527f4ebe4cad38d5dc0dccd0ed7827f10cd9ea1e2976fde0",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 5357,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "eb7966d3195c5a0e5b0a856d1d52392e235f15e53e19ed91637b42f6d5e4cc1b",
+        "git_blob_sha1": "650885c950514aa99391b0e985c67d075288c462",
+        "git_mode": "100644",
+        "path": "anthropic/checker-records/nanoda-64425-0dvr445m/00-prepared.json",
+        "published_sha256": "eb7966d3195c5a0e5b0a856d1d52392e235f15e53e19ed91637b42f6d5e4cc1b",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 3340,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "7ab57e39fac5028cc0cadc46e9dd22e31487ad735aed588d1f5d56d6ae116e93",
+        "git_blob_sha1": "566df9fee8711e94d9420e610ea58f75c15b00e1",
+        "git_mode": "100644",
+        "path": "anthropic/checker-records/nanoda-64425-0dvr445m/01-started.json",
+        "published_sha256": "7ab57e39fac5028cc0cadc46e9dd22e31487ad735aed588d1f5d56d6ae116e93",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 199,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "6118868cb06c77d69a10be9937090edcf014915f8e2cb88796ade49224555265",
+        "git_blob_sha1": "a92f52ef60dffa5ce03a82f79e3fc207175b81dc",
+        "git_mode": "100644",
+        "path": "anthropic/checker-records/nanoda-64425-0dvr445m/02-finished.json",
+        "published_sha256": "6118868cb06c77d69a10be9937090edcf014915f8e2cb88796ade49224555265",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 4465,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "c7f362ab923e8e9ba3c611135dffc5205b8f58fab2aaeaabb5097d188da19fa8",
+        "git_blob_sha1": "5a6f3aef2bf0f1502acd8de0c21b3c844bcd589c",
+        "git_mode": "100644",
+        "path": "anthropic/checker-records/nanoda-64425-0dvr445m/effective-config.json",
+        "published_sha256": "c7f362ab923e8e9ba3c611135dffc5205b8f58fab2aaeaabb5097d188da19fa8",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 196,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "bd7fe1c6be2d667448f9caedd046eea372c9b9eb5812d89bc9174e105276ee7d",
+        "git_blob_sha1": "60e0a866fe144a53055618baeb1395ad7a46659b",
+        "git_mode": "100644",
+        "path": "anthropic/ci-cache-review-r2.json",
+        "published_sha256": "bd7fe1c6be2d667448f9caedd046eea372c9b9eb5812d89bc9174e105276ee7d",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 3067,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "4b69dc5bcabacc22e47282aabfee9e06d45aae13432ca07e9ea5661f71e499b4",
+        "git_blob_sha1": "af3ac823d1226e1e18b6aa3f96cda7a34ed44bda",
+        "git_mode": "100644",
+        "path": "anthropic/ci-cache-review-r3.json",
+        "published_sha256": "4b69dc5bcabacc22e47282aabfee9e06d45aae13432ca07e9ea5661f71e499b4",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 1738,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "756e2d4eeefd0b331ceb86750b68d02aa5bb5b7510b0ce37513e59db96e42697",
+        "git_blob_sha1": "fe51f64c87590b51f7ae1e6e8d4ed5c44bb29ff4",
+        "git_mode": "100644",
+        "path": "anthropic/ci-cache-review-r4.json",
+        "published_sha256": "756e2d4eeefd0b331ceb86750b68d02aa5bb5b7510b0ce37513e59db96e42697",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 1846,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "6025314a6dff615fb89b0e004e877c536217932a55400ae52fc5a05cffc6d8b9",
+        "git_blob_sha1": "5e32a06b9b01e30275340157c85b0a08d99ecb25",
+        "git_mode": "100644",
+        "path": "anthropic/comparator-ci-tool-manifest-r1.json",
+        "published_sha256": "6025314a6dff615fb89b0e004e877c536217932a55400ae52fc5a05cffc6d8b9",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 36800,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "69a2a24dd8cf88f2291742f3286ababa93f1151608459dcff6da23c70b88b1c4",
+        "git_blob_sha1": "df6e2a7486080cf8c230b44a213f98eb01891b28",
+        "git_mode": "100644",
+        "path": "anthropic/dependency-provenance.json",
+        "published_sha256": "69a2a24dd8cf88f2291742f3286ababa93f1151608459dcff6da23c70b88b1c4",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 1492180,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "dedc943747374632274f4d25d5757b30051da3f27eb51cbd029b1be60450772f",
+        "git_blob_sha1": "0cc6fe2ff49d44959f8f1260e6f228a2a5551a24",
+        "git_mode": "100644",
+        "path": "anthropic/landrun-abi8-source-review-r1.json",
+        "published_sha256": "dedc943747374632274f4d25d5757b30051da3f27eb51cbd029b1be60450772f",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 5414,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "05fcb6d04b3660a58315f8f9f61a17b1f53293a1b9d22933a64159d1d934be13",
+        "git_blob_sha1": "4fac5c3a33619603b5b3bb1cfa20640102cea08b",
+        "git_mode": "100644",
+        "path": "anthropic/lexical-source-scan.json",
+        "published_sha256": "05fcb6d04b3660a58315f8f9f61a17b1f53293a1b9d22933a64159d1d934be13",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 726,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "3cef0edc12a94e2010160c29007b264ece67622522668a07646fcdb10cc5b1dd",
+        "git_blob_sha1": "eb535aa83632a9bb7de66b798eb28b265f58f353",
+        "git_mode": "100644",
+        "path": "anthropic/logs/actual-lean-version-r1.json",
+        "published_sha256": "3cef0edc12a94e2010160c29007b264ece67622522668a07646fcdb10cc5b1dd",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 1201,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "4762d596346ad354e28668de62b7eeae7de5d531b9a7b1c182ca59cfacd81bdd",
+        "git_blob_sha1": "01450b969db35289a37df97cf2769cdda3a786b9",
+        "git_mode": "100644",
+        "path": "anthropic/logs/actual-lean-version-r1.txt",
+        "published_sha256": "4762d596346ad354e28668de62b7eeae7de5d531b9a7b1c182ca59cfacd81bdd",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 106,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "9c73aceed267f5bcb98430bfd3f6a0d9022dba3ab122aab5a65bf2f4cdfd0ee9",
+        "git_blob_sha1": "eace5d2ae8060b1530bc4059442d09185ebff382",
+        "git_mode": "100644",
+        "path": "anthropic/logs/build-topological-r1.json",
+        "published_sha256": "9c73aceed267f5bcb98430bfd3f6a0d9022dba3ab122aab5a65bf2f4cdfd0ee9",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 1213,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "ed2b692b098dfeb06806685f0e28be70c213f6fa5cd3725aa241332c33419e64",
+        "git_blob_sha1": "a2bb5f51e32937925b486c2612f24b567ff32053",
+        "git_mode": "100644",
+        "path": "anthropic/logs/build-topological-r1.txt",
+        "published_sha256": "ed2b692b098dfeb06806685f0e28be70c213f6fa5cd3725aa241332c33419e64",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 902920,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "2b2d4bfcdf5fb7a5f79f354b64222d4e4646ea829798ae746220ce166790e076",
+        "git_blob_sha1": "69da4f53d77ba4193d415d1f57ecd99e7920d141",
+        "git_mode": "100644",
+        "path": "anthropic/logs/cache-get-r1.json",
+        "published_sha256": "2b2d4bfcdf5fb7a5f79f354b64222d4e4646ea829798ae746220ce166790e076",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 1171,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "e84bda83f28a911991ec967898c9a15c1a72a63e5b5c914f71e075998049ddfd",
+        "git_blob_sha1": "125f33f959031b439162ee202ba6f2c3055787b6",
+        "git_mode": "100644",
+        "path": "anthropic/logs/cache-get-r1.txt",
+        "published_sha256": "e84bda83f28a911991ec967898c9a15c1a72a63e5b5c914f71e075998049ddfd",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 22160,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "4ab19261f53aefdd94c28301acbf535737e4a2be1558e5e6c4a38e02ee5cf6c7",
+        "git_blob_sha1": "b6babead2ca8c7a2e1b948aca24e5a5e360c5c73",
+        "git_mode": "100644",
+        "path": "anthropic/logs/comparator-ci-build-r1.json",
+        "published_sha256": "4ab19261f53aefdd94c28301acbf535737e4a2be1558e5e6c4a38e02ee5cf6c7",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 1305,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "39186b7ebc9c3c08c18c8aef7829d8552da65172f8bc5ba97ce2c69c2d53e7e5",
+        "git_blob_sha1": "2bf1ac66e7c2924bb6917930f9b096cbe8c0dd89",
+        "git_mode": "100644",
+        "path": "anthropic/logs/comparator-ci-build-r1.txt",
+        "published_sha256": "39186b7ebc9c3c08c18c8aef7829d8552da65172f8bc5ba97ce2c69c2d53e7e5",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 38,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "68da15deb733a0a68b4db7a26b0f33a00d3f57a79addb9bf98e24c18ab0dc1fa",
+        "git_blob_sha1": "f6ea716d08bc25e6463cbce1cc11cfc4e70b90f8",
+        "git_mode": "100644",
+        "path": "anthropic/logs/comparator-ci-build-r2.json",
+        "published_sha256": "68da15deb733a0a68b4db7a26b0f33a00d3f57a79addb9bf98e24c18ab0dc1fa",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 1343,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "a615b95b280e7a4913058da69efef4c98f99b0349f512b06e6ff30a9f4e8e89c",
+        "git_blob_sha1": "f65e21ce0ec8789b5f006266e13fae7b8bed9e22",
+        "git_mode": "100644",
+        "path": "anthropic/logs/comparator-ci-build-r2.txt",
+        "published_sha256": "a615b95b280e7a4913058da69efef4c98f99b0349f512b06e6ff30a9f4e8e89c",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 797,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "ab4d1e4084a05868ad3f5b007d29d7b8aefcb3cefc9d033836ba5666e38575be",
+        "git_blob_sha1": "8ebdb07a8c03c737b1c1726cc29bde797e5d9eae",
+        "git_mode": "100644",
+        "path": "anthropic/logs/comparator-ci-compiler-version-r1.json",
+        "published_sha256": "ab4d1e4084a05868ad3f5b007d29d7b8aefcb3cefc9d033836ba5666e38575be",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 1302,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "20f42f897511ec814f7616bd9a193ae7504aa2f52fb05299eb752936eb77ca6e",
+        "git_blob_sha1": "564907eb40977f5d5e2e3b0013923d5044b11c19",
+        "git_mode": "100644",
+        "path": "anthropic/logs/comparator-ci-compiler-version-r1.txt",
+        "published_sha256": "20f42f897511ec814f7616bd9a193ae7504aa2f52fb05299eb752936eb77ca6e",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 106,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "bda1c406c2bff6c7e4bfb8e743271e3e66bdb4559fb2d9604c15015d3aee500e",
+        "git_blob_sha1": "2dd963da103a3af931e30997d7179fc8d45d9dbf",
+        "git_mode": "100644",
+        "path": "anthropic/logs/comparator-ci-smoke-r1.json",
+        "published_sha256": "bda1c406c2bff6c7e4bfb8e743271e3e66bdb4559fb2d9604c15015d3aee500e",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 1256,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "13bedbf32f58187fa4467476fc0a46865944d61bd63763b88b2b85d5cdbb65eb",
+        "git_blob_sha1": "d917f3d997ce28328c35d024d2ce8ac8e5d4f4dd",
+        "git_mode": "100644",
+        "path": "anthropic/logs/comparator-ci-smoke-r1.txt",
+        "published_sha256": "13bedbf32f58187fa4467476fc0a46865944d61bd63763b88b2b85d5cdbb65eb",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 65,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "ba861a8dd4f97140a5061f930e90e51feb73771c5ace8c7523bcbf629411b01f",
+        "git_blob_sha1": "8285e3843c9f05127e8b0fca491d8de78d67a585",
+        "git_mode": "100644",
+        "path": "anthropic/logs/comparator-native-r1.json",
+        "published_sha256": "ba861a8dd4f97140a5061f930e90e51feb73771c5ace8c7523bcbf629411b01f",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 1800,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "666b5bc38f6ed82048de34ed2013b4a4bd58864984d82792141e34d4fbc78531",
+        "git_blob_sha1": "c7db949831f652da4aa899026880181abe230dfa",
+        "git_mode": "100644",
+        "path": "anthropic/logs/comparator-native-r1.txt",
+        "published_sha256": "666b5bc38f6ed82048de34ed2013b4a4bd58864984d82792141e34d4fbc78531",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 2387,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "135be1d0c10ec674b75fda7472edaec64345df2b3ab30f7738ece1754fe55dda",
+        "git_blob_sha1": "dc203ad158ecc098d365b51021c383d80ae4e346",
+        "git_mode": "100644",
+        "path": "anthropic/logs/default-build-r1.json",
+        "published_sha256": "135be1d0c10ec674b75fda7472edaec64345df2b3ab30f7738ece1754fe55dda",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 1179,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "7663818f919ad8f5e1c7f4da68b57c1417becb88e04ac6737fffec33998ad698",
+        "git_blob_sha1": "81b8292bc6385b3e5f9e84fdd656ea42958f0774",
+        "git_mode": "100644",
+        "path": "anthropic/logs/default-build-r1.txt",
+        "published_sha256": "7663818f919ad8f5e1c7f4da68b57c1417becb88e04ac6737fffec33998ad698",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 187,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "0f6c413c288eb4f15806fe317b58794b746ed4d602aebcaef60e1c5964ba1047",
+        "git_blob_sha1": "8c59b5a7045983f4f9a7b39404a013ea334fc54c",
+        "git_mode": "100644",
+        "path": "anthropic/logs/leanchecker-fresh-r1.json",
+        "published_sha256": "0f6c413c288eb4f15806fe317b58794b746ed4d602aebcaef60e1c5964ba1047",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 1243,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+        "git_mode": "100644",
+        "path": "anthropic/logs/leanchecker-fresh-r1.txt",
+        "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 0,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "b8780a65afcbc9a43523d1a2a10672af7a5f8a2f789baa94dc963e283e898f77",
+        "git_blob_sha1": "972519e7c3cd7f65a975eafe98c230499a6081ad",
+        "git_mode": "100644",
+        "path": "anthropic/logs/pinned-input-identity-post-checkers-r1.json",
+        "published_sha256": "b8780a65afcbc9a43523d1a2a10672af7a5f8a2f789baa94dc963e283e898f77",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 1259,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "c873227507d8e2573c8d76831b11ab0c3327cea926fc36ec46bcda407713e7b9",
+        "git_blob_sha1": "a92de5384131618866837f99f5fe55a8a1d613a2",
+        "git_mode": "100644",
+        "path": "anthropic/logs/pinned-input-identity-post-checkers-r1.txt",
+        "published_sha256": "c873227507d8e2573c8d76831b11ab0c3327cea926fc36ec46bcda407713e7b9",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 2580,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "5fe2071658ec69a805709d7955a3eb53839d0c0ab49e1036044bfa36bff72af4",
+        "git_blob_sha1": "61e2560d1543b6e6c5fe72903837f3f28c18fb4d",
+        "git_mode": "100644",
+        "path": "anthropic/logs/pinned-input-identity-r1.json",
+        "published_sha256": "5fe2071658ec69a805709d7955a3eb53839d0c0ab49e1036044bfa36bff72af4",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 1209,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "2f455608444b63fcd8a4f6e633e124c9659c1f7d7a16b8cb0c07c57582a327cc",
+        "git_blob_sha1": "d355cd1a5f5201accb9d8051efb17a300cbb2922",
+        "git_mode": "100644",
+        "path": "anthropic/logs/pinned-input-identity-r1.txt",
+        "published_sha256": "2f455608444b63fcd8a4f6e633e124c9659c1f7d7a16b8cb0c07c57582a327cc",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 2580,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "373bc85cdbeb94d7afbf0e828a46035d2e225a657ed27ed55d130ce798b8a5ed",
+        "git_blob_sha1": "9cd0e50016e451b6877894a5c2bc8c52a31d1272",
+        "git_mode": "100644",
+        "path": "anthropic/logs/target-axiom-audit-r1.json",
+        "published_sha256": "373bc85cdbeb94d7afbf0e828a46035d2e225a657ed27ed55d130ce798b8a5ed",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 1364,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "0bfd5fff304f3737544ba1138bc3ccbc8fb339f2d86bce9322671ba52782a24f",
+        "git_blob_sha1": "c60fc82fb33723cb70b5d52e8b133ad28ff4ae13",
+        "git_mode": "100644",
+        "path": "anthropic/logs/target-axiom-audit-r1.txt",
+        "published_sha256": "0bfd5fff304f3737544ba1138bc3ccbc8fb339f2d86bce9322671ba52782a24f",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 917,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "06f939aafe239750a8989034f96d90bd2fc626dd19b371bc9ad64f4f74dd7854",
+        "git_blob_sha1": "f883216f57370dd47cde4db81f917a97e4117d9d",
+        "git_mode": "100644",
+        "path": "anthropic/logs/upstream-comparator-preflight-r1.json",
+        "published_sha256": "06f939aafe239750a8989034f96d90bd2fc626dd19b371bc9ad64f4f74dd7854",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 1321,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "0a66d437ffc4cd65c84d2aa6db6f0688b048fc8c6559c3806fcebc6f7930c32d",
+        "git_blob_sha1": "64d0096ad389a302f65970a89b95f6ef55b04699",
+        "git_mode": "100644",
+        "path": "anthropic/logs/upstream-comparator-preflight-r1.txt",
+        "published_sha256": "0a66d437ffc4cd65c84d2aa6db6f0688b048fc8c6559c3806fcebc6f7930c32d",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 22,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "fc9719a97b3d52fa1e3a4734f291e0a3c2e811e3cae497ef1ce4bcfa161d57f1",
+        "git_blob_sha1": "c714c2a809c564dfcdf896f5b289f1baf3984254",
+        "git_mode": "100644",
+        "path": "anthropic/logs/upstream-print-axioms-r1.json",
+        "published_sha256": "fc9719a97b3d52fa1e3a4734f291e0a3c2e811e3cae497ef1ce4bcfa161d57f1",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 1238,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "ce9d0d587c18393a59a0cfa1ef45563189578b5752126dbf219f6f18495a89a8",
+        "git_blob_sha1": "8060418f238b9febede63c7fb12ca52770f46a1b",
+        "git_mode": "100644",
+        "path": "anthropic/logs/upstream-print-axioms-r1.txt",
+        "published_sha256": "ce9d0d587c18393a59a0cfa1ef45563189578b5752126dbf219f6f18495a89a8",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 169,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "d507667b2467f30fd20952fd8d7b128d45b1b968fae48424f6ba518b6e864c8c",
+        "git_blob_sha1": "5426f7185b724a1646626c39827e9d1acb0bbc99",
+        "git_mode": "100644",
+        "path": "anthropic/native-replication-artifacts-r1.json",
+        "published_sha256": "d507667b2467f30fd20952fd8d7b128d45b1b968fae48424f6ba518b6e864c8c",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 11977,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "5bac43c501df2d1f67687cd71bf6090593a79e4324244ff7bcf33abc86c2a2c7",
+        "git_blob_sha1": "351f33b43bc185dd7bf42b17bcb6023e9736b074",
+        "git_mode": "100644",
+        "path": "anthropic/native-replication-report-r1.md",
+        "published_sha256": "5bac43c501df2d1f67687cd71bf6090593a79e4324244ff7bcf33abc86c2a2c7",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 5502,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "d99e10d67ca623c8dd2b79eb6b7336363be676527740dafeab01f990c3c6ee4b",
+        "git_blob_sha1": "6f6724f39dd46ecf3e968ce5ff6d2b06db63296c",
+        "git_mode": "100644",
+        "path": "anthropic/native-replication-result-r1.json",
+        "published_sha256": "d99e10d67ca623c8dd2b79eb6b7336363be676527740dafeab01f990c3c6ee4b",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 18654,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "9ab09853bf8add7f9353fa434441ac2cbd899da94ad3f9208f976874f19bb403",
+        "git_blob_sha1": "dec56d9aa528a05e9919ac2fa72a226761e4ec3a",
+        "git_mode": "100644",
+        "path": "anthropic/native-saved-evidence-review-r1.json",
+        "published_sha256": "9ab09853bf8add7f9353fa434441ac2cbd899da94ad3f9208f976874f19bb403",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 15793,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "cc9aac40268c987bd6fe412846daafb88b825c601f8397424be155214cd11869",
+        "git_blob_sha1": "91d520bd59282ee0da8c373818a52f5fe732b36a",
+        "git_mode": "100644",
+        "path": "anthropic/native-saved-evidence-review-r1.md",
+        "published_sha256": "cc9aac40268c987bd6fe412846daafb88b825c601f8397424be155214cd11869",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 3445,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "d4b59cdee2e4b36b3c669ac38d3b48c76fc4d43b2a7e4a0c40c5c60f2efc68d2",
+        "git_blob_sha1": "8d548c3ec10d2e799d1c893d865634dc7abf2f30",
+        "git_mode": "100644",
+        "path": "anthropic/native-saved-input-review-r1.json",
+        "published_sha256": "d4b59cdee2e4b36b3c669ac38d3b48c76fc4d43b2a7e4a0c40c5c60f2efc68d2",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 6326,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "9e47b16125e4969f06fa8ebba53a0cded954d61de9238c5a3d4f8416b245d779",
+        "git_blob_sha1": "93aba2aa152550fdff53051927f73be5b231505e",
+        "git_mode": "100644",
+        "path": "anthropic/source-manifest.json",
+        "published_sha256": "9e47b16125e4969f06fa8ebba53a0cded954d61de9238c5a3d4f8416b245d779",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 194243,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "0aac49fc1cdaf9816136d2851ecf9a2ae54a622faa216ee364d6295bff02478d",
+        "git_blob_sha1": "a885c6c6ea65bc9ad5b4a500f30ebbbf93e113d7",
+        "git_mode": "100644",
+        "path": "anthropic/stage.py",
+        "published_sha256": "0aac49fc1cdaf9816136d2851ecf9a2ae54a622faa216ee364d6295bff02478d",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 4742,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "9f0d6e947100087f268a07af4374861a59f339481dcb5add35586133f765ce6b",
+        "git_blob_sha1": "6c9bfd84b3600d6ef8bfa184e562a56d75e2e4bf",
+        "git_mode": "100644",
+        "path": "anthropic/verify_source_identity.py",
+        "published_sha256": "9f0d6e947100087f268a07af4374861a59f339481dcb5add35586133f765ce6b",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 3291,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "c8c2e4a5fdeb2c64683ea1afcadf1df6f5f515072086cd9064b626af3857c931",
+        "git_blob_sha1": "0448fd773d4bbbeafc24336a6568623a4d5814c3",
+        "git_mode": "100644",
+        "path": "ci/README.md",
+        "published_sha256": "c8c2e4a5fdeb2c64683ea1afcadf1df6f5f515072086cd9064b626af3857c931",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 15914,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "114a49bae310c444c5468258df7fddd74c98077370102055d051f5c46eb52d4a",
+        "git_blob_sha1": "9fbfd72c48117bacc99db835f8c38c96dafc11b2",
+        "git_mode": "100644",
+        "path": "ci/ancestor-cache-compatibility.json",
+        "published_sha256": "114a49bae310c444c5468258df7fddd74c98077370102055d051f5c46eb52d4a",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 8513,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "fc1321d4e9c687264a6517dda0ba98bf0ae7596ba519983bbdba4865f38ec6bf",
+        "git_blob_sha1": "2bca0ac1bfe50c075ad25ef555dcdac066c1a9d9",
+        "git_mode": "100644",
+        "path": "ci/cache_maintenance.py",
+        "published_sha256": "fc1321d4e9c687264a6517dda0ba98bf0ae7596ba519983bbdba4865f38ec6bf",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 4631,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "20f71662ca0a007ea441f4217ae6605d31e0e72b3d5affb0a353079445f9d3a2",
+        "git_blob_sha1": "7c36479fae3062180b2123b19310baa18f6690fd",
+        "git_mode": "100644",
+        "path": "ci/check_bc_control.py",
+        "published_sha256": "20f71662ca0a007ea441f4217ae6605d31e0e72b3d5affb0a353079445f9d3a2",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 4512,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "c5b5ab90b218758a43dfaab09bf72942a439cd6fe756fa0ae08408351a1ccbcb",
+        "git_blob_sha1": "e2869fb6ccfa9692d765c32195ec7518d8a4ba72",
+        "git_mode": "100644",
+        "path": "ci/check_controls.py",
+        "published_sha256": "c5b5ab90b218758a43dfaab09bf72942a439cd6fe756fa0ae08408351a1ccbcb",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 10960,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "cbd5851a36d38e0ad5350eea64d7894d8b7708f618e1ca4210afbe46fc9f383b",
+        "git_blob_sha1": "db9aeed451a9091201fd9b1870f0234e6684a207",
+        "git_mode": "100644",
+        "path": "ci/check_display_control.py",
+        "published_sha256": "cbd5851a36d38e0ad5350eea64d7894d8b7708f618e1ca4210afbe46fc9f383b",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 3795,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "d2471fa5e1424ef1758aa095318a1a81e07f46c1ef41525c507c803b4fcdc128",
+        "git_blob_sha1": "8110edd8625283580426658d4cb8250c6def29de",
+        "git_mode": "100644",
+        "path": "ci/check_landlock_policy_control.py",
+        "published_sha256": "d2471fa5e1424ef1758aa095318a1a81e07f46c1ef41525c507c803b4fcdc128",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 4563,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "4789ebe8874af41ac2d568403d85060b2a81f361ce3e27697b2f864a2deb8beb",
+        "git_blob_sha1": "76b3815441090f3784ed85f59834d98a79adfa1a",
+        "git_mode": "100644",
+        "path": "ci/check_setup_omission_control.py",
+        "published_sha256": "4789ebe8874af41ac2d568403d85060b2a81f361ce3e27697b2f864a2deb8beb",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 5400,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "749d1fb3f109f7c3878cf2b4dd3c543db3c173828af17b54756fed07413f2571",
+        "git_blob_sha1": "e71de51c6f8fdbffcaca4b63dd50d1b2320de414",
+        "git_mode": "100644",
+        "path": "ci/check_stage_name_control.py",
+        "published_sha256": "749d1fb3f109f7c3878cf2b4dd3c543db3c173828af17b54756fed07413f2571",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 3487,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "96947ead6565aa2d75b93c09e8bdccba31bc6558517db5df915368efc123dfb3",
+        "git_blob_sha1": "529feb30ef0223c4ab153dc8599858f44943373c",
+        "git_mode": "100644",
+        "path": "ci/compiler_gate.c",
+        "published_sha256": "96947ead6565aa2d75b93c09e8bdccba31bc6558517db5df915368efc123dfb3",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 6273,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "71f34ef370ad5dd25b28f443960b37485c5a2f74a7a62b22345f38b31a15ba3b",
+        "git_blob_sha1": "95055369fda2a239d81ce32560d6f52b85f495f5",
+        "git_mode": "100644",
+        "path": "ci/control-result-bc-r2.json",
+        "published_sha256": "71f34ef370ad5dd25b28f443960b37485c5a2f74a7a62b22345f38b31a15ba3b",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 555,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "3e32a5e560e0e993a44738ea7eb8c69a73c68d229eaefd9c38c42f996e0ab327",
+        "git_blob_sha1": "99421777a6b737a2f56af60d33b072f0100d3a20",
+        "git_mode": "100644",
+        "path": "ci/control-result-display-r3.json",
+        "published_sha256": "3e32a5e560e0e993a44738ea7eb8c69a73c68d229eaefd9c38c42f996e0ab327",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 746,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "868caed022e577c87af606a083497b658f495ad026ddbe176f27c11c334d8764",
+        "git_blob_sha1": "9db184323106c705de81a53ed029b1083d9f6aaa",
+        "git_mode": "100644",
+        "path": "ci/control-result-landlock-policy-r4.json",
+        "published_sha256": "868caed022e577c87af606a083497b658f495ad026ddbe176f27c11c334d8764",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 708,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "be559a9f05600526547067307a10fddc94e465b5cf388c127eb614e64c36794b",
+        "git_blob_sha1": "64447015a86b95b4e181fa28c45354ea6c0e7487",
+        "git_mode": "100644",
+        "path": "ci/control-result-r2.json",
+        "published_sha256": "be559a9f05600526547067307a10fddc94e465b5cf388c127eb614e64c36794b",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 765,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "60560b19a484638d8cda6ce08e41be3af8ee5b1a30e7d25a055e8d2722629b6b",
+        "git_blob_sha1": "f9e1e21a2fab9a8978152f2ffec16fd2302073fe",
+        "git_mode": "100644",
+        "path": "ci/control-result-setup-omission-r3.json",
+        "published_sha256": "60560b19a484638d8cda6ce08e41be3af8ee5b1a30e7d25a055e8d2722629b6b",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 1195,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "b476322adfed7729b2b799e0044f042b0825678a40b685c2679d831af4dd60c3",
+        "git_blob_sha1": "24ec114450f01cb6355a27e3b5e32dc4ebb559e4",
+        "git_mode": "100644",
+        "path": "ci/control-result-stage-names-r3.json",
+        "published_sha256": "b476322adfed7729b2b799e0044f042b0825678a40b685c2679d831af4dd60c3",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 1934,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "033bd03cc7f33daa0a7ac65413ff999beb8b81dc9c6f221a239b8c35be383aff",
+        "git_blob_sha1": "e6d5dcdd22264e67939d4718c93c806d07adbd4b",
+        "git_mode": "100644",
+        "path": "ci/control-result.json",
+        "published_sha256": "033bd03cc7f33daa0a7ac65413ff999beb8b81dc9c6f221a239b8c35be383aff",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 533,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "c5af28dc306d384062ee53dbb34402ab895f82320fa2df015e0f09752959909a",
+        "git_blob_sha1": "2fa1a2e48b7dc6a36fd73687647b07c79cf2bdcd",
+        "git_mode": "100644",
+        "path": "ci/create_gate.py",
+        "published_sha256": "c5af28dc306d384062ee53dbb34402ab895f82320fa2df015e0f09752959909a",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 3524,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "d0853c1a67adcec4bbe22d1c44dc835f448b80eebe6502a32450faa59e17e0b0",
+        "git_blob_sha1": "d27583dfac1275e45cb2b2d85bb58d0b7bacd911",
+        "git_mode": "100644",
+        "path": "ci/landlock_abi.py",
+        "published_sha256": "d0853c1a67adcec4bbe22d1c44dc835f448b80eebe6502a32450faa59e17e0b0",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 1265,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "dd9b47b1da0240e2fc2bf79a4e6de40543beb37cd5e316eb055f092040f382be",
+        "git_blob_sha1": "3e72219d9997dff2e33dc3f56c3e8988b4a60fd4",
+        "git_mode": "100644",
+        "path": "ci/owned_cache.py",
+        "published_sha256": "dd9b47b1da0240e2fc2bf79a4e6de40543beb37cd5e316eb055f092040f382be",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 11489,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "e0b9f4d376b26247120dc97cee64595ea91b69fad24d5218e811d435a2910a0a",
+        "git_blob_sha1": "64fdee6370f6218a9aede5c2a3e846b75de27f62",
+        "git_mode": "100644",
+        "path": "ci/pins.json",
+        "published_sha256": "e0b9f4d376b26247120dc97cee64595ea91b69fad24d5218e811d435a2910a0a",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 1712,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "5c8830653d328d50dcf3c0cae1488a199ab9c9a4249bbcc3a06f6fd598369f6c",
+        "git_blob_sha1": "b599ae50f00afcb17525c00a6e781dff8794768e",
+        "git_mode": "100644",
+        "path": "ci/prepare_openai.py",
+        "published_sha256": "5c8830653d328d50dcf3c0cae1488a199ab9c9a4249bbcc3a06f6fd598369f6c",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 5849,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0",
+        "git_blob_sha1": "eb796340f51a3adcb1df5233e19d6ddc2a4181fd",
+        "git_mode": "100644",
+        "path": "ci/record.py",
+        "published_sha256": "1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 6474,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "d3d38d581b583891fad340a377ff799dab8d396a26a947b2fffe04d74cd7b77c",
+        "git_blob_sha1": "56b2f4e2a5f5d5742f8a7550785534afdda51c2e",
+        "git_mode": "100644",
+        "path": "ci/replicate.py",
+        "published_sha256": "d3d38d581b583891fad340a377ff799dab8d396a26a947b2fffe04d74cd7b77c",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 21177,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "be132e5cd9150b4f867723ec7aabb092f4622dc6fa1d87bbbfc7d5eedc32b2b3",
+        "git_blob_sha1": "59924478fd2281c45a5ff7f9608f29481f5beff6",
+        "git_mode": "100644",
+        "path": "ci/runs/41888029999/DIAGNOSIS-R1.md",
+        "published_sha256": "be132e5cd9150b4f867723ec7aabb092f4622dc6fa1d87bbbfc7d5eedc32b2b3",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 3922,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "b7221a0f71c03b76952e4c41d566cb8503a075850b44dea692fb3bbd3463df82",
+        "git_blob_sha1": "73045a74cfb1767adcd6056e2127ef6302be95cb",
+        "git_mode": "100644",
+        "path": "ci/runs/41888029999/raw-log-manifest.json",
+        "published_sha256": "b7221a0f71c03b76952e4c41d566cb8503a075850b44dea692fb3bbd3463df82",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 7241,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "fb71c6f7c931782df05a220f210324c770f76cc86a6507bf4174c2a90fd7ed6a",
+        "git_blob_sha1": "50e1f374752b0aee795cd7cf27ada468e6579a7a",
+        "git_mode": "100644",
+        "path": "ci/runs/41891445823/DIAGNOSIS-R3.md",
+        "published_sha256": "fb71c6f7c931782df05a220f210324c770f76cc86a6507bf4174c2a90fd7ed6a",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 3894,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "817c1db53fe6da93ed7d3c31cdbbf223f67fceaf5c9f2b88c805fac594666d24",
+        "git_blob_sha1": "8687fd1f103e3405c4ade18537c552d4a0a0fdd7",
+        "git_mode": "100644",
+        "path": "ci/runs/41891445823/POLICY-ADDENDUM-R4.md",
+        "published_sha256": "817c1db53fe6da93ed7d3c31cdbbf223f67fceaf5c9f2b88c805fac594666d24",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 2158,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "ac39520d80d0fec72fb19b6cfedd09f6ba7662a5dbff97028ff5aa545501e783",
+        "git_blob_sha1": "5dea08f6e748fb24780c576eaafb86128dc1bdb7",
+        "git_mode": "100644",
+        "path": "ci/runs/41894905159/DIAGNOSIS-R4-ANTHROPIC.md",
+        "published_sha256": "ac39520d80d0fec72fb19b6cfedd09f6ba7662a5dbff97028ff5aa545501e783",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 5519,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "58e5cc3dfb465a8277d9a1a4ca579f4c4bc72ee88c5169938414f3bee30b731c",
+        "git_blob_sha1": "5735bd2383e0bb1e9d304530e73b66c93c791872",
+        "git_mode": "100644",
+        "path": "ci/runs/41894905159/anthropic-job-126801716984.raw.log",
+        "published_sha256": "58e5cc3dfb465a8277d9a1a4ca579f4c4bc72ee88c5169938414f3bee30b731c",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 234755,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "a69c0d7622572682f86fd831212311ad41f3b4e5ec9914c382b93dca3d0e67b9",
+        "git_blob_sha1": "be6d30b439bb8d2f1aae1e66418b523bf666bee0",
+        "git_mode": "100644",
+        "path": "ci/runs/41894905159/anthropic-job-download-r1.json",
+        "published_sha256": "a69c0d7622572682f86fd831212311ad41f3b4e5ec9914c382b93dca3d0e67b9",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 550,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "d07d1761d007ba8e8acd6c3e6b790ae0422471f5dcba0bbd4acad1eebaa4be06",
+        "git_blob_sha1": "104ff1ed52881b9a02128b9a582f9b42ffab2d70",
+        "git_mode": "100644",
+        "path": "ci/runs/41894905159/anthropic-job-summary-r1.json",
+        "published_sha256": "d07d1761d007ba8e8acd6c3e6b790ae0422471f5dcba0bbd4acad1eebaa4be06",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 75152,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "8efceb49749249c9c56cde77c34327e48ae940b98d2fdd70f642d6d7b5b7b149",
+        "git_blob_sha1": "7380de6190f4f683d00855b9149d91085fb7b81c",
+        "git_mode": "100644",
+        "path": "ci/runs/41894905159/anthropic-saved-log-review-addendum-r2.md",
+        "published_sha256": "8efceb49749249c9c56cde77c34327e48ae940b98d2fdd70f642d6d7b5b7b149",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 2044,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "74cbe83b912386bc724841f6484ff1f37244f18978bd4acf216a237ddfff1bf3",
+        "git_blob_sha1": "53cd807af13b05d86c97e7cefaf501611608ee6c",
+        "git_mode": "100644",
+        "path": "ci/runs/41894905159/anthropic-saved-log-review-r1.json",
+        "published_sha256": "74cbe83b912386bc724841f6484ff1f37244f18978bd4acf216a237ddfff1bf3",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 32458,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "b3487b4086b714e6e75293502ffe318f1453de5cf67baba696f4758260097b90",
+        "git_blob_sha1": "2b05dbc5e297075e1eb337dc89b0614e4f0a6a38",
+        "git_mode": "100644",
+        "path": "ci/runs/41894905159/anthropic-saved-log-review-r1.md",
+        "published_sha256": "b3487b4086b714e6e75293502ffe318f1453de5cf67baba696f4758260097b90",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 5569,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "fc6a9d43b95f4f9325c82ef513aed3b7efe63f3f8793f9e92df970d57eab1c1c",
+        "git_blob_sha1": "941020b38db2989ca71650876c7a09c164bb4b2e",
+        "git_mode": "100644",
+        "path": "openai/build_ready.py",
+        "published_sha256": "fc6a9d43b95f4f9325c82ef513aed3b7efe63f3f8793f9e92df970d57eab1c1c",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 10618,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "c8f054331757b8ace830eefe2f8fd672bc0d3074707e9b02ff1ae22f680f3b9f",
+        "git_blob_sha1": "a14ba8e4e9b0914950ccef0e4649bbb9303f2681",
+        "git_mode": "100644",
+        "path": "openai/compiler-gate-r1/manifest.json",
+        "published_sha256": "c8f054331757b8ace830eefe2f8fd672bc0d3074707e9b02ff1ae22f680f3b9f",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 2695,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "f154a7d04c1991cbbfec5324045f4ba780099e4202a23ba56e022efd22864398",
+        "git_blob_sha1": "fd103ec4519cab3813e519fbdb006ef94abf59cc",
+        "git_mode": "100644",
+        "path": "openai/external-dependencies-ready.json",
+        "published_sha256": "f154a7d04c1991cbbfec5324045f4ba780099e4202a23ba56e022efd22864398",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 902,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "b4e80df9ed1f1c71e7a202feccd94f189113610679d4a28ac3728d8708e7d04a",
+        "git_blob_sha1": "0fbdc2a31f909abe88328caf274b4de324bfbd98",
+        "git_mode": "100644",
+        "path": "openai/in_workspace.py",
+        "published_sha256": "b4e80df9ed1f1c71e7a202feccd94f189113610679d4a28ac3728d8708e7d04a",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 700,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "a499de419fef25cba1946ff5ab8ad942794eb19acc9569fb014913695f119e14",
+        "git_blob_sha1": "0ff1bfcffae50cf7b9b688869f2f6f8b78746569",
+        "git_mode": "100644",
+        "path": "openai/prepare.py",
+        "published_sha256": "a499de419fef25cba1946ff5ab8ad942794eb19acc9569fb014913695f119e14",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 5663,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "763d71db7b4ffbff3352904ebf545624894eb6b2967c19c8e53425646316ef2a",
+        "git_blob_sha1": "1219fc907445bc5d5ef536f62d968fd1b5a69e9e",
+        "git_mode": "100644",
+        "path": "openai/run_gated_build.py",
+        "published_sha256": "763d71db7b4ffbff3352904ebf545624894eb6b2967c19c8e53425646316ef2a",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 4079,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "bf7f36120177010243e52dd9053bd3e9f97f92fa35184abf173a8a57ef4843e1",
+        "git_blob_sha1": "103189d0d1e17fa919ecb8ea8df367aaca6fd655",
+        "git_mode": "100644",
+        "path": "openai/source-manifest.json",
+        "published_sha256": "bf7f36120177010243e52dd9053bd3e9f97f92fa35184abf173a8a57ef4843e1",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 1892511,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "c4d8f8bf7b5e7431170257b3c6f4781d359a551cedd92fd8afb221e0c1df19c1",
+        "git_blob_sha1": "9f51c0af3b96e9dbbbd6f223be5eac3ea23eb773",
+        "git_mode": "100644",
+        "path": "openai/verification-readiness-r1.md",
+        "published_sha256": "c4d8f8bf7b5e7431170257b3c6f4781d359a551cedd92fd8afb221e0c1df19c1",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 8570,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "a56c999ec870742bee9c51be2bb3199d358d77876d5e7d49492f5ad880938413",
+        "git_blob_sha1": "66998d6e708c72fa5a06f239fe6f4e0b385e9311",
+        "git_mode": "100644",
+        "path": "openai/workspace-config-r2.json",
+        "published_sha256": "a56c999ec870742bee9c51be2bb3199d358d77876d5e7d49492f5ad880938413",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 709,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "e38c9d793e751014d4742d5f94659d9283852a5d7ba12d2cdb1aae347600e22b",
+        "git_blob_sha1": "1d65c0f8715e2e26ca3c8600e7449d420745a577",
+        "git_mode": "100644",
+        "path": "publication/export-control-r2.json",
+        "published_sha256": "e38c9d793e751014d4742d5f94659d9283852a5d7ba12d2cdb1aae347600e22b",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 363,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "4d94e1cd4a6de4d56d9ad5aae9648b6ff3c6f799648bfb183615628c427a1129",
+        "git_blob_sha1": "5e25ff3b40b44175efebd2fd588abb18ae2ff136",
+        "git_mode": "100644",
+        "path": "publication/export-control-r3.json",
+        "published_sha256": "4d94e1cd4a6de4d56d9ad5aae9648b6ff3c6f799648bfb183615628c427a1129",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 512,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "891afad7573241d48deb1685ae13d574b750899b3856a5760354d4624cbd86b0",
+        "git_blob_sha1": "7ca8f082eca9375ee095432e94bd6a2c3f7755ab",
+        "git_mode": "100644",
+        "path": "publication/export-control-r4.json",
+        "published_sha256": "891afad7573241d48deb1685ae13d574b750899b3856a5760354d4624cbd86b0",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 591,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "44acf0e0af827239deef6f849d5852247dd0553385d5e6602eba37dda7a7c40e",
+        "git_blob_sha1": "c10a9c755f2d6761d7d2f6dbb4acbddda1283a9f",
+        "git_mode": "100644",
+        "path": "publication/export-control-r5.json",
+        "published_sha256": "44acf0e0af827239deef6f849d5852247dd0553385d5e6602eba37dda7a7c40e",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 703,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "a7371e72618842f38b84bb51c05a0d7c0fb3363a14638f30790ce412970fd1b7",
+        "git_blob_sha1": "74966a267fcaca5bd45b60f9733496ad709acd2b",
+        "git_mode": "100644",
+        "path": "publication/export-control-r6.json",
+        "published_sha256": "a7371e72618842f38b84bb51c05a0d7c0fb3363a14638f30790ce412970fd1b7",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 1188,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "29bec3a9796706ec3cfdb4bf1ce54e2129c3609e46e08afb06d1486ca6242988",
+        "git_blob_sha1": "0750457cfd44d9c8b19a6765e1d2214a43d97cbe",
+        "git_mode": "100644",
+        "path": "publish_package.py",
+        "published_sha256": "29bec3a9796706ec3cfdb4bf1ce54e2129c3609e46e08afb06d1486ca6242988",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 35050,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "a69c10a83e119f4f9fc74445ae51d5caf37ce671b198ea5325a05100cc4e1eb0",
+        "git_blob_sha1": "b3fb4a8b29b634898783ff3d605b32f9595dcc56",
+        "git_mode": "100644",
+        "path": "source-views/anthropic/stage.py.txt",
+        "published_sha256": "a69c10a83e119f4f9fc74445ae51d5caf37ce671b198ea5325a05100cc4e1eb0",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 4697,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "8197b62d069351a76e48f4b368918fcb0e477b3b41bf6f6324eeb75ed50a03b6",
+        "git_blob_sha1": "34e7ecf770564c2b8a334465c5ba46981a15caee",
+        "git_mode": "100644",
+        "path": "source-views/publish_package.py.txt",
+        "published_sha256": "8197b62d069351a76e48f4b368918fcb0e477b3b41bf6f6324eeb75ed50a03b6",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 36013,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "dfc90c3ad4089e55113f3988becd9e089b207906af1ad93f914baca8e403d042",
+        "git_blob_sha1": "d539f64d18217a4bd5380181fad957f86ffe94f7",
+        "git_mode": "100644",
+        "path": "source-views/verification-tools/runtime_identity.py.txt",
+        "published_sha256": "dfc90c3ad4089e55113f3988becd9e089b207906af1ad93f914baca8e403d042",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 2834,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "3d2f76ee6c9585185ab995ad601d2ece8cf102b3eb8d5b50083e38e1b3bd17c2",
+        "git_blob_sha1": "bc330a506945378c21a15fa46b5f319b67932d3f",
+        "git_mode": "100644",
+        "path": "verification-tools/README.md",
+        "published_sha256": "3d2f76ee6c9585185ab995ad601d2ece8cf102b3eb8d5b50083e38e1b3bd17c2",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 13165,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "c15501e44aff351487dfce3dc3c25a1b1fc9744a60533266b1e6f97f7214a552",
+        "git_blob_sha1": "02404c496e1dc7d189247a30a9d625b14dc4c089",
+        "git_mode": "100644",
+        "path": "verification-tools/compiler-identities.json",
+        "published_sha256": "c15501e44aff351487dfce3dc3c25a1b1fc9744a60533266b1e6f97f7214a552",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 3633,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "94da4f85604aa16faacacef16552b7711386899db4371c35dd55059bbaec9875",
+        "git_blob_sha1": "619909da4665697fb8b386fcd68f0018f7e9ac9c",
+        "git_mode": "100644",
+        "path": "verification-tools/logs/acquire-comparator.txt",
+        "published_sha256": "94da4f85604aa16faacacef16552b7711386899db4371c35dd55059bbaec9875",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 392,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "f395950fa9f1a500dd2be06766fee04d1507c647619f5f659029d4bfb46e3556",
+        "git_blob_sha1": "1615e0c2c04483b0877f940a5bc4d58178592212",
+        "git_mode": "100644",
+        "path": "verification-tools/logs/acquire-exporter.txt",
+        "published_sha256": "f395950fa9f1a500dd2be06766fee04d1507c647619f5f659029d4bfb46e3556",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 996,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "9f64891bc88b5c7405768105cd4cde99a050a4aea0010a224fa90ca5679a3cdc",
+        "git_blob_sha1": "3bc40186c148ffa06ea3c8155d5ee2df3cdd0d93",
+        "git_mode": "100644",
+        "path": "verification-tools/logs/acquire-exporter433.txt",
+        "published_sha256": "9f64891bc88b5c7405768105cd4cde99a050a4aea0010a224fa90ca5679a3cdc",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 996,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "a7cbfd9bb7351fb4e5e6e3ff3b5681271545793abff211a7cbc29d2ef7cd0dfb",
+        "git_blob_sha1": "32b5bc06b6e959354c5780ee435db4bb3eb50cc9",
+        "git_mode": "100644",
+        "path": "verification-tools/logs/acquire-nanoda.txt",
+        "published_sha256": "a7cbfd9bb7351fb4e5e6e3ff3b5681271545793abff211a7cbc29d2ef7cd0dfb",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 384,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "b7f15d3ff165395b017d4b2db7080bfd118eddee53a30fba7a683dd250c21f85",
+        "git_blob_sha1": "d9d3c9d5d2107a646f9cb46bd9a5f0f519a3d68d",
+        "git_mode": "100644",
+        "path": "verification-tools/logs/build-comparator-435-v2.txt",
+        "published_sha256": "b7f15d3ff165395b017d4b2db7080bfd118eddee53a30fba7a683dd250c21f85",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 1194,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "9a84439804500720b43aaff12a0c08ab6613690e6b04f8f7cb3fd432b7460cd3",
+        "git_blob_sha1": "b8b10254b546e13f97de4fd5a3b2ca42e743cf1f",
+        "git_mode": "100644",
+        "path": "verification-tools/logs/build-comparator-435.txt",
+        "published_sha256": "9a84439804500720b43aaff12a0c08ab6613690e6b04f8f7cb3fd432b7460cd3",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 385,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "3e1c496e1970e959ac4e4e0f6c1a4d04c59551e264c81d695d46457b542914d2",
+        "git_blob_sha1": "76f2d22b2d906c53aeb2c64b3271c86dadfd861d",
+        "git_mode": "100644",
+        "path": "verification-tools/logs/build-exporter-4331.txt",
+        "published_sha256": "3e1c496e1970e959ac4e4e0f6c1a4d04c59551e264c81d695d46457b542914d2",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 596,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "e019e5ff986930973a7963995e3b894155df5c0f2b24d9b1148f2e2fd019d97c",
+        "git_blob_sha1": "e5f46fe6ad8af26ca4b7a22c9a5d423508117715",
+        "git_mode": "100644",
+        "path": "verification-tools/logs/build-exporter-4341-v2.txt",
+        "published_sha256": "e019e5ff986930973a7963995e3b894155df5c0f2b24d9b1148f2e2fd019d97c",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 593,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "63799a867e11e73f4a1f008bbde7fb1e93b822cf3f3ffe064f2df85562763611",
+        "git_blob_sha1": "ac7b3171710ffc47a5a01b8e399ea8b270915f17",
+        "git_mode": "100644",
+        "path": "verification-tools/logs/build-exporter-4341.txt",
+        "published_sha256": "63799a867e11e73f4a1f008bbde7fb1e93b822cf3f3ffe064f2df85562763611",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 303,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "755f3384d67f85962a4984c2a1e2bc692fdf2d52e9ddecb22b866a3e685b3f98",
+        "git_blob_sha1": "13b920e1c8a6b4a5b38658d5273841567e15e595",
+        "git_mode": "100644",
+        "path": "verification-tools/logs/build-nanoda-locked-v2.txt",
+        "published_sha256": "755f3384d67f85962a4984c2a1e2bc692fdf2d52e9ddecb22b866a3e685b3f98",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 2970,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "ab8cdce8f6b8289afd24becf26871c46e07ccf58db71907fd3b3d689db9ca5fd",
+        "git_blob_sha1": "9766957f103ed2fd3b64e75da0cd08dc6db66d9c",
+        "git_mode": "100644",
+        "path": "verification-tools/logs/build-nanoda-locked.txt",
+        "published_sha256": "ab8cdce8f6b8289afd24becf26871c46e07ccf58db71907fd3b3d689db9ca5fd",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 467,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "8d5faf19313d58a62e03a095bd1be7cd0cb1635ffa4d3a4f57d1910d43654486",
+        "git_blob_sha1": "ec4bfbf620e63a634bf2f7df3e7d567eda85fb0e",
+        "git_mode": "100644",
+        "path": "verification-tools/logs/download-rust-channel.txt",
+        "published_sha256": "8d5faf19313d58a62e03a095bd1be7cd0cb1635ffa4d3a4f57d1910d43654486",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 330,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "56a4d42873313082e1f6c9ac330161b195a74891e2a6548b00599228bba2c773",
+        "git_blob_sha1": "131edeccf3d56ab848d6ae15f6a8bf85ab8232e0",
+        "git_mode": "100644",
+        "path": "verification-tools/logs/download-rust-installer.txt",
+        "published_sha256": "56a4d42873313082e1f6c9ac330161b195a74891e2a6548b00599228bba2c773",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 282,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "b097766128ab09cbbbc929abfedc9068d1014ccd4685f09841404fd340a5ee47",
+        "git_blob_sha1": "25f34af8c9094b8ef47e2e5452d64a2389140172",
+        "git_mode": "100644",
+        "path": "verification-tools/logs/download-rustup-binary.txt",
+        "published_sha256": "b097766128ab09cbbbc929abfedc9068d1014ccd4685f09841404fd340a5ee47",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 342,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "2ce9c044c255111ebd488a99b0088e1a78ecf044db3c298d6fbcc3dc6a6c10d4",
+        "git_blob_sha1": "ebdd95b17405cdee48d6cdfbc5bcf842d042db2d",
+        "git_mode": "100644",
+        "path": "verification-tools/logs/download-rustup-checksum.txt",
+        "published_sha256": "2ce9c044c255111ebd488a99b0088e1a78ecf044db3c298d6fbcc3dc6a6c10d4",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 356,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "adb242032637f7652b14a716b8ae541717b827faf939af6e7b9e630cfc595278",
+        "git_blob_sha1": "b30c98855b730c1b6dcc5b7811aa89a209854940",
+        "git_mode": "100644",
+        "path": "verification-tools/logs/install-rust-1991.txt",
+        "published_sha256": "adb242032637f7652b14a716b8ae541717b827faf939af6e7b9e630cfc595278",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 1287,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "176daba08e945e8e31747ce66613b58c31c5056c6b25356d5f04152ca9d70931",
+        "git_blob_sha1": "72c4de9d2a6a81f12c33242e4471321d2529376b",
+        "git_mode": "100644",
+        "path": "verification-tools/probe_record_nanoda.py",
+        "published_sha256": "176daba08e945e8e31747ce66613b58c31c5056c6b25356d5f04152ca9d70931",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 5439,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "c34f36d630d182708937a5280b6eda8d0723fa0ffdd85caf8fc54af17b332f48",
+        "git_blob_sha1": "ee75a8665060d081ade9f14d23dcab8f7b17cbb1",
+        "git_mode": "100755",
+        "path": "verification-tools/record_nanoda.py",
+        "published_sha256": "c34f36d630d182708937a5280b6eda8d0723fa0ffdd85caf8fc54af17b332f48",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 8494,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "70121745c17b42e7202dce0a9cbe4d8d403f1feb85cfdc0e2ef63f8dc3a29656",
+        "git_blob_sha1": "b440678790f28a3c4c118e12cb0dd4a5a2a7fe19",
+        "git_mode": "100644",
+        "path": "verification-tools/recorder-probe-r1/probe-results.json",
+        "published_sha256": "70121745c17b42e7202dce0a9cbe4d8d403f1feb85cfdc0e2ef63f8dc3a29656",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 2040,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "66203af59f3262a9ce619cacc193984fa2db3e8c905512ba4e3491ed6d281562",
+        "git_blob_sha1": "a69b2dc8072e59cd5fd7e8e8499389b003380df8",
+        "git_mode": "100644",
+        "path": "verification-tools/recording-manifest-r1.json",
+        "published_sha256": "66203af59f3262a9ce619cacc193984fa2db3e8c905512ba4e3491ed6d281562",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 1492,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "343c62027ad56d7b4fc20d58fad7d6306ce7674177ca0f0029db8fff2472b2eb",
+        "git_blob_sha1": "6dde51b3554e62299c37c43e1e45611e09bb0ca6",
+        "git_mode": "100644",
+        "path": "verification-tools/runtime-identities.json",
+        "published_sha256": "343c62027ad56d7b4fc20d58fad7d6306ce7674177ca0f0029db8fff2472b2eb",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 15802,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "542c5f820e7d40144d2461e3392047d929f86ccf260ca8ed5f834b2143e57462",
+        "git_blob_sha1": "cd2a22477ed9eabba742c4e59af4b2e89880dbbd",
+        "git_mode": "100644",
+        "path": "verification-tools/runtime_identity.py",
+        "published_sha256": "542c5f820e7d40144d2461e3392047d929f86ccf260ca8ed5f834b2143e57462",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 3185,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "ffe5c3ebaf94a4cdf741a0d44db1105dc4362bb88b6d15a25f7d0443b68de417",
+        "git_blob_sha1": "5731e1479f43ac84d2dde22705f34fa029c610af",
+        "git_mode": "100644",
+        "path": "verification-tools/tool-manifest-r1.json",
+        "published_sha256": "ffe5c3ebaf94a4cdf741a0d44db1105dc4362bb88b6d15a25f7d0443b68de417",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 53913,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "5a8671ac6f4d43b03a19224563e383cb6bf8a37828efbf53c1512ef4081c63a2",
+        "git_blob_sha1": "94664a85629e4be830587fec43f6c147446ceea7",
+        "git_mode": "100644",
+        "path": "verification-tools/tool_audit.py",
+        "published_sha256": "5a8671ac6f4d43b03a19224563e383cb6bf8a37828efbf53c1512ef4081c63a2",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 7246,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "b0a932abc1d0df3894570b0aa48511abe38adcc720b7156585e9c6964afe2893",
+        "git_blob_sha1": "63b0d8c769dbe1a55115acec2a84914ef35c2508",
+        "git_mode": "100644",
+        "path": "verification/ANCESTOR_CACHE-r1.md",
+        "published_sha256": "b0a932abc1d0df3894570b0aa48511abe38adcc720b7156585e9c6964afe2893",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 4609,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "4c287077ba3568550a30125296d5b87123f8e0defce9ec8ab7276a58a5d35b9f",
+        "git_blob_sha1": "c468195afc2743d8dab9b3ed9a38581f4fd5fc5e",
+        "git_mode": "100644",
+        "path": "verification/ANCESTOR_CACHE_AVAILABILITY-r2.md",
+        "published_sha256": "4c287077ba3568550a30125296d5b87123f8e0defce9ec8ab7276a58a5d35b9f",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 2687,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "ce437a83a4b80c437e9285046f9e22f7b37c141bb8957c396e4353aa5a9d7fd4",
+        "git_blob_sha1": "530896ff67f3b3b81a1901a27dfcac2b021e1c75",
+        "git_mode": "100644",
+        "path": "verification/ANTHROPIC_CONTINUATION-r3.md",
+        "published_sha256": "ce437a83a4b80c437e9285046f9e22f7b37c141bb8957c396e4353aa5a9d7fd4",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 2038,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "a78f30e0439e85d3a9ae51828e0e42c248c027a7fcfeb4c4fb16cb776fae0b05",
+        "git_blob_sha1": "dfc0b1adaa8eb036c2f5f64cb24fb28df8a2852c",
+        "git_mode": "100644",
+        "path": "verification/AuditTargets.lean",
+        "published_sha256": "a78f30e0439e85d3a9ae51828e0e42c248c027a7fcfeb4c4fb16cb776fae0b05",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 5663,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "703841b89db7d49f1f1e034dc71f468906ff22e25f24e2531b75277dbde3d8ca",
+        "git_blob_sha1": "32faeffc910f463f1628ebee466008481d0c7401",
+        "git_mode": "100644",
+        "path": "verification/REVIEW_HANDOFF.md",
+        "published_sha256": "703841b89db7d49f1f1e034dc71f468906ff22e25f24e2531b75277dbde3d8ca",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 4755,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "35d09414c59c9aa9379d3f6864998dec0e4fdab02b2962ae7ef33777dc4b11d9",
+        "git_blob_sha1": "50a1b11e092eb124f9500cfce4bbfdea924abcbb",
+        "git_mode": "100644",
+        "path": "verification/REVIEW_UPDATE_R2.md",
+        "published_sha256": "35d09414c59c9aa9379d3f6864998dec0e4fdab02b2962ae7ef33777dc4b11d9",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 5509,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "d0033596b533bf092943de436ea97d356e834698907b4b302db6b8d88b32db65",
+        "git_blob_sha1": "e43a5139e9f6c1d3242121913b51978eb3a16c87",
+        "git_mode": "100644",
+        "path": "verification/ancestor-cache-actual-implementation-review-r1.json",
+        "published_sha256": "d0033596b533bf092943de436ea97d356e834698907b4b302db6b8d88b32db65",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 9966,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "003f92355acaf58922487c37dcca192dd9f8006ea75eef8ff43c19ffe1a1f6cb",
+        "git_blob_sha1": "0cee111362e702c43985d988375035dde6699dfb",
+        "git_mode": "100644",
+        "path": "verification/ancestor-cache-actual-implementation-review-r2.json",
+        "published_sha256": "003f92355acaf58922487c37dcca192dd9f8006ea75eef8ff43c19ffe1a1f6cb",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 10351,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "c63bbb1a7b72c17f74a3890c6895b9192a421584f52e9b47fa3b10863ed2a24e",
+        "git_blob_sha1": "f96c42662be2da0497cd1b3cb0ec15edee85e8ab",
+        "git_mode": "100644",
+        "path": "verification/ancestor-cache-control-result-r1.json",
+        "published_sha256": "c63bbb1a7b72c17f74a3890c6895b9192a421584f52e9b47fa3b10863ed2a24e",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 3828,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "70e14ed028189eb9c67a77c26d5c8610915ec8e013c270da14626b3c461e0cc8",
+        "git_blob_sha1": "dbdca2f78dc1f704994844d1e2df2083336d25fd",
+        "git_mode": "100644",
+        "path": "verification/ancestor_cache_control_r1.py",
+        "published_sha256": "70e14ed028189eb9c67a77c26d5c8610915ec8e013c270da14626b3c461e0cc8",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 12037,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "9b472c23ea355e55893a8e8b68e3d9446bdcde0d9f361d8887ab4aae71f856d4",
+        "git_blob_sha1": "a10f4495b9ee3b3c2bfc9dc3056f5ff8bcee6933",
+        "git_mode": "100644",
+        "path": "verification/cache-policy-control-result-r2.json",
+        "published_sha256": "9b472c23ea355e55893a8e8b68e3d9446bdcde0d9f361d8887ab4aae71f856d4",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 19667,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "924d90ef084aaff69b752d8e6f6ee41aa282d42e5f4bf62c8458a9d67fc651b2",
+        "git_blob_sha1": "510ba32b376fae380f62bd572a7e38de37e62440",
+        "git_mode": "100644",
+        "path": "verification/cache-policy-control-result-r3.json",
+        "published_sha256": "924d90ef084aaff69b752d8e6f6ee41aa282d42e5f4bf62c8458a9d67fc651b2",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 20057,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "52bf6fda2d435a61ba95a1db3f26d1562df71fe0745e8f5a5758c7d724105e2e",
+        "git_blob_sha1": "fd193b345a909b1d5c2f9462426f163b73c8f82d",
+        "git_mode": "100644",
+        "path": "verification/cache_policy_control_r2.py",
+        "published_sha256": "52bf6fda2d435a61ba95a1db3f26d1562df71fe0745e8f5a5758c7d724105e2e",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 7791,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "186bd828553661cb833f18b891e1389197f1dc61b56a8d354bc81bfec5ce6a2f",
+        "git_blob_sha1": "f023c7289af0e45ec6d50bbc24286d576e10e18e",
+        "git_mode": "100644",
+        "path": "verification/cache_policy_control_r3.py",
+        "published_sha256": "186bd828553661cb833f18b891e1389197f1dc61b56a8d354bc81bfec5ce6a2f",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 8915,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "f97eb7cc26c71a9ccb1831fa7e6f53df8559f1eb21a2b71bc7e501c1e274f9f4",
+        "git_blob_sha1": "e925aa16776f6ae193b6e60e1e1c14e6da12b938",
+        "git_mode": "100644",
+        "path": "verification/check_trusted_probe.py",
+        "published_sha256": "f97eb7cc26c71a9ccb1831fa7e6f53df8559f1eb21a2b71bc7e501c1e274f9f4",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 3273,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "62bc34819b480da8ce07c5e143605fea55a7d61af37a0904a84be6cb7ffc90a1",
+        "git_blob_sha1": "25248fb5d8205692f6938e2ef46939de354181f8",
+        "git_mode": "100644",
+        "path": "verification/compiler-gate/check_gate.py",
+        "published_sha256": "62bc34819b480da8ce07c5e143605fea55a7d61af37a0904a84be6cb7ffc90a1",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 7534,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "f42bf4d134d8bb741772a7580557771f70d581bac94cd7403808f320213de5b2",
+        "git_blob_sha1": "8b39c86f4a3b7369c49c76d701cc57f4c68e62c2",
+        "git_mode": "100644",
+        "path": "verification/compiler-gate/check_lake_parallel_r2.py",
+        "published_sha256": "f42bf4d134d8bb741772a7580557771f70d581bac94cd7403808f320213de5b2",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 4591,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "afc031e43e3b1dc8c7e6143155c78f0f84ca3eb66d050bf8c4a943efeb796452",
+        "git_blob_sha1": "77a1f88bf2b460eb2eda616d6262651f91e97afa",
+        "git_mode": "100644",
+        "path": "verification/compiler-gate/controls/result.json",
+        "published_sha256": "afc031e43e3b1dc8c7e6143155c78f0f84ca3eb66d050bf8c4a943efeb796452",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 183760,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "48990af72de85d8573722351e6c7bf9c6fd1720616181dfc76ad02912d39c862",
+        "git_blob_sha1": "81fe8eebc1e192f832972559fe166f0ef2340c9a",
+        "git_mode": "100644",
+        "path": "verification/compiler-gate/create_gate.py",
+        "published_sha256": "48990af72de85d8573722351e6c7bf9c6fd1720616181dfc76ad02912d39c862",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 3465,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "39ca65f26f4cd19fa9a4bc06dd0ab06a609c8650d408dfdff5806824b40f2a40",
+        "git_blob_sha1": "82c30119c678cafbb225a1bbe33ca90591b284c4",
+        "git_mode": "100644",
+        "path": "verification/compiler-gate/lake-parallel-r2/result.json",
+        "published_sha256": "39ca65f26f4cd19fa9a4bc06dd0ab06a609c8650d408dfdff5806824b40f2a40",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 77041,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "54b033bd6f90cd3d88682d5ba17256fd1583489692d8bea32a6e41f0268d1908",
+        "git_blob_sha1": "ad989f10bfc8438541037e8b496970b1498199bf",
+        "git_mode": "100644",
+        "path": "verification/compiler-gate/lean_gate.c",
+        "published_sha256": "54b033bd6f90cd3d88682d5ba17256fd1583489692d8bea32a6e41f0268d1908",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 5927,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "78294fd4de5afe05d40c4a10af897eb094945d245c90437d7cb4724b359556de",
+        "git_blob_sha1": "9b52c427289d552ee1b8d357ebbe845828cc578a",
+        "git_mode": "100644",
+        "path": "verification/export-sysroot-control-result-r1.json",
+        "published_sha256": "78294fd4de5afe05d40c4a10af897eb094945d245c90437d7cb4724b359556de",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 8505,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "01c8f500356e9a6a23f9faafbd586281f31563f55a0f4685c8ebfc342d8bd1d2",
+        "git_blob_sha1": "70ad7c9725071f94e2201c8177e5c27c8333ee74",
+        "git_mode": "100644",
+        "path": "verification/export_sysroot_control_r1.py",
+        "published_sha256": "01c8f500356e9a6a23f9faafbd586281f31563f55a0f4685c8ebfc342d8bd1d2",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 5391,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "9c189e1cd67595a8820a3c5220182a32b8c17393bb721f5bca52ab31ba652952",
+        "git_blob_sha1": "8e71941386fab79c57fbfa25303126a3b779dba9",
+        "git_mode": "100644",
+        "path": "verification/r6-input-identities-r1.json",
+        "published_sha256": "9c189e1cd67595a8820a3c5220182a32b8c17393bb721f5bca52ab31ba652952",
+        "remote_content_fetched_this_audit": true,
+        "size_bytes": 12592,
+        "verification_method": "Full remote UTF-8 content fetched at exact commit with no line limits; reencoded bytes directly equal frozen bytes and match Git blob identity."
+      },
+      {
+        "frozen_sha256": "8dd415e6b925445bf56d05b5f3fc5be8577ebd906b1092b011f005379a66795c",
+        "git_blob_sha1": "91e0256a89d1935702d4ccbdcd7799e77d704506",
+        "git_mode": "100644",
+        "path": "verification/run_scheduler_smoke.py",
+        "published_sha256": "8dd415e6b925445bf56d05b5f3fc5be8577ebd906b1092b011f005379a66795c",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 7920,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "1dc95733e160e83af856280e8c600f25725db2861b9893d8a02712c8ab4caaae",
+        "git_blob_sha1": "50d74a435d22de4f2a7fc04c6cb1eae735118f77",
+        "git_mode": "100644",
+        "path": "verification/scheduler-smoke/result.json",
+        "published_sha256": "1dc95733e160e83af856280e8c600f25725db2861b9893d8a02712c8ab4caaae",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 4710,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      },
+      {
+        "frozen_sha256": "70c7dfe17b86e30f99f86d799b768368c32e8fe451784e10dddc4fa84591e7f0",
+        "git_blob_sha1": "d27106928b9688464855a860377f584360221bce",
+        "git_mode": "100644",
+        "path": "verification/trusted-probe-controls-r1.json",
+        "published_sha256": "70c7dfe17b86e30f99f86d799b768368c32e8fe451784e10dddc4fa84591e7f0",
+        "remote_content_fetched_this_audit": false,
+        "size_bytes": 5875,
+        "verification_method": "Unchanged remote tree blob/mode/size; published SHA-256 inherited through immutable receipt-r4 and its earlier audit chain. Content not fetched again."
+      }
+    ],
+    "no_missing_or_extra_files": true,
+    "path_size_mode_and_blob_ids_all_match": true,
+    "reconstructed_root_git_tree_matches_commit": true,
+    "remote_full_content_fetch_count": 34,
+    "remote_subdirectory_tree_ids_all_match": true,
+    "status": "PASS",
+    "tree_untruncated": true,
+    "unchanged_blob_identity_count": 139
+  },
+  "verifier": "codex-eth-public-package",
+  "workflow_scope": {
+    "native_anthropic": "Separately closed native report remains the scoped published result.",
+    "openai": "Pending; original run41894905159 OpenAI job still active as parent reported. No new OpenAI dispatch by this auditor.",
+    "parent_reported_continuation": {
+      "dispatch_utc": "2026-11-04T20:54:34Z",
+      "expected_head": "309670f70aa79d85752dbdc61799ad8cc56772c2",
+      "mode": "verify",
+      "proof": "anthropic",
+      "provenance": "Parent supplied; no workflow query in this publication audit.",
+      "run_id": 41911047958,
+      "status": "Pending at handoff; no restore, retained export, final seal or successful continuation inferred by this receipt.",
+      "url": "https://github.com/Truemachinery/eth-proof-replication/actions/runs/41911047958"
+    },
+    "prior_linux_anthropic": "Job126801716984 passed source build, normal trace, fresh original kernel and original Comparator/Nanoda; additional export failed before final source/config seal, so full workflow incomplete.",
+    "queried_or_dispatched_by_this_auditor": false
+  }
+}

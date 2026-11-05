@@ -1,129 +1,17 @@
 {
   "schema": "eth-owned-ancestor-compatibility/1",
-  "producer_commit": "d9a4ad18e3668320bf9d084c7e454ff05e34f2e8",
-  "scope": "One reviewed retained-export SYSROOT correction plus explicit cache compatibility; not general ancestry or a checker verdict. OpenAI entry awaits its closed observed cache receipt.",
+  "producer_commit": "309670f70aa79d85752dbdc61799ad8cc56772c2",
+  "scope": "Only the observed R6 Anthropic cache across the reviewed R7 transport, service-budget, resource-limit and exact-compatibility repair. Not general ancestry or a checker verdict. The older R4 cache was pruned; no OpenAI cache was saved, so no OpenAI entry is authorized.",
   "producer_harness_rows": [
-    {
-      "path": "README.md",
-      "sha256": "610b71b4ea6a002d60d5d931f519dc0b68e21aada8e3afb0fff6e0c615cce239",
-      "size_bytes": 13542
-    },
-    {
-      "path": "cache_maintenance.py",
-      "sha256": "fc1321d4e9c687264a6517dda0ba98bf0ae7596ba519983bbdba4865f38ec6bf",
-      "size_bytes": 4631
-    },
-    {
-      "path": "check_bc_control.py",
-      "sha256": "20f71662ca0a007ea441f4217ae6605d31e0e72b3d5affb0a353079445f9d3a2",
-      "size_bytes": 4512
-    },
-    {
-      "path": "check_controls.py",
-      "sha256": "c5b5ab90b218758a43dfaab09bf72942a439cd6fe756fa0ae08408351a1ccbcb",
-      "size_bytes": 10960
-    },
-    {
-      "path": "check_display_control.py",
-      "sha256": "cbd5851a36d38e0ad5350eea64d7894d8b7708f618e1ca4210afbe46fc9f383b",
-      "size_bytes": 3795
-    },
-    {
-      "path": "check_landlock_policy_control.py",
-      "sha256": "d2471fa5e1424ef1758aa095318a1a81e07f46c1ef41525c507c803b4fcdc128",
-      "size_bytes": 4563
-    },
-    {
-      "path": "check_setup_omission_control.py",
-      "sha256": "4789ebe8874af41ac2d568403d85060b2a81f361ce3e27697b2f864a2deb8beb",
-      "size_bytes": 5400
-    },
-    {
-      "path": "check_stage_name_control.py",
-      "sha256": "749d1fb3f109f7c3878cf2b4dd3c543db3c173828af17b54756fed07413f2571",
-      "size_bytes": 3487
-    },
-    {
-      "path": "compiler_gate.c",
-      "sha256": "96947ead6565aa2d75b93c09e8bdccba31bc6558517db5df915368efc123dfb3",
-      "size_bytes": 6273
-    },
-    {
-      "path": "control-result-bc-r2.json",
-      "sha256": "71f34ef370ad5dd25b28f443960b37485c5a2f74a7a62b22345f38b31a15ba3b",
-      "size_bytes": 555
-    },
-    {
-      "path": "control-result-display-r3.json",
-      "sha256": "3e32a5e560e0e993a44738ea7eb8c69a73c68d229eaefd9c38c42f996e0ab327",
-      "size_bytes": 746
-    },
-    {
-      "path": "control-result-landlock-policy-r4.json",
-      "sha256": "868caed022e577c87af606a083497b658f495ad026ddbe176f27c11c334d8764",
-      "size_bytes": 708
-    },
-    {
-      "path": "control-result-r2.json",
-      "sha256": "be559a9f05600526547067307a10fddc94e465b5cf388c127eb614e64c36794b",
-      "size_bytes": 765
-    },
-    {
-      "path": "control-result-setup-omission-r3.json",
-      "sha256": "60560b19a484638d8cda6ce08e41be3af8ee5b1a30e7d25a055e8d2722629b6b",
-      "size_bytes": 1195
-    },
-    {
-      "path": "control-result-stage-names-r3.json",
-      "sha256": "b476322adfed7729b2b799e0044f042b0825678a40b685c2679d831af4dd60c3",
-      "size_bytes": 1934
-    },
-    {
-      "path": "control-result.json",
-      "sha256": "033bd03cc7f33daa0a7ac65413ff999beb8b81dc9c6f221a239b8c35be383aff",
-      "size_bytes": 533
-    },
-    {
-      "path": "create_gate.py",
-      "sha256": "c5af28dc306d384062ee53dbb34402ab895f82320fa2df015e0f09752959909a",
-      "size_bytes": 3524
-    },
-    {
-      "path": "landlock_abi.py",
-      "sha256": "d0853c1a67adcec4bbe22d1c44dc835f448b80eebe6502a32450faa59e17e0b0",
-      "size_bytes": 1265
-    },
-    {
-      "path": "owned_cache.py",
-      "sha256": "7854df30f6d14c791547e0672b19ad5f34d2b41fc1aacc264f2fdb60bb6d2bb3",
-      "size_bytes": 7274
-    },
-    {
-      "path": "pins.json",
-      "sha256": "e0b9f4d376b26247120dc97cee64595ea91b69fad24d5218e811d435a2910a0a",
-      "size_bytes": 1712
-    },
-    {
-      "path": "prepare_openai.py",
-      "sha256": "5c8830653d328d50dcf3c0cae1488a199ab9c9a4249bbcc3a06f6fd598369f6c",
-      "size_bytes": 5849
-    },
-    {
-      "path": "record.py",
-      "sha256": "1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0",
-      "size_bytes": 6474
-    },
-    {
-      "path": "replicate.py",
-      "sha256": "89a68dcc753d1b543d7262f4893da5b15275dc8f3dc23bdc5872761f84b41b28",
-      "size_bytes": 21152
-    }
-  ],
-  "reviewed_current_harness_rows": [
     {
       "path": "README.md",
       "sha256": "c8c2e4a5fdeb2c64683ea1afcadf1df6f5f515072086cd9064b626af3857c931",
       "size_bytes": 15914
+    },
+    {
+      "path": "ancestor-cache-compatibility.json",
+      "sha256": "114a49bae310c444c5468258df7fddd74c98077370102055d051f5c46eb52d4a",
+      "size_bytes": 8513
     },
     {
       "path": "cache_maintenance.py",
@@ -236,17 +124,134 @@
       "size_bytes": 21177
     }
   ],
-  "reviewed_workflow_sha256": "68335be10ee348456b4ffc21f3a4cc5d5c39394a1bb7e5f9fd825338afb26e30",
+  "reviewed_current_harness_rows": [
+    {
+      "path": "README.md",
+      "sha256": "39787e0e4b5a5e96f5835fbc9b485f2df7e6d6e84874c5ec61cc68f6b8868409",
+      "size_bytes": 18436
+    },
+    {
+      "path": "cache_maintenance.py",
+      "sha256": "1f43bb2c4fa70afb0e999e5a7675987dbf46654672ba340f1f739045eb08e82d",
+      "size_bytes": 4925
+    },
+    {
+      "path": "check_bc_control.py",
+      "sha256": "192dae99efa59b41db476f891b3e398fc5cc63fab4236474763846167c63cf76",
+      "size_bytes": 4620
+    },
+    {
+      "path": "check_controls.py",
+      "sha256": "2ebe619f909dd48cfebabf857ade809b5e8f082b443d01689d99a89f0213023a",
+      "size_bytes": 10973
+    },
+    {
+      "path": "check_display_control.py",
+      "sha256": "cbd5851a36d38e0ad5350eea64d7894d8b7708f618e1ca4210afbe46fc9f383b",
+      "size_bytes": 3795
+    },
+    {
+      "path": "check_landlock_policy_control.py",
+      "sha256": "d2471fa5e1424ef1758aa095318a1a81e07f46c1ef41525c507c803b4fcdc128",
+      "size_bytes": 4563
+    },
+    {
+      "path": "check_setup_omission_control.py",
+      "sha256": "4789ebe8874af41ac2d568403d85060b2a81f361ce3e27697b2f864a2deb8beb",
+      "size_bytes": 5400
+    },
+    {
+      "path": "check_stage_name_control.py",
+      "sha256": "749d1fb3f109f7c3878cf2b4dd3c543db3c173828af17b54756fed07413f2571",
+      "size_bytes": 3487
+    },
+    {
+      "path": "compiler_gate.c",
+      "sha256": "96947ead6565aa2d75b93c09e8bdccba31bc6558517db5df915368efc123dfb3",
+      "size_bytes": 6273
+    },
+    {
+      "path": "control-result-bc-r2.json",
+      "sha256": "71f34ef370ad5dd25b28f443960b37485c5a2f74a7a62b22345f38b31a15ba3b",
+      "size_bytes": 555
+    },
+    {
+      "path": "control-result-display-r3.json",
+      "sha256": "3e32a5e560e0e993a44738ea7eb8c69a73c68d229eaefd9c38c42f996e0ab327",
+      "size_bytes": 746
+    },
+    {
+      "path": "control-result-landlock-policy-r4.json",
+      "sha256": "868caed022e577c87af606a083497b658f495ad026ddbe176f27c11c334d8764",
+      "size_bytes": 708
+    },
+    {
+      "path": "control-result-r2.json",
+      "sha256": "be559a9f05600526547067307a10fddc94e465b5cf388c127eb614e64c36794b",
+      "size_bytes": 765
+    },
+    {
+      "path": "control-result-setup-omission-r3.json",
+      "sha256": "60560b19a484638d8cda6ce08e41be3af8ee5b1a30e7d25a055e8d2722629b6b",
+      "size_bytes": 1195
+    },
+    {
+      "path": "control-result-stage-names-r3.json",
+      "sha256": "b476322adfed7729b2b799e0044f042b0825678a40b685c2679d831af4dd60c3",
+      "size_bytes": 1934
+    },
+    {
+      "path": "control-result.json",
+      "sha256": "033bd03cc7f33daa0a7ac65413ff999beb8b81dc9c6f221a239b8c35be383aff",
+      "size_bytes": 533
+    },
+    {
+      "path": "create_gate.py",
+      "sha256": "c5af28dc306d384062ee53dbb34402ab895f82320fa2df015e0f09752959909a",
+      "size_bytes": 3524
+    },
+    {
+      "path": "landlock_abi.py",
+      "sha256": "d0853c1a67adcec4bbe22d1c44dc835f448b80eebe6502a32450faa59e17e0b0",
+      "size_bytes": 1265
+    },
+    {
+      "path": "owned_cache.py",
+      "sha256": "cc765ac2b127eeb171afa43f40d1ad15e435c94c14dedd070a647a5ecdb32431",
+      "size_bytes": 11796
+    },
+    {
+      "path": "pins.json",
+      "sha256": "e0b9f4d376b26247120dc97cee64595ea91b69fad24d5218e811d435a2910a0a",
+      "size_bytes": 1712
+    },
+    {
+      "path": "prepare_openai.py",
+      "sha256": "5c8830653d328d50dcf3c0cae1488a199ab9c9a4249bbcc3a06f6fd598369f6c",
+      "size_bytes": 5849
+    },
+    {
+      "path": "record.py",
+      "sha256": "753330742a44e50bd48ed4a0cd6b55b5998938475e7cb463c56e4e65979075f6",
+      "size_bytes": 6798
+    },
+    {
+      "path": "replicate.py",
+      "sha256": "791007e37c684caa0001f0f34af40c81b2ebce84c854303fe5a7d448f429417f",
+      "size_bytes": 21251
+    }
+  ],
+  "reviewed_workflow_sha256": "33c8581f513743184a8c198778e015613e39533a24f7047ac340506a746a0412",
   "proofs": {
     "anthropic": {
       "proof": "anthropic",
-      "run_id": 41894905159,
-      "job_id": 126801716984,
-      "exact_cache_key": "eth-owned-anthropic-dd4d7b438fa94c8ca1a9ea561fb4028a8e17cbce3be307a03ce84651ea925bf0-41894905159-1",
-      "cache_backend_id": 10020872295,
-      "observed_backend_bytes": 124278111,
-      "manifest_sha256": "f03170368e5705c17d4354d5bf685822e4d4ffeb9c42f6b046413c5cd95e3ecb",
-      "fingerprint": "9c0011429218dd9eb6addf639baad7c55358ef35c15cc96c783dca1ba61af4c0",
+      "run_id": 41911047958,
+      "job_id": 126858374463,
+      "exact_cache_key": "eth-owned-anthropic-9fbd29ee32ef2ea4fe15afa713145c3cfcc69aad02da8ac94dad8500bd76f92a-41911047958-1",
+      "cache_backend_id": 10025744473,
+      "observed_backend_bytes": 124275878,
+      "manifest_sha256": "46a5d164e4d16098cc6b3352cf4a05f552f002dea02285b571a70650441a9912",
+      "fingerprint": "4da5f828d783536022960c83ecf631d4d883cf70e8b8bf9f8ce5cdb016ebae9f",
       "context_sha256": "b5c68d05e79b3971cbc05a95dc8aedcc4b9188cfe9912bad1b27efbd398c2f73"
     }
   }

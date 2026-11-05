@@ -1,0 +1,195 @@
+{
+  "created_utc": "2026-11-04T22:00:01.216361+00:00",
+  "findings": [
+    {
+      "conclusion": "REAL points to original4.34.1; historical eight runtime file identities and pinned workspace configs are checked before phase spawn. in_workspace.py prepends that same real bin. Constructed environment carries no inherited credentials, gate/plugin or dynamic-library overrides. Paths/HOME are recorded locally and need normal publication sanitization.",
+      "launcher_lines": "19-55,108-142,155-167",
+      "topic": "Original runtime and credentials"
+    },
+    {
+      "conclusion": "Original JSON SHAdebbfdc9c01104d2369be80da5180978275106df8b685f693fba7ce7da7c5b19 fixes Main/Challenge, exact_count_and_sat, no additional definitions, exactly standard3 and enable_nanoda=false. Original Comparator gets unchanged original config and requires its final success line. Binary pin literals match existing comparator865/Lean4.35, exporter076e/compiled4.34.1 and Nanoda68d5 manifest records; reviewer did not rehash or execute those binaries.",
+      "launcher_lines": "24-55,132-142,288-291",
+      "topic": "Original contract and tool lineage"
+    },
+    {
+      "conclusion": "Launcher deliberately runs one chosen phase. It does not enforce source-build closure or predecessor phase order. Root must first close existing11317 build, then require preidentity and normal real-prefix no-build trace before allowing audit/Comparator/export/fresh work, and finally postidentity before aggregating a complete result. An individual phase passed is not overall replication PASS.",
+      "launcher_lines": "2-4,255-304",
+      "topic": "Manual build/order preconditions"
+    },
+    {
+      "conclusion": "Exclusive child record folder and x/xb files retain prepared/input/stage/result/capture artifacts. R2 capture runs inside original Lake env with exporter itself as direct Popen child, avoiding intermediate-process cleanup ambiguity. Extra-Nanoda accepts only a closed successful selected-export phase with identical full input/launcher fingerprint, exact capture argv, stage/raw/capture identities and matching nonempty export bytes.",
+      "launcher_lines": "74-90,97-105,145-152,170-197,303-338",
+      "topic": "Exclusive evidence and selected export"
+    },
+    {
+      "conclusion": "Additional Nanoda uses separately selected export, use_stdin=false, exactly propext/Quot.sound/Classical.choice, hard-error=true, Nat/String extensions and two threads. Completion requires exact config/argv, unchanged checker inputs, actual export hash, archived raw hash and gzip identity through audited recorder. Original Comparator still has Nanoda disabled; separate stages must not be conflated.",
+      "launcher_lines": "218-243,294-302",
+      "topic": "Separate Nanoda policy/input"
+    },
+    {
+      "capture_lines": "22-36,54-70",
+      "conclusion": "InitialR1 lacked explicit exception child cleanup. R2 terminates/waits its direct exporter child and escalates kill/wait after5seconds on capture exceptions, while preserving Recorder group inheritance. Saved closed-pipe fsync-fault control demonstrates failure without depending on Recorder timeout/pipe-drain guard. Concern resolved for this reviewed source.",
+      "topic": "Capture cleanup correction"
+    },
+    {
+      "capture_lines": "58-82",
+      "conclusion": "Unchanged Recorder owns stage process group and timeouts; heavy comparator/Nanoda/fresh caps are7200s and export1800s. Launcher SIGTERM/INT raises through Recorder cleanup and overrides phase result to failed. Capture periodically/finally fsyncs direct output and only creates complete receipt on successful child exit. Failed/interrupted/missing artifacts cannot supply a closed export. No automatic resume, aggregation or global PASS.",
+      "launcher_lines": "36-38,246-252,310-353",
+      "topic": "Signals/caps and truthful failures"
+    },
+    {
+      "conclusion": "Target audit requires trusted standard axiom signatures, disabled extensions/initializers and complete named-target event. Fresh is original4.34.1 same-kernel imported safe/nonpartial replay that admits axioms; separate target/statement and additional Nanoda checks remain necessary. Native fake-Landrun supplies no Linux isolation.",
+      "launcher_lines": "200-215,316-335",
+      "topic": "Audit and replay meaning"
+    },
+    {
+      "conclusion": "Recorder child CPU concerns reaped native stage descendants, with nested Nanoda counted once; no RSS claim. Frontend input/gzip hashing and source-review bookkeeping are outside that per-stage child CPU. Stage caps cover subprocess execution rather than the entire manual campaign.",
+      "launcher_lines": "56-58,305-309",
+      "topic": "Resource scope"
+    }
+  ],
+  "kind": "Same-team read-only source/API and saved-control evidence review; not proof execution or an independent kernel run.",
+  "required_operator_preconditions": [
+    "Existing source build11317 must close successfully before native proof phases.",
+    "Use the frozen reviewed launcher and helper bytes, exclusive new record folders and actual closed receipts.",
+    "Preidentity R3 and real-prefix --no-build trace must pass before normal Comparator can request builds.",
+    "Aggregate all separately required closed audit/Comparator/selected-export/extra-Nanoda/original-fresh/postidentity phases; no missing/failed phase may become overall PASS.",
+    "Treat normal native execution as unsandboxed; source meaning/manuscript equivalence and practical runtime remain separate from formal checker acceptance."
+  ],
+  "review_actions": {
+    "budget_command_wall_seconds": 180,
+    "budget_cpu_seconds": 30,
+    "final_metadata_and_report_preparation_cpu_seconds": 0.010863999999999999,
+    "final_metadata_and_report_preparation_wall_seconds": 0.015667167000000003,
+    "network_calls": 0,
+    "paid_compute_usd": 0,
+    "proof_tool_execution": 0,
+    "publication_dispatch_outreach": 0,
+    "resource_scope": "Final small metadata/AST/checksum/report-preparation process only; previous bounded reads, model/tool and checkpoint overhead excluded.",
+    "source_imports_or_execution": 0,
+    "test_or_control_reruns": 0
+  },
+  "reviewed_inputs": [
+    {
+      "lines": 358,
+      "path": "openai/verify_native_phase_r1.py",
+      "sha256": "9db0839d4e6f2e2ef6ff5552f08419bdc2ed3113d47da29afaf27ac20f036e49",
+      "size_bytes": 20231
+    },
+    {
+      "lines": 86,
+      "path": "openai/native_export_capture_r2.py",
+      "sha256": "4755ba1dd43d18509cd1472bca98c269c79e3dc5a3c99f41faff5b2e6d78be74",
+      "size_bytes": 3279
+    },
+    {
+      "lines": 61,
+      "path": "openai/native_export_capture_r1.py",
+      "sha256": "8749c317236210c3e69fdaee3aaf74c942a0fc07f3358857bdf1a331e890e6bd",
+      "size_bytes": 2482
+    },
+    {
+      "lines": 115,
+      "path": "openai/check_native_export_capture_r1.py",
+      "sha256": "066e54e5212cb94c88d3a04875b5fc7ce78279a4e4f5ba4f896328c34b8d4c3e",
+      "size_bytes": 6165
+    },
+    {
+      "lines": 123,
+      "path": "openai/check_native_export_capture_cleanup_r2.py",
+      "sha256": "49523727daaad69b7f5d00f64dc1eeaee08a1372cda2d2d5fd421a6f5e4ebb82",
+      "size_bytes": 6341
+    },
+    {
+      "lines": 124,
+      "path": "openai/native-capture-control-result-r1.json",
+      "sha256": "cb9f05b21e6bcac90e75f190d84ec8be04134c6281eda89b81d3ee9ea18dfe7e",
+      "size_bytes": 6255
+    },
+    {
+      "lines": 49,
+      "path": "openai/native-capture-cleanup-control-result-r2.json",
+      "sha256": "483516e71cc8eb998e06bd5aaaf2a8ff5a1434d5c5c667872feefaa559977a3b",
+      "size_bytes": 3616
+    },
+    {
+      "lines": 17,
+      "path": "openai/in_workspace.py",
+      "sha256": "b4e80df9ed1f1c71e7a202feccd94f189113610679d4a28ac3728d8708e7d04a",
+      "size_bytes": 700
+    },
+    {
+      "lines": 154,
+      "path": "openai/verification-readiness-r1.md",
+      "sha256": "a62df7e19e7f6881c8c286b4b69826ec43a261bea5dd81d796fae247f3fa6031",
+      "size_bytes": 8626
+    },
+    {
+      "lines": 200,
+      "path": "openai/verify_source_identity_r3.py",
+      "sha256": "52cb3de32ef89c5fbb460032601693a9d2e740cda296b8dd44f9ab6fd1fa9174",
+      "size_bytes": 12879
+    },
+    {
+      "lines": 172,
+      "path": "openai/identity_expectations_r1.json",
+      "sha256": "e39147fee63287baea89a046c85c462090f1c443f15b53d809e613631f0cce47",
+      "size_bytes": 8435
+    },
+    {
+      "lines": 14,
+      "path": "openai/source/lean/ComparatorChallenges/SubexponentialSAT.json",
+      "sha256": "debbfdc9c01104d2369be80da5180978275106df8b685f693fba7ce7da7c5b19",
+      "size_bytes": 364
+    },
+    {
+      "lines": 151,
+      "path": "ci/record.py",
+      "sha256": "1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0",
+      "size_bytes": 6474
+    },
+    {
+      "lines": 130,
+      "path": "verification/AuditTargets.lean",
+      "sha256": "a78f30e0439e85d3a9ae51828e0e42c248c027a7fcfeb4c4fb16cb776fae0b05",
+      "size_bytes": 5663
+    },
+    {
+      "lines": 183,
+      "path": "verification-tools/record_nanoda.py",
+      "sha256": "c34f36d630d182708937a5280b6eda8d0723fa0ffdd85caf8fc54af17b332f48",
+      "size_bytes": 8494
+    },
+    {
+      "lines": 1167,
+      "path": "verification-tools/tool-manifest-r1.json",
+      "sha256": "90cf428c18e95d4e05502605b01f35e527d3f04644ef814a3742c8554c26a2c1",
+      "size_bytes": 55010
+    }
+  ],
+  "reviewed_ranges": {
+    "ci/record.py": "1-151",
+    "openai/native_export_capture_r1.py": "1-61 (preserved initial helper)",
+    "openai/native_export_capture_r2.py": "1-86",
+    "openai/verify_native_phase_r1.py": "1-358 (final source fully read, including unchanged ranges and revised capture command)",
+    "verification-tools/record_nanoda.py": "1-183",
+    "verification/AuditTargets.lean": "1-130"
+  },
+  "reviewer": "codex-eth-public-package",
+  "saved_control_review": {
+    "R1": "Read control source and rehashed all three actual raw logs/finished receipts. Success and exit7 retained exact69632B expected fixture exports with separated stderr; timeout124 retained17B and no capture receipt. Saved marker/group metadata support the owner observed child termination; no new process existence measurement was made.",
+    "R2": "Read fault-control source and independently matched report483516e71cc8eb998e06bd5aaaf2a8ff5a1434d5c5c667872feefaa559977a3b to actual raw/finished/fault/partial artifacts: injected periodic fsync failure while direct child alive with1/2closed, normal Recorder exit1/reasonnull in1.3401727676s,17Bpartial, no capture receipt. Saved report observes child gone; this review did not repeat PID probing.",
+    "current_PID_probes_by_this_reviewer": false,
+    "proof_or_launcher_phases_exercised": "None by this reviewer; owner controls use harmless Python emitters only.",
+    "rerun_by_this_reviewer": false,
+    "version_boundary": "R1 normal/nonzero/timeout controls exercised preserved R1 helper. R2 received the focused cleanup control; the reviewer infers unchanged ordinary transport/group API from source, not an independent full R2 runtime suite."
+  },
+  "schema": "eth-native-launcher-source-review/1",
+  "status": "NO_MATERIAL_BLOCKER_FOR_MANUAL_POST_BUILD_PROTOCOL",
+  "unchanged_inputs": {
+    "CI_or_proof_source_edits_by_reviewer": 0,
+    "all_frozen_r6_CI_identities_match": 25,
+    "ci_recorder_sha256": "1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0",
+    "unapplied_chunked_candidate_sha256": "fa4117719489920030dc75cc9fac658d17f6153048838123e98f6c843663928a"
+  }
+}
