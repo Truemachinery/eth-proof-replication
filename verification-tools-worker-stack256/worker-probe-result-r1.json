@@ -1,0 +1,103 @@
+{
+  "schema": "nanoda-worker-stack-resource-probe/1",
+  "passed": true,
+  "scope": "HarmlessRustworkeronly; no checker/proof or mainlimit changes",
+  "requested_bytes": 268435456,
+  "actual": {
+    "created": true,
+    "requested_stack_bytes": 268435456,
+    "os_reported_pthread_stack_bytes": 268447744,
+    "main_rlimit_before": [
+      8372224,
+      67092480
+    ],
+    "main_rlimit_after": [
+      8372224,
+      67092480
+    ],
+    "main_limits_unchanged": true,
+    "proof_or_checker_execution": false,
+    "scope": "one harmless worker; OS-reported stack reservation, not committed memory or proof success"
+  },
+  "steps": [
+    {
+      "argv": [
+        "<REPLICATION_ROOT>/verification-tools/rustup/toolchains/1.99.1-aarch64-apple-darwin/bin/rustc",
+        "--version",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "stdout": "rustc 1.99.1 (58cf8f9c3 2026-10-13)\nbinary: rustc\ncommit-hash: 58cf8f9c35b355199727627d07ae34a4e2846d67\ncommit-date: 2026-10-13\nhost: aarch64-apple-darwin\nrelease: 1.99.1\nLLVM version: 23.1.1\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "<REPLICATION_ROOT>/verification-tools/rustup/toolchains/1.99.1-aarch64-apple-darwin/bin/cargo",
+        "--version",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "stdout": "cargo 1.99.1 (5f94df478 2026-08-27)\nrelease: 1.99.1\ncommit-hash: 5f94df4789f005f9a352888e8355ffc645b7ed0e\ncommit-date: 2026-08-27\nhost: aarch64-apple-darwin\nlibgit2: 1.9.6 (sys:0.21.0 vendored)\nlibcurl: 8.7.1 (sys:0.4.90+curl-8.21.0 system ssl:(SecureTransport) LibreSSL/3.3.6)\nssl: OpenSSL 3.6.3 9 Jun 2026\nos: Mac OS 27.0.1 [64-bit]\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "<REPLICATION_ROOT>/verification-tools/rustup/toolchains/1.99.1-aarch64-apple-darwin/bin/rustc",
+        "--edition=2021",
+        "-C",
+        "opt-level=0",
+        "<REPLICATION_ROOT>/verification-tools-worker-stack256/worker_probe_r1.rs",
+        "-o",
+        "<REPLICATION_ROOT>/verification-tools-worker-stack256/worker_probe_r1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "warning: output of `xcrun` while finding MacOSX.sdk\n  |\n  = note: xcrun: warning: confstr() failed with code 5: couldn't get path of DARWIN_USER_TEMP_DIR; using /tmp instead\n          2026-11-05 09:28:27.276 xcodebuild[31536:10829029]  DVTFilePathFSEvents: Failed to start fs event stream.\n          2026-11-05 09:28:27.657 xcodebuild[31536:10829018] [MT] DVTDeveloperPaths: Failed to get length of DARWIN_USER_CACHE_DIR from confstr(3), error = Error Domain=NSPOSIXErrorDomain Code=5 \"Input/output error\". Using NSCachesDirectory instead.\n          2026-11-05 09:28:28.735 xcodebuild[31560:10829164]  DVTFilePathFSEvents: Failed to start fs event stream.\n          2026-11-05 09:28:28.910 xcodebuild[31560:10829162] [MT] DVTDeveloperPaths: Failed to get length of DARWIN_USER_CACHE_DIR from confstr(3), error = Error Domain=NSPOSIXErrorDomain Code=5 \"Input/output error\". Using NSCachesDirectory instead.\n          xcrun: warning: confstr() failed with code 5: couldn't get path of DARWIN_USER_TEMP_DIR; using /tmp instead\n\nwarning: linker stderr: cc: confstr() failed with code 5: couldn't get path of DARWIN_USER_TEMP_DIR; using /tmp instead\n  |\n  = note: `#[warn(linker_messages)]` on by default\n\nwarning: 2 warnings emitted\n\n"
+    },
+    {
+      "argv": [
+        "<REPLICATION_ROOT>/verification-tools-worker-stack256/worker_probe_r1"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"created\":true,\"requested_stack_bytes\":268435456,\"os_reported_pthread_stack_bytes\":268447744,\"main_rlimit_before\":[8372224,67092480],\"main_rlimit_after\":[8372224,67092480],\"main_limits_unchanged\":true,\"proof_or_checker_execution\":false,\"scope\":\"one harmless worker; OS-reported stack reservation, not committed memory or proof success\"}\n",
+      "stderr": ""
+    }
+  ],
+  "environment": {
+    "PATH": "<REDACTED FIELD>",
+    "RUSTC": "<REPLICATION_ROOT>/verification-tools/rustup/toolchains/1.99.1-aarch64-apple-darwin/bin/rustc",
+    "RUSTUP_HOME": "<REPLICATION_ROOT>/verification-tools/rustup",
+    "CARGO_HOME": "<REPLICATION_ROOT>/verification-tools/cargo",
+    "LANG": "en_US.UTF-8",
+    "LC_ALL": "en_US.UTF-8"
+  },
+  "inputs": [
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/rustup/toolchains/1.99.1-aarch64-apple-darwin/bin/rustc",
+      "sha256": "1ba7bb8e273bd64125f4048d2ecce530e0a6470e565ab1b3aecf0b82b532f7b1",
+      "size_bytes": 413480
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/rustup/toolchains/1.99.1-aarch64-apple-darwin/bin/cargo",
+      "sha256": "6d576d8058f8ca643e8fce55b64ee3c614ba64c9da2e536bae843e6a2e1f3951",
+      "size_bytes": 32182376
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/worker_probe_r1.rs",
+      "sha256": "54a87840a54b1f8e5ff2970784331cee16e9e0804713ffd280d510cf66a43c5a",
+      "size_bytes": 1557
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/worker_probe_r1",
+      "sha256": "9f90aee291c634e1e2185e120a2382598452b4a5d721fcc9d752bf35b25562bd",
+      "size_bytes": 557776
+    }
+  ],
+  "child_cpu_seconds": 3.394139,
+  "wall_seconds": 5.846522917000001,
+  "parent_stack_before_after": [
+    8372224,
+    67092480
+  ],
+  "incremental_usd": 0
+}

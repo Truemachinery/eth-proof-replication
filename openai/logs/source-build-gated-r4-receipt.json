@@ -1,0 +1,27 @@
+{
+  "schema": "native-source-build-terminal-capture/1",
+  "exec_session_id": 11317,
+  "final_exec_exit_code": 0,
+  "captured_utc": "2026-11-05T14:21:52Z",
+  "checkpoint_run_result": {
+    "agent": "codex-eth-replication",
+    "task": "external-eth-proof-replication-20261104",
+    "task_rev": 51,
+    "revision_event_id": 3993,
+    "exit_code": 0,
+    "timed_out": false,
+    "cpu_seconds": 32075.406502,
+    "wall_seconds": 20746.93892,
+    "log_path": "research/eth-external-replication-20261104/openai/logs/source-build-gated-r4.txt",
+    "log_sha256": "7c805711419dd84c01e6fd71ad2b9c548238245757730a55c71b8910608c1cde",
+    "log_size": 297435,
+    "log_total_lines": 3163,
+    "pinned_artifacts": [
+      "research/eth-external-replication-20261104/openai/logs/source-build-gated-r4.txt"
+    ],
+    "missing_requested_artifacts": [],
+    "full_output": false,
+    "tail_lines": 12,
+    "output": " Quot.sound]\ninfo: OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/Final.lean:199:0: 'OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.exact_count_eth' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\ninfo: OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/Final.lean:200:0: 'OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.sat_polynomial_space' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\ninfo: OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/Final.lean:201:0: 'OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.original_sat_main' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n✔ [12015/12015] Built OAI.Algorithms.SubexponentialSAT.Main (3.8s)\nBuild completed successfully (12015 jobs)."
+  }
+}

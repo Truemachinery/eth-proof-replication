@@ -1,0 +1,15 @@
+# Native OpenAI saved evidence: part1
+
+Closed source build, pre-identity, real-prefix no-build trace and named-target axiom audit have consistent actual saved bindings. This is a same-team review of root execution: the reviewer authored shared helpers, independently parsed/rehashed the saved evidence here, and did not rerun any verifier or import those helpers. Overall eight-phase replication remains INCOMPLETE.
+
+Source wrapper0a1a693f… binds raw7c805711… (297435B), actual zero exit, digest3993 and capture2026-11-05T14:21:52Z. Source reports3092copied modules and12015Lakejobs as separate counts. Root source childCPU32075.406502s and reported monotonic wall20746.93892s are separate from74439.008618s UTC header-start to capture; the difference is not compute time.
+
+All three closed phase preparations, inputs, stage preparations/results, raw files and final phase results match. Each has exact expected argv/cwd/cap, two-thread original4.34.1 constructed environment, no interrupt/failure, and shared fingerprint c84c8907998f23cc282a29ae7fef4a37cbaff735327096e748afe546af8c4f52. All25selected files plus R2launcher were currently rehashed once. The identity result records3092sourcefiles percopy,3093workspace Lean entries,2configurations,9clean pinned dependencies and8original runtimefiles; the reviewer did not rerun Git or all6184sourceleaf hashes.
+
+Actual no-build trace ends `All targets up-to-date (12015 jobs).` It replays the unchanged reference Challenge theorem warning atline194 using `sorry`; this remains visible. It is distinct from the solution target's transitive audit, which traversed94277constants and reports only propext/Classical.choice/Quot.sound, private imports, extensions and initializer execution disabled, and trusted Init axiom signatures. This is not exact statement comparison or fresh/independent kernel replay.
+
+Saved manual scheduling records separately establish whole-group pause19:19:45.706707→resume20:08:21.219697UTC onNovember4, two-worker suspension22:57:05.218057UTC, Setup-only resumption14:13:29.543348UTC onNovember5, then Loop resumption14:18:44.356153UTC. PreparedR2 is intent only; actualR2/R3/R4before-after states are consistent. No live process probe or signal was performed. This was not uninterrupted three-frontend execution, and the overnight UTCgap is not assigned CPU time.
+
+Comparator was still running at the task handoff and its files were not inspected or pinned. Export, extraNanoda, originalfresh and postidentity remain unreviewed. No final native target verdict follows from this part. The originalComparator config remains Nano-disabled; the planned additional recordedNanoda is separate. NativefakeLandrun gives no OS isolation.
+
+Root authorized final aggregation utility R4a4d5e8bf…: it changes only an imprecise scheduling minute to reference the bound receipt timestamp. Independent literal-diff ACK confirms no behavior/pin/acceptance change; preservedR3 and earlier versions remain. No actual full aggregation was run. Companion JSON contains exact hashes, selected scope, partial resource totals and reproduction program. Root owns subsequent actual checks and final review.

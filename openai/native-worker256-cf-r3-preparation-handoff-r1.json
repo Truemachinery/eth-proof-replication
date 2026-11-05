@@ -1,0 +1,60 @@
+{
+  "schema": "worker256-explicit-cf-preparation/1",
+  "status": "prepared_same_sdk_control_passed_peer_source_ack",
+  "observed_utc": "2026-11-05T16:04:29.991439+00:00",
+  "protocol_variant": "openai-native-r2-nanoda-worker-stack256-cfenv-r3",
+  "change": "Only explicitly add SDK-required __CF_USER_TEXT_ENCODING after fixed-value SHA validation; retain exact full child environment equality. Checker/resource binary/strictconfig/payload/source/axioms unchanged.",
+  "cf_value_sha256": "bfea86ae0b123713ac5b1af20b2dd4ead4f0bb81822ed654e80347e6fa420f3b",
+  "actual_cf_value_included": false,
+  "selected_artifacts": [
+    {
+      "path": "<REPLICATION_ROOT>/openai/nanoda_worker_stack_retry_r3.py",
+      "sha256": "9f4fe4e87a568f8bd89d39df61ed03fc155e120e2194aa82dce038918c1f34f3",
+      "size_bytes": 24398
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/aggregate_native_result_r7.py",
+      "sha256": "be05f1310f22170cbc4564b9e35ad4fcb07b2515608aefeb88243e4d918c15d9",
+      "size_bytes": 52817
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/nanoda-worker-stack256-cf-r3-runbook-r1.md",
+      "sha256": "19f40e1502a9eb14a1522fc0ecf22863c2316fab02dff52a155acfd9aa1643a1",
+      "size_bytes": 7182
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/cf-environment-control-r1/control-result-r1.json",
+      "sha256": "58c331d95f12321c28c35513c97857a601e24e97d1842ede9100f4a8759b9572",
+      "size_bytes": 9609
+    }
+  ],
+  "preserved_failure": {
+    "result": {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r2-01/retry-result.json",
+      "sha256": "d6b716803c4d9d36b02052bcd04b7cc40d38195973939c59ec2b25f628db627d",
+      "size_bytes": 2423
+    },
+    "raw": {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r2-01/stages/worker-stack256-nanoda/raw.log",
+      "sha256": "f384b5c2c40e0e661b81aa604ae8672a24e6613b536aecba804ea25821090503",
+      "size_bytes": 848
+    },
+    "outer": {
+      "path": "<REPLICATION_ROOT>/openai/logs/native-worker-stack256-r2-checkpoint.json",
+      "sha256": "1326970fac0dec933b7bcfdbac5ceebb3f896633c153d08cbda6f5d59313a15f",
+      "size_bytes": 4081
+    },
+    "verdict": "Preexec environment guard failure; Nano never launched. R7 requires actual closed failed lineage and separate inner/outer costs."
+  },
+  "control": "Same absolute SDK/cwd/minimal environment: omitted-key negative reproduced sole extra CF metadata; explicit fixed-key positive exactdict equality. R7 actual preexec small-metadata validator passed. No Nano or large-payload reads.",
+  "peer_review": "Actual same-team full helper literal delta and complete R7 functional/literal delta reviewed by /root/eth_research_evidence; no material blocker after the actual sameSDK control passed. Peer sent ACK directly to root.",
+  "recorded_control_resources": {
+    "checkpoint_event": 4052,
+    "cpu_seconds": 0.153048,
+    "wall_seconds": 0.17564,
+    "scope": "Recorded harmless controls only; editing and administration excluded.",
+    "paid_cloud_spend_usd": 0
+  },
+  "root_next": "Root alone runs exclusive worker-stack256-r3-02 after original fresh PASS, postidentity LAST, then R7. Actual new full retry and final aggregation were not executed by this author.",
+  "publication": "Local fullenv receipts may contain CF value for exact audit; public data/raw copies must redact actual value, preserve key/hash and original local artifact identities."
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "eth-private-sdk-redaction-controls/1",
+  "status": "passed",
+  "checks": [
+    "actual SDK ordinary/nested JSON level 0",
+    "actual SDK ordinary/nested JSON level 1",
+    "actual SDK ordinary/nested JSON level 2",
+    "actual SDK ordinary/nested JSON level 3",
+    "actual SDK ordinary/nested JSON level 4",
+    "actual SDK ordinary/nested JSON level 5",
+    "validated actual value redacted even outside named field",
+    "source key/hash references remain byte-identical",
+    "key-context fallback without parent SDK level 0",
+    "key-context fallback without parent SDK level 1",
+    "key-context fallback without parent SDK level 2",
+    "key-context fallback without parent SDK level 3",
+    "key-context fallback without parent SDK level 4",
+    "key-context fallback without parent SDK level 5",
+    "repr/assignment SDK data form",
+    "repr/assignment SDK data form",
+    "unrelated hex triples preserved",
+    "unredacted named SDK field refused",
+    "all50 original/candidate CI files remain byte-identical"
+  ],
+  "sdk_value_sha256_only": "bfea86ae0b123713ac5b1af20b2dd4ead4f0bb81822ed654e80347e6fa420f3b",
+  "sdk_value_printed_or_persisted": false,
+  "publisher_sha256": "a72ed2f73b37daaa375ee62c238897ba8e86c7549292bf5e3d6f1412fcc8675c",
+  "source_sha256": "eff45397efb85c96a32b09c59ef5aebab63752d11f9c8abcb484cab77192ffcc",
+  "cpu_seconds": 0.052156999999999995,
+  "wall_seconds": 0.06134970799999999,
+  "no_proof_network_or_export": true
+}

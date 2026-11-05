@@ -1,0 +1,128 @@
+{
+  "schema": "native-publisher-frozen-integration-source-review/1",
+  "reviewer": "codex-eth-anthropic-replication",
+  "same_team_review": true,
+  "observed_utc": "2026-11-05T16:32:48.627384+00:00",
+  "status": "Source and saved-control ACK for frozen a72 publisher/module68; actual final proof/map/export remain separately gated",
+  "publisher": {
+    "path": "<REPLICATION_ROOT>/publish_package.py",
+    "sha256": "a72ed2f73b37daaa375ee62c238897ba8e86c7549292bf5e3d6f1412fcc8675c",
+    "size_bytes": 68428
+  },
+  "module": {
+    "path": "<REPLICATION_ROOT>/publication/native_worker_guard_r1.py",
+    "sha256": "68d3ef6d9e0c3d4ae436b2901f4ac483cfa49a5f65982ca07d7e56ea7a21c726",
+    "size_bytes": 31183
+  },
+  "preserved_initial_candidate": {
+    "path": "<REPLICATION_ROOT>/publication/publisher-worker-candidate-450f-r1.py",
+    "sha256": "450f31a416f5ae0fd8b966c97bec09c94728b98a195c3df63a31fc7196a2fb51",
+    "size_bytes": 67818
+  },
+  "material_finding": {
+    "initial_candidate": "450f",
+    "result": "FOUND and FIXED availability blocker",
+    "location": "make_plan positive receipt expansion: native_result_files returns a dict for retry including helper/source, but old code overwrote every extra as manifest. export_plan then rejected the source class.",
+    "correction": "a72 preserves source/report/manifest catalog priority and actual dictionary class for other retry extras; original list-returning phase bundles still default to manifest.",
+    "independent_source_review": "Read exact450\u2192a72 unified diff; only the class propagation and explicit new test/result/historical-source catalog names changed.",
+    "new_meaningful_control": "AdapterR2 includes a helper source in the retry dict, checks source class after planning, and completes its harmless synthetic export.",
+    "no_relabel": "Original450/47 historical saved-control scope is preserved; its missing source-class scenario is not claimed covered."
+  },
+  "reviewed_integration": [
+    {
+      "scope": "pin/load/API",
+      "result": "native_worker_module verifies exact68d source through stable reader before import, exposes only stable reader/sha/closed_times/original phase validator; new dispatch calls the worker module. held_original_native_final_selection remains defined but CLI does not dispatch to it."
+    },
+    {
+      "scope": "positive receipts",
+      "result": "NATIVE_POSITIVE_RESULTS contains seven original successful phase paths plus only explicitR3 retry, excluding original failedR2 extra-Nano. completed_receipt handles exactretry through pinned module, and original failed results fail the positive native_phase_bundle path."
+    },
+    {
+      "scope": "make_plan and required evidence",
+      "result": "Native fixed file set is added with classifications; all negative/source-build/resource-build raw bindings are merged, and positive receipt expansion now preserves source classes. Logs from positive receipts must agree with final module bindings."
+    },
+    {
+      "scope": "export revalidation/omissions",
+      "result": "Before destination creation, native_final_selection is recomputed and compared with frozen snapshot; all native files and all positive receipts/phase-bundle members are mandatory. Stable content hashes, fixed allowlists and evidence classes are rechecked. Negative raw binding objects must match the gate and exact hash/size. Drift and omission are refused."
+    },
+    {
+      "scope": "large assets and negatives",
+      "result": "Plural omitted_large_assets is preserved and appended to public manifest. Module labels recorded checker acceptance explicitly per asset, keeping accepted retry distinct from original failed checked archive. Source/resource binaries and large NDJSON/gzip are metadata-only and not added as payloads."
+    },
+    {
+      "scope": "module refinements",
+      "result": "Reviewed new module68 additions retain resource build raw warnings via closed binding, add explicit accepted boolean per asset, and require final combined JSON/MD/report review names. The prior source-only guard ACK and root-confirmed metadata consistency trust boundary remain applicable."
+    }
+  ],
+  "privacy_function_hashes_unchanged_from_prior_source_review": {
+    "transform": "bd07e9886045762e8fb2945090e22e6a18f62a6ec46cfcaeba43c83ae7c93e2a",
+    "private_sdk_spans": "a42826040815bbd1479de76c00fe0011a09bc0c0f4a3015bfed3fde7f033a67a",
+    "check_public": "229670d17f30d887aeb056d42059efa62b11e621f67013ff284acbaedab5c3f7"
+  },
+  "saved_controls": [
+    {
+      "result": {
+        "path": "<REPLICATION_ROOT>/publication/worker-adapter-control-result-r2.json",
+        "sha256": "260b592d135f04f4df7dddac9393f36661cfef877c7dfdb26da4a0b93b221e0a",
+        "size_bytes": 1099
+      },
+      "source": {
+        "path": "<REPLICATION_ROOT>/publication/check_worker_adapter_r2.py",
+        "sha256": "63616e0892784bf765ce8ceae77d30621e16ef49cbce682b244f5cf619e4fb02",
+        "size_bytes": 7330
+      },
+      "count": 10,
+      "status": "passed",
+      "cpu_seconds": 0.07743799999999998,
+      "wall_seconds": 0.08256212499999999,
+      "scope": "Trusted gate substituted with fake closed metadata only; no proof/WIP files, large assets or actual R8 release",
+      "reviewer_reran": false
+    },
+    {
+      "result": {
+        "path": "<REPLICATION_ROOT>/publication/worker-publication-control-result-r2.json",
+        "sha256": "4101ce6311c3bcb149fcf5387cb837e946797051bb65142bd2b117897ed5be38",
+        "size_bytes": 1499
+      },
+      "source": {
+        "path": "<REPLICATION_ROOT>/publication/check_worker_publication_guards_r2.py",
+        "sha256": "8297a578b404b13a41554c6f872f910b8ef995131d459ee5241536d0bbf15c5d",
+        "size_bytes": 11556
+      },
+      "count": 19,
+      "status": "passed",
+      "cpu_seconds": 0.13361900000000002,
+      "wall_seconds": 0.14161929199999998,
+      "scope": "Synthetic small metadata; fixture-only config-path/CF hashes, not production anchor substitutions; no proof, WIP evidence, binaries or large assets read",
+      "reviewer_reran": false
+    },
+    {
+      "result": {
+        "path": "<REPLICATION_ROOT>/publication/sdk-redaction-control-result-r3.json",
+        "sha256": "63c54a4ad73200eda040ad1544d4642159e2af738e0de2442a5e0a99fc7cb999",
+        "size_bytes": 1476
+      },
+      "source": {
+        "path": "<REPLICATION_ROOT>/publication/check_sdk_redaction_r3.py",
+        "sha256": "eff45397efb85c96a32b09c59ef5aebab63752d11f9c8abcb484cab77192ffcc",
+        "size_bytes": 4671
+      },
+      "count": 19,
+      "status": "passed",
+      "cpu_seconds": 0.052156999999999995,
+      "wall_seconds": 0.06134970799999999,
+      "scope": "Author-run harmless privacy controls; no proof/network/export",
+      "reviewer_reran": false
+    }
+  ],
+  "saved_control_total": 48,
+  "review_scope": "Read-only source/diff, saved-small-results and actual source/result hash checks. No imports, tests/reruns, export, WIP/active Nano evidence, proof tool, process controls, network or actual CF value were used by this reviewer.",
+  "trust_boundary": "Root creates/freezes actual selection only after observed retry0, postidentity0, actualR7seal and combined saved-evidence review. Publisher remains metadata/allowlist/privacy/closed-file gate, not a second kernel or full R7 verifier.",
+  "remaining_conditions": [
+    "Root actual proof outcomes and final combined evidence review are still required; no current proof outcome inferred here.",
+    "Any source/control drift from the pinned frozen versions requires a new explicit review.",
+    "Actual export remains a separate root-owned action; this source ACK does not authorize publication or outside messaging."
+  ],
+  "reported_fixture_failures": "Author reported closed fixture setup failures4063/4065 retained; corrected canonical temporary path and expected refuser type only. This reviewer did not rerun those attempts or infer proof failures from them.",
+  "incremental_usd": 0
+}

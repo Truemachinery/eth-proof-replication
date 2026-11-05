@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "<REPLICATION_ROOT>/openai/in_workspace.py",
+    "lake",
+    "env",
+    "<REPLICATION_ROOT>/verification-tools/comparator-source/.lake/build/bin/comparator",
+    "<REPLICATION_ROOT>/openai/source/lean/ComparatorChallenges/SubexponentialSAT.json"
+  ],
+  "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.",
+  "cwd": "<REPLICATION_ROOT>/openai/workspace",
+  "name": "comparator",
+  "schema": "eth-ci-stage/1",
+  "started_utc_epoch": 1793888782.6207402,
+  "stdout_is_export": false,
+  "timeout_seconds": 7200
+}

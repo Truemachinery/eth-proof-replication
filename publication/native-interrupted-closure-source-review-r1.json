@@ -1,0 +1,23 @@
+{
+  "schema": "eth-native-interrupted-closure-source-review/1",
+  "created_utc": "2026-11-05T18:06:43.456955+00:00",
+  "status": "conditional_source_ack",
+  "source": {
+    "path": "openai/aggregate_native_interrupted_r1.py",
+    "sha256": "3893f6fd2ce5eca22fd99f57994bd25891367b729e31587f0d1a13e0ca9e243f",
+    "size_bytes": 21570,
+    "lines": 227
+  },
+  "scope": "Same-team full read-only source review; no imports, tests, actual recovery/attempt records, proof, WIP or large payload reads. Prior frozen R7 API review reused.",
+  "reviewed": [
+    "Exact known signal15/PermissionError/empty stage_receipts header and fixed e066 result hash; no timeout classification substituted.",
+    "Recovery89be and exact13identity/absence rows; known PID/group absence observation, missing finished/02/99, zero-byte outerJSON and rawfragment preserved without invented DIGEST.",
+    "Strict original payload/config/source/resource/environment/CFevent/00prepared+01started lineage, and optional Rust acceptance/checkerexit/finalCPU/wall unknown.",
+    "Seven original successful R2 checks plus sourcebuild/audit/identity and finalpostLAST, with recoveryUTC serving chronology bound rather than measured checker finish.",
+    "Completed known cost sums exclude unobserved interrupted attempt; campaign total unknown; historical failures and schedules retained.",
+    "Disjoint interrupted schema/verdict, expanded/allrequired/originalR2 false. Report and artifact manifest fsync before final hash-bound seal."
+  ],
+  "source_objection": "No material objection found under fixed trusted campaign workflow; actual utility execution/result remains required.",
+  "publication_caveat": "The zero-byte outer capture may appear in closure eligible-small artifact rows, but must stay local; publisher retains its exact empty identity as observation metadata and must not parse/copy it as a JSON completion receipt.",
+  "actual_runtime_result_claim": "None inferred by this source review; root supplied interruption/post status separately."
+}

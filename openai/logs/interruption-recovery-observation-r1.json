@@ -1,0 +1,98 @@
+{
+  "schema": "eth-proof-interruption-recovery/1",
+  "observed_start_utc": "2026-11-05T18:01:10.029860+00:00",
+  "observed_end_utc": "2026-11-05T18:01:10.079303+00:00",
+  "scope": "Recovery observation, not a completed stage/checker receipt or checkpoint DIGEST",
+  "known_checker_pid": 38877,
+  "known_recorder_pid": 38848,
+  "known_pgid": 38848,
+  "process_observation": {
+    "argv": [
+      "ps",
+      "-axo",
+      "pid=,ppid=,pgid=,stat=,lstart=,comm="
+    ],
+    "exit_code": 0,
+    "matching_known_pid_or_group_rows": []
+  },
+  "artifacts": [
+    {
+      "path": "openai/logs/native-worker-stack256-cf-r3-checkpoint.json",
+      "exists": true,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "openai/logs/native-worker-stack256-cf-r3-checkpoint.txt",
+      "exists": true,
+      "size_bytes": 7726,
+      "sha256": "4c4411725b55d0a8958f3cefb1d8a71869c1d01ded2aa7c9aecba7ca69d78f27"
+    },
+    {
+      "path": "openai/native-retry-records/worker-stack256-r3-02/retry-result.json",
+      "exists": true,
+      "size_bytes": 1021,
+      "sha256": "e0662f9de6c8699328549233d19c9438c1029951ac0ab3c55361824c78d848b0"
+    },
+    {
+      "path": "openai/native-retry-records/worker-stack256-r3-02/retry-prepared.json",
+      "exists": true,
+      "size_bytes": 852,
+      "sha256": "428df87dd385689d112be17ef6d26492a6898f1903bf5eed4c0756bf4af05629"
+    },
+    {
+      "path": "openai/native-retry-records/worker-stack256-r3-02/retry-inputs.json",
+      "exists": true,
+      "size_bytes": 25952,
+      "sha256": "a65d89d8669cb162619856fb28e35d1963e3aed1a237d20a4504f75bad0bb9d6"
+    },
+    {
+      "path": "openai/native-retry-records/worker-stack256-r3-02/worker-resource.json",
+      "exists": true,
+      "size_bytes": 6570,
+      "sha256": "bdb66e174c803177379e11b7b1becd5915078dc94d584059cdfdea552aeeff1b"
+    },
+    {
+      "path": "openai/native-retry-records/worker-stack256-r3-02/stages/worker-stack256-nanoda/prepared.json",
+      "exists": true,
+      "size_bytes": 758,
+      "sha256": "49f1eba1a094381788edac06aebdbff3c83e85cf359f3bebdd5b50e7d781d61e"
+    },
+    {
+      "path": "openai/native-retry-records/worker-stack256-r3-02/stages/worker-stack256-nanoda/raw.log",
+      "exists": true,
+      "size_bytes": 6040,
+      "sha256": "8e85fe7c96002deb5269c8029747cca717a7552964b7e1f04b7d27c910a86fa4"
+    },
+    {
+      "path": "openai/native-retry-records/worker-stack256-r3-02/stages/worker-stack256-nanoda/finished.json",
+      "exists": false
+    },
+    {
+      "path": "openai/native-retry-records/worker-stack256-r3-02/nanoda-records/nanoda-38848-vymihcgo/00-prepared.json",
+      "exists": true,
+      "size_bytes": 4931,
+      "sha256": "074a03c7b4c888b694e2b084cda821f35a3966df08ab1afbd4e0d27985275614"
+    },
+    {
+      "path": "openai/native-retry-records/worker-stack256-r3-02/nanoda-records/nanoda-38848-vymihcgo/01-started.json",
+      "exists": true,
+      "size_bytes": 400,
+      "sha256": "50ffadbc77c67de5b386993a889f14584120f5d99bfcb0d2327939e825c5eac1"
+    },
+    {
+      "path": "openai/native-retry-records/worker-stack256-r3-02/nanoda-records/nanoda-38848-vymihcgo/02-finished.json",
+      "exists": false
+    },
+    {
+      "path": "openai/native-retry-records/worker-stack256-r3-02/nanoda-records/nanoda-38848-vymihcgo/99-error.json",
+      "exists": false
+    }
+  ],
+  "checker_exit_code": null,
+  "independent_nanoda_accepted": null,
+  "independent_nanoda_acceptance_observed": false,
+  "final_child_cpu_seconds": null,
+  "timeout_observed": false,
+  "facts": "Actual retry-result records interrupt_signal15 at17:45:40.837389 UTC and no completed stage receipts. No closing stage/checker or outer execution result is invented. Trigger attribution is not established by this observation."
+}

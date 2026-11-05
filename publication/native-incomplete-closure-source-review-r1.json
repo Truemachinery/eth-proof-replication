@@ -1,0 +1,60 @@
+{
+  "schema": "eth-native-incomplete-closure-source-review/1",
+  "created_utc": "2026-11-05T17:09:52.632787+00:00",
+  "reviewer": "codex-eth-public-package",
+  "review_kind": "same-team read-only source/API/diff review, not independent kernel execution",
+  "status": "conditional_source_ack",
+  "sources": [
+    {
+      "path": "openai/aggregate_native_incomplete_r1.py",
+      "sha256": "f2e9155e2e92356f976167190d521aa35829f00ac1a3d9b2cc7d11292dd663be",
+      "size_bytes": 19730,
+      "lines": 233
+    },
+    {
+      "path": "openai/aggregate_native_incomplete_r2.py",
+      "sha256": "97d65f2fcc779f4e8ea5473716c7da21cb6dea98c9ca81a76e9a80658fff8940",
+      "size_bytes": 21523,
+      "lines": 253
+    },
+    {
+      "path": "openai/aggregate_native_result_r7.py",
+      "sha256": "be05f1310f22170cbc4564b9e35ad4fcb07b2515608aefeb88243e4d918c15d9",
+      "size_bytes": 52817,
+      "lines": 686
+    },
+    {
+      "path": "openai/nanoda_worker_stack_retry_r3.py",
+      "sha256": "9f4fe4e87a568f8bd89d39df61ed03fc155e120e2194aa82dce038918c1f34f3",
+      "size_bytes": 24398,
+      "lines": 376
+    }
+  ],
+  "read_scope": [
+    "Full original candidate R1 lines1-233, plus complete R1-to-R2 diff; final253-line R2 fully covered by original plus delta.",
+    "Reused R7 Evidence/canonical/source_build/mappings API source and frozen C34 recorder source; prior R7/helper protocol review remains separately linked."
+  ],
+  "found_and_corrected": {
+    "finding": "R1 wrote successful closure-finished before saving report. An interrupted/failed report write could leave a premature completion seal.",
+    "correction": "R2 writes and fsyncs report and writes artifact manifest before final seal; final seal hash-binds result/report/artifact manifest.",
+    "original_candidate_preserved": true
+  },
+  "reviewed_guards": [
+    "Pinned R7 import, strict seven original R2 phase/build/identity/audit/Comparator acceptance and selected-export validators. Postidentity last and nonoverlap guarded.",
+    "Exact fixed resource-R3 failed result/source/input/config/environment/CFevent/00prepared+01started provenance and actual terminal stage/raw/outer closure required. Running or passed attempts refused.",
+    "Missing02 leaves checker exit, checker acceptance and during-check unchanged observation null; acceptance_observed false, recording_complete false. Nonzero02 may be retained as actual failed complete recording; any02checker0 is refused by this negative route.",
+    "Simultaneous02/99 refused; wrapper exit exactinteger;99actualnonzero exit retained but recording incomplete and acceptance unobserved.",
+    "Original D9 overflow, preexec environment failure, unsupported mainstack copies, and five exact manual scheduling hashes retained. Resource sums separate nested wrappers/preparation scopes.",
+    "Separate schema/openai-native-incomplete-result/1 and verdict ORIGINAL_LEAN_SUITE_PASS_ADDITIONAL_NANODA_INCOMPLETE. original_lean_suite_passed true is distinct from all_required_native_checks_passed/expanded_suite_passed/original_r2_protocol_passed false.",
+    "Final success seal means negative evidence closed, never expanded checker acceptance. Output exclusive under owned incomplete directory and final closure source records actual resource/hash-only work."
+  ],
+  "scope_limits": [
+    "No source imports, tests, builds, proof/checker execution, active process interaction, WIP evidence, or large assets read by this reviewer.",
+    "Source admission only. Actual terminal Rust result, final original postidentity and closure invocation/result/seal are not inferred.",
+    "Missing checker completion is not logical proof rejection; original suite uses Lean implementation-family replays, not successful independent Rust acceptance for OpenAI.",
+    "Future publication must use a separate additive metadata gate and explicit closed negative map; positivea72/module68 success gate remains unchanged.",
+    "Public copies must redact actual CF metadata and private paths while retaining original/public hashes. No actual CF value or contact email appears in this review."
+  ],
+  "prior_protocol_review": "publication/nanoda-worker-cf-protocol-source-review-r2.json",
+  "actual_runtime_control_claim": "None by this reviewer; owner reported AST/refuser controls separately, not included as reproduced results."
+}

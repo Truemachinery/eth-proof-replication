@@ -1,0 +1,13 @@
+{
+  "schema": "saved-review-bookkeeping-correction/1",
+  "observed_utc": "2026-11-05T15:57:41.206725+00:00",
+  "review": {
+    "path": "<REPLICATION_ROOT>/openai/native-saved-evidence-review-part2-r1.json",
+    "sha256": "c5ad237ce27eded421d8fadf21e466c9a19047addfec946380a8973898b7996a",
+    "size_bytes": 64851
+  },
+  "recorded_assertion_count": 227,
+  "actual_checks_array_length": 230,
+  "explanation": "The report recorded assertion_count before evaluating three final canonical-path guards while assembling its artifact references. All230 listed checks passed. The final three guards are the already-read part1 report, capture receipt and failed Nano finished receipt; no proof outcome, hash, resource figure or acceptance policy changes.",
+  "correction": "Interpret227 as the count before final report-reference guards, and230 as total listed guards. Original R1 remains immutable."
+}

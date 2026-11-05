@@ -1,0 +1,103 @@
+{
+  "schema": "native-worker-publisher-guard-source-review/1",
+  "reviewer": "codex-eth-anthropic-replication",
+  "same_team_review": true,
+  "observed_utc": "2026-11-05T16:17:34.494460+00:00",
+  "status": "Conditional source ACK for fixed trusted publication selection; not independent proof or full campaign acceptance",
+  "source": {
+    "path": "<REPLICATION_ROOT>/publication/native_worker_guard_r1.py",
+    "sha256": "ad4566305f485ac282f7675f31ae0f7ee15d3240ba91b84cab2ee624e9a13dd9",
+    "size_bytes": 30325,
+    "lines_read": "1-416 (entire file)"
+  },
+  "execution": "No guard imports/tests, proof/aggregate executions, WIP logs, large exports, source trees, binaries or network read. Only source text and publisher reader/phase-validator API were inspected.",
+  "findings": [
+    {
+      "severity": "scope_condition",
+      "summary": "The guard trusts the closed R7 result plus pinned aggregator source and the root-reviewed final selection map for full acceptance semantics. It does not rederive every R7 chronology, constructed environment, audit or Comparator-sentinel assertion.",
+      "source_lines": [
+        317,
+        323,
+        330,
+        339,
+        249,
+        359
+      ],
+      "required_interpretation": "Root must complete its actual combined saved-evidence review and freeze the exact actual aggregate/file hashes before creating/approving the final selection map. This guard is a metadata publication consistency gate, not an independent kernel/campaign verifier. No broad additional hardening is requested."
+    }
+  ],
+  "reviewed_properties": [
+    {
+      "scope": "path and reading boundary",
+      "source_lines": [
+        74,
+        109,
+        145,
+        150,
+        193,
+        215,
+        307,
+        316,
+        409,
+        413
+      ],
+      "result": "All opened data paths are fixed owned names, exact aggregate members, tightly matched one-invocation record names or explicit review allowlist entries. Canonical names reject absolute/traversal forms. Actual reading delegates to publisher.read_stable with symlink/hardlink/regular-file/size/stability/UTF8 constraints."
+    },
+    {
+      "scope": "large asset/source/binary scope",
+      "source_lines": [
+        80,
+        84,
+        104,
+        109,
+        171,
+        190,
+        193,
+        215
+      ],
+      "result": "NDJSON/gzip/target/source-tree content is not opened by this module. Large identities remain referenced metadata from the closed aggregate/checker/provenance; no new payload or source-build verification is claimed."
+    },
+    {
+      "scope": "actual accepted Nano and strict policy",
+      "source_lines": [
+        131,
+        190,
+        218,
+        263
+      ],
+      "result": "Requires original strict two-thread/config SHA, standard3/Nat/String/harderror policy, actual zero checker and wrapper exit, full00/01/02 lineage, new10e binary and C34 recorder identities, selected export metadata, worker-resource raw event and PID lineage. Recording completeness alone is insufficient."
+    },
+    {
+      "scope": "retained failures",
+      "source_lines": [
+        266,
+        296,
+        364,
+        398
+      ],
+      "result": "Original D9 stack-overflow -6 and failed checked archive remain negative, preexec4044 requires1exit/no event or Nano records and fixed raw/result/source/outer digests. Mainstack diagnostic negatives are fixed byte-bound copies with explicit no-proof scope."
+    },
+    {
+      "scope": "platform privacy",
+      "source_lines": [
+        31,
+        32,
+        238,
+        251
+      ],
+      "result": "CF field is bound by fixed value SHA; full local worker/raw/input environment contains the value. Public sanitization and residual detection belong to the integrating publisher and require separate reviewed controls. This module does not itself redact or authorize exposing the CF value."
+    },
+    {
+      "scope": "integration API boundary",
+      "source_lines": [
+        299,
+        304,
+        307,
+        416
+      ],
+      "result": "Returns fixed files/classes, closed log bindings and plural omitted_large_assets metadata. Live publisher integration is in progress and was not certified by this review; adapter must exclude failed originalR2 Nano from positive receipt collection and preserve negative log classifications."
+    }
+  ],
+  "actual_acceptance": "No actual active resource retry/final aggregate was read or accepted here. Guard/source ACK does not imply a kernel verdict or publication approval.",
+  "incremental_usd": 0
+}

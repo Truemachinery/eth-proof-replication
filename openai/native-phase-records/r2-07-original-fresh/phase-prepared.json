@@ -1,0 +1,9 @@
+{
+  "schema": "openai-native-phase/1",
+  "phase": "original-fresh",
+  "status": "failed",
+  "record_directory": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh",
+  "started_utc": "2026-11-05T14:51:09.356379+00:00",
+  "accounting": "Native execution, no systemd-managed service. Recorder child_cpu_seconds covers reaped child processes/descendants, including capture and checker wrappers. Do not add nested Nanoda CPU a second time. No RSS measurement is claimed.",
+  "scope": "One explicit phase only; root aggregates all required closed results. Native mode has no Linux isolation."
+}

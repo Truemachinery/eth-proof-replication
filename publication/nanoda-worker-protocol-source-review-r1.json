@@ -1,0 +1,78 @@
+{
+  "schema": "eth-nanoda-worker-resource-protocol-source-review/1",
+  "created_utc": "2026-11-05T15:50:31.371224+00:00",
+  "status": "NO_MATERIAL_BLOCKER_FOR_BOUNDED_ROOT_EXECUTION_AFTER_FRESH_CLOSURE_NOT_PROOF_ACCEPTANCE",
+  "scope": "Same-team read-only full helper1\u2013369 review, complete R5-to-R6 modified-block review, final22a8-to-f540 literal delta review and saved tool evidence audit. No import/control rerun/build/checker/proof execution, large ETH asset read, network or publication by reviewer.",
+  "sources": {
+    "openai/nanoda_worker_stack_retry_r2.py": {
+      "sha256": "59931d7b0d00ba5651322e6a3e1efb9524223334ce74ee767891dd95534557fc",
+      "size_bytes": 24045
+    },
+    "openai/aggregate_native_result_r6.py": {
+      "sha256": "f540073691db650da2edd16888e99cc294891b9855df0e64e044c86e2235bcd0",
+      "size_bytes": 45628
+    }
+  },
+  "supporting_reviews": [
+    {
+      "path": "publication/nanoda-original-preservation-baseline-r1.json",
+      "sha256": "1b4cd1c7b852a47874aa6cf69f96061a3ea70afbff4a74c418058a27c8ea5910"
+    },
+    {
+      "path": "publication/nanoda-worker-probe-saved-review-r1.json",
+      "sha256": "1a7bc0c7cf4595b570849613a8847a4e9adf2bf5f435ec96bf20f87fcbea0a8b"
+    },
+    {
+      "path": "publication/nanoda-worker-build-saved-review-r1.json",
+      "sha256": "976e2cfc0683779831280cc9580b9b9d917c8ccfda4821b2951531b7b3d57247"
+    }
+  ],
+  "source_findings": [
+    {
+      "area": "Explicit resource-only source patch",
+      "finding": "Resource binary10e is distinct from originalD9. Independent29-file audit finds only STACK_SIZE16MiB\u2192256MiB; tc.rs/Cargo.lock/allother28 unchanged. Current compiler/build profile and originalpreservation are bound. No inference/axiom logic patch or external fork acceptance is borrowed."
+    },
+    {
+      "area": "Separate original/new tool identities",
+      "finding": "Helper has explicitRESOURCE_BINARY/RESOURCE_RECORDER/manifest/sourcebuild/probe/control pins. Original failed D9/C34 validator remains separate. R6 nano_phase accepts explicit binary/recorder keyword parameters; no base/global monkeypatch occurs."
+    },
+    {
+      "area": "Actual strict original configuration",
+      "finding": "New attempt retains original2threads, standardthree axioms, harderrors, Nat/String extensions and exact selectedbdbc payload. FinalR6 adds actualnewconfig SHA==actualfailedconfigSHA; saved harmless serializationcontrol confirms acd370 identity."
+    },
+    {
+      "area": "Original-fresh gate and retained negatives",
+      "finding": "Helper requires exactbasec84 inputs, closedselectedexport, originalfailedR2/raw590ccc/outer4013 and successfuloriginalfresh afterfailure beforelaunch. OriginalR2attempt flag remainsFalse, with failure costs and archives retained. Unsupported serial/mainstack proposals remain separate and were not run onETH."
+    },
+    {
+      "area": "Child resource event",
+      "finding": "No setrlimit occurs. Child records two preexec mainlimit snapshots, explicitcompiled requestedworkerstack policy, exactsource/resourceinputs/environment/argv/cwd/PID/group, thenexecs unchangedC34copy. ActualNanoda workerextent is expresslyunmeasured."
+    },
+    {
+      "area": "Fail-closed execution and accepted result",
+      "finding": "Exclusive directories, frozenRecorder, processgroup interruption cleanup and failure receipts remain. Newretry statuspassed requires actualzeroexit checker/wrapper and unchangedinput recording. FinalR6 binds one rawWORKER_RESOURCE event toJSON/PIDrecorddirectory and exactactualbinary/config/export lineage."
+    },
+    {
+      "area": "Final aggregate closure",
+      "finding": "R6 requires sevenoriginalR2successes plus a distinct acceptedresource-retry protocol, not a fakeoriginalR2pass. It validatesactualacceptedgzip bytes/decompression toselectedpayload, globalnonoverlap, failure\u2192fresh\u2192retry\u2192postidentitylast and before/afterinputs. Missing or failedrequiredstages cannot be accepted."
+    },
+    {
+      "area": "Resources and mathematical scope",
+      "finding": "Build/probe/tinycontrol costs are separate and mayoverlapfresh. FailedoriginalstageCPU is countedonce; nestedchecker/outerwrapper costs are notdoublecounted. Comparator4.35embedded replay is distinct fromoriginal4.34.1fresh, RustNanoda is independentimplementation, nativefakeLandrun hasnoOSsandbox. No newtheorem/practicalSAT/miningclaim."
+    }
+  ],
+  "remaining_gates": [
+    "Root must observe actual originalfresh zeroexit before running any fullETH resource retry.",
+    "FullETH resource retry must actually pass; a supportedworkerprobe and tinyInit/malformed controls do not guarantee that outcome.",
+    "Postidentity must run last and finalactualR6aggregation must close successfully before any positive finalreport.",
+    "Held publisher393e/template/finalmap/R8 remain unchanged until the actual outcome and a separately reviewed revised-publication guard.",
+    "Both originalD9failure and unsupportedmainstackdiagnostics must remain visible; newbinary/sourceconstant/resourceprofile must be disclosed."
+  ],
+  "saved_control_scope": "Owner Pythonmetadata controls are source/serialization/refuser checks, not a real retry or aggregate execution. No control rerun by this reviewer.",
+  "review_resources": {
+    "small_source_hash_record_cpu_seconds": 0.00037099999999999633,
+    "small_source_hash_record_wall_seconds": 0.0003719589999999981,
+    "cost_usd": 0,
+    "scope": "Final small source/hash/report bookkeeping only. Prior source reading/model time is not measured by this timer; supporting checksum reviews have separate measurements."
+  }
+}

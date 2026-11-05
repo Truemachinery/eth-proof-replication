@@ -1,0 +1,40 @@
+{
+  "schema": "nanoda-resource-tool-manifest/1",
+  "scope": "Explicit new resource-only worker-stack build; not original binary or original CI reproduction",
+  "binaries": {
+    "nanoda": {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/target/release/nanoda_bin",
+      "sha256": "10e1a4ebdb6fa606ca8d7a60774d8af0655294ab0b19d03a838a5ba746b7c2d9",
+      "size_bytes": 1260088
+    }
+  },
+  "recorder": {
+    "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/record_nanoda.py",
+    "sha256": "c34f36d630d182708937a5280b6eda8d0723fa0ffdd85caf8fc54af17b332f48",
+    "size_bytes": 8494
+  },
+  "source_provenance": {
+    "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source-provenance-r1.json",
+    "sha256": "b73658a2cec0410e1df0a90c446c5f15c0cf3a28875131027972ddece9c71dc7",
+    "size_bytes": 35396
+  },
+  "build_result": {
+    "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/build-result-r1.json",
+    "sha256": "9746cc46746f11d88d5d0f3f5ad1458e05a57627abb90fd6d60c6f42ebef325e",
+    "size_bytes": 8241
+  },
+  "worker_probe_result": {
+    "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/worker-probe-result-r1.json",
+    "sha256": "c2d1e9442e256121dff3f627d3a6db0deb184ec5ca6d9c498dd9910a272c65cd",
+    "size_bytes": 6228
+  },
+  "source_commit": "68d5ca9db226849b41a6fff59d796ff19d0a8840",
+  "source_constant_delta": {
+    "file": "src/lib.rs",
+    "constant": "STACK_SIZE",
+    "before": 16777216,
+    "after": 268435456
+  },
+  "checker_logic_patch": false,
+  "actual_worker_extent_in_nanoda_measured": false
+}

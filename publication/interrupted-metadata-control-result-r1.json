@@ -1,0 +1,33 @@
+{
+  "schema": "eth-interrupted-metadata-controls/1",
+  "status": "passed",
+  "checks": [
+    "correctly labelled closed header still refuses absent seven original phases",
+    "coherently rebound map schema refused",
+    "coherently rebound map expanded_suite_passed refused",
+    "coherently rebound map all_required_native_checks_passed refused",
+    "coherently rebound map original_lean_suite_passed refused",
+    "coherently rebound map original_r2_protocol_passed refused",
+    "coherently rebound map independent_nanoda_acceptance_observed refused",
+    "omitted nullable map field independent_nanoda_accepted refused",
+    "omitted nullable map field checker_exit_code refused",
+    "invented interruption map interrupt_signal refused",
+    "invented interruption map attempt_timed_out refused",
+    "invented interruption map final_attempt_cpu_seconds refused",
+    "coherently rebound result expanded_suite_passed refused",
+    "coherently rebound result all_required_native_checks_passed refused",
+    "coherently rebound result independent_nanoda_acceptance_observed refused",
+    "omitted nullable result field independent_nanoda_accepted refused",
+    "omitted nullable result field checker_exit_code refused",
+    "invented final campaign cost refused",
+    "unclosed negative seal refused",
+    "coherently rebound closure source drift refused",
+    "metadata helper source drift refused",
+    "positive publisher source remains a72"
+  ],
+  "guard_sha256": "e0c2f49aed9006ac82157cad20d913fe41a02e61fd8bc62614bdc279f9cde743",
+  "source_sha256": "82e7763a1b65624c7af01708358f5b75d6b25f9989e38d68d444415450b4edc3",
+  "scope": "Real gate with hash-bound fake headers that must refuse before original phase reads; no actual closure acceptance or proof/kernel/WIP/export work",
+  "cpu_seconds": 0.209916,
+  "wall_seconds": 0.21135500000000002
+}

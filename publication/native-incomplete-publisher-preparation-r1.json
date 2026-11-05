@@ -1,0 +1,213 @@
+{
+  "schema": "eth-native-incomplete-publisher-preparation/1",
+  "created_utc": "2026-11-05T17:22:58.354885+00:00",
+  "status": "prepared-held-for-actual-terminal-postidentity-closure-and-combined-review",
+  "sources": [
+    {
+      "path": "publish_native_incomplete_r1.py",
+      "sha256": "2b093efff7a723dd0bcb5d2aa00a724ab6557de7ca93f3ec45a2ed01a5de9272",
+      "size_bytes": 8003
+    },
+    {
+      "path": "publication/native_incomplete_guard_r1.py",
+      "sha256": "3c3d8696d58d90bead5a85da288b946d5c7bc995a6ede983f5c1fafd07706319",
+      "size_bytes": 26840
+    },
+    {
+      "path": "publication/check_incomplete_publisher_r1.py",
+      "sha256": "4f00ec03c52d3aad653bc8cbf8727e603b82adb744a25b59ea713080c0badce7",
+      "size_bytes": 10436
+    },
+    {
+      "path": "publication/check_incomplete_publisher_r2.py",
+      "sha256": "fec34dc7484b2cd5b3f004637dc2c23409309921cf389df0ec2e53e1ebf417a8",
+      "size_bytes": 10436
+    },
+    {
+      "path": "publication/check_incomplete_metadata_r1.py",
+      "sha256": "1fd9a53a930d539bbea6e7fb7025362a62315f665bcb1e76e4952c72563e1fd5",
+      "size_bytes": 7727
+    },
+    {
+      "path": "publication/publisher-incomplete-wrapper-provisional-023-r1.py",
+      "sha256": "023ef739f1fb842718fa5fd870d6b01c3f592698304c202cec19cbccfa911483",
+      "size_bytes": 7616
+    }
+  ],
+  "controls": [
+    {
+      "path": "publication/incomplete-publisher-control-result-r2.json",
+      "sha256": "77986384f6172663d697f3cfa5b9946e2118b8f1777c4a302d7ae3971a8cad46",
+      "checks": 17,
+      "scope": "Synthetic trusted metadata gate substituted in temporary files; no factual guard validation, real evidence, checker, network or export copy"
+    },
+    {
+      "path": "publication/incomplete-metadata-control-result-r1.json",
+      "sha256": "7ee6d713d4609c557cefc58cdb299fafa5f8e21029e00b8491edfd6a13b66f8d",
+      "checks": 19,
+      "scope": "Real gate with hash-bound fake headers that must refuse before original phase reads; no actual closure acceptance or proof/kernel/WIP/export work"
+    }
+  ],
+  "provisional_control": {
+    "path": "publication/incomplete-publisher-control-result-r1.json",
+    "sha256": "abe12136839cd768070e456c328689851d4165329df84292d1ffc116d0f5189f",
+    "scope": "17adapter fixtures on provisional023wrapper with fakeguardSHA in memory; historical only"
+  },
+  "protected_sources_unchanged": [
+    {
+      "path": "publish_package.py",
+      "sha256": "a72ed2f73b37daaa375ee62c238897ba8e86c7549292bf5e3d6f1412fcc8675c",
+      "size_bytes": 68428,
+      "role": "read_only_source"
+    },
+    {
+      "path": "publication/native_worker_guard_r1.py",
+      "sha256": "68d3ef6d9e0c3d4ae436b2901f4ac483cfa49a5f65982ca07d7e56ea7a21c726",
+      "size_bytes": 31183,
+      "role": "read_only_source"
+    },
+    {
+      "path": "PUBLIC_README_TEMPLATE.md",
+      "sha256": "d83dd582e079d497ad4aa2018e3a70de8aeeadbae2afb90c640255695b0592bb",
+      "size_bytes": 16896,
+      "role": "read_only_source"
+    },
+    {
+      "path": "SUBMISSION.md",
+      "sha256": "2ced18c301575fcd150758f99494001c422898a9811dee23983de3ff6dee98db",
+      "size_bytes": 16808,
+      "role": "read_only_source"
+    }
+  ],
+  "current_ci_unchanged_against_public_r7": [
+    {
+      "path": "ci/README.md",
+      "sha256": "39787e0e4b5a5e96f5835fbc9b485f2df7e6d6e84874c5ec61cc68f6b8868409"
+    },
+    {
+      "path": "ci/ancestor-cache-compatibility.json",
+      "sha256": "247130dc03d737b2ab46ec0898cb5d3438b3faa8b2618dc9b04495ccef5cdd40"
+    },
+    {
+      "path": "ci/cache_maintenance.py",
+      "sha256": "1f43bb2c4fa70afb0e999e5a7675987dbf46654672ba340f1f739045eb08e82d"
+    },
+    {
+      "path": "ci/check_bc_control.py",
+      "sha256": "192dae99efa59b41db476f891b3e398fc5cc63fab4236474763846167c63cf76"
+    },
+    {
+      "path": "ci/check_controls.py",
+      "sha256": "2ebe619f909dd48cfebabf857ade809b5e8f082b443d01689d99a89f0213023a"
+    },
+    {
+      "path": "ci/check_display_control.py",
+      "sha256": "cbd5851a36d38e0ad5350eea64d7894d8b7708f618e1ca4210afbe46fc9f383b"
+    },
+    {
+      "path": "ci/check_landlock_policy_control.py",
+      "sha256": "d2471fa5e1424ef1758aa095318a1a81e07f46c1ef41525c507c803b4fcdc128"
+    },
+    {
+      "path": "ci/check_setup_omission_control.py",
+      "sha256": "4789ebe8874af41ac2d568403d85060b2a81f361ce3e27697b2f864a2deb8beb"
+    },
+    {
+      "path": "ci/check_stage_name_control.py",
+      "sha256": "749d1fb3f109f7c3878cf2b4dd3c543db3c173828af17b54756fed07413f2571"
+    },
+    {
+      "path": "ci/compiler_gate.c",
+      "sha256": "96947ead6565aa2d75b93c09e8bdccba31bc6558517db5df915368efc123dfb3"
+    },
+    {
+      "path": "ci/control-result-bc-r2.json",
+      "sha256": "71f34ef370ad5dd25b28f443960b37485c5a2f74a7a62b22345f38b31a15ba3b"
+    },
+    {
+      "path": "ci/control-result-display-r3.json",
+      "sha256": "3e32a5e560e0e993a44738ea7eb8c69a73c68d229eaefd9c38c42f996e0ab327"
+    },
+    {
+      "path": "ci/control-result-landlock-policy-r4.json",
+      "sha256": "868caed022e577c87af606a083497b658f495ad026ddbe176f27c11c334d8764"
+    },
+    {
+      "path": "ci/control-result-r2.json",
+      "sha256": "be559a9f05600526547067307a10fddc94e465b5cf388c127eb614e64c36794b"
+    },
+    {
+      "path": "ci/control-result-setup-omission-r3.json",
+      "sha256": "60560b19a484638d8cda6ce08e41be3af8ee5b1a30e7d25a055e8d2722629b6b"
+    },
+    {
+      "path": "ci/control-result-stage-names-r3.json",
+      "sha256": "b476322adfed7729b2b799e0044f042b0825678a40b685c2679d831af4dd60c3"
+    },
+    {
+      "path": "ci/control-result.json",
+      "sha256": "033bd03cc7f33daa0a7ac65413ff999beb8b81dc9c6f221a239b8c35be383aff"
+    },
+    {
+      "path": "ci/create_gate.py",
+      "sha256": "c5af28dc306d384062ee53dbb34402ab895f82320fa2df015e0f09752959909a"
+    },
+    {
+      "path": "ci/landlock_abi.py",
+      "sha256": "d0853c1a67adcec4bbe22d1c44dc835f448b80eebe6502a32450faa59e17e0b0"
+    },
+    {
+      "path": "ci/owned_cache.py",
+      "sha256": "cc765ac2b127eeb171afa43f40d1ad15e435c94c14dedd070a647a5ecdb32431"
+    },
+    {
+      "path": "ci/pins.json",
+      "sha256": "e0b9f4d376b26247120dc97cee64595ea91b69fad24d5218e811d435a2910a0a"
+    },
+    {
+      "path": "ci/prepare_openai.py",
+      "sha256": "5c8830653d328d50dcf3c0cae1488a199ab9c9a4249bbcc3a06f6fd598369f6c"
+    },
+    {
+      "path": "ci/record.py",
+      "sha256": "753330742a44e50bd48ed4a0cd6b55b5998938475e7cb463c56e4e65979075f6"
+    },
+    {
+      "path": "ci/replicate.py",
+      "sha256": "791007e37c684caa0001f0f34af40c81b2ebce84c854303fe5a7d448f429417f"
+    },
+    {
+      "path": "ci/workflow-template.yml",
+      "sha256": "33c8581f513743184a8c198778e015613e39533a24f7047ac340506a746a0412"
+    }
+  ],
+  "final_pin_delta": {
+    "path": "publication/incomplete-publisher-final-pin-delta-r1.diff.txt",
+    "sha256": "5d4d9ef79cbd298928df10822f2d774e9fe16a6bef3d610d4f74686ed650a9b2"
+  },
+  "measured_checkpoint_runs": {
+    "ids": [
+      4085,
+      4089
+    ],
+    "cpu_seconds_sum": 0.887582,
+    "wall_seconds_sum": 0.947401,
+    "scope": "Two small fixture commands only; source author/reviewer work and idle waiting not claimed as compute."
+  },
+  "inventory_preflight_correction": "First handoff assertion selected all ci/ historical log/report entries rather than exact25CI classes; no outputs written. Corrected to prior exact25 source/manifest row set, all hashes match. This was reporting-preflight only, no source/control change.",
+  "actual_negative_directory_or_map_created": false,
+  "actual_export_created": false,
+  "proof_aggregator_or_checker_executed": false,
+  "wip_evidence_read": false,
+  "large_proof_assets_read": false,
+  "network_or_paid_compute_used": false,
+  "private_email_or_CF_value_persisted": false,
+  "publication_route": "Thin explicit separate CLI and privatea72module-instance metadata adapter; positive standalone CLI and68 guard source unchanged",
+  "metadata_trust_boundary": "Root actual terminal/postidentity/97dclosure+combinedsavedreview and fixed finalmap required. This is publication consistency, not another kernel or complete closure verifier.",
+  "peer_review": {
+    "path": "publication/native-incomplete-publisher-source-review-claims-r1.json",
+    "sha256": "35f9d496ade9eb0bdade1bd44f3c99f612813f5ae497f09fc48cfefa81d486f3",
+    "scope": "Same-team read-only source and saved-control review; no independent kernel execution"
+  },
+  "root_source_ack": "Root supplied after full finalwrapper2b and57ea-to3c delta read, pending this handoff; no real map/export/campaign gate execution by root inferred."
+}

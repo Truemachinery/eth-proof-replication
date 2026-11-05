@@ -1,0 +1,88 @@
+{
+  "schema": "openai-native-phase/1",
+  "phase": "audit",
+  "status": "passed",
+  "record_directory": "<REPLICATION_ROOT>/openai/native-phase-records/r2-03-audit",
+  "started_utc": "2026-11-05T14:24:28.224177+00:00",
+  "accounting": "Native execution, no systemd-managed service. Recorder child_cpu_seconds covers reaped child processes/descendants, including capture and checker wrappers. Do not add nested Nanoda CPU a second time. No RSS measurement is claimed.",
+  "scope": "One explicit phase only; root aggregates all required closed results. Native mode has no Linux isolation.",
+  "input_fingerprint": "c84c8907998f23cc282a29ae7fef4a37cbaff735327096e748afe546af8c4f52",
+  "audit_events": [
+    {
+      "event": "environment",
+      "initializer_execution_enabled": false,
+      "load_extensions": false,
+      "load_level": "private",
+      "module": "OAI.Algorithms.SubexponentialSAT.Main",
+      "permitted_axioms": [
+        "propext",
+        "Quot.sound",
+        "Classical.choice"
+      ],
+      "schema": "eth-target-axiom-audit/1",
+      "standard_axiom_signature_check": true
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "disallowed_axioms": [],
+      "event": "target",
+      "module": "OAI.Algorithms.SubexponentialSAT.Main",
+      "passed": true,
+      "schema": "eth-target-axiom-audit/1",
+      "target": "OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.exact_count_and_sat",
+      "visited_constants": 94277
+    },
+    {
+      "event": "complete",
+      "module": "OAI.Algorithms.SubexponentialSAT.Main",
+      "passed": true,
+      "schema": "eth-target-axiom-audit/1",
+      "scope": "named-theorem transitive axiom audit; no statement comparison or kernel replay",
+      "targets_checked": 1
+    }
+  ],
+  "stage_finished": {
+    "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-03-audit/stages/audit/finished.json",
+    "sha256": "d2ff700a5718ca60dfaa3d16a091aa62e8ebbbf2d6b9c9a479e974750cf41f1f",
+    "size_bytes": 1075
+  },
+  "phase_inputs": {
+    "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-03-audit/phase-inputs.json",
+    "sha256": "25ce70522aff0474946fd0181ea7d7c8402af9a9c332e65de2fc4f09fe201eae",
+    "size_bytes": 11298
+  },
+  "finished_utc": "2026-11-05T14:25:28.548458+00:00",
+  "interrupt_signal": null,
+  "stage_receipts": [
+    {
+      "schema": "eth-ci-stage/1",
+      "name": "audit",
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "<REPLICATION_ROOT>/openai/in_workspace.py",
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "<REPLICATION_ROOT>/verification/AuditTargets.lean",
+        "OAI.Algorithms.SubexponentialSAT.Main",
+        "OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.exact_count_and_sat"
+      ],
+      "cwd": "<REPLICATION_ROOT>/openai/workspace",
+      "started_utc_epoch": 1793888668.4106271,
+      "timeout_seconds": 1800,
+      "stdout_is_export": false,
+      "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.",
+      "exit_code": 0,
+      "reason": null,
+      "wall_seconds": 60.13630175590515,
+      "child_cpu_seconds": 18.45197,
+      "raw_log_sha256": "c14d4f2dc08739438f3286ce754462a2f1caa307601dbdebb5fb53883bb4b0c4",
+      "raw_log_bytes": 821
+    }
+  ]
+}

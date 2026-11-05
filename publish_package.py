@@ -16,18 +16,40 @@ import argparse
 import ast
 import datetime
 import hashlib
+import importlib.util
 import json
 import os
 import re
 import stat
 import tempfile
+from types import SimpleNamespace
 BASE = Path(__file__).resolve().parent
 SCHEMA = 'eth-public-export/1'
 MAX_FILE = 16 * 1024 * 1024
 MAX_TOTAL = 128 * 1024 * 1024
+NAMED_PATCHES = {'verification-tools-worker-stack256/resource-only.patch'}
+NAMED_RUST_SOURCES = {'verification-tools-worker-stack256/worker_probe_r1.rs'}
+CLOSED_TOOL_LOGS = {'verification-tools-worker-stack256/build-r1.raw.log'}
+PRIVATE_SDK_KEY = '__CF_USER_TEXT_ENCODING'
+PRIVATE_SDK_VALUE_SHA256 = 'bfea86ae0b123713ac5b1af20b2dd4ead4f0bb81822ed654e80347e6fa420f3b'
+NATIVE_PHASES = ('pre-identity', 'trace', 'audit', 'comparator', 'selected-export', 'extra-nanoda', 'original-fresh', 'post-identity')
+NATIVE_DIRS = {name: 'openai/native-phase-records/r2-' + str(i).zfill(2) + '-' + name for (i, name) in enumerate(NATIVE_PHASES, 1)}
+NATIVE_RESULTS = {folder + '/phase-result.json': name for (name, folder) in NATIVE_DIRS.items()}
+NATIVE_LOGS = {folder + '/stages/' + name + '/raw.log' for (name, folder) in NATIVE_DIRS.items()}
+NATIVE_RETRY_DIR = 'openai/native-retry-records/worker-stack256-r3-02'
+NATIVE_RETRY_RESULT = NATIVE_RETRY_DIR + '/retry-result.json'
+NATIVE_LOGS |= {folder + '/stages/worker-stack256-nanoda/raw.log' for folder in (NATIVE_RETRY_DIR, 'openai/native-retry-records/worker-stack256-r2-01')}
+NATIVE_POSITIVE_RESULTS = set(NATIVE_RESULTS) - {NATIVE_DIRS['extra-nanoda'] + '/phase-result.json'} | {NATIVE_RETRY_RESULT}
+NATIVE_WORKER_GUARD = 'publication/native_worker_guard_r1.py'
+NATIVE_WORKER_GUARD_SHA = '68d3ef6d9e0c3d4ae436b2901f4ac483cfa49a5f65982ca07d7e56ea7a21c726'
+NATIVE_AGGREGATE = 'openai/native-aggregate-records/final-r1'
+NATIVE_AGGREGATOR = 'openai/aggregate_native_result_r4.py'
+NATIVE_AGGREGATOR_SHA = 'a4d5e8bffd81a7100121c01e7ee2fa40ca94d595a8e524624ce1774457f29341'
+NATIVE_AGGREGATE_FILES = {'aggregation-prepared.json', 'native-replication-result.json', 'native-replication-artifacts.json', 'report.md', 'aggregation-finished.json'}
+NATIVE_REVIEWS = {'openai/native-saved-evidence-review-part1-r1.json', 'openai/native-saved-evidence-review-part1-r1.md', 'openai/native-saved-evidence-review-r1.json', 'openai/native-saved-evidence-review-r1.md', 'openai/native-replication-report-r1.md'}
 WORKFLOW_LOGS = {'ci/runs/41894905159/anthropic-job-126801716984.raw.log': 'ci/runs/41894905159/anthropic-job-download-r1.json', 'linux-runs/41894905159/openai-job-126801717400.raw.log': 'linux-runs/41894905159/openai-job-126801717400-download-r1.json', 'linux-runs/41911047958/anthropic-job-126858374463.raw.log': 'linux-runs/41911047958/anthropic-job-126858374463-download-r1.json'}
 WORKFLOW_LOG_RULES = {'ci/runs/41894905159/anthropic-job-126801716984.raw.log': {'receipt_sha256': 'a69c0d7622572682f86fd831212311ad41f3b4e5ec9914c382b93dca3d0e67b9', 'raw_sha256': '96b5a97a88747174e013598c24e73eba3c2f1e2943e112f5f80ade7a44cf0574', 'raw_bytes': 241386, 'schema': 'eth-ci-job-log-download/1', 'run_id': 41894905159, 'job_id': 126801716984}, 'linux-runs/41894905159/openai-job-126801717400.raw.log': {'receipt_sha256': '2c9de374a67794693bc021d5df8ca42c4a6e8fa41abba3247fb278f7c8ba832e', 'raw_sha256': 'c5b6d74be5996d77cd7cb7e421d88dde529793f4d9849772f99bdd69f5ae4bac', 'raw_bytes': 513886, 'schema': 'github-terminal-log-download/1', 'run_id': 41894905159, 'job_id': 126801717400}, 'linux-runs/41911047958/anthropic-job-126858374463.raw.log': {'receipt_sha256': '4d735ba29ac53e8b60cee252882ba1c1d9e7eb964f2850eb79166dc094eb7e1d', 'raw_sha256': 'cf44010f02577d29ffdf40f9288f97c98038bdc84bcd68dc0c8f6e539e228db5', 'raw_bytes': 154647, 'schema': 'github-terminal-log-download/1', 'run_id': 41911047958, 'job_id': 126858374463}}
-EXTENSIONS = {'.md', '.json', '.txt', '.py', '.lean', '.c', '.toml', '.yml', '.log'}
+EXTENSIONS = {'.md', '.json', '.txt', '.py', '.lean', '.c', '.toml', '.yml', '.log', '.patch', '.rs'}
 CI_SOURCES = {'ci/workflow-template.yml', 'ci/record.py', 'ci/replicate.py', 'ci/prepare_openai.py', 'ci/compiler_gate.c', 'ci/create_gate.py', 'ci/check_controls.py', 'ci/check_bc_control.py', 'ci/check_stage_name_control.py', 'ci/check_setup_omission_control.py', 'ci/check_display_control.py', 'ci/landlock_abi.py', 'ci/check_landlock_policy_control.py', 'ci/owned_cache.py', 'ci/cache_maintenance.py'}
 CI_REQUIRED = CI_SOURCES | {'ci/README.md', 'ci/pins.json', 'ci/ancestor-cache-compatibility.json'}
 CI_ALL = CI_REQUIRED | {'ci/control-result.json', 'ci/control-result-r2.json', 'ci/control-result-bc-r2.json', 'ci/control-result-stage-names-r3.json', 'ci/control-result-setup-omission-r3.json', 'ci/control-result-display-r3.json', 'ci/control-result-landlock-policy-r4.json'}
@@ -35,13 +57,15 @@ REPORTS = {'PLAN.md', 'STATEMENT_REVIEW.md', 'SHA256D_RELEVANCE.md', 'VERIFICATI
 SOURCES = CI_SOURCES | {'publish_package.py', 'openai/prepare.py', 'openai/in_workspace.py', 'openai/build_ready.py', 'openai/run_gated_build.py', 'anthropic/stage.py', 'anthropic/build_topological.py', 'anthropic/verify_source_identity.py', 'verification/AuditTargets.lean', 'verification/check_trusted_probe.py', 'verification/run_scheduler_smoke.py', 'verification/compiler-gate/create_gate.py', 'verification/compiler-gate/lean_gate.c', 'verification/compiler-gate/check_gate.py', 'verification/compiler-gate/check_lake_parallel_r2.py', 'verification-tools/tool_audit.py', 'verification-tools/runtime_identity.py', 'verification-tools/record_nanoda.py', 'verification-tools/probe_record_nanoda.py', 'verification/export_sysroot_control_r1.py', 'verification/ancestor_cache_control_r1.py', 'verification/cache_policy_control_r2.py', 'verification/cache_policy_control_r3.py'}
 MANIFESTS = {'openai/source-manifest.json', 'openai/workspace-config-r2.json', 'openai/external-dependencies-ready.json', 'openai/compiler-gate-r1/manifest.json', 'anthropic/source-manifest.json', 'anthropic/dependency-provenance.json', 'anthropic/build-graph.json', 'anthropic/lexical-source-scan.json', 'anthropic/comparator-ci-tool-manifest-r1.json', 'anthropic/ci-cache-review-r2.json', 'anthropic/ci-cache-review-r3.json', 'anthropic/ci-cache-review-r4.json', 'anthropic/landrun-abi8-source-review-r1.json', 'anthropic/basic-model-scope-r1.json', 'anthropic/build-completion-artifacts-r1.json', 'anthropic/native-replication-result-r1.json', 'anthropic/native-replication-artifacts-r1.json', 'anthropic/native-saved-input-review-r1.json', 'anthropic/native-saved-evidence-review-r1.json', 'anthropic/checker-records/nanoda-64425-0dvr445m/00-prepared.json', 'anthropic/checker-records/nanoda-64425-0dvr445m/01-started.json', 'anthropic/checker-records/nanoda-64425-0dvr445m/effective-config.json', 'verification-tools/tool-manifest-r1.json', 'verification-tools/compiler-identities.json', 'verification-tools/runtime-identities.json', 'verification-tools/recording-manifest-r1.json', 'verification-tools/recorder-probe-r1/probe-results.json', 'verification/trusted-probe-controls-r1.json', 'verification/scheduler-smoke/result.json', 'verification/compiler-gate/controls/result.json', 'verification/compiler-gate/lake-parallel-r2/result.json', 'publication/export-control-r2.json', 'publication/export-control-r3.json', 'publication/export-control-r4.json', 'publication/export-control-r5.json', 'ci/pins.json', 'ci/control-result.json', 'ci/control-result-r2.json', 'ci/control-result-bc-r2.json', 'ci/ancestor-cache-compatibility.json', 'ci/control-result-stage-names-r3.json', 'ci/runs/41888029999/raw-log-manifest.json', 'ci/control-result-setup-omission-r3.json', 'ci/control-result-display-r3.json', 'ci/control-result-landlock-policy-r4.json', 'PUBLICATION_RECEIPT-r1.json', 'PUBLICATION_RECEIPT-r2.json', 'PUBLICATION_RECEIPT-r3.json', 'PUBLICATION_RECEIPT-r4.json', 'ci/runs/41894905159/anthropic-job-download-r1.json', 'ci/runs/41894905159/anthropic-job-summary-r1.json', 'ci/runs/41894905159/anthropic-saved-log-review-r1.json', 'anthropic/ancestor-cache-review-r1.json', 'verification/ancestor-cache-actual-implementation-review-r1.json', 'verification/ancestor-cache-actual-implementation-review-r2.json', 'verification/export-sysroot-control-result-r1.json', 'verification/ancestor-cache-control-result-r1.json', 'verification/cache-policy-control-result-r2.json', 'verification/cache-policy-control-result-r3.json', 'verification/r6-input-identities-r1.json', 'publication/export-control-r6.json'}
 REPORTS |= {'linux-runs/41894905159/DIAGNOSIS-R4-OPENAI.md', 'linux-runs/41894905159/openai-saved-log-review-r1.md', 'linux-runs/41911047958/DIAGNOSIS-R6-ANTHROPIC.md', 'linux-runs/41911047958/SCOPE-ADDENDUM-r1.md', 'linux-runs/41911047958/anthropic-saved-log-review-r1.md', 'verification/CI_REPAIR_CANDIDATE_R7.md', 'verification/record-r7-independent-review-r1.md', 'openai/native-phase-launcher-review-r1.md', 'openai/native-phase-runbook-r2.md', 'openai/native-recorder-decoupling-r1.md'}
-SOURCES |= {'linux-runs/41894905159/parse_completed_log_r1.py', 'linux-runs/41911047958/parse_completed_log_r1.py', 'verification/check_record_r7_r1.py', 'verification/check_cache_policy_r7_r1.py', 'verification/check_r7_driver_workflow_r1.py', 'verification/cache_policy_control_r7_r1.py', 'verification/ancestor_cache_control_r7_r1.py', 'verification/record_chunked_export_candidate_r1.py', 'verification/check_chunked_export_candidate_r1.py', 'openai/verify_native_phase_r2.py', 'openai/native-recorder-r1/record.py', 'openai/native_export_capture_r2.py', 'openai/verify_source_identity_r3.py'}
-MANIFESTS |= {'PUBLICATION_RECEIPT-r5.json', 'publication/export-control-r7.json', 'linux-runs/41894905159/openai-job-126801717400-download-r1.json', 'linux-runs/41894905159/openai-job-summary-r1.json', 'linux-runs/41894905159/openai-saved-log-review-r1.json', 'linux-runs/41894905159/workflow-41894905159-download-r1.json', 'linux-runs/41894905159/workflow-log-members-r1.json', 'linux-runs/41911047958/anthropic-job-126858374463-download-r1.json', 'linux-runs/41911047958/anthropic-job-summary-r1.json', 'linux-runs/41911047958/anthropic-saved-log-review-r1.json', 'linux-runs/41911047958/workflow-41911047958-download-r1.json', 'linux-runs/41911047958/workflow-log-members-r1.json', 'verification/ci-repair-candidate-r7-baseline.json', 'verification/ci-repair-candidate-r7-inputs-r1.json', 'verification/ci-repair-candidate-r7-handoff-r1.json', 'verification/ci-repair-r7-apply-r1.json', 'verification/record-r7-control-result-r1.json', 'verification/record-r7-independent-review-r1.json', 'verification/cache-policy-r7-control-result-r1.json', 'verification/cache-policy-r7-handoff-r1.json', 'verification/r7-driver-resource-control-result-r1.json', 'verification/cache-policy-control-result-r7-r1.json', 'verification/ancestor-cache-control-result-r7-r1.json', 'verification/r7-driver-cache-source-review-r1.json', 'verification/export-line-count-r1.json', 'verification/record-chunked-export-candidate-r1.json', 'verification/chunked-export-candidate-control-result-r1.json', 'openai/native-phase-launcher-review-r1.json', 'openai/native-recorder-decoupling-r1.json', 'openai/identity_expectations_r1.json', 'openai/native_identity_provenance_r1.json', 'openai/logs/memory-pressure-suspension-r2-prepared.json', 'openai/logs/memory-pressure-suspension-r2.json', 'openai/logs/memory-pressure-resumption-r3.json'}
+SOURCES |= {'publication/native_worker_guard_r1.py', 'publication/check_sdk_redaction_r1.py', 'publication/check_sdk_redaction_r2.py', 'publication/check_worker_publication_guards_r1.py', 'publication/check_worker_adapter_r1.py', 'publication/check_worker_adapter_r2.py', 'publication/check_worker_publication_guards_r2.py', 'publication/check_sdk_redaction_r3.py', 'publication/publisher-worker-candidate-450f-r1.py', 'publication/publisher-native-guards-held-r1.py', 'openai/nanoda_serial_stack_retry_r1.py', 'openai/aggregate_native_result_r5.py', 'openai/nanoda_worker_stack_retry_r2.py', 'openai/nanoda_worker_stack_retry_r3.py', 'openai/aggregate_native_result_r6.py', 'openai/aggregate_native_result_r7.py', 'verification-tools-worker-stack256/record_nanoda.py', 'verification-tools-worker-stack256/worker_probe_r1.rs', 'openai/aggregate_native_result_r4.py', 'publication/check_final_native_guards_r1.py', 'publication/check_final_native_guards_r2.py', 'publication/check_final_native_guards_r3.py', 'linux-runs/41894905159/parse_completed_log_r1.py', 'linux-runs/41911047958/parse_completed_log_r1.py', 'verification/check_record_r7_r1.py', 'verification/check_cache_policy_r7_r1.py', 'verification/check_r7_driver_workflow_r1.py', 'verification/cache_policy_control_r7_r1.py', 'verification/ancestor_cache_control_r7_r1.py', 'verification/record_chunked_export_candidate_r1.py', 'verification/check_chunked_export_candidate_r1.py', 'openai/verify_native_phase_r2.py', 'openai/native-recorder-r1/record.py', 'openai/native_export_capture_r2.py', 'openai/verify_source_identity_r3.py'}
+MANIFESTS |= {'PUBLICATION_RECEIPT-r6.json', 'publication/remote-audit-r7/transport-timing-addendum-r1.json', 'publication/sdk-redaction-control-result-r1.json', 'publication/sdk-redaction-control-result-r2.json', 'publication/worker-publication-control-result-r1.json', 'publication/worker-adapter-control-result-r1.json', 'publication/worker-adapter-control-result-r2.json', 'publication/worker-publication-control-result-r2.json', 'publication/sdk-redaction-control-result-r3.json', 'publication/native-worker-guard-source-review-claims-r1.json', 'publication/cf-redaction-source-review-claims-r1.json', 'publication/held-publisher-source-snapshot-r1.json', 'publication/final-native-publisher-source-review-r1.json', 'publication/nanoda-original-preservation-baseline-r1.json', 'publication/nanoda-worker-probe-saved-review-r1.json', 'publication/nanoda-worker-build-saved-review-r1.json', 'publication/nanoda-worker-protocol-source-review-r1.json', 'publication/native-nanoda-failure-saved-review-r1.json', 'publication/native-nanoda-retry-helper-source-review-r1.json', 'publication/native-nanoda-mixed-protocol-source-review-r1.json', 'publication/native-nanoda-retry-platform-addendum-r1.json', 'verification-tools-worker-stack256/source-provenance-r1.json', 'verification-tools-worker-stack256/build-result-r1.json', 'verification-tools-worker-stack256/tool-manifest-r1.json', 'verification-tools-worker-stack256/worker-probe-result-r1.json', 'verification-tools-worker-stack256/tiny-controls-r1/control-result-r1.json', 'verification-tools-worker-stack256/python-metadata-control-r1.json', 'verification-tools-worker-stack256/python-metadata-control-r2.json', 'verification-tools-worker-stack256/cf-environment-control-r1/control-result-r1.json', 'verification-tools-worker-stack256/python-child-environment-probe-r1.json', 'verification-tools-worker-stack256/worker-stack256-preparation-handoff-r1.json', 'publication/nanoda-worker-build-root-review-r1.json', 'verification-tools-worker-stack256/resource-only.patch', 'submission-route-recheck-20261105-r1.json', 'publication/final-native-guard-control-result-r1.json', 'publication/final-native-guard-control-result-r2.json', 'publication/final-native-guard-control-result-r3.json', 'PUBLICATION_RECEIPT-r5.json', 'publication/export-control-r7.json', 'linux-runs/41894905159/openai-job-126801717400-download-r1.json', 'linux-runs/41894905159/openai-job-summary-r1.json', 'linux-runs/41894905159/openai-saved-log-review-r1.json', 'linux-runs/41894905159/workflow-41894905159-download-r1.json', 'linux-runs/41894905159/workflow-log-members-r1.json', 'linux-runs/41911047958/anthropic-job-126858374463-download-r1.json', 'linux-runs/41911047958/anthropic-job-summary-r1.json', 'linux-runs/41911047958/anthropic-saved-log-review-r1.json', 'linux-runs/41911047958/workflow-41911047958-download-r1.json', 'linux-runs/41911047958/workflow-log-members-r1.json', 'verification/ci-repair-candidate-r7-baseline.json', 'verification/ci-repair-candidate-r7-inputs-r1.json', 'verification/ci-repair-candidate-r7-handoff-r1.json', 'verification/ci-repair-r7-apply-r1.json', 'verification/record-r7-control-result-r1.json', 'verification/record-r7-independent-review-r1.json', 'verification/cache-policy-r7-control-result-r1.json', 'verification/cache-policy-r7-handoff-r1.json', 'verification/r7-driver-resource-control-result-r1.json', 'verification/cache-policy-control-result-r7-r1.json', 'verification/ancestor-cache-control-result-r7-r1.json', 'verification/r7-driver-cache-source-review-r1.json', 'verification/export-line-count-r1.json', 'verification/record-chunked-export-candidate-r1.json', 'verification/chunked-export-candidate-control-result-r1.json', 'openai/native-phase-launcher-review-r1.json', 'openai/native-recorder-decoupling-r1.json', 'openai/identity_expectations_r1.json', 'openai/native_identity_provenance_r1.json', 'openai/logs/memory-pressure-suspension-r2-prepared.json', 'openai/logs/memory-pressure-suspension-r2.json', 'openai/logs/memory-pressure-resumption-r3.json'}
 STAGING_PREFIX = 'verification/ci-repair-candidate-r7/'
 STAGING_WORKFLOW = STAGING_PREFIX + '.github/workflows/replicate.yml'
 STAGING_INPUTS = {STAGING_PREFIX + name for name in CI_ALL if name != 'ci/workflow-template.yml'} | {STAGING_WORKFLOW}
 SOURCES |= {STAGING_PREFIX + name for name in CI_SOURCES if name != 'ci/workflow-template.yml'} | {STAGING_WORKFLOW}
 REPORTS |= {STAGING_PREFIX + 'ci/README.md', 'verification/r7-live-apply-and-native-readiness-review-r1.md'}
+REPORTS |= {'publication/final-native-package-preparation-r1.md'}
+REPORTS |= {'publication/final-native-package-preparation-addendum-r2.md', 'publication/final-native-publisher-source-review-r1.md', 'publication/native-nanoda-failure-saved-review-r1.md', 'publication/native-nanoda-mixed-protocol-source-review-r1.md', 'publication/nanoda-worker-protocol-source-review-r1.md', 'verification-tools-worker-stack256/worker-stack256-preparation-handoff-r1.md', 'openai/nanoda-worker-stack256-runbook-r1.md', 'submission-route-recheck-20261105-r1.md'}
 MANIFESTS |= STAGING_INPUTS - SOURCES - REPORTS
 MANIFESTS |= {'verification/r7-live-apply-and-native-readiness-review-r1.json'}
 DENIED_PARTS = {'source', 'workspace', 'elan', 'cache', 'cargo', 'rustup', 'tools', '.git', '.lake', 'comparator-source', 'nanoda-source', 'lean4export-433-source', 'lean4export-434-source'}
@@ -77,7 +101,11 @@ def relative_path(name):
         raise ValueError('excluded input class')
     if p.suffix not in EXTENSIONS:
         raise ValueError('unapproved extension')
-    if p.suffix == '.log' and p.as_posix() not in WORKFLOW_LOGS:
+    if p.suffix == '.patch' and p.as_posix() not in NAMED_PATCHES:
+        raise ValueError('patch is not explicitly named')
+    if p.suffix == '.rs' and p.as_posix() not in NAMED_RUST_SOURCES:
+        raise ValueError('Rust source is not explicitly named')
+    if p.suffix == '.log' and p.as_posix() not in WORKFLOW_LOGS and (p.as_posix() not in NATIVE_LOGS) and (p.as_posix() not in CLOSED_TOOL_LOGS):
         raise ValueError('workflow log is not explicitly named')
     if any((pattern.search(name.encode()) for pattern in [EMAIL, UUID, TOKEN])):
         raise ValueError('sensitive identifier in filename')
@@ -117,6 +145,14 @@ def log_relative(base, receipt_name, value):
     return name
 
 def completed_receipt(base, name):
+    if name == NATIVE_RETRY_RESULT:
+        bundle = native_worker_module().native_retry_bundle(base, name, native_publisher_api())
+        raw_name = NATIVE_RETRY_DIR + '/stages/worker-stack256-nanoda/raw.log'
+        binding = bundle['closed_log_bindings'][raw_name]
+        return ({**bundle['result'], 'exit_code': 0, 'timed_out': False}, [(raw_name, binding['raw_log_sha256'], binding['raw_log_bytes'])])
+    if name in NATIVE_RESULTS:
+        bundle = native_phase_bundle(base, name)
+        return ({**bundle['result'], 'exit_code': 0, 'timed_out': False}, [bundle['raw']])
     if not (RECEIPT_RE.fullmatch(name) or RECORD_RE.fullmatch(name)):
         raise ValueError('receipt path is outside the fixed receipt classes')
     d = json.loads(read_stable(base, name))
@@ -139,6 +175,169 @@ def closed_times(start, finish):
         return a.tzinfo is not None and b.tzinfo is not None and (b >= a)
     except (AttributeError, TypeError, ValueError):
         return False
+
+def native_bound(base, row, name):
+    """Check a small exact reference; never read an NDJSON/gzip proof asset."""
+    data = read_stable(base, name)
+    if not isinstance(row, dict) or row.get('path') != str((base / name).resolve()) or row.get('sha256') != sha(data) or (type(row.get('size_bytes')) is not int) or (row['size_bytes'] != len(data)):
+        raise ValueError('native small artifact reference differs: ' + name)
+    return data
+
+def native_phase_bundle(base, name):
+    phase = NATIVE_RESULTS[name]
+    folder = NATIVE_DIRS[phase]
+    result = json.loads(read_stable(base, name))
+    if result.get('schema') != 'openai-native-phase/1' or result.get('phase') != phase or result.get('status') != 'passed' or (result.get('interrupt_signal') is not None) or (result.get('record_directory') != str((base / folder).resolve())) or (not closed_times(result.get('started_utc'), result.get('finished_utc'))):
+        raise ValueError('native phase is not a closed successful result')
+    prepared_name = folder + '/phase-prepared.json'
+    prepared = json.loads(read_stable(base, prepared_name))
+    if prepared.get('schema') != result['schema'] or prepared.get('phase') != phase or prepared.get('record_directory') != result['record_directory'] or (prepared.get('started_utc') != result['started_utc']):
+        raise ValueError('native phase preparation differs')
+    input_name = folder + '/phase-inputs.json'
+    inputs = json.loads(native_bound(base, result['phase_inputs'], input_name))
+    fingerprint = sha(json.dumps(inputs['selected_inputs'], sort_keys=True, separators=(',', ':')).encode())
+    if inputs.get('phase') != phase or inputs.get('input_fingerprint') != fingerprint or result.get('input_fingerprint') != fingerprint or (inputs['selected_inputs'].get('launcher', {}).get('sha256') != 'fe3b12c0b8312a6b0cdb5ec1c6d88933cbff796bc92e9403682735d25348c19c'):
+        raise ValueError('native selected-input fingerprint/launcher differs')
+    stage = folder + '/stages/' + phase
+    finished_name = stage + '/finished.json'
+    finished = json.loads(native_bound(base, result['stage_finished'], finished_name))
+    start_name = stage + '/prepared.json'
+    start = json.loads(read_stable(base, start_name))
+    raw_name = stage + '/raw.log'
+    raw = read_stable(base, raw_name)
+    if finished.get('schema') != 'eth-ci-stage/1' or finished.get('name') != phase or type(finished.get('exit_code')) is not int or (finished['exit_code'] != 0) or (finished.get('reason') is not None) or (finished.get('timed_out', False) is not False) or (finished.get('stdout_is_export') is not False) or any((finished.get(k) != v for (k, v) in start.items())) or (finished.get('argv') != inputs.get('argv')) or (finished.get('cwd') != inputs.get('cwd')) or (finished.get('timeout_seconds') != inputs.get('timeout_seconds')) or (finished.get('raw_log_sha256') != sha(raw)) or (type(finished.get('raw_log_bytes')) is not int) or (finished['raw_log_bytes'] != len(raw)) or (result.get('stage_receipts') != [finished]):
+        raise ValueError('native stage failed, incomplete, or raw output changed')
+    return {'result': result, 'inputs': inputs, 'files': [prepared_name, input_name, name, start_name, finished_name, raw_name], 'raw': (raw_name, sha(raw), len(raw))}
+
+def held_original_native_final_selection(base, map_name):
+    """Admit final evidence only through one explicit, closed aggregate and map."""
+    if not re.fullmatch('publication/native-final-selection-r[1-9][0-9]*\\.json', map_name):
+        raise ValueError('native final map path is not explicitly owned')
+    selection = json.loads(read_stable(base, map_name))
+    if selection.get('schema') != 'eth-native-final-selection/1' or selection.get('aggregate_directory') != NATIVE_AGGREGATE or set(selection.get('aggregate_files', {})) != NATIVE_AGGREGATE_FILES:
+        raise ValueError('native final aggregate selection differs')
+    files = {map_name: 'manifest'}
+    for (short, row) in selection['aggregate_files'].items():
+        name = NATIVE_AGGREGATE + '/' + short
+        native_bound(base, row, name)
+        files[name] = 'report' if short.endswith('.md') else 'manifest'
+
+    def aggregate_json(short):
+        return json.loads(read_stable(base, NATIVE_AGGREGATE + '/' + short))
+    closing = aggregate_json('aggregation-finished.json')
+    prepared = aggregate_json('aggregation-prepared.json')
+    result_name = NATIVE_AGGREGATE + '/native-replication-result.json'
+    if closing.get('schema') != 'openai-native-aggregation/1' or closing.get('status') != 'passed' or prepared.get('schema') != 'openai-native-aggregation/1' or (prepared.get('proof_execution') is not False):
+        raise ValueError('native aggregate has no successful closing seal')
+    native_bound(base, closing['result'], result_name)
+    native_bound(base, prepared['aggregator'], NATIVE_AGGREGATOR)
+    if prepared['aggregator']['sha256'] != NATIVE_AGGREGATOR_SHA:
+        raise ValueError('native aggregator is not the reviewed source')
+    result = aggregate_json('native-replication-result.json')
+    artifacts = aggregate_json('native-replication-artifacts.json')
+    if result.get('format') != 'openai-eth-native-replication-result-v1' or result.get('all_required_native_checks_passed') is not True or result.get('verbatim_upstream_linux_ci_reproduction') is not False or (artifacts.get('artifacts') != result.get('artifacts')) or (artifacts.get('public_small_artifacts') != result.get('public_small_artifacts')):
+        raise ValueError('native aggregate acceptance/artifact lists differ')
+    phases = result.get('phases', [])
+    if [row.get('name') for row in phases] != list(NATIVE_PHASES):
+        raise ValueError('native aggregate does not contain all eight explicit phases')
+    for row in phases:
+        phase = row['name']
+        folder = NATIVE_DIRS[phase]
+        name = folder + '/phase-result.json'
+        if row.get('directory') != str((base / folder).resolve()):
+            raise ValueError('native aggregate phase directory differs')
+        native_bound(base, row['result'], name)
+        bundle = native_phase_bundle(base, name)
+        if bundle['result']['input_fingerprint'] != result.get('selected_input_fingerprint') or bundle['inputs']['selected_inputs'] != result.get('selected_inputs') or row.get('stage') != bundle['result']['stage_receipts'][0]:
+            raise ValueError('native aggregate/phase lineage differs')
+        files.update({n: 'completed_log' if n.endswith('raw.log') else 'completed_receipt' if n == name else 'manifest' for n in bundle['files']})
+    export_folder = NATIVE_DIRS['selected-export']
+    export_result = json.loads(read_stable(base, export_folder + '/phase-result.json'))
+    capture_name = export_folder + '/export-capture.json'
+    capture = json.loads(native_bound(base, export_result['capture_receipt'], capture_name))
+    export = export_result['export']
+    if capture.get('schema') != 'native-direct-fd-export/2' or capture.get('complete') is not True or type(capture.get('child_exit_code')) is not int or (capture['child_exit_code'] != 0) or (capture.get('export') != export) or (export.get('path') != str((base / export_folder / 'selected-solution.ndjson').resolve())) or (type(export.get('size_bytes')) is not int) or (export['size_bytes'] <= 0) or (not re.fullmatch('[0-9a-f]{64}', export.get('sha256', ''))):
+        raise ValueError('native selected-export capture is incomplete')
+    files[capture_name] = 'manifest'
+    nano_folder = NATIVE_DIRS['extra-nanoda']
+    nano_result = json.loads(read_stable(base, nano_folder + '/phase-result.json'))
+    nano_ref = nano_result['nanoda']['finished_receipt']
+    nano_name = str(Path(nano_ref['path']).relative_to(base))
+    if not re.fullmatch(re.escape(nano_folder) + '/nanoda-records/nanoda-[A-Za-z0-9_-]+/02-finished\\.json', nano_name):
+        raise ValueError('native Nanoda recording is outside its exact phase')
+    two = json.loads(native_bound(base, nano_ref, nano_name))
+    record_dir = str(PurePosixPath(nano_name).parent)
+    small = [record_dir + '/' + n for n in ['00-prepared.json', '01-started.json', '02-finished.json', 'effective-config.json']]
+    if len(nano_result['nanoda']['small_records']) != 4:
+        raise ValueError('native Nanoda small records are incomplete')
+    for (name, row) in zip(small, nano_result['nanoda']['small_records']):
+        native_bound(base, row, name)
+        files[name] = 'manifest'
+    zero = json.loads(read_stable(base, small[0]))
+    one = json.loads(read_stable(base, small[1]))
+    effective = json.loads(read_stable(base, small[3]))
+    wanted = {'use_stdin': False, 'export_file_path': export['path'], 'permitted_axioms': ['propext', 'Quot.sound', 'Classical.choice'], 'unpermitted_axiom_hard_error': True, 'num_threads': 2, 'nat_extension': True, 'string_extension': True}
+    config_name = nano_folder + '/additional-nanoda-config.json'
+    config = json.loads(read_stable(base, config_name))
+    files[config_name] = 'manifest'
+    if two.get('recording_complete') is not True or two.get('inputs_unchanged') is not True or type(two.get('checker_exit_code')) is not int or (two['checker_exit_code'] != 0) or (type(two.get('wrapper_exit_code')) is not int) or (two['wrapper_exit_code'] != 0) or (two.get('policy_changes_by_recorder') is not False) or (two.get('effective_policy') != wanted) or (effective != wanted) or (config != wanted) or any((two.get(k) != v for (k, v) in zero.items())) or (one.get('checker_argv') != two.get('checker_argv')) or (not closed_times(two.get('started_at'), two.get('finished_at'))) or any((two.get(k, {}).get(field) != export[field] for k in ['export_before', 'export_after'] for field in ['path', 'sha256', 'size_bytes'])) or (two.get('export_archive', {}).get('uncompressed_sha256') != export['sha256']) or (two.get('export_archive', {}).get('uncompressed_size_bytes') != export['size_bytes']) or (result.get('additional_nanoda', {}).get('actual_export') != export):
+        raise ValueError('native actual Nanoda policy/export acceptance differs')
+    native_bound(base, two['config_archive'], small[3])
+    if sha(read_stable(base, config_name)) != sha(read_stable(base, small[3])):
+        raise ValueError('native forwarded/effective configuration bytes differ')
+    build = result['source_build']
+    build_name = str(Path(build['receipt']['path']).relative_to(base))
+    if not re.fullmatch('openai/logs/[A-Za-z0-9_.-]+\\.json', build_name):
+        raise ValueError('native source closure receipt path differs')
+    wrapper = json.loads(native_bound(base, build['receipt'], build_name))
+    cp = wrapper['checkpoint_run_result']
+    build_raw = 'openai/logs/source-build-gated-r4.txt'
+    raw = native_bound(base, build['raw'], build_raw)
+    if type(wrapper.get('final_exec_exit_code')) is not int or wrapper['final_exec_exit_code'] != 0 or wrapper.get('exec_session_id') != 11317 or (type(cp.get('exit_code')) is not int) or (cp['exit_code'] != 0) or (cp.get('timed_out') is not False) or (cp.get('log_sha256') != sha(raw)) or (cp.get('log_size') != len(raw)) or (not re.search(b'(?m)^Build completed successfully \\([0-9]+ jobs\\)\\.$', raw)):
+        raise ValueError('native source build is not closed/hash-bound')
+    files[build_name] = 'manifest'
+    files[build_raw] = 'completed_log'
+    reviews = selection.get('reviews', [])
+    if len({row['path'] for row in reviews}) != len(reviews):
+        raise ValueError('duplicate native review')
+    for row in reviews:
+        name = row['path']
+        if name not in NATIVE_REVIEWS:
+            raise ValueError('native review is not explicitly named')
+        native_bound(base, {**row, 'path': str((base / name).resolve())}, name)
+        files[name] = 'report' if name.endswith('.md') else 'manifest'
+    archive = two['export_archive']['gzip']
+    if archive.get('path') != str((base / record_dir / 'export.ndjson.gz').resolve()) or not re.fullmatch('[0-9a-f]{64}', archive.get('sha256', '')) or type(archive.get('size_bytes')) is not int or (archive['size_bytes'] <= 0) or (nano_result['nanoda'].get('gzip') != archive) or (result['additional_nanoda'].get('retained_gzip') != archive):
+        raise ValueError('native retained gzip lineage differs')
+    asset = {'receipt': nano_name, 'availability': 'Selected NDJSON and actual checked gzip retained locally; not published', 'identity_source': 'Closed capture/Nanoda receipts and successful reviewed aggregate; packager did not rehash large assets', 'raw_sha256': export['sha256'], 'raw_size_bytes': export['size_bytes'], 'gzip_sha256': archive['sha256'], 'gzip_size_bytes': archive['size_bytes']}
+    return {'map': map_name, 'map_sha256': sha(read_stable(base, map_name)), 'files': files, 'omitted_large_asset': asset}
+
+def native_worker_module():
+    """Load only the pinned local metadata gate; never load proof/helper code."""
+    path = BASE / NATIVE_WORKER_GUARD
+    if sha(read_stable(BASE, NATIVE_WORKER_GUARD)) != NATIVE_WORKER_GUARD_SHA:
+        raise ValueError('reviewed worker publication module changed')
+    spec = importlib.util.spec_from_file_location('eth_native_worker_publication_gate', path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+def native_publisher_api():
+    return SimpleNamespace(read_stable=read_stable, sha=sha, closed_times=closed_times, native_phase_bundle=native_phase_bundle)
+
+def native_result_files(base, name):
+    if name == NATIVE_RETRY_RESULT:
+        return native_worker_module().native_retry_bundle(base, name, native_publisher_api())['files']
+    return native_phase_bundle(base, name)['files']
+
+def native_final_selection(base, map_name):
+    """Metadata/allowlist gate; root creates the map only after closed review.
+
+    The pinned aggregate and root's final evidence review supply the acceptance
+    decision. This packager rechecks selected small bytes, never a proof kernel.
+    The preserved original-protocol gate cannot select this revised campaign.
+    """
+    return native_worker_module().native_final_selection(base, map_name, native_publisher_api())
 
 def completed_workflow_log(base, name):
     """Only fixed completed GitHub responses with exact original download bytes."""
@@ -164,8 +363,10 @@ def completed_workflow_log(base, name):
         raise ValueError('workflow response identity differs from fixed observation')
     return (receipt, digest, size)
 
-def make_plan(base, receipts, with_ci=False):
+def make_plan(base, receipts, with_ci=False, native_final_map=None):
     (items, skipped, bound_logs) = ({}, [], {})
+    native = native_final_selection(base, native_final_map) if native_final_map else None
+    receipts = list(dict.fromkeys(receipts + (sorted(NATIVE_POSITIVE_RESULTS) if native else [])))
 
     def add(name, kind, expected=None, size=None):
         try:
@@ -182,6 +383,10 @@ def make_plan(base, receipts, with_ci=False):
         catalog -= CI_ALL | STAGING_INPUTS
     for name in sorted(catalog):
         add(name, 'source' if name in SOURCES else 'report' if name in REPORTS else 'manifest')
+    if native:
+        for (name, kind) in native['files'].items():
+            add(name, kind)
+        bound_logs.update(native['closed_log_bindings'])
     tool_name = 'verification-tools/tool-manifest-r1.json'
     if tool_name in items:
         d = json.loads(read_stable(base, tool_name))
@@ -202,11 +407,21 @@ def make_plan(base, receipts, with_ci=False):
     for name in receipts:
         (d, logs) = completed_receipt(base, name)
         add(name, 'completed_receipt')
+        if name in NATIVE_POSITIVE_RESULTS:
+            extras = native_result_files(base, name)
+            for extra in extras:
+                if extra != name and (not extra.endswith('raw.log')):
+                    kind = 'source' if extra in SOURCES else 'report' if extra in REPORTS else 'manifest' if extra in MANIFESTS else extras[extra] if isinstance(extras, dict) else 'manifest'
+                    add(extra, kind)
         for (log, expected, size) in logs:
             add(log, 'completed_log', expected, size)
             if log in items:
-                bound_logs[log] = {'receipt': name, 'exit_code': d['exit_code'], 'timed_out': d['timed_out']}
-    return {'schema': SCHEMA, 'created_at': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'verdict': 'No positive proof verdict inferred by exporter', 'items': list(items.values()), 'completed_log_bindings': bound_logs, 'receipt_paths': receipts, 'skipped': skipped, 'with_ci': with_ci, 'review': 'Inspect this frozen selection before export. Export rechecks identities and allowlists.'}
+                if native and log in native['closed_log_bindings']:
+                    if (native['closed_log_bindings'][log]['raw_log_sha256'], native['closed_log_bindings'][log]['raw_log_bytes']) != (expected, size):
+                        raise ValueError('native receipt and final log binding differ')
+                else:
+                    bound_logs[log] = {'receipt': name, 'exit_code': d['exit_code'], 'timed_out': d['timed_out']}
+    return {'schema': SCHEMA, 'created_at': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'verdict': 'No positive proof verdict inferred by exporter', 'items': list(items.values()), 'completed_log_bindings': bound_logs, 'receipt_paths': receipts, 'skipped': skipped, 'with_ci': with_ci, 'native_final': native, 'review': 'Inspect this frozen selection before export. Export rechecks identities and allowlists.'}
 
 def transform(data, base, data_derivative=False):
     actions = []
@@ -241,12 +456,25 @@ def transform(data, base, data_derivative=False):
     if data_derivative:
         quoted_path = re.compile(b'(?<=[\\"\'])PATH=[^\\"\'\\r\\n]*')
         replace_spans('full_PATH_quoted_argv_data_only', [(m.start(), m.end(), b'PATH=<PATH FIELD REDACTED>') for m in quoted_path.finditer(data) if b':/' in m.group(0)])
+        replace_spans('private_SDK_metadata_value_data_only', private_sdk_spans(data))
     for (rule, pattern, replacement) in [('local_replication_prefix', re.compile(re.escape(str(base.resolve()).encode())), b'<REPLICATION_ROOT>'), ('local_private_project_prefix', re.compile(re.escape(str(base.resolve().parents[1]).encode())), b'<PRIVATE_PROJECT_ROOT>'), ('home_prefix', HOME, b'<HOME>'), ('temporary_os_path', TEMP, b'<TEMP_PATH>'), ('email', EMAIL, b'<EMAIL REDACTED>'), ('uuid', UUID, b'<UUID REDACTED>'), ('credential_token', TOKEN, b'<TOKEN REDACTED>'), ('full_PATH_plaintext', re.compile(b'(?m)^\\s*(?:export\\s+)?PATH\\s*[:=][^\\r\\n]*'), b'<PATH FIELD REDACTED>'), ('sensitive_plaintext_field', re.compile(b'(?im)^\\s*(?:HOSTNAME|COMPUTER[ _-]*NAME|(?:[A-Z_]*(?:TOKEN|PASSWORD|PASSPHRASE|SECRET|SERIAL[ _-]*NUMBER|HARDWARE[ _-]*UUID)))\\s*[:=][^\\r\\n]*'), b'<SENSITIVE FIELD REDACTED>')]:
         if rule == 'full_PATH_plaintext' and (not data_derivative):
             continue
         matches = [(m.start(), m.end(), replacement) for m in pattern.finditer(data) if not (rule == 'sensitive_plaintext_field' and PUBLIC_CREDENTIAL_REFERENCE.fullmatch(m.group(0)))]
         replace_spans(rule, matches)
     return (data, actions)
+
+def private_sdk_spans(data):
+    """Ordinary/escaped data mappings and validated current SDK value only."""
+    replacement = b'<SDK METADATA REDACTED>'
+    spans = []
+    value = os.environ.get(PRIVATE_SDK_KEY)
+    if value is not None and sha(value.encode()) == PRIVATE_SDK_VALUE_SHA256:
+        spans.extend(((m.start(), m.end(), replacement) for m in re.finditer(re.escape(value.encode()), data)))
+    for pattern in [b'__CF_USER_TEXT_ENCODING\\\\*["\']\\s*:\\s*\\\\*["\'](?P<value>0x[0-9a-fA-F]+:0x[0-9a-fA-F]+:0x[0-9a-fA-F]+)', b'\\b__CF_USER_TEXT_ENCODING\\s*=\\s*\\\\*["\']?(?P<value>0x[0-9a-fA-F]+:0x[0-9a-fA-F]+:0x[0-9a-fA-F]+)']:
+        for match in re.finditer(pattern, data):
+            spans.append((*match.span('value'), replacement))
+    return spans
 
 def portable_python(original, relative, base):
     """Explicit derived source, never represented as the executed source bytes."""
@@ -294,9 +522,14 @@ def portable_python(original, relative, base):
     compile(result.decode(), relative, 'exec')
     return result
 
-def check_public(data):
+def check_public(data, data_derivative=False):
     if any((pattern.search(data) for pattern in [EMAIL, UUID, TOKEN, HOME, TEMP])):
         raise ValueError('sensitive residual detected after transformation')
+    value = os.environ.get(PRIVATE_SDK_KEY)
+    if value is not None and sha(value.encode()) == PRIVATE_SDK_VALUE_SHA256 and (value.encode() in data):
+        raise ValueError('private SDK metadata residual detected')
+    if data_derivative and private_sdk_spans(data):
+        raise ValueError('private SDK field residual detected')
 
 def export_plan(base, plan, release):
     if plan.get('schema') != SCHEMA or not re.fullmatch('[A-Za-z0-9][A-Za-z0-9_.-]{0,79}', release):
@@ -305,7 +538,17 @@ def export_plan(base, plan, release):
         raise ValueError('duplicate selected path')
     receipts = set(plan.get('receipt_paths', []))
     logs = plan.get('completed_log_bindings', {})
-    permitted = REPORTS | SOURCES | MANIFESTS | receipts | set(logs)
+    native = plan.get('native_final')
+    if native and native_final_selection(base, native['map']) != native:
+        raise ValueError('native final selection changed after planning')
+    native_files = native['files'] if native else {}
+    phase_files = {n for result in receipts if result in NATIVE_POSITIVE_RESULTS for n in native_result_files(base, result)}
+    selected_paths = {item['path'] for item in plan['items']}
+    if native and (not set(native_files).issubset(selected_paths) or not NATIVE_POSITIVE_RESULTS.issubset(receipts)):
+        raise ValueError('frozen plan omitted required final native evidence')
+    if not phase_files.issubset(selected_paths):
+        raise ValueError('frozen plan omitted a closed native phase bundle')
+    permitted = REPORTS | SOURCES | MANIFESTS | receipts | set(logs) | set(native_files) | phase_files
     if plan.get('with_ci') is not True:
         permitted -= CI_ALL | STAGING_INPUTS
     elif not CI_REQUIRED.issubset({item['path'] for item in plan['items']}):
@@ -323,13 +566,18 @@ def export_plan(base, plan, release):
             raise ValueError('plan tried to expand the fixed allowlist')
         if not re.fullmatch('[0-9a-f]{64}', item['original_sha256']) or type(item['original_size_bytes']) is not int:
             raise ValueError('invalid frozen file identity')
-        expected_kind = 'source' if name in SOURCES else 'report' if name in REPORTS else 'manifest' if name in MANIFESTS else 'completed_receipt' if name in receipts else 'completed_log'
+        expected_kind = 'source' if name in SOURCES else 'report' if name in REPORTS else 'manifest' if name in MANIFESTS else 'completed_receipt' if name in receipts else native_files[name] if name in native_files else 'manifest' if name in phase_files and (not name.endswith('raw.log')) else 'completed_log'
         if item['kind'] != expected_kind:
             raise ValueError('selection changed the evidence class')
         if name in logs:
             binding = logs[name]
             receipt = binding['receipt']
-            if receipt == 'verification-tools/tool-manifest-r1.json':
+            if native and name in native['closed_log_bindings']:
+                checked = native['closed_log_bindings'][name]
+                if binding != checked:
+                    raise ValueError('native log completion binding changed')
+                refs = [(name, checked['raw_log_sha256'], checked['raw_log_bytes'])]
+            elif receipt == 'verification-tools/tool-manifest-r1.json':
                 d = json.loads(read_stable(base, receipt))
                 refs = [(log_relative(base, receipt, r['log_path']), r['log_sha256'], r['log_size']) for r in d['build_and_acquisition_runs'] if closed_times(r.get('started_at'), r.get('finished_at')) and type(r.get('exit_code')) is int and (type(r.get('timed_out')) is bool)]
             elif WORKFLOW_LOGS.get(name) == receipt:
@@ -354,7 +602,7 @@ def export_plan(base, plan, release):
     destination.mkdir(parents=True, exist_ok=False)
     save(destination / 'INCOMPLETE.json', {'schema': SCHEMA, 'status': 'exporting; not ready for publication'})
     records = []
-    assets = []
+    assets = list(native['omitted_large_assets']) if native else []
     for item in plan['items']:
         name = item['path']
         raw = originals[name]
@@ -374,7 +622,7 @@ def export_plan(base, plan, release):
                 raise ValueError('Python sanitization could not produce a labelled derivative')
             public = portable
             kind = 'explicit_portable_python_derivative'
-        check_public(public)
+        check_public(public, data_derivative=name not in SOURCES)
         if name.endswith('.json'):
             json.loads(public)
         save(destination / output, public)
@@ -471,6 +719,7 @@ def main():
     p.add_argument('--output', type=Path, required=True)
     p.add_argument('--receipt', action='append', default=[])
     p.add_argument('--with-ci', action='store_true')
+    p.add_argument('--native-final-selection')
     p = sub.add_parser('export')
     p.add_argument('--plan', type=Path, required=True)
     p.add_argument('--release', required=True)
@@ -478,7 +727,7 @@ def main():
     p.add_argument('--report', type=Path, required=True)
     args = parser.parse_args()
     if args.command == 'plan':
-        result = make_plan(BASE, args.receipt, args.with_ci)
+        result = make_plan(BASE, args.receipt, args.with_ci, args.native_final_selection)
         save(args.output, result)
         print(json.dumps({'items': len(result['items']), 'skipped': len(result['skipped']), 'with_ci': args.with_ci, 'plan': str(args.output)}))
     elif args.command == 'export':

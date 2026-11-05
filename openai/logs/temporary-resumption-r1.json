@@ -1,0 +1,93 @@
+{
+  "schema": "owned-process-group-resumption-v1",
+  "signaled_utc": "2026-11-04T20:08:21.219697+00:00",
+  "signal": "SIGCONT",
+  "process_group": 25130,
+  "reason": "Anthropic original-version heavy checks completed; resume the existing OpenAI source build without starting another Lake process",
+  "before": [
+    {
+      "pid": "25130",
+      "ppid": "25125",
+      "pgid": "25130",
+      "state": "Ts",
+      "elapsed": "02:27:09",
+      "command": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lake build +OAI.Algorithms.SubexponentialSAT.Main +ComparatorChallenges.SubexponentialSAT"
+    },
+    {
+      "pid": "54456",
+      "ppid": "25130",
+      "pgid": "25130",
+      "state": "T",
+      "elapsed": "50:15",
+      "command": "<REPLICATION_ROOT>/openai/compiler-gate-r1/prefix/bin/lean <REPLICATION_ROOT>/openai/workspace/OAI/Algorithms/SubexponentialSAT/SqrtLog/PackingRelations.lean -o <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/PackingRelations.olean -i <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/PackingRelations.ilean -c <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/SqrtLog/PackingRelations.c --setup <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/SqrtLog/PackingRelations.setup.json --json"
+    },
+    {
+      "pid": "54797",
+      "ppid": "25130",
+      "pgid": "25130",
+      "state": "T",
+      "elapsed": "49:03",
+      "command": "<REPLICATION_ROOT>/openai/compiler-gate-r1/prefix/bin/lean <REPLICATION_ROOT>/openai/workspace/OAI/Algorithms/SubexponentialSAT/Subexp/SeedIndexFormulas.lean -o <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/Subexp/SeedIndexFormulas.olean -i <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/Subexp/SeedIndexFormulas.ilean -c <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/Subexp/SeedIndexFormulas.c --setup <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/Subexp/SeedIndexFormulas.setup.json --json"
+    },
+    {
+      "pid": "54798",
+      "ppid": "25130",
+      "pgid": "25130",
+      "state": "T",
+      "elapsed": "49:03",
+      "command": "<REPLICATION_ROOT>/openai/compiler-gate-r1/prefix/bin/lean <REPLICATION_ROOT>/openai/workspace/OAI/Algorithms/SubexponentialSAT/Subexp/AssignmentSerialization.lean -o <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/Subexp/AssignmentSerialization.olean -i <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/Subexp/AssignmentSerialization.ilean -c <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/Subexp/AssignmentSerialization.c --setup <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/Subexp/AssignmentSerialization.setup.json --json"
+    },
+    {
+      "pid": "54800",
+      "ppid": "25130",
+      "pgid": "25130",
+      "state": "T",
+      "elapsed": "49:03",
+      "command": "<REPLICATION_ROOT>/openai/compiler-gate-r1/prefix/bin/lean <REPLICATION_ROOT>/openai/workspace/OAI/Algorithms/SubexponentialSAT/SubexpCeilingProgram.lean -o <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/SubexpCeilingProgram.olean -i <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/SubexpCeilingProgram.ilean -c <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/SubexpCeilingProgram.c --setup <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/SubexpCeilingProgram.setup.json --json"
+    }
+  ],
+  "after_one_second": [
+    {
+      "pid": "25130",
+      "ppid": "25125",
+      "pgid": "25130",
+      "state": "Ss",
+      "elapsed": "02:27:10",
+      "command": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lake build +OAI.Algorithms.SubexponentialSAT.Main +ComparatorChallenges.SubexponentialSAT"
+    },
+    {
+      "pid": "54456",
+      "ppid": "25130",
+      "pgid": "25130",
+      "state": "S",
+      "elapsed": "50:16",
+      "command": "<REPLICATION_ROOT>/openai/compiler-gate-r1/prefix/bin/lean <REPLICATION_ROOT>/openai/workspace/OAI/Algorithms/SubexponentialSAT/SqrtLog/PackingRelations.lean -o <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/PackingRelations.olean -i <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/SqrtLog/PackingRelations.ilean -c <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/SqrtLog/PackingRelations.c --setup <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/SqrtLog/PackingRelations.setup.json --json"
+    },
+    {
+      "pid": "54797",
+      "ppid": "25130",
+      "pgid": "25130",
+      "state": "S",
+      "elapsed": "49:04",
+      "command": "<REPLICATION_ROOT>/openai/compiler-gate-r1/prefix/bin/lean <REPLICATION_ROOT>/openai/workspace/OAI/Algorithms/SubexponentialSAT/Subexp/SeedIndexFormulas.lean -o <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/Subexp/SeedIndexFormulas.olean -i <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/Subexp/SeedIndexFormulas.ilean -c <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/Subexp/SeedIndexFormulas.c --setup <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/Subexp/SeedIndexFormulas.setup.json --json"
+    },
+    {
+      "pid": "54798",
+      "ppid": "25130",
+      "pgid": "25130",
+      "state": "S",
+      "elapsed": "49:04",
+      "command": "<REPLICATION_ROOT>/openai/compiler-gate-r1/prefix/bin/lean <REPLICATION_ROOT>/openai/workspace/OAI/Algorithms/SubexponentialSAT/Subexp/AssignmentSerialization.lean -o <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/Subexp/AssignmentSerialization.olean -i <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/Subexp/AssignmentSerialization.ilean -c <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/Subexp/AssignmentSerialization.c --setup <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/Subexp/AssignmentSerialization.setup.json --json"
+    },
+    {
+      "pid": "54800",
+      "ppid": "25130",
+      "pgid": "25130",
+      "state": "S",
+      "elapsed": "49:04",
+      "command": "<REPLICATION_ROOT>/openai/compiler-gate-r1/prefix/bin/lean <REPLICATION_ROOT>/openai/workspace/OAI/Algorithms/SubexponentialSAT/SubexpCeilingProgram.lean -o <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/SubexpCeilingProgram.olean -i <REPLICATION_ROOT>/openai/workspace/.lake/build/lib/lean/OAI/Algorithms/SubexponentialSAT/SubexpCeilingProgram.ilean -c <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/SubexpCeilingProgram.c --setup <REPLICATION_ROOT>/openai/workspace/.lake/build/ir/OAI/Algorithms/SubexponentialSAT/SubexpCeilingProgram.setup.json --json"
+    }
+  ],
+  "prior_suspension": "temporary-suspension-r1.json",
+  "scope": "Only the verified task-owned process group. Stage wall-time cap continues across suspension."
+}

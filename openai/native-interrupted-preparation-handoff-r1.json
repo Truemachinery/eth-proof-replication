@@ -1,0 +1,47 @@
+{
+  "schema": "native-interrupted-preparation-handoff/1",
+  "status": "prepared_source_reviewed_not_executed",
+  "observed_utc": "2026-11-05T18:09:59.399173+00:00",
+  "source": {
+    "path": "<REPLICATION_ROOT>/openai/aggregate_native_interrupted_r1.py",
+    "sha256": "3893f6fd2ce5eca22fd99f57994bd25891367b729e31587f0d1a13e0ca9e243f",
+    "size_bytes": 21570
+  },
+  "runbook": {
+    "path": "<REPLICATION_ROOT>/openai/native-interrupted-closure-runbook-r1.md",
+    "sha256": "63cb259dda498846736c4af137ff9f48c4adfdc81507da20f764f27b005f2cf2",
+    "size_bytes": 6492
+  },
+  "tiny_controls": {
+    "path": "<REPLICATION_ROOT>/openai/interrupted-closure-policy-controls-r1.json",
+    "sha256": "a905497699a7ae85aadb193d63896c7d9d52b1d79b8d09c3307db6c05285b78f",
+    "size_bytes": 1082
+  },
+  "root_recovery_observation": {
+    "path": "<REPLICATION_ROOT>/openai/logs/interruption-recovery-observation-r1.json",
+    "sha256": "89be8382a7c68dc549f31799154532a58819aba47c1b2b9e5dcfa7b6c70e6939",
+    "size_bytes": 3819
+  },
+  "actualinterrupted_helper_result": {
+    "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/retry-result.json",
+    "sha256": "e0662f9de6c8699328549233d19c9438c1029951ac0ab3c55361824c78d848b0",
+    "size_bytes": 1021
+  },
+  "output_reserved": "openai/native-interrupted-records/worker-stack256-r1-01",
+  "result_schema": "openai-native-interrupted-result/1",
+  "verdict": "ORIGINAL_LEAN_SUITE_PASS_ADDITIONAL_NANODA_INTERRUPTED",
+  "expanded_suite_passed": false,
+  "checker_exit_code": null,
+  "independent_nanoda_accepted": null,
+  "final_interrupted_attempt_cpu_and_wall": null,
+  "timeout_observed": false,
+  "source_review": "Root fullsource read and two separate same-team peer source ACK messages (publisher fullsource, recent full227line source) reported no material blocker. No actual aggregate outcome inferred.",
+  "execution_by_author": "Only13tiny AST-isolated headerrefusers/source-order/null-cost and actual13small-recovery-facts controls4101; no fullclosure/proof/retry/largehash/network.",
+  "recorded_control_resources": {
+    "cpu_seconds": 0.045099,
+    "wall_seconds": 0.049539,
+    "paid_cloud_spend_usd": 0
+  },
+  "preservation": "Old97d incomplete helper, R7, positive and negative publishers, runtime/proof sources unchanged. No finished stage/checker/DIGEST, timeout, final cost or interruption-trigger attribution fabricated.",
+  "root_next": "Root executes reviewed metadata-onlyclosure withactualpostLAST and thenactualcombinedreview/finalreport. Newinterruptedpublisher remains separate and root-owned; emptyJSONcapture metadata mustnotbe selected asJSONpayload."
+}

@@ -1,0 +1,21 @@
+{
+  "agent": "codex-eth-replication",
+  "task": "external-eth-proof-replication-20261104",
+  "task_rev": 62,
+  "revision_event_id": 4013,
+  "exit_code": 125,
+  "timed_out": false,
+  "cpu_seconds": 258.021357,
+  "wall_seconds": 142.756902,
+  "log_path": "research/eth-external-replication-20261104/openai/logs/native-r2-extra-nanoda-checkpoint.txt",
+  "log_sha256": "0599976a37cdc35a45d160484af270befd31eeae4f440c90af69bd4381cc8ca4",
+  "log_size": 5140,
+  "log_total_lines": 12,
+  "pinned_artifacts": [
+    "research/eth-external-replication-20261104/openai/logs/native-r2-extra-nanoda-checkpoint.txt"
+  ],
+  "missing_requested_artifacts": [],
+  "full_output": false,
+  "tail_lines": 3,
+  "output": "| fatal runtime error: stack overflow, aborting\nSTAGE_RECEIPT {\"argv\": [\"/Applications/Xcode.app/Contents/Developer/usr/bin/python3\", \"<REPLICATION_ROOT>/openai/in_workspace.py\", \"/Applications/Xcode.app/Contents/Developer/usr/bin/python3\", \"<REPLICATION_ROOT>/verification-tools/record_nanoda.py\", \"<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/additional-nanoda-config.json\"], \"child_cpu_scope\": \"Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.\", \"child_cpu_seconds\": 256.887489, \"cwd\": \"<REPLICATION_ROOT>/openai/workspace\", \"exit_code\": -6, \"name\": \"extra-nanoda\", \"raw_log_bytes\": 101, \"raw_log_sha256\": \"590ccc60513da51ab0aad98c32b68c0f485d0fda4958c7255feb5175c55bc4e2\", \"reason\": null, \"schema\": \"eth-ci-stage/1\", \"started_utc_epoch\": 1793889948.087543, \"stdout_is_export\": false, \"timeout_seconds\": 7200, \"wall_seconds\": 141.66858196258545}\n{\"accounting\": \"Native execution, no systemd-managed service. Recorder child_cpu_seconds covers reaped child processes/descendants, including capture and checker wrappers. Do not add nested Nanoda CPU a second time. No RSS measurement is claimed.\", \"error\": \"CalledProcessError: Command '['/Applications/Xcode.app/Contents/Developer/usr/bin/python3', '<REPLICATION_ROOT>/openai/in_workspace.py', '/Applications/Xcode.app/Contents/Developer/usr/bin/python3', '<REPLICATION_ROOT>/verification-tools/record_nanoda.py', '<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/additional-nanoda-config.json']' died with <Signals.SIGABRT: 6>.\", \"finished_utc\": \"2026-11-05T14:48:09.757013+00:00\", \"input_fingerprint\": \"c84c8907998f23cc282a29ae7fef4a37cbaff735327096e748afe546af8c4f52\", \"interrupt_signal\": null, \"phase\": \"extra-nanoda\", \"record_directory\": \"<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda\", \"schema\": \"openai-native-phase/1\", \"scope\": \"One explicit phase only; root aggregates all required closed results. Native mode has no Linux isolation.\", \"stage_receipts\": [{\"argv\": [\"/Applications/Xcode.app/Contents/Developer/usr/bin/python3\", \"<REPLICATION_ROOT>/openai/in_workspace.py\", \"/Applications/Xcode.app/Contents/Developer/usr/bin/python3\", \"<REPLICATION_ROOT>/verification-tools/record_nanoda.py\", \"<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/additional-nanoda-config.json\"], \"child_cpu_scope\": \"Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.\", \"child_cpu_seconds\": 256.887489, \"cwd\": \"<REPLICATION_ROOT>/openai/workspace\", \"exit_code\": -6, \"name\": \"extra-nanoda\", \"raw_log_bytes\": 101, \"raw_log_sha256\": \"590ccc60513da51ab0aad98c32b68c0f485d0fda4958c7255feb5175c55bc4e2\", \"reason\": null, \"schema\": \"eth-ci-stage/1\", \"started_utc_epoch\": 1793889948.087543, \"stdout_is_export\": false, \"timeout_seconds\": 7200, \"wall_seconds\": 141.66858196258545}], \"started_utc\": \"2026-11-05T14:45:47.037480+00:00\", \"status\": \"failed\"}"
+}

@@ -1,0 +1,30 @@
+{
+  "schema": "eth-incomplete-metadata-controls/1",
+  "status": "passed",
+  "checks": [
+    "correctly labelled closed header still refuses absent seven original phases",
+    "coherently rebound map schema refused",
+    "coherently rebound map expanded_suite_passed refused",
+    "coherently rebound map all_required_native_checks_passed refused",
+    "coherently rebound map original_lean_suite_passed refused",
+    "coherently rebound map original_r2_protocol_passed refused",
+    "coherently rebound map independent_nanoda_acceptance_observed refused",
+    "omitted nullable map field independent_nanoda_accepted refused",
+    "omitted nullable map field checker_exit_code refused",
+    "coherently rebound result expanded_suite_passed refused",
+    "coherently rebound result all_required_native_checks_passed refused",
+    "coherently rebound result independent_nanoda_acceptance_observed refused",
+    "omitted nullable result field independent_nanoda_accepted refused",
+    "omitted nullable result field checker_exit_code refused",
+    "unclosed negative seal refused",
+    "coherently rebound closure source drift refused",
+    "metadata helper source drift refused",
+    "nullable actual exit distinguishes unknown, bool and exact nonzero integer",
+    "positive publisher source remains a72"
+  ],
+  "guard_sha256": "3c3d8696d58d90bead5a85da288b946d5c7bc995a6ede983f5c1fafd07706319",
+  "source_sha256": "1fd9a53a930d539bbea6e7fb7025362a62315f665bcb1e76e4952c72563e1fd5",
+  "scope": "Real gate with hash-bound fake headers that must refuse before original phase reads; no actual closure acceptance or proof/kernel/WIP/export work",
+  "cpu_seconds": 0.158719,
+  "wall_seconds": 0.167845375
+}

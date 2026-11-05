@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "<REPLICATION_ROOT>/openai/in_workspace.py",
+    "lake",
+    "--no-build",
+    "build",
+    "+OAI.Algorithms.SubexponentialSAT.Main",
+    "+ComparatorChallenges.SubexponentialSAT"
+  ],
+  "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.",
+  "child_cpu_seconds": 8.769658,
+  "cwd": "<REPLICATION_ROOT>/openai/workspace",
+  "exit_code": 0,
+  "name": "trace",
+  "raw_log_bytes": 5258,
+  "raw_log_sha256": "848790b8bfbf646a8c33eec16294d3407ff608ef07449994dc5fd488c25dbd37",
+  "reason": null,
+  "schema": "eth-ci-stage/1",
+  "started_utc_epoch": 1793888626.7726889,
+  "stdout_is_export": false,
+  "timeout_seconds": 600,
+  "wall_seconds": 12.435912132263184
+}

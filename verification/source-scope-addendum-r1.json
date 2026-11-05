@@ -1,0 +1,45 @@
+{
+  "schema": "eth-source-scope-addendum/1",
+  "created_utc": "2026-11-05T17:22:23.402091+00:00",
+  "source_commit": "4eaee87548250b2682affda7d05d947c05554bae",
+  "scope": "Source reading only; no new target audit or proof execution",
+  "sources": [
+    {
+      "path": "openai/source/lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/Final.lean",
+      "sha256": "040360a8465957622d934e5f1bb4f2cce8dab950e78f52033fbf70da493184f5",
+      "size_bytes": 11701,
+      "total_lines": 201,
+      "read_start_line": 1,
+      "read_end_line": 201
+    },
+    {
+      "path": "openai/source/lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/EncodingBounds.lean",
+      "sha256": "7a747abbef3321d5f32ce68b68d8cc1664cc8659c15e82bd4a84771e7ea1666d",
+      "size_bytes": 4490,
+      "total_lines": 109,
+      "read_start_line": 1,
+      "read_end_line": 107
+    },
+    {
+      "path": "openai/source/lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/Statement.lean",
+      "sha256": "13b195bd1e472dd0e1fc57902d0bcec7c55e4a8ddf751cb7380b984b79368ee8",
+      "size_bytes": 1584,
+      "total_lines": 33,
+      "read_start_line": 1,
+      "read_end_line": 33
+    },
+    {
+      "path": "openai/source/lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/Asymptotics.lean",
+      "sha256": "46db81509ce6ae092122c134e97ebda80fc327fd6d0ed0b1a6ef42e779b5ce6c",
+      "size_bytes": 13965,
+      "total_lines": 308,
+      "read_start_line": 1,
+      "read_end_line": 105
+    }
+  ],
+  "report": {
+    "path": "verification/source-scope-addendum-r1.md",
+    "sha256": "8c1668f9fc157ca7ba4ccb32dd420ac38455486cff23c25f4604f1689aeea68c",
+    "size_bytes": 2321
+  }
+}

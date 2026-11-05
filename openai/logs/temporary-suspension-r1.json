@@ -1,0 +1,57 @@
+{
+  "action": "SIGSTOP preserving own ordinary Lake process group",
+  "at_utc": "2026-11-04T19:19:45.706707+00:00",
+  "pgid": 25130,
+  "verified_members_before": [
+    {
+      "pid": 25130,
+      "pgid": 25130,
+      "executable": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lake"
+    },
+    {
+      "pid": 54456,
+      "pgid": 25130,
+      "executable": "<REPLICATION_ROOT>/openai/compiler-gate-r1/prefix/bin/lean"
+    },
+    {
+      "pid": 54797,
+      "pgid": 25130,
+      "executable": "<REPLICATION_ROOT>/openai/compiler-gate-r1/prefix/bin/lean"
+    },
+    {
+      "pid": 54798,
+      "pgid": 25130,
+      "executable": "<REPLICATION_ROOT>/openai/compiler-gate-r1/prefix/bin/lean"
+    },
+    {
+      "pid": 54800,
+      "pgid": 25130,
+      "executable": "<REPLICATION_ROOT>/openai/compiler-gate-r1/prefix/bin/lean"
+    }
+  ],
+  "observed_states_after": [
+    {
+      "pid": 25130,
+      "state": "Ts"
+    },
+    {
+      "pid": 54456,
+      "state": "T"
+    },
+    {
+      "pid": 54797,
+      "state": "T"
+    },
+    {
+      "pid": 54798,
+      "state": "T"
+    },
+    {
+      "pid": 54800,
+      "state": "T"
+    }
+  ],
+  "purpose": "Prioritize remaining native Anthropic source build and actual theorem checks under shared32GB RAM",
+  "resume_required": true,
+  "proof_verdict": null
+}

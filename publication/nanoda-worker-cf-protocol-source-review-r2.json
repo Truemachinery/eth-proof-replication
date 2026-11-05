@@ -1,0 +1,22 @@
+{
+  "schema": "eth-native-resource-protocol-source-review/2",
+  "created_utc": "2026-11-05T16:32:56.700826+00:00",
+  "scope": "Same-team read-only source/diff review; no helper/aggregator import, proof execution, WIP retry data, or large asset read. Source admission only, not actual acceptance.",
+  "sources": {
+    "openai/nanoda_worker_stack_retry_r2.py": "59931d7b0d00ba5651322e6a3e1efb9524223334ce74ee767891dd95534557fc",
+    "openai/nanoda_worker_stack_retry_r3.py": "9f4fe4e87a568f8bd89d39df61ed03fc155e120e2194aa82dce038918c1f34f3",
+    "openai/aggregate_native_result_r6.py": "f540073691db650da2edd16888e99cc294891b9855df0e64e044c86e2235bcd0",
+    "openai/aggregate_native_result_r7.py": "be05f1310f22170cbc4564b9e35ad4fcb07b2515608aefeb88243e4d918c15d9"
+  },
+  "reviewed_changes": [
+    "Complete R2-to-R3 helper literal diff: only hashlib import, protocol/CF constants, single SHA-pinned parent SDK key explicitly added to constructed environment; original exact full child environment equality unchanged.",
+    "Complete R6-to-R7 aggregate literal diff: pins helperR3 and CF constants; requires exact preserved preexec4044 failure/source/input/raw/outer evidence and absence of checker launch; retains original D9 failure.",
+    "Seven original successful phases plus explicit new-resource retry remain required; fresh precedes preexec failure and retry; postidentity last, source-before-checks and no-overlap guarded.",
+    "Preexec stage resources added once; nested outer costs retained separately, no doublecounting. Existing source/runtime/resource/policy/checker validators unchanged by this delta.",
+    "Final wording distinguishes resource-only changed binary, unchanged strict2 config/export and logic, SDK metadata revision, actual worker extent unmeasured, Comparator linked4.35/originalfresh4.34.1/RustNano roles, and fakeLandrun/noOSisolation."
+  ],
+  "conditional_ack": "No material source-protocol objection. Actual revised acceptance still requires closed successful retry, final postidentity and actual R7 aggregate; no such status is inferred by this review.",
+  "privacy": "Public copies must mask the CF metadata value in ordinary and escaped JSON while retaining its hash. No actual value is present in this report.",
+  "earlier_worker_build_review": "publication/nanoda-worker-build-saved-review-r1.json",
+  "earlier_worker_protocol_review": "publication/nanoda-worker-protocol-source-review-r1.json"
+}

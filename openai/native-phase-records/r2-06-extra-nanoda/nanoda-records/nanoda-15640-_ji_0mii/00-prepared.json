@@ -1,0 +1,93 @@
+{
+  "mode": "native_fake_landrun_unsandboxed",
+  "started_at": "2026-11-05T14:45:48.231009+00:00",
+  "wrapper_argv": [
+    "<REPLICATION_ROOT>/verification-tools/record_nanoda.py",
+    "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/additional-nanoda-config.json"
+  ],
+  "wrapper_source": {
+    "path": "<REPLICATION_ROOT>/verification-tools/record_nanoda.py",
+    "sha256": "c34f36d630d182708937a5280b6eda8d0723fa0ffdd85caf8fc54af17b332f48",
+    "size_bytes": 8494,
+    "device": 16777233,
+    "inode": 53262268,
+    "mtime_ns": 1793813022172135886
+  },
+  "record_directory": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii",
+  "shim": {
+    "path": "<REPLICATION_ROOT>/verification-tools/comparator-source/scripts/fake-landrun.sh",
+    "sha256": "167507c89d8b3c7667ad78b50df7b19f89883751a01efd1457404fa34a994e8b",
+    "size_bytes": 1431,
+    "device": 16777233,
+    "inode": 53035252,
+    "mtime_ns": 1793812063553731846
+  },
+  "checker_argv": [
+    "<REPLICATION_ROOT>/verification-tools/nanoda-source/target/release/nanoda_bin",
+    "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/additional-nanoda-config.json"
+  ],
+  "cwd": "<REPLICATION_ROOT>/openai/workspace",
+  "binary_before": {
+    "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/target/release/nanoda_bin",
+    "sha256": "d9a1fc5371b84c9eb0687a7630eb724fa88886d9f5d665f09f9f926730573b80",
+    "size_bytes": 1260088,
+    "device": 16777233,
+    "inode": 53227609,
+    "mtime_ns": 1793812587909251142
+  },
+  "config_before": {
+    "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/additional-nanoda-config.json",
+    "sha256": "acd37052945a7ef7364cf4c30177c6f0d2e7355f2d5a86c1f242986ad361acf4",
+    "size_bytes": 398,
+    "device": 16777233,
+    "inode": 54280072,
+    "mtime_ns": 1793889948085397677
+  },
+  "config_archive": {
+    "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/effective-config.json",
+    "sha256": "acd37052945a7ef7364cf4c30177c6f0d2e7355f2d5a86c1f242986ad361acf4",
+    "size_bytes": 398,
+    "device": 16777233,
+    "inode": 54280108,
+    "mtime_ns": 1793889956223347183
+  },
+  "export_before": {
+    "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/selected-solution.ndjson",
+    "sha256": "bdbc9afe336fea99b01bc4eced6e4232153afdefe13a1095cdc5ca9499e3f573",
+    "size_bytes": 2355666449,
+    "device": 16777233,
+    "inode": 54279265,
+    "mtime_ns": 1793889886659404400
+  },
+  "export_archive": {
+    "uncompressed_sha256": "bdbc9afe336fea99b01bc4eced6e4232153afdefe13a1095cdc5ca9499e3f573",
+    "uncompressed_size_bytes": 2355666449,
+    "gzip": {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/export.ndjson.gz",
+      "sha256": "c9408fc5dedf81e411e1a259c160804b10f8ae8ccce6b2abefff2170c0cbb789",
+      "size_bytes": 453732564,
+      "device": 16777233,
+      "inode": 54280080,
+      "mtime_ns": 1793889956059183525
+    }
+  },
+  "effective_policy": {
+    "use_stdin": false,
+    "export_file_path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/selected-solution.ndjson",
+    "permitted_axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+    ],
+    "unpermitted_axiom_hard_error": true,
+    "num_threads": 2,
+    "nat_extension": true,
+    "string_extension": true
+  },
+  "policy_changes_by_recorder": false,
+  "inherited_recording_environment": {
+    "COMPARATOR_LANDRUN": "<REPLICATION_ROOT>/verification-tools/comparator-source/scripts/fake-landrun.sh",
+    "NANODA_REAL_BINARY": "<REPLICATION_ROOT>/verification-tools/nanoda-source/target/release/nanoda_bin",
+    "REPLICATION_CHECKER_RECORD_DIR": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/nanoda-records"
+  }
+}

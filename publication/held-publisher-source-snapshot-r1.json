@@ -1,0 +1,10 @@
+{
+  "schema": "eth-held-publisher-source-snapshot/1",
+  "created_utc": "2026-11-05T14:59:18.882799+00:00",
+  "source": "publish_package.py",
+  "snapshot": "publication/publisher-native-guards-held-r1.py",
+  "sha256": "393e66e4bc31bb8115c371177a04024ca4d46728ce039b8adda1f32e50ef3bb1",
+  "size_bytes": 59740,
+  "scope": "Exact byte copy of executed synthetic-controls publisher393e, not an upstream source and not authorization to export R8. Held because original two-thread Nanoda failed; retry/mixed protocol needs separate reviewed guard version.",
+  "primary_publisher_changed": false
+}

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<REPLICATION_ROOT>/openai/nanoda_worker_stack_retry_r2.py", line 369, in <module>
+    sys.exit(main())
+  File "<REPLICATION_ROOT>/openai/nanoda_worker_stack_retry_r2.py", line 296, in main
+    return child(args.child)
+  File "<REPLICATION_ROOT>/openai/nanoda_worker_stack_retry_r2.py", line 256, in child
+    m.require(inputs["protocol_variant"] == PROTOCOL and inputs["base_r2_input_fingerprint"] == BASE_FP
+  File "<REPLICATION_ROOT>/openai/aggregate_native_result_r4.py", line 49, in require
+    raise ValueError(message)
+ValueError: child resource protocol/environment differs

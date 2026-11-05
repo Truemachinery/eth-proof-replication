@@ -1,0 +1,5 @@
+Source/saved-fixture ACK for interrupted wrapper72fd73ea and guarde0c2f49a. The separate route uses a private immutable a72 instance, seven original successful receipts only and explicit INTERRUPTED/signal15/null checker and final costs. Exact89be/e066 recovery and launch evidence remain observations, not invented stage/checker/DIGEST completions or a timeout.
+
+Recovered logs remain separately classified/bound, with no completed-checker binding. The0B JSON is identity-checked outside the selected copy set. Five-output3893 seal, original phase/sourcebuild/schedule/retainednegative facts and combined reviews remain required before a final map. All previous positive and incomplete source routes are unchanged.
+
+Saved45 fixtures bind these exact sources (adapter23 with fake guard/stubbed export; realgate22 fakeheader refusers). Their scope is protocol plumbing, not a full actual campaign or kernel check; this reviewer did not import or rerun them. No actual closure/payload/private CF value/proof/export/network was used by this review. Root actual combined review, fixed map and separate export remain required.

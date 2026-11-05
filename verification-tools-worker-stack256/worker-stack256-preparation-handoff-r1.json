@@ -1,0 +1,182 @@
+{
+  "schema": "nanoda-worker-stack256-preparation-handoff/1",
+  "status": "preparation_complete_peer_final_ack_pending",
+  "observed_utc": "2026-11-05T15:47:16.069545+00:00",
+  "hypothesis": "An explicitly rebuilt Nanoda with a larger requested worker stack can avoid the observed worker-stack resource failure while preserving checker logic. Actual OpenAI acceptance remains unmeasured.",
+  "changes": {
+    "proof_source_workspace_runtime_configuration": "unchanged",
+    "nanoda_source_commit": "68d5ca9db226849b41a6fff59d796ff19d0a8840",
+    "tracked_physical_source_files": 29,
+    "only_source_difference": "src/lib.rs STACK_SIZE 16_777_216 -> 268_435_456",
+    "new_binary": {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/target/release/nanoda_bin",
+      "sha256": "10e1a4ebdb6fa606ca8d7a60774d8af0655294ab0b19d03a838a5ba746b7c2d9",
+      "size_bytes": 1260088
+    },
+    "original_binary_unchanged_sha256": "d9a1fc5371b84c9eb0687a7630eb724fa88886d9f5d665f09f9f926730573b80",
+    "recorder_is_byte_identical_c34": true,
+    "strict_config_num_threads": 2,
+    "main_stack_limit_setter_used": false
+  },
+  "actual_results": {
+    "rust_worker_probe": "passed: one worker requested268435456B; pthread_get_stacksize_np reported268447744B; joined successfully; main/parent limits unchanged",
+    "isolated_build": "passed: release/offline/locked/jobs1/newtarget; same installed Rust1.99.1 and Cargo.lock; all original source/binary/recorder/manifest bytes preserved",
+    "tiny_kernel_controls": "passed: existing tiny Init accepted; malformed export rejected; actual recorded configurations strict2threads",
+    "python_metadata_refusers": "10 passed on historical22a8 aggregate/helper59931; exact config serialization and finalf540 aggregate AST then passed separately",
+    "actual_openai_nanoda_retry_executed_by_author": false,
+    "actual_aggregation_executed_by_author": false,
+    "original_r2_nanoda_attempt": "retained FAILED: SIGABRT worker stack overflow; not logical rejection or acceptance",
+    "abandoned_serial_mainstack_profile": "preserved unsupported after actual OS-limit EINVAL controls4023/4025; never run on ETH"
+  },
+  "resources": {
+    "recorded_nonoverlapping_preparation_commands": [
+      {
+        "command": "python3 -",
+        "exit_code": 0,
+        "timed_out": false,
+        "cpu_seconds": 3.475085,
+        "wall_seconds": 5.900719,
+        "log_path": "research/checkpoints/codex-eth-anthropic-replication--eth-native-nanoda-worker-stack256-profile-20261105--20261105T152824Z-814308-31524.txt",
+        "summary": "Rootauthorized firstharmlessRustBuilder1thread256MiBstack probe withsamepinnedRust1.99.1, reportOSpthreadsize/mainlimitsunchanged; no proof/Nano/network. Stopifcreationfails."
+      },
+      {
+        "command": "python3 -",
+        "exit_code": 0,
+        "timed_out": false,
+        "cpu_seconds": 29.37826,
+        "wall_seconds": 32.42523,
+        "log_path": "research/checkpoints/codex-eth-anthropic-replication--eth-native-nanoda-worker-stack256-profile-20261105--20261105T153311Z-032217-32706.txt",
+        "summary": "Rootauthorized fixed29tracked68d5files physicalcopy, ONLYlib.rsSTACK_SIZE16MiBto256MiB; sameRust1.99.1/Cargo.lock, offline locked1job,newphysicaltarget. Preserveoriginalsource/D9/C34; no ETHNano/network."
+      },
+      {
+        "command": "python3 -",
+        "exit_code": 0,
+        "timed_out": false,
+        "cpu_seconds": 0.380175,
+        "wall_seconds": 0.546099,
+        "log_path": "research/checkpoints/codex-eth-anthropic-replication--eth-native-nanoda-worker-stack256-profile-20261105--20261105T153941Z-585637-33876.txt",
+        "summary": "Executed: python3 -"
+      },
+      {
+        "command": "python3 -",
+        "exit_code": 0,
+        "timed_out": false,
+        "cpu_seconds": 0.092768,
+        "wall_seconds": 0.106787,
+        "log_path": "research/checkpoints/codex-eth-anthropic-replication--eth-native-nanoda-worker-stack256-profile-20261105--20261105T154302Z-885941-34424.txt",
+        "summary": "Executed: python3 -"
+      },
+      {
+        "command": "python3 -",
+        "exit_code": 0,
+        "timed_out": false,
+        "cpu_seconds": 0.045328,
+        "wall_seconds": 0.048899,
+        "log_path": "research/checkpoints/codex-eth-anthropic-replication--eth-native-nanoda-worker-stack256-profile-20261105--20261105T154515Z-321768-34827.txt",
+        "summary": "Executed: python3 -"
+      }
+    ],
+    "checkpoint_child_cpu_seconds_summed": 33.371616,
+    "checkpoint_wall_seconds_summed": 39.027733999999995,
+    "scope": "Five recorded preparation commands only; does not include editing, board/checkpoint administration or independent reviews. Tool preparation can overlap root fresh and must not be added to nonoverlapping proof-stage wall totals.",
+    "paid_cloud_spend_usd": 0
+  },
+  "manual_next_steps": [
+    "Root waits for successful original4.34.1 fresh closure and final peer ACK.",
+    "Root runs frozen worker-stack helper once in exclusive new directory; preserve failure if any.",
+    "Root runs originalR2 post-identity LAST.",
+    "Only then root runs frozenR6 with seven actual original successful phases, originalfailedNano and revisedresource retry.",
+    "Publisher guard/export requires separate root coordination; no public write or dispatch by author."
+  ],
+  "limitations": [
+    "Requested worker-stack constant plus harmless OS-reported probe does not measure actual Nano worker extent or committed memory.",
+    "Resource binary is different; no same-binary or originalR2-success claim.",
+    "Native fake Landrun supplies no OS isolation; this is not verbatim Linux CI reproduction.",
+    "Comparator builtin replay links Lean4.35; original fresh uses4.34.1; RustNano is the separate checker implementation.",
+    "Same installed compiler/version and current executable hashes are observed; unrecorded historical dynamic compiler runtime hashes are not invented.",
+    "No practical SAT performance or SHA256d mining advantage follows from exact formal-target replication."
+  ],
+  "small_artifacts": [
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/worker_probe_r1.rs",
+      "sha256": "54a87840a54b1f8e5ff2970784331cee16e9e0804713ffd280d510cf66a43c5a",
+      "size_bytes": 1557
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/worker-probe-result-r1.json",
+      "sha256": "c2d1e9442e256121dff3f627d3a6db0deb184ec5ca6d9c498dd9910a272c65cd",
+      "size_bytes": 6228
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source-provenance-r1.json",
+      "sha256": "b73658a2cec0410e1df0a90c446c5f15c0cf3a28875131027972ddece9c71dc7",
+      "size_bytes": 35396
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/resource-only.patch",
+      "sha256": "8772472e7acd9c5900d01db457b7e7ba6d5e2273c57e3f939fa5d2485412659f",
+      "size_bytes": 211
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/build-prepared-r1.json",
+      "sha256": "aa10dc2e39c73231a1485d6aca261b82856c291df15c81a226c8eb915017da26",
+      "size_bytes": 2910
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/build-result-r1.json",
+      "sha256": "9746cc46746f11d88d5d0f3f5ad1458e05a57627abb90fd6d60c6f42ebef325e",
+      "size_bytes": 8241
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/build-r1.raw.log",
+      "sha256": "14a4387c12f70eea04bf9b23c8f1e6f0dd4f5d0808a5e3bb5d0973dc803b1b83",
+      "size_bytes": 2177
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/record_nanoda.py",
+      "sha256": "c34f36d630d182708937a5280b6eda8d0723fa0ffdd85caf8fc54af17b332f48",
+      "size_bytes": 8494
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/tool-manifest-r1.json",
+      "sha256": "f90219aaeedd7bbff3746eff8167c99b8d075d1045ae5c4363bc8ebb425bc30d",
+      "size_bytes": 1872
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/tiny-controls-r1/control-result-r1.json",
+      "sha256": "c539e45b86bf71fbfb4b69d61a2cf3654681baf3a159ed9a2ffd6a4c7b6ccd8b",
+      "size_bytes": 7088
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/python-metadata-control-r1.json",
+      "sha256": "942f540cfa7673e5dab258e0220fa8e01f95be0c2de868f062698045af9ccfcb",
+      "size_bytes": 784
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/python-metadata-control-r2.json",
+      "sha256": "388a6c49d154fb362ce393f3c259ce178c7ee858b76f4cbf12bd3bb7a10e7ece",
+      "size_bytes": 646
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/nanoda_worker_stack_retry_r2.py",
+      "sha256": "59931d7b0d00ba5651322e6a3e1efb9524223334ce74ee767891dd95534557fc",
+      "size_bytes": 24045
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/aggregate_native_result_r6.py",
+      "sha256": "f540073691db650da2edd16888e99cc294891b9855df0e64e044c86e2235bcd0",
+      "size_bytes": 45628
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/nanoda-worker-stack256-runbook-r1.md",
+      "sha256": "2dac1c82a3c9f72c7086842b5a81c96fa01b3d835111bbb51d91ec94be601d76",
+      "size_bytes": 6145
+    },
+    {
+      "path": "<REPLICATION_ROOT>/publication/nanoda-worker-build-root-review-r1.json",
+      "sha256": "e18ac205debb4fcf251b8068cf72e3ffe481b7c5038d8f9ccdf75ce8e5c39bb5",
+      "size_bytes": 1298
+    }
+  ],
+  "large_exports_publication": "Keep selected/checked ETH NDJSON and gzip archives local; metadata/hashes only."
+}

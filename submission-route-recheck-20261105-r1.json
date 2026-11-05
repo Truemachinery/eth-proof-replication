@@ -1,0 +1,19 @@
+{
+  "schema": "eth-submission-route-recheck/1",
+  "observed_utc_window": ["2026-11-05T14:41:58Z", "2026-11-05T14:42:23Z"],
+  "timing_scope": "Actual clock readings bracketing the page reads, not individual server fetch timestamps.",
+  "requests": 3,
+  "request_scope": "Two primary pages, then the results-page tail; no linked third-party work visited.",
+  "sources": [
+    {"url": "https://ethdiscussion.blog/2026/10/30/lean-replications/", "relevant_rendered_lines": "21-22,64-91", "visible_comment_count": 3, "latest_visible_comment": "Francis Zane, November 4, 2026 at 8:39 am; timezone not supplied", "observed_scope": "Replication reports and verification lessons."},
+    {"url": "https://ethdiscussion.blog/2026/11/01/announce-your-results/", "relevant_rendered_lines": "21-28,203-262", "visible_comment_count": 18, "latest_visible_comment_date": "November 4, 2026 at 1:51 pm; timezone not supplied", "observed_scope": "Related-result announcements; requirements in companion note."}
+  ],
+  "recommended_primary_route_inference": "Dedicated replication thread.",
+  "replication_email_requirement": "Not observed on replication page.",
+  "form_observations": {"labels_on_both": ["Name", "Email", "Website"], "javascript_notice_on_both": true, "login_rule_visible_in_parsed_text": false, "moderation_rule_visible_in_parsed_text": false, "required_field_flags": "Not established", "actual_login_or_moderation_behavior": "Untested; absence of a visible rule is not evidence of no requirement."},
+  "change_assessment": "No revised submission instruction observed.",
+  "comparison_limit": "No archived-page diff; third-party claims unchecked.",
+  "author_context": {"name": "Nathaniel Jose", "affiliation": "Unspecified; not invented", "private_contact": "Omitted"},
+  "actions": {"forms_filled_or_submitted": false, "messages_or_email_sent": false, "posts_or_site_changes": false, "submission_draft_edited": false},
+  "resources": {"primary_page_reads": 3, "paid_compute_usd": 0, "scope": "Read-only web and small local metadata/artifact writing; no proof execution."}
+}

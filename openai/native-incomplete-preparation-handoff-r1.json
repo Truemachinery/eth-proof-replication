@@ -1,0 +1,62 @@
+{
+  "schema": "native-incomplete-closure-preparation-handoff/1",
+  "status": "source_prepared_reviewed_not_executed",
+  "observed_utc": "2026-11-05T17:11:52.050411+00:00",
+  "new_runtime_result_schema": "openai-native-incomplete-result/1",
+  "only_future_verdict": "ORIGINAL_LEAN_SUITE_PASS_ADDITIONAL_NANODA_INCOMPLETE",
+  "expanded_suite_passed": false,
+  "actual_terminal_or_wip_read_by_author": false,
+  "actual_closure_or_proof_run_by_author": false,
+  "hypothesis": "A disjoint strict negative closure can preserve successful original Lean-suite evidence and actual terminal additional-checker failure/timeout without claiming independent Rust acceptance.",
+  "required_future_evidence": [
+    "Actual failedR3 helper+closednonzero stage/plainouter raw",
+    "Seven originalR2successes including root-run postidentityLAST",
+    "Originalsourcebuild and unchanged exactcommon+resourcetoolinputs",
+    "Actualworker event/strictconfig/00+01 and any observed02/99; any recorded checker0 refused",
+    "OldD9/preexec/mainstacknegative artifacts plus manual source scheduling records"
+  ],
+  "unknowns": "Missing02 leaves checkerexit/accepted/during-checkunchanged unknown, not invented. Stage124/exacttimeoutreason/cap supportsstage timeout only;125doesnotinventunderlyingcause. Prepared archive is never accepted archive.",
+  "artifacts": [
+    {
+      "path": "<REPLICATION_ROOT>/openai/aggregate_native_incomplete_r1.py",
+      "sha256": "f2e9155e2e92356f976167190d521aa35829f00ac1a3d9b2cc7d11292dd663be",
+      "size_bytes": 19730
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/aggregate_native_incomplete_r2.py",
+      "sha256": "97d65f2fcc779f4e8ea5473716c7da21cb6dea98c9ca81a76e9a80658fff8940",
+      "size_bytes": 21523
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-incomplete-closure-runbook-r1.md",
+      "sha256": "8dc90067dbce699422c7dac7ba824a4b3b2b333d00eda4ea38a5454cb8a9d155",
+      "size_bytes": 6226
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/negative-closure-policy-controls-r1.json",
+      "sha256": "b5f3616a20730e9e0433d30c11c4f3131798b982d4ed0d66e5e6a83d02fe58a0",
+      "size_bytes": 987
+    },
+    {
+      "path": "<REPLICATION_ROOT>/publication/native-incomplete-closure-source-review-r1.json",
+      "sha256": "00b84f1797c17850a75ae23c68a8ee9a07336bc7f1e288ec0c38f081f4b6dcd2",
+      "size_bytes": 4334
+    },
+    {
+      "path": "<REPLICATION_ROOT>/publication/native-incomplete-closure-source-review-r1.md",
+      "sha256": "0de358157f28e4442560716ddd44f22e4561936e1dbc0519da7daa290ab5d954",
+      "size_bytes": 1222
+    }
+  ],
+  "source_review": "Separate same-team peer fullR1+R2delta review plus root independent fullR1/R2delta sourceACK; no actualchecker/closure result inferred.",
+  "retained_failure": "InitialsourceR1f2e prematureseal-order issue preserved; R2 fixesreportfsync/artifactmanifest before finalseal and binds allthree outputs. No sourceversion was executed on actualcampaign.",
+  "tiny_controls": {
+    "checkpoint_event": 4080,
+    "count": 11,
+    "cpu_seconds": 0.056112,
+    "wall_seconds": 0.062017,
+    "scope": "PureAST-extractedstageclassifier and sourcesealordering only; no helpermetadata/attempt/proof execution.",
+    "paid_cloud_spend_usd": 0
+  },
+  "root_next": "Wait actualterminal and ensure owned process closure; run postidentityLAST, then explicitly invoke R2 with actual terminalDIGEST. Root owns final actual review/report/EXPERIMENTS/README/publication. PositiveR7 and publisher guard remain unchanged; no automatic fallback."
+}

@@ -1,0 +1,1447 @@
+{
+  "artifacts": [
+    {
+      "path": "<REPLICATION_ROOT>/openai/aggregate_native_interrupted_r1.py",
+      "sha256": "3893f6fd2ce5eca22fd99f57994bd25891367b729e31587f0d1a13e0ca9e243f",
+      "size_bytes": 21570
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/retry-result.json",
+      "sha256": "e0662f9de6c8699328549233d19c9438c1029951ac0ab3c55361824c78d848b0",
+      "size_bytes": 1021
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/verify_native_phase_r2.py",
+      "sha256": "fe3b12c0b8312a6b0cdb5ec1c6d88933cbff796bc92e9403682735d25348c19c",
+      "size_bytes": 20260
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-recorder-r1/record.py",
+      "sha256": "1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0",
+      "size_bytes": 6474
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/in_workspace.py",
+      "sha256": "b4e80df9ed1f1c71e7a202feccd94f189113610679d4a28ac3728d8708e7d04a",
+      "size_bytes": 700
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/verify_source_identity_r3.py",
+      "sha256": "52cb3de32ef89c5fbb460032601693a9d2e740cda296b8dd44f9ab6fd1fa9174",
+      "size_bytes": 12879
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/identity_expectations_r1.json",
+      "sha256": "e39147fee63287baea89a046c85c462090f1c443f15b53d809e613631f0cce47",
+      "size_bytes": 8435
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/source-manifest.json",
+      "sha256": "bf7f36120177010243e52dd9053bd3e9f97f92fa35184abf173a8a57ef4843e1",
+      "size_bytes": 1892511
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/workspace-config-r2.json",
+      "sha256": "a56c999ec870742bee9c51be2bb3199d358d77876d5e7d49492f5ad880938413",
+      "size_bytes": 709
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/workspace/lake-manifest.json",
+      "sha256": "4aa8b01a11ed34de463651ed6396d9da61f365cccfd158e82e96bbd17bcb14bc",
+      "size_bytes": 3153
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/source/lean/ComparatorChallenges/SubexponentialSAT.json",
+      "sha256": "debbfdc9c01104d2369be80da5180978275106df8b685f693fba7ce7da7c5b19",
+      "size_bytes": 364
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification/AuditTargets.lean",
+      "sha256": "a78f30e0439e85d3a9ae51828e0e42c248c027a7fcfeb4c4fb16cb776fae0b05",
+      "size_bytes": 5663
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/comparator-source/.lake/build/bin/comparator",
+      "sha256": "bdf09ee3e725f1480792db7b5befcbf6e4f77db90d9f1f4986bda5a1e6315f4c",
+      "size_bytes": 101846512
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/lean4export-434-source/.lake/build/bin/lean4export",
+      "sha256": "e6217f95bf55c5e165a62f12ec6ce1fb3c25a815cff0f9cb6f6dfcf4c8e55e25",
+      "size_bytes": 179096064
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/target/release/nanoda_bin",
+      "sha256": "d9a1fc5371b84c9eb0687a7630eb724fa88886d9f5d665f09f9f926730573b80",
+      "size_bytes": 1260088
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/comparator-source/scripts/fake-landrun.sh",
+      "sha256": "167507c89d8b3c7667ad78b50df7b19f89883751a01efd1457404fa34a994e8b",
+      "size_bytes": 1431
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/record_nanoda.py",
+      "sha256": "c34f36d630d182708937a5280b6eda8d0723fa0ffdd85caf8fc54af17b332f48",
+      "size_bytes": 8494
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native_export_capture_r2.py",
+      "sha256": "4755ba1dd43d18509cd1472bca98c269c79e3dc5a3c99f41faff5b2e6d78be74",
+      "size_bytes": 3279
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/workspace/lean-toolchain",
+      "sha256": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+      "size_bytes": 25
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/workspace/lakefile.lean",
+      "sha256": "aea9d368f24768ab9d51d8c9216c1dd60e598a983e63c463dc8de3f605d268fb",
+      "size_bytes": 534
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared.dylib",
+      "sha256": "6588b7e38450ea749006dcd90bbaea9393a5ca1b64727a2e7138f3c9427c2b50",
+      "size_bytes": 179077552
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared_1.dylib",
+      "sha256": "e44858e227323a23ce7416c5678415d2d022582b1627ad3690117ce73cd6345a",
+      "size_bytes": 16736
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared_2.dylib",
+      "sha256": "be68927a4f282b99383e82af4d481b4ffe59f2a243aea20dae0e60b39c2ae182",
+      "size_bytes": 16736
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libInit_shared.dylib",
+      "sha256": "cb203e0bc0e6ab3250b2804d3e5398ad3a91544b5e049674532f73b7a062ef7f",
+      "size_bytes": 16736
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libLake_shared.dylib",
+      "sha256": "60a94628397814203d86428fa6015f9d844c4c4c74cda8667e687a4ea5b5f5ac",
+      "size_bytes": 10072896
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/leanchecker",
+      "sha256": "cfde41cb11dde58c84e9c60c551fd104bb2fc1104ad44dca932a923120272a35",
+      "size_bytes": 78224
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean",
+      "sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+      "size_bytes": 49968
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lake",
+      "sha256": "c8c24f1398162ab4004e2a869952d8469f54293651151feaad4526f2b8474c6e",
+      "size_bytes": 51824
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/nanoda_worker_stack_retry_r3.py",
+      "sha256": "9f4fe4e87a568f8bd89d39df61ed03fc155e120e2194aa82dce038918c1f34f3",
+      "size_bytes": 24398
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/source-build-gated-r4-receipt.json",
+      "sha256": "0a1a693fa6848c575b34907bd1f6bb5671653de1c02d6fc5ec0cac5585595e95",
+      "size_bytes": 1636
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/source-build-gated-r4.txt",
+      "sha256": "7c805711419dd84c01e6fd71ad2b9c548238245757730a55c71b8910608c1cde",
+      "size_bytes": 297435
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/compiler-gate-r1/manifest.json",
+      "sha256": "279ed9672c932960383c9a037686c759e3af6bae12e83528ddfdabfce500feef",
+      "size_bytes": 3423
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-01-pre-identity/phase-result.json",
+      "sha256": "c742b1d83f083b5df12277dba559fce7a8515de541ad4101ac02b24c57961f51",
+      "size_bytes": 9533
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-01-pre-identity/phase-prepared.json",
+      "sha256": "cf6421ffc77fee4e5ede259367deb8c6e373ac7bb1b55a0398b66f18cdf1d713",
+      "size_bytes": 659
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-01-pre-identity/phase-inputs.json",
+      "sha256": "6dd060e5dd39bb16e5abd04f6737fe27a05c0cc67453e553eb32f750d1f0b1af",
+      "size_bytes": 11223
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-01-pre-identity/stages/pre-identity/finished.json",
+      "sha256": "8aae30f10e42b04a7cb5958facfb3e2dd76696d2d872dd6d33b581aa04d677ed",
+      "size_bytes": 987
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-01-pre-identity/stages/pre-identity/prepared.json",
+      "sha256": "556a5e21c2c646b3e6f50e04099d8eb024cd1134bdf53b26b62e390a816738a9",
+      "size_bytes": 768
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-01-pre-identity/stages/pre-identity/raw.log",
+      "sha256": "973fa5cbe45226e3ce39c9b03fd1acfcb00b499f8a6de4a51b2cc8c28728d9e9",
+      "size_bytes": 6665
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-02-trace/phase-result.json",
+      "sha256": "7ca186455d7ab695cc3528a87ef34c687d43d56e00e62d93313c1f181760d56b",
+      "size_bytes": 2441
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-02-trace/phase-prepared.json",
+      "sha256": "f07910dbd0c3f739ea678d029845388aabdaafa179785689b8b8d2a754b42804",
+      "size_bytes": 645
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-02-trace/phase-inputs.json",
+      "sha256": "8b7906c6767d2b7d041703959ca1b4ff51eba64a1d2019131064af428fdd478e",
+      "size_bytes": 11154
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-02-trace/stages/trace/finished.json",
+      "sha256": "528e14e4ad3e35a0c22174f833e44261a9dee6cc83911d412bba8677b0c36b36",
+      "size_bytes": 933
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-02-trace/stages/trace/prepared.json",
+      "sha256": "91a88d059af5e38f8f8a40b27b796c50272c7272ede0d47691edcad1f23cd518",
+      "size_bytes": 713
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-02-trace/stages/trace/raw.log",
+      "sha256": "848790b8bfbf646a8c33eec16294d3407ff608ef07449994dc5fd488c25dbd37",
+      "size_bytes": 5258
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-03-audit/phase-result.json",
+      "sha256": "4ce4b68f3206db0403dd97dfbf862e5e7e20e4556df5eaa36add0d96b09d28a6",
+      "size_bytes": 3711
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-03-audit/phase-prepared.json",
+      "sha256": "81af80d383e85c9db1a004c47c22d5498ff7d97db66fea79f10076c2ea211dd8",
+      "size_bytes": 645
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-03-audit/phase-inputs.json",
+      "sha256": "25ce70522aff0474946fd0181ea7d7c8402af9a9c332e65de2fc4f09fe201eae",
+      "size_bytes": 11298
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-03-audit/stages/audit/finished.json",
+      "sha256": "d2ff700a5718ca60dfaa3d16a091aa62e8ebbbf2d6b9c9a479e974750cf41f1f",
+      "size_bytes": 1075
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-03-audit/stages/audit/prepared.json",
+      "sha256": "4fef795fb448a8b1c77157564b46feaf29eefe6d7d2fc8720a11f680ec47150b",
+      "size_bytes": 857
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-03-audit/stages/audit/raw.log",
+      "sha256": "c14d4f2dc08739438f3286ce754462a2f1caa307601dbdebb5fb53883bb4b0c4",
+      "size_bytes": 821
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator/phase-result.json",
+      "sha256": "e945d263400fe68cd349066c808b6ee3980bfb7a675d88edaf3ca3ee001712fb",
+      "size_bytes": 2648
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator/phase-prepared.json",
+      "sha256": "7f89947df9d45136f784fe0db16809a30821734dbfd18176cd8ff34a43418b0c",
+      "size_bytes": 655
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator/phase-inputs.json",
+      "sha256": "9961d336608415b962a8cb5ada994c7bf87bec65f03a7bdebc24f2b016d0cadd",
+      "size_bytes": 11747
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator/stages/comparator/finished.json",
+      "sha256": "9f83b1752d9c706b1b496e9738efd38444bb8c5d4e2eb2c75f1bf9c00f6256b3",
+      "size_bytes": 1118
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator/stages/comparator/prepared.json",
+      "sha256": "96f21957676d3855223106a62d70a0f455d5888570be041c6a49c1f356ed6d20",
+      "size_bytes": 897
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator/stages/comparator/raw.log",
+      "sha256": "66f795e10a667327f1e4c00304a9c0b7c4ea4ff3086819b281a9e21e7cd86136",
+      "size_bytes": 7859
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/phase-result.json",
+      "sha256": "268fc9787fb152fda85cdfe06442c7bca4dce76c04bef1f8ceaa0e839989e95d",
+      "size_bytes": 3959
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/phase-prepared.json",
+      "sha256": "3d59090afe7100998546ce27b0dc01a3c7e6ac47e19e1b8f3ab4a8b67da307a5",
+      "size_bytes": 665
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/phase-inputs.json",
+      "sha256": "49cc3185d11cf935630708c97718c750a545cd7a74a0a8066cdf8d81a9333b4f",
+      "size_bytes": 11887
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/stages/selected-export/finished.json",
+      "sha256": "5a147ff35bf3a5b9ad8eb77db3ef7da72dd5185a18a672a58a1382157e355625",
+      "size_bytes": 1645
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/stages/selected-export/prepared.json",
+      "sha256": "39802fddd2cfc4aab156019a282f5b90a4b1b0b1d77d620a0e773e2098c0693d",
+      "size_bytes": 1425
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/stages/selected-export/raw.log",
+      "sha256": "eaca645470f3fe81b8b43c0ba973fe3464458335a2f349aa3bcf5226c96e5505",
+      "size_bytes": 1295
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh/phase-result.json",
+      "sha256": "647f8001e2e025607bc7848959dc98836014741e00c2d160fd1f30688c05082a",
+      "size_bytes": 2804
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh/phase-prepared.json",
+      "sha256": "c5760ca9d7fe595a27e0556cd7df9ceec99631aa59cc0bb571154164237e8f91",
+      "size_bytes": 663
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh/phase-inputs.json",
+      "sha256": "aefb98ecd20d91b3d2ff2df2b928dd2370a4cf6139af3a16b767922d7deedab7",
+      "size_bytes": 11278
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh/stages/original-fresh/finished.json",
+      "sha256": "c51c868feafcfc94ed51916a62be4f08e6bd9f1eeaa8390f0b16502771e0345e",
+      "size_bytes": 1037
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh/stages/original-fresh/prepared.json",
+      "sha256": "80265176f7d392062d8c446c6174e491344b09b8e751fdc6b2278ad9883daa03",
+      "size_bytes": 818
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh/stages/original-fresh/raw.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-08-post-identity/phase-result.json",
+      "sha256": "9632b410e12f85abf27ccdd94fc0bf0c109280205c5572de434381743c4805a7",
+      "size_bytes": 9527
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-08-post-identity/phase-prepared.json",
+      "sha256": "b4f704e50b6821ffa6f7f074cb781fa5ea8f59cd585000fa8fe180df2b395150",
+      "size_bytes": 661
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-08-post-identity/phase-inputs.json",
+      "sha256": "5c5ea4adf6917e6477e24a808fec60fcbe1180003cf51c260cb0b07c30c749db",
+      "size_bytes": 11226
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-08-post-identity/stages/post-identity/finished.json",
+      "sha256": "619af51451049d66b1eb720e0012e95e7b091091d4be602a381af36968c28b78",
+      "size_bytes": 987
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-08-post-identity/stages/post-identity/prepared.json",
+      "sha256": "29558df0d49a854102def759cbeb823c2c02fb03dc6776317e79c423fd44ff08",
+      "size_bytes": 768
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-08-post-identity/stages/post-identity/raw.log",
+      "sha256": "90bd2e5412fdb9ea5ce1ea8393b01748dfdf21df3fd8987cd96195d3ec3850ce",
+      "size_bytes": 6654
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/export-capture.json",
+      "sha256": "68dfc98bce263b4c58b28dc8d7af4caba44c85dccb10c6ac2f346c414eba26ee",
+      "size_bytes": 1359
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/selected-solution.ndjson",
+      "sha256": "bdbc9afe336fea99b01bc4eced6e4232153afdefe13a1095cdc5ca9499e3f573",
+      "size_bytes": 2355666449
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/phase-result.json",
+      "sha256": "d3c66a14e20464d11f37efa1e86d5f5651a34ceba997cd54af24472cb07174dd",
+      "size_bytes": 2667
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/phase-inputs.json",
+      "sha256": "2ea7a98077a136565c520cfa80b4f1926a4cbf4926b4ec0c050d19dcf690ee80",
+      "size_bytes": 12256
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/phase-prepared.json",
+      "sha256": "f68b7790e9a73d87796b0a5d49692feb90ed1ef511624dcdd72064c0b96727a6",
+      "size_bytes": 659
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/stages/extra-nanoda/finished.json",
+      "sha256": "3e1a2079d8fadd4ada8130f64686039efb9fc95a96fd56db603354506576f959",
+      "size_bytes": 1149
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/stages/extra-nanoda/prepared.json",
+      "sha256": "df9282a46e1c75759bfb9a643430e97be67de8dd9a7b2bdbd9fed0c4ea66806e",
+      "size_bytes": 927
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/stages/extra-nanoda/raw.log",
+      "sha256": "590ccc60513da51ab0aad98c32b68c0f485d0fda4958c7255feb5175c55bc4e2",
+      "size_bytes": 101
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/00-prepared.json",
+      "sha256": "f9f307f75aaf376e588d94cbcbe023e349ccd9167facb4b5bdb49e84dd2b6f56",
+      "size_bytes": 4872
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/01-started.json",
+      "sha256": "ec0e9674c207deb165bac65c10fe4349b7006663f8a61c19eb3348761f93b3fb",
+      "size_bytes": 395
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/02-finished.json",
+      "sha256": "f70f00e358dd6da983202dbbdde4e2247418c878e640bc85d3825ecb76bf0c78",
+      "size_bytes": 6320
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/additional-nanoda-config.json",
+      "sha256": "acd37052945a7ef7364cf4c30177c6f0d2e7355f2d5a86c1f242986ad361acf4",
+      "size_bytes": 398
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/effective-config.json",
+      "sha256": "acd37052945a7ef7364cf4c30177c6f0d2e7355f2d5a86c1f242986ad361acf4",
+      "size_bytes": 398
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/export.ndjson.gz",
+      "sha256": "c9408fc5dedf81e411e1a259c160804b10f8ae8ccce6b2abefff2170c0cbb789",
+      "size_bytes": 453732564
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/native-r2-extra-nanoda-checkpoint.json",
+      "sha256": "b8d60e79a970485e5b06e0d9bbf50cb2616cfc5ff0a569b58eb7a16cb5537dff",
+      "size_bytes": 4496
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/native-r2-extra-nanoda-checkpoint.txt",
+      "sha256": "0599976a37cdc35a45d160484af270befd31eeae4f440c90af69bd4381cc8ca4",
+      "size_bytes": 5140
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r2-01/retry-result.json",
+      "sha256": "d6b716803c4d9d36b02052bcd04b7cc40d38195973939c59ec2b25f628db627d",
+      "size_bytes": 2423
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r2-01/retry-inputs.json",
+      "sha256": "f36635e59413f2b39e9f05a309f0de24be8f13b16e2d2a72cb10609549747391",
+      "size_bytes": 25867
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r2-01/retry-prepared.json",
+      "sha256": "b44fe84105f050b0dde8d63ba609f5a56e8409b9c588c4a51b2b08aa413188d8",
+      "size_bytes": 846
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/nanoda_worker_stack_retry_r2.py",
+      "sha256": "59931d7b0d00ba5651322e6a3e1efb9524223334ce74ee767891dd95534557fc",
+      "size_bytes": 24045
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/tool-manifest-r1.json",
+      "sha256": "f90219aaeedd7bbff3746eff8167c99b8d075d1045ae5c4363bc8ebb425bc30d",
+      "size_bytes": 1872
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source-provenance-r1.json",
+      "sha256": "b73658a2cec0410e1df0a90c446c5f15c0cf3a28875131027972ddece9c71dc7",
+      "size_bytes": 35396
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/build-result-r1.json",
+      "sha256": "9746cc46746f11d88d5d0f3f5ad1458e05a57627abb90fd6d60c6f42ebef325e",
+      "size_bytes": 8241
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/resource-only.patch",
+      "sha256": "8772472e7acd9c5900d01db457b7e7ba6d5e2273c57e3f939fa5d2485412659f",
+      "size_bytes": 211
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/worker-probe-result-r1.json",
+      "sha256": "c2d1e9442e256121dff3f627d3a6db0deb184ec5ca6d9c498dd9910a272c65cd",
+      "size_bytes": 6228
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/tiny-controls-r1/control-result-r1.json",
+      "sha256": "c539e45b86bf71fbfb4b69d61a2cf3654681baf3a159ed9a2ffd6a4c7b6ccd8b",
+      "size_bytes": 7088
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/record_nanoda.py",
+      "sha256": "c34f36d630d182708937a5280b6eda8d0723fa0ffdd85caf8fc54af17b332f48",
+      "size_bytes": 8494
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/target/release/nanoda_bin",
+      "sha256": "10e1a4ebdb6fa606ca8d7a60774d8af0655294ab0b19d03a838a5ba746b7c2d9",
+      "size_bytes": 1260088
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/.github/workflows/release.yml",
+      "sha256": "3ac7ccfc95653d33b910efd69d541e22ba66b72d88422f54f4eafbe5be5eae0c",
+      "size_bytes": 710
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/.gitignore",
+      "sha256": "cc0528de53769499a02da6fbaaf0dab13434675fe571e276e13845f95f0b601b",
+      "size_bytes": 27
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/Cargo.lock",
+      "sha256": "f9df05457e9aae9acaa1039f10dd21dec4465e339a354f01c3f7c77c3bf0bed0",
+      "size_bytes": 6446
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/Cargo.toml",
+      "sha256": "27aedf28f3b13f6c29edd73681e48b3b3769a01bd27235eec932c98f3c1842cd",
+      "size_bytes": 857
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/LICENSE",
+      "sha256": "c8858a5a76440bbca484e134cf7df46385d090dd18b2c58e650f939258802e5b",
+      "size_bytes": 10141
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/README.md",
+      "sha256": "b91487520d495d8726fedfaa87462d81acf0ffab3a3cad942ae7232461f15fae",
+      "size_bytes": 6228
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/rustfmt.toml",
+      "sha256": "8bc492625b7a601b5147aa68f32a05fb90e7e95f55693c89619adea72ae230a5",
+      "size_bytes": 248
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/debug_printer.rs",
+      "sha256": "184918c06946c0efcc57868e47098428bd1d98179725344ba81b1103eb940c81",
+      "size_bytes": 8921
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/env.rs",
+      "sha256": "687edb90f3a8a2c665eacad66e021ec20c15819b6da7f2c152cb82fb24c3de5b",
+      "size_bytes": 10890
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/expr.rs",
+      "sha256": "8e79e45afd043cd464f1e3af4597df3d4b09dfe087886cd32139f20746c6529e",
+      "size_bytes": 30985
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/inductive.rs",
+      "sha256": "abef916af384d1d3ce339d9ca79a74e943e6cad6b79b67c5c95e717a8d2c4fb1",
+      "size_bytes": 80162
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/level.rs",
+      "sha256": "801452fb06c25e037fc9f0136fd60ca1f720692f2341a3ead9aaf6e1a68a399c",
+      "size_bytes": 10847
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/lib.rs",
+      "sha256": "ca7a3ba8754a06ee08c85fbc5af9debdefc372629c50b02142bdc8aad55cb69e",
+      "size_bytes": 397
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/main.rs",
+      "sha256": "245ceaef34e8925cacaa3c5b99ce096a8c744710ce1f9184423e5a0333e8b35a",
+      "size_bytes": 2524
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/name.rs",
+      "sha256": "e6397a691030820156aa84574f2de3b510f9989e5bef61b99a0db37d2a014bd7",
+      "size_bytes": 2365
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/parser.rs",
+      "sha256": "22b17bd188152fb3ded36a060fc1ade5e064aef7cc411aecf64c5730c40ea3e2",
+      "size_bytes": 33896
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/pretty_printer.rs",
+      "sha256": "b6284a0a27de2a40d714035577e29f259f47e872c2ececc9dfef9a5c479ed778",
+      "size_bytes": 36961
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/quot.rs",
+      "sha256": "0131ae36f3daea5262f280aca44085c15e5335a8657cefd2afcec4c2bc388463",
+      "size_bytes": 10612
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/tc.rs",
+      "sha256": "73f00401263871e533eb0f2cfa38162866204ee3fe7e7dd146755c5690f0b696",
+      "size_bytes": 56610
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/tests.rs",
+      "sha256": "594aac68cef5af3c6c9513c09846c27b041d43b855828e2ec742ca1dd4173e56",
+      "size_bytes": 33
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/tests/level.rs",
+      "sha256": "0b532b157ce6b1b40d27e8acea78ac18c56b92de1bc9439f644b860c1f2a2d92",
+      "size_bytes": 6209
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/tests/natlit.rs",
+      "sha256": "49e012cf9af881c4d3205795d2ced385e39128baa53770806489b69aaa1674fe",
+      "size_bytes": 27965
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/tests/util.rs",
+      "sha256": "f2de3d3bc76336ef82e34374ba6f50a8b185e30f17f68bb1e517e2b48f6666c2",
+      "size_bytes": 4345
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/union_find.rs",
+      "sha256": "2728ab1d2dcd84489a6bb4fa984af22c40236bf813205e42a1c55ca825bdc757",
+      "size_bytes": 5571
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/unique_hasher.rs",
+      "sha256": "e457ec69139dee08c4f21f3fee5bc9a2cfe6bb14e5d5bd217ca35d6a368daea5",
+      "size_bytes": 881
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/util.rs",
+      "sha256": "b93e18f18c59286412109041daf31a5f90686d13f23cf378ce6a6a0c78f25d3d",
+      "size_bytes": 41176
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/test_resources/Empty/export",
+      "sha256": "6ecdb8d4389e5c525cd9dfd05bb610c8a9c74739d9a62dbecc6a049ceb0b9837",
+      "size_bytes": 176
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/test_resources/ProjFromProp/config.json",
+      "sha256": "c898525fcb5347fc9f60961201d93d7663afb1867197a46a5753e21b24fc3cc8",
+      "size_bytes": 186
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/test_resources/ProjFromProp/export",
+      "sha256": "5fc8f25b717c2dd56880064e43d87489b1bea202f5b5ef96d0d06a6ba7ce2022",
+      "size_bytes": 4509
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/.github/workflows/release.yml",
+      "sha256": "3ac7ccfc95653d33b910efd69d541e22ba66b72d88422f54f4eafbe5be5eae0c",
+      "size_bytes": 710
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/.gitignore",
+      "sha256": "cc0528de53769499a02da6fbaaf0dab13434675fe571e276e13845f95f0b601b",
+      "size_bytes": 27
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/Cargo.lock",
+      "sha256": "f9df05457e9aae9acaa1039f10dd21dec4465e339a354f01c3f7c77c3bf0bed0",
+      "size_bytes": 6446
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/Cargo.toml",
+      "sha256": "27aedf28f3b13f6c29edd73681e48b3b3769a01bd27235eec932c98f3c1842cd",
+      "size_bytes": 857
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/LICENSE",
+      "sha256": "c8858a5a76440bbca484e134cf7df46385d090dd18b2c58e650f939258802e5b",
+      "size_bytes": 10141
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/README.md",
+      "sha256": "b91487520d495d8726fedfaa87462d81acf0ffab3a3cad942ae7232461f15fae",
+      "size_bytes": 6228
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/rustfmt.toml",
+      "sha256": "8bc492625b7a601b5147aa68f32a05fb90e7e95f55693c89619adea72ae230a5",
+      "size_bytes": 248
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/debug_printer.rs",
+      "sha256": "184918c06946c0efcc57868e47098428bd1d98179725344ba81b1103eb940c81",
+      "size_bytes": 8921
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/env.rs",
+      "sha256": "687edb90f3a8a2c665eacad66e021ec20c15819b6da7f2c152cb82fb24c3de5b",
+      "size_bytes": 10890
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/expr.rs",
+      "sha256": "8e79e45afd043cd464f1e3af4597df3d4b09dfe087886cd32139f20746c6529e",
+      "size_bytes": 30985
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/inductive.rs",
+      "sha256": "abef916af384d1d3ce339d9ca79a74e943e6cad6b79b67c5c95e717a8d2c4fb1",
+      "size_bytes": 80162
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/level.rs",
+      "sha256": "801452fb06c25e037fc9f0136fd60ca1f720692f2341a3ead9aaf6e1a68a399c",
+      "size_bytes": 10847
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/lib.rs",
+      "sha256": "1ae715baf4c9b592ee918f9815d758f02aa2d60e17d293f602f5cf8732f6b069",
+      "size_bytes": 398
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/main.rs",
+      "sha256": "245ceaef34e8925cacaa3c5b99ce096a8c744710ce1f9184423e5a0333e8b35a",
+      "size_bytes": 2524
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/name.rs",
+      "sha256": "e6397a691030820156aa84574f2de3b510f9989e5bef61b99a0db37d2a014bd7",
+      "size_bytes": 2365
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/parser.rs",
+      "sha256": "22b17bd188152fb3ded36a060fc1ade5e064aef7cc411aecf64c5730c40ea3e2",
+      "size_bytes": 33896
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/pretty_printer.rs",
+      "sha256": "b6284a0a27de2a40d714035577e29f259f47e872c2ececc9dfef9a5c479ed778",
+      "size_bytes": 36961
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/quot.rs",
+      "sha256": "0131ae36f3daea5262f280aca44085c15e5335a8657cefd2afcec4c2bc388463",
+      "size_bytes": 10612
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/tc.rs",
+      "sha256": "73f00401263871e533eb0f2cfa38162866204ee3fe7e7dd146755c5690f0b696",
+      "size_bytes": 56610
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/tests.rs",
+      "sha256": "594aac68cef5af3c6c9513c09846c27b041d43b855828e2ec742ca1dd4173e56",
+      "size_bytes": 33
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/tests/level.rs",
+      "sha256": "0b532b157ce6b1b40d27e8acea78ac18c56b92de1bc9439f644b860c1f2a2d92",
+      "size_bytes": 6209
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/tests/natlit.rs",
+      "sha256": "49e012cf9af881c4d3205795d2ced385e39128baa53770806489b69aaa1674fe",
+      "size_bytes": 27965
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/tests/util.rs",
+      "sha256": "f2de3d3bc76336ef82e34374ba6f50a8b185e30f17f68bb1e517e2b48f6666c2",
+      "size_bytes": 4345
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/union_find.rs",
+      "sha256": "2728ab1d2dcd84489a6bb4fa984af22c40236bf813205e42a1c55ca825bdc757",
+      "size_bytes": 5571
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/unique_hasher.rs",
+      "sha256": "e457ec69139dee08c4f21f3fee5bc9a2cfe6bb14e5d5bd217ca35d6a368daea5",
+      "size_bytes": 881
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/util.rs",
+      "sha256": "b93e18f18c59286412109041daf31a5f90686d13f23cf378ce6a6a0c78f25d3d",
+      "size_bytes": 41176
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/test_resources/Empty/export",
+      "sha256": "6ecdb8d4389e5c525cd9dfd05bb610c8a9c74739d9a62dbecc6a049ceb0b9837",
+      "size_bytes": 176
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/test_resources/ProjFromProp/config.json",
+      "sha256": "c898525fcb5347fc9f60961201d93d7663afb1867197a46a5753e21b24fc3cc8",
+      "size_bytes": 186
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/test_resources/ProjFromProp/export",
+      "sha256": "5fc8f25b717c2dd56880064e43d87489b1bea202f5b5ef96d0d06a6ba7ce2022",
+      "size_bytes": 4509
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/tool-manifest-r1.json",
+      "sha256": "90cf428c18e95d4e05502605b01f35e527d3f04644ef814a3742c8554c26a2c1",
+      "size_bytes": 55010
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r2-01/additional-nanoda-config.json",
+      "sha256": "acd37052945a7ef7364cf4c30177c6f0d2e7355f2d5a86c1f242986ad361acf4",
+      "size_bytes": 398
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r2-01/stages/worker-stack256-nanoda/finished.json",
+      "sha256": "f38921c23da3d09bd67bc6d43e9dc9e54969f42aa82d39808bccf6d78f53f0d5",
+      "size_bytes": 988
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r2-01/stages/worker-stack256-nanoda/prepared.json",
+      "sha256": "6add6bccb37b9752bfe7a84cfbf5b66042fdee5c10a8f8e29e8d03f3de0b101e",
+      "size_bytes": 758
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r2-01/stages/worker-stack256-nanoda/raw.log",
+      "sha256": "f384b5c2c40e0e661b81aa604ae8672a24e6613b536aecba804ea25821090503",
+      "size_bytes": 848
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/native-worker-stack256-r2-checkpoint.json",
+      "sha256": "1326970fac0dec933b7bcfdbac5ceebb3f896633c153d08cbda6f5d59313a15f",
+      "size_bytes": 4081
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/native-worker-stack256-r2-checkpoint.txt",
+      "sha256": "694e0b7dc13d25a56f1d66996bae5d5820cc42704d3c71705549f6401f3ec72e",
+      "size_bytes": 5719
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/interruption-recovery-observation-r1.json",
+      "sha256": "89be8382a7c68dc549f31799154532a58819aba47c1b2b9e5dcfa7b6c70e6939",
+      "size_bytes": 3819
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/native-worker-stack256-cf-r3-checkpoint.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/native-worker-stack256-cf-r3-checkpoint.txt",
+      "sha256": "4c4411725b55d0a8958f3cefb1d8a71869c1d01ded2aa7c9aecba7ca69d78f27",
+      "size_bytes": 7726
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/retry-prepared.json",
+      "sha256": "428df87dd385689d112be17ef6d26492a6898f1903bf5eed4c0756bf4af05629",
+      "size_bytes": 852
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/retry-inputs.json",
+      "sha256": "a65d89d8669cb162619856fb28e35d1963e3aed1a237d20a4504f75bad0bb9d6",
+      "size_bytes": 25952
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/worker-resource.json",
+      "sha256": "bdb66e174c803177379e11b7b1becd5915078dc94d584059cdfdea552aeeff1b",
+      "size_bytes": 6570
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/stages/worker-stack256-nanoda/prepared.json",
+      "sha256": "49f1eba1a094381788edac06aebdbff3c83e85cf359f3bebdd5b50e7d781d61e",
+      "size_bytes": 758
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/stages/worker-stack256-nanoda/raw.log",
+      "sha256": "8e85fe7c96002deb5269c8029747cca717a7552964b7e1f04b7d27c910a86fa4",
+      "size_bytes": 6040
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/nanoda-records/nanoda-38848-vymihcgo/00-prepared.json",
+      "sha256": "074a03c7b4c888b694e2b084cda821f35a3966df08ab1afbd4e0d27985275614",
+      "size_bytes": 4931
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/nanoda-records/nanoda-38848-vymihcgo/01-started.json",
+      "sha256": "50ffadbc77c67de5b386993a889f14584120f5d99bfcb0d2327939e825c5eac1",
+      "size_bytes": 400
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/additional-nanoda-config.json",
+      "sha256": "acd37052945a7ef7364cf4c30177c6f0d2e7355f2d5a86c1f242986ad361acf4",
+      "size_bytes": 398
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/nanoda-records/nanoda-38848-vymihcgo/effective-config.json",
+      "sha256": "acd37052945a7ef7364cf4c30177c6f0d2e7355f2d5a86c1f242986ad361acf4",
+      "size_bytes": 398
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/nanoda-records/nanoda-38848-vymihcgo/export.ndjson.gz",
+      "sha256": "c9408fc5dedf81e411e1a259c160804b10f8ae8ccce6b2abefff2170c0cbb789",
+      "size_bytes": 453732564
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/nanoda_serial_stack_retry_r1.py",
+      "sha256": "5080e15d6f702eee5348fe8384c4a54923eac5acbb246c39b9123d4424cf18f2",
+      "size_bytes": 17969
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/aggregate_native_result_r5.py",
+      "sha256": "f1cd9f8498691d46bbd709c677db3245bf9ee96b3f801f4be123df2bf3aa79e8",
+      "size_bytes": 43928
+    },
+    {
+      "path": "<REPLICATION_ROOT>/publication/main-stack-negative-evidence-r1.json",
+      "sha256": "2f73ad24b712336207a470162e4cf22c23653fb7e7e16ede19e0a811ccbe95f9",
+      "size_bytes": 1843
+    },
+    {
+      "path": "<REPLICATION_ROOT>/publication/negative-evidence/main-stack-control-4023.txt",
+      "sha256": "98d16afaeeb99fbc1825464e49c478f4ea50fd8045e65b8846a779f4ff63ee1f",
+      "size_bytes": 642
+    },
+    {
+      "path": "<REPLICATION_ROOT>/publication/negative-evidence/main-stack-diagnostic-4025.txt",
+      "sha256": "2ca6a373b0aace5df3335b598d4a02484a68a560796979a8c980ff5e4b903f6d",
+      "size_bytes": 5772
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/temporary-suspension-r1.json",
+      "sha256": "73584dc6355248c7899afe15e527281af1a0ac5641071d78ff321a655b2341ef",
+      "size_bytes": 1604
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/temporary-resumption-r1.json",
+      "sha256": "7765cec437c7dd350ff481edf35dd76d4df8e87f04b223240860bda90c12689f",
+      "size_bytes": 10362
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/memory-pressure-suspension-r2.json",
+      "sha256": "34d3b7d059439eea0b9d5a41df8470fad59b22b524403b62b1ea58e1a018ca95",
+      "size_bytes": 11132
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/memory-pressure-resumption-r3.json",
+      "sha256": "de271acadc3b41a6556f614aafcd9595bf7f9ff762821b72ddc9947c88b095db",
+      "size_bytes": 6215
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/memory-pressure-resumption-r4.json",
+      "sha256": "810e07a6d0b5c63f77ec064f91f998f4ab5b0fee948d72b8f210670a2451f9d5",
+      "size_bytes": 3879
+    }
+  ],
+  "public_small_artifacts": [
+    {
+      "path": "<REPLICATION_ROOT>/openai/aggregate_native_result_r5.py",
+      "sha256": "f1cd9f8498691d46bbd709c677db3245bf9ee96b3f801f4be123df2bf3aa79e8",
+      "size_bytes": 43928
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/interruption-recovery-observation-r1.json",
+      "sha256": "89be8382a7c68dc549f31799154532a58819aba47c1b2b9e5dcfa7b6c70e6939",
+      "size_bytes": 3819
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/memory-pressure-resumption-r3.json",
+      "sha256": "de271acadc3b41a6556f614aafcd9595bf7f9ff762821b72ddc9947c88b095db",
+      "size_bytes": 6215
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/memory-pressure-resumption-r4.json",
+      "sha256": "810e07a6d0b5c63f77ec064f91f998f4ab5b0fee948d72b8f210670a2451f9d5",
+      "size_bytes": 3879
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/memory-pressure-suspension-r2.json",
+      "sha256": "34d3b7d059439eea0b9d5a41df8470fad59b22b524403b62b1ea58e1a018ca95",
+      "size_bytes": 11132
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/native-r2-extra-nanoda-checkpoint.json",
+      "sha256": "b8d60e79a970485e5b06e0d9bbf50cb2616cfc5ff0a569b58eb7a16cb5537dff",
+      "size_bytes": 4496
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/native-r2-extra-nanoda-checkpoint.txt",
+      "sha256": "0599976a37cdc35a45d160484af270befd31eeae4f440c90af69bd4381cc8ca4",
+      "size_bytes": 5140
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/native-worker-stack256-cf-r3-checkpoint.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/native-worker-stack256-cf-r3-checkpoint.txt",
+      "sha256": "4c4411725b55d0a8958f3cefb1d8a71869c1d01ded2aa7c9aecba7ca69d78f27",
+      "size_bytes": 7726
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/native-worker-stack256-r2-checkpoint.json",
+      "sha256": "1326970fac0dec933b7bcfdbac5ceebb3f896633c153d08cbda6f5d59313a15f",
+      "size_bytes": 4081
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/native-worker-stack256-r2-checkpoint.txt",
+      "sha256": "694e0b7dc13d25a56f1d66996bae5d5820cc42704d3c71705549f6401f3ec72e",
+      "size_bytes": 5719
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/source-build-gated-r4-receipt.json",
+      "sha256": "0a1a693fa6848c575b34907bd1f6bb5671653de1c02d6fc5ec0cac5585595e95",
+      "size_bytes": 1636
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/source-build-gated-r4.txt",
+      "sha256": "7c805711419dd84c01e6fd71ad2b9c548238245757730a55c71b8910608c1cde",
+      "size_bytes": 297435
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/temporary-resumption-r1.json",
+      "sha256": "7765cec437c7dd350ff481edf35dd76d4df8e87f04b223240860bda90c12689f",
+      "size_bytes": 10362
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/temporary-suspension-r1.json",
+      "sha256": "73584dc6355248c7899afe15e527281af1a0ac5641071d78ff321a655b2341ef",
+      "size_bytes": 1604
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/nanoda_serial_stack_retry_r1.py",
+      "sha256": "5080e15d6f702eee5348fe8384c4a54923eac5acbb246c39b9123d4424cf18f2",
+      "size_bytes": 17969
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/nanoda_worker_stack_retry_r2.py",
+      "sha256": "59931d7b0d00ba5651322e6a3e1efb9524223334ce74ee767891dd95534557fc",
+      "size_bytes": 24045
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-01-pre-identity/phase-inputs.json",
+      "sha256": "6dd060e5dd39bb16e5abd04f6737fe27a05c0cc67453e553eb32f750d1f0b1af",
+      "size_bytes": 11223
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-01-pre-identity/phase-prepared.json",
+      "sha256": "cf6421ffc77fee4e5ede259367deb8c6e373ac7bb1b55a0398b66f18cdf1d713",
+      "size_bytes": 659
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-01-pre-identity/phase-result.json",
+      "sha256": "c742b1d83f083b5df12277dba559fce7a8515de541ad4101ac02b24c57961f51",
+      "size_bytes": 9533
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-01-pre-identity/stages/pre-identity/finished.json",
+      "sha256": "8aae30f10e42b04a7cb5958facfb3e2dd76696d2d872dd6d33b581aa04d677ed",
+      "size_bytes": 987
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-01-pre-identity/stages/pre-identity/prepared.json",
+      "sha256": "556a5e21c2c646b3e6f50e04099d8eb024cd1134bdf53b26b62e390a816738a9",
+      "size_bytes": 768
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-01-pre-identity/stages/pre-identity/raw.log",
+      "sha256": "973fa5cbe45226e3ce39c9b03fd1acfcb00b499f8a6de4a51b2cc8c28728d9e9",
+      "size_bytes": 6665
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-02-trace/phase-inputs.json",
+      "sha256": "8b7906c6767d2b7d041703959ca1b4ff51eba64a1d2019131064af428fdd478e",
+      "size_bytes": 11154
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-02-trace/phase-prepared.json",
+      "sha256": "f07910dbd0c3f739ea678d029845388aabdaafa179785689b8b8d2a754b42804",
+      "size_bytes": 645
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-02-trace/phase-result.json",
+      "sha256": "7ca186455d7ab695cc3528a87ef34c687d43d56e00e62d93313c1f181760d56b",
+      "size_bytes": 2441
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-02-trace/stages/trace/finished.json",
+      "sha256": "528e14e4ad3e35a0c22174f833e44261a9dee6cc83911d412bba8677b0c36b36",
+      "size_bytes": 933
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-02-trace/stages/trace/prepared.json",
+      "sha256": "91a88d059af5e38f8f8a40b27b796c50272c7272ede0d47691edcad1f23cd518",
+      "size_bytes": 713
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-02-trace/stages/trace/raw.log",
+      "sha256": "848790b8bfbf646a8c33eec16294d3407ff608ef07449994dc5fd488c25dbd37",
+      "size_bytes": 5258
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-03-audit/phase-inputs.json",
+      "sha256": "25ce70522aff0474946fd0181ea7d7c8402af9a9c332e65de2fc4f09fe201eae",
+      "size_bytes": 11298
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-03-audit/phase-prepared.json",
+      "sha256": "81af80d383e85c9db1a004c47c22d5498ff7d97db66fea79f10076c2ea211dd8",
+      "size_bytes": 645
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-03-audit/phase-result.json",
+      "sha256": "4ce4b68f3206db0403dd97dfbf862e5e7e20e4556df5eaa36add0d96b09d28a6",
+      "size_bytes": 3711
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-03-audit/stages/audit/finished.json",
+      "sha256": "d2ff700a5718ca60dfaa3d16a091aa62e8ebbbf2d6b9c9a479e974750cf41f1f",
+      "size_bytes": 1075
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-03-audit/stages/audit/prepared.json",
+      "sha256": "4fef795fb448a8b1c77157564b46feaf29eefe6d7d2fc8720a11f680ec47150b",
+      "size_bytes": 857
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-03-audit/stages/audit/raw.log",
+      "sha256": "c14d4f2dc08739438f3286ce754462a2f1caa307601dbdebb5fb53883bb4b0c4",
+      "size_bytes": 821
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator/phase-inputs.json",
+      "sha256": "9961d336608415b962a8cb5ada994c7bf87bec65f03a7bdebc24f2b016d0cadd",
+      "size_bytes": 11747
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator/phase-prepared.json",
+      "sha256": "7f89947df9d45136f784fe0db16809a30821734dbfd18176cd8ff34a43418b0c",
+      "size_bytes": 655
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator/phase-result.json",
+      "sha256": "e945d263400fe68cd349066c808b6ee3980bfb7a675d88edaf3ca3ee001712fb",
+      "size_bytes": 2648
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator/stages/comparator/finished.json",
+      "sha256": "9f83b1752d9c706b1b496e9738efd38444bb8c5d4e2eb2c75f1bf9c00f6256b3",
+      "size_bytes": 1118
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator/stages/comparator/prepared.json",
+      "sha256": "96f21957676d3855223106a62d70a0f455d5888570be041c6a49c1f356ed6d20",
+      "size_bytes": 897
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator/stages/comparator/raw.log",
+      "sha256": "66f795e10a667327f1e4c00304a9c0b7c4ea4ff3086819b281a9e21e7cd86136",
+      "size_bytes": 7859
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/export-capture.json",
+      "sha256": "68dfc98bce263b4c58b28dc8d7af4caba44c85dccb10c6ac2f346c414eba26ee",
+      "size_bytes": 1359
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/phase-inputs.json",
+      "sha256": "49cc3185d11cf935630708c97718c750a545cd7a74a0a8066cdf8d81a9333b4f",
+      "size_bytes": 11887
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/phase-prepared.json",
+      "sha256": "3d59090afe7100998546ce27b0dc01a3c7e6ac47e19e1b8f3ab4a8b67da307a5",
+      "size_bytes": 665
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/phase-result.json",
+      "sha256": "268fc9787fb152fda85cdfe06442c7bca4dce76c04bef1f8ceaa0e839989e95d",
+      "size_bytes": 3959
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/stages/selected-export/finished.json",
+      "sha256": "5a147ff35bf3a5b9ad8eb77db3ef7da72dd5185a18a672a58a1382157e355625",
+      "size_bytes": 1645
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/stages/selected-export/prepared.json",
+      "sha256": "39802fddd2cfc4aab156019a282f5b90a4b1b0b1d77d620a0e773e2098c0693d",
+      "size_bytes": 1425
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/stages/selected-export/raw.log",
+      "sha256": "eaca645470f3fe81b8b43c0ba973fe3464458335a2f349aa3bcf5226c96e5505",
+      "size_bytes": 1295
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/additional-nanoda-config.json",
+      "sha256": "acd37052945a7ef7364cf4c30177c6f0d2e7355f2d5a86c1f242986ad361acf4",
+      "size_bytes": 398
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/00-prepared.json",
+      "sha256": "f9f307f75aaf376e588d94cbcbe023e349ccd9167facb4b5bdb49e84dd2b6f56",
+      "size_bytes": 4872
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/01-started.json",
+      "sha256": "ec0e9674c207deb165bac65c10fe4349b7006663f8a61c19eb3348761f93b3fb",
+      "size_bytes": 395
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/02-finished.json",
+      "sha256": "f70f00e358dd6da983202dbbdde4e2247418c878e640bc85d3825ecb76bf0c78",
+      "size_bytes": 6320
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/effective-config.json",
+      "sha256": "acd37052945a7ef7364cf4c30177c6f0d2e7355f2d5a86c1f242986ad361acf4",
+      "size_bytes": 398
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/phase-inputs.json",
+      "sha256": "2ea7a98077a136565c520cfa80b4f1926a4cbf4926b4ec0c050d19dcf690ee80",
+      "size_bytes": 12256
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/phase-prepared.json",
+      "sha256": "f68b7790e9a73d87796b0a5d49692feb90ed1ef511624dcdd72064c0b96727a6",
+      "size_bytes": 659
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/phase-result.json",
+      "sha256": "d3c66a14e20464d11f37efa1e86d5f5651a34ceba997cd54af24472cb07174dd",
+      "size_bytes": 2667
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/stages/extra-nanoda/finished.json",
+      "sha256": "3e1a2079d8fadd4ada8130f64686039efb9fc95a96fd56db603354506576f959",
+      "size_bytes": 1149
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/stages/extra-nanoda/prepared.json",
+      "sha256": "df9282a46e1c75759bfb9a643430e97be67de8dd9a7b2bdbd9fed0c4ea66806e",
+      "size_bytes": 927
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/stages/extra-nanoda/raw.log",
+      "sha256": "590ccc60513da51ab0aad98c32b68c0f485d0fda4958c7255feb5175c55bc4e2",
+      "size_bytes": 101
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh/phase-inputs.json",
+      "sha256": "aefb98ecd20d91b3d2ff2df2b928dd2370a4cf6139af3a16b767922d7deedab7",
+      "size_bytes": 11278
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh/phase-prepared.json",
+      "sha256": "c5760ca9d7fe595a27e0556cd7df9ceec99631aa59cc0bb571154164237e8f91",
+      "size_bytes": 663
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh/phase-result.json",
+      "sha256": "647f8001e2e025607bc7848959dc98836014741e00c2d160fd1f30688c05082a",
+      "size_bytes": 2804
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh/stages/original-fresh/finished.json",
+      "sha256": "c51c868feafcfc94ed51916a62be4f08e6bd9f1eeaa8390f0b16502771e0345e",
+      "size_bytes": 1037
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh/stages/original-fresh/prepared.json",
+      "sha256": "80265176f7d392062d8c446c6174e491344b09b8e751fdc6b2278ad9883daa03",
+      "size_bytes": 818
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh/stages/original-fresh/raw.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-08-post-identity/phase-inputs.json",
+      "sha256": "5c5ea4adf6917e6477e24a808fec60fcbe1180003cf51c260cb0b07c30c749db",
+      "size_bytes": 11226
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-08-post-identity/phase-prepared.json",
+      "sha256": "b4f704e50b6821ffa6f7f074cb781fa5ea8f59cd585000fa8fe180df2b395150",
+      "size_bytes": 661
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-08-post-identity/phase-result.json",
+      "sha256": "9632b410e12f85abf27ccdd94fc0bf0c109280205c5572de434381743c4805a7",
+      "size_bytes": 9527
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-08-post-identity/stages/post-identity/finished.json",
+      "sha256": "619af51451049d66b1eb720e0012e95e7b091091d4be602a381af36968c28b78",
+      "size_bytes": 987
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-08-post-identity/stages/post-identity/prepared.json",
+      "sha256": "29558df0d49a854102def759cbeb823c2c02fb03dc6776317e79c423fd44ff08",
+      "size_bytes": 768
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-08-post-identity/stages/post-identity/raw.log",
+      "sha256": "90bd2e5412fdb9ea5ce1ea8393b01748dfdf21df3fd8987cd96195d3ec3850ce",
+      "size_bytes": 6654
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r2-01/additional-nanoda-config.json",
+      "sha256": "acd37052945a7ef7364cf4c30177c6f0d2e7355f2d5a86c1f242986ad361acf4",
+      "size_bytes": 398
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r2-01/retry-inputs.json",
+      "sha256": "f36635e59413f2b39e9f05a309f0de24be8f13b16e2d2a72cb10609549747391",
+      "size_bytes": 25867
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r2-01/retry-prepared.json",
+      "sha256": "b44fe84105f050b0dde8d63ba609f5a56e8409b9c588c4a51b2b08aa413188d8",
+      "size_bytes": 846
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r2-01/retry-result.json",
+      "sha256": "d6b716803c4d9d36b02052bcd04b7cc40d38195973939c59ec2b25f628db627d",
+      "size_bytes": 2423
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r2-01/stages/worker-stack256-nanoda/finished.json",
+      "sha256": "f38921c23da3d09bd67bc6d43e9dc9e54969f42aa82d39808bccf6d78f53f0d5",
+      "size_bytes": 988
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r2-01/stages/worker-stack256-nanoda/prepared.json",
+      "sha256": "6add6bccb37b9752bfe7a84cfbf5b66042fdee5c10a8f8e29e8d03f3de0b101e",
+      "size_bytes": 758
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r2-01/stages/worker-stack256-nanoda/raw.log",
+      "sha256": "f384b5c2c40e0e661b81aa604ae8672a24e6613b536aecba804ea25821090503",
+      "size_bytes": 848
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/additional-nanoda-config.json",
+      "sha256": "acd37052945a7ef7364cf4c30177c6f0d2e7355f2d5a86c1f242986ad361acf4",
+      "size_bytes": 398
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/nanoda-records/nanoda-38848-vymihcgo/00-prepared.json",
+      "sha256": "074a03c7b4c888b694e2b084cda821f35a3966df08ab1afbd4e0d27985275614",
+      "size_bytes": 4931
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/nanoda-records/nanoda-38848-vymihcgo/01-started.json",
+      "sha256": "50ffadbc77c67de5b386993a889f14584120f5d99bfcb0d2327939e825c5eac1",
+      "size_bytes": 400
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/nanoda-records/nanoda-38848-vymihcgo/effective-config.json",
+      "sha256": "acd37052945a7ef7364cf4c30177c6f0d2e7355f2d5a86c1f242986ad361acf4",
+      "size_bytes": 398
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/retry-inputs.json",
+      "sha256": "a65d89d8669cb162619856fb28e35d1963e3aed1a237d20a4504f75bad0bb9d6",
+      "size_bytes": 25952
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/retry-prepared.json",
+      "sha256": "428df87dd385689d112be17ef6d26492a6898f1903bf5eed4c0756bf4af05629",
+      "size_bytes": 852
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/retry-result.json",
+      "sha256": "e0662f9de6c8699328549233d19c9438c1029951ac0ab3c55361824c78d848b0",
+      "size_bytes": 1021
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/stages/worker-stack256-nanoda/prepared.json",
+      "sha256": "49f1eba1a094381788edac06aebdbff3c83e85cf359f3bebdd5b50e7d781d61e",
+      "size_bytes": 758
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/stages/worker-stack256-nanoda/raw.log",
+      "sha256": "8e85fe7c96002deb5269c8029747cca717a7552964b7e1f04b7d27c910a86fa4",
+      "size_bytes": 6040
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/worker-resource.json",
+      "sha256": "bdb66e174c803177379e11b7b1becd5915078dc94d584059cdfdea552aeeff1b",
+      "size_bytes": 6570
+    },
+    {
+      "path": "<REPLICATION_ROOT>/publication/main-stack-negative-evidence-r1.json",
+      "sha256": "2f73ad24b712336207a470162e4cf22c23653fb7e7e16ede19e0a811ccbe95f9",
+      "size_bytes": 1843
+    },
+    {
+      "path": "<REPLICATION_ROOT>/publication/negative-evidence/main-stack-control-4023.txt",
+      "sha256": "98d16afaeeb99fbc1825464e49c478f4ea50fd8045e65b8846a779f4ff63ee1f",
+      "size_bytes": 642
+    },
+    {
+      "path": "<REPLICATION_ROOT>/publication/negative-evidence/main-stack-diagnostic-4025.txt",
+      "sha256": "2ca6a373b0aace5df3335b598d4a02484a68a560796979a8c980ff5e4b903f6d",
+      "size_bytes": 5772
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/build-result-r1.json",
+      "sha256": "9746cc46746f11d88d5d0f3f5ad1458e05a57627abb90fd6d60c6f42ebef325e",
+      "size_bytes": 8241
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/record_nanoda.py",
+      "sha256": "c34f36d630d182708937a5280b6eda8d0723fa0ffdd85caf8fc54af17b332f48",
+      "size_bytes": 8494
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/resource-only.patch",
+      "sha256": "8772472e7acd9c5900d01db457b7e7ba6d5e2273c57e3f939fa5d2485412659f",
+      "size_bytes": 211
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source-provenance-r1.json",
+      "sha256": "b73658a2cec0410e1df0a90c446c5f15c0cf3a28875131027972ddece9c71dc7",
+      "size_bytes": 35396
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/tiny-controls-r1/control-result-r1.json",
+      "sha256": "c539e45b86bf71fbfb4b69d61a2cf3654681baf3a159ed9a2ffd6a4c7b6ccd8b",
+      "size_bytes": 7088
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/tool-manifest-r1.json",
+      "sha256": "f90219aaeedd7bbff3746eff8167c99b8d075d1045ae5c4363bc8ebb425bc30d",
+      "size_bytes": 1872
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/worker-probe-result-r1.json",
+      "sha256": "c2d1e9442e256121dff3f627d3a6db0deb184ec5ca6d9c498dd9910a272c65cd",
+      "size_bytes": 6228
+    }
+  ],
+  "large_exports": "Local metadata/hashes only; no publication by closure utility."
+}

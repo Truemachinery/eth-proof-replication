@@ -1,0 +1,7 @@
+Closed native OpenAI Comparator, selected-export and original4.34.1 fresh replay receipts support their recorded successful outcomes. The four reviewed stages share the exact original c84 input fingerprint and declared commands/environments. The Comparator raw contains its exact final acceptance lines; its embedded kernel links Lean4.35, while proof export and the separate fresh replay use4.34.1. The reference challenge's supplied sorry warning remains visible; the solution named-target audit is preserved separately in part1.
+
+The original D9 Nano run remains FAILED after a worker stack-overflow SIGABRT. Its complete recorder chain preserves unchanged binary/config/payload metadata, actual -6 exit and failed checked-archive identity. Recording completeness is not kernel acceptance or logical rejection.
+
+This review rehashed only small closed records/raw/source bindings. It did not open or rehash the2.355GB selected export or453.7MB failed gzip, and did not inspect the active resource retry. Original fresh exited0 with empty raw after2861.982208 childCPU /3243.090258 wall seconds. Its scope is same-Lean safe/nonpartial imported-environment replay; axiom declarations are admitted and inductive postchecks run.
+
+Overall revised native replication remains incomplete until actual worker-stack retry, postidentity LAST and R6 seal. No proof tool/helper import/build/network/process control was used. Resource totals and exact small-artifact identities are in the JSON; nested checker and outer checkpoint costs must not be added twice.

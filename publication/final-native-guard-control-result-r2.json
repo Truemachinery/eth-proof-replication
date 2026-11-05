@@ -1,0 +1,27 @@
+{
+  "schema": "eth-final-native-guard-controls/2",
+  "status": "passed",
+  "synthetic_only": true,
+  "coherent_reference_rebinding": true,
+  "no_lean_checker_network_or_real_evidence_execution": true,
+  "checks": [
+    "coherently rebound boolean exit rejected",
+    "coherently rebound nonzero exit rejected",
+    "coherently rebound reason rejected",
+    "coherently rebound timeout rejected",
+    "coherently rebound raw size rejected",
+    "coherently rebound raw hash rejected",
+    "coherently rebound preparation argv rejected",
+    "coherently rebound phase failed rejected",
+    "coherently rebound phase interrupted rejected",
+    "coherently rebound phase open interval rejected",
+    "coherently rebound selected-input fingerprint rejected",
+    "hash-valid final aggregate missing one phase rejected",
+    "post-plan phase loss refused before destination creation"
+  ],
+  "publisher_sha256": "ff7f10c5d3e0cb9ec55d633ca7a37e24a48ad2e5b020be92ceebc5a8eea41dfe",
+  "control_source_sha256": "db20e3b85f9ebb28050c414630c71ecfc673fefc2d2b3ef458d8fd8f29b20ad9",
+  "fixture_source_sha256": "ff142f028063787acfbf5fa52de13137a12bda6f2c5d4870efe3439aa424b84c",
+  "cpu_seconds": 0.23570800000000003,
+  "wall_seconds": 0.256714208
+}

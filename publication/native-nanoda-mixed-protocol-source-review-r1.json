@@ -1,0 +1,87 @@
+{
+  "schema": "eth-native-nanoda-mixed-protocol-source-review/1",
+  "created_utc": "2026-11-05T15:17:18.199268+00:00",
+  "status": "NO_MATERIAL_SOURCE_BLOCKER_NOT_EXECUTION_ACCEPTANCE",
+  "reviewer": "codex-eth-public-package; same Codex-assisted team, read-only saved evidence and source audit",
+  "scope": "Full prior helper source read plus final two-guard inverse-bytecheck; complete R4-to-R5 diff read. No imports, tests/control reruns, checker/kernel/export execution, large asset hashing/decompression, source edits, network, public mutation or workflow dispatch.",
+  "sources": {
+    "r4": {
+      "path": "openai/aggregate_native_result_r4.py",
+      "sha256": "a4d5e8bffd81a7100121c01e7ee2fa40ca94d595a8e524624ce1774457f29341",
+      "size_bytes": 37763
+    },
+    "retry": {
+      "path": "openai/nanoda_serial_stack_retry_r1.py",
+      "sha256": "5080e15d6f702eee5348fe8384c4a54923eac5acbb246c39b9123d4424cf18f2",
+      "size_bytes": 17969
+    },
+    "r5": {
+      "path": "openai/aggregate_native_result_r5.py",
+      "sha256": "f1cd9f8498691d46bbd709c677db3245bf9ee96b3f801f4be123df2bf3aa79e8",
+      "size_bytes": 43928
+    }
+  },
+  "failure_review": {
+    "path": "publication/native-nanoda-failure-saved-review-r1.json",
+    "sha256": "e2b32fe89e13593adfec14604814b8b7cf124125abe8575dc8db222fcf25ded0"
+  },
+  "helper_review": {
+    "path": "publication/native-nanoda-retry-helper-source-review-r1.json",
+    "sha256": "3546f65db225e2813dfe00a63cde16e99f1cbdef537d588bbfef52fc7f1ed227"
+  },
+  "review_findings": [
+    {
+      "area": "Helper execution profile",
+      "finding": "Same pinned binary/export/strict standard-three axiom/Nat/String/hard-error checks. Configuration changes only threads2to1; only child RLIMIT_STACK soft rises to unchanged existing hard67092480. Actual OS limits are recorded, allocated stack extent is not measured."
+    },
+    {
+      "area": "Required failure and fresh precondition",
+      "finding": "Original failed R2 extra-nanoda, raw590ccc and actual outer4013/plain DIGEST are retained and bound. Helper requires original fresh closed after the failure before child launch; failure is never relabeled as passed."
+    },
+    {
+      "area": "Explicit mixed protocol",
+      "finding": "R5 accepts seven original R2 successes plus one explicit resource-retry result under new schema/protocol; original_r2_protocol_passed=False. It does not fake an original R2 Nanoda phase-result."
+    },
+    {
+      "area": "Actual child resource event",
+      "finding": "closed_retry binds retry-prepared/inputs/result/stage/raw and stack-resource JSON. Raw must contain exactly that one STACK_RESOURCE event, exact source/argv/cwd/minimal env, actual before/after OS limits and unchanged hard limit. Recorded resource PID must equal process group and prefix the actual Nanoda recording directory."
+    },
+    {
+      "area": "Independent checker acceptance",
+      "finding": "Strict actual prepared/start/finished Nanoda lineage and zero checker/wrapper exit are required. Existing nano_phase validation runs with threads1; it rehashes actual gzip and decompresses it to verify selected payload bytes, unlike this source review which reads no large assets."
+    },
+    {
+      "area": "Configuration provenance",
+      "finding": "Final helper additionally requires effective config byteSHA to equal forwarded configSHA; removing this and the outer-final-JSON guard reconstructs reviewed priorc822 exactly."
+    },
+    {
+      "area": "Execution order",
+      "finding": "Requires failure end<=fresh start, fresh end<=retry start and retry end<=postidentity start. Global stage list including failure must not overlap, build precedes preidentity, trace second and postidentity last."
+    },
+    {
+      "area": "Accounting",
+      "finding": "Retained failed inner CPU/wall are added once alongside successful logical stages and sourcebuild. Nested checker CPU and outer wrapper totals are not added again. Shared host/manual pauses and UTC-versus-monotonic gap scopes remain explicit."
+    },
+    {
+      "area": "Kernel identities",
+      "finding": "Comparator embedded replay is identified as linked Lean4.35, distinct from original proof/export/fresh4.34.1; Rust Nanoda is the independent implementation. Native fake Landrun provides no OS sandbox."
+    },
+    {
+      "area": "Unchanged base validators",
+      "finding": "Diff changes only doc/import, nano_phase threads parameter, mappings names parameter, mixed-protocol helper/block/result and CLI/report text. The earlier source/identity/audit/export/standard checker and clock validators are unchanged outside the displayed diff."
+    }
+  ],
+  "remaining_requirements": [
+    "Root must observe actual successful original fresh, then execute the new retry. This source review does not guarantee success.",
+    "Postidentity must run last and all actual revised-protocol records and final aggregate must close successfully before a positive final report.",
+    "Tiny source-owner controls are pending at this review timestamp; no control pass is inferred here.",
+    "Held publisher393e describes the original all-eight-R2 protocol and must stay unexported until a separately reviewed explicit revised-protocol guard is prepared after the actual retry outcome.",
+    "Retain original failed small records/raw/archive hash and costs in any final package, separately from a successful retry if one occurs."
+  ],
+  "review_resources": {
+    "small_hash_and_report_cpu_seconds": 0.0009330000000000033,
+    "small_hash_and_report_wall_seconds": 0.002273166,
+    "scope": "Small source hash and report bookkeeping only; prior display commands and model reasoning are not measured by this timer. No heavy compute.",
+    "cost_usd": 0
+  }
+}

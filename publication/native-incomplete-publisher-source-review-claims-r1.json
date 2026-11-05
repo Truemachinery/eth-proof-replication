@@ -1,0 +1,108 @@
+{
+  "schema": "native-incomplete-publisher-source-review/1",
+  "reviewer": "codex-eth-anthropic-replication",
+  "same_team_review": true,
+  "observed_utc": "2026-11-05T17:21:48.855509+00:00",
+  "status": "Source and saved-fixture ACK for disjoint incomplete publisher; actual terminal/post/closure/map/export not validated",
+  "wrapper": {
+    "path": "<REPLICATION_ROOT>/publish_native_incomplete_r1.py",
+    "sha256": "2b093efff7a723dd0bcb5d2aa00a724ab6557de7ca93f3ec45a2ed01a5de9272",
+    "size_bytes": 8003
+  },
+  "guard": {
+    "path": "<REPLICATION_ROOT>/publication/native_incomplete_guard_r1.py",
+    "sha256": "3c3d8696d58d90bead5a85da288b946d5c7bc995a6ede983f5c1fafd07706319",
+    "size_bytes": 26840
+  },
+  "preserved_positive_sources": [
+    {
+      "path": "<REPLICATION_ROOT>/publish_package.py",
+      "sha256": "a72ed2f73b37daaa375ee62c238897ba8e86c7549292bf5e3d6f1412fcc8675c",
+      "size_bytes": 68428
+    },
+    {
+      "path": "<REPLICATION_ROOT>/publication/native_worker_guard_r1.py",
+      "sha256": "68d3ef6d9e0c3d4ae436b2901f4ac483cfa49a5f65982ca07d7e56ea7a21c726",
+      "size_bytes": 31183
+    }
+  ],
+  "source_reading": "Entire provisional wrapper023146lines and complete final pin/catalog-only delta; entire original negativeguard57ea322lines and complete final nullable-presence-only delta to3c326lines. Stable reader/core adapter source reviewed previously.",
+  "findings": [
+    {
+      "scope": "disjoint route and source pins",
+      "result": "Private newly loaded hash-pinned a72 module instance, fixed real3c guard pin, separate CLI/schema/selection namespace; original positive source files and dispatch unchanged. No positive OR fallback."
+    },
+    {
+      "scope": "receipt semantics",
+      "result": "Private positive set is exactly seven original successes, excluding original failed Nano and R3 failure. Unknown/failed native receipt names refused before planning. Terminal negative records enter only distinct negative metadata selection."
+    },
+    {
+      "scope": "unknown observations",
+      "result": "Wrapper requires explicit false expanded/allchecks/acceptanceobserved flags, true originalLean suite, nullable accepted field with exact null/bool type. Negativeguard requires explicit nullable keys, actual unknown/nonzero checker observations and excludes checker0 or conflicting02+99. Prepared archive is never labelled accepted."
+    },
+    {
+      "scope": "selection/seal and old failures",
+      "result": "Exact reserved closure output and -cf- terminalouter names match root correction. Requires reviewed97d65 utility/seal/report/artifactmanifest, original seven/sourcebuild/manualschedule, newresource provenance and original D9/preexec/mainstack negatives; small byte bindings only, no payload/source-tree/binary reads."
+    },
+    {
+      "scope": "export consistency and privacy",
+      "result": "Frozen envelope pins core/guard/wrapper source identities and requires four publication source files. Existing a72 export rechecks distinct guard selection, all mandatoryfiles/positivebundles, negative log completion objects and stable copies before destination creation. Plural prepared/failed asset metadata preserved. Existing CF data-only privacy controls remain applicable to unchanged core."
+    },
+    {
+      "scope": "final source deltas",
+      "result": "Provisional023\u21922b differs only actual guard SHA and explicit source/report/result catalog names including runbook path addendum. Guard57ea\u21923c differs only explicit nullable/empty observation presence checks. No semantic broadening found."
+    }
+  ],
+  "saved_controls": [
+    {
+      "result": {
+        "path": "<REPLICATION_ROOT>/publication/incomplete-publisher-control-result-r2.json",
+        "sha256": "77986384f6172663d697f3cfa5b9946e2118b8f1777c4a302d7ae3971a8cad46",
+        "size_bytes": 1490
+      },
+      "source": {
+        "path": "<REPLICATION_ROOT>/publication/check_incomplete_publisher_r2.py",
+        "sha256": "fec34dc7484b2cd5b3f004637dc2c23409309921cf389df0ec2e53e1ebf417a8",
+        "size_bytes": 10436
+      },
+      "checks": 17,
+      "scope": "Synthetic trusted metadata gate substituted in temporary files; no factual guard validation, real evidence, checker, network or export copy",
+      "cpu_seconds": 0.20120899999999997,
+      "wall_seconds": 0.20356841600000003,
+      "rerun_by_reviewer": false
+    },
+    {
+      "result": {
+        "path": "<REPLICATION_ROOT>/publication/incomplete-metadata-control-result-r1.json",
+        "sha256": "7ee6d713d4609c557cefc58cdb299fafa5f8e21029e00b8491edfd6a13b66f8d",
+        "size_bytes": 1700
+      },
+      "source": {
+        "path": "<REPLICATION_ROOT>/publication/check_incomplete_metadata_r1.py",
+        "sha256": "1fd9a53a930d539bbea6e7fb7025362a62315f665bcb1e76e4952c72563e1fd5",
+        "size_bytes": 7727
+      },
+      "checks": 19,
+      "scope": "Real gate with hash-bound fake headers that must refuse before original phase reads; no actual closure acceptance or proof/kernel/WIP/export work",
+      "cpu_seconds": 0.158719,
+      "wall_seconds": 0.167845375,
+      "rerun_by_reviewer": false
+    }
+  ],
+  "saved_control_count": 36,
+  "control_limits": "17 adapter checks substitute fake guard only in-memory/temp and stub successful export dispatch.19 realguard header/refusal/nullable checks use hash-bound fake headers and refuse before original phase reads. These do not simulate a full actual negative campaign, perform a kernel check or export actual evidence. Historical02317-control result remains separate, not relabeled.",
+  "path_addendum": {
+    "path": "<REPLICATION_ROOT>/openai/native-incomplete-runbook-path-addendum-r1.md",
+    "sha256": "e179821f01439ad44f981e8c085a97e3142df6f3ab1c2999083508a73723e34e",
+    "size_bytes": 972
+  },
+  "actual_current_attempt_or_wip_read": false,
+  "imports_tests_export_or_proof_by_reviewer": false,
+  "private_cf_value_read_or_printed": false,
+  "remaining_conditions": [
+    "Root must observe actual terminalR3, run postidentityLAST, execute97d65 closure, and complete combined actual saved-evidence review before freezing real selection map.",
+    "Source/metadata ACK is not proof acceptance or permission to publish/send external messages.",
+    "Any final source change requires separate literal-delta review and correctly scoped saved controls."
+  ],
+  "incremental_usd": 0
+}

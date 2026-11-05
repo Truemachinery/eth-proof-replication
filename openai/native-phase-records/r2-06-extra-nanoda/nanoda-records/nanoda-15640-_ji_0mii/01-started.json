@@ -1,0 +1,8 @@
+{
+  "pid": 15651,
+  "started_at": "2026-11-05T14:45:57.054046+00:00",
+  "checker_argv": [
+    "<REPLICATION_ROOT>/verification-tools/nanoda-source/target/release/nanoda_bin",
+    "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/additional-nanoda-config.json"
+  ]
+}

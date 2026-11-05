@@ -1,0 +1,31 @@
+{
+  "schema": "eth-closed-mainstack-negative-copies/1",
+  "created_utc": "2026-11-05T16:12:07.770619+00:00",
+  "scope": "Only two explicitly requested closed checkpoint logs copied by exact sourceSHA; no recursive checkpoint export. Original evidence unchanged. Public copies still require normal data sanitization.",
+  "records": [
+    {
+      "checkpoint_revision": 4023,
+      "checkpoint_exit_code": 1,
+      "scope": "Closed harmless resource-control/diagnostic, no Nanoda proof execution; exit0 diagnostic still records rejected set attempts.",
+      "source_project_path": "research/checkpoints/codex-eth-anthropic-replication--eth-native-nanoda-serial-stack-retry-20261105--20261105T151504Z-638891-27867.txt",
+      "source_sha256": "98d16afaeeb99fbc1825464e49c478f4ea50fd8045e65b8846a779f4ff63ee1f",
+      "source_size_bytes": 642,
+      "copy_path": "publication/negative-evidence/main-stack-control-4023.txt",
+      "copy_sha256": "98d16afaeeb99fbc1825464e49c478f4ea50fd8045e65b8846a779f4ff63ee1f",
+      "copy_size_bytes": 642,
+      "copied_byte_identical": true
+    },
+    {
+      "checkpoint_revision": 4025,
+      "checkpoint_exit_code": 0,
+      "scope": "Closed harmless resource-control/diagnostic, no Nanoda proof execution; exit0 diagnostic still records rejected set attempts.",
+      "source_project_path": "research/checkpoints/codex-eth-anthropic-replication--eth-native-nanoda-serial-stack-retry-20261105--20261105T151910Z-371877-28956.txt",
+      "source_sha256": "2ca6a373b0aace5df3335b598d4a02484a68a560796979a8c980ff5e4b903f6d",
+      "source_size_bytes": 5772,
+      "copy_path": "publication/negative-evidence/main-stack-diagnostic-4025.txt",
+      "copy_sha256": "2ca6a373b0aace5df3335b598d4a02484a68a560796979a8c980ff5e4b903f6d",
+      "copy_size_bytes": 5772,
+      "copied_byte_identical": true
+    }
+  ]
+}

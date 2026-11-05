@@ -1,0 +1,814 @@
+{
+  "schema": "nanoda-worker-resource-source-provenance/1",
+  "base_commit": "68d5ca9db226849b41a6fff59d796ff19d0a8840",
+  "base_repository": "https://github.com/robsimmons/nanoda_lib",
+  "base_tool_manifest": {
+    "path": "<REPLICATION_ROOT>/verification-tools/tool-manifest-r1.json",
+    "sha256": "90cf428c18e95d4e05502605b01f35e527d3f04644ef814a3742c8554c26a2c1",
+    "size_bytes": 55010
+  },
+  "tracked_files": 29,
+  "source_input_set_exact": true,
+  "hardlinks_used": false,
+  "original_before": [
+    {
+      "relative_path": ".github/workflows/release.yml",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/.github/workflows/release.yml",
+        "sha256": "3ac7ccfc95653d33b910efd69d541e22ba66b72d88422f54f4eafbe5be5eae0c",
+        "size_bytes": 710
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/.github/workflows/release.yml",
+        "sha256": "3ac7ccfc95653d33b910efd69d541e22ba66b72d88422f54f4eafbe5be5eae0c",
+        "size_bytes": 710
+      }
+    },
+    {
+      "relative_path": ".gitignore",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/.gitignore",
+        "sha256": "cc0528de53769499a02da6fbaaf0dab13434675fe571e276e13845f95f0b601b",
+        "size_bytes": 27
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/.gitignore",
+        "sha256": "cc0528de53769499a02da6fbaaf0dab13434675fe571e276e13845f95f0b601b",
+        "size_bytes": 27
+      }
+    },
+    {
+      "relative_path": "Cargo.lock",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/Cargo.lock",
+        "sha256": "f9df05457e9aae9acaa1039f10dd21dec4465e339a354f01c3f7c77c3bf0bed0",
+        "size_bytes": 6446
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/Cargo.lock",
+        "sha256": "f9df05457e9aae9acaa1039f10dd21dec4465e339a354f01c3f7c77c3bf0bed0",
+        "size_bytes": 6446
+      }
+    },
+    {
+      "relative_path": "Cargo.toml",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/Cargo.toml",
+        "sha256": "27aedf28f3b13f6c29edd73681e48b3b3769a01bd27235eec932c98f3c1842cd",
+        "size_bytes": 857
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/Cargo.toml",
+        "sha256": "27aedf28f3b13f6c29edd73681e48b3b3769a01bd27235eec932c98f3c1842cd",
+        "size_bytes": 857
+      }
+    },
+    {
+      "relative_path": "LICENSE",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/LICENSE",
+        "sha256": "c8858a5a76440bbca484e134cf7df46385d090dd18b2c58e650f939258802e5b",
+        "size_bytes": 10141
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/LICENSE",
+        "sha256": "c8858a5a76440bbca484e134cf7df46385d090dd18b2c58e650f939258802e5b",
+        "size_bytes": 10141
+      }
+    },
+    {
+      "relative_path": "README.md",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/README.md",
+        "sha256": "b91487520d495d8726fedfaa87462d81acf0ffab3a3cad942ae7232461f15fae",
+        "size_bytes": 6228
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/README.md",
+        "sha256": "b91487520d495d8726fedfaa87462d81acf0ffab3a3cad942ae7232461f15fae",
+        "size_bytes": 6228
+      }
+    },
+    {
+      "relative_path": "rustfmt.toml",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/rustfmt.toml",
+        "sha256": "8bc492625b7a601b5147aa68f32a05fb90e7e95f55693c89619adea72ae230a5",
+        "size_bytes": 248
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/rustfmt.toml",
+        "sha256": "8bc492625b7a601b5147aa68f32a05fb90e7e95f55693c89619adea72ae230a5",
+        "size_bytes": 248
+      }
+    },
+    {
+      "relative_path": "src/debug_printer.rs",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/debug_printer.rs",
+        "sha256": "184918c06946c0efcc57868e47098428bd1d98179725344ba81b1103eb940c81",
+        "size_bytes": 8921
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/debug_printer.rs",
+        "sha256": "184918c06946c0efcc57868e47098428bd1d98179725344ba81b1103eb940c81",
+        "size_bytes": 8921
+      }
+    },
+    {
+      "relative_path": "src/env.rs",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/env.rs",
+        "sha256": "687edb90f3a8a2c665eacad66e021ec20c15819b6da7f2c152cb82fb24c3de5b",
+        "size_bytes": 10890
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/env.rs",
+        "sha256": "687edb90f3a8a2c665eacad66e021ec20c15819b6da7f2c152cb82fb24c3de5b",
+        "size_bytes": 10890
+      }
+    },
+    {
+      "relative_path": "src/expr.rs",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/expr.rs",
+        "sha256": "8e79e45afd043cd464f1e3af4597df3d4b09dfe087886cd32139f20746c6529e",
+        "size_bytes": 30985
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/expr.rs",
+        "sha256": "8e79e45afd043cd464f1e3af4597df3d4b09dfe087886cd32139f20746c6529e",
+        "size_bytes": 30985
+      }
+    },
+    {
+      "relative_path": "src/inductive.rs",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/inductive.rs",
+        "sha256": "abef916af384d1d3ce339d9ca79a74e943e6cad6b79b67c5c95e717a8d2c4fb1",
+        "size_bytes": 80162
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/inductive.rs",
+        "sha256": "abef916af384d1d3ce339d9ca79a74e943e6cad6b79b67c5c95e717a8d2c4fb1",
+        "size_bytes": 80162
+      }
+    },
+    {
+      "relative_path": "src/level.rs",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/level.rs",
+        "sha256": "801452fb06c25e037fc9f0136fd60ca1f720692f2341a3ead9aaf6e1a68a399c",
+        "size_bytes": 10847
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/level.rs",
+        "sha256": "801452fb06c25e037fc9f0136fd60ca1f720692f2341a3ead9aaf6e1a68a399c",
+        "size_bytes": 10847
+      }
+    },
+    {
+      "relative_path": "src/lib.rs",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/lib.rs",
+        "sha256": "ca7a3ba8754a06ee08c85fbc5af9debdefc372629c50b02142bdc8aad55cb69e",
+        "size_bytes": 397
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/lib.rs",
+        "sha256": "ca7a3ba8754a06ee08c85fbc5af9debdefc372629c50b02142bdc8aad55cb69e",
+        "size_bytes": 397
+      }
+    },
+    {
+      "relative_path": "src/main.rs",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/main.rs",
+        "sha256": "245ceaef34e8925cacaa3c5b99ce096a8c744710ce1f9184423e5a0333e8b35a",
+        "size_bytes": 2524
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/main.rs",
+        "sha256": "245ceaef34e8925cacaa3c5b99ce096a8c744710ce1f9184423e5a0333e8b35a",
+        "size_bytes": 2524
+      }
+    },
+    {
+      "relative_path": "src/name.rs",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/name.rs",
+        "sha256": "e6397a691030820156aa84574f2de3b510f9989e5bef61b99a0db37d2a014bd7",
+        "size_bytes": 2365
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/name.rs",
+        "sha256": "e6397a691030820156aa84574f2de3b510f9989e5bef61b99a0db37d2a014bd7",
+        "size_bytes": 2365
+      }
+    },
+    {
+      "relative_path": "src/parser.rs",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/parser.rs",
+        "sha256": "22b17bd188152fb3ded36a060fc1ade5e064aef7cc411aecf64c5730c40ea3e2",
+        "size_bytes": 33896
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/parser.rs",
+        "sha256": "22b17bd188152fb3ded36a060fc1ade5e064aef7cc411aecf64c5730c40ea3e2",
+        "size_bytes": 33896
+      }
+    },
+    {
+      "relative_path": "src/pretty_printer.rs",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/pretty_printer.rs",
+        "sha256": "b6284a0a27de2a40d714035577e29f259f47e872c2ececc9dfef9a5c479ed778",
+        "size_bytes": 36961
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/pretty_printer.rs",
+        "sha256": "b6284a0a27de2a40d714035577e29f259f47e872c2ececc9dfef9a5c479ed778",
+        "size_bytes": 36961
+      }
+    },
+    {
+      "relative_path": "src/quot.rs",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/quot.rs",
+        "sha256": "0131ae36f3daea5262f280aca44085c15e5335a8657cefd2afcec4c2bc388463",
+        "size_bytes": 10612
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/quot.rs",
+        "sha256": "0131ae36f3daea5262f280aca44085c15e5335a8657cefd2afcec4c2bc388463",
+        "size_bytes": 10612
+      }
+    },
+    {
+      "relative_path": "src/tc.rs",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/tc.rs",
+        "sha256": "73f00401263871e533eb0f2cfa38162866204ee3fe7e7dd146755c5690f0b696",
+        "size_bytes": 56610
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/tc.rs",
+        "sha256": "73f00401263871e533eb0f2cfa38162866204ee3fe7e7dd146755c5690f0b696",
+        "size_bytes": 56610
+      }
+    },
+    {
+      "relative_path": "src/tests.rs",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/tests.rs",
+        "sha256": "594aac68cef5af3c6c9513c09846c27b041d43b855828e2ec742ca1dd4173e56",
+        "size_bytes": 33
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/tests.rs",
+        "sha256": "594aac68cef5af3c6c9513c09846c27b041d43b855828e2ec742ca1dd4173e56",
+        "size_bytes": 33
+      }
+    },
+    {
+      "relative_path": "src/tests/level.rs",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/tests/level.rs",
+        "sha256": "0b532b157ce6b1b40d27e8acea78ac18c56b92de1bc9439f644b860c1f2a2d92",
+        "size_bytes": 6209
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/tests/level.rs",
+        "sha256": "0b532b157ce6b1b40d27e8acea78ac18c56b92de1bc9439f644b860c1f2a2d92",
+        "size_bytes": 6209
+      }
+    },
+    {
+      "relative_path": "src/tests/natlit.rs",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/tests/natlit.rs",
+        "sha256": "49e012cf9af881c4d3205795d2ced385e39128baa53770806489b69aaa1674fe",
+        "size_bytes": 27965
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/tests/natlit.rs",
+        "sha256": "49e012cf9af881c4d3205795d2ced385e39128baa53770806489b69aaa1674fe",
+        "size_bytes": 27965
+      }
+    },
+    {
+      "relative_path": "src/tests/util.rs",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/tests/util.rs",
+        "sha256": "f2de3d3bc76336ef82e34374ba6f50a8b185e30f17f68bb1e517e2b48f6666c2",
+        "size_bytes": 4345
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/tests/util.rs",
+        "sha256": "f2de3d3bc76336ef82e34374ba6f50a8b185e30f17f68bb1e517e2b48f6666c2",
+        "size_bytes": 4345
+      }
+    },
+    {
+      "relative_path": "src/union_find.rs",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/union_find.rs",
+        "sha256": "2728ab1d2dcd84489a6bb4fa984af22c40236bf813205e42a1c55ca825bdc757",
+        "size_bytes": 5571
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/union_find.rs",
+        "sha256": "2728ab1d2dcd84489a6bb4fa984af22c40236bf813205e42a1c55ca825bdc757",
+        "size_bytes": 5571
+      }
+    },
+    {
+      "relative_path": "src/unique_hasher.rs",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/unique_hasher.rs",
+        "sha256": "e457ec69139dee08c4f21f3fee5bc9a2cfe6bb14e5d5bd217ca35d6a368daea5",
+        "size_bytes": 881
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/unique_hasher.rs",
+        "sha256": "e457ec69139dee08c4f21f3fee5bc9a2cfe6bb14e5d5bd217ca35d6a368daea5",
+        "size_bytes": 881
+      }
+    },
+    {
+      "relative_path": "src/util.rs",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/src/util.rs",
+        "sha256": "b93e18f18c59286412109041daf31a5f90686d13f23cf378ce6a6a0c78f25d3d",
+        "size_bytes": 41176
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/util.rs",
+        "sha256": "b93e18f18c59286412109041daf31a5f90686d13f23cf378ce6a6a0c78f25d3d",
+        "size_bytes": 41176
+      }
+    },
+    {
+      "relative_path": "test_resources/Empty/export",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/test_resources/Empty/export",
+        "sha256": "6ecdb8d4389e5c525cd9dfd05bb610c8a9c74739d9a62dbecc6a049ceb0b9837",
+        "size_bytes": 176
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/test_resources/Empty/export",
+        "sha256": "6ecdb8d4389e5c525cd9dfd05bb610c8a9c74739d9a62dbecc6a049ceb0b9837",
+        "size_bytes": 176
+      }
+    },
+    {
+      "relative_path": "test_resources/ProjFromProp/config.json",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/test_resources/ProjFromProp/config.json",
+        "sha256": "c898525fcb5347fc9f60961201d93d7663afb1867197a46a5753e21b24fc3cc8",
+        "size_bytes": 186
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/test_resources/ProjFromProp/config.json",
+        "sha256": "c898525fcb5347fc9f60961201d93d7663afb1867197a46a5753e21b24fc3cc8",
+        "size_bytes": 186
+      }
+    },
+    {
+      "relative_path": "test_resources/ProjFromProp/export",
+      "original": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/test_resources/ProjFromProp/export",
+        "sha256": "5fc8f25b717c2dd56880064e43d87489b1bea202f5b5ef96d0d06a6ba7ce2022",
+        "size_bytes": 4509
+      },
+      "copy_before": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/test_resources/ProjFromProp/export",
+        "sha256": "5fc8f25b717c2dd56880064e43d87489b1bea202f5b5ef96d0d06a6ba7ce2022",
+        "size_bytes": 4509
+      }
+    }
+  ],
+  "copy_after": [
+    {
+      "relative_path": ".github/workflows/release.yml",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/.github/workflows/release.yml",
+        "sha256": "3ac7ccfc95653d33b910efd69d541e22ba66b72d88422f54f4eafbe5be5eae0c",
+        "size_bytes": 710
+      }
+    },
+    {
+      "relative_path": ".gitignore",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/.gitignore",
+        "sha256": "cc0528de53769499a02da6fbaaf0dab13434675fe571e276e13845f95f0b601b",
+        "size_bytes": 27
+      }
+    },
+    {
+      "relative_path": "Cargo.lock",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/Cargo.lock",
+        "sha256": "f9df05457e9aae9acaa1039f10dd21dec4465e339a354f01c3f7c77c3bf0bed0",
+        "size_bytes": 6446
+      }
+    },
+    {
+      "relative_path": "Cargo.toml",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/Cargo.toml",
+        "sha256": "27aedf28f3b13f6c29edd73681e48b3b3769a01bd27235eec932c98f3c1842cd",
+        "size_bytes": 857
+      }
+    },
+    {
+      "relative_path": "LICENSE",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/LICENSE",
+        "sha256": "c8858a5a76440bbca484e134cf7df46385d090dd18b2c58e650f939258802e5b",
+        "size_bytes": 10141
+      }
+    },
+    {
+      "relative_path": "README.md",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/README.md",
+        "sha256": "b91487520d495d8726fedfaa87462d81acf0ffab3a3cad942ae7232461f15fae",
+        "size_bytes": 6228
+      }
+    },
+    {
+      "relative_path": "rustfmt.toml",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/rustfmt.toml",
+        "sha256": "8bc492625b7a601b5147aa68f32a05fb90e7e95f55693c89619adea72ae230a5",
+        "size_bytes": 248
+      }
+    },
+    {
+      "relative_path": "src/debug_printer.rs",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/debug_printer.rs",
+        "sha256": "184918c06946c0efcc57868e47098428bd1d98179725344ba81b1103eb940c81",
+        "size_bytes": 8921
+      }
+    },
+    {
+      "relative_path": "src/env.rs",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/env.rs",
+        "sha256": "687edb90f3a8a2c665eacad66e021ec20c15819b6da7f2c152cb82fb24c3de5b",
+        "size_bytes": 10890
+      }
+    },
+    {
+      "relative_path": "src/expr.rs",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/expr.rs",
+        "sha256": "8e79e45afd043cd464f1e3af4597df3d4b09dfe087886cd32139f20746c6529e",
+        "size_bytes": 30985
+      }
+    },
+    {
+      "relative_path": "src/inductive.rs",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/inductive.rs",
+        "sha256": "abef916af384d1d3ce339d9ca79a74e943e6cad6b79b67c5c95e717a8d2c4fb1",
+        "size_bytes": 80162
+      }
+    },
+    {
+      "relative_path": "src/level.rs",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/level.rs",
+        "sha256": "801452fb06c25e037fc9f0136fd60ca1f720692f2341a3ead9aaf6e1a68a399c",
+        "size_bytes": 10847
+      }
+    },
+    {
+      "relative_path": "src/lib.rs",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/lib.rs",
+        "sha256": "1ae715baf4c9b592ee918f9815d758f02aa2d60e17d293f602f5cf8732f6b069",
+        "size_bytes": 398
+      }
+    },
+    {
+      "relative_path": "src/main.rs",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/main.rs",
+        "sha256": "245ceaef34e8925cacaa3c5b99ce096a8c744710ce1f9184423e5a0333e8b35a",
+        "size_bytes": 2524
+      }
+    },
+    {
+      "relative_path": "src/name.rs",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/name.rs",
+        "sha256": "e6397a691030820156aa84574f2de3b510f9989e5bef61b99a0db37d2a014bd7",
+        "size_bytes": 2365
+      }
+    },
+    {
+      "relative_path": "src/parser.rs",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/parser.rs",
+        "sha256": "22b17bd188152fb3ded36a060fc1ade5e064aef7cc411aecf64c5730c40ea3e2",
+        "size_bytes": 33896
+      }
+    },
+    {
+      "relative_path": "src/pretty_printer.rs",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/pretty_printer.rs",
+        "sha256": "b6284a0a27de2a40d714035577e29f259f47e872c2ececc9dfef9a5c479ed778",
+        "size_bytes": 36961
+      }
+    },
+    {
+      "relative_path": "src/quot.rs",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/quot.rs",
+        "sha256": "0131ae36f3daea5262f280aca44085c15e5335a8657cefd2afcec4c2bc388463",
+        "size_bytes": 10612
+      }
+    },
+    {
+      "relative_path": "src/tc.rs",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/tc.rs",
+        "sha256": "73f00401263871e533eb0f2cfa38162866204ee3fe7e7dd146755c5690f0b696",
+        "size_bytes": 56610
+      }
+    },
+    {
+      "relative_path": "src/tests.rs",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/tests.rs",
+        "sha256": "594aac68cef5af3c6c9513c09846c27b041d43b855828e2ec742ca1dd4173e56",
+        "size_bytes": 33
+      }
+    },
+    {
+      "relative_path": "src/tests/level.rs",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/tests/level.rs",
+        "sha256": "0b532b157ce6b1b40d27e8acea78ac18c56b92de1bc9439f644b860c1f2a2d92",
+        "size_bytes": 6209
+      }
+    },
+    {
+      "relative_path": "src/tests/natlit.rs",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/tests/natlit.rs",
+        "sha256": "49e012cf9af881c4d3205795d2ced385e39128baa53770806489b69aaa1674fe",
+        "size_bytes": 27965
+      }
+    },
+    {
+      "relative_path": "src/tests/util.rs",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/tests/util.rs",
+        "sha256": "f2de3d3bc76336ef82e34374ba6f50a8b185e30f17f68bb1e517e2b48f6666c2",
+        "size_bytes": 4345
+      }
+    },
+    {
+      "relative_path": "src/union_find.rs",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/union_find.rs",
+        "sha256": "2728ab1d2dcd84489a6bb4fa984af22c40236bf813205e42a1c55ca825bdc757",
+        "size_bytes": 5571
+      }
+    },
+    {
+      "relative_path": "src/unique_hasher.rs",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/unique_hasher.rs",
+        "sha256": "e457ec69139dee08c4f21f3fee5bc9a2cfe6bb14e5d5bd217ca35d6a368daea5",
+        "size_bytes": 881
+      }
+    },
+    {
+      "relative_path": "src/util.rs",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/src/util.rs",
+        "sha256": "b93e18f18c59286412109041daf31a5f90686d13f23cf378ce6a6a0c78f25d3d",
+        "size_bytes": 41176
+      }
+    },
+    {
+      "relative_path": "test_resources/Empty/export",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/test_resources/Empty/export",
+        "sha256": "6ecdb8d4389e5c525cd9dfd05bb610c8a9c74739d9a62dbecc6a049ceb0b9837",
+        "size_bytes": 176
+      }
+    },
+    {
+      "relative_path": "test_resources/ProjFromProp/config.json",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/test_resources/ProjFromProp/config.json",
+        "sha256": "c898525fcb5347fc9f60961201d93d7663afb1867197a46a5753e21b24fc3cc8",
+        "size_bytes": 186
+      }
+    },
+    {
+      "relative_path": "test_resources/ProjFromProp/export",
+      "copy_after": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/test_resources/ProjFromProp/export",
+        "sha256": "5fc8f25b717c2dd56880064e43d87489b1bea202f5b5ef96d0d06a6ba7ce2022",
+        "size_bytes": 4509
+      }
+    }
+  ],
+  "only_changed": [
+    "src/lib.rs"
+  ],
+  "patch": "--- 68d5/src/lib.rs\n+++ worker-stack256/src/lib.rs\n@@ -20,4 +20,4 @@\n pub mod unique_hasher;\n pub mod util;\n \n-pub(crate) const STACK_SIZE: usize = 16_777_216;\n+pub(crate) const STACK_SIZE: usize = 268_435_456;\n",
+  "resource_constant_before": 16777216,
+  "resource_constant_after": 268435456,
+  "tc_rs_unchanged": true,
+  "Cargo_lock_unchanged": true,
+  "preserved": {
+    "original_binary": {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/target/release/nanoda_bin",
+      "sha256": "d9a1fc5371b84c9eb0687a7630eb724fa88886d9f5d665f09f9f926730573b80",
+      "size_bytes": 1260088
+    },
+    "original_recorder": {
+      "path": "<REPLICATION_ROOT>/verification-tools/record_nanoda.py",
+      "sha256": "c34f36d630d182708937a5280b6eda8d0723fa0ffdd85caf8fc54af17b332f48",
+      "size_bytes": 8494
+    },
+    "original_manifest": {
+      "path": "<REPLICATION_ROOT>/verification-tools/tool-manifest-r1.json",
+      "sha256": "90cf428c18e95d4e05502605b01f35e527d3f04644ef814a3742c8554c26a2c1",
+      "size_bytes": 55010
+    }
+  },
+  "original_build_fingerprints": [
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/target/release/.fingerprint/nanoda_lib-ce8eff53b8da7bd3/bin-nanoda_bin.json",
+      "identity": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/target/release/.fingerprint/nanoda_lib-ce8eff53b8da7bd3/bin-nanoda_bin.json",
+        "sha256": "9c0da6d9b8c1db6de8036d2770c4fb20342ea2c228cea922dccce9e4d0080ae3",
+        "size_bytes": 904
+      },
+      "metadata": {
+        "rustc": 13976775244188850736,
+        "features": "[]",
+        "declared_features": "[]",
+        "target": 7220558350009484481,
+        "profile": 12538247665707517198,
+        "path": 4942398508502643691,
+        "deps": [
+          [
+            710443753704272750,
+            "num_traits",
+            false,
+            12835602721396789040
+          ],
+          [
+            6087741167004821266,
+            "num_bigint",
+            false,
+            13823216460727928658
+          ],
+          [
+            12821780872552529316,
+            "indexmap",
+            false,
+            4998503611194009897
+          ],
+          [
+            12832915883349295919,
+            "serde_json",
+            false,
+            12211602256866193260
+          ],
+          [
+            13548984313718623784,
+            "serde",
+            false,
+            3703054434039049711
+          ],
+          [
+            15205589926213121105,
+            "nanoda_lib",
+            false,
+            2776807296144725803
+          ],
+          [
+            16055916053474393816,
+            "rustc_hash",
+            false,
+            9375683424746926966
+          ],
+          [
+            16795989132585092538,
+            "num_integer",
+            false,
+            7449484727857311186
+          ],
+          [
+            18361894353739432590,
+            "semver",
+            false,
+            14411436942226668433
+          ]
+        ],
+        "local": [
+          {
+            "CheckDepInfo": {
+              "dep_info": "release/.fingerprint/nanoda_lib-ce8eff53b8da7bd3/dep-bin-nanoda_bin",
+              "checksum": false
+            }
+          }
+        ],
+        "rustflags": [],
+        "config": 9396254390672932401,
+        "compile_kind": 0
+      }
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/target/release/.fingerprint/nanoda_lib-84797826779a110d/lib-nanoda_lib.json",
+      "identity": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/target/release/.fingerprint/nanoda_lib-84797826779a110d/lib-nanoda_lib.json",
+        "sha256": "4b2f94bb23bf0fd0922a87c082de09bc30d2b7c7aa2e32621b5ef35d6e63d48d",
+        "size_bytes": 843
+      },
+      "metadata": {
+        "rustc": 13976775244188850736,
+        "features": "[]",
+        "declared_features": "[]",
+        "target": 14554726605636861576,
+        "profile": 7901468410746105868,
+        "path": 10763286916239946207,
+        "deps": [
+          [
+            710443753704272750,
+            "num_traits",
+            false,
+            12835602721396789040
+          ],
+          [
+            6087741167004821266,
+            "num_bigint",
+            false,
+            13823216460727928658
+          ],
+          [
+            12821780872552529316,
+            "indexmap",
+            false,
+            4998503611194009897
+          ],
+          [
+            12832915883349295919,
+            "serde_json",
+            false,
+            12211602256866193260
+          ],
+          [
+            13548984313718623784,
+            "serde",
+            false,
+            3703054434039049711
+          ],
+          [
+            16055916053474393816,
+            "rustc_hash",
+            false,
+            9375683424746926966
+          ],
+          [
+            16795989132585092538,
+            "num_integer",
+            false,
+            7449484727857311186
+          ],
+          [
+            18361894353739432590,
+            "semver",
+            false,
+            14411436942226668433
+          ]
+        ],
+        "local": [
+          {
+            "CheckDepInfo": {
+              "dep_info": "release/.fingerprint/nanoda_lib-84797826779a110d/dep-lib-nanoda_lib",
+              "checksum": false
+            }
+          }
+        ],
+        "rustflags": [],
+        "config": 9396254390672932401,
+        "compile_kind": 0
+      }
+    }
+  ],
+  "scope": "One source constant resource change only; newbinary explicitlydifferent, no logical checker/axiom/tc patch. Currentcompilerbytes recorded, historicalsamepath/version notinventedbytepin."
+}

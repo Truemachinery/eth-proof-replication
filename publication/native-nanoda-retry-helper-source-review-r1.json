@@ -1,0 +1,67 @@
+{
+  "schema": "eth-native-nanoda-retry-helper-source-review/1",
+  "created_utc": "2026-11-05T15:13:00.169663+00:00",
+  "status": "NO_MATERIAL_SOURCE_BLOCKER_HELPER_ONLY_EXECUTION_UNMEASURED",
+  "scope": "Same-team full read-only source review. No import, control rerun, checker/kernel/export execution, large asset read, network, source edit or publication. R5 aggregation review is still pending.",
+  "helper": {
+    "path": "openai/nanoda_serial_stack_retry_r1.py",
+    "sha256": "5080e15d6f702eee5348fe8384c4a54923eac5acbb246c39b9123d4424cf18f2",
+    "size_bytes": 17969,
+    "reviewed_lines": "1\u2013277 of prior c822 version, plus final5080 provenance delta; inverse removal of exactly two guard blocks reconstructs c822 SHA"
+  },
+  "prior_reviewed_source_sha256": "c8229d5935a1b755b30b482bd3c27d0aa859189e10be4358fcec795bda2e6631",
+  "findings": [
+    {
+      "lines": "34\u201357,220\u2013244",
+      "finding": "SHA-pinned R4 metadata validator, fixed basec84 fingerprint, selectedbdbc payload/size, strict same standard-three axiom/Nat/String/hard-error policy; configuration changes only num_threads2to1."
+    },
+    {
+      "lines": "117\u2013159,220\u2013229",
+      "finding": "Original failed R2 phase, signal-6/raw590ccc and actual failed outer4013 stream are required; exact retained phase result is bound to outer final JSON. Original fresh must close after the failure and before child launch."
+    },
+    {
+      "lines": "60\u201370,164\u2013187",
+      "finding": "Child validates exact environment/tools/source/policy, changes only its own RLIMIT_STACK soft value to unchanged existing hard67092480, records actual before/after limits, then execs unchanged recorder. No claim of measured allocated stack extent and no RUST_MIN_STACK or binary patch."
+    },
+    {
+      "lines": "233\u2013259",
+      "finding": "Minimal credential-free expected environment, exclusive output directory, unchanged frozen Recorder/process-group cleanup, strict zeroexit actual Nanoda lineage and stable input checks precede retry statuspassed."
+    },
+    {
+      "lines": "190\u2013194,261\u2013273",
+      "finding": "Interruptions and exceptions retain failed result and stage receipts; original_r2_attempt_passed remainsFalse. New explicit protocol/schema is separate from original R2 status."
+    },
+    {
+      "lines": "103\u2013105,152\u2013154",
+      "finding": "Final5080 adds effective-config byteSHA==forwarded SHA and failed outer final JSON==failed phase result; independent inverse-bytecheck confirms no other change from c822."
+    }
+  ],
+  "source_basis": [
+    {
+      "path": "verification-tools/nanoda-source/src/tc.rs",
+      "lines": "83\u2013152",
+      "finding": "Serial and parallel paths call same check_declar; <=1 selects serial loop; parallel workers explicitly request STACK_SIZE."
+    },
+    {
+      "path": "verification-tools/nanoda-source/src/lib.rs",
+      "lines": "23",
+      "finding": "STACK_SIZE=16777216 bytes."
+    },
+    {
+      "path": "verification-tools/nanoda-source/src/main.rs",
+      "lines": "5\u201330",
+      "finding": "CLI main invokes use_config and check_all_declars directly; serial branch is not wrapped in another worker by this entry point."
+    }
+  ],
+  "limits": [
+    "This review does not establish runtime completion, proof correctness or actual allocated stack extent.",
+    "Final mixed-protocol aggregate must still bind actual zeroexit retry, requested/actual stack record and raw event, exact argv/cwd/environment, archive/export lineage, timing order and final postidentity.",
+    "Publisher393e remains held; it cannot represent the new retry protocol and must not be used for an R8 final result."
+  ],
+  "review_resources": {
+    "checksum_record_cpu_seconds": 0.0006489999999999968,
+    "checksum_record_wall_seconds": 0.0009593749999999984,
+    "scope": "Small final hash/report bookkeeping only; model/source-reading time and earlier display commands are not measured by this timer. No heavy compute.",
+    "cost_usd": 0
+  }
+}

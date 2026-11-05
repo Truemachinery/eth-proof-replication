@@ -1,0 +1,112 @@
+{
+  "schema": "worker256-tiny-kernel-controls/1",
+  "status": "passed",
+  "scope": "Existing tiny trusted Init and malformed exports only; no ETH execution. Compiled requestedworkerstack256MiB, actualNano workerextent unmeasured.",
+  "binary": {
+    "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/target/release/nanoda_bin",
+    "sha256": "10e1a4ebdb6fa606ca8d7a60774d8af0655294ab0b19d03a838a5ba746b7c2d9",
+    "size_bytes": 1260088
+  },
+  "manifest": {
+    "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/tool-manifest-r1.json",
+    "sha256": "f90219aaeedd7bbff3746eff8167c99b8d075d1045ae5c4363bc8ebb425bc30d",
+    "size_bytes": 1872
+  },
+  "recorder": {
+    "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/record_nanoda.py",
+    "sha256": "c34f36d630d182708937a5280b6eda8d0723fa0ffdd85caf8fc54af17b332f48",
+    "size_bytes": 8494
+  },
+  "cases": [
+    {
+      "name": "trusted-init",
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "<REPLICATION_ROOT>/verification-tools-worker-stack256/record_nanoda.py",
+        "<REPLICATION_ROOT>/verification-tools-worker-stack256/tiny-controls-r1/trusted-init/config.json"
+      ],
+      "cwd": "<REPLICATION_ROOT>",
+      "environment": {
+        "PATH": "<REDACTED FIELD>",
+        "HOME": "<REPLICATION_ROOT>/verification-tools-worker-stack256/tiny-controls-r1/trusted-init",
+        "TMPDIR": "<REPLICATION_ROOT>/verification-tools-worker-stack256/tiny-controls-r1/trusted-init",
+        "LANG": "en_US.UTF-8",
+        "LC_ALL": "en_US.UTF-8",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "NANODA_REAL_BINARY": "<REPLICATION_ROOT>/verification-tools-worker-stack256/target/release/nanoda_bin",
+        "COMPARATOR_LANDRUN": "<REPLICATION_ROOT>/verification-tools/comparator-source/scripts/fake-landrun.sh",
+        "REPLICATION_CHECKER_RECORD_DIR": "<REPLICATION_ROOT>/verification-tools-worker-stack256/tiny-controls-r1/trusted-init/records"
+      },
+      "exit_code": 0,
+      "expected_acceptance": true,
+      "child_cpu_seconds": 0.17008099999999998,
+      "wall_seconds": 0.330728042,
+      "config": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/tiny-controls-r1/trusted-init/config.json",
+        "sha256": "6f07bb7d15ed7566def9362806a8bcd4eb07d5cd28381d6d9af85dad72e851c7",
+        "size_bytes": 385
+      },
+      "stdout": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/tiny-controls-r1/trusted-init/stdout.raw",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_bytes": 0
+      },
+      "stderr": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/tiny-controls-r1/trusted-init/stderr.raw",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_bytes": 0
+      },
+      "record_finished": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/tiny-controls-r1/trusted-init/records/nanoda-33878-wxh2zy65/02-finished.json",
+        "sha256": "87542c1f97dcacaf5c0fed53fa4c7c38fe82eecfc9d86320b3f99b5eb380baff",
+        "size_bytes": 6342
+      }
+    },
+    {
+      "name": "malformed",
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "<REPLICATION_ROOT>/verification-tools-worker-stack256/record_nanoda.py",
+        "<REPLICATION_ROOT>/verification-tools-worker-stack256/tiny-controls-r1/malformed/config.json"
+      ],
+      "cwd": "<REPLICATION_ROOT>",
+      "environment": {
+        "PATH": "<REDACTED FIELD>",
+        "HOME": "<REPLICATION_ROOT>/verification-tools-worker-stack256/tiny-controls-r1/malformed",
+        "TMPDIR": "<REPLICATION_ROOT>/verification-tools-worker-stack256/tiny-controls-r1/malformed",
+        "LANG": "en_US.UTF-8",
+        "LC_ALL": "en_US.UTF-8",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "NANODA_REAL_BINARY": "<REPLICATION_ROOT>/verification-tools-worker-stack256/target/release/nanoda_bin",
+        "COMPARATOR_LANDRUN": "<REPLICATION_ROOT>/verification-tools/comparator-source/scripts/fake-landrun.sh",
+        "REPLICATION_CHECKER_RECORD_DIR": "<REPLICATION_ROOT>/verification-tools-worker-stack256/tiny-controls-r1/malformed/records"
+      },
+      "exit_code": 1,
+      "expected_acceptance": false,
+      "child_cpu_seconds": 0.158765,
+      "wall_seconds": 0.16442499999999993,
+      "config": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/tiny-controls-r1/malformed/config.json",
+        "sha256": "66a1e0592334a84a462cfd0da5f66ebb5bb0dcb41d0f7c28fc112284fc555aa7",
+        "size_bytes": 377
+      },
+      "stdout": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/tiny-controls-r1/malformed/stdout.raw",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_bytes": 0
+      },
+      "stderr": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/tiny-controls-r1/malformed/stderr.raw",
+        "sha256": "42bfb5670fdec1bdad4fd39863211d31ca9079cf0ae6f6fe5bbeab71b9f8c741",
+        "size_bytes": 77
+      },
+      "record_finished": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/tiny-controls-r1/malformed/records/nanoda-33880-zdcqln5h/02-finished.json",
+        "sha256": "aab8e50d78f0515ed02d9f22ba5ac9ed875170ade1354212e1a646725f26f21f",
+        "size_bytes": 6293
+      }
+    }
+  ],
+  "child_cpu_seconds": 0.32884599999999997,
+  "wall_seconds": 0.49753458399999995
+}

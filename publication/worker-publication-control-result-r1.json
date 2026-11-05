@@ -1,0 +1,31 @@
+{
+  "schema": "eth-worker-publication-controls/1",
+  "status": "passed",
+  "checks": [
+    "closed synthetic retry accepted without asset/binary files",
+    "coherently rebound failed status refused",
+    "coherently rebound checker nonzero refused",
+    "coherently rebound timeout refused",
+    "coherently rebound weakened axiom policy refused",
+    "coherently rebound extra axiom refused",
+    "coherently rebound thread change refused",
+    "coherently rebound resource binary drift refused",
+    "coherently rebound helper drift refused",
+    "coherently rebound changed main stack refused",
+    "coherently rebound missing completion refused",
+    "coherently rebound old protocol refused",
+    "duplicate raw worker event refused",
+    "unnamed retry root refused",
+    "unnamed Rust extension refused",
+    "unnamed patch extension refused",
+    "named Rust and patch accepted",
+    "original failed Nano is excluded from positive receipt set",
+    "absent final map refused"
+  ],
+  "publisher_sha256": "450f31a416f5ae0fd8b966c97bec09c94728b98a195c3df63a31fc7196a2fb51",
+  "guard_sha256": "68d3ef6d9e0c3d4ae436b2901f4ac483cfa49a5f65982ca07d7e56ea7a21c726",
+  "source_sha256": "6cb773fde18128b412650e3242245665892560a13b5cc41ed02ce05ed4915ea0",
+  "cpu_seconds": 0.174781,
+  "wall_seconds": 0.217749708,
+  "scope": "Synthetic small metadata; fixture-only config-path/CF hashes, not production anchor substitutions; no proof, WIP evidence, binaries or large assets read"
+}

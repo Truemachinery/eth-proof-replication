@@ -1,0 +1,97 @@
+{
+  "schema": "interrupted-publisher-source-saved-fixture-review/1",
+  "reviewer": "codex-eth-anthropic-replication",
+  "same_team_review": true,
+  "observed_utc": "2026-11-05T18:13:30.833256+00:00",
+  "status": "Source/saved-fixture ACK; actual closure/combinedreview/map/export acceptance not performed by this review",
+  "wrapper": {
+    "path": "<REPLICATION_ROOT>/publish_native_interrupted_r1.py",
+    "sha256": "72fd73ea535a320e25c0f809cbe18713a545e014b7d3770f7bd6ba6b7ec2fa19",
+    "size_bytes": 8910
+  },
+  "guard": {
+    "path": "<REPLICATION_ROOT>/publication/native_interrupted_guard_r1.py",
+    "sha256": "e0c2f49aed9006ac82157cad20d913fe41a02e61fd8bc62614bdc279f9cde743",
+    "size_bytes": 20896
+  },
+  "reading": "Entire160linewrapper and258lineguard; previously reviewed immutable core/helper APIs and disjoint incomplete route reused.",
+  "preserved_prior_routes": [
+    {
+      "path": "<REPLICATION_ROOT>/publish_package.py",
+      "sha256": "a72ed2f73b37daaa375ee62c238897ba8e86c7549292bf5e3d6f1412fcc8675c",
+      "size_bytes": 68428
+    },
+    {
+      "path": "<REPLICATION_ROOT>/publication/native_worker_guard_r1.py",
+      "sha256": "68d3ef6d9e0c3d4ae436b2901f4ac483cfa49a5f65982ca07d7e56ea7a21c726",
+      "size_bytes": 31183
+    },
+    {
+      "path": "<REPLICATION_ROOT>/publish_native_incomplete_r1.py",
+      "sha256": "2b093efff7a723dd0bcb5d2aa00a724ab6557de7ca93f3ec45a2ed01a5de9272",
+      "size_bytes": 8003
+    },
+    {
+      "path": "<REPLICATION_ROOT>/publication/native_incomplete_guard_r1.py",
+      "sha256": "3c3d8696d58d90bead5a85da288b946d5c7bc995a6ede983f5c1fafd07706319",
+      "size_bytes": 26840
+    }
+  ],
+  "reviewed_properties": [
+    "Wrapper loads one isolated pinned a72 module instance and separate e0c2 interrupted guard, with distinct CLI/plan/schema/verdict; no OR path through positive or terminal-failure admission.",
+    "Positive collection is only seven original successful phases. R3 failed helper is not a positive receipt; root actual closure/review/map remain prerequisites.",
+    "Exacte066 signal15/PermissionError/empty-stage-list and89be recovery13fact/absence/knownPID snapshots are checked. No stage-finished/02/99/DIGEST, timeout, trigger attribution or final exit/cost is fabricated.",
+    "Actual strict resource/config/env/worker/00+01 launch metadata and prepared archive identity are bound separately from any accepted checker result. Unknown exit/accepted/during-check identity/final costs require explicitnull values, not absent defaults.",
+    "Two recovered raw streams have recovered_log class and separate interrupted_log_bindings with null final exit/CPU/wall. They are not entered as completed checker logs. Core frozen gate/content revalidation still binds their exact recovery-observed bytes before output.",
+    "Zero-byte outer JSON capture is checked through stable reader outside g.files and excluded from JSON copy selection; omission metadata is returned. Its existence/hash is preserved rather than parsed as a DIGEST.",
+    "All seven original phases/sourcebuild/manualschedule/oldD9/preexec/mainstack failures and final five-output3893 seal plus combined saved reviews are required through fixed metadata helpers. No large assets/source trees/binaries are read by the gate.",
+    "Core export keeps fixed source/allowlist/identity/privacy rules and mandatory publication sources, rejects omitted/drifted metadata and preserves plural prepared/failed assets. Existing CF data-only redaction remains applicable to unchanged a72."
+  ],
+  "saved_fixtures": [
+    {
+      "result": {
+        "path": "<REPLICATION_ROOT>/publication/interrupted-publisher-control-result-r1.json",
+        "sha256": "0bbbc66d321ea5619cbee72cdff67f10c6809a892706c4066099abb7b6118375",
+        "size_bytes": 1729
+      },
+      "source": {
+        "path": "<REPLICATION_ROOT>/publication/check_interrupted_publisher_r1.py",
+        "sha256": "8ced38152630fa8c58ca259fc01f1fecf40c6645bb9a3421f0abcd4ebc1347fe",
+        "size_bytes": 11756
+      },
+      "count": 23,
+      "scope": "Synthetic trusted metadata gate substituted in temporary files; no factual guard validation, real evidence, checker, network or export copy",
+      "cpu_seconds": 0.171863,
+      "wall_seconds": 0.172937334,
+      "reviewer_reran": false
+    },
+    {
+      "result": {
+        "path": "<REPLICATION_ROOT>/publication/interrupted-metadata-control-result-r1.json",
+        "sha256": "aca1fbcf918a040cc5b57e58398722e8cfce9266439ec9c0b374fae88734c76c",
+        "size_bytes": 1855
+      },
+      "source": {
+        "path": "<REPLICATION_ROOT>/publication/check_interrupted_metadata_r1.py",
+        "sha256": "82e7763a1b65624c7af01708358f5b75d6b25f9989e38d68d444415450b4edc3",
+        "size_bytes": 8290
+      },
+      "count": 22,
+      "scope": "Real gate with hash-bound fake headers that must refuse before original phase reads; no actual closure acceptance or proof/kernel/WIP/export work",
+      "cpu_seconds": 0.209916,
+      "wall_seconds": 0.21135500000000002,
+      "reviewer_reran": false
+    }
+  ],
+  "saved_fixture_total": 45,
+  "fixture_limitations": "Adapter23 substitutes a fake trusted gate and stubs successful export; realgate22 uses hash-bound fake closed headers/refusers. These test protocol plumbing and refusal semantics, not a full actual campaign, kernel, asset chain or real export. This reviewer did not import/rerun fixtures.",
+  "actual_current_closure_or_payload_read_by_reviewer": false,
+  "imports_tests_proofs_export_network_by_reviewer": false,
+  "private_cf_value_read_or_printed": false,
+  "remaining_conditions": [
+    "Root must validate actual closure and complete combined saved-evidence review before creating/fixing real interrupted map and exporting.",
+    "This metadata publication ACK is not a proof acceptance verdict, an independent kernel run or authorization to send/publish externally.",
+    "Any source change requires new literal review and correctly bound controls."
+  ],
+  "incremental_usd": 0
+}

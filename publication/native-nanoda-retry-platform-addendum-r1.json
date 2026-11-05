@@ -1,0 +1,18 @@
+{
+  "schema": "eth-native-resource-retry-platform-addendum/1",
+  "created_utc": "2026-11-05T15:18:56.022940+00:00",
+  "source_review": {
+    "path": "publication/native-nanoda-mixed-protocol-source-review-r1.json",
+    "sha256": "8ad8c5b650f31c71e7ec500b575b6d0604153d0a3148d3100db938f94c994d74"
+  },
+  "status": "HOLD_RUNTIME_PROFILE_NOT_VALIDATED",
+  "observation_source": "Source owner claims_scope_review message; no independent probe rerun or owner raw-log parse by this reviewer.",
+  "observation": "A harmless actual Python control child read existing hardRLIMIT_STACK67092480 but Python resource.setrlimit(STACK,(hard,hard)) raised ValueError: current limit exceeds maximum limit. Owner records checkpoint4023,0.232217CPU/0.256362wall, reportedrawSHA prefix98d16af. Parent limits stayed unchanged and no Nanoda checker ran in that control.",
+  "meaning": "The source-only review is not approval that this requested resource profile is supported at runtime. The fail-closed helper requires the actual change and cannot count this API failure as checker acceptance. This does not establish whether a separately reviewed direct-OS route or another supported limit will work.",
+  "preservation": "Executed helper5080 and aggregateR5f1 versions, originalfailedR2 evidence and heldpublisher393e must remain preserved. Root owns further bounded platform probes and any reviewed protocol revision.",
+  "restrictions": [
+    "Do not run the proposed proof retry until root resolves the actual platform/profile blocker.",
+    "Do not modify held publisher/template or exportR8 based on the superseded unmeasured profile.",
+    "No actual retry acceptance, all-eight native success or logical theorem rejection is inferred."
+  ]
+}

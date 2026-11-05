@@ -1,0 +1,67 @@
+{
+  "schema": "openai-native-phase/1",
+  "phase": "selected-export",
+  "status": "passed",
+  "record_directory": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export",
+  "started_utc": "2026-11-05T14:42:55.990728+00:00",
+  "accounting": "Native execution, no systemd-managed service. Recorder child_cpu_seconds covers reaped child processes/descendants, including capture and checker wrappers. Do not add nested Nanoda CPU a second time. No RSS measurement is claimed.",
+  "scope": "One explicit phase only; root aggregates all required closed results. Native mode has no Linux isolation.",
+  "input_fingerprint": "c84c8907998f23cc282a29ae7fef4a37cbaff735327096e748afe546af8c4f52",
+  "export": {
+    "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/selected-solution.ndjson",
+    "sha256": "bdbc9afe336fea99b01bc4eced6e4232153afdefe13a1095cdc5ca9499e3f573",
+    "size_bytes": 2355666449
+  },
+  "capture_receipt": {
+    "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/export-capture.json",
+    "sha256": "68dfc98bce263b4c58b28dc8d7af4caba44c85dccb10c6ac2f346c414eba26ee",
+    "size_bytes": 1359
+  },
+  "export_mode": "Direct child stdout FD, periodic/final fsync; unchanged Recorder handles stderr/control receipt and timeout group.",
+  "stage_finished": {
+    "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/stages/selected-export/finished.json",
+    "sha256": "5a147ff35bf3a5b9ad8eb77db3ef7da72dd5185a18a672a58a1382157e355625",
+    "size_bytes": 1645
+  },
+  "phase_inputs": {
+    "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/phase-inputs.json",
+    "sha256": "49cc3185d11cf935630708c97718c750a545cd7a74a0a8066cdf8d81a9333b4f",
+    "size_bytes": 11887
+  },
+  "finished_utc": "2026-11-05T14:44:48.678068+00:00",
+  "interrupt_signal": null,
+  "stage_receipts": [
+    {
+      "schema": "eth-ci-stage/1",
+      "name": "selected-export",
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "<REPLICATION_ROOT>/openai/in_workspace.py",
+        "lake",
+        "env",
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "<REPLICATION_ROOT>/openai/native_export_capture_r2.py",
+        "--output",
+        "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/selected-solution.ndjson",
+        "--receipt",
+        "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/export-capture.json",
+        "--",
+        "<REPLICATION_ROOT>/verification-tools/lean4export-434-source/.lake/build/bin/lean4export",
+        "OAI.Algorithms.SubexponentialSAT.Main",
+        "--",
+        "OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.exact_count_and_sat"
+      ],
+      "cwd": "<REPLICATION_ROOT>/openai/workspace",
+      "started_utc_epoch": 1793889776.169974,
+      "timeout_seconds": 1800,
+      "stdout_is_export": false,
+      "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.",
+      "exit_code": 0,
+      "reason": null,
+      "wall_seconds": 111.68325710296631,
+      "child_cpu_seconds": 72.56353,
+      "raw_log_sha256": "eaca645470f3fe81b8b43c0ba973fe3464458335a2f349aa3bcf5226c96e5505",
+      "raw_log_bytes": 1295
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema": "openai-native-phase/1",
+  "phase": "comparator",
+  "status": "passed",
+  "record_directory": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator",
+  "started_utc": "2026-11-05T14:26:22.428188+00:00",
+  "accounting": "Native execution, no systemd-managed service. Recorder child_cpu_seconds covers reaped child processes/descendants, including capture and checker wrappers. Do not add nested Nanoda CPU a second time. No RSS measurement is claimed.",
+  "scope": "One explicit phase only; root aggregates all required closed results. Native mode has no Linux isolation.",
+  "input_fingerprint": "c84c8907998f23cc282a29ae7fef4a37cbaff735327096e748afe546af8c4f52",
+  "stage_finished": {
+    "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator/stages/comparator/finished.json",
+    "sha256": "9f83b1752d9c706b1b496e9738efd38444bb8c5d4e2eb2c75f1bf9c00f6256b3",
+    "size_bytes": 1118
+  },
+  "phase_inputs": {
+    "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator/phase-inputs.json",
+    "sha256": "9961d336608415b962a8cb5ada994c7bf87bec65f03a7bdebc24f2b016d0cadd",
+    "size_bytes": 11747
+  },
+  "finished_utc": "2026-11-05T14:41:21.544547+00:00",
+  "interrupt_signal": null,
+  "stage_receipts": [
+    {
+      "schema": "eth-ci-stage/1",
+      "name": "comparator",
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "<REPLICATION_ROOT>/openai/in_workspace.py",
+        "lake",
+        "env",
+        "<REPLICATION_ROOT>/verification-tools/comparator-source/.lake/build/bin/comparator",
+        "<REPLICATION_ROOT>/openai/source/lean/ComparatorChallenges/SubexponentialSAT.json"
+      ],
+      "cwd": "<REPLICATION_ROOT>/openai/workspace",
+      "started_utc_epoch": 1793888782.6207402,
+      "timeout_seconds": 7200,
+      "stdout_is_export": false,
+      "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.",
+      "exit_code": 0,
+      "reason": null,
+      "wall_seconds": 898.9229838848114,
+      "child_cpu_seconds": 814.090121,
+      "raw_log_sha256": "66f795e10a667327f1e4c00304a9c0b7c4ea4ff3086819b281a9e21e7cd86136",
+      "raw_log_bytes": 7859
+    }
+  ]
+}

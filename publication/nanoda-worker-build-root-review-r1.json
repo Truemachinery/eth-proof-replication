@@ -1,0 +1,20 @@
+{
+  "schema": "root-resource-binary-build-review/1",
+  "reviewed_utc": "2026-11-05T15:39:34.244459+00:00",
+  "checks": 95,
+  "failures": [],
+  "source_files": 29,
+  "only_source_change": "src/lib.rs STACK_SIZE16777216to268435456; no logical/type-checking source delta",
+  "new_binary": {
+    "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/target/release/nanoda_bin",
+    "sha256": "10e1a4ebdb6fa606ca8d7a60774d8af0655294ab0b19d03a838a5ba746b7c2d9",
+    "size_bytes": 1260088
+  },
+  "base_commit": "68d5ca9db226849b41a6fff59d796ff19d0a8840",
+  "build_receipt_sha256": "9746cc46746f11d88d5d0f3f5ad1458e05a57627abb90fd6d60c6f42ebef325e",
+  "source_provenance_sha256": "b73658a2cec0410e1df0a90c446c5f15c0cf3a28875131027972ddece9c71dc7",
+  "build_inner_cpu_seconds": 29.215801000000003,
+  "build_inner_wall_seconds": 32.241135667,
+  "actual_eth_kernel_execution": false,
+  "scope": "Root independently read build command/environment/results/one-line patch and rehashed alloriginal/copiedsourcefiles/preserved original artifacts/compiler/Cargo/raw/newbinary. Cargo fingerprint metadata read; no claim retrospective originalcompilerbytepin or realETH acceptance. Runtime resource/helper guards remain pending and fresh is active."
+}

@@ -1,0 +1,194 @@
+{
+  "phase": "pre-identity",
+  "input_fingerprint": "c84c8907998f23cc282a29ae7fef4a37cbaff735327096e748afe546af8c4f52",
+  "selected_inputs": {
+    "files": {
+      "native-recorder-r1/record.py": {
+        "path": "<REPLICATION_ROOT>/openai/native-recorder-r1/record.py",
+        "sha256": "1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0",
+        "size_bytes": 6474
+      },
+      "in_workspace.py": {
+        "path": "<REPLICATION_ROOT>/openai/in_workspace.py",
+        "sha256": "b4e80df9ed1f1c71e7a202feccd94f189113610679d4a28ac3728d8708e7d04a",
+        "size_bytes": 700
+      },
+      "verify_source_identity_r3.py": {
+        "path": "<REPLICATION_ROOT>/openai/verify_source_identity_r3.py",
+        "sha256": "52cb3de32ef89c5fbb460032601693a9d2e740cda296b8dd44f9ab6fd1fa9174",
+        "size_bytes": 12879
+      },
+      "identity_expectations_r1.json": {
+        "path": "<REPLICATION_ROOT>/openai/identity_expectations_r1.json",
+        "sha256": "e39147fee63287baea89a046c85c462090f1c443f15b53d809e613631f0cce47",
+        "size_bytes": 8435
+      },
+      "source-manifest.json": {
+        "path": "<REPLICATION_ROOT>/openai/source-manifest.json",
+        "sha256": "bf7f36120177010243e52dd9053bd3e9f97f92fa35184abf173a8a57ef4843e1",
+        "size_bytes": 1892511
+      },
+      "workspace-config-r2.json": {
+        "path": "<REPLICATION_ROOT>/openai/workspace-config-r2.json",
+        "sha256": "a56c999ec870742bee9c51be2bb3199d358d77876d5e7d49492f5ad880938413",
+        "size_bytes": 709
+      },
+      "workspace/lake-manifest.json": {
+        "path": "<REPLICATION_ROOT>/openai/workspace/lake-manifest.json",
+        "sha256": "4aa8b01a11ed34de463651ed6396d9da61f365cccfd158e82e96bbd17bcb14bc",
+        "size_bytes": 3153
+      },
+      "source/lean/ComparatorChallenges/SubexponentialSAT.json": {
+        "path": "<REPLICATION_ROOT>/openai/source/lean/ComparatorChallenges/SubexponentialSAT.json",
+        "sha256": "debbfdc9c01104d2369be80da5180978275106df8b685f693fba7ce7da7c5b19",
+        "size_bytes": 364
+      },
+      "../verification/AuditTargets.lean": {
+        "path": "<REPLICATION_ROOT>/verification/AuditTargets.lean",
+        "sha256": "a78f30e0439e85d3a9ae51828e0e42c248c027a7fcfeb4c4fb16cb776fae0b05",
+        "size_bytes": 5663
+      },
+      "../verification-tools/comparator-source/.lake/build/bin/comparator": {
+        "path": "<REPLICATION_ROOT>/verification-tools/comparator-source/.lake/build/bin/comparator",
+        "sha256": "bdf09ee3e725f1480792db7b5befcbf6e4f77db90d9f1f4986bda5a1e6315f4c",
+        "size_bytes": 101846512
+      },
+      "../verification-tools/lean4export-434-source/.lake/build/bin/lean4export": {
+        "path": "<REPLICATION_ROOT>/verification-tools/lean4export-434-source/.lake/build/bin/lean4export",
+        "sha256": "e6217f95bf55c5e165a62f12ec6ce1fb3c25a815cff0f9cb6f6dfcf4c8e55e25",
+        "size_bytes": 179096064
+      },
+      "../verification-tools/nanoda-source/target/release/nanoda_bin": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/target/release/nanoda_bin",
+        "sha256": "d9a1fc5371b84c9eb0687a7630eb724fa88886d9f5d665f09f9f926730573b80",
+        "size_bytes": 1260088
+      },
+      "../verification-tools/comparator-source/scripts/fake-landrun.sh": {
+        "path": "<REPLICATION_ROOT>/verification-tools/comparator-source/scripts/fake-landrun.sh",
+        "sha256": "167507c89d8b3c7667ad78b50df7b19f89883751a01efd1457404fa34a994e8b",
+        "size_bytes": 1431
+      },
+      "../verification-tools/record_nanoda.py": {
+        "path": "<REPLICATION_ROOT>/verification-tools/record_nanoda.py",
+        "sha256": "c34f36d630d182708937a5280b6eda8d0723fa0ffdd85caf8fc54af17b332f48",
+        "size_bytes": 8494
+      },
+      "native_export_capture_r2.py": {
+        "path": "<REPLICATION_ROOT>/openai/native_export_capture_r2.py",
+        "sha256": "4755ba1dd43d18509cd1472bca98c269c79e3dc5a3c99f41faff5b2e6d78be74",
+        "size_bytes": 3279
+      },
+      "workspace/lean-toolchain": {
+        "path": "<REPLICATION_ROOT>/openai/workspace/lean-toolchain",
+        "sha256": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+        "size_bytes": 25
+      },
+      "workspace/lakefile.lean": {
+        "path": "<REPLICATION_ROOT>/openai/workspace/lakefile.lean",
+        "sha256": "aea9d368f24768ab9d51d8c9216c1dd60e598a983e63c463dc8de3f605d268fb",
+        "size_bytes": 534
+      },
+      "real4341/lib/lean/libleanshared.dylib": {
+        "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared.dylib",
+        "sha256": "6588b7e38450ea749006dcd90bbaea9393a5ca1b64727a2e7138f3c9427c2b50",
+        "size_bytes": 179077552
+      },
+      "real4341/lib/lean/libleanshared_1.dylib": {
+        "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared_1.dylib",
+        "sha256": "e44858e227323a23ce7416c5678415d2d022582b1627ad3690117ce73cd6345a",
+        "size_bytes": 16736
+      },
+      "real4341/lib/lean/libleanshared_2.dylib": {
+        "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared_2.dylib",
+        "sha256": "be68927a4f282b99383e82af4d481b4ffe59f2a243aea20dae0e60b39c2ae182",
+        "size_bytes": 16736
+      },
+      "real4341/lib/lean/libInit_shared.dylib": {
+        "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libInit_shared.dylib",
+        "sha256": "cb203e0bc0e6ab3250b2804d3e5398ad3a91544b5e049674532f73b7a062ef7f",
+        "size_bytes": 16736
+      },
+      "real4341/lib/lean/libLake_shared.dylib": {
+        "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libLake_shared.dylib",
+        "sha256": "60a94628397814203d86428fa6015f9d844c4c4c74cda8667e687a4ea5b5f5ac",
+        "size_bytes": 10072896
+      },
+      "real4341/bin/leanchecker": {
+        "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/leanchecker",
+        "sha256": "cfde41cb11dde58c84e9c60c551fd104bb2fc1104ad44dca932a923120272a35",
+        "size_bytes": 78224
+      },
+      "real4341/bin/lean": {
+        "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean",
+        "sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+        "size_bytes": 49968
+      },
+      "real4341/bin/lake": {
+        "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lake",
+        "sha256": "c8c24f1398162ab4004e2a869952d8469f54293651151feaad4526f2b8474c6e",
+        "size_bytes": 51824
+      }
+    },
+    "launcher": {
+      "path": "<REPLICATION_ROOT>/openai/verify_native_phase_r2.py",
+      "sha256": "fe3b12c0b8312a6b0cdb5ec1c6d88933cbff796bc92e9403682735d25348c19c",
+      "size_bytes": 20260
+    },
+    "module": "OAI.Algorithms.SubexponentialSAT.Main",
+    "challenge": "ComparatorChallenges.SubexponentialSAT",
+    "theorems": [
+      "OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.exact_count_and_sat"
+    ],
+    "original_comparator_nanoda_enabled": false
+  },
+  "argv": [
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "<REPLICATION_ROOT>/openai/in_workspace.py",
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "<REPLICATION_ROOT>/openai/verify_source_identity_r3.py"
+  ],
+  "cwd": "<REPLICATION_ROOT>/openai/workspace",
+  "environment_keys": [
+    "ELAN_HOME",
+    "GIT_CONFIG_NOSYSTEM",
+    "GIT_NO_LAZY_FETCH",
+    "GIT_NO_REPLACE_OBJECTS",
+    "GIT_OPTIONAL_LOCKS",
+    "GIT_TERMINAL_PROMPT",
+    "HOME",
+    "LANG",
+    "LC_ALL",
+    "LEAN_ABORT_ON_PANIC",
+    "LEAN_NUM_THREADS",
+    "LEAN_SYSROOT",
+    "MATHLIB_CACHE_DIR",
+    "PATH",
+    "PYTHONDONTWRITEBYTECODE",
+    "PYTHONUTF8",
+    "TMPDIR",
+    "XDG_CACHE_HOME"
+  ],
+  "environment": {
+    "PATH": "<REDACTED FIELD>",
+    "HOME": "<REPLICATION_ROOT>/openai/native-phase-records/r2-01-pre-identity/home",
+    "TMPDIR": "<REPLICATION_ROOT>/openai/native-phase-records/r2-01-pre-identity/tmp",
+    "LANG": "en_US.UTF-8",
+    "LC_ALL": "en_US.UTF-8",
+    "PYTHONUTF8": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "ELAN_HOME": "<REPLICATION_ROOT>/openai/elan",
+    "XDG_CACHE_HOME": "<REPLICATION_ROOT>/openai/cache",
+    "MATHLIB_CACHE_DIR": "<REPLICATION_ROOT>/openai/cache/mathlib",
+    "LEAN_SYSROOT": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1",
+    "LEAN_NUM_THREADS": "2",
+    "LEAN_ABORT_ON_PANIC": "1",
+    "GIT_CONFIG_NOSYSTEM": "1",
+    "GIT_TERMINAL_PROMPT": "0",
+    "GIT_OPTIONAL_LOCKS": "0",
+    "GIT_NO_LAZY_FETCH": "1",
+    "GIT_NO_REPLACE_OBJECTS": "1"
+  },
+  "timeout_seconds": 300,
+  "export_input": null,
+  "native_accounting": "Native execution, no systemd-managed service. Recorder child_cpu_seconds covers reaped child processes/descendants, including capture and checker wrappers. Do not add nested Nanoda CPU a second time. No RSS measurement is claimed."
+}

@@ -1,0 +1,197 @@
+{
+  "schema": "eth-worker-publication-preparation/1",
+  "status": "prepared-held-for-actual-result-and-final-review",
+  "created_utc": "2026-11-05T16:32:13.912925+00:00",
+  "publisher": {
+    "path": "publish_package.py",
+    "sha256": "a72ed2f73b37daaa375ee62c238897ba8e86c7549292bf5e3d6f1412fcc8675c",
+    "size_bytes": 68428
+  },
+  "preserved_publisher": {
+    "path": "publication/publisher-native-guards-held-r1.py",
+    "sha256": "393e66e4bc31bb8115c371177a04024ca4d46728ce039b8adda1f32e50ef3bb1",
+    "size_bytes": 59740
+  },
+  "guard": {
+    "path": "publication/native_worker_guard_r1.py",
+    "sha256": "68d3ef6d9e0c3d4ae436b2901f4ac483cfa49a5f65982ca07d7e56ea7a21c726"
+  },
+  "controls": [
+    {
+      "path": "publication/worker-publication-control-result-r2.json",
+      "sha256": "4101ce6311c3bcb149fcf5387cb837e946797051bb65142bd2b117897ed5be38",
+      "checks": 19,
+      "scope": "Synthetic small metadata; fixture-only config-path/CF hashes, not production anchor substitutions; no proof, WIP evidence, binaries or large assets read"
+    },
+    {
+      "path": "publication/worker-adapter-control-result-r2.json",
+      "sha256": "260b592d135f04f4df7dddac9393f36661cfef877c7dfdb26da4a0b93b221e0a",
+      "checks": 10,
+      "scope": "Trusted gate substituted with fake closed metadata only; no proof/WIP files, large assets or actual R8 release"
+    },
+    {
+      "path": "publication/sdk-redaction-control-result-r3.json",
+      "sha256": "63c54a4ad73200eda040ad1544d4642159e2af738e0de2442a5e0a99fc7cb999",
+      "checks": 19,
+      "scope": "Actual SDK value only hash-bound privately; nineteen privacy cases, no proof work"
+    }
+  ],
+  "current_ci_against_frozen_public_r7": [
+    {
+      "path": "ci/README.md",
+      "sha256": "39787e0e4b5a5e96f5835fbc9b485f2df7e6d6e84874c5ec61cc68f6b8868409",
+      "baseline_original_sha256": "39787e0e4b5a5e96f5835fbc9b485f2df7e6d6e84874c5ec61cc68f6b8868409"
+    },
+    {
+      "path": "ci/ancestor-cache-compatibility.json",
+      "sha256": "247130dc03d737b2ab46ec0898cb5d3438b3faa8b2618dc9b04495ccef5cdd40",
+      "baseline_original_sha256": "247130dc03d737b2ab46ec0898cb5d3438b3faa8b2618dc9b04495ccef5cdd40"
+    },
+    {
+      "path": "ci/cache_maintenance.py",
+      "sha256": "1f43bb2c4fa70afb0e999e5a7675987dbf46654672ba340f1f739045eb08e82d",
+      "baseline_original_sha256": "1f43bb2c4fa70afb0e999e5a7675987dbf46654672ba340f1f739045eb08e82d"
+    },
+    {
+      "path": "ci/check_bc_control.py",
+      "sha256": "192dae99efa59b41db476f891b3e398fc5cc63fab4236474763846167c63cf76",
+      "baseline_original_sha256": "192dae99efa59b41db476f891b3e398fc5cc63fab4236474763846167c63cf76"
+    },
+    {
+      "path": "ci/check_controls.py",
+      "sha256": "2ebe619f909dd48cfebabf857ade809b5e8f082b443d01689d99a89f0213023a",
+      "baseline_original_sha256": "2ebe619f909dd48cfebabf857ade809b5e8f082b443d01689d99a89f0213023a"
+    },
+    {
+      "path": "ci/check_display_control.py",
+      "sha256": "cbd5851a36d38e0ad5350eea64d7894d8b7708f618e1ca4210afbe46fc9f383b",
+      "baseline_original_sha256": "cbd5851a36d38e0ad5350eea64d7894d8b7708f618e1ca4210afbe46fc9f383b"
+    },
+    {
+      "path": "ci/check_landlock_policy_control.py",
+      "sha256": "d2471fa5e1424ef1758aa095318a1a81e07f46c1ef41525c507c803b4fcdc128",
+      "baseline_original_sha256": "d2471fa5e1424ef1758aa095318a1a81e07f46c1ef41525c507c803b4fcdc128"
+    },
+    {
+      "path": "ci/check_setup_omission_control.py",
+      "sha256": "4789ebe8874af41ac2d568403d85060b2a81f361ce3e27697b2f864a2deb8beb",
+      "baseline_original_sha256": "4789ebe8874af41ac2d568403d85060b2a81f361ce3e27697b2f864a2deb8beb"
+    },
+    {
+      "path": "ci/check_stage_name_control.py",
+      "sha256": "749d1fb3f109f7c3878cf2b4dd3c543db3c173828af17b54756fed07413f2571",
+      "baseline_original_sha256": "749d1fb3f109f7c3878cf2b4dd3c543db3c173828af17b54756fed07413f2571"
+    },
+    {
+      "path": "ci/compiler_gate.c",
+      "sha256": "96947ead6565aa2d75b93c09e8bdccba31bc6558517db5df915368efc123dfb3",
+      "baseline_original_sha256": "96947ead6565aa2d75b93c09e8bdccba31bc6558517db5df915368efc123dfb3"
+    },
+    {
+      "path": "ci/control-result-bc-r2.json",
+      "sha256": "71f34ef370ad5dd25b28f443960b37485c5a2f74a7a62b22345f38b31a15ba3b",
+      "baseline_original_sha256": "71f34ef370ad5dd25b28f443960b37485c5a2f74a7a62b22345f38b31a15ba3b"
+    },
+    {
+      "path": "ci/control-result-display-r3.json",
+      "sha256": "3e32a5e560e0e993a44738ea7eb8c69a73c68d229eaefd9c38c42f996e0ab327",
+      "baseline_original_sha256": "3e32a5e560e0e993a44738ea7eb8c69a73c68d229eaefd9c38c42f996e0ab327"
+    },
+    {
+      "path": "ci/control-result-landlock-policy-r4.json",
+      "sha256": "868caed022e577c87af606a083497b658f495ad026ddbe176f27c11c334d8764",
+      "baseline_original_sha256": "868caed022e577c87af606a083497b658f495ad026ddbe176f27c11c334d8764"
+    },
+    {
+      "path": "ci/control-result-r2.json",
+      "sha256": "be559a9f05600526547067307a10fddc94e465b5cf388c127eb614e64c36794b",
+      "baseline_original_sha256": "be559a9f05600526547067307a10fddc94e465b5cf388c127eb614e64c36794b"
+    },
+    {
+      "path": "ci/control-result-setup-omission-r3.json",
+      "sha256": "60560b19a484638d8cda6ce08e41be3af8ee5b1a30e7d25a055e8d2722629b6b",
+      "baseline_original_sha256": "60560b19a484638d8cda6ce08e41be3af8ee5b1a30e7d25a055e8d2722629b6b"
+    },
+    {
+      "path": "ci/control-result-stage-names-r3.json",
+      "sha256": "b476322adfed7729b2b799e0044f042b0825678a40b685c2679d831af4dd60c3",
+      "baseline_original_sha256": "b476322adfed7729b2b799e0044f042b0825678a40b685c2679d831af4dd60c3"
+    },
+    {
+      "path": "ci/control-result.json",
+      "sha256": "033bd03cc7f33daa0a7ac65413ff999beb8b81dc9c6f221a239b8c35be383aff",
+      "baseline_original_sha256": "033bd03cc7f33daa0a7ac65413ff999beb8b81dc9c6f221a239b8c35be383aff"
+    },
+    {
+      "path": "ci/create_gate.py",
+      "sha256": "c5af28dc306d384062ee53dbb34402ab895f82320fa2df015e0f09752959909a",
+      "baseline_original_sha256": "c5af28dc306d384062ee53dbb34402ab895f82320fa2df015e0f09752959909a"
+    },
+    {
+      "path": "ci/landlock_abi.py",
+      "sha256": "d0853c1a67adcec4bbe22d1c44dc835f448b80eebe6502a32450faa59e17e0b0",
+      "baseline_original_sha256": "d0853c1a67adcec4bbe22d1c44dc835f448b80eebe6502a32450faa59e17e0b0"
+    },
+    {
+      "path": "ci/owned_cache.py",
+      "sha256": "cc765ac2b127eeb171afa43f40d1ad15e435c94c14dedd070a647a5ecdb32431",
+      "baseline_original_sha256": "cc765ac2b127eeb171afa43f40d1ad15e435c94c14dedd070a647a5ecdb32431"
+    },
+    {
+      "path": "ci/pins.json",
+      "sha256": "e0b9f4d376b26247120dc97cee64595ea91b69fad24d5218e811d435a2910a0a",
+      "baseline_original_sha256": "e0b9f4d376b26247120dc97cee64595ea91b69fad24d5218e811d435a2910a0a"
+    },
+    {
+      "path": "ci/prepare_openai.py",
+      "sha256": "5c8830653d328d50dcf3c0cae1488a199ab9c9a4249bbcc3a06f6fd598369f6c",
+      "baseline_original_sha256": "5c8830653d328d50dcf3c0cae1488a199ab9c9a4249bbcc3a06f6fd598369f6c"
+    },
+    {
+      "path": "ci/record.py",
+      "sha256": "753330742a44e50bd48ed4a0cd6b55b5998938475e7cb463c56e4e65979075f6",
+      "baseline_original_sha256": "753330742a44e50bd48ed4a0cd6b55b5998938475e7cb463c56e4e65979075f6"
+    },
+    {
+      "path": "ci/replicate.py",
+      "sha256": "791007e37c684caa0001f0f34af40c81b2ebce84c854303fe5a7d448f429417f",
+      "baseline_original_sha256": "791007e37c684caa0001f0f34af40c81b2ebce84c854303fe5a7d448f429417f"
+    },
+    {
+      "path": "ci/workflow-template.yml",
+      "sha256": "33c8581f513743184a8c198778e015613e39533a24f7047ac340506a746a0412",
+      "baseline_original_sha256": "33c8581f513743184a8c198778e015613e39533a24f7047ac340506a746a0412"
+    }
+  ],
+  "trust_boundary": "Metadata/allowlist/closed-hash/privacy gate, not second R7 verifier or kernel. Root alone creates final map after observed Nano0/post0/R7seal and combined saved-evidence review.",
+  "actual_final_map_created": false,
+  "actual_r8_export_created": false,
+  "wip_retry_or_aggregate_read": false,
+  "large_proof_assets_read": false,
+  "public_template_changed": false,
+  "production_source_frozen_during_controls": true,
+  "measured_checkpoint_runs": {
+    "ids": [
+      4063,
+      4064,
+      4065,
+      4066,
+      4067,
+      4069
+    ],
+    "cpu_seconds_sum": 1.810617,
+    "wall_seconds_sum": 2.075754,
+    "includes_two_retained_fixture_setup_failures": true,
+    "scope": "Six small timed fixture commands only; other editing/review/wait time not represented as compute."
+  },
+  "no_network_proof_build_publish_dispatch_or_outreach": true,
+  "revision": 2,
+  "supersedes": "publication/final-native-worker-publisher-preparation-r1.json",
+  "retained_bug": {
+    "source": "publication/publisher-worker-candidate-450f-r1.py",
+    "sha256": "450f31a416f5ae0fd8b966c97bec09c94728b98a195c3df63a31fc7196a2fb51",
+    "finding": "Retry bundle is a dict containing source helper, but prior receipt expansion overwrote every extra class as manifest. Export would fail closed with selection changed evidence class. Historical adapter mock used only JSON bundle members and missed the realistic source class.",
+    "correction": "Preserve catalog precedence then actual dict classes; new fixture includes helper source and asserts its class."
+  },
+  "source_class_fix_diff_sha256": "f299efbfa1bc1e70050128866af11091b67aa105098e303900b2b91f7bed24a5"
+}

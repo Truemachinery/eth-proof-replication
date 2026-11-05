@@ -1,0 +1,20 @@
+{
+  "schema": "eth-worker-publication-adapter-controls/1",
+  "status": "passed",
+  "checks": [
+    "positive receipt list excludes retained original failure; all negative raw bindings retained",
+    "missing retained failure refused before destination",
+    "missing final post-identity receipt refused",
+    "missing closed phase bundle member refused",
+    "changed final gate snapshot refused",
+    "changed negative log exit binding refused",
+    "failed original promoted to positive receipt refused",
+    "raw drift after freeze refused",
+    "exclusive temporary synthetic export retains both accepted and failed asset metadata"
+  ],
+  "publisher_sha256": "450f31a416f5ae0fd8b966c97bec09c94728b98a195c3df63a31fc7196a2fb51",
+  "source_sha256": "5c90f742b3a1c70c63023316a3db0d5f6c2af0b2d3756b13cb5314028ac93a55",
+  "cpu_seconds": 0.06189099999999999,
+  "wall_seconds": 0.06578970900000002,
+  "scope": "Trusted gate substituted with fake closed metadata only; no proof/WIP files, large assets or actual R8 release"
+}

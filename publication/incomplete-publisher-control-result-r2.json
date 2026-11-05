@@ -1,0 +1,29 @@
+{
+  "schema": "eth-incomplete-publisher-adapter-controls/1",
+  "status": "passed",
+  "checks": [
+    "valid synthetic negative plan retains seven positive originals and source helper; failed Rust is not positive",
+    "expanded PASS refused",
+    "observed Rust acceptance refused",
+    "checker acceptance true refused",
+    "unknown acceptance field omitted refused",
+    "original suite missing refused",
+    "all-checks PASS refused",
+    "failed Rust added as positive receipt refused",
+    "negative map refused by unchanged positive worker gate",
+    "wrong outer plan route refused",
+    "changed reviewed source pin refused",
+    "wrapper source omitted refused",
+    "missing postidentity positive receipt refused",
+    "retained terminal negative omitted refused",
+    "retained terminal binding promoted refused",
+    "valid negative route dispatch preserves incomplete status without executing export",
+    "positive a72 publisher and68 guard remain byte-identical"
+  ],
+  "wrapper_sha256": "2b093efff7a723dd0bcb5d2aa00a724ab6557de7ca93f3ec45a2ed01a5de9272",
+  "source_sha256": "fec34dc7484b2cd5b3f004637dc2c23409309921cf389df0ec2e53e1ebf417a8",
+  "positive_publisher_sha256": "a72ed2f73b37daaa375ee62c238897ba8e86c7549292bf5e3d6f1412fcc8675c",
+  "scope": "Synthetic trusted metadata gate substituted in temporary files; no factual guard validation, real evidence, checker, network or export copy",
+  "cpu_seconds": 0.20120899999999997,
+  "wall_seconds": 0.20356841600000003
+}

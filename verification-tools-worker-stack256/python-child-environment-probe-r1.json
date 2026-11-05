@@ -1,0 +1,23 @@
+{
+  "schema": "owned-native-child-env-diagnostic/1",
+  "started_utc": "2026-11-05T15:56:07.189990+00:00",
+  "finished_utc": "2026-11-05T15:56:07.317152+00:00",
+  "exit_code": 0,
+  "diagnostic": {
+    "protocol_equal": true,
+    "fingerprint_equal": true,
+    "policy_equal": true,
+    "extra_keys": [
+      "__CF_USER_TEXT_ENCODING"
+    ],
+    "missing_keys": [],
+    "changed_values": [],
+    "extra_value_hashes": {
+      "__CF_USER_TEXT_ENCODING": "bfea86ae0b123713ac5b1af20b2dd4ead4f0bb81822ed654e80347e6fa420f3b"
+    }
+  },
+  "stderr": "",
+  "proof_or_nanoda_execution": false,
+  "input_manifest": "research/eth-external-replication-20261104/openai/native-retry-records/worker-stack256-r2-01/retry-inputs.json",
+  "scope": "Same exact child interpreter/cwd/environment; source definitions loaded without main. Only differing key names/value SHA256 printed, no unexpected values."
+}

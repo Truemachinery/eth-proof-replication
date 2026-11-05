@@ -1,0 +1,8 @@
+{
+  "pid": 38877,
+  "started_at": "2026-11-05T16:05:55.376547+00:00",
+  "checker_argv": [
+    "<REPLICATION_ROOT>/verification-tools-worker-stack256/target/release/nanoda_bin",
+    "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/additional-nanoda-config.json"
+  ]
+}

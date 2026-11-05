@@ -1,0 +1,84 @@
+{
+  "schema": "eth-native-interrupted-selection/1",
+  "created_utc": "2026-11-05T18:20:04.362117+00:00",
+  "aggregate_directory": "openai/native-interrupted-records/worker-stack256-r1-01",
+  "aggregate_files": {
+    "closure-prepared.json": {
+      "path": "<REPLICATION_ROOT>/openai/native-interrupted-records/worker-stack256-r1-01/closure-prepared.json",
+      "sha256": "18a0fd55a3a24fc7f7d07f2a673fd151b24d57b10dc6cbbc7325d1db2ec79091",
+      "size_bytes": 383
+    },
+    "native-interrupted-result.json": {
+      "path": "<REPLICATION_ROOT>/openai/native-interrupted-records/worker-stack256-r1-01/native-interrupted-result.json",
+      "sha256": "89c492ef8435b3776aeb4f255bc4c3135be3db960d53673fdce2da3b88f1844f",
+      "size_bytes": 150192
+    },
+    "native-interrupted-artifacts.json": {
+      "path": "<REPLICATION_ROOT>/openai/native-interrupted-records/worker-stack256-r1-01/native-interrupted-artifacts.json",
+      "sha256": "dbdb79fe86b373b588abf80f3c7e2fd8ec132b077765cfd78559006a33f0fa48",
+      "size_bytes": 80238
+    },
+    "report.md": {
+      "path": "<REPLICATION_ROOT>/openai/native-interrupted-records/worker-stack256-r1-01/report.md",
+      "sha256": "55bcd48a11e67d1c841fd311fdf91542cb7124de65fbde0abf4048bcf0584522",
+      "size_bytes": 449
+    },
+    "closure-finished.json": {
+      "path": "<REPLICATION_ROOT>/openai/native-interrupted-records/worker-stack256-r1-01/closure-finished.json",
+      "sha256": "da02a84c83078977d324f3867d854bc0f6462af6ba86b516a340d0c81c1d751b",
+      "size_bytes": 1029
+    }
+  },
+  "publication_mode": "original-lean-pass-additional-nanoda-interrupted",
+  "verdict": "ORIGINAL_LEAN_SUITE_PASS_ADDITIONAL_NANODA_INTERRUPTED",
+  "original_lean_suite_passed": true,
+  "expanded_suite_passed": false,
+  "all_required_native_checks_passed": false,
+  "original_r2_protocol_passed": false,
+  "independent_nanoda_acceptance_observed": false,
+  "additional_nanoda_verification": "INTERRUPTED",
+  "interrupt_signal": 15,
+  "attempt_timed_out": false,
+  "checker_exit_code": null,
+  "independent_nanoda_accepted": null,
+  "final_attempt_cpu_seconds": null,
+  "final_attempt_wall_seconds": null,
+  "reviews": [
+    {
+      "path": "openai/native-saved-evidence-review-part1-r1.json",
+      "sha256": "d54ef4f618647a3864b36e88f37808bbadd04c470f0f6f31d7f3abdad2242fb0",
+      "size_bytes": 55435
+    },
+    {
+      "path": "openai/native-saved-evidence-review-part1-r1.md",
+      "sha256": "002e7ad631e1d9817add905d19d2de4b2000af67b5969b7899fe09c3cd40ed8f",
+      "size_bytes": 3167
+    },
+    {
+      "path": "openai/native-saved-evidence-review-part2-r1.json",
+      "sha256": "c5ad237ce27eded421d8fadf21e466c9a19047addfec946380a8973898b7996a",
+      "size_bytes": 64851
+    },
+    {
+      "path": "openai/native-saved-evidence-review-part2-r1.md",
+      "sha256": "2899fa334bfeee4904665e78ee5226699d07eca77d397eb80f1bc6bb613e4915",
+      "size_bytes": 1550
+    },
+    {
+      "path": "openai/native-saved-evidence-review-r1.json",
+      "sha256": "52199edb80d9fcd934ec2765f1f2a30edddd71ccc35f72a3ef7df5229ae0d6f2",
+      "size_bytes": 149685
+    },
+    {
+      "path": "openai/native-saved-evidence-review-r1.md",
+      "sha256": "6c1233308ea4c322e31af47d3a12775a861d7b7fcfd70fd8d8a522a17be5e3a0",
+      "size_bytes": 5536
+    },
+    {
+      "path": "openai/native-replication-report-r1.md",
+      "sha256": "0d833dbcae4fb4c528482381c186a28688e24346f1cc3b831c2cbafa8e4c84b6",
+      "size_bytes": 10803
+    }
+  ],
+  "root_review_scope": "Read final human and combined Markdown reports; independently rehashed all126 small bindings and checked actual closure outputs/source reviews. Selection is metadata publication admission, not another proof execution."
+}

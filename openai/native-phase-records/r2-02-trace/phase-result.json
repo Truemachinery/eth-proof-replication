@@ -1,0 +1,48 @@
+{
+  "schema": "openai-native-phase/1",
+  "phase": "trace",
+  "status": "passed",
+  "record_directory": "<REPLICATION_ROOT>/openai/native-phase-records/r2-02-trace",
+  "started_utc": "2026-11-05T14:23:46.478724+00:00",
+  "accounting": "Native execution, no systemd-managed service. Recorder child_cpu_seconds covers reaped child processes/descendants, including capture and checker wrappers. Do not add nested Nanoda CPU a second time. No RSS measurement is claimed.",
+  "scope": "One explicit phase only; root aggregates all required closed results. Native mode has no Linux isolation.",
+  "input_fingerprint": "c84c8907998f23cc282a29ae7fef4a37cbaff735327096e748afe546af8c4f52",
+  "stage_finished": {
+    "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-02-trace/stages/trace/finished.json",
+    "sha256": "528e14e4ad3e35a0c22174f833e44261a9dee6cc83911d412bba8677b0c36b36",
+    "size_bytes": 933
+  },
+  "phase_inputs": {
+    "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-02-trace/phase-inputs.json",
+    "sha256": "8b7906c6767d2b7d041703959ca1b4ff51eba64a1d2019131064af428fdd478e",
+    "size_bytes": 11154
+  },
+  "finished_utc": "2026-11-05T14:23:59.209652+00:00",
+  "interrupt_signal": null,
+  "stage_receipts": [
+    {
+      "schema": "eth-ci-stage/1",
+      "name": "trace",
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "<REPLICATION_ROOT>/openai/in_workspace.py",
+        "lake",
+        "--no-build",
+        "build",
+        "+OAI.Algorithms.SubexponentialSAT.Main",
+        "+ComparatorChallenges.SubexponentialSAT"
+      ],
+      "cwd": "<REPLICATION_ROOT>/openai/workspace",
+      "started_utc_epoch": 1793888626.7726889,
+      "timeout_seconds": 600,
+      "stdout_is_export": false,
+      "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.",
+      "exit_code": 0,
+      "reason": null,
+      "wall_seconds": 12.435912132263184,
+      "child_cpu_seconds": 8.769658,
+      "raw_log_sha256": "848790b8bfbf646a8c33eec16294d3407ff608ef07449994dc5fd488c25dbd37",
+      "raw_log_bytes": 5258
+    }
+  ]
+}

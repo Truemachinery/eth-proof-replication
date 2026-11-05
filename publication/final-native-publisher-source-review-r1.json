@@ -1,0 +1,105 @@
+{
+  "schema": "eth-final-native-publisher-source-review/1",
+  "status": "PREPARATION_ONLY_HELD_FOR_RETRY_PROTOCOL",
+  "reviewed_publisher": {
+    "path": "publish_package.py",
+    "sha256": "393e66e4bc31bb8115c371177a04024ca4d46728ce039b8adda1f32e50ef3bb1",
+    "size_bytes": 59740
+  },
+  "baseline": {
+    "original_executed_sha256": "5794d94960ffcbf117022a3b702516d46ca7811a88c2704393f5ec430435c32b",
+    "published_portable_derivative_sha256": "cb9c19bd6b1ddcf6213433ea87c8b21dd1d506e1469b8c4e0041efe9e3c7beb3",
+    "scope": "Published R7 copy is an explicitly transformed portable derivative; not byte-identical original code. Focused review of added guard/functions and integration, not whole-file source equivalence."
+  },
+  "reviewed_current_windows": [
+    "23-43 fixed native constants",
+    "210-295 stable read/path and completed receipt classes",
+    "298-476 native_bound, phase bundle and final selection",
+    "508-570 planning integration",
+    "610-679 redaction/portable derivative contract",
+    "681-750 export revalidation/required evidence"
+  ],
+  "control_evidence": [
+    {
+      "path": "publication/check_final_native_guards_r1.py",
+      "sha256": "ff142f028063787acfbf5fa52de13137a12bda6f2c5d4870efe3439aa424b84c",
+      "bytes": 11935
+    },
+    {
+      "path": "publication/final-native-guard-control-result-r1.json",
+      "sha256": "c17d60f5d419e6d6a7df2d6ff67a55cd5ae6e93dc52a9a0da5f622e123728035",
+      "bytes": 1079,
+      "status": "passed",
+      "check_count": 19,
+      "publisher_sha256": "7f7a74a3e4527f72cc460fecaec6c6f27e3d6781189326dc5792a4b8dcb071c9",
+      "scope": true
+    },
+    {
+      "path": "publication/check_final_native_guards_r2.py",
+      "sha256": "db20e3b85f9ebb28050c414630c71ecfc673fefc2d2b3ef458d8fd8f29b20ad9",
+      "bytes": 4706
+    },
+    {
+      "path": "publication/final-native-guard-control-result-r2.json",
+      "sha256": "2008f8bafe2dc6dbc834b2ff9d2594b0f39afba9cdf3523c5167ec0459072e47",
+      "bytes": 1233,
+      "status": "passed",
+      "check_count": 13,
+      "publisher_sha256": "ff7f10c5d3e0cb9ec55d633ca7a37e24a48ad2e5b020be92ceebc5a8eea41dfe",
+      "scope": true
+    },
+    {
+      "path": "publication/check_final_native_guards_r3.py",
+      "sha256": "4de78e22d725d12b06cef1cb5c8c60226dedd7e814b9929e4bd299938661a357",
+      "bytes": 2859
+    },
+    {
+      "path": "publication/final-native-guard-control-result-r3.json",
+      "sha256": "509c2c2e19846ebc994924614c9861905925b3c11fe60657d8a974de113b62a1",
+      "bytes": 1077,
+      "status": "passed",
+      "check_count": 7,
+      "publisher_sha256": "393e66e4bc31bb8115c371177a04024ca4d46728ce039b8adda1f32e50ef3bb1",
+      "scope": true
+    }
+  ],
+  "control_scope": "Saved19original guard fixtures,13subsequent coherent negatives and7latest selected-evidence omission fixtures report pass at their own three publisher hashes. Only latest7 report binds current393e. SourcesR2/R3 and result metadata inspected; no tests/imports rerun; do not claim39 executions against one current hash.",
+  "findings": [
+    {
+      "classification": "conditional_source_ack",
+      "finding": "No material acceptance/privatepath/log-scope blocker identified within the original eight-successful-R2-phase and reviewed-R4-aggregate contract."
+    },
+    {
+      "classification": "closed_metadata",
+      "finding": "Typed zero exits, closed phase/result intervals, prepared/input/stage/raw hash and size bindings, common selected-input fingerprint, all eight explicit directories and final aggregate seal are required."
+    },
+    {
+      "classification": "selection_integrity",
+      "finding": "Current omission guards require every native_final selected file, all eight result receipt paths and complete phase bundles; export revalidates before destination creation."
+    },
+    {
+      "classification": "scope_boundaries",
+      "finding": "Only fixed owned phase paths/final-r1 aggregate, restricted Nanoda record suffix and fixed review names enter dynamic selection. Paths, symlinks/hardlinks, extensions and file limits remain checked; NDJSON/gzip proof bytes are not copied."
+    },
+    {
+      "classification": "trust_limit",
+      "finding": "Publisher trusts the closed reviewed aggregate and recorded metadata. It does not rerun kernels, reproduce the full aggregator's checking logic, rehash large proof assets, or authenticate external authorship. Omitted-asset identities/availability are receipt-reported."
+    }
+  ],
+  "current_production_hold": {
+    "source": "Root steering, not an independent audit of new proof receipts by this reviewer",
+    "reported_fact": "Original r2-06 additional Nanoda failed with a stack overflow; root is preparing a separately reviewed resource-only retry and aggregateR5.",
+    "consequence": "Original eight-passed-R2/R4 contract is not met. Conditional source ACK must not be used as an actual proof PASS, actual R8 export approval, or approval of the future retry/R5 schema.",
+    "required_future_work": "Root-reviewed actual retry outcome and revised aggregate/publication guards before final export."
+  },
+  "actions": {
+    "source_edits": false,
+    "imports_or_control_reruns": false,
+    "proof_or_aggregation_execution": false,
+    "large_asset_reads": false,
+    "network": false,
+    "export_or_publication": false
+  },
+  "material_blocker_in_original_inspected_contract": false,
+  "current_final_export_authorized": false
+}

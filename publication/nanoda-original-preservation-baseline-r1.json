@@ -1,0 +1,183 @@
+{
+  "schema": "eth-nanoda-original-preservation-baseline/1",
+  "created_utc": "2026-11-05T15:28:30.840985+00:00",
+  "scope": "Independent small-source/binary checksum review before resource variant handoff; no build, version invocation, probe, proof or network.",
+  "original_tool_manifest_sha256": "90cf428c18e95d4e05502605b01f35e527d3f04644ef814a3742c8554c26a2c1",
+  "manifest_matches_frozen_r7_original_binding": true,
+  "source_commit": "68d5ca9db226849b41a6fff59d796ff19d0a8840",
+  "source_inventory_count": 29,
+  "source_files": [
+    {
+      "path": ".github/workflows/release.yml",
+      "sha256": "3ac7ccfc95653d33b910efd69d541e22ba66b72d88422f54f4eafbe5be5eae0c",
+      "size_bytes": 710
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "cc0528de53769499a02da6fbaaf0dab13434675fe571e276e13845f95f0b601b",
+      "size_bytes": 27
+    },
+    {
+      "path": "Cargo.lock",
+      "sha256": "f9df05457e9aae9acaa1039f10dd21dec4465e339a354f01c3f7c77c3bf0bed0",
+      "size_bytes": 6446
+    },
+    {
+      "path": "Cargo.toml",
+      "sha256": "27aedf28f3b13f6c29edd73681e48b3b3769a01bd27235eec932c98f3c1842cd",
+      "size_bytes": 857
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "c8858a5a76440bbca484e134cf7df46385d090dd18b2c58e650f939258802e5b",
+      "size_bytes": 10141
+    },
+    {
+      "path": "README.md",
+      "sha256": "b91487520d495d8726fedfaa87462d81acf0ffab3a3cad942ae7232461f15fae",
+      "size_bytes": 6228
+    },
+    {
+      "path": "rustfmt.toml",
+      "sha256": "8bc492625b7a601b5147aa68f32a05fb90e7e95f55693c89619adea72ae230a5",
+      "size_bytes": 248
+    },
+    {
+      "path": "src/debug_printer.rs",
+      "sha256": "184918c06946c0efcc57868e47098428bd1d98179725344ba81b1103eb940c81",
+      "size_bytes": 8921
+    },
+    {
+      "path": "src/env.rs",
+      "sha256": "687edb90f3a8a2c665eacad66e021ec20c15819b6da7f2c152cb82fb24c3de5b",
+      "size_bytes": 10890
+    },
+    {
+      "path": "src/expr.rs",
+      "sha256": "8e79e45afd043cd464f1e3af4597df3d4b09dfe087886cd32139f20746c6529e",
+      "size_bytes": 30985
+    },
+    {
+      "path": "src/inductive.rs",
+      "sha256": "abef916af384d1d3ce339d9ca79a74e943e6cad6b79b67c5c95e717a8d2c4fb1",
+      "size_bytes": 80162
+    },
+    {
+      "path": "src/level.rs",
+      "sha256": "801452fb06c25e037fc9f0136fd60ca1f720692f2341a3ead9aaf6e1a68a399c",
+      "size_bytes": 10847
+    },
+    {
+      "path": "src/lib.rs",
+      "sha256": "ca7a3ba8754a06ee08c85fbc5af9debdefc372629c50b02142bdc8aad55cb69e",
+      "size_bytes": 397
+    },
+    {
+      "path": "src/main.rs",
+      "sha256": "245ceaef34e8925cacaa3c5b99ce096a8c744710ce1f9184423e5a0333e8b35a",
+      "size_bytes": 2524
+    },
+    {
+      "path": "src/name.rs",
+      "sha256": "e6397a691030820156aa84574f2de3b510f9989e5bef61b99a0db37d2a014bd7",
+      "size_bytes": 2365
+    },
+    {
+      "path": "src/parser.rs",
+      "sha256": "22b17bd188152fb3ded36a060fc1ade5e064aef7cc411aecf64c5730c40ea3e2",
+      "size_bytes": 33896
+    },
+    {
+      "path": "src/pretty_printer.rs",
+      "sha256": "b6284a0a27de2a40d714035577e29f259f47e872c2ececc9dfef9a5c479ed778",
+      "size_bytes": 36961
+    },
+    {
+      "path": "src/quot.rs",
+      "sha256": "0131ae36f3daea5262f280aca44085c15e5335a8657cefd2afcec4c2bc388463",
+      "size_bytes": 10612
+    },
+    {
+      "path": "src/tc.rs",
+      "sha256": "73f00401263871e533eb0f2cfa38162866204ee3fe7e7dd146755c5690f0b696",
+      "size_bytes": 56610
+    },
+    {
+      "path": "src/tests.rs",
+      "sha256": "594aac68cef5af3c6c9513c09846c27b041d43b855828e2ec742ca1dd4173e56",
+      "size_bytes": 33
+    },
+    {
+      "path": "src/tests/level.rs",
+      "sha256": "0b532b157ce6b1b40d27e8acea78ac18c56b92de1bc9439f644b860c1f2a2d92",
+      "size_bytes": 6209
+    },
+    {
+      "path": "src/tests/natlit.rs",
+      "sha256": "49e012cf9af881c4d3205795d2ced385e39128baa53770806489b69aaa1674fe",
+      "size_bytes": 27965
+    },
+    {
+      "path": "src/tests/util.rs",
+      "sha256": "f2de3d3bc76336ef82e34374ba6f50a8b185e30f17f68bb1e517e2b48f6666c2",
+      "size_bytes": 4345
+    },
+    {
+      "path": "src/union_find.rs",
+      "sha256": "2728ab1d2dcd84489a6bb4fa984af22c40236bf813205e42a1c55ca825bdc757",
+      "size_bytes": 5571
+    },
+    {
+      "path": "src/unique_hasher.rs",
+      "sha256": "e457ec69139dee08c4f21f3fee5bc9a2cfe6bb14e5d5bd217ca35d6a368daea5",
+      "size_bytes": 881
+    },
+    {
+      "path": "src/util.rs",
+      "sha256": "b93e18f18c59286412109041daf31a5f90686d13f23cf378ce6a6a0c78f25d3d",
+      "size_bytes": 41176
+    },
+    {
+      "path": "test_resources/Empty/export",
+      "sha256": "6ecdb8d4389e5c525cd9dfd05bb610c8a9c74739d9a62dbecc6a049ceb0b9837",
+      "size_bytes": 176
+    },
+    {
+      "path": "test_resources/ProjFromProp/config.json",
+      "sha256": "c898525fcb5347fc9f60961201d93d7663afb1867197a46a5753e21b24fc3cc8",
+      "size_bytes": 186
+    },
+    {
+      "path": "test_resources/ProjFromProp/export",
+      "sha256": "5fc8f25b717c2dd56880064e43d87489b1bea202f5b5ef96d0d06a6ba7ce2022",
+      "size_bytes": 4509
+    }
+  ],
+  "original_nanoda_binary": {
+    "path": "nanoda-source/target/release/nanoda_bin",
+    "sha256": "d9a1fc5371b84c9eb0687a7630eb724fa88886d9f5d665f09f9f926730573b80",
+    "size_bytes": 1260088
+  },
+  "current_compiler_executables": [
+    {
+      "path": "verification-tools/rustup/toolchains/1.99.1-aarch64-apple-darwin/bin/rustc",
+      "sha256": "1ba7bb8e273bd64125f4048d2ecce530e0a6470e565ab1b3aecf0b82b532f7b1",
+      "size_bytes": 413480,
+      "scope": "Current executable bytes; not a claim of all dynamically loaded runtime libraries or a separately sealed initial-build compiler hash."
+    },
+    {
+      "path": "verification-tools/rustup/toolchains/1.99.1-aarch64-apple-darwin/bin/cargo",
+      "sha256": "6d576d8058f8ca643e8fce55b64ee3c614ba64c9da2e536bae843e6a2e1f3951",
+      "size_bytes": 32182376,
+      "scope": "Current executable bytes; not a claim of all dynamically loaded runtime libraries or a separately sealed initial-build compiler hash."
+    }
+  ],
+  "recorder_original_sha256": "c34f36d630d182708937a5280b6eda8d0723fa0ffdd85caf8fc54af17b332f48",
+  "publisher_sha256": "393e66e4bc31bb8115c371177a04024ca4d46728ce039b8adda1f32e50ef3bb1",
+  "review_resources": {
+    "cpu_seconds": 0.033651,
+    "wall_seconds": 0.042369915999999994,
+    "cost_usd": 0
+  },
+  "limits": "No variant build/probe result is inferred; resource-only build and future helper/R6 still need actual closed evidence and review. Original compiler path/version is documented by initial commands, but old manifest did not separately seal these compiler executable bytes."
+}

@@ -1,0 +1,1067 @@
+{
+  "schema": "openai-native-saved-evidence-review-part2/1",
+  "reviewer": "codex-eth-anthropic-replication",
+  "same_team_review": true,
+  "observed_utc": "2026-11-05T15:56:32.574217+00:00",
+  "status": "Closed Comparator/export/original-fresh bindings support their PASS; original D9 remains failed; overall revised native campaign remains INCOMPLETE",
+  "all_part2_checks_passed": true,
+  "assertion_count": 227,
+  "checks": [
+    "regular canonical openai/native-saved-evidence-review-part1-r1.json",
+    "regular canonical openai/native-saved-evidence-review-part1-r1.json",
+    "existing first3/sourcebuild review identity and positive scope",
+    "regular canonical openai/native-phase-records/r2-01-pre-identity/phase-inputs.json",
+    "reference exact canonical c84 fingerprint",
+    "regular canonical openai/native-recorder-r1/record.py",
+    "binding openai/native-recorder-r1/record.py",
+    "regular canonical openai/in_workspace.py",
+    "binding openai/in_workspace.py",
+    "regular canonical openai/verify_source_identity_r3.py",
+    "binding openai/verify_source_identity_r3.py",
+    "regular canonical openai/identity_expectations_r1.json",
+    "binding openai/identity_expectations_r1.json",
+    "regular canonical openai/source-manifest.json",
+    "binding openai/source-manifest.json",
+    "regular canonical openai/workspace-config-r2.json",
+    "binding openai/workspace-config-r2.json",
+    "regular canonical openai/workspace/lake-manifest.json",
+    "binding openai/workspace/lake-manifest.json",
+    "regular canonical openai/source/lean/ComparatorChallenges/SubexponentialSAT.json",
+    "binding openai/source/lean/ComparatorChallenges/SubexponentialSAT.json",
+    "regular canonical verification/AuditTargets.lean",
+    "binding verification/AuditTargets.lean",
+    "regular canonical verification-tools/nanoda-source/target/release/nanoda_bin",
+    "binding verification-tools/nanoda-source/target/release/nanoda_bin",
+    "regular canonical verification-tools/comparator-source/scripts/fake-landrun.sh",
+    "binding verification-tools/comparator-source/scripts/fake-landrun.sh",
+    "regular canonical verification-tools/record_nanoda.py",
+    "binding verification-tools/record_nanoda.py",
+    "regular canonical openai/native_export_capture_r2.py",
+    "binding openai/native_export_capture_r2.py",
+    "regular canonical openai/workspace/lean-toolchain",
+    "binding openai/workspace/lean-toolchain",
+    "regular canonical openai/workspace/lakefile.lean",
+    "binding openai/workspace/lakefile.lean",
+    "regular canonical openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared_1.dylib",
+    "binding openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared_1.dylib",
+    "regular canonical openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared_2.dylib",
+    "binding openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared_2.dylib",
+    "regular canonical openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libInit_shared.dylib",
+    "binding openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libInit_shared.dylib",
+    "regular canonical openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/leanchecker",
+    "binding openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/leanchecker",
+    "regular canonical openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean",
+    "binding openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean",
+    "regular canonical openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lake",
+    "binding openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lake",
+    "regular canonical openai/verify_native_phase_r2.py",
+    "binding openai/verify_native_phase_r2.py",
+    "frozen originalR2 launcher",
+    "regular canonical openai/native-phase-records/r2-04-comparator/phase-result.json",
+    "regular canonical openai/native-phase-records/r2-04-comparator/phase-prepared.json",
+    "regular canonical openai/native-phase-records/r2-04-comparator/phase-inputs.json",
+    "regular canonical openai/native-phase-records/r2-04-comparator/stages/comparator/finished.json",
+    "regular canonical openai/native-phase-records/r2-04-comparator/stages/comparator/prepared.json",
+    "regular canonical openai/native-phase-records/r2-04-comparator/stages/comparator/raw.log",
+    "comparator actual closed result scope",
+    "comparator preparation lineage",
+    "comparator original input content and c84 chain",
+    "regular canonical openai/native-phase-records/r2-04-comparator/phase-inputs.json",
+    "binding openai/native-phase-records/r2-04-comparator/phase-inputs.json",
+    "regular canonical openai/native-phase-records/r2-04-comparator/stages/comparator/finished.json",
+    "binding openai/native-phase-records/r2-04-comparator/stages/comparator/finished.json",
+    "comparator prepared/final/raw stage lineage",
+    "comparator actual exit reason and complete raw binding",
+    "comparator finite nonnegative resources",
+    "comparator exact cwd/cap and stdout accounting",
+    "comparator independently reconstructed original command",
+    "comparator exact constructed minimal environment",
+    "comparator actual UTC time enclosure",
+    "regular canonical openai/logs/native-r2-comparator-checkpoint.json",
+    "regular canonical openai/logs/native-r2-comparator-checkpoint.txt",
+    "comparator actual plain outer DIGEST identity and exit",
+    "comparator plain outer raw final result equality",
+    "comparator exact outer stage receipt equality",
+    "comparator nested resource totals retained without double counting",
+    "regular canonical openai/logs/native-r2-comparator-checkpoint.json",
+    "regular canonical openai/native-phase-records/r2-04-comparator/phase-result.json",
+    "regular canonical openai/native-phase-records/r2-04-comparator/phase-inputs.json",
+    "regular canonical openai/native-phase-records/r2-04-comparator/stages/comparator/finished.json",
+    "regular canonical openai/native-phase-records/r2-05-selected-export/phase-result.json",
+    "regular canonical openai/native-phase-records/r2-05-selected-export/phase-prepared.json",
+    "regular canonical openai/native-phase-records/r2-05-selected-export/phase-inputs.json",
+    "regular canonical openai/native-phase-records/r2-05-selected-export/stages/selected-export/finished.json",
+    "regular canonical openai/native-phase-records/r2-05-selected-export/stages/selected-export/prepared.json",
+    "regular canonical openai/native-phase-records/r2-05-selected-export/stages/selected-export/raw.log",
+    "selected-export actual closed result scope",
+    "selected-export preparation lineage",
+    "selected-export original input content and c84 chain",
+    "regular canonical openai/native-phase-records/r2-05-selected-export/phase-inputs.json",
+    "binding openai/native-phase-records/r2-05-selected-export/phase-inputs.json",
+    "regular canonical openai/native-phase-records/r2-05-selected-export/stages/selected-export/finished.json",
+    "binding openai/native-phase-records/r2-05-selected-export/stages/selected-export/finished.json",
+    "selected-export prepared/final/raw stage lineage",
+    "selected-export actual exit reason and complete raw binding",
+    "selected-export finite nonnegative resources",
+    "selected-export exact cwd/cap and stdout accounting",
+    "selected-export independently reconstructed original command",
+    "selected-export exact constructed minimal environment",
+    "selected-export actual UTC time enclosure",
+    "regular canonical openai/logs/native-r2-selected-export-checkpoint.json",
+    "regular canonical openai/logs/native-r2-selected-export-checkpoint.txt",
+    "selected-export actual plain outer DIGEST identity and exit",
+    "selected-export plain outer raw final result equality",
+    "selected-export exact outer stage receipt equality",
+    "selected-export nested resource totals retained without double counting",
+    "regular canonical openai/logs/native-r2-selected-export-checkpoint.json",
+    "regular canonical openai/native-phase-records/r2-05-selected-export/phase-result.json",
+    "regular canonical openai/native-phase-records/r2-05-selected-export/phase-inputs.json",
+    "regular canonical openai/native-phase-records/r2-05-selected-export/stages/selected-export/finished.json",
+    "regular canonical openai/native-phase-records/r2-06-extra-nanoda/phase-result.json",
+    "regular canonical openai/native-phase-records/r2-06-extra-nanoda/phase-prepared.json",
+    "regular canonical openai/native-phase-records/r2-06-extra-nanoda/phase-inputs.json",
+    "regular canonical openai/native-phase-records/r2-06-extra-nanoda/stages/extra-nanoda/finished.json",
+    "regular canonical openai/native-phase-records/r2-06-extra-nanoda/stages/extra-nanoda/prepared.json",
+    "regular canonical openai/native-phase-records/r2-06-extra-nanoda/stages/extra-nanoda/raw.log",
+    "extra-nanoda actual closed result scope",
+    "extra-nanoda preparation lineage",
+    "extra-nanoda original input content and c84 chain",
+    "extra-nanoda prepared/final/raw stage lineage",
+    "extra-nanoda actual exit reason and complete raw binding",
+    "extra-nanoda finite nonnegative resources",
+    "extra-nanoda exact cwd/cap and stdout accounting",
+    "extra-nanoda independently reconstructed original command",
+    "extra-nanoda exact constructed minimal environment",
+    "extra-nanoda actual UTC time enclosure",
+    "regular canonical openai/logs/native-r2-extra-nanoda-checkpoint.json",
+    "regular canonical openai/logs/native-r2-extra-nanoda-checkpoint.txt",
+    "extra-nanoda actual plain outer DIGEST identity and exit",
+    "extra-nanoda plain outer raw final result equality",
+    "extra-nanoda exact outer stage receipt equality",
+    "extra-nanoda nested resource totals retained without double counting",
+    "regular canonical openai/logs/native-r2-extra-nanoda-checkpoint.json",
+    "regular canonical openai/native-phase-records/r2-06-extra-nanoda/phase-result.json",
+    "regular canonical openai/native-phase-records/r2-06-extra-nanoda/phase-inputs.json",
+    "regular canonical openai/native-phase-records/r2-06-extra-nanoda/stages/extra-nanoda/finished.json",
+    "regular canonical openai/native-phase-records/r2-07-original-fresh/phase-result.json",
+    "regular canonical openai/native-phase-records/r2-07-original-fresh/phase-prepared.json",
+    "regular canonical openai/native-phase-records/r2-07-original-fresh/phase-inputs.json",
+    "regular canonical openai/native-phase-records/r2-07-original-fresh/stages/original-fresh/finished.json",
+    "regular canonical openai/native-phase-records/r2-07-original-fresh/stages/original-fresh/prepared.json",
+    "regular canonical openai/native-phase-records/r2-07-original-fresh/stages/original-fresh/raw.log",
+    "original-fresh actual closed result scope",
+    "original-fresh preparation lineage",
+    "original-fresh original input content and c84 chain",
+    "regular canonical openai/native-phase-records/r2-07-original-fresh/phase-inputs.json",
+    "binding openai/native-phase-records/r2-07-original-fresh/phase-inputs.json",
+    "regular canonical openai/native-phase-records/r2-07-original-fresh/stages/original-fresh/finished.json",
+    "binding openai/native-phase-records/r2-07-original-fresh/stages/original-fresh/finished.json",
+    "original-fresh prepared/final/raw stage lineage",
+    "original-fresh actual exit reason and complete raw binding",
+    "original-fresh finite nonnegative resources",
+    "original-fresh exact cwd/cap and stdout accounting",
+    "original-fresh independently reconstructed original command",
+    "original-fresh exact constructed minimal environment",
+    "original-fresh actual UTC time enclosure",
+    "regular canonical openai/logs/native-r2-original-fresh-checkpoint.json",
+    "regular canonical openai/logs/native-r2-original-fresh-checkpoint.txt",
+    "original-fresh actual plain outer DIGEST identity and exit",
+    "original-fresh plain outer raw final result equality",
+    "original-fresh exact outer stage receipt equality",
+    "original-fresh nested resource totals retained without double counting",
+    "regular canonical openai/logs/native-r2-original-fresh-checkpoint.json",
+    "regular canonical openai/native-phase-records/r2-07-original-fresh/phase-result.json",
+    "regular canonical openai/native-phase-records/r2-07-original-fresh/phase-inputs.json",
+    "regular canonical openai/native-phase-records/r2-07-original-fresh/stages/original-fresh/finished.json",
+    "Comparator exact named acceptance lines once",
+    "native fake isolation and reference placeholder warning retained",
+    "regular canonical verification-tools/tool-manifest-r1.json",
+    "Comparator source commit identity",
+    "regular canonical verification-tools/comparator-source/Main.lean",
+    "pinned Comparator source Main.lean",
+    "regular canonical verification-tools/comparator-source/lean-toolchain",
+    "pinned Comparator source lean-toolchain",
+    "regular canonical verification-tools/comparator-source/Comparator/Axioms.lean",
+    "pinned Comparator source Comparator/Axioms.lean",
+    "Comparator contract/axioms/kernel/postcheck source interpretation",
+    "Comparator linked version4.35 distinguished from proof SDK4.34.1",
+    "regular canonical openai/source/lean/ComparatorChallenges/SubexponentialSAT.json",
+    "original exact Comparator contract with Nanoda disabled",
+    "regular canonical openai/native-phase-records/r2-05-selected-export/export-capture.json",
+    "regular canonical openai/native-phase-records/r2-05-selected-export/export-capture.json",
+    "binding openai/native-phase-records/r2-05-selected-export/export-capture.json",
+    "selected capture closed successful and raw exact equality",
+    "selected capture exact target/file binding",
+    "selected export recorded SHA/size identity (not rehashed here)",
+    "capture interval contained in export stage",
+    "original failed checker exactly one record",
+    "regular canonical openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/00-prepared.json",
+    "regular canonical openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/01-started.json",
+    "regular canonical openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/02-finished.json",
+    "regular canonical openai/native-phase-records/r2-06-extra-nanoda/additional-nanoda-config.json",
+    "regular canonical openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/effective-config.json",
+    "failed checker strict original policy actual/effective equality",
+    "original actual failure distinct from recording completeness",
+    "failed actual checker argv and start lineage",
+    "failed actual recorder environment lineage",
+    "failed actual binary unchanged before-after metadata",
+    "failed actual config unchanged before-after metadata",
+    "failed actual export unchanged before-after metadata",
+    "regular canonical verification-tools/record_nanoda.py",
+    "binding verification-tools/record_nanoda.py",
+    "regular canonical verification-tools/comparator-source/scripts/fake-landrun.sh",
+    "binding verification-tools/comparator-source/scripts/fake-landrun.sh",
+    "regular canonical verification-tools/nanoda-source/target/release/nanoda_bin",
+    "binding verification-tools/nanoda-source/target/release/nanoda_bin",
+    "regular canonical openai/native-phase-records/r2-06-extra-nanoda/additional-nanoda-config.json",
+    "binding openai/native-phase-records/r2-06-extra-nanoda/additional-nanoda-config.json",
+    "regular canonical openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/effective-config.json",
+    "binding openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/effective-config.json",
+    "regular canonical openai/native-phase-records/r2-06-extra-nanoda/additional-nanoda-config.json",
+    "regular canonical openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/effective-config.json",
+    "failed forwarded and archived config bytes identical",
+    "failed actual checked payload metadata chained to selected export",
+    "failed checked archive recorded identity only (not opened here)",
+    "actual stack-overflow raw text",
+    "failed checker nested CPU/wall scope",
+    "failed Nano recorded timing enclosed in failed stage",
+    "original fresh empty raw with successful explicit exit",
+    "closed original fresh exact phase-result identity",
+    "regular canonical openai/elan/toolchains/leanprover--lean4---v4.34.1/src/lean/LeanChecker.lean",
+    "regular canonical openai/elan/toolchains/leanprover--lean4---v4.34.1/src/lean/Lean/Replay.lean",
+    "regular canonical openai/elan/toolchains/leanprover--lean4---v4.34.1/src/lean/Lean/Environment.lean",
+    "original fresh source imports named environment into empty same-kernel replay",
+    "fresh safe/nonpartial scope, admitted axiom declarations and inductive postchecks",
+    "packaged import source private-level default and extensions-disabled interpretation",
+    "four closed reviewed intervals nonoverlap and failure precedes fresh",
+    "regular canonical openai/native-saved-evidence-review-part1-r1.json",
+    "regular canonical openai/native-phase-records/r2-05-selected-export/export-capture.json",
+    "regular canonical openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/02-finished.json"
+  ],
+  "input_fingerprint": "c84c8907998f23cc282a29ae7fef4a37cbaff735327096e748afe546af8c4f52",
+  "prior_part1_review": {
+    "path": "<REPLICATION_ROOT>/openai/native-saved-evidence-review-part1-r1.json",
+    "sha256": "d54ef4f618647a3864b36e88f37808bbadd04c470f0f6f31d7f3abdad2242fb0",
+    "size_bytes": 55435
+  },
+  "phases": [
+    {
+      "name": "comparator",
+      "directory": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator",
+      "phase_result": {
+        "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator/phase-result.json",
+        "sha256": "e945d263400fe68cd349066c808b6ee3980bfb7a675d88edaf3ca3ee001712fb",
+        "size_bytes": 2648
+      },
+      "inputs": {
+        "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator/phase-inputs.json",
+        "sha256": "9961d336608415b962a8cb5ada994c7bf87bec65f03a7bdebc24f2b016d0cadd",
+        "size_bytes": 11747
+      },
+      "stage_finished": {
+        "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator/stages/comparator/finished.json",
+        "sha256": "9f83b1752d9c706b1b496e9738efd38444bb8c5d4e2eb2c75f1bf9c00f6256b3",
+        "size_bytes": 1118
+      },
+      "raw": {
+        "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator/stages/comparator/raw.log",
+        "sha256": "66f795e10a667327f1e4c00304a9c0b7c4ea4ff3086819b281a9e21e7cd86136",
+        "size_bytes": 7859
+      },
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "<REPLICATION_ROOT>/openai/in_workspace.py",
+        "lake",
+        "env",
+        "<REPLICATION_ROOT>/verification-tools/comparator-source/.lake/build/bin/comparator",
+        "<REPLICATION_ROOT>/openai/source/lean/ComparatorChallenges/SubexponentialSAT.json"
+      ],
+      "environment": {
+        "PATH": "<REDACTED FIELD>",
+        "HOME": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator/home",
+        "TMPDIR": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator/tmp",
+        "LANG": "en_US.UTF-8",
+        "LC_ALL": "en_US.UTF-8",
+        "PYTHONUTF8": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "ELAN_HOME": "<REPLICATION_ROOT>/openai/elan",
+        "XDG_CACHE_HOME": "<REPLICATION_ROOT>/openai/cache",
+        "MATHLIB_CACHE_DIR": "<REPLICATION_ROOT>/openai/cache/mathlib",
+        "LEAN_SYSROOT": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1",
+        "LEAN_NUM_THREADS": "2",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "GIT_CONFIG_NOSYSTEM": "1",
+        "GIT_TERMINAL_PROMPT": "0",
+        "GIT_OPTIONAL_LOCKS": "0",
+        "GIT_NO_LAZY_FETCH": "1",
+        "GIT_NO_REPLACE_OBJECTS": "1",
+        "COMPARATOR_LANDRUN": "<REPLICATION_ROOT>/verification-tools/comparator-source/scripts/fake-landrun.sh",
+        "COMPARATOR_LEAN4EXPORT": "<REPLICATION_ROOT>/verification-tools/lean4export-434-source/.lake/build/bin/lean4export"
+      },
+      "begin_epoch": 1793888782.6207402,
+      "end_epoch": 1793889681.543724,
+      "exit_code": 0,
+      "child_cpu_seconds": 814.090121,
+      "wall_seconds": 898.9229838848114
+    },
+    {
+      "name": "selected-export",
+      "directory": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export",
+      "phase_result": {
+        "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/phase-result.json",
+        "sha256": "268fc9787fb152fda85cdfe06442c7bca4dce76c04bef1f8ceaa0e839989e95d",
+        "size_bytes": 3959
+      },
+      "inputs": {
+        "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/phase-inputs.json",
+        "sha256": "49cc3185d11cf935630708c97718c750a545cd7a74a0a8066cdf8d81a9333b4f",
+        "size_bytes": 11887
+      },
+      "stage_finished": {
+        "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/stages/selected-export/finished.json",
+        "sha256": "5a147ff35bf3a5b9ad8eb77db3ef7da72dd5185a18a672a58a1382157e355625",
+        "size_bytes": 1645
+      },
+      "raw": {
+        "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/stages/selected-export/raw.log",
+        "sha256": "eaca645470f3fe81b8b43c0ba973fe3464458335a2f349aa3bcf5226c96e5505",
+        "size_bytes": 1295
+      },
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "<REPLICATION_ROOT>/openai/in_workspace.py",
+        "lake",
+        "env",
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "<REPLICATION_ROOT>/openai/native_export_capture_r2.py",
+        "--output",
+        "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/selected-solution.ndjson",
+        "--receipt",
+        "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/export-capture.json",
+        "--",
+        "<REPLICATION_ROOT>/verification-tools/lean4export-434-source/.lake/build/bin/lean4export",
+        "OAI.Algorithms.SubexponentialSAT.Main",
+        "--",
+        "OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.exact_count_and_sat"
+      ],
+      "environment": {
+        "PATH": "<REDACTED FIELD>",
+        "HOME": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/home",
+        "TMPDIR": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/tmp",
+        "LANG": "en_US.UTF-8",
+        "LC_ALL": "en_US.UTF-8",
+        "PYTHONUTF8": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "ELAN_HOME": "<REPLICATION_ROOT>/openai/elan",
+        "XDG_CACHE_HOME": "<REPLICATION_ROOT>/openai/cache",
+        "MATHLIB_CACHE_DIR": "<REPLICATION_ROOT>/openai/cache/mathlib",
+        "LEAN_SYSROOT": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1",
+        "LEAN_NUM_THREADS": "2",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "GIT_CONFIG_NOSYSTEM": "1",
+        "GIT_TERMINAL_PROMPT": "0",
+        "GIT_OPTIONAL_LOCKS": "0",
+        "GIT_NO_LAZY_FETCH": "1",
+        "GIT_NO_REPLACE_OBJECTS": "1"
+      },
+      "begin_epoch": 1793889776.169974,
+      "end_epoch": 1793889887.8532312,
+      "exit_code": 0,
+      "child_cpu_seconds": 72.56353,
+      "wall_seconds": 111.68325710296631
+    },
+    {
+      "name": "extra-nanoda",
+      "directory": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda",
+      "phase_result": {
+        "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/phase-result.json",
+        "sha256": "d3c66a14e20464d11f37efa1e86d5f5651a34ceba997cd54af24472cb07174dd",
+        "size_bytes": 2667
+      },
+      "inputs": {
+        "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/phase-inputs.json",
+        "sha256": "2ea7a98077a136565c520cfa80b4f1926a4cbf4926b4ec0c050d19dcf690ee80",
+        "size_bytes": 12256
+      },
+      "stage_finished": {
+        "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/stages/extra-nanoda/finished.json",
+        "sha256": "3e1a2079d8fadd4ada8130f64686039efb9fc95a96fd56db603354506576f959",
+        "size_bytes": 1149
+      },
+      "raw": {
+        "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/stages/extra-nanoda/raw.log",
+        "sha256": "590ccc60513da51ab0aad98c32b68c0f485d0fda4958c7255feb5175c55bc4e2",
+        "size_bytes": 101
+      },
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "<REPLICATION_ROOT>/openai/in_workspace.py",
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "<REPLICATION_ROOT>/verification-tools/record_nanoda.py",
+        "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/additional-nanoda-config.json"
+      ],
+      "environment": {
+        "PATH": "<REDACTED FIELD>",
+        "HOME": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/home",
+        "TMPDIR": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/tmp",
+        "LANG": "en_US.UTF-8",
+        "LC_ALL": "en_US.UTF-8",
+        "PYTHONUTF8": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "ELAN_HOME": "<REPLICATION_ROOT>/openai/elan",
+        "XDG_CACHE_HOME": "<REPLICATION_ROOT>/openai/cache",
+        "MATHLIB_CACHE_DIR": "<REPLICATION_ROOT>/openai/cache/mathlib",
+        "LEAN_SYSROOT": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1",
+        "LEAN_NUM_THREADS": "2",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "GIT_CONFIG_NOSYSTEM": "1",
+        "GIT_TERMINAL_PROMPT": "0",
+        "GIT_OPTIONAL_LOCKS": "0",
+        "GIT_NO_LAZY_FETCH": "1",
+        "GIT_NO_REPLACE_OBJECTS": "1",
+        "COMPARATOR_LANDRUN": "<REPLICATION_ROOT>/verification-tools/comparator-source/scripts/fake-landrun.sh",
+        "NANODA_REAL_BINARY": "<REPLICATION_ROOT>/verification-tools/nanoda-source/target/release/nanoda_bin",
+        "REPLICATION_CHECKER_RECORD_DIR": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/nanoda-records"
+      },
+      "begin_epoch": 1793889948.087543,
+      "end_epoch": 1793890089.756125,
+      "exit_code": -6,
+      "child_cpu_seconds": 256.887489,
+      "wall_seconds": 141.66858196258545
+    },
+    {
+      "name": "original-fresh",
+      "directory": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh",
+      "phase_result": {
+        "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh/phase-result.json",
+        "sha256": "647f8001e2e025607bc7848959dc98836014741e00c2d160fd1f30688c05082a",
+        "size_bytes": 2804
+      },
+      "inputs": {
+        "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh/phase-inputs.json",
+        "sha256": "aefb98ecd20d91b3d2ff2df2b928dd2370a4cf6139af3a16b767922d7deedab7",
+        "size_bytes": 11278
+      },
+      "stage_finished": {
+        "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh/stages/original-fresh/finished.json",
+        "sha256": "c51c868feafcfc94ed51916a62be4f08e6bd9f1eeaa8390f0b16502771e0345e",
+        "size_bytes": 1037
+      },
+      "raw": {
+        "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh/stages/original-fresh/raw.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_bytes": 0
+      },
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "<REPLICATION_ROOT>/openai/in_workspace.py",
+        "lake",
+        "env",
+        "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/leanchecker",
+        "--fresh",
+        "OAI.Algorithms.SubexponentialSAT.Main"
+      ],
+      "environment": {
+        "PATH": "<REDACTED FIELD>",
+        "HOME": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh/home",
+        "TMPDIR": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh/tmp",
+        "LANG": "en_US.UTF-8",
+        "LC_ALL": "en_US.UTF-8",
+        "PYTHONUTF8": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "ELAN_HOME": "<REPLICATION_ROOT>/openai/elan",
+        "XDG_CACHE_HOME": "<REPLICATION_ROOT>/openai/cache",
+        "MATHLIB_CACHE_DIR": "<REPLICATION_ROOT>/openai/cache/mathlib",
+        "LEAN_SYSROOT": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1",
+        "LEAN_NUM_THREADS": "2",
+        "LEAN_ABORT_ON_PANIC": "1",
+        "GIT_CONFIG_NOSYSTEM": "1",
+        "GIT_TERMINAL_PROMPT": "0",
+        "GIT_OPTIONAL_LOCKS": "0",
+        "GIT_NO_LAZY_FETCH": "1",
+        "GIT_NO_REPLACE_OBJECTS": "1"
+      },
+      "begin_epoch": 1793890269.552292,
+      "end_epoch": 1793893512.64255,
+      "exit_code": 0,
+      "child_cpu_seconds": 2861.982208,
+      "wall_seconds": 3243.090257883072
+    }
+  ],
+  "outer_actual_plain_digests": {
+    "comparator": {
+      "receipt": {
+        "path": "<REPLICATION_ROOT>/openai/logs/native-r2-comparator-checkpoint.json",
+        "sha256": "9e6713ccbfcab3ca3d0c1972461f7f8b5d4a04c101f8326e0660fb5ed6ab54a5",
+        "size_bytes": 4396
+      },
+      "raw": {
+        "path": "<REPLICATION_ROOT>/openai/logs/native-r2-comparator-checkpoint.txt",
+        "sha256": "b3dbfd5ea620c0d8fb1deb880a51bf1b978018a6af1335253cecac631961bdf4",
+        "size_bytes": 12778
+      },
+      "digest": {
+        "exit_code": 0,
+        "timed_out": false,
+        "revision_event_id": 4008,
+        "cpu_seconds": 814.716674,
+        "wall_seconds": 899.151487
+      }
+    },
+    "selected-export": {
+      "receipt": {
+        "path": "<REPLICATION_ROOT>/openai/logs/native-r2-selected-export-checkpoint.json",
+        "sha256": "c01eba0cabad3cb0f866501b458ac9e110ab0b768984b3f5b30078d8577026ae",
+        "size_bytes": 7492
+      },
+      "raw": {
+        "path": "<REPLICATION_ROOT>/openai/logs/native-r2-selected-export-checkpoint.txt",
+        "sha256": "546588dd04bd088b3ef34b58764a5fd3ecbb41bc9e2972520d7d1910f51247ef",
+        "size_bytes": 8250
+      },
+      "digest": {
+        "exit_code": 0,
+        "timed_out": false,
+        "revision_event_id": 4011,
+        "cpu_seconds": 73.632153,
+        "wall_seconds": 112.720365
+      }
+    },
+    "extra-nanoda": {
+      "receipt": {
+        "path": "<REPLICATION_ROOT>/openai/logs/native-r2-extra-nanoda-checkpoint.json",
+        "sha256": "b8d60e79a970485e5b06e0d9bbf50cb2616cfc5ff0a569b58eb7a16cb5537dff",
+        "size_bytes": 4496
+      },
+      "raw": {
+        "path": "<REPLICATION_ROOT>/openai/logs/native-r2-extra-nanoda-checkpoint.txt",
+        "sha256": "0599976a37cdc35a45d160484af270befd31eeae4f440c90af69bd4381cc8ca4",
+        "size_bytes": 5140
+      },
+      "digest": {
+        "exit_code": 125,
+        "timed_out": false,
+        "revision_event_id": 4013,
+        "cpu_seconds": 258.021357,
+        "wall_seconds": 142.756902
+      }
+    },
+    "original-fresh": {
+      "receipt": {
+        "path": "<REPLICATION_ROOT>/openai/logs/native-r2-original-fresh-checkpoint.json",
+        "sha256": "634c7616772232584836e12cdf5452d51779c0350871d5080e091f002e79e421",
+        "size_bytes": 5266
+      },
+      "raw": {
+        "path": "<REPLICATION_ROOT>/openai/logs/native-r2-original-fresh-checkpoint.txt",
+        "sha256": "c4ff0615b44f69c530a0e1adeae543e712bfd3a6c0ffe7e521353af2e6927ec1",
+        "size_bytes": 4745
+      },
+      "digest": {
+        "exit_code": 0,
+        "timed_out": false,
+        "revision_event_id": 4040,
+        "cpu_seconds": 2864.764033,
+        "wall_seconds": 3243.315201
+      }
+    }
+  },
+  "selected_inputs_current_small_rehash": {
+    "names": [
+      "native-recorder-r1/record.py",
+      "in_workspace.py",
+      "verify_source_identity_r3.py",
+      "identity_expectations_r1.json",
+      "source-manifest.json",
+      "workspace-config-r2.json",
+      "workspace/lake-manifest.json",
+      "source/lean/ComparatorChallenges/SubexponentialSAT.json",
+      "../verification/AuditTargets.lean",
+      "../verification-tools/nanoda-source/target/release/nanoda_bin",
+      "../verification-tools/comparator-source/scripts/fake-landrun.sh",
+      "../verification-tools/record_nanoda.py",
+      "native_export_capture_r2.py",
+      "workspace/lean-toolchain",
+      "workspace/lakefile.lean",
+      "real4341/lib/lean/libleanshared_1.dylib",
+      "real4341/lib/lean/libleanshared_2.dylib",
+      "real4341/lib/lean/libInit_shared.dylib",
+      "real4341/bin/leanchecker",
+      "real4341/bin/lean",
+      "real4341/bin/lake"
+    ],
+    "count": 21,
+    "deferred_large_rows": [
+      {
+        "name": "../verification-tools/comparator-source/.lake/build/bin/comparator",
+        "path": "<REPLICATION_ROOT>/verification-tools/comparator-source/.lake/build/bin/comparator",
+        "sha256": "bdf09ee3e725f1480792db7b5befcbf6e4f77db90d9f1f4986bda5a1e6315f4c",
+        "size_bytes": 101846512,
+        "scope": "Recorded original selected-input identity, previously fully rehashed in part1; not rehashed in this bounded small-file review."
+      },
+      {
+        "name": "../verification-tools/lean4export-434-source/.lake/build/bin/lean4export",
+        "path": "<REPLICATION_ROOT>/verification-tools/lean4export-434-source/.lake/build/bin/lean4export",
+        "sha256": "e6217f95bf55c5e165a62f12ec6ce1fb3c25a815cff0f9cb6f6dfcf4c8e55e25",
+        "size_bytes": 179096064,
+        "scope": "Recorded original selected-input identity, previously fully rehashed in part1; not rehashed in this bounded small-file review."
+      },
+      {
+        "name": "real4341/lib/lean/libleanshared.dylib",
+        "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared.dylib",
+        "sha256": "6588b7e38450ea749006dcd90bbaea9393a5ca1b64727a2e7138f3c9427c2b50",
+        "size_bytes": 179077552,
+        "scope": "Recorded original selected-input identity, previously fully rehashed in part1; not rehashed in this bounded small-file review."
+      },
+      {
+        "name": "real4341/lib/lean/libLake_shared.dylib",
+        "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libLake_shared.dylib",
+        "sha256": "60a94628397814203d86428fa6015f9d844c4c4c74cda8667e687a4ea5b5f5ac",
+        "size_bytes": 10072896,
+        "scope": "Recorded original selected-input identity, previously fully rehashed in part1; not rehashed in this bounded small-file review."
+      }
+    ],
+    "scope": "All four selected-input objects exactly match canonical c84 and the part1 baseline. Only current files<=2MiB rehashed here; no large tool/runtime binary rehash or source build rerun."
+  },
+  "comparator": {
+    "commit": "865edc14486c3388e9225daa971da8e157488c3e",
+    "driver_linked_lean": "4.35.0",
+    "proof_export_sdk": "4.34.1",
+    "original_config_nanoda_enabled": false,
+    "required_acceptance_lines": [
+      "Running Lean default kernel on solution.",
+      "Lean default kernel accepts the solution",
+      "Your solution is okay!"
+    ],
+    "scope": "Exact formal statement/definition/axiom contract comparison, embedded Lean kernel replay and quotient postchecks accepted under original config; separate original fresh and additional Nano are distinct checks.",
+    "reference_warning": "Comparator challenge build replay reports its supplied sorry placeholder. This is not a solution target sorryAx finding; named-target audit is separately preserved in part1."
+  },
+  "selected_export": {
+    "identity_recorded": {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/selected-solution.ndjson",
+      "sha256": "bdbc9afe336fea99b01bc4eced6e4232153afdefe13a1095cdc5ca9499e3f573",
+      "size_bytes": 2355666449
+    },
+    "actual_payload_rehashed_by_this_review": false,
+    "capture_receipt": {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/export-capture.json",
+      "sha256": "68dfc98bce263b4c58b28dc8d7af4caba44c85dccb10c6ac2f346c414eba26ee",
+      "size_bytes": 1359
+    },
+    "scope": "Closed direct-FD exporter exit0 and receipt/raw/hash metadata chain, not a second payload hash."
+  },
+  "original_failed_nanoda": {
+    "verdict": "FAILED resource abort: worker stack overflow; no logical rejection or acceptance verdict",
+    "checker_exit_code": -6,
+    "recording_complete": true,
+    "finished_receipt": {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/02-finished.json",
+      "sha256": "f70f00e358dd6da983202dbbdde4e2247418c878e640bc85d3825ecb76bf0c78",
+      "size_bytes": 6320
+    },
+    "gzip_identity_recorded": {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/export.ndjson.gz",
+      "sha256": "c9408fc5dedf81e411e1a259c160804b10f8ae8ccce6b2abefff2170c0cbb789",
+      "size_bytes": 453732564,
+      "device": 16777233,
+      "inode": 54280080,
+      "mtime_ns": 1793889956059183525
+    },
+    "actual_gzip_rehashed_or_decompressed_by_this_review": false,
+    "checker_cpu_seconds_nested": 247.1731,
+    "checker_wall_seconds_nested": 131.516565209,
+    "strict_actual_policy": {
+      "use_stdin": false,
+      "export_file_path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/selected-solution.ndjson",
+      "permitted_axioms": [
+        "propext",
+        "Quot.sound",
+        "Classical.choice"
+      ],
+      "unpermitted_axiom_hard_error": true,
+      "num_threads": 2,
+      "nat_extension": true,
+      "string_extension": true
+    }
+  },
+  "original_fresh": {
+    "version": "4.34.1",
+    "argv": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "<REPLICATION_ROOT>/openai/in_workspace.py",
+      "lake",
+      "env",
+      "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/leanchecker",
+      "--fresh",
+      "OAI.Algorithms.SubexponentialSAT.Main"
+    ],
+    "exit_code": 0,
+    "raw_empty": true,
+    "scope": "Original same-Lean-implementation safe/nonpartial imported-environment replay into empty kernel; axiom declarations admitted, constructors/recursors postchecked. Separate from embedded4.35 Comparator and Rust Nano.",
+    "source_provenance": "Current packaged source beside the original runtime was read and hashed for interpretation; no new source-to-runtime rebuild or historical source pin is invented."
+  },
+  "partial_resources": {
+    "successful_stage_child_cpu_seconds": 3748.635859,
+    "successful_stage_wall_seconds_summed": 4253.69649887085,
+    "failed_original_stage_child_cpu_seconds": 256.887489,
+    "failed_original_stage_wall_seconds": 141.66858196258545,
+    "nested_checker_and_outer_digests_already_include_each_other": "Do not add nested Nano or outer checkpoint CPU/wall to the inner stage sums."
+  },
+  "remaining_scope": [
+    "Active worker-stack256 retry is not reviewed or accepted here; no mutable retry output was opened.",
+    "Postidentity must run LAST after actual retry; final R6 aggregation and combined review remain pending.",
+    "No OS isolation in native fake-Landrun mode.",
+    "No practical SAT/mining claim; exact formal-target replication and computational-model interpretation are separate."
+  ],
+  "artifacts": [
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-saved-evidence-review-part1-r1.json",
+      "sha256": "d54ef4f618647a3864b36e88f37808bbadd04c470f0f6f31d7f3abdad2242fb0",
+      "size_bytes": 55435
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-01-pre-identity/phase-inputs.json",
+      "sha256": "6dd060e5dd39bb16e5abd04f6737fe27a05c0cc67453e553eb32f750d1f0b1af",
+      "size_bytes": 11223
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-recorder-r1/record.py",
+      "sha256": "1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0",
+      "size_bytes": 6474
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/in_workspace.py",
+      "sha256": "b4e80df9ed1f1c71e7a202feccd94f189113610679d4a28ac3728d8708e7d04a",
+      "size_bytes": 700
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/verify_source_identity_r3.py",
+      "sha256": "52cb3de32ef89c5fbb460032601693a9d2e740cda296b8dd44f9ab6fd1fa9174",
+      "size_bytes": 12879
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/identity_expectations_r1.json",
+      "sha256": "e39147fee63287baea89a046c85c462090f1c443f15b53d809e613631f0cce47",
+      "size_bytes": 8435
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/source-manifest.json",
+      "sha256": "bf7f36120177010243e52dd9053bd3e9f97f92fa35184abf173a8a57ef4843e1",
+      "size_bytes": 1892511
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/workspace-config-r2.json",
+      "sha256": "a56c999ec870742bee9c51be2bb3199d358d77876d5e7d49492f5ad880938413",
+      "size_bytes": 709
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/workspace/lake-manifest.json",
+      "sha256": "4aa8b01a11ed34de463651ed6396d9da61f365cccfd158e82e96bbd17bcb14bc",
+      "size_bytes": 3153
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/source/lean/ComparatorChallenges/SubexponentialSAT.json",
+      "sha256": "debbfdc9c01104d2369be80da5180978275106df8b685f693fba7ce7da7c5b19",
+      "size_bytes": 364
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification/AuditTargets.lean",
+      "sha256": "a78f30e0439e85d3a9ae51828e0e42c248c027a7fcfeb4c4fb16cb776fae0b05",
+      "size_bytes": 5663
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/target/release/nanoda_bin",
+      "sha256": "d9a1fc5371b84c9eb0687a7630eb724fa88886d9f5d665f09f9f926730573b80",
+      "size_bytes": 1260088
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/comparator-source/scripts/fake-landrun.sh",
+      "sha256": "167507c89d8b3c7667ad78b50df7b19f89883751a01efd1457404fa34a994e8b",
+      "size_bytes": 1431
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/record_nanoda.py",
+      "sha256": "c34f36d630d182708937a5280b6eda8d0723fa0ffdd85caf8fc54af17b332f48",
+      "size_bytes": 8494
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native_export_capture_r2.py",
+      "sha256": "4755ba1dd43d18509cd1472bca98c269c79e3dc5a3c99f41faff5b2e6d78be74",
+      "size_bytes": 3279
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/workspace/lean-toolchain",
+      "sha256": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+      "size_bytes": 25
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/workspace/lakefile.lean",
+      "sha256": "aea9d368f24768ab9d51d8c9216c1dd60e598a983e63c463dc8de3f605d268fb",
+      "size_bytes": 534
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared_1.dylib",
+      "sha256": "e44858e227323a23ce7416c5678415d2d022582b1627ad3690117ce73cd6345a",
+      "size_bytes": 16736
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared_2.dylib",
+      "sha256": "be68927a4f282b99383e82af4d481b4ffe59f2a243aea20dae0e60b39c2ae182",
+      "size_bytes": 16736
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libInit_shared.dylib",
+      "sha256": "cb203e0bc0e6ab3250b2804d3e5398ad3a91544b5e049674532f73b7a062ef7f",
+      "size_bytes": 16736
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/leanchecker",
+      "sha256": "cfde41cb11dde58c84e9c60c551fd104bb2fc1104ad44dca932a923120272a35",
+      "size_bytes": 78224
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean",
+      "sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+      "size_bytes": 49968
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lake",
+      "sha256": "c8c24f1398162ab4004e2a869952d8469f54293651151feaad4526f2b8474c6e",
+      "size_bytes": 51824
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/verify_native_phase_r2.py",
+      "sha256": "fe3b12c0b8312a6b0cdb5ec1c6d88933cbff796bc92e9403682735d25348c19c",
+      "size_bytes": 20260
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator/phase-result.json",
+      "sha256": "e945d263400fe68cd349066c808b6ee3980bfb7a675d88edaf3ca3ee001712fb",
+      "size_bytes": 2648
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator/phase-prepared.json",
+      "sha256": "7f89947df9d45136f784fe0db16809a30821734dbfd18176cd8ff34a43418b0c",
+      "size_bytes": 655
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator/phase-inputs.json",
+      "sha256": "9961d336608415b962a8cb5ada994c7bf87bec65f03a7bdebc24f2b016d0cadd",
+      "size_bytes": 11747
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator/stages/comparator/finished.json",
+      "sha256": "9f83b1752d9c706b1b496e9738efd38444bb8c5d4e2eb2c75f1bf9c00f6256b3",
+      "size_bytes": 1118
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator/stages/comparator/prepared.json",
+      "sha256": "96f21957676d3855223106a62d70a0f455d5888570be041c6a49c1f356ed6d20",
+      "size_bytes": 897
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-04-comparator/stages/comparator/raw.log",
+      "sha256": "66f795e10a667327f1e4c00304a9c0b7c4ea4ff3086819b281a9e21e7cd86136",
+      "size_bytes": 7859
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/native-r2-comparator-checkpoint.json",
+      "sha256": "9e6713ccbfcab3ca3d0c1972461f7f8b5d4a04c101f8326e0660fb5ed6ab54a5",
+      "size_bytes": 4396
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/native-r2-comparator-checkpoint.txt",
+      "sha256": "b3dbfd5ea620c0d8fb1deb880a51bf1b978018a6af1335253cecac631961bdf4",
+      "size_bytes": 12778
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/phase-result.json",
+      "sha256": "268fc9787fb152fda85cdfe06442c7bca4dce76c04bef1f8ceaa0e839989e95d",
+      "size_bytes": 3959
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/phase-prepared.json",
+      "sha256": "3d59090afe7100998546ce27b0dc01a3c7e6ac47e19e1b8f3ab4a8b67da307a5",
+      "size_bytes": 665
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/phase-inputs.json",
+      "sha256": "49cc3185d11cf935630708c97718c750a545cd7a74a0a8066cdf8d81a9333b4f",
+      "size_bytes": 11887
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/stages/selected-export/finished.json",
+      "sha256": "5a147ff35bf3a5b9ad8eb77db3ef7da72dd5185a18a672a58a1382157e355625",
+      "size_bytes": 1645
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/stages/selected-export/prepared.json",
+      "sha256": "39802fddd2cfc4aab156019a282f5b90a4b1b0b1d77d620a0e773e2098c0693d",
+      "size_bytes": 1425
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/stages/selected-export/raw.log",
+      "sha256": "eaca645470f3fe81b8b43c0ba973fe3464458335a2f349aa3bcf5226c96e5505",
+      "size_bytes": 1295
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/native-r2-selected-export-checkpoint.json",
+      "sha256": "c01eba0cabad3cb0f866501b458ac9e110ab0b768984b3f5b30078d8577026ae",
+      "size_bytes": 7492
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/native-r2-selected-export-checkpoint.txt",
+      "sha256": "546588dd04bd088b3ef34b58764a5fd3ecbb41bc9e2972520d7d1910f51247ef",
+      "size_bytes": 8250
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/phase-result.json",
+      "sha256": "d3c66a14e20464d11f37efa1e86d5f5651a34ceba997cd54af24472cb07174dd",
+      "size_bytes": 2667
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/phase-prepared.json",
+      "sha256": "f68b7790e9a73d87796b0a5d49692feb90ed1ef511624dcdd72064c0b96727a6",
+      "size_bytes": 659
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/phase-inputs.json",
+      "sha256": "2ea7a98077a136565c520cfa80b4f1926a4cbf4926b4ec0c050d19dcf690ee80",
+      "size_bytes": 12256
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/stages/extra-nanoda/finished.json",
+      "sha256": "3e1a2079d8fadd4ada8130f64686039efb9fc95a96fd56db603354506576f959",
+      "size_bytes": 1149
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/stages/extra-nanoda/prepared.json",
+      "sha256": "df9282a46e1c75759bfb9a643430e97be67de8dd9a7b2bdbd9fed0c4ea66806e",
+      "size_bytes": 927
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/stages/extra-nanoda/raw.log",
+      "sha256": "590ccc60513da51ab0aad98c32b68c0f485d0fda4958c7255feb5175c55bc4e2",
+      "size_bytes": 101
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/native-r2-extra-nanoda-checkpoint.json",
+      "sha256": "b8d60e79a970485e5b06e0d9bbf50cb2616cfc5ff0a569b58eb7a16cb5537dff",
+      "size_bytes": 4496
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/native-r2-extra-nanoda-checkpoint.txt",
+      "sha256": "0599976a37cdc35a45d160484af270befd31eeae4f440c90af69bd4381cc8ca4",
+      "size_bytes": 5140
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh/phase-result.json",
+      "sha256": "647f8001e2e025607bc7848959dc98836014741e00c2d160fd1f30688c05082a",
+      "size_bytes": 2804
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh/phase-prepared.json",
+      "sha256": "c5760ca9d7fe595a27e0556cd7df9ceec99631aa59cc0bb571154164237e8f91",
+      "size_bytes": 663
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh/phase-inputs.json",
+      "sha256": "aefb98ecd20d91b3d2ff2df2b928dd2370a4cf6139af3a16b767922d7deedab7",
+      "size_bytes": 11278
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh/stages/original-fresh/finished.json",
+      "sha256": "c51c868feafcfc94ed51916a62be4f08e6bd9f1eeaa8390f0b16502771e0345e",
+      "size_bytes": 1037
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh/stages/original-fresh/prepared.json",
+      "sha256": "80265176f7d392062d8c446c6174e491344b09b8e751fdc6b2278ad9883daa03",
+      "size_bytes": 818
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh/stages/original-fresh/raw.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/native-r2-original-fresh-checkpoint.json",
+      "sha256": "634c7616772232584836e12cdf5452d51779c0350871d5080e091f002e79e421",
+      "size_bytes": 5266
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/native-r2-original-fresh-checkpoint.txt",
+      "sha256": "c4ff0615b44f69c530a0e1adeae543e712bfd3a6c0ffe7e521353af2e6927ec1",
+      "size_bytes": 4745
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/tool-manifest-r1.json",
+      "sha256": "90cf428c18e95d4e05502605b01f35e527d3f04644ef814a3742c8554c26a2c1",
+      "size_bytes": 55010
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/comparator-source/Main.lean",
+      "sha256": "bb97e3e56d35431cfc7fbef9153935f85e82cde8cc0fc588ceb0119022646cec",
+      "size_bytes": 13109
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/comparator-source/lean-toolchain",
+      "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+      "size_bytes": 25
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/comparator-source/Comparator/Axioms.lean",
+      "sha256": "863c5e1329811be0427880e08c171de733343491c5a3619b5dbf2e12b34c6125",
+      "size_bytes": 2389
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/export-capture.json",
+      "sha256": "68dfc98bce263b4c58b28dc8d7af4caba44c85dccb10c6ac2f346c414eba26ee",
+      "size_bytes": 1359
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/00-prepared.json",
+      "sha256": "f9f307f75aaf376e588d94cbcbe023e349ccd9167facb4b5bdb49e84dd2b6f56",
+      "size_bytes": 4872
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/01-started.json",
+      "sha256": "ec0e9674c207deb165bac65c10fe4349b7006663f8a61c19eb3348761f93b3fb",
+      "size_bytes": 395
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/02-finished.json",
+      "sha256": "f70f00e358dd6da983202dbbdde4e2247418c878e640bc85d3825ecb76bf0c78",
+      "size_bytes": 6320
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/additional-nanoda-config.json",
+      "sha256": "acd37052945a7ef7364cf4c30177c6f0d2e7355f2d5a86c1f242986ad361acf4",
+      "size_bytes": 398
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/effective-config.json",
+      "sha256": "acd37052945a7ef7364cf4c30177c6f0d2e7355f2d5a86c1f242986ad361acf4",
+      "size_bytes": 398
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/src/lean/LeanChecker.lean",
+      "sha256": "2d18ec111d73c536b0bdee2533556bb9548c349f386797d3d3837b1f84d55dae",
+      "size_bytes": 4806
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/src/lean/Lean/Replay.lean",
+      "sha256": "c434b5b2bc5047ca58d4a095fcf1d9935d413c788ae98a4f21948e6a95ca3fb0",
+      "size_bytes": 7987
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/src/lean/Lean/Environment.lean",
+      "sha256": "ee364e4788ce0560c87f621eeb3c4c3dfec62e8db4e15e099fd80e6adc533b86",
+      "size_bytes": 137725
+    }
+  ],
+  "review_cpu_seconds": 0.022241000000000004,
+  "review_wall_seconds": 0.031550499999999995,
+  "review_resource_scope": "Read-only small-file hashing/parsing and report construction only; no helper imports, proof tools, build, payload/gzip reading, process controls or network. Report fsync and checkpoint administration excluded.",
+  "incremental_usd": 0
+}

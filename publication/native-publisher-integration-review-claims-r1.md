@@ -1,0 +1,5 @@
+Frozen publishera72/module68 received a source and saved-control ACK. The review found a real450 availability bug: retry receipt expansion overwrote the helper source class as manifest, causing export class validation to fail. The narrowa72 correction preserves actual classes; the new realistic adapter fixture covers this case. The original450 candidate and its historical controls remain visible.
+
+All48 saved controls bind a72 (adapter10, worker metadata19, privacy19), with actual test-source hashes checked. They were not rerun by this reviewer. Integration selects seven original successes plus the explicit retry, retains negative logs, revalidates exact closed selections before creating output, refuses omissions/drift and preserves plural accepted/failed asset metadata. The reviewed CF functions are byte-identical to the prior source review.
+
+No imports/tests/export, active proof outputs, large assets, private CF value or network were used. This ACK covers metadata publication consistency. Root still needs actual retry0/postidentity0/R7seal/combined saved review and frozen final map before any export/publication.

@@ -1,0 +1,93 @@
+{
+  "schema": "nanoda-issue44-source-applicability/1",
+  "observed_utc": "2026-11-05T16:44:11.536139Z",
+  "scope": "Read-only source comparison, not patch soundness, performance attribution, or a proof verdict",
+  "primary_requests_this_task": 3,
+  "reused_primary_response": {
+    "url": "https://github.com/carlostoledo1891/cert-machine/blob/00340f97a03a55df68696002a11fc59b7b9d66e7/corpus/openai-math/nanoda/issue44.patch",
+    "sha256": "3939d228619a28d7437bad82c1d41fe1fd4597a7ea55b849840c0f7caa7d0ee5",
+    "size_bytes": 4717,
+    "lines": 95,
+    "original_observation": "Earlier Nov5 resource-reference task; immutable pinned URL and cached connector response reused"
+  },
+  "primary_sources": [
+    {
+      "url": "https://github.com/ammkrn/nanoda_lib/blob/3a2407216ee84a75f9e1aead6803d0578be06ae7/src/tc.rs",
+      "sha256": "59d8a7d5b4481a9038031fabe819d3e2384f2dd68eb343805fa946e3499b3fda",
+      "size_bytes": 58990,
+      "inspected_windows": ["440-470", "900-920", "968-999", "1332-1358"]
+    },
+    {
+      "url": "https://github.com/ammkrn/nanoda_lib/issues/44",
+      "api_url": "https://api.github.com/repos/ammkrn/nanoda_lib/issues/44",
+      "updated_at_reported": "2026-10-12T14:37:44Z",
+      "classification": "Author-reported failure mechanisms and benchmark hypotheses; not independently reproduced here"
+    },
+    {
+      "url": "https://api.github.com/repos/ammkrn/nanoda_lib/issues/44/comments",
+      "specific_source": "https://github.com/ammkrn/nanoda_lib/issues/44#issuecomment-6126455116",
+      "finding": "Maintainer attributes closure to PR45; the PR and its implementation were not inspected"
+    }
+  ],
+  "local_sources": [
+    {
+      "path": "verification-tools/nanoda-source/src/tc.rs",
+      "sha256": "73f00401263871e533eb0f2cfa38162866204ee3fe7e7dd146755c5690f0b696",
+      "size_bytes": 56610,
+      "equals_local_git_object": "68d5ca9db226849b41a6fff59d796ff19d0a8840:src/tc.rs",
+      "inspected_windows": ["410-436", "870-888", "920-969", "1292-1322"]
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/src/tc.rs",
+      "sha256": "73f00401263871e533eb0f2cfa38162866204ee3fe7e7dd146755c5690f0b696",
+      "size_bytes": 56610,
+      "byte_identical_to_original_tc": true
+    }
+  ],
+  "source_findings": [
+    {
+      "mechanism": "Projection equality",
+      "local_lines": "876-882",
+      "external_base_lines": "903-910",
+      "patch_lines": "32-59",
+      "finding": "Both unpatched sources compare whole structures after projection-index matching. Local68d has no lazy_delta_proj_reduction helper. The patch instead adds lazy unfolding followed by comparison of projected fields.",
+      "equivalent_fix_already_present": false
+    },
+    {
+      "mechanism": "Proof-irrelevance control flow",
+      "local_lines": "947-951,1302-1310",
+      "external_base_lines": "979-982,1337-1345",
+      "patch_lines": "63-92",
+      "finding": "Both sources return a two-valued bool and continue into lazy_delta_step after false. The patch returns Option<bool> and stops also on Some(false). Local68d lacks this change.",
+      "equivalent_fix_already_present": false
+    },
+    {
+      "mechanism": "Projection extraction helper",
+      "local_lines": "417-428",
+      "external_base_lines": "447-458",
+      "patch_lines": "8-25",
+      "finding": "Both sources normalize inside reduce_proj and unwrap the selected constructor argument. Local68d has no separate reduce_proj_core. The patch separates extraction and removes the unwrap."
+    }
+  ],
+  "applicability": {
+    "conclusion": "The two source-level mechanisms are present in our pinned checker; their relevance is not confined to the external fork. Neither equivalent fix is already present.",
+    "literal_patch_limit": "Patch is written against3a24072, whose Proj pattern includes ty_name comparison; local68d uses different Proj patterns and other APIs/line offsets. No clean-apply, port, build, equivalence or soundness test was performed.",
+    "current_eth_causality": "Unknown. Generic def_eq/whnf/allocation recursion in a closed sample cannot identify the compared declaration or prove issue44 caused the observed runtime.",
+    "recommendation": "No logical patch application recommended by this source-only review; preserve actual current checker outcome and keep any future logic variant explicitly separate."
+  },
+  "closed_profile": {
+    "path": "openai/logs/worker-stack256-r3-sample-r1.txt",
+    "sha256": "fc6b11ff7b5579a6aea8ba91304910818cca3c12522334fd432b84923e71d33a",
+    "size_bytes": 12009121,
+    "read_scope": "Only matching function-name lines from the already closed sample; not a full profile review",
+    "limit": "Not proof-progress evidence, a termination prediction, or isolated bottleneck attribution"
+  },
+  "actions": {
+    "source_or_binary_changes": false,
+    "imports_builds_proof_checks": false,
+    "process_or_signal_actions": false,
+    "wip_stream_or_large_export_reads": false,
+    "third_party_acceptance_borrowed": false,
+    "paid_compute_usd": 0
+  }
+}

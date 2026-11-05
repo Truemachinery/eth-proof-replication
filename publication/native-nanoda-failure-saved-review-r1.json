@@ -1,0 +1,129 @@
+{
+  "schema": "eth-native-nanoda-failure-saved-review/1",
+  "created_utc": "2026-11-05T14:55:45.316458+00:00",
+  "verdict": "CONFIRMED_RECORDING_COMPLETE_BUT_CHECKER_STACK_OVERFLOW_NOT_PASS",
+  "scope": "Same-team read/hash/parse review of closed small records and raw stream. No checker/kernel/export execution, large NDJSON/gzip rehash or decompression, source changes, network or publication.",
+  "checks": [
+    "actual phase closes failed, not interrupted or passed",
+    "base R2 fingerprint retained",
+    "phase preparation and finished-stage lineage agree",
+    "prepared/finished exact argv fields agree",
+    "stage signal failure despite null reason and below timeout",
+    "actual 101-byte failure raw stream bound",
+    "raw stream explicitly reports worker stack overflow",
+    "recording completion is distinct from checker acceptance",
+    "Nanoda prepared/start/finish lineage retained",
+    "failed attempt retained full original strict two-thread policy",
+    "recorder did not alter policy; native mode has no OS sandbox",
+    "binary before/after identity fields agree in completed record",
+    "config before/after identity fields agree in completed record",
+    "export before/after identity fields agree in completed record",
+    "same pinned Nanoda binary reported",
+    "failed checker input links to closed successful selected-export capture",
+    "selected payload and failed checked input identity agree",
+    "failed archive reports same uncompressed input",
+    "failed checked archive identity retained, not labelled accepted",
+    "actual forwarded and archived small config bytes agree",
+    "publisher393e remains held unchanged"
+  ],
+  "files": {
+    "openai/native-phase-records/r2-06-extra-nanoda/phase-result.json": {
+      "sha256": "d3c66a14e20464d11f37efa1e86d5f5651a34ceba997cd54af24472cb07174dd",
+      "size_bytes": 2667
+    },
+    "openai/native-phase-records/r2-06-extra-nanoda/phase-inputs.json": {
+      "sha256": "2ea7a98077a136565c520cfa80b4f1926a4cbf4926b4ec0c050d19dcf690ee80",
+      "size_bytes": 12256
+    },
+    "openai/native-phase-records/r2-06-extra-nanoda/phase-prepared.json": {
+      "sha256": "f68b7790e9a73d87796b0a5d49692feb90ed1ef511624dcdd72064c0b96727a6",
+      "size_bytes": 659
+    },
+    "openai/native-phase-records/r2-06-extra-nanoda/stages/extra-nanoda/finished.json": {
+      "sha256": "3e1a2079d8fadd4ada8130f64686039efb9fc95a96fd56db603354506576f959",
+      "size_bytes": 1149
+    },
+    "openai/native-phase-records/r2-06-extra-nanoda/stages/extra-nanoda/prepared.json": {
+      "sha256": "df9282a46e1c75759bfb9a643430e97be67de8dd9a7b2bdbd9fed0c4ea66806e",
+      "size_bytes": 927
+    },
+    "openai/native-phase-records/r2-06-extra-nanoda/stages/extra-nanoda/raw.log": {
+      "sha256": "590ccc60513da51ab0aad98c32b68c0f485d0fda4958c7255feb5175c55bc4e2",
+      "size_bytes": 101
+    },
+    "openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/00-prepared.json": {
+      "sha256": "f9f307f75aaf376e588d94cbcbe023e349ccd9167facb4b5bdb49e84dd2b6f56",
+      "size_bytes": 4872
+    },
+    "openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/01-started.json": {
+      "sha256": "ec0e9674c207deb165bac65c10fe4349b7006663f8a61c19eb3348761f93b3fb",
+      "size_bytes": 395
+    },
+    "openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/02-finished.json": {
+      "sha256": "f70f00e358dd6da983202dbbdde4e2247418c878e640bc85d3825ecb76bf0c78",
+      "size_bytes": 6320
+    },
+    "openai/native-phase-records/r2-06-extra-nanoda/additional-nanoda-config.json": {
+      "sha256": "acd37052945a7ef7364cf4c30177c6f0d2e7355f2d5a86c1f242986ad361acf4",
+      "size_bytes": 398
+    },
+    "openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/effective-config.json": {
+      "sha256": "acd37052945a7ef7364cf4c30177c6f0d2e7355f2d5a86c1f242986ad361acf4",
+      "size_bytes": 398
+    },
+    "openai/native-phase-records/r2-05-selected-export/phase-result.json": {
+      "sha256": "268fc9787fb152fda85cdfe06442c7bca4dce76c04bef1f8ceaa0e839989e95d",
+      "size_bytes": 3959
+    },
+    "openai/native-phase-records/r2-05-selected-export/export-capture.json": {
+      "sha256": "68dfc98bce263b4c58b28dc8d7af4caba44c85dccb10c6ac2f346c414eba26ee",
+      "size_bytes": 1359
+    },
+    "verification-tools/nanoda-source/src/tc.rs": {
+      "sha256": "73f00401263871e533eb0f2cfa38162866204ee3fe7e7dd146755c5690f0b696",
+      "size_bytes": 56610
+    },
+    "verification-tools/nanoda-source/src/lib.rs": {
+      "sha256": "ca7a3ba8754a06ee08c85fbc5af9debdefc372629c50b02142bdc8aad55cb69e",
+      "size_bytes": 397
+    }
+  },
+  "failure": {
+    "phase_status": "failed",
+    "stage_exit_code": -6,
+    "checker_exit_code": -6,
+    "wrapper_exit_code": -6,
+    "raw_sha256": "590ccc60513da51ab0aad98c32b68c0f485d0fda4958c7255feb5175c55bc4e2",
+    "raw_bytes": 101,
+    "raw_text": "\nthread 'thread_0' (10728431) has overflowed its stack\nfatal runtime error: stack overflow, aborting\n",
+    "meaning": "Stack-overflow termination does not accept or logically refute the theorem."
+  },
+  "payload_identity_reported_by_capture_and_checker": {
+    "sha256": "bdbc9afe336fea99b01bc4eced6e4232153afdefe13a1095cdc5ca9499e3f573",
+    "size_bytes": 2355666449
+  },
+  "failed_archive_identity_reported": {
+    "sha256": "c9408fc5dedf81e411e1a259c160804b10f8ae8ccce6b2abefff2170c0cbb789",
+    "size_bytes": 453732564
+  },
+  "resource_scopes": {
+    "inner_stage_child_cpu_seconds": 256.887489,
+    "inner_stage_wall_seconds": 141.66858196258545,
+    "nanoda_checker_cpu_seconds_already_inside_stage": 247.1731,
+    "nanoda_checker_wall_seconds": 131.516565209,
+    "nanoda_wrapper_own_cpu_seconds_also_inside_stage": 9.584633,
+    "scope": "Nested checker/wrapper CPU must not be added again to the enclosing child-stage total. Outer checkpoint costs not independently parsed here."
+  },
+  "retry_source_basis": {
+    "tc_rs_lines": "83\u2013152: serial and parallel call same check_declar; num_threads<=1 chooses serial main thread; parallel explicitly sets worker stack size",
+    "lib_rs_line": 23,
+    "worker_stack_bytes": 16777216,
+    "scope": "Source inspection supports a resource-only serial retry hypothesis. It does not establish retry success or exact operating-system stack behavior."
+  },
+  "pending": "Wait for frozen new retry helper and mixed-protocol aggregator source; do not modify held publisher or claim original failed R2 phase passed.",
+  "review_resources": {
+    "cpu_seconds": 0.0010440000000000033,
+    "wall_seconds": 0.002397291999999999,
+    "cost_usd": 0
+  }
+}

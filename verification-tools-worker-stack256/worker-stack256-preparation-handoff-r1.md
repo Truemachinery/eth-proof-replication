@@ -1,0 +1,7 @@
+Prepared the isolated worker-stack256 resource profile. The harmless Rust worker probe, offline release build, existing tiny Init/malformed kernel controls and bounded Python metadata/config controls passed. Only `src/lib.rs`'s requested worker-stack constant changes in the exact29-file source copy. Original source, binaryD9, recorderC34 and manifest remain preserved.
+
+New Nano binary: `10e1a4ebdb6fa606ca8d7a60774d8af0655294ab0b19d03a838a5ba746b7c2d9`. Frozen helper59931 and finalR6aggregatef540 keep the original strict two-thread config and payload, explicitly identify the new binary, require fresh closure before retry and postidentity last, and retain the original failed Nano. The helper never sets main-stack limits; its limit snapshots are preexec observations. Actual Nano worker extent is unmeasured.
+
+Five recorded preparation commands consumed33.371616 childCPU seconds /39.027734 wall seconds summed, USD0. Independent reviews and editing/administrative work are outside that figure. Preparation timing can overlap the root fresh phase.
+
+No actual OpenAI retry or final aggregation has run by this author. Root must wait for successful original fresh and final peer ACK, then use the companion runbook. Original R2 Nano remains failed after stack overflow; unsupported main-stack controls and obsolete sources remain visible. No proof/checker-logic change, OS-isolation claim or practical SAT/mining claim is made.

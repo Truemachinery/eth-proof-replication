@@ -1,0 +1,94 @@
+{
+  "schema": "cf-data-redaction-source-saved-result-review/1",
+  "reviewer": "codex-eth-anthropic-replication",
+  "same_team_review": true,
+  "observed_utc": "2026-11-05T16:25:41.915542+00:00",
+  "status": "Conditional source ACK for observed ordinary/quote-escaped nested JSON, repr and assignment data forms; final publisher integration and rerun remain pending",
+  "initial_publisher_source_observed_sha256": "11d8bbfbfc09f8c8756cccd4153ed43fb1e9b2a301816f97cebaf975bb2720a8",
+  "historical_in_progress_publisher_snapshot": {
+    "path": "<REPLICATION_ROOT>/publish_package.py",
+    "sha256": "d54e15055d8271831310e88b760c9f42ce1afbfd07461f3124795f312d77f566",
+    "size_bytes": 67340,
+    "scope": "Publisher adapter is actively revised by its owner. This is the exact source snapshot read here, not a claim final integration is frozen or tested."
+  },
+  "reviewed_functions": {
+    "transform": {
+      "start_line": 671,
+      "end_line": 722,
+      "sha256": "bd07e9886045762e8fb2945090e22e6a18f62a6ec46cfcaeba43c83ae7c93e2a",
+      "size_bytes": 3160,
+      "source_snapshot": "def transform(data, base, data_derivative=False):\n    actions = []\n\n    def replace_spans(rule, spans):\n        nonlocal data\n        if not spans:\n            return\n        before = data; out = []; cursor = 0; positions = []\n        for start, end, replacement in sorted(spans):\n            if start < cursor:\n                continue\n            out += [before[cursor:start], replacement]\n            positions.append({\"input_byte_start\": start, \"input_byte_end\": end,\n                              \"replacement\": replacement.decode(\"utf-8\")})\n            cursor = end\n        out.append(before[cursor:]); data = b\"\".join(out)\n        actions.append({\"rule\": rule, \"input_sha256\": sha(before), \"output_sha256\": sha(data), \"replacements\": positions})\n\n    # Decode JSON values at sensitive keys without dumping the original values.\n    text = data.decode(\"utf-8\"); spans = []\n    for m in re.finditer(r'\"([^\"\\\\]+)\"\\s*:\\s*', text):\n        if m.group(1) == \"PATH\" or SECRET_KEY.fullmatch(m.group(1)):\n            try:\n                _, end = json.JSONDecoder().raw_decode(text, m.end())\n                spans.append((len(text[:m.end()].encode()), len(text[:end].encode()), b'\"<REDACTED FIELD>\"'))\n            except ValueError:\n                pass\n    replace_spans(\"remove_sensitive_json_fields_including_full_PATH\", spans)\n    if data_derivative:\n        # Logs/receipts can embed environment argv in JSON strings or Python repr.\n        # Never run this rule on executable source, source views or AST literals.\n        quoted_path = re.compile(rb\"(?<=[\\\"'])PATH=[^\\\"'\\r\\n]*\")\n        replace_spans(\"full_PATH_quoted_argv_data_only\", [\n            (m.start(), m.end(), b\"PATH=<PATH FIELD REDACTED>\")\n            for m in quoted_path.finditer(data) if b\":/\" in m.group(0)\n        ])\n        replace_spans(\"private_SDK_metadata_value_data_only\", private_sdk_spans(data))\n    for rule, pattern, replacement in [\n        (\"local_replication_prefix\", re.compile(re.escape(str(base.resolve()).encode())), b\"<REPLICATION_ROOT>\"),\n        (\"local_private_project_prefix\", re.compile(re.escape(str(base.resolve().parents[1]).encode())), b\"<PRIVATE_PROJECT_ROOT>\"),\n        (\"home_prefix\", HOME, b\"<HOME>\"), (\"temporary_os_path\", TEMP, b\"<TEMP_PATH>\"),\n        (\"email\", EMAIL, b\"<EMAIL REDACTED>\"), (\"uuid\", UUID, b\"<UUID REDACTED>\"),\n        (\"credential_token\", TOKEN, b\"<TOKEN REDACTED>\"),\n        (\"full_PATH_plaintext\", re.compile(rb\"(?m)^\\s*(?:export\\s+)?PATH\\s*[:=][^\\r\\n]*\"), b\"<PATH FIELD REDACTED>\"),\n        (\"sensitive_plaintext_field\", re.compile(rb\"(?im)^\\s*(?:HOSTNAME|COMPUTER[ _-]*NAME|(?:[A-Z_]*(?:TOKEN|PASSWORD|PASSPHRASE|SECRET|SERIAL[ _-]*NUMBER|HARDWARE[ _-]*UUID)))\\s*[:=][^\\r\\n]*\"), b\"<SENSITIVE FIELD REDACTED>\"),\n    ]:\n        if rule == \"full_PATH_plaintext\" and not data_derivative:\n            continue  # A Python PATH=expression is executable code, not a log dump.\n        matches = [(m.start(), m.end(), replacement) for m in pattern.finditer(data)\n                   if not (rule == \"sensitive_plaintext_field\" and PUBLIC_CREDENTIAL_REFERENCE.fullmatch(m.group(0)))]\n        replace_spans(rule, matches)\n    return data, actions\n"
+    },
+    "private_sdk_spans": {
+      "start_line": 725,
+      "end_line": 741,
+      "sha256": "a42826040815bbd1479de76c00fe0011a09bc0c0f4a3015bfed3fde7f033a67a",
+      "size_bytes": 1013,
+      "source_snapshot": "def private_sdk_spans(data):\n    \"\"\"Ordinary/escaped data mappings and validated current SDK value only.\"\"\"\n    replacement = b\"<SDK METADATA REDACTED>\"\n    spans = []\n    value = os.environ.get(PRIVATE_SDK_KEY)\n    if value is not None and sha(value.encode()) == PRIVATE_SDK_VALUE_SHA256:\n        spans.extend((m.start(), m.end(), replacement) for m in re.finditer(re.escape(value.encode()), data))\n    # Backslashes before quotes cover nested JSON-string encoding without\n    # decoding/reformatting evidence. Only this named SDK field's hex triple\n    # is recognized; its SHA256 field and executable source stay untouched.\n    for pattern in [\n        rb'''__CF_USER_TEXT_ENCODING\\\\*[\"']\\s*:\\s*\\\\*[\"'](?P<value>0x[0-9a-fA-F]+:0x[0-9a-fA-F]+:0x[0-9a-fA-F]+)''',\n        rb'''\\b__CF_USER_TEXT_ENCODING\\s*=\\s*\\\\*[\"']?(?P<value>0x[0-9a-fA-F]+:0x[0-9a-fA-F]+:0x[0-9a-fA-F]+)''',\n    ]:\n        for match in re.finditer(pattern, data):\n            spans.append((*match.span(\"value\"), replacement))\n    return spans\n"
+    },
+    "check_public": {
+      "start_line": 794,
+      "end_line": 801,
+      "sha256": "229670d17f30d887aeb056d42059efa62b11e621f67013ff284acbaedab5c3f7",
+      "size_bytes": 538,
+      "source_snapshot": "def check_public(data, data_derivative=False):\n    if any(pattern.search(data) for pattern in [EMAIL, UUID, TOKEN, HOME, TEMP]):\n        raise ValueError(\"sensitive residual detected after transformation\")\n    value = os.environ.get(PRIVATE_SDK_KEY)\n    if value is not None and sha(value.encode()) == PRIVATE_SDK_VALUE_SHA256 and value.encode() in data:\n        raise ValueError(\"private SDK metadata residual detected\")\n    if data_derivative and private_sdk_spans(data):\n        raise ValueError(\"private SDK field residual detected\")\n"
+    }
+  },
+  "test_source": {
+    "path": "<REPLICATION_ROOT>/publication/check_sdk_redaction_r1.py",
+    "sha256": "46d992502df4d152f720ec2831f4863c6beadc7e3ab629004e0450a81dc249b8",
+    "size_bytes": 4671
+  },
+  "saved_result": {
+    "path": "<REPLICATION_ROOT>/publication/sdk-redaction-control-result-r1.json",
+    "sha256": "7d4d1411f1beb67a458dfbdd58959b6a645c435718a1d1e768629e119b5fa257",
+    "size_bytes": 1467
+  },
+  "saved_test_scope": {
+    "publisher_sha256_actually_tested": "596e97616ce82b17011ed50132baa8927b835d844748d8a0a311c5ca6dcc6c6b",
+    "test_sha256": "46d992502df4d152f720ec2831f4863c6beadc7e3ab629004e0450a81dc249b8",
+    "count": 19,
+    "checks": [
+      "actual SDK ordinary/nested JSON level 0",
+      "actual SDK ordinary/nested JSON level 1",
+      "actual SDK ordinary/nested JSON level 2",
+      "actual SDK ordinary/nested JSON level 3",
+      "actual SDK ordinary/nested JSON level 4",
+      "actual SDK ordinary/nested JSON level 5",
+      "validated actual value redacted even outside named field",
+      "source key/hash references remain byte-identical",
+      "key-context fallback without parent SDK level 0",
+      "key-context fallback without parent SDK level 1",
+      "key-context fallback without parent SDK level 2",
+      "key-context fallback without parent SDK level 3",
+      "key-context fallback without parent SDK level 4",
+      "key-context fallback without parent SDK level 5",
+      "repr/assignment SDK data form",
+      "repr/assignment SDK data form",
+      "unrelated hex triples preserved",
+      "unredacted named SDK field refused",
+      "all50 original/candidate CI files remain byte-identical"
+    ],
+    "status": "passed",
+    "cpu_seconds": 0.05216899999999999,
+    "wall_seconds": 0.071743416,
+    "reviewer_reran_tests": false,
+    "owner_confirmation": "Owner explicitly confirmed19 controls apply only to historical596e publisher. No standalone596e publisher snapshot was retained; final integration will run new exclusive results. No current integration test coverage is inferred."
+  },
+  "source_findings": [
+    "Validated current SDK value is used only after its fixed SHA matches. The private value is never placed into replacement/action metadata; transformation records positions, replacements and hashes.",
+    "Data-only key-context fallback matches named hex-triple values with ordinary or backslash-escaped quote delimiters, including nested JSON strings and Python repr/assignment formats. The source SHA field is not mistaken for the value.",
+    "The CF substitution is invoked only for data_derivative=True. Source key/hash references are preserved; residual checks refuse actual private-value bytes if present in source instead of silently modifying executable source.",
+    "Current export call sites pass data_derivative=name not in SOURCES to transform and final residual checking. Portable source-literal transformation uses default false, so CF data-only replacement does not rewrite executable literals.",
+    "Overlapping actual-value and key-context spans are handled by sorted spans/cursor skipping. Replacement text does not contain quotes/backslashes and ordinary hex values remain JSON-valid.",
+    "The saved19 controls cover actual value nested levels0\u20135 and unstructured occurrences, fallback without parent metadata nested levels0\u20135/repr/assignment, source byte identity, unrelated triples, residual rejection and50CI files. Source test checks transformation-action replay and output JSON validity."
+  ],
+  "limitations": [
+    "This is source and saved-result review only; no imports/tests/export, WIP proof output or network read.",
+    "Privacy scope covers the actual generated data encodings reviewed, not arbitrary obfuscation or a general secret-discovery guarantee.",
+    "Unstructured actual-value matching depends on a present parent value with matching fixed SHA; named-field fallback remains available without it. Root publishing uses the observed matching environment and final controls must confirm this.",
+    "Full publisher adapter integration/source immutability and its new exclusive privacy/omission tests require final review after author freeze. Historical19 results are not relabeled as current results."
+  ],
+  "actual_private_value_read_or_printed_by_reviewer": false,
+  "incremental_usd": 0
+}

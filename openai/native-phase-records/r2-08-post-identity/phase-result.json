@@ -1,0 +1,209 @@
+{
+  "schema": "openai-native-phase/1",
+  "phase": "post-identity",
+  "status": "passed",
+  "record_directory": "<REPLICATION_ROOT>/openai/native-phase-records/r2-08-post-identity",
+  "started_utc": "2026-11-05T18:01:52.742823+00:00",
+  "accounting": "Native execution, no systemd-managed service. Recorder child_cpu_seconds covers reaped child processes/descendants, including capture and checker wrappers. Do not add nested Nanoda CPU a second time. No RSS measurement is claimed.",
+  "scope": "One explicit phase only; root aggregates all required closed results. Native mode has no Linux isolation.",
+  "input_fingerprint": "c84c8907998f23cc282a29ae7fef4a37cbaff735327096e748afe546af8c4f52",
+  "identity_metadata": {
+    "schema": "openai-native-input-identity/1",
+    "started_utc": "2026-11-05T18:01:53.198816+00:00",
+    "scope": "Read-only identity metadata during or after source build; no Lean/Lake/proof/checker execution.",
+    "helper_sha256": "52cb3de32ef89c5fbb460032601693a9d2e740cda296b8dd44f9ab6fd1fa9174",
+    "failures": [],
+    "proof_build_or_kernel_verdict": "Not assessed by this identity checker.",
+    "gate_environment_keys_ignored_for_runtime_selection": [
+      "LEAN_SYSROOT"
+    ],
+    "expectations_sha256": "e39147fee63287baea89a046c85c462090f1c443f15b53d809e613631f0cce47",
+    "upstream": {
+      "name": "upstream-openai",
+      "expected_commit": "4eaee87548250b2682affda7d05d947c05554bae",
+      "actual_commit": "4eaee87548250b2682affda7d05d947c05554bae",
+      "tracked_changes_against_expected": [],
+      "tracked_index_changes_against_expected": [],
+      "remote_matches_expected_https_repository": true,
+      "passed": true
+    },
+    "closure_source_files_checked_per_copy": 3092,
+    "workspace_lean_inventory_count": 3093,
+    "expected_workspace_lean_inventory_count": 3093,
+    "workspace_config_files_checked": 2,
+    "workspace_lean_config_files_checked": 1,
+    "workspace_inventory_excludes": [
+      ".lake",
+      ".git"
+    ],
+    "recorded_r2_library_globs_present": true,
+    "dependencies": [
+      {
+        "name": "mathlib",
+        "expected_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+        "actual_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+        "tracked_changes_against_expected": [],
+        "tracked_index_changes_against_expected": [],
+        "remote_matches_expected_https_repository": true,
+        "passed": true
+      },
+      {
+        "name": "plausible",
+        "expected_commit": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+        "actual_commit": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+        "tracked_changes_against_expected": [],
+        "tracked_index_changes_against_expected": [],
+        "remote_matches_expected_https_repository": true,
+        "passed": true
+      },
+      {
+        "name": "LeanSearchClient",
+        "expected_commit": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+        "actual_commit": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+        "tracked_changes_against_expected": [],
+        "tracked_index_changes_against_expected": [],
+        "remote_matches_expected_https_repository": true,
+        "passed": true
+      },
+      {
+        "name": "importGraph",
+        "expected_commit": "e928b72544873815af278d38681b31c0293588e3",
+        "actual_commit": "e928b72544873815af278d38681b31c0293588e3",
+        "tracked_changes_against_expected": [],
+        "tracked_index_changes_against_expected": [],
+        "remote_matches_expected_https_repository": true,
+        "passed": true
+      },
+      {
+        "name": "proofwidgets",
+        "expected_commit": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+        "actual_commit": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+        "tracked_changes_against_expected": [],
+        "tracked_index_changes_against_expected": [],
+        "remote_matches_expected_https_repository": true,
+        "passed": true
+      },
+      {
+        "name": "aesop",
+        "expected_commit": "355695d523e41d0554926416cba2a2b3544fbbc9",
+        "actual_commit": "355695d523e41d0554926416cba2a2b3544fbbc9",
+        "tracked_changes_against_expected": [],
+        "tracked_index_changes_against_expected": [],
+        "remote_matches_expected_https_repository": true,
+        "passed": true
+      },
+      {
+        "name": "Qq",
+        "expected_commit": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+        "actual_commit": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+        "tracked_changes_against_expected": [],
+        "tracked_index_changes_against_expected": [],
+        "remote_matches_expected_https_repository": true,
+        "passed": true
+      },
+      {
+        "name": "batteries",
+        "expected_commit": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+        "actual_commit": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+        "tracked_changes_against_expected": [],
+        "tracked_index_changes_against_expected": [],
+        "remote_matches_expected_https_repository": true,
+        "passed": true
+      },
+      {
+        "name": "Cli",
+        "expected_commit": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+        "actual_commit": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+        "tracked_changes_against_expected": [],
+        "tracked_index_changes_against_expected": [],
+        "remote_matches_expected_https_repository": true,
+        "passed": true
+      }
+    ],
+    "selected_real_runtime_prefix": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1",
+    "runtime_files": [
+      {
+        "path": "lib/lean/libleanshared.dylib",
+        "expected_sha256": "6588b7e38450ea749006dcd90bbaea9393a5ca1b64727a2e7138f3c9427c2b50",
+        "passed": true
+      },
+      {
+        "path": "lib/lean/libleanshared_1.dylib",
+        "expected_sha256": "e44858e227323a23ce7416c5678415d2d022582b1627ad3690117ce73cd6345a",
+        "passed": true
+      },
+      {
+        "path": "lib/lean/libleanshared_2.dylib",
+        "expected_sha256": "be68927a4f282b99383e82af4d481b4ffe59f2a243aea20dae0e60b39c2ae182",
+        "passed": true
+      },
+      {
+        "path": "lib/lean/libInit_shared.dylib",
+        "expected_sha256": "cb203e0bc0e6ab3250b2804d3e5398ad3a91544b5e049674532f73b7a062ef7f",
+        "passed": true
+      },
+      {
+        "path": "lib/lean/libLake_shared.dylib",
+        "expected_sha256": "60a94628397814203d86428fa6015f9d844c4c4c74cda8667e687a4ea5b5f5ac",
+        "passed": true
+      },
+      {
+        "path": "bin/leanchecker",
+        "expected_sha256": "cfde41cb11dde58c84e9c60c551fd104bb2fc1104ad44dca932a923120272a35",
+        "passed": true
+      },
+      {
+        "path": "bin/lean",
+        "expected_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+        "passed": true
+      },
+      {
+        "path": "bin/lake",
+        "expected_sha256": "c8c24f1398162ab4004e2a869952d8469f54293651151feaad4526f2b8474c6e",
+        "passed": true
+      }
+    ],
+    "historical_vs_new_observation": "Expected source/config/lock/runtime facts come from the explicit expectation provenance. This run newly observes current identities only; no historical archive hash or completed proof verdict is asserted.",
+    "all_pinned_input_checks_passed": true,
+    "finished_utc": "2026-11-05T18:01:58.527909+00:00",
+    "wall_seconds": 5.329104709,
+    "own_cpu_seconds": 0.814392,
+    "reaped_git_child_cpu_seconds": 6.906955,
+    "limitations": "No dependency object-cache rederivation, build-output validation, kernel/axiom audit, archive-download hash or system-library verification. Tracked cleanliness uses Git; closure bytes and selected runtime files are hashed directly."
+  },
+  "stage_finished": {
+    "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-08-post-identity/stages/post-identity/finished.json",
+    "sha256": "619af51451049d66b1eb720e0012e95e7b091091d4be602a381af36968c28b78",
+    "size_bytes": 987
+  },
+  "phase_inputs": {
+    "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-08-post-identity/phase-inputs.json",
+    "sha256": "5c5ea4adf6917e6477e24a808fec60fcbe1180003cf51c260cb0b07c30c749db",
+    "size_bytes": 11226
+  },
+  "finished_utc": "2026-11-05T18:01:58.544575+00:00",
+  "interrupt_signal": null,
+  "stage_receipts": [
+    {
+      "schema": "eth-ci-stage/1",
+      "name": "post-identity",
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "<REPLICATION_ROOT>/openai/in_workspace.py",
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "<REPLICATION_ROOT>/openai/verify_source_identity_r3.py"
+      ],
+      "cwd": "<REPLICATION_ROOT>/openai/workspace",
+      "started_utc_epoch": 1793901713.017558,
+      "timeout_seconds": 300,
+      "stdout_is_export": false,
+      "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.",
+      "exit_code": 0,
+      "reason": null,
+      "wall_seconds": 5.525852918624878,
+      "child_cpu_seconds": 7.893073,
+      "raw_log_sha256": "90bd2e5412fdb9ea5ce1ea8393b01748dfdf21df3fd8987cd96195d3ec3850ce",
+      "raw_log_bytes": 6654
+    }
+  ]
+}

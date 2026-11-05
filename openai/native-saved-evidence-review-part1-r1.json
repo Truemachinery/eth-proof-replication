@@ -1,0 +1,643 @@
+{
+  "schema": "openai-native-saved-evidence-review-part1/1",
+  "reviewer": "codex-eth-anthropic-replication",
+  "same_team_review": true,
+  "author_note": "Reviewer authored some shared helpers/aggregator; this is a separate saved-evidence/hash review of roots actual execution, not external independent proof checking. No helper imported or verifier rerun.",
+  "observed_utc": "2026-11-05T14:36:32.363330+00:00",
+  "status": "Closed sourcebuild and first3phase evidence bindings PASS; overall8phase native replication still INCOMPLETE",
+  "all_part1_checks_passed": true,
+  "checks": [
+    "pre-identity closed successful",
+    "pre-identity preparation/result lineage",
+    "binding native-phase-records/r2-01-pre-identity/phase-inputs.json",
+    "binding native-phase-records/r2-01-pre-identity/stages/pre-identity/finished.json",
+    "pre-identity start/end/raw bindings",
+    "pre-identity shared exact fingerprint",
+    "pre-identity declared command/cwd/cap",
+    "pre-identity original argv",
+    "pre-identity exact constructed environment",
+    "pre-identity recorded time enclosure",
+    "trace closed successful",
+    "trace preparation/result lineage",
+    "binding native-phase-records/r2-02-trace/phase-inputs.json",
+    "binding native-phase-records/r2-02-trace/stages/trace/finished.json",
+    "trace start/end/raw bindings",
+    "trace shared exact fingerprint",
+    "trace declared command/cwd/cap",
+    "trace original argv",
+    "trace exact constructed environment",
+    "trace recorded time enclosure",
+    "audit closed successful",
+    "audit preparation/result lineage",
+    "binding native-phase-records/r2-03-audit/phase-inputs.json",
+    "binding native-phase-records/r2-03-audit/stages/audit/finished.json",
+    "audit start/end/raw bindings",
+    "audit shared exact fingerprint",
+    "audit declared command/cwd/cap",
+    "audit original argv",
+    "audit exact constructed environment",
+    "audit recorded time enclosure",
+    "three selected input contents identical",
+    "exact named original contract",
+    "25 selected files and R2launcher actual rehash",
+    "all15 fixed R2pins agree",
+    "source/toolchain/target provenance",
+    "two config/eight runtime rows agree",
+    "identity actual raw equals saved result",
+    "identity scope complete",
+    "identity9dependency/runtime facts",
+    "audit raw/result exact three events",
+    "actual target transitive audit acceptance",
+    "actual no-build trace success line",
+    "reference placeholder warning keptvisible",
+    "OAI.Algorithms.SubexponentialSAT.Main sourcecopy hash unchanged",
+    "ComparatorChallenges.SubexponentialSAT sourcecopy hash unchanged",
+    "actual source wrapper/raw closure",
+    "source header actualoriginaltarget",
+    "closed source then first3nonoverlap",
+    "wholegroup saved stop/resume ownership states",
+    "preparedintent versus closedR2",
+    "selected stoppedworkers preserveownership",
+    "R3Setup-only savedresumption",
+    "R4lastLoop savedresumption",
+    "finalR4aggregator pinned"
+  ],
+  "input_fingerprint": "c84c8907998f23cc282a29ae7fef4a37cbaff735327096e748afe546af8c4f52",
+  "source_build": {
+    "wrapper": {
+      "path": "<REPLICATION_ROOT>/openai/logs/source-build-gated-r4-receipt.json",
+      "sha256": "0a1a693fa6848c575b34907bd1f6bb5671653de1c02d6fc5ec0cac5585595e95",
+      "size_bytes": 1636
+    },
+    "raw": {
+      "path": "<REPLICATION_ROOT>/openai/logs/source-build-gated-r4.txt",
+      "sha256": "7c805711419dd84c01e6fd71ad2b9c548238245757730a55c71b8910608c1cde",
+      "size_bytes": 297435
+    },
+    "actual_exit_code": 0,
+    "checkpoint_event": 3993,
+    "actual_captured_utc": "2026-11-05T14:21:52Z",
+    "source_header": {
+      "mode": "ordinary_lake_with_compiler_admission",
+      "argv": [
+        "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lake",
+        "build",
+        "+OAI.Algorithms.SubexponentialSAT.Main",
+        "+ComparatorChallenges.SubexponentialSAT"
+      ],
+      "cwd": "<REPLICATION_ROOT>/openai/workspace",
+      "source_module_count": 3092,
+      "source_hashes_checked": true,
+      "compiler_frontend_slots": 3,
+      "lean_runtime_threads": 4,
+      "gate_manifest_sha256": "279ed9672c932960383c9a037686c759e3af6bae12e83528ddfdabfce500feef",
+      "limitations": "Gate bounds Lean frontends, not C/link jobs; cached project objects come only from this run's earlier recorded source attempts."
+    },
+    "child_cpu_seconds": 32075.406502,
+    "checkpoint_reported_monotonic_wall_seconds": 20746.93892,
+    "utc_header_start": "2026-11-04T17:41:12.991382Z",
+    "utc_start_to_capture_observation_seconds": 74439.00861811638,
+    "utc_minus_monotonic_seconds": 53692.06969811638,
+    "clock_scope": "UTC observation span/difference is not compute or CPU time; capture may lag actual process exit."
+  },
+  "phases": [
+    {
+      "name": "pre-identity",
+      "directory": "<REPLICATION_ROOT>/openai/native-phase-records/r2-01-pre-identity",
+      "phase_result": {
+        "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-01-pre-identity/phase-result.json",
+        "sha256": "c742b1d83f083b5df12277dba559fce7a8515de541ad4101ac02b24c57961f51",
+        "size_bytes": 9533
+      },
+      "stage": {
+        "argv": [
+          "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+          "<REPLICATION_ROOT>/openai/in_workspace.py",
+          "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+          "<REPLICATION_ROOT>/openai/verify_source_identity_r3.py"
+        ],
+        "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.",
+        "child_cpu_seconds": 6.467979,
+        "cwd": "<REPLICATION_ROOT>/openai/workspace",
+        "exit_code": 0,
+        "name": "pre-identity",
+        "raw_log_bytes": 6665,
+        "raw_log_sha256": "973fa5cbe45226e3ce39c9b03fd1acfcb00b499f8a6de4a51b2cc8c28728d9e9",
+        "reason": null,
+        "schema": "eth-ci-stage/1",
+        "started_utc_epoch": 1793888578.6366131,
+        "stdout_is_export": false,
+        "timeout_seconds": 300,
+        "wall_seconds": 4.334066867828369
+      },
+      "actual_raw": {
+        "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-01-pre-identity/stages/pre-identity/raw.log",
+        "sha256": "973fa5cbe45226e3ce39c9b03fd1acfcb00b499f8a6de4a51b2cc8c28728d9e9",
+        "size_bytes": 6665
+      },
+      "scope": "Actual R3 source/config/dependency/runtime identity inspection; no kernel verdict."
+    },
+    {
+      "name": "trace",
+      "directory": "<REPLICATION_ROOT>/openai/native-phase-records/r2-02-trace",
+      "phase_result": {
+        "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-02-trace/phase-result.json",
+        "sha256": "7ca186455d7ab695cc3528a87ef34c687d43d56e00e62d93313c1f181760d56b",
+        "size_bytes": 2441
+      },
+      "stage": {
+        "argv": [
+          "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+          "<REPLICATION_ROOT>/openai/in_workspace.py",
+          "lake",
+          "--no-build",
+          "build",
+          "+OAI.Algorithms.SubexponentialSAT.Main",
+          "+ComparatorChallenges.SubexponentialSAT"
+        ],
+        "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.",
+        "child_cpu_seconds": 8.769658,
+        "cwd": "<REPLICATION_ROOT>/openai/workspace",
+        "exit_code": 0,
+        "name": "trace",
+        "raw_log_bytes": 5258,
+        "raw_log_sha256": "848790b8bfbf646a8c33eec16294d3407ff608ef07449994dc5fd488c25dbd37",
+        "reason": null,
+        "schema": "eth-ci-stage/1",
+        "started_utc_epoch": 1793888626.7726889,
+        "stdout_is_export": false,
+        "timeout_seconds": 600,
+        "wall_seconds": 12.435912132263184
+      },
+      "actual_raw": {
+        "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-02-trace/stages/trace/raw.log",
+        "sha256": "848790b8bfbf646a8c33eec16294d3407ff608ef07449994dc5fd488c25dbd37",
+        "size_bytes": 5258
+      },
+      "scope": "Actual original-real-prefix Lake no-build closure/trace check; replayed output not source re-elaboration or fresh kernel replay."
+    },
+    {
+      "name": "audit",
+      "directory": "<REPLICATION_ROOT>/openai/native-phase-records/r2-03-audit",
+      "phase_result": {
+        "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-03-audit/phase-result.json",
+        "sha256": "4ce4b68f3206db0403dd97dfbf862e5e7e20e4556df5eaa36add0d96b09d28a6",
+        "size_bytes": 3711
+      },
+      "stage": {
+        "argv": [
+          "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+          "<REPLICATION_ROOT>/openai/in_workspace.py",
+          "lake",
+          "env",
+          "lean",
+          "--run",
+          "<REPLICATION_ROOT>/verification/AuditTargets.lean",
+          "OAI.Algorithms.SubexponentialSAT.Main",
+          "OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.exact_count_and_sat"
+        ],
+        "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.",
+        "child_cpu_seconds": 18.45197,
+        "cwd": "<REPLICATION_ROOT>/openai/workspace",
+        "exit_code": 0,
+        "name": "audit",
+        "raw_log_bytes": 821,
+        "raw_log_sha256": "c14d4f2dc08739438f3286ce754462a2f1caa307601dbdebb5fb53883bb4b0c4",
+        "reason": null,
+        "schema": "eth-ci-stage/1",
+        "started_utc_epoch": 1793888668.4106271,
+        "stdout_is_export": false,
+        "timeout_seconds": 1800,
+        "wall_seconds": 60.13630175590515
+      },
+      "actual_raw": {
+        "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-03-audit/stages/audit/raw.log",
+        "sha256": "c14d4f2dc08739438f3286ce754462a2f1caa307601dbdebb5fb53883bb4b0c4",
+        "size_bytes": 821
+      },
+      "scope": "Actual exact named-target transitive axiom inspection94277constants; no statement comparison or fresh/independent kernel replay."
+    }
+  ],
+  "audit_actual_events": [
+    {
+      "event": "environment",
+      "initializer_execution_enabled": false,
+      "load_extensions": false,
+      "load_level": "private",
+      "module": "OAI.Algorithms.SubexponentialSAT.Main",
+      "permitted_axioms": [
+        "propext",
+        "Quot.sound",
+        "Classical.choice"
+      ],
+      "schema": "eth-target-axiom-audit/1",
+      "standard_axiom_signature_check": true
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "disallowed_axioms": [],
+      "event": "target",
+      "module": "OAI.Algorithms.SubexponentialSAT.Main",
+      "passed": true,
+      "schema": "eth-target-axiom-audit/1",
+      "target": "OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.exact_count_and_sat",
+      "visited_constants": 94277
+    },
+    {
+      "event": "complete",
+      "module": "OAI.Algorithms.SubexponentialSAT.Main",
+      "passed": true,
+      "schema": "eth-target-axiom-audit/1",
+      "scope": "named-theorem transitive axiom audit; no statement comparison or kernel replay",
+      "targets_checked": 1
+    }
+  ],
+  "selected_current_rehash": {
+    "files": 25,
+    "launcher": {
+      "path": "<REPLICATION_ROOT>/openai/verify_native_phase_r2.py",
+      "sha256": "fe3b12c0b8312a6b0cdb5ec1c6d88933cbff796bc92e9403682735d25348c19c",
+      "size_bytes": 20260
+    },
+    "bytes": 473527987,
+    "scope": "Rehashed all25selected files once pluslauncher; verified manifest/config/runtime declarations. Did not rerun Git or rehash all6184source leaf copies; actual preidentity helper result/hash binds its reported3092percopy checks."
+  },
+  "manual_scheduling": {
+    "records": [
+      {
+        "name": "temporary-suspension-r1.json",
+        "identity": {
+          "path": "<REPLICATION_ROOT>/openai/logs/temporary-suspension-r1.json",
+          "sha256": "73584dc6355248c7899afe15e527281af1a0ac5641071d78ff321a655b2341ef",
+          "size_bytes": 1604
+        },
+        "started_or_signaled_utc": "2026-11-04T19:19:45.706707+00:00",
+        "finished_utc": null,
+        "intent_only": false
+      },
+      {
+        "name": "temporary-resumption-r1.json",
+        "identity": {
+          "path": "<REPLICATION_ROOT>/openai/logs/temporary-resumption-r1.json",
+          "sha256": "7765cec437c7dd350ff481edf35dd76d4df8e87f04b223240860bda90c12689f",
+          "size_bytes": 10362
+        },
+        "started_or_signaled_utc": "2026-11-04T20:08:21.219697+00:00",
+        "finished_utc": null,
+        "intent_only": false
+      },
+      {
+        "name": "memory-pressure-suspension-r2-prepared.json",
+        "identity": {
+          "path": "<REPLICATION_ROOT>/openai/logs/memory-pressure-suspension-r2-prepared.json",
+          "sha256": "035f3bc177183bdacc68bfd022f76ffc265ca7a99e0aea4de0e796af1350d072",
+          "size_bytes": 5796
+        },
+        "started_or_signaled_utc": "2026-11-04T22:57:05.218057+00:00",
+        "finished_utc": null,
+        "intent_only": true
+      },
+      {
+        "name": "memory-pressure-suspension-r2.json",
+        "identity": {
+          "path": "<REPLICATION_ROOT>/openai/logs/memory-pressure-suspension-r2.json",
+          "sha256": "34d3b7d059439eea0b9d5a41df8470fad59b22b524403b62b1ea58e1a018ca95",
+          "size_bytes": 11132
+        },
+        "started_or_signaled_utc": "2026-11-04T22:57:05.218057+00:00",
+        "finished_utc": "2026-11-04T22:57:05.502863+00:00",
+        "intent_only": false
+      },
+      {
+        "name": "memory-pressure-resumption-r3.json",
+        "identity": {
+          "path": "<REPLICATION_ROOT>/openai/logs/memory-pressure-resumption-r3.json",
+          "sha256": "de271acadc3b41a6556f614aafcd9595bf7f9ff762821b72ddc9947c88b095db",
+          "size_bytes": 6215
+        },
+        "started_or_signaled_utc": "2026-11-05T14:13:29.543348+00:00",
+        "finished_utc": "2026-11-05T14:13:29.746216+00:00",
+        "intent_only": false
+      },
+      {
+        "name": "memory-pressure-resumption-r4.json",
+        "identity": {
+          "path": "<REPLICATION_ROOT>/openai/logs/memory-pressure-resumption-r4.json",
+          "sha256": "810e07a6d0b5c63f77ec064f91f998f4ab5b0fee948d72b8f210670a2451f9d5",
+          "size_bytes": 3879
+        },
+        "started_or_signaled_utc": "2026-11-05T14:18:44.356153+00:00",
+        "finished_utc": "2026-11-05T14:18:44.557259+00:00",
+        "intent_only": false
+      }
+    ],
+    "scope": "Saved root ownership/state observations only, no live process probes/signals. Initial3admission/four runtime threads, wholecampaign pause and latertwo-worker pauses preserved; R3Setup andR4Loop resumptions occurred separately. No overnightcompute or uninterruptedthreefrontend claim."
+  },
+  "reference_warning": "Original reference ComparatorChallenges.SubexponentialSAT theorem atline194 has a replayed sorry placeholder warning, kept visible. This does not establish sorryAx in namedsolutiontarget; actual target audit reports exactly standard3axioms. No claim of globally sorry-free source/environment.",
+  "remaining_phase_status": {
+    "comparator": "Running/notreviewed at task handoff; no running files read/hashed.",
+    "selected-export": "Pending/notreviewed",
+    "extra-nanoda": "Pending/notreviewed",
+    "original-fresh": "Pending/notreviewed",
+    "post-identity": "Pending/notreviewed"
+  },
+  "partial_resources": {
+    "first3_inner_child_cpu_seconds": 33.689606999999995,
+    "first3_inner_wall_seconds_summed": 76.9062807559967,
+    "source_plus_first3_child_cpu_seconds": 32109.096109000002,
+    "source_plus_first3_reported_wall_seconds_summed": 20823.845200755997,
+    "scope": "Closedsourcecheckpoint plus3innerstage costs only, not finalcampaign. Inner helper/GitCPU alreadyincluded; outer root phase checkpoints and futurestages notadded. No RSS/performance comparison."
+  },
+  "limits": [
+    "No proof/tool/phase/build execution, imports, network, cloud or running-log immutable pin by reviewer.",
+    "Current file hashes bind inputs; no dependency-cache binary rederivation/system-library/archive provenance added.",
+    "NativefakeLandrun no OSisolation; exact original contract comparison, fresh samekernel replay and extra independentNanoda stillpending atthispartialreview.",
+    "Formal exacttarget/model interpretation and practical SAT/SHA256d consequences remain separate; no finalOpenAI PASS inferred."
+  ],
+  "artifacts": [
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-01-pre-identity/phase-result.json",
+      "sha256": "c742b1d83f083b5df12277dba559fce7a8515de541ad4101ac02b24c57961f51",
+      "size_bytes": 9533
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-01-pre-identity/phase-inputs.json",
+      "sha256": "6dd060e5dd39bb16e5abd04f6737fe27a05c0cc67453e553eb32f750d1f0b1af",
+      "size_bytes": 11223
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-01-pre-identity/phase-prepared.json",
+      "sha256": "cf6421ffc77fee4e5ede259367deb8c6e373ac7bb1b55a0398b66f18cdf1d713",
+      "size_bytes": 659
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-01-pre-identity/stages/pre-identity/prepared.json",
+      "sha256": "556a5e21c2c646b3e6f50e04099d8eb024cd1134bdf53b26b62e390a816738a9",
+      "size_bytes": 768
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-01-pre-identity/stages/pre-identity/finished.json",
+      "sha256": "8aae30f10e42b04a7cb5958facfb3e2dd76696d2d872dd6d33b581aa04d677ed",
+      "size_bytes": 987
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-01-pre-identity/stages/pre-identity/raw.log",
+      "sha256": "973fa5cbe45226e3ce39c9b03fd1acfcb00b499f8a6de4a51b2cc8c28728d9e9",
+      "size_bytes": 6665
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-02-trace/phase-result.json",
+      "sha256": "7ca186455d7ab695cc3528a87ef34c687d43d56e00e62d93313c1f181760d56b",
+      "size_bytes": 2441
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-02-trace/phase-inputs.json",
+      "sha256": "8b7906c6767d2b7d041703959ca1b4ff51eba64a1d2019131064af428fdd478e",
+      "size_bytes": 11154
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-02-trace/phase-prepared.json",
+      "sha256": "f07910dbd0c3f739ea678d029845388aabdaafa179785689b8b8d2a754b42804",
+      "size_bytes": 645
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-02-trace/stages/trace/prepared.json",
+      "sha256": "91a88d059af5e38f8f8a40b27b796c50272c7272ede0d47691edcad1f23cd518",
+      "size_bytes": 713
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-02-trace/stages/trace/finished.json",
+      "sha256": "528e14e4ad3e35a0c22174f833e44261a9dee6cc83911d412bba8677b0c36b36",
+      "size_bytes": 933
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-02-trace/stages/trace/raw.log",
+      "sha256": "848790b8bfbf646a8c33eec16294d3407ff608ef07449994dc5fd488c25dbd37",
+      "size_bytes": 5258
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-03-audit/phase-result.json",
+      "sha256": "4ce4b68f3206db0403dd97dfbf862e5e7e20e4556df5eaa36add0d96b09d28a6",
+      "size_bytes": 3711
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-03-audit/phase-inputs.json",
+      "sha256": "25ce70522aff0474946fd0181ea7d7c8402af9a9c332e65de2fc4f09fe201eae",
+      "size_bytes": 11298
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-03-audit/phase-prepared.json",
+      "sha256": "81af80d383e85c9db1a004c47c22d5498ff7d97db66fea79f10076c2ea211dd8",
+      "size_bytes": 645
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-03-audit/stages/audit/prepared.json",
+      "sha256": "4fef795fb448a8b1c77157564b46feaf29eefe6d7d2fc8720a11f680ec47150b",
+      "size_bytes": 857
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-03-audit/stages/audit/finished.json",
+      "sha256": "d2ff700a5718ca60dfaa3d16a091aa62e8ebbbf2d6b9c9a479e974750cf41f1f",
+      "size_bytes": 1075
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-03-audit/stages/audit/raw.log",
+      "sha256": "c14d4f2dc08739438f3286ce754462a2f1caa307601dbdebb5fb53883bb4b0c4",
+      "size_bytes": 821
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native-recorder-r1/record.py",
+      "sha256": "1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0",
+      "size_bytes": 6474
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/in_workspace.py",
+      "sha256": "b4e80df9ed1f1c71e7a202feccd94f189113610679d4a28ac3728d8708e7d04a",
+      "size_bytes": 700
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/verify_source_identity_r3.py",
+      "sha256": "52cb3de32ef89c5fbb460032601693a9d2e740cda296b8dd44f9ab6fd1fa9174",
+      "size_bytes": 12879
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/identity_expectations_r1.json",
+      "sha256": "e39147fee63287baea89a046c85c462090f1c443f15b53d809e613631f0cce47",
+      "size_bytes": 8435
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/source-manifest.json",
+      "sha256": "bf7f36120177010243e52dd9053bd3e9f97f92fa35184abf173a8a57ef4843e1",
+      "size_bytes": 1892511
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/workspace-config-r2.json",
+      "sha256": "a56c999ec870742bee9c51be2bb3199d358d77876d5e7d49492f5ad880938413",
+      "size_bytes": 709
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/workspace/lake-manifest.json",
+      "sha256": "4aa8b01a11ed34de463651ed6396d9da61f365cccfd158e82e96bbd17bcb14bc",
+      "size_bytes": 3153
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/source/lean/ComparatorChallenges/SubexponentialSAT.json",
+      "sha256": "debbfdc9c01104d2369be80da5180978275106df8b685f693fba7ce7da7c5b19",
+      "size_bytes": 364
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification/AuditTargets.lean",
+      "sha256": "a78f30e0439e85d3a9ae51828e0e42c248c027a7fcfeb4c4fb16cb776fae0b05",
+      "size_bytes": 5663
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/comparator-source/.lake/build/bin/comparator",
+      "sha256": "bdf09ee3e725f1480792db7b5befcbf6e4f77db90d9f1f4986bda5a1e6315f4c",
+      "size_bytes": 101846512
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/lean4export-434-source/.lake/build/bin/lean4export",
+      "sha256": "e6217f95bf55c5e165a62f12ec6ce1fb3c25a815cff0f9cb6f6dfcf4c8e55e25",
+      "size_bytes": 179096064
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/target/release/nanoda_bin",
+      "sha256": "d9a1fc5371b84c9eb0687a7630eb724fa88886d9f5d665f09f9f926730573b80",
+      "size_bytes": 1260088
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/comparator-source/scripts/fake-landrun.sh",
+      "sha256": "167507c89d8b3c7667ad78b50df7b19f89883751a01efd1457404fa34a994e8b",
+      "size_bytes": 1431
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools/record_nanoda.py",
+      "sha256": "c34f36d630d182708937a5280b6eda8d0723fa0ffdd85caf8fc54af17b332f48",
+      "size_bytes": 8494
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/native_export_capture_r2.py",
+      "sha256": "4755ba1dd43d18509cd1472bca98c269c79e3dc5a3c99f41faff5b2e6d78be74",
+      "size_bytes": 3279
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/workspace/lean-toolchain",
+      "sha256": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+      "size_bytes": 25
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/workspace/lakefile.lean",
+      "sha256": "aea9d368f24768ab9d51d8c9216c1dd60e598a983e63c463dc8de3f605d268fb",
+      "size_bytes": 534
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared.dylib",
+      "sha256": "6588b7e38450ea749006dcd90bbaea9393a5ca1b64727a2e7138f3c9427c2b50",
+      "size_bytes": 179077552
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared_1.dylib",
+      "sha256": "e44858e227323a23ce7416c5678415d2d022582b1627ad3690117ce73cd6345a",
+      "size_bytes": 16736
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared_2.dylib",
+      "sha256": "be68927a4f282b99383e82af4d481b4ffe59f2a243aea20dae0e60b39c2ae182",
+      "size_bytes": 16736
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libInit_shared.dylib",
+      "sha256": "cb203e0bc0e6ab3250b2804d3e5398ad3a91544b5e049674532f73b7a062ef7f",
+      "size_bytes": 16736
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libLake_shared.dylib",
+      "sha256": "60a94628397814203d86428fa6015f9d844c4c4c74cda8667e687a4ea5b5f5ac",
+      "size_bytes": 10072896
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/leanchecker",
+      "sha256": "cfde41cb11dde58c84e9c60c551fd104bb2fc1104ad44dca932a923120272a35",
+      "size_bytes": 78224
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean",
+      "sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+      "size_bytes": 49968
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lake",
+      "sha256": "c8c24f1398162ab4004e2a869952d8469f54293651151feaad4526f2b8474c6e",
+      "size_bytes": 51824
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/verify_native_phase_r2.py",
+      "sha256": "fe3b12c0b8312a6b0cdb5ec1c6d88933cbff796bc92e9403682735d25348c19c",
+      "size_bytes": 20260
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/workspace/OAI/Algorithms/SubexponentialSAT/Main.lean",
+      "sha256": "cbd4cebf71f1d3239c21241f946d05e8de802dbb9c138713f8e7182d868b2d1c",
+      "size_bytes": 590
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/workspace/ComparatorChallenges/SubexponentialSAT.lean",
+      "sha256": "4183b2057cff350d66848215ff7167196dfc20e1891b598fdddea59077a76685",
+      "size_bytes": 7833
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/source-build-gated-r4-receipt.json",
+      "sha256": "0a1a693fa6848c575b34907bd1f6bb5671653de1c02d6fc5ec0cac5585595e95",
+      "size_bytes": 1636
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/source-build-gated-r4.txt",
+      "sha256": "7c805711419dd84c01e6fd71ad2b9c548238245757730a55c71b8910608c1cde",
+      "size_bytes": 297435
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/temporary-suspension-r1.json",
+      "sha256": "73584dc6355248c7899afe15e527281af1a0ac5641071d78ff321a655b2341ef",
+      "size_bytes": 1604
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/temporary-resumption-r1.json",
+      "sha256": "7765cec437c7dd350ff481edf35dd76d4df8e87f04b223240860bda90c12689f",
+      "size_bytes": 10362
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/memory-pressure-suspension-r2-prepared.json",
+      "sha256": "035f3bc177183bdacc68bfd022f76ffc265ca7a99e0aea4de0e796af1350d072",
+      "size_bytes": 5796
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/memory-pressure-suspension-r2.json",
+      "sha256": "34d3b7d059439eea0b9d5a41df8470fad59b22b524403b62b1ea58e1a018ca95",
+      "size_bytes": 11132
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/memory-pressure-resumption-r3.json",
+      "sha256": "de271acadc3b41a6556f614aafcd9595bf7f9ff762821b72ddc9947c88b095db",
+      "size_bytes": 6215
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/logs/memory-pressure-resumption-r4.json",
+      "sha256": "810e07a6d0b5c63f77ec064f91f998f4ab5b0fee948d72b8f210670a2451f9d5",
+      "size_bytes": 3879
+    },
+    {
+      "path": "<REPLICATION_ROOT>/openai/aggregate_native_result_r4.py",
+      "sha256": "a4d5e8bffd81a7100121c01e7ee2fa40ca94d595a8e524624ce1774457f29341",
+      "size_bytes": 37763
+    }
+  ],
+  "review_cpu_seconds": 0.261073,
+  "review_wall_seconds": 0.45030345800000005,
+  "review_resource_scope": "This independent final hash/parse/report subprocess; earlier bounded reads/model/coordination excluded. Outercheckpoint includes it, avoid doublecount.",
+  "incremental_usd": 0,
+  "reproduction_python": "\nimport ast,datetime,hashlib,json,os,re,shlex,time\nfrom pathlib import Path\ncpu=time.process_time();started=time.monotonic();b=Path('research/eth-external-replication-20261104/openai').resolve();project=b.parents[2]\nrows={};stats={};checks=[]\ndef ident(p):\n p=Path(p).absolute();assert p.resolve()==p and p.is_file() and not p.is_symlink(),p\n if str(p) not in rows:\n  a=p.stat();h=hashlib.sha256()\n  with p.open('rb') as s:\n   for block in iter(lambda:s.read(1024*1024),b''):h.update(block)\n  z=p.stat();key=lambda q:(q.st_dev,q.st_ino,q.st_size,q.st_mtime_ns);assert key(a)==key(z),p\n  rows[str(p)]={'path':str(p),'sha256':h.hexdigest(),'size_bytes':z.st_size};stats[str(p)]=key(z)\n return rows[str(p)]\ndef load(p):ident(p);return json.loads(Path(p).read_text())\ndef verify(name,condition):\n assert condition,name\n checks.append(name)\ndef bind(row,p):verify('binding '+str(Path(p).relative_to(b)),row==ident(p))\ndef epoch(s):return datetime.datetime.fromisoformat(s.replace('Z','+00:00')).timestamp()\nfp='c84c8907998f23cc282a29ae7fef4a37cbaff735327096e748afe546af8c4f52';module='OAI.Algorithms.SubexponentialSAT.Main';target='OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.exact_count_and_sat';axioms=['propext','Quot.sound','Classical.choice']\nreal=b/'elan/toolchains/leanprover--lean4---v4.34.1';python='/Applications/Xcode.app/Contents/Developer/usr/bin/python3';phases={}\nfor label,name,timeout in [('r2-01-pre-identity','pre-identity',300),('r2-02-trace','trace',600),('r2-03-audit','audit',1800)]:\n folder=b/'native-phase-records'/label;result=load(folder/'phase-result.json');inputs=load(folder/'phase-inputs.json');prep=load(folder/'phase-prepared.json');stage=folder/'stages'/name;start=load(stage/'prepared.json');end=load(stage/'finished.json');raw=ident(stage/'raw.log')\n verify(name+' closed successful',result['schema']=='openai-native-phase/1' and result['phase']==name and result['status']=='passed' and result['interrupt_signal'] is None and result['record_directory']==str(folder))\n verify(name+' preparation/result lineage',prep['phase']==name and prep['started_utc']==result['started_utc'] and prep['record_directory']==str(folder))\n bind(result['phase_inputs'],folder/'phase-inputs.json');bind(result['stage_finished'],stage/'finished.json')\n verify(name+' start/end/raw bindings',all(end[k]==v for k,v in start.items()) and end['schema']=='eth-ci-stage/1' and type(end['exit_code']) is int and end['exit_code']==0 and end['reason'] is None and end['name']==name and end['raw_log_sha256']==raw['sha256'] and end['raw_log_bytes']==raw['size_bytes'] and result['stage_receipts']==[end])\n verify(name+' shared exact fingerprint',result['input_fingerprint']==inputs['input_fingerprint']==fp and hashlib.sha256(json.dumps(inputs['selected_inputs'],sort_keys=True,separators=(',',':')).encode()).hexdigest()==fp)\n verify(name+' declared command/cwd/cap',end['argv']==inputs['argv'] and inputs['cwd']==end['cwd']==str(b/'workspace') and inputs['timeout_seconds']==end['timeout_seconds']==timeout and inputs['export_input'] is None and end['stdout_is_export'] is False)\n operations={'pre-identity':[python,str(b/'verify_source_identity_r3.py')],'trace':['lake','--no-build','build','+'+module,'+ComparatorChallenges.SubexponentialSAT'],'audit':['lake','env','lean','--run',str(b.parent/'verification/AuditTargets.lean'),module,target]}\n verify(name+' original argv',inputs['argv']==[python,str(b/'in_workspace.py')]+operations[name])\n env=inputs['environment'];expected={'PATH':os.pathsep.join(dict.fromkeys(map(str,[real/'bin',Path(python).resolve().parent,Path('/usr/bin'),Path('/bin'),Path('/usr/sbin'),Path('/sbin'),Path('/opt/homebrew/bin')]))),'HOME':str(folder/'home'),'TMPDIR':str(folder/'tmp'),'LANG':'en_US.UTF-8','LC_ALL':'en_US.UTF-8','PYTHONUTF8':'1','PYTHONDONTWRITEBYTECODE':'1','ELAN_HOME':str(b/'elan'),'XDG_CACHE_HOME':str(b/'cache'),'MATHLIB_CACHE_DIR':str(b/'cache/mathlib'),'LEAN_SYSROOT':str(real),'LEAN_NUM_THREADS':'2','LEAN_ABORT_ON_PANIC':'1','GIT_CONFIG_NOSYSTEM':'1','GIT_TERMINAL_PROMPT':'0','GIT_OPTIONAL_LOCKS':'0','GIT_NO_LAZY_FETCH':'1','GIT_NO_REPLACE_OBJECTS':'1'}\n verify(name+' exact constructed environment',env==expected and inputs['environment_keys']==sorted(expected))\n verify(name+' recorded time enclosure',epoch(result['started_utc'])<=end['started_utc_epoch'] and epoch(result['finished_utc'])>=end['started_utc_epoch']+end['wall_seconds'])\n phases[name]={'directory':str(folder),'result':result,'inputs':inputs,'stage':end,'raw':raw,'phase_result':ident(folder/'phase-result.json')}\ncontent=phases['pre-identity']['inputs']['selected_inputs'];verify('three selected input contents identical',all(p['inputs']['selected_inputs']==content for p in phases.values()))\nverify('exact named original contract',content['module']==module and content['challenge']=='ComparatorChallenges.SubexponentialSAT' and content['theorems']==[target] and content['original_comparator_nanoda_enabled'] is False)\nverify('25 selected files and R2launcher actual rehash',len(content['files'])==25 and all(ident(Path(row['path']))==row for row in content['files'].values()) and ident(b/'verify_native_phase_r2.py')==content['launcher'] and content['launcher']['sha256']=='fe3b12c0b8312a6b0cdb5ec1c6d88933cbff796bc92e9403682735d25348c19c')\nconst={}\nfor node in ast.parse((b/'verify_native_phase_r2.py').read_text()).body:\n if isinstance(node,ast.Assign) and len(node.targets)==1 and isinstance(node.targets[0],ast.Name):\n  try:const[node.targets[0].id]=ast.literal_eval(node.value)\n  except (ValueError,TypeError):pass\nverify('all15 fixed R2pins agree',len(const['PINS'])==15 and all(content['files'][name]['sha256']==digest for name,digest in const['PINS'].items()))\nexpect=load(b/'identity_expectations_r1.json');config=load(b/'source/lean/ComparatorChallenges/SubexponentialSAT.json');manifest=load(b/'source-manifest.json');workspace=load(b/'workspace-config-r2.json')\nverify('source/toolchain/target provenance',manifest['commit']=='4eaee87548250b2682affda7d05d947c05554bae' and manifest['mathlib_commit']=='d13f23b723b8a846827a245b89c10fc7d3f11612' and len(manifest['files'])==3092 and config['solution_module']==module and config['theorem_names']==[target] and config['permitted_axioms']==axioms and config['enable_nanoda'] is False)\nverify('two config/eight runtime rows agree',all(content['files']['workspace/'+r['path']]['sha256']==r['sha256'] for r in workspace['workspace_config']) and len(expect['expected_runtime_files'])==8 and all(content['files']['real4341/'+r['path']]['sha256']==r['sha256'] for r in expect['expected_runtime_files']))\nidentity=json.loads(Path(phases['pre-identity']['raw']['path']).read_text());verify('identity actual raw equals saved result',identity==phases['pre-identity']['result']['identity_metadata'])\nverify('identity scope complete',identity['all_pinned_input_checks_passed'] is True and identity['failures']==[] and identity['closure_source_files_checked_per_copy']==3092 and identity['workspace_lean_inventory_count']==identity['expected_workspace_lean_inventory_count']==3093 and identity['workspace_config_files_checked']==2 and identity['workspace_lean_config_files_checked']==1 and identity['recorded_r2_library_globs_present'] is True and identity['selected_real_runtime_prefix']==str(real))\nverify('identity9dependency/runtime facts',len(identity['dependencies'])==9 and {r['name']:r['actual_commit'] for r in identity['dependencies']}=={r['name']:r['rev'] for r in expect['expected_dependencies']} and all(r['passed'] and not r['tracked_changes_against_expected'] and not r['tracked_index_changes_against_expected'] and r['remote_matches_expected_https_repository'] for r in [identity['upstream']]+identity['dependencies']) and all(r['passed'] for r in identity['runtime_files']))\naudit=[json.loads(x) for x in Path(phases['audit']['raw']['path']).read_text().splitlines()];verify('audit raw/result exact three events',audit==phases['audit']['result']['audit_events'] and len(audit)==3 and all(r['schema']=='eth-target-axiom-audit/1' and r['module']==module for r in audit))\ne,t,c=audit;verify('actual target transitive audit acceptance',e['event']=='environment' and e['load_level']=='private' and e['initializer_execution_enabled'] is False and e['load_extensions'] is False and e['standard_axiom_signature_check'] is True and e['permitted_axioms']==axioms and t['event']=='target' and t['target']==target and t['passed'] is True and t['visited_constants']==94277 and set(t['axioms'])==set(axioms) and t['disallowed_axioms']==[] and c['event']=='complete' and c['passed'] is True and c['targets_checked']==1)\ntrace=Path(phases['trace']['raw']['path']).read_text();verify('actual no-build trace success line','All targets up-to-date (12015 jobs).' in trace)\nverify('reference placeholder warning keptvisible','ComparatorChallenges/SubexponentialSAT.lean:194:8: declaration uses `sorry`' in trace)\nfor mod in [module,'ComparatorChallenges.SubexponentialSAT']:\n row=next(r for r in manifest['files'] if r['module']==mod);verify(mod+' sourcecopy hash unchanged',ident(b/'workspace'/(mod.replace('.','/')+'.lean'))['sha256']==row['sha256'])\nbuild=load(b/'logs/source-build-gated-r4-receipt.json');digest=build['checkpoint_run_result'];source_raw=ident(b/'logs/source-build-gated-r4.txt');source_text=Path(source_raw['path']).read_text();header,_=json.JSONDecoder().raw_decode(source_text[source_text.index('\\n{')+1:])\nverify('actual source wrapper/raw closure',ident(b/'logs/source-build-gated-r4-receipt.json')['sha256']=='0a1a693fa6848c575b34907bd1f6bb5671653de1c02d6fc5ec0cac5585595e95' and build['exec_session_id']==11317 and build['final_exec_exit_code']==0 and digest['exit_code']==0 and digest['timed_out'] is False and digest['revision_event_id']==3993 and digest['log_sha256']==source_raw['sha256']=='7c805711419dd84c01e6fd71ad2b9c548238245757730a55c71b8910608c1cde' and digest['log_size']==source_raw['size_bytes']==297435 and 'Build completed successfully (12015 jobs).' in source_text)\nverify('source header actualoriginaltarget',header['source_module_count']==3092 and header['source_hashes_checked'] is True and header['argv']==[str(real/'bin/lake'),'build','+'+module,'+ComparatorChallenges.SubexponentialSAT'] and header['compiler_frontend_slots']==3 and header['lean_runtime_threads']==4)\nverify('closed source then first3nonoverlap',epoch(build['captured_utc'])<phases['pre-identity']['stage']['started_utc_epoch'] and all(left['stage']['started_utc_epoch']+left['stage']['wall_seconds']<=right['stage']['started_utc_epoch'] for left,right in zip(list(phases.values()),list(phases.values())[1:])))\nschedule={n:load(b/'logs'/n) for n in ['temporary-suspension-r1.json','temporary-resumption-r1.json','memory-pressure-suspension-r2-prepared.json','memory-pressure-suspension-r2.json','memory-pressure-resumption-r3.json','memory-pressure-resumption-r4.json']}\na=schedule['temporary-suspension-r1.json'];z=schedule['temporary-resumption-r1.json'];verify('wholegroup saved stop/resume ownership states',a['pgid']==z['process_group']==25130 and z['signal']=='SIGCONT' and {int(r['pid']) for r in a['verified_members_before']}=={int(r['pid']) for r in z['before']} and all(r['state'].startswith('T') for r in a['observed_states_after']) and all(r['state'].startswith('T') for r in z['before']) and all(not r['state'].startswith('T') for r in z['after_one_second']) and epoch(a['at_utc'])<epoch(z['signaled_utc']))\na=schedule['memory-pressure-suspension-r2-prepared.json'];s=schedule['memory-pressure-suspension-r2.json'];r3=schedule['memory-pressure-resumption-r3.json'];r4=schedule['memory-pressure-resumption-r4.json']\nverify('preparedintent versus closedR2',all(s[k]==v for k,v in a.items()) and 'finished_utc' not in a and s['selected_stopped'] is True and s['intended_signal']=='SIGSTOP' and s['group']==25130 and s['proof_source_runtime_or_argv_changed'] is False)\ndef state(d,which,pid):return next(r['state'] for r in d[which] if int(r['pid'])==pid)\nverify('selected stoppedworkers preserveownership',all(int(r['ppid'])==int(r['pgid'])==25130 for r in s['after'] if int(r['pid']) in [98759,98770]) and all(state(s,'after',pid).startswith('T') for pid in [98759,98770]))\nverify('R3Setup-only savedresumption',r3['selected_pid']==98770 and r3['remaining_deliberately_paused_pid']==98759 and r3['intended_signal']=='SIGCONT' and r3['proof_source_runtime_or_argv_changed'] is False and state(r3,'before',98770).startswith('T') and not state(r3,'after',98770).startswith('T') and state(r3,'after',98759).startswith('T'))\nverify('R4lastLoop savedresumption',r4['selected_pid']==98759 and r4['remaining_deliberately_paused_pids']==[] and r4['intended_signal']=='SIGCONT' and r4['proof_source_runtime_or_argv_changed'] is False and state(r4,'before',98759).startswith('T') and not state(r4,'after',98759).startswith('T') and epoch(s['finished_utc'])<epoch(r3['started_utc'])<epoch(r4['started_utc'])<epoch(build['captured_utc']))\nverify('finalR4aggregator pinned',ident(b/'aggregate_native_result_r4.py')['sha256']=='a4d5e8bffd81a7100121c01e7ee2fa40ca94d595a8e524624ce1774457f29341')\nfor path,key in stats.items():\n q=Path(path).stat();assert (q.st_dev,q.st_ino,q.st_size,q.st_mtime_ns)==key,path\nphasecpu=sum(p['stage']['child_cpu_seconds'] for p in phases.values());phasewall=sum(p['stage']['wall_seconds'] for p in phases.values());begin=next(x[len('# started_at: '):] for x in source_text.splitlines() if x.startswith('# started_at: '));utcspan=epoch(build['captured_utc'])-epoch(begin)\nreport={'schema':'openai-native-saved-evidence-review-part1/1','reviewer':'codex-eth-anthropic-replication','same_team_review':True,'author_note':'Reviewer authored some shared helpers/aggregator; this is a separate saved-evidence/hash review of roots actual execution, not external independent proof checking. No helper imported or verifier rerun.','observed_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'status':'Closed sourcebuild and first3phase evidence bindings PASS; overall8phase native replication still INCOMPLETE','all_part1_checks_passed':True,'checks':checks,'input_fingerprint':fp,'source_build':{'wrapper':ident(b/'logs/source-build-gated-r4-receipt.json'),'raw':source_raw,'actual_exit_code':0,'checkpoint_event':3993,'actual_captured_utc':build['captured_utc'],'source_header':header,'child_cpu_seconds':digest['cpu_seconds'],'checkpoint_reported_monotonic_wall_seconds':digest['wall_seconds'],'utc_header_start':begin,'utc_start_to_capture_observation_seconds':utcspan,'utc_minus_monotonic_seconds':utcspan-digest['wall_seconds'],'clock_scope':'UTC observation span/difference is not compute or CPU time; capture may lag actual process exit.'},'phases':[{'name':n,'directory':p['directory'],'phase_result':p['phase_result'],'stage':p['stage'],'actual_raw':p['raw'],'scope':{'pre-identity':'Actual R3 source/config/dependency/runtime identity inspection; no kernel verdict.','trace':'Actual original-real-prefix Lake no-build closure/trace check; replayed output not source re-elaboration or fresh kernel replay.','audit':'Actual exact named-target transitive axiom inspection94277constants; no statement comparison or fresh/independent kernel replay.'}[n]} for n,p in phases.items()],'audit_actual_events':audit,'selected_current_rehash':{'files':25,'launcher':content['launcher'],'bytes':sum(r['size_bytes'] for r in content['files'].values()),'scope':'Rehashed all25selected files once pluslauncher; verified manifest/config/runtime declarations. Did not rerun Git or rehash all619? sourceleafcopies; the actual preidentity helper result/hash binds its reported3092percopy checks.'},'manual_scheduling':{'records':[{'name':n,'identity':ident(b/'logs'/n),'started_or_signaled_utc':x.get('started_utc',x.get('at_utc',x.get('signaled_utc'))),'finished_utc':x.get('finished_utc'),'intent_only':n.endswith('prepared.json')} for n,x in schedule.items()],'scope':'Saved root ownership/state observations only, no live process probes/signals. Initial3admission/four runtime threads, wholecampaign pause and latertwo-worker pauses preserved; R3Setup andR4Loop resumptions occurred separately. No overnightcompute or uninterruptedthreefrontend claim.'},'reference_warning':'Original reference ComparatorChallenges.SubexponentialSAT theorem atline194 has a replayed sorry placeholder warning, kept visible. This does not establish sorryAx in namedsolutiontarget; actual target audit reports exactly standard3axioms. No claim of globally sorry-free source/environment.','remaining_phase_status':{'comparator':'Running/notreviewed at task handoff; no running files read/hashed.','selected-export':'Pending/notreviewed','extra-nanoda':'Pending/notreviewed','original-fresh':'Pending/notreviewed','post-identity':'Pending/notreviewed'},'partial_resources':{'first3_inner_child_cpu_seconds':phasecpu,'first3_inner_wall_seconds_summed':phasewall,'source_plus_first3_child_cpu_seconds':digest['cpu_seconds']+phasecpu,'source_plus_first3_reported_wall_seconds_summed':digest['wall_seconds']+phasewall,'scope':'Closedsourcecheckpoint plus3innerstage costs only, not finalcampaign. Inner helper/GitCPU alreadyincluded; outer root phase checkpoints and futurestages notadded. No RSS/performance comparison.'},'limits':['No proof/tool/phase/build execution, imports, network, cloud or running-log immutable pin by reviewer.','Current file hashes bind inputs; no dependency-cache binary rederivation/system-library/archive provenance added.','NativefakeLandrun no OSisolation; exact original contract comparison, fresh samekernel replay and extra independentNanoda stillpending atthispartialreview.','Formal exacttarget/model interpretation and practical SAT/SHA256d consequences remain separate; no finalOpenAI PASS inferred.'],'artifacts':list(rows.values()),'review_cpu_seconds':time.process_time()-cpu,'review_wall_seconds':time.monotonic()-started,'review_resource_scope':'This independent final hash/parse/report subprocess; earlier bounded reads/model/coordination excluded. Outercheckpoint includes it, avoid doublecount.','incremental_usd':0,'reproduction_python':review_source}\nreport['selected_current_rehash']['scope']='Rehashed all25selected files once pluslauncher; verified manifest/config/runtime declarations. Did not rerun Git or rehash all6184source leaf copies; actual preidentity helper result/hash binds its reported3092percopy checks.'\nmd='''# Native OpenAI saved evidence: part1\n\nClosed source build, pre-identity, real-prefix no-build trace and named-target axiom audit have consistent actual saved bindings. This is a same-team review of root execution: the reviewer authored shared helpers, independently parsed/rehashed the saved evidence here, and did not rerun any verifier or import those helpers. Overall eight-phase replication remains INCOMPLETE.\n\nSource wrapper0a1a693f\u2026 binds raw7c805711\u2026 (297435B), actual zero exit, digest3993 and capture2026-11-05T14:21:52Z. Source reports3092copied modules and12015Lakejobs as separate counts. Root source childCPU32075.406502s and reported monotonic wall20746.93892s are separate from74439.008618s UTC header-start to capture; the difference is not compute time.\n\nAll three closed phase preparations, inputs, stage preparations/results, raw files and final phase results match. Each has exact expected argv/cwd/cap, two-thread original4.34.1 constructed environment, no interrupt/failure, and shared fingerprint c84c8907998f23cc282a29ae7fef4a37cbaff735327096e748afe546af8c4f52. All25selected files plus R2launcher were currently rehashed once. The identity result records3092sourcefiles percopy,3093workspace Lean entries,2configurations,9clean pinned dependencies and8original runtimefiles; the reviewer did not rerun Git or all6184sourceleaf hashes.\n\nActual no-build trace ends `All targets up-to-date (12015 jobs).` It replays the unchanged reference Challenge theorem warning atline194 using `sorry`; this remains visible. It is distinct from the solution target's transitive audit, which traversed94277constants and reports only propext/Classical.choice/Quot.sound, private imports, extensions and initializer execution disabled, and trusted Init axiom signatures. This is not exact statement comparison or fresh/independent kernel replay.\n\nSaved manual scheduling records separately establish whole-group pause19:19:45.706707\u2192resume20:08:21.219697UTC onNovember4, two-worker suspension22:57:05.218057UTC, Setup-only resumption14:13:29.543348UTC onNovember5, then Loop resumption14:18:44.356153UTC. PreparedR2 is intent only; actualR2/R3/R4before-after states are consistent. No live process probe or signal was performed. This was not uninterrupted three-frontend execution, and the overnight UTCgap is not assigned CPU time.\n\nComparator was still running at the task handoff and its files were not inspected or pinned. Export, extraNanoda, originalfresh and postidentity remain unreviewed. No final native target verdict follows from this part. The originalComparator config remains Nano-disabled; the planned additional recordedNanoda is separate. NativefakeLandrun gives no OS isolation.\n\nRoot authorized final aggregation utility R4a4d5e8bf\u2026: it changes only an imprecise scheduling minute to reference the bound receipt timestamp. Independent literal-diff ACK confirms no behavior/pin/acceptance change; preservedR3 and earlier versions remain. No actual full aggregation was run. Companion JSON contains exact hashes, selected scope, partial resource totals and reproduction program. Root owns subsequent actual checks and final review.\n'''\nfor ext,value in [('json',report),('md',md)]:\n p=b/('native-saved-evidence-review-part1-r1.'+ext)\n with p.open('x') as s:s.write(json.dumps(value,indent=2)+'\\n' if ext=='json' else value);s.flush();os.fsync(s.fileno())\nprint(json.dumps({'part1_passed':True,'checks':len(checks),'json':ident(b/'native-saved-evidence-review-part1-r1.json'),'md':ident(b/'native-saved-evidence-review-part1-r1.md'),'review_cpu_seconds':report['review_cpu_seconds'],'review_wall_seconds':report['review_wall_seconds'],'phase_cpu':phasecpu,'phase_wall':phasewall,'selected_bytes':report['selected_current_rehash']['bytes']}))\n"
+}

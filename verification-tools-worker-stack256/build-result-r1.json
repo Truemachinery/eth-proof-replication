@@ -1,0 +1,223 @@
+{
+  "schema": "nanoda-worker-resource-build/1",
+  "status": "passed",
+  "argv": [
+    "<REPLICATION_ROOT>/verification-tools/rustup/toolchains/1.99.1-aarch64-apple-darwin/bin/cargo",
+    "build",
+    "--release",
+    "--offline",
+    "--locked",
+    "--jobs",
+    "1",
+    "--manifest-path",
+    "<REPLICATION_ROOT>/verification-tools-worker-stack256/source/Cargo.toml"
+  ],
+  "cwd": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source",
+  "environment": {
+    "PATH": "<REDACTED FIELD>",
+    "RUSTC": "<REPLICATION_ROOT>/verification-tools/rustup/toolchains/1.99.1-aarch64-apple-darwin/bin/rustc",
+    "RUSTUP_HOME": "<REPLICATION_ROOT>/verification-tools/rustup",
+    "CARGO_HOME": "<REPLICATION_ROOT>/verification-tools/cargo",
+    "CARGO_TARGET_DIR": "<REPLICATION_ROOT>/verification-tools-worker-stack256/target",
+    "CARGO_NET_OFFLINE": "true",
+    "CARGO_BUILD_JOBS": "1",
+    "HOME": "<REPLICATION_ROOT>/verification-tools-worker-stack256/home",
+    "TMPDIR": "<REPLICATION_ROOT>/verification-tools-worker-stack256/tmp",
+    "LANG": "en_US.UTF-8",
+    "LC_ALL": "en_US.UTF-8"
+  },
+  "compiler": {
+    "path": "<REPLICATION_ROOT>/verification-tools/rustup/toolchains/1.99.1-aarch64-apple-darwin/bin/rustc",
+    "sha256": "1ba7bb8e273bd64125f4048d2ecce530e0a6470e565ab1b3aecf0b82b532f7b1",
+    "size_bytes": 413480
+  },
+  "cargo": {
+    "path": "<REPLICATION_ROOT>/verification-tools/rustup/toolchains/1.99.1-aarch64-apple-darwin/bin/cargo",
+    "sha256": "6d576d8058f8ca643e8fce55b64ee3c614ba64c9da2e536bae843e6a2e1f3951",
+    "size_bytes": 32182376
+  },
+  "source_provenance": {
+    "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source-provenance-r1.json",
+    "sha256": "b73658a2cec0410e1df0a90c446c5f15c0cf3a28875131027972ddece9c71dc7",
+    "size_bytes": 35396
+  },
+  "source_exact_file_count": 29,
+  "new_physical_target": "<REPLICATION_ROOT>/verification-tools-worker-stack256/target",
+  "scope": "Isolatedlocalresourceprofile build, no network or ETH execution",
+  "exit_code": 0,
+  "child_cpu_seconds": 29.215801000000003,
+  "wall_seconds": 32.241135667,
+  "raw": {
+    "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/build-r1.raw.log",
+    "sha256": "14a4387c12f70eea04bf9b23c8f1e6f0dd4f5d0808a5e3bb5d0973dc803b1b83",
+    "size_bytes": 2177
+  },
+  "original_source_binary_recorder_manifest_unchanged": true,
+  "new_binary": {
+    "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/target/release/nanoda_bin",
+    "sha256": "10e1a4ebdb6fa606ca8d7a60774d8af0655294ab0b19d03a838a5ba746b7c2d9",
+    "size_bytes": 1260088
+  },
+  "new_build_fingerprints": [
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/target/release/.fingerprint/nanoda_lib-ce8eff53b8da7bd3/bin-nanoda_bin.json",
+      "identity": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/target/release/.fingerprint/nanoda_lib-ce8eff53b8da7bd3/bin-nanoda_bin.json",
+        "sha256": "9c0da6d9b8c1db6de8036d2770c4fb20342ea2c228cea922dccce9e4d0080ae3",
+        "size_bytes": 904
+      },
+      "metadata": {
+        "rustc": 13976775244188850736,
+        "features": "[]",
+        "declared_features": "[]",
+        "target": 7220558350009484481,
+        "profile": 12538247665707517198,
+        "path": 4942398508502643691,
+        "deps": [
+          [
+            710443753704272750,
+            "num_traits",
+            false,
+            12835602721396789040
+          ],
+          [
+            6087741167004821266,
+            "num_bigint",
+            false,
+            13823216460727928658
+          ],
+          [
+            12821780872552529316,
+            "indexmap",
+            false,
+            4998503611194009897
+          ],
+          [
+            12832915883349295919,
+            "serde_json",
+            false,
+            12211602256866193260
+          ],
+          [
+            13548984313718623784,
+            "serde",
+            false,
+            3703054434039049711
+          ],
+          [
+            15205589926213121105,
+            "nanoda_lib",
+            false,
+            2776807296144725803
+          ],
+          [
+            16055916053474393816,
+            "rustc_hash",
+            false,
+            9375683424746926966
+          ],
+          [
+            16795989132585092538,
+            "num_integer",
+            false,
+            7449484727857311186
+          ],
+          [
+            18361894353739432590,
+            "semver",
+            false,
+            14411436942226668433
+          ]
+        ],
+        "local": [
+          {
+            "CheckDepInfo": {
+              "dep_info": "release/.fingerprint/nanoda_lib-ce8eff53b8da7bd3/dep-bin-nanoda_bin",
+              "checksum": false
+            }
+          }
+        ],
+        "rustflags": [],
+        "config": 9396254390672932401,
+        "compile_kind": 0
+      }
+    },
+    {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/target/release/.fingerprint/nanoda_lib-84797826779a110d/lib-nanoda_lib.json",
+      "identity": {
+        "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/target/release/.fingerprint/nanoda_lib-84797826779a110d/lib-nanoda_lib.json",
+        "sha256": "4b2f94bb23bf0fd0922a87c082de09bc30d2b7c7aa2e32621b5ef35d6e63d48d",
+        "size_bytes": 843
+      },
+      "metadata": {
+        "rustc": 13976775244188850736,
+        "features": "[]",
+        "declared_features": "[]",
+        "target": 14554726605636861576,
+        "profile": 7901468410746105868,
+        "path": 10763286916239946207,
+        "deps": [
+          [
+            710443753704272750,
+            "num_traits",
+            false,
+            12835602721396789040
+          ],
+          [
+            6087741167004821266,
+            "num_bigint",
+            false,
+            13823216460727928658
+          ],
+          [
+            12821780872552529316,
+            "indexmap",
+            false,
+            4998503611194009897
+          ],
+          [
+            12832915883349295919,
+            "serde_json",
+            false,
+            12211602256866193260
+          ],
+          [
+            13548984313718623784,
+            "serde",
+            false,
+            3703054434039049711
+          ],
+          [
+            16055916053474393816,
+            "rustc_hash",
+            false,
+            9375683424746926966
+          ],
+          [
+            16795989132585092538,
+            "num_integer",
+            false,
+            7449484727857311186
+          ],
+          [
+            18361894353739432590,
+            "semver",
+            false,
+            14411436942226668433
+          ]
+        ],
+        "local": [
+          {
+            "CheckDepInfo": {
+              "dep_info": "release/.fingerprint/nanoda_lib-84797826779a110d/dep-lib-nanoda_lib",
+              "checksum": false
+            }
+          }
+        ],
+        "rustflags": [],
+        "config": 9396254390672932401,
+        "compile_kind": 0
+      }
+    }
+  ]
+}

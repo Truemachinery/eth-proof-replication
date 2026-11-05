@@ -1,0 +1,222 @@
+{
+  "schema": "eth-native-interrupted-publication-preparation/1",
+  "created_utc": "2026-11-05T18:17:16.348434+00:00",
+  "status": "prepared-awaiting-root-final-map-and-package-review",
+  "functional_wrapper": {
+    "path": "publish_native_interrupted_r1.py",
+    "sha256": "72fd73ea535a320e25c0f809cbe18713a545e014b7d3770f7bd6ba6b7ec2fa19"
+  },
+  "catalog_successor": {
+    "path": "publish_native_interrupted_r2.py",
+    "sha256": "5cdac43c9afa76a1af75e06ea0a29a35ee0d94cb5272b1eaf3c28ee460c6c95f",
+    "functional_bodies_identical": true,
+    "delta_receipt": "publication/interrupted-publisher-catalog-r2-receipt.json"
+  },
+  "metadata_guard": {
+    "path": "publication/native_interrupted_guard_r1.py",
+    "sha256": "e0c2f49aed9006ac82157cad20d913fe41a02e61fd8bc62614bdc279f9cde743"
+  },
+  "source_peer_review": {
+    "path": "publication/native-interrupted-publisher-source-review-claims-r1.json",
+    "sha256": "5b8d2823d7f10d61142b13c58629611da3cd14c18ad0b399b959eaa3a2fb1992"
+  },
+  "controls": [
+    {
+      "path": "publication/interrupted-publisher-control-result-r1.json",
+      "sha256": "0bbbc66d321ea5619cbee72cdff67f10c6809a892706c4066099abb7b6118375",
+      "checks": 23,
+      "scope": "Synthetic trusted metadata gate substituted in temporary files; no factual guard validation, real evidence, checker, network or export copy"
+    },
+    {
+      "path": "publication/interrupted-metadata-control-result-r1.json",
+      "sha256": "aca1fbcf918a040cc5b57e58398722e8cfce9266439ec9c0b374fae88734c76c",
+      "checks": 22,
+      "scope": "Real gate with hash-bound fake headers that must refuse before original phase reads; no actual closure acceptance or proof/kernel/WIP/export work"
+    }
+  ],
+  "measured_fixture_run": {
+    "checkpoint": 4104,
+    "cpu_seconds": 0.524469,
+    "wall_seconds": 0.543545,
+    "scope": "One sequential command with23adapter and22real-gate fakeheader refusers, no proof or export copy."
+  },
+  "protected_sources": {
+    "publish_package.py": "a72ed2f73b37daaa375ee62c238897ba8e86c7549292bf5e3d6f1412fcc8675c",
+    "publication/native_worker_guard_r1.py": "68d3ef6d9e0c3d4ae436b2901f4ac483cfa49a5f65982ca07d7e56ea7a21c726",
+    "publish_native_incomplete_r1.py": "2b093efff7a723dd0bcb5d2aa00a724ab6557de7ca93f3ec45a2ed01a5de9272",
+    "publication/native_incomplete_guard_r1.py": "3c3d8696d58d90bead5a85da288b946d5c7bc995a6ede983f5c1fafd07706319",
+    "publish_native_interrupted_r1.py": "72fd73ea535a320e25c0f809cbe18713a545e014b7d3770f7bd6ba6b7ec2fa19",
+    "publication/native_interrupted_guard_r1.py": "e0c2f49aed9006ac82157cad20d913fe41a02e61fd8bc62614bdc279f9cde743"
+  },
+  "ci25_unchanged_against_frozen_public_r7": true,
+  "public_template": {
+    "path": "PUBLIC_README_TEMPLATE.md",
+    "sha256": "e6c902b5f50208f0c076fb550b2989600f240b59eb6b40179a3e52ee71ec6a20",
+    "previous_source_backup": "publication/public-readme-before-interrupted-result-r1.md",
+    "root_full_read_ack_received": true
+  },
+  "actual_closed_result": {
+    "path": "openai/native-interrupted-records/worker-stack256-r1-01/native-interrupted-result.json",
+    "sha256": "89c492ef8435b3776aeb4f255bc4c3135be3db960d53673fdce2da3b88f1844f",
+    "status_scope": "Root executed4102. Original7 pass; extraRust interrupted, acceptance/exit/finalcostunknown. This preparer read smallclosed summary, didnotrerunclosure."
+  },
+  "actual_seal_sha256": "da02a84c83078977d324f3867d854bc0f6462af6ba86b516a340d0c81c1d751b",
+  "known_completed_cpu_seconds": 36122.705229,
+  "unknown_interrupted_and_campaign_final_costs": true,
+  "final_human_report": {
+    "path": "openai/native-replication-report-r1.md",
+    "sha256": "0d833dbcae4fb4c528482381c186a28688e24346f1cc3b831c2cbafa8e4c84b6",
+    "relative_link_targets": [
+      {
+        "path": "openai/native-retry-records/worker-stack256-r3-02/retry-result.json",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/logs/interruption-recovery-observation-r1.json",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-phase-records/r2-08-post-identity/phase-result.json",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-interrupted-records/worker-stack256-r1-01/native-interrupted-result.json",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-interrupted-records/worker-stack256-r1-01/closure-finished.json",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-saved-evidence-review-r1.md",
+        "exists_at_preparation": false
+      },
+      {
+        "path": "openai/native-saved-evidence-review-r1.json",
+        "exists_at_preparation": false
+      },
+      {
+        "path": "verification/source-scope-addendum-r2.md",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-phase-records/r2-01-pre-identity/stages/pre-identity/raw.log",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-phase-records/r2-01-pre-identity/phase-inputs.json",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-phase-records/r2-01-pre-identity/phase-result.json",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-phase-records/r2-02-trace/stages/trace/raw.log",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-phase-records/r2-02-trace/phase-inputs.json",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-phase-records/r2-02-trace/phase-result.json",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-phase-records/r2-03-audit/stages/audit/raw.log",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-phase-records/r2-03-audit/phase-inputs.json",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-phase-records/r2-03-audit/phase-result.json",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-phase-records/r2-04-comparator/stages/comparator/raw.log",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-phase-records/r2-04-comparator/phase-inputs.json",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-phase-records/r2-04-comparator/phase-result.json",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-phase-records/r2-05-selected-export/stages/selected-export/raw.log",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-phase-records/r2-05-selected-export/phase-inputs.json",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-phase-records/r2-05-selected-export/phase-result.json",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-phase-records/r2-07-original-fresh/stages/original-fresh/raw.log",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-phase-records/r2-07-original-fresh/phase-inputs.json",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-phase-records/r2-07-original-fresh/phase-result.json",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/logs/source-build-gated-r4-receipt.json",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/logs/source-build-gated-r4.txt",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/workspace-config-r2.json",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-phase-records/r2-06-extra-nanoda/phase-result.json",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-retry-records/worker-stack256-r2-01/retry-result.json",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "verification-tools-worker-stack256/source-provenance-r1.json",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-incomplete-runbook-path-addendum-r1.md",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-saved-evidence-review-part1-r1.json",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-saved-evidence-review-part2-r1.json",
+        "exists_at_preparation": true
+      },
+      {
+        "path": "openai/native-saved-evidence-review-part2-r1-bookkeeping-note.json",
+        "exists_at_preparation": true
+      }
+    ],
+    "link_coverage_scope": "36exacttargets captured; required combinedreview pair may still be pending. Final actualplan/export must include everytarget beforefreeze; no futurefile presence impliesclosure."
+  },
+  "actual_final_map_created": false,
+  "actual_export_created": false,
+  "private_submission_edited": false,
+  "proof_tools_network_or_large_assets_read": false,
+  "privacy_scope": "Reuses pinned a72 data redaction/CF treatment; emptyouterJSON stayslocal withobservedmetadata and recoveredraw neverhascompleted-loglabel."
+}

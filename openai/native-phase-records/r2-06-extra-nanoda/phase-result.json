@@ -1,0 +1,37 @@
+{
+  "schema": "openai-native-phase/1",
+  "phase": "extra-nanoda",
+  "status": "failed",
+  "record_directory": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda",
+  "started_utc": "2026-11-05T14:45:47.037480+00:00",
+  "accounting": "Native execution, no systemd-managed service. Recorder child_cpu_seconds covers reaped child processes/descendants, including capture and checker wrappers. Do not add nested Nanoda CPU a second time. No RSS measurement is claimed.",
+  "scope": "One explicit phase only; root aggregates all required closed results. Native mode has no Linux isolation.",
+  "input_fingerprint": "c84c8907998f23cc282a29ae7fef4a37cbaff735327096e748afe546af8c4f52",
+  "error": "CalledProcessError: Command '['/Applications/Xcode.app/Contents/Developer/usr/bin/python3', '<REPLICATION_ROOT>/openai/in_workspace.py', '/Applications/Xcode.app/Contents/Developer/usr/bin/python3', '<REPLICATION_ROOT>/verification-tools/record_nanoda.py', '<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/additional-nanoda-config.json']' died with <Signals.SIGABRT: 6>.",
+  "finished_utc": "2026-11-05T14:48:09.757013+00:00",
+  "interrupt_signal": null,
+  "stage_receipts": [
+    {
+      "schema": "eth-ci-stage/1",
+      "name": "extra-nanoda",
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "<REPLICATION_ROOT>/openai/in_workspace.py",
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "<REPLICATION_ROOT>/verification-tools/record_nanoda.py",
+        "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/additional-nanoda-config.json"
+      ],
+      "cwd": "<REPLICATION_ROOT>/openai/workspace",
+      "started_utc_epoch": 1793889948.087543,
+      "timeout_seconds": 7200,
+      "stdout_is_export": false,
+      "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.",
+      "exit_code": -6,
+      "reason": null,
+      "wall_seconds": 141.66858196258545,
+      "child_cpu_seconds": 256.887489,
+      "raw_log_sha256": "590ccc60513da51ab0aad98c32b68c0f485d0fda4958c7255feb5175c55bc4e2",
+      "raw_log_bytes": 101
+    }
+  ]
+}

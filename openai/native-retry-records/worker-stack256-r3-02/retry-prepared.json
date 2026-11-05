@@ -1,0 +1,21 @@
+{
+  "schema": "openai-native-resource-retry/1",
+  "protocol_variant": "openai-native-r2-nanoda-worker-stack256-cfenv-r3",
+  "logical_check": "extra-nanoda",
+  "status": "failed",
+  "record_directory": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02",
+  "started_utc": "2026-11-05T16:05:45.026930+00:00",
+  "original_r2_attempt_passed": false,
+  "resource_policy": {
+    "nanoda_num_threads": 2,
+    "compiled_requested_worker_stack_bytes": 268435456,
+    "original_compiled_requested_worker_stack_bytes": 16777216,
+    "checker_binary_changed": true,
+    "checker_logic_patch": false,
+    "main_stack_limits_changed": false,
+    "actual_nanoda_worker_extent_measured": false,
+    "export_changed": false,
+    "axiom_policy_changed": false,
+    "config_changed": false
+  }
+}

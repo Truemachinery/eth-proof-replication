@@ -1,0 +1,130 @@
+{
+  "schema": "native-nanoda-worker-resource/2",
+  "protocol_variant": "openai-native-r2-nanoda-worker-stack256-cfenv-r3",
+  "pid": 38848,
+  "pgid": 38848,
+  "observed_utc": "2026-11-05T16:05:46.587287+00:00",
+  "retry_source": {
+    "path": "<REPLICATION_ROOT>/openai/nanoda_worker_stack_retry_r3.py",
+    "sha256": "9f4fe4e87a568f8bd89d39df61ed03fc155e120e2194aa82dce038918c1f34f3",
+    "size_bytes": 24398
+  },
+  "resource_policy": {
+    "nanoda_num_threads": 2,
+    "compiled_requested_worker_stack_bytes": 268435456,
+    "original_compiled_requested_worker_stack_bytes": 16777216,
+    "checker_binary_changed": true,
+    "checker_logic_patch": false,
+    "main_stack_limits_changed": false,
+    "actual_nanoda_worker_extent_measured": false,
+    "export_changed": false,
+    "axiom_policy_changed": false,
+    "config_changed": false
+  },
+  "resource_inputs": {
+    "tool-manifest-r1.json": {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/tool-manifest-r1.json",
+      "sha256": "f90219aaeedd7bbff3746eff8167c99b8d075d1045ae5c4363bc8ebb425bc30d",
+      "size_bytes": 1872
+    },
+    "source-provenance-r1.json": {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source-provenance-r1.json",
+      "sha256": "b73658a2cec0410e1df0a90c446c5f15c0cf3a28875131027972ddece9c71dc7",
+      "size_bytes": 35396
+    },
+    "build-result-r1.json": {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/build-result-r1.json",
+      "sha256": "9746cc46746f11d88d5d0f3f5ad1458e05a57627abb90fd6d60c6f42ebef325e",
+      "size_bytes": 8241
+    },
+    "resource-only.patch": {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/resource-only.patch",
+      "sha256": "8772472e7acd9c5900d01db457b7e7ba6d5e2273c57e3f939fa5d2485412659f",
+      "size_bytes": 211
+    },
+    "worker-probe-result-r1.json": {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/worker-probe-result-r1.json",
+      "sha256": "c2d1e9442e256121dff3f627d3a6db0deb184ec5ca6d9c498dd9910a272c65cd",
+      "size_bytes": 6228
+    },
+    "tiny-controls-r1/control-result-r1.json": {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/tiny-controls-r1/control-result-r1.json",
+      "sha256": "c539e45b86bf71fbfb4b69d61a2cf3654681baf3a159ed9a2ffd6a4c7b6ccd8b",
+      "size_bytes": 7088
+    },
+    "record_nanoda.py": {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/record_nanoda.py",
+      "sha256": "c34f36d630d182708937a5280b6eda8d0723fa0ffdd85caf8fc54af17b332f48",
+      "size_bytes": 8494
+    },
+    "target/release/nanoda_bin": {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/target/release/nanoda_bin",
+      "sha256": "10e1a4ebdb6fa606ca8d7a60774d8af0655294ab0b19d03a838a5ba746b7c2d9",
+      "size_bytes": 1260088
+    }
+  },
+  "main_stack_limits_before": [
+    8372224,
+    67092480
+  ],
+  "main_stack_limits_after": [
+    8372224,
+    67092480
+  ],
+  "main_stack_limits_changed": false,
+  "actual_nanoda_worker_extent_measured": false,
+  "environment": {
+    "PATH": "<REDACTED FIELD>",
+    "HOME": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/home",
+    "TMPDIR": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/tmp",
+    "LANG": "en_US.UTF-8",
+    "LC_ALL": "en_US.UTF-8",
+    "PYTHONUTF8": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "ELAN_HOME": "<REPLICATION_ROOT>/openai/elan",
+    "XDG_CACHE_HOME": "<REPLICATION_ROOT>/openai/cache",
+    "MATHLIB_CACHE_DIR": "<REPLICATION_ROOT>/openai/cache/mathlib",
+    "LEAN_SYSROOT": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1",
+    "LEAN_NUM_THREADS": "2",
+    "LEAN_ABORT_ON_PANIC": "1",
+    "GIT_CONFIG_NOSYSTEM": "1",
+    "GIT_TERMINAL_PROMPT": "0",
+    "GIT_OPTIONAL_LOCKS": "0",
+    "GIT_NO_LAZY_FETCH": "1",
+    "GIT_NO_REPLACE_OBJECTS": "1",
+    "COMPARATOR_LANDRUN": "<REPLICATION_ROOT>/verification-tools/comparator-source/scripts/fake-landrun.sh",
+    "NANODA_REAL_BINARY": "<REPLICATION_ROOT>/verification-tools-worker-stack256/target/release/nanoda_bin",
+    "REPLICATION_CHECKER_RECORD_DIR": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/nanoda-records",
+    "__CF_USER_TEXT_ENCODING": "<SDK METADATA REDACTED>"
+  },
+  "environment_keys": [
+    "COMPARATOR_LANDRUN",
+    "ELAN_HOME",
+    "GIT_CONFIG_NOSYSTEM",
+    "GIT_NO_LAZY_FETCH",
+    "GIT_NO_REPLACE_OBJECTS",
+    "GIT_OPTIONAL_LOCKS",
+    "GIT_TERMINAL_PROMPT",
+    "HOME",
+    "LANG",
+    "LC_ALL",
+    "LEAN_ABORT_ON_PANIC",
+    "LEAN_NUM_THREADS",
+    "LEAN_SYSROOT",
+    "MATHLIB_CACHE_DIR",
+    "NANODA_REAL_BINARY",
+    "PATH",
+    "PYTHONDONTWRITEBYTECODE",
+    "PYTHONUTF8",
+    "REPLICATION_CHECKER_RECORD_DIR",
+    "TMPDIR",
+    "XDG_CACHE_HOME",
+    "__CF_USER_TEXT_ENCODING"
+  ],
+  "exec_argv": [
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "<REPLICATION_ROOT>/verification-tools-worker-stack256/record_nanoda.py",
+    "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/additional-nanoda-config.json"
+  ],
+  "cwd": "<REPLICATION_ROOT>/openai/workspace"
+}

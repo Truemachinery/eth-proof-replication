@@ -1,0 +1,10 @@
+{
+  "schema": "openai-native-interrupted-result/1",
+  "status": "preparing_interrupted_closure",
+  "source": {
+    "path": "<REPLICATION_ROOT>/openai/aggregate_native_interrupted_r1.py",
+    "sha256": "3893f6fd2ce5eca22fd99f57994bd25891367b729e31587f0d1a13e0ca9e243f",
+    "size_bytes": 21570
+  },
+  "proof_execution": false
+}

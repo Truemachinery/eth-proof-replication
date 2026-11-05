@@ -1,0 +1,20 @@
+{
+  "schema": "negative-closure-policy-controls/1",
+  "status": "passed",
+  "source_sha256": "97d65f2fcc779f4e8ea5473716c7da21cb6dea98c9ca81a76e9a80658fff8940",
+  "checks": [
+    "refuse nonterminal/noninteger code 0",
+    "refuse nonterminal/noninteger code False",
+    "refuse nonterminal/noninteger code True",
+    "refuse nonterminal/noninteger code '124'",
+    "refuse nonterminal/noninteger code None",
+    "actual124+exactreason classified as timeout",
+    "nonzero 124 does not invent timeout/kernel outcome",
+    "nonzero 125 does not invent timeout/kernel outcome",
+    "nonzero -6 does not invent timeout/kernel outcome",
+    "nonzero 1 does not invent timeout/kernel outcome",
+    "successseal after report fsync and artifactmanifest source order"
+  ],
+  "count": 11,
+  "scope": "Only AST-extracted purestage classifier and sourceclosure-order assertions. No fallback metadata function, actualattempt, proof, checker, WIP log, full aggregator, network or bigpayload read."
+}

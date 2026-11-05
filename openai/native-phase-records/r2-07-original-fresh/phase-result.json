@@ -1,0 +1,49 @@
+{
+  "schema": "openai-native-phase/1",
+  "phase": "original-fresh",
+  "status": "passed",
+  "record_directory": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh",
+  "started_utc": "2026-11-05T14:51:09.356379+00:00",
+  "accounting": "Native execution, no systemd-managed service. Recorder child_cpu_seconds covers reaped child processes/descendants, including capture and checker wrappers. Do not add nested Nanoda CPU a second time. No RSS measurement is claimed.",
+  "scope": "One explicit phase only; root aggregates all required closed results. Native mode has no Linux isolation.",
+  "input_fingerprint": "c84c8907998f23cc282a29ae7fef4a37cbaff735327096e748afe546af8c4f52",
+  "fresh_scope": "Original4.34.1 same-kernel safe/nonpartial imported-environment replay; axiom declarations admitted, constructors/recursors postchecked. Separate axiom/statement/Nanoda phases remain required.",
+  "stage_finished": {
+    "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh/stages/original-fresh/finished.json",
+    "sha256": "c51c868feafcfc94ed51916a62be4f08e6bd9f1eeaa8390f0b16502771e0345e",
+    "size_bytes": 1037
+  },
+  "phase_inputs": {
+    "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh/phase-inputs.json",
+    "sha256": "aefb98ecd20d91b3d2ff2df2b928dd2370a4cf6139af3a16b767922d7deedab7",
+    "size_bytes": 11278
+  },
+  "finished_utc": "2026-11-05T15:45:12.644074+00:00",
+  "interrupt_signal": null,
+  "stage_receipts": [
+    {
+      "schema": "eth-ci-stage/1",
+      "name": "original-fresh",
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "<REPLICATION_ROOT>/openai/in_workspace.py",
+        "lake",
+        "env",
+        "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/leanchecker",
+        "--fresh",
+        "OAI.Algorithms.SubexponentialSAT.Main"
+      ],
+      "cwd": "<REPLICATION_ROOT>/openai/workspace",
+      "started_utc_epoch": 1793890269.552292,
+      "timeout_seconds": 7200,
+      "stdout_is_export": false,
+      "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.",
+      "exit_code": 0,
+      "reason": null,
+      "wall_seconds": 3243.090257883072,
+      "child_cpu_seconds": 2861.982208,
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_log_bytes": 0
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "interrupted-closure-policy-controls/1",
+  "status": "passed",
+  "source_sha256": "3893f6fd2ce5eca22fd99f57994bd25891367b729e31587f0d1a13e0ca9e243f",
+  "count": 13,
+  "checks": [
+    "actualclosed e066 interruption header accepted as interruption only",
+    "refuse mutated status 'passed'",
+    "refuse mutated interrupt_signal None",
+    "refuse mutated interrupt_signal 15.0",
+    "refuse mutated interrupt_signal True",
+    "refuse mutated stage_receipts [{'exit_code': 0}]",
+    "refuse mutated error 'stage timeout'",
+    "refuse mutated original_r2_attempt_passed True",
+    "all13actualrecovery smallfile identities/exactabsences match",
+    "outercapture remains0bytes and is never parsed asJSON",
+    "sourcehasno attempt toparseemptyoutercapture",
+    "finalseal followsreportfsync",
+    "final interrupted and campaigncosts areexplicitnull"
+  ],
+  "scope": "AST-extracted pureheader refusers and13actualclosed smallmetadata identities/absences; no fullclosure/helperimports/proof/retry/largehash/processcontrol/network. No CFvalue printed or persisted."
+}

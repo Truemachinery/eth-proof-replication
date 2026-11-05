@@ -1,0 +1,48 @@
+{
+  "schema": "eth-nanoda-worker-probe-saved-review/1",
+  "created_utc": "2026-11-05T15:37:09.887944+00:00",
+  "status": "PASS_SAVED_SINGLE_HARMLESS_WORKER_PROBE_ONLY",
+  "scope": "Independent same-team read/hash/parse review. No probe/compiler/build/checker/proof execution or large asset read by reviewer.",
+  "source_result": {
+    "path": "verification-tools-worker-stack256/worker-probe-result-r1.json",
+    "sha256": "c2d1e9442e256121dff3f627d3a6db0deb184ec5ca6d9c498dd9910a272c65cd",
+    "size_bytes": 6228
+  },
+  "checks": [
+    "closed probe reports success under explicit harmless-resource schema",
+    "all four recorded version/compile/worker commands exit zero",
+    "actual worker stdout JSON equals recorded result",
+    "one worker with requested256MiB created",
+    "worker OS-reported stack reservation satisfies request",
+    "main limits before and after unchanged",
+    "probe does not report checker or proof execution",
+    "saved resource measurements fit authorized tiny-probe bounds",
+    "worker_probe_r1.rs bytes match probe input identity",
+    "worker_probe_r1 bytes match probe input identity",
+    "rustc input identity agrees with independent baseline",
+    "cargo input identity agrees with independent baseline",
+    "source queries stack size inside newly created Rust worker",
+    "source has no stack-limit mutation or Nanoda invocation"
+  ],
+  "requested_worker_stack_bytes": 268435456,
+  "os_reported_worker_stack_reservation_bytes": 268447744,
+  "main_limits_unchanged": [
+    8372224,
+    67092480
+  ],
+  "probe_resources": {
+    "child_cpu_seconds": 3.394139,
+    "wall_seconds": 5.846522917000001,
+    "cost_usd": 0
+  },
+  "limits": [
+    "Only one harmless Rust worker was created; no two-worker Nanoda completion or theorem acceptance follows.",
+    "OS-reported reservation is not committed physical memory or measurement inside a later actual Nanoda process.",
+    "Source build and future helper/R6 still require separate closed evidence and review before root runs the proof checker."
+  ],
+  "review_resources": {
+    "cpu_seconds": 0.0011579999999999993,
+    "wall_seconds": 0.0018498750000000008,
+    "cost_usd": 0
+  }
+}

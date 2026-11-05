@@ -1,0 +1,393 @@
+{
+  "schema": "openai-native-resource-retry-inputs/1",
+  "protocol_variant": "openai-native-r2-nanoda-worker-stack256-cfenv-r3",
+  "base_r2_input_fingerprint": "c84c8907998f23cc282a29ae7fef4a37cbaff735327096e748afe546af8c4f52",
+  "selected_inputs": {
+    "files": {
+      "native-recorder-r1/record.py": {
+        "path": "<REPLICATION_ROOT>/openai/native-recorder-r1/record.py",
+        "sha256": "1a7c9f9d8bbf7de0458e83ea0385a280c05db970b2e87493f3e85a6c06c361c0",
+        "size_bytes": 6474
+      },
+      "in_workspace.py": {
+        "path": "<REPLICATION_ROOT>/openai/in_workspace.py",
+        "sha256": "b4e80df9ed1f1c71e7a202feccd94f189113610679d4a28ac3728d8708e7d04a",
+        "size_bytes": 700
+      },
+      "verify_source_identity_r3.py": {
+        "path": "<REPLICATION_ROOT>/openai/verify_source_identity_r3.py",
+        "sha256": "52cb3de32ef89c5fbb460032601693a9d2e740cda296b8dd44f9ab6fd1fa9174",
+        "size_bytes": 12879
+      },
+      "identity_expectations_r1.json": {
+        "path": "<REPLICATION_ROOT>/openai/identity_expectations_r1.json",
+        "sha256": "e39147fee63287baea89a046c85c462090f1c443f15b53d809e613631f0cce47",
+        "size_bytes": 8435
+      },
+      "source-manifest.json": {
+        "path": "<REPLICATION_ROOT>/openai/source-manifest.json",
+        "sha256": "bf7f36120177010243e52dd9053bd3e9f97f92fa35184abf173a8a57ef4843e1",
+        "size_bytes": 1892511
+      },
+      "workspace-config-r2.json": {
+        "path": "<REPLICATION_ROOT>/openai/workspace-config-r2.json",
+        "sha256": "a56c999ec870742bee9c51be2bb3199d358d77876d5e7d49492f5ad880938413",
+        "size_bytes": 709
+      },
+      "workspace/lake-manifest.json": {
+        "path": "<REPLICATION_ROOT>/openai/workspace/lake-manifest.json",
+        "sha256": "4aa8b01a11ed34de463651ed6396d9da61f365cccfd158e82e96bbd17bcb14bc",
+        "size_bytes": 3153
+      },
+      "source/lean/ComparatorChallenges/SubexponentialSAT.json": {
+        "path": "<REPLICATION_ROOT>/openai/source/lean/ComparatorChallenges/SubexponentialSAT.json",
+        "sha256": "debbfdc9c01104d2369be80da5180978275106df8b685f693fba7ce7da7c5b19",
+        "size_bytes": 364
+      },
+      "../verification/AuditTargets.lean": {
+        "path": "<REPLICATION_ROOT>/verification/AuditTargets.lean",
+        "sha256": "a78f30e0439e85d3a9ae51828e0e42c248c027a7fcfeb4c4fb16cb776fae0b05",
+        "size_bytes": 5663
+      },
+      "../verification-tools/comparator-source/.lake/build/bin/comparator": {
+        "path": "<REPLICATION_ROOT>/verification-tools/comparator-source/.lake/build/bin/comparator",
+        "sha256": "bdf09ee3e725f1480792db7b5befcbf6e4f77db90d9f1f4986bda5a1e6315f4c",
+        "size_bytes": 101846512
+      },
+      "../verification-tools/lean4export-434-source/.lake/build/bin/lean4export": {
+        "path": "<REPLICATION_ROOT>/verification-tools/lean4export-434-source/.lake/build/bin/lean4export",
+        "sha256": "e6217f95bf55c5e165a62f12ec6ce1fb3c25a815cff0f9cb6f6dfcf4c8e55e25",
+        "size_bytes": 179096064
+      },
+      "../verification-tools/nanoda-source/target/release/nanoda_bin": {
+        "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/target/release/nanoda_bin",
+        "sha256": "d9a1fc5371b84c9eb0687a7630eb724fa88886d9f5d665f09f9f926730573b80",
+        "size_bytes": 1260088
+      },
+      "../verification-tools/comparator-source/scripts/fake-landrun.sh": {
+        "path": "<REPLICATION_ROOT>/verification-tools/comparator-source/scripts/fake-landrun.sh",
+        "sha256": "167507c89d8b3c7667ad78b50df7b19f89883751a01efd1457404fa34a994e8b",
+        "size_bytes": 1431
+      },
+      "../verification-tools/record_nanoda.py": {
+        "path": "<REPLICATION_ROOT>/verification-tools/record_nanoda.py",
+        "sha256": "c34f36d630d182708937a5280b6eda8d0723fa0ffdd85caf8fc54af17b332f48",
+        "size_bytes": 8494
+      },
+      "native_export_capture_r2.py": {
+        "path": "<REPLICATION_ROOT>/openai/native_export_capture_r2.py",
+        "sha256": "4755ba1dd43d18509cd1472bca98c269c79e3dc5a3c99f41faff5b2e6d78be74",
+        "size_bytes": 3279
+      },
+      "workspace/lean-toolchain": {
+        "path": "<REPLICATION_ROOT>/openai/workspace/lean-toolchain",
+        "sha256": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+        "size_bytes": 25
+      },
+      "workspace/lakefile.lean": {
+        "path": "<REPLICATION_ROOT>/openai/workspace/lakefile.lean",
+        "sha256": "aea9d368f24768ab9d51d8c9216c1dd60e598a983e63c463dc8de3f605d268fb",
+        "size_bytes": 534
+      },
+      "real4341/lib/lean/libleanshared.dylib": {
+        "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared.dylib",
+        "sha256": "6588b7e38450ea749006dcd90bbaea9393a5ca1b64727a2e7138f3c9427c2b50",
+        "size_bytes": 179077552
+      },
+      "real4341/lib/lean/libleanshared_1.dylib": {
+        "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared_1.dylib",
+        "sha256": "e44858e227323a23ce7416c5678415d2d022582b1627ad3690117ce73cd6345a",
+        "size_bytes": 16736
+      },
+      "real4341/lib/lean/libleanshared_2.dylib": {
+        "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libleanshared_2.dylib",
+        "sha256": "be68927a4f282b99383e82af4d481b4ffe59f2a243aea20dae0e60b39c2ae182",
+        "size_bytes": 16736
+      },
+      "real4341/lib/lean/libInit_shared.dylib": {
+        "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libInit_shared.dylib",
+        "sha256": "cb203e0bc0e6ab3250b2804d3e5398ad3a91544b5e049674532f73b7a062ef7f",
+        "size_bytes": 16736
+      },
+      "real4341/lib/lean/libLake_shared.dylib": {
+        "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/libLake_shared.dylib",
+        "sha256": "60a94628397814203d86428fa6015f9d844c4c4c74cda8667e687a4ea5b5f5ac",
+        "size_bytes": 10072896
+      },
+      "real4341/bin/leanchecker": {
+        "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/leanchecker",
+        "sha256": "cfde41cb11dde58c84e9c60c551fd104bb2fc1104ad44dca932a923120272a35",
+        "size_bytes": 78224
+      },
+      "real4341/bin/lean": {
+        "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean",
+        "sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+        "size_bytes": 49968
+      },
+      "real4341/bin/lake": {
+        "path": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1/bin/lake",
+        "sha256": "c8c24f1398162ab4004e2a869952d8469f54293651151feaad4526f2b8474c6e",
+        "size_bytes": 51824
+      }
+    },
+    "launcher": {
+      "path": "<REPLICATION_ROOT>/openai/verify_native_phase_r2.py",
+      "sha256": "fe3b12c0b8312a6b0cdb5ec1c6d88933cbff796bc92e9403682735d25348c19c",
+      "size_bytes": 20260
+    },
+    "module": "OAI.Algorithms.SubexponentialSAT.Main",
+    "challenge": "ComparatorChallenges.SubexponentialSAT",
+    "theorems": [
+      "OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.exact_count_and_sat"
+    ],
+    "original_comparator_nanoda_enabled": false
+  },
+  "retry_source": {
+    "path": "<REPLICATION_ROOT>/openai/nanoda_worker_stack_retry_r3.py",
+    "sha256": "9f4fe4e87a568f8bd89d39df61ed03fc155e120e2194aa82dce038918c1f34f3",
+    "size_bytes": 24398
+  },
+  "resource_policy": {
+    "nanoda_num_threads": 2,
+    "compiled_requested_worker_stack_bytes": 268435456,
+    "original_compiled_requested_worker_stack_bytes": 16777216,
+    "checker_binary_changed": true,
+    "checker_logic_patch": false,
+    "main_stack_limits_changed": false,
+    "actual_nanoda_worker_extent_measured": false,
+    "export_changed": false,
+    "axiom_policy_changed": false,
+    "config_changed": false
+  },
+  "resource_inputs": {
+    "tool-manifest-r1.json": {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/tool-manifest-r1.json",
+      "sha256": "f90219aaeedd7bbff3746eff8167c99b8d075d1045ae5c4363bc8ebb425bc30d",
+      "size_bytes": 1872
+    },
+    "source-provenance-r1.json": {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/source-provenance-r1.json",
+      "sha256": "b73658a2cec0410e1df0a90c446c5f15c0cf3a28875131027972ddece9c71dc7",
+      "size_bytes": 35396
+    },
+    "build-result-r1.json": {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/build-result-r1.json",
+      "sha256": "9746cc46746f11d88d5d0f3f5ad1458e05a57627abb90fd6d60c6f42ebef325e",
+      "size_bytes": 8241
+    },
+    "resource-only.patch": {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/resource-only.patch",
+      "sha256": "8772472e7acd9c5900d01db457b7e7ba6d5e2273c57e3f939fa5d2485412659f",
+      "size_bytes": 211
+    },
+    "worker-probe-result-r1.json": {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/worker-probe-result-r1.json",
+      "sha256": "c2d1e9442e256121dff3f627d3a6db0deb184ec5ca6d9c498dd9910a272c65cd",
+      "size_bytes": 6228
+    },
+    "tiny-controls-r1/control-result-r1.json": {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/tiny-controls-r1/control-result-r1.json",
+      "sha256": "c539e45b86bf71fbfb4b69d61a2cf3654681baf3a159ed9a2ffd6a4c7b6ccd8b",
+      "size_bytes": 7088
+    },
+    "record_nanoda.py": {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/record_nanoda.py",
+      "sha256": "c34f36d630d182708937a5280b6eda8d0723fa0ffdd85caf8fc54af17b332f48",
+      "size_bytes": 8494
+    },
+    "target/release/nanoda_bin": {
+      "path": "<REPLICATION_ROOT>/verification-tools-worker-stack256/target/release/nanoda_bin",
+      "sha256": "10e1a4ebdb6fa606ca8d7a60774d8af0655294ab0b19d03a838a5ba746b7c2d9",
+      "size_bytes": 1260088
+    }
+  },
+  "export_input": {
+    "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/selected-solution.ndjson",
+    "sha256": "bdbc9afe336fea99b01bc4eced6e4232153afdefe13a1095cdc5ca9499e3f573",
+    "size_bytes": 2355666449
+  },
+  "failed_attempt": {
+    "directory": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda",
+    "phase_result": {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/phase-result.json",
+      "sha256": "d3c66a14e20464d11f37efa1e86d5f5651a34ceba997cd54af24472cb07174dd",
+      "size_bytes": 2667
+    },
+    "inputs": {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/phase-inputs.json",
+      "sha256": "2ea7a98077a136565c520cfa80b4f1926a4cbf4926b4ec0c050d19dcf690ee80",
+      "size_bytes": 12256
+    },
+    "raw": {
+      "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/stages/extra-nanoda/raw.log",
+      "sha256": "590ccc60513da51ab0aad98c32b68c0f485d0fda4958c7255feb5175c55bc4e2",
+      "size_bytes": 101
+    },
+    "stage": {
+      "argv": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "<REPLICATION_ROOT>/openai/in_workspace.py",
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "<REPLICATION_ROOT>/verification-tools/record_nanoda.py",
+        "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/additional-nanoda-config.json"
+      ],
+      "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.",
+      "child_cpu_seconds": 256.887489,
+      "cwd": "<REPLICATION_ROOT>/openai/workspace",
+      "exit_code": -6,
+      "name": "extra-nanoda",
+      "raw_log_bytes": 101,
+      "raw_log_sha256": "590ccc60513da51ab0aad98c32b68c0f485d0fda4958c7255feb5175c55bc4e2",
+      "reason": null,
+      "schema": "eth-ci-stage/1",
+      "started_utc_epoch": 1793889948.087543,
+      "stdout_is_export": false,
+      "timeout_seconds": 7200,
+      "wall_seconds": 141.66858196258545
+    },
+    "nanoda": {
+      "record_directory": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii",
+      "finished_receipt": {
+        "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/02-finished.json",
+        "sha256": "f70f00e358dd6da983202dbbdde4e2247418c878e640bc85d3825ecb76bf0c78",
+        "size_bytes": 6320
+      },
+      "gzip": {
+        "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/export.ndjson.gz",
+        "sha256": "c9408fc5dedf81e411e1a259c160804b10f8ae8ccce6b2abefff2170c0cbb789",
+        "size_bytes": 453732564
+      },
+      "small_records": [
+        {
+          "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/00-prepared.json",
+          "sha256": "f9f307f75aaf376e588d94cbcbe023e349ccd9167facb4b5bdb49e84dd2b6f56",
+          "size_bytes": 4872
+        },
+        {
+          "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/01-started.json",
+          "sha256": "ec0e9674c207deb165bac65c10fe4349b7006663f8a61c19eb3348761f93b3fb",
+          "size_bytes": 395
+        },
+        {
+          "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/02-finished.json",
+          "sha256": "f70f00e358dd6da983202dbbdde4e2247418c878e640bc85d3825ecb76bf0c78",
+          "size_bytes": 6320
+        },
+        {
+          "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/nanoda-records/nanoda-15640-_ji_0mii/effective-config.json",
+          "sha256": "acd37052945a7ef7364cf4c30177c6f0d2e7355f2d5a86c1f242986ad361acf4",
+          "size_bytes": 398
+        }
+      ],
+      "effective_policy": {
+        "use_stdin": false,
+        "export_file_path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-05-selected-export/selected-solution.ndjson",
+        "permitted_axioms": [
+          "propext",
+          "Quot.sound",
+          "Classical.choice"
+        ],
+        "unpermitted_axiom_hard_error": true,
+        "num_threads": 2,
+        "nat_extension": true,
+        "string_extension": true
+      },
+      "checker_cpu_seconds": 247.1731,
+      "checker_wall_seconds": 131.516565209,
+      "checker_exit_code": -6,
+      "meaning": "Actual exit is separate from recording completeness; original failed attempt is never relabeled."
+    },
+    "outer_receipt": {
+      "path": "<REPLICATION_ROOT>/openai/logs/native-r2-extra-nanoda-checkpoint.json",
+      "sha256": "b8d60e79a970485e5b06e0d9bbf50cb2616cfc5ff0a569b58eb7a16cb5537dff",
+      "size_bytes": 4496
+    },
+    "outer_digest": {
+      "agent": "codex-eth-replication",
+      "task": "external-eth-proof-replication-20261104",
+      "task_rev": 62,
+      "revision_event_id": 4013,
+      "exit_code": 125,
+      "timed_out": false,
+      "cpu_seconds": 258.021357,
+      "wall_seconds": 142.756902,
+      "log_path": "research/eth-external-replication-20261104/openai/logs/native-r2-extra-nanoda-checkpoint.txt",
+      "log_sha256": "0599976a37cdc35a45d160484af270befd31eeae4f440c90af69bd4381cc8ca4",
+      "log_size": 5140,
+      "log_total_lines": 12,
+      "pinned_artifacts": [
+        "research/eth-external-replication-20261104/openai/logs/native-r2-extra-nanoda-checkpoint.txt"
+      ],
+      "missing_requested_artifacts": [],
+      "full_output": false,
+      "tail_lines": 3,
+      "output": "| fatal runtime error: stack overflow, aborting\nSTAGE_RECEIPT {\"argv\": [\"/Applications/Xcode.app/Contents/Developer/usr/bin/python3\", \"<REPLICATION_ROOT>/openai/in_workspace.py\", \"/Applications/Xcode.app/Contents/Developer/usr/bin/python3\", \"<REPLICATION_ROOT>/verification-tools/record_nanoda.py\", \"<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/additional-nanoda-config.json\"], \"child_cpu_scope\": \"Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.\", \"child_cpu_seconds\": 256.887489, \"cwd\": \"<REPLICATION_ROOT>/openai/workspace\", \"exit_code\": -6, \"name\": \"extra-nanoda\", \"raw_log_bytes\": 101, \"raw_log_sha256\": \"590ccc60513da51ab0aad98c32b68c0f485d0fda4958c7255feb5175c55bc4e2\", \"reason\": null, \"schema\": \"eth-ci-stage/1\", \"started_utc_epoch\": 1793889948.087543, \"stdout_is_export\": false, \"timeout_seconds\": 7200, \"wall_seconds\": 141.66858196258545}\n{\"accounting\": \"Native execution, no systemd-managed service. Recorder child_cpu_seconds covers reaped child processes/descendants, including capture and checker wrappers. Do not add nested Nanoda CPU a second time. No RSS measurement is claimed.\", \"error\": \"CalledProcessError: Command '['/Applications/Xcode.app/Contents/Developer/usr/bin/python3', '<REPLICATION_ROOT>/openai/in_workspace.py', '/Applications/Xcode.app/Contents/Developer/usr/bin/python3', '<REPLICATION_ROOT>/verification-tools/record_nanoda.py', '<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/additional-nanoda-config.json']' died with <Signals.SIGABRT: 6>.\", \"finished_utc\": \"2026-11-05T14:48:09.757013+00:00\", \"input_fingerprint\": \"c84c8907998f23cc282a29ae7fef4a37cbaff735327096e748afe546af8c4f52\", \"interrupt_signal\": null, \"phase\": \"extra-nanoda\", \"record_directory\": \"<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda\", \"schema\": \"openai-native-phase/1\", \"scope\": \"One explicit phase only; root aggregates all required closed results. Native mode has no Linux isolation.\", \"stage_receipts\": [{\"argv\": [\"/Applications/Xcode.app/Contents/Developer/usr/bin/python3\", \"<REPLICATION_ROOT>/openai/in_workspace.py\", \"/Applications/Xcode.app/Contents/Developer/usr/bin/python3\", \"<REPLICATION_ROOT>/verification-tools/record_nanoda.py\", \"<REPLICATION_ROOT>/openai/native-phase-records/r2-06-extra-nanoda/additional-nanoda-config.json\"], \"child_cpu_scope\": \"Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.\", \"child_cpu_seconds\": 256.887489, \"cwd\": \"<REPLICATION_ROOT>/openai/workspace\", \"exit_code\": -6, \"name\": \"extra-nanoda\", \"raw_log_bytes\": 101, \"raw_log_sha256\": \"590ccc60513da51ab0aad98c32b68c0f485d0fda4958c7255feb5175c55bc4e2\", \"reason\": null, \"schema\": \"eth-ci-stage/1\", \"started_utc_epoch\": 1793889948.087543, \"stdout_is_export\": false, \"timeout_seconds\": 7200, \"wall_seconds\": 141.66858196258545}], \"started_utc\": \"2026-11-05T14:45:47.037480+00:00\", \"status\": \"failed\"}"
+    },
+    "start": 1793889948.087543,
+    "end": 1793890089.756125,
+    "verdict": "FAILED: SIGABRT worker stack overflow; not a logical rejection or kernel acceptance."
+  },
+  "fresh_phase_result": {
+    "path": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh/phase-result.json",
+    "sha256": "647f8001e2e025607bc7848959dc98836014741e00c2d160fd1f30688c05082a",
+    "size_bytes": 2804
+  },
+  "fresh_directory": "<REPLICATION_ROOT>/openai/native-phase-records/r2-07-original-fresh",
+  "argv": [
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "<REPLICATION_ROOT>/openai/nanoda_worker_stack_retry_r3.py",
+    "--child",
+    "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02"
+  ],
+  "cwd": "<REPLICATION_ROOT>/openai/workspace",
+  "environment": {
+    "PATH": "<REDACTED FIELD>",
+    "HOME": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/home",
+    "TMPDIR": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/tmp",
+    "LANG": "en_US.UTF-8",
+    "LC_ALL": "en_US.UTF-8",
+    "PYTHONUTF8": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "ELAN_HOME": "<REPLICATION_ROOT>/openai/elan",
+    "XDG_CACHE_HOME": "<REPLICATION_ROOT>/openai/cache",
+    "MATHLIB_CACHE_DIR": "<REPLICATION_ROOT>/openai/cache/mathlib",
+    "LEAN_SYSROOT": "<REPLICATION_ROOT>/openai/elan/toolchains/leanprover--lean4---v4.34.1",
+    "LEAN_NUM_THREADS": "2",
+    "LEAN_ABORT_ON_PANIC": "1",
+    "GIT_CONFIG_NOSYSTEM": "1",
+    "GIT_TERMINAL_PROMPT": "0",
+    "GIT_OPTIONAL_LOCKS": "0",
+    "GIT_NO_LAZY_FETCH": "1",
+    "GIT_NO_REPLACE_OBJECTS": "1",
+    "COMPARATOR_LANDRUN": "<REPLICATION_ROOT>/verification-tools/comparator-source/scripts/fake-landrun.sh",
+    "NANODA_REAL_BINARY": "<REPLICATION_ROOT>/verification-tools-worker-stack256/target/release/nanoda_bin",
+    "REPLICATION_CHECKER_RECORD_DIR": "<REPLICATION_ROOT>/openai/native-retry-records/worker-stack256-r3-02/nanoda-records",
+    "__CF_USER_TEXT_ENCODING": "<SDK METADATA REDACTED>"
+  },
+  "environment_keys": [
+    "COMPARATOR_LANDRUN",
+    "ELAN_HOME",
+    "GIT_CONFIG_NOSYSTEM",
+    "GIT_NO_LAZY_FETCH",
+    "GIT_NO_REPLACE_OBJECTS",
+    "GIT_OPTIONAL_LOCKS",
+    "GIT_TERMINAL_PROMPT",
+    "HOME",
+    "LANG",
+    "LC_ALL",
+    "LEAN_ABORT_ON_PANIC",
+    "LEAN_NUM_THREADS",
+    "LEAN_SYSROOT",
+    "MATHLIB_CACHE_DIR",
+    "NANODA_REAL_BINARY",
+    "PATH",
+    "PYTHONDONTWRITEBYTECODE",
+    "PYTHONUTF8",
+    "REPLICATION_CHECKER_RECORD_DIR",
+    "TMPDIR",
+    "XDG_CACHE_HOME",
+    "__CF_USER_TEXT_ENCODING"
+  ],
+  "timeout_seconds": 7200,
+  "config_delta": {}
+}

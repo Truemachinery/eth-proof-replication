@@ -1,0 +1,8 @@
+{
+  "schema": "eth-publication-transport-timing-addendum/1",
+  "created_utc": "2026-11-05T14:25:08.090319+00:00",
+  "receipt_path": "PUBLICATION_RECEIPT-r6.json",
+  "receipt_sha256": "344988a7d01f57b03c343430ac8062cea1251a5408a3d27ea8c4812e4f973f0d",
+  "scope": "Timing clarification only; all byte/hash/tree checks and105read-only request count are unchanged.",
+  "clarification": "The ci/record.py fetch_blob body was acquired once as a pre-batch transport probe, then reused in the99-path save batch. Its per-row started/finished timestamps describe batch handling, not the earlier API request. The exact earlier probe acquisition timestamp was not instrumented. The batch interval14:22:07.603Z\u201314:22:23.185Z covers98new requests plus handling the reused probe, not all99request acquisition times. No CPU rate or total service-time claim is inferred."
+}

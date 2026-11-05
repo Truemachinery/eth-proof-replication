@@ -1,0 +1,22 @@
+{
+  "schema": "worker256-python-metadata-controls/1",
+  "status": "passed",
+  "scope": "Python metadata/refuser controls only; no real phase, checker, build, export or aggregation.",
+  "helper_sha256": "59931d7b0d00ba5651322e6a3e1efb9524223334ce74ee767891dd95534557fc",
+  "aggregator_sha256": "22a8fc8b2164f1f8a08c5f362c16af10180d1bc2262287aecba9cd7100185519",
+  "checks": [
+    "exact-original-strict-two-thread-policy",
+    "reject-sorry",
+    "reject-serial",
+    "reject-boolean-thread",
+    "reject-soft-axioms",
+    "reject-disabled-nat",
+    "reject-extra-key",
+    "actual-resource-source-binary-manifest-pins",
+    "reject-resource-pin-drift",
+    "aggregate-binds-frozen-new-helper"
+  ],
+  "count": 10,
+  "own_cpu_seconds": 0.02248,
+  "wall_seconds": 0.030460374999999998
+}

@@ -1,0 +1,14 @@
+# checkpoint run log
+# agent: codex-eth-anthropic-replication
+# task: eth-native-nanoda-serial-stack-retry-20261105
+# started_at: 2026-11-05T15:15:04.639312Z
+# command: env PYTHONDONTWRITEBYTECODE=1 python3 -
+
+Traceback (most recent call last):
+  File "<stdin>", line 32, in <module>
+AssertionError: Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "<REPLICATION_ROOT>/openai/nanoda_serial_stack_retry_r1.py", line 64, in stack_to_existing_hard
+    api.setrlimit(api.RLIMIT_STACK, (before[1], before[1]))
+ValueError: current limit exceeds maximum limit
+

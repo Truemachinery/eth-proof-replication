@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "<REPLICATION_ROOT>/openai/in_workspace.py",
+    "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "<REPLICATION_ROOT>/openai/verify_source_identity_r3.py"
+  ],
+  "child_cpu_scope": "Reaped subprocesses only; excludes systemd-managed service CPU. Read systemd runtime/CPU accounting in raw log.",
+  "child_cpu_seconds": 6.467979,
+  "cwd": "<REPLICATION_ROOT>/openai/workspace",
+  "exit_code": 0,
+  "name": "pre-identity",
+  "raw_log_bytes": 6665,
+  "raw_log_sha256": "973fa5cbe45226e3ce39c9b03fd1acfcb00b499f8a6de4a51b2cc8c28728d9e9",
+  "reason": null,
+  "schema": "eth-ci-stage/1",
+  "started_utc_epoch": 1793888578.6366131,
+  "stdout_is_export": false,
+  "timeout_seconds": 300,
+  "wall_seconds": 4.334066867828369
+}

@@ -1,0 +1,31 @@
+{
+  "schema": "eth-final-native-guard-controls/1",
+  "status": "passed",
+  "synthetic_only": true,
+  "no_lean_checker_network_or_real_evidence_execution": true,
+  "checks": [
+    "complete synthetic eight-phase selection accepted",
+    "missing large assets are not read or copied",
+    "synthetic plan and export preserve native evidence classes",
+    "no seal rejected",
+    "failed seal rejected",
+    "missing phase rejected",
+    "failed phase rejected",
+    "raw drift rejected",
+    "wrong raw size rejected",
+    "boolean exit rejected",
+    "interrupted rejected",
+    "input drift rejected",
+    "bad capture rejected",
+    "nanoda failure rejected",
+    "nanoda export mismatch rejected",
+    "bad config rejected",
+    "gzip lineage rejected",
+    "outside review rejected",
+    "unnamed live raw log rejected"
+  ],
+  "publisher_sha256": "7f7a74a3e4527f72cc460fecaec6c6f27e3d6781189326dc5792a4b8dcb071c9",
+  "control_source_sha256": "ff142f028063787acfbf5fa52de13137a12bda6f2c5d4870efe3439aa424b84c",
+  "cpu_seconds": 0.457072,
+  "wall_seconds": 0.5085745829999999
+}

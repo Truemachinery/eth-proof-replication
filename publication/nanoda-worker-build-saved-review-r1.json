@@ -1,0 +1,646 @@
+{
+  "schema": "eth-nanoda-worker-resource-build-saved-review/1",
+  "created_utc": "2026-11-05T15:47:40.154522+00:00",
+  "status": "PASS_SAVED_BUILD_SOURCE_INTEGRITY_AND_TINY_CONTROL_EVIDENCE_ONLY",
+  "scope": "Same-team independent read/hash/parse audit, not a repeated build or checker execution. No large ETH payload/archive read, network or publication.",
+  "checks": [
+    "source provenance matches frozen handoff",
+    "build result matches frozen handoff",
+    "all source inventories contain exact original29 names",
+    "actual variant source file set has no extras or omissions",
+    "variant source contains no symlinks",
+    "bound verification-tools-worker-stack256/source/.github/workflows/release.yml",
+    "original source preserved .github/workflows/release.yml",
+    "recorded original/copy before identities match sealed baseline .github/workflows/release.yml",
+    "physical independent variant source .github/workflows/release.yml",
+    "bound verification-tools-worker-stack256/source/.gitignore",
+    "original source preserved .gitignore",
+    "recorded original/copy before identities match sealed baseline .gitignore",
+    "physical independent variant source .gitignore",
+    "bound verification-tools-worker-stack256/source/Cargo.lock",
+    "original source preserved Cargo.lock",
+    "recorded original/copy before identities match sealed baseline Cargo.lock",
+    "physical independent variant source Cargo.lock",
+    "bound verification-tools-worker-stack256/source/Cargo.toml",
+    "original source preserved Cargo.toml",
+    "recorded original/copy before identities match sealed baseline Cargo.toml",
+    "physical independent variant source Cargo.toml",
+    "bound verification-tools-worker-stack256/source/LICENSE",
+    "original source preserved LICENSE",
+    "recorded original/copy before identities match sealed baseline LICENSE",
+    "physical independent variant source LICENSE",
+    "bound verification-tools-worker-stack256/source/README.md",
+    "original source preserved README.md",
+    "recorded original/copy before identities match sealed baseline README.md",
+    "physical independent variant source README.md",
+    "bound verification-tools-worker-stack256/source/rustfmt.toml",
+    "original source preserved rustfmt.toml",
+    "recorded original/copy before identities match sealed baseline rustfmt.toml",
+    "physical independent variant source rustfmt.toml",
+    "bound verification-tools-worker-stack256/source/src/debug_printer.rs",
+    "original source preserved src/debug_printer.rs",
+    "recorded original/copy before identities match sealed baseline src/debug_printer.rs",
+    "physical independent variant source src/debug_printer.rs",
+    "bound verification-tools-worker-stack256/source/src/env.rs",
+    "original source preserved src/env.rs",
+    "recorded original/copy before identities match sealed baseline src/env.rs",
+    "physical independent variant source src/env.rs",
+    "bound verification-tools-worker-stack256/source/src/expr.rs",
+    "original source preserved src/expr.rs",
+    "recorded original/copy before identities match sealed baseline src/expr.rs",
+    "physical independent variant source src/expr.rs",
+    "bound verification-tools-worker-stack256/source/src/inductive.rs",
+    "original source preserved src/inductive.rs",
+    "recorded original/copy before identities match sealed baseline src/inductive.rs",
+    "physical independent variant source src/inductive.rs",
+    "bound verification-tools-worker-stack256/source/src/level.rs",
+    "original source preserved src/level.rs",
+    "recorded original/copy before identities match sealed baseline src/level.rs",
+    "physical independent variant source src/level.rs",
+    "bound verification-tools-worker-stack256/source/src/lib.rs",
+    "original source preserved src/lib.rs",
+    "recorded original/copy before identities match sealed baseline src/lib.rs",
+    "physical independent variant source src/lib.rs",
+    "only exact compiled worker stack literal changes",
+    "bound verification-tools-worker-stack256/source/src/main.rs",
+    "original source preserved src/main.rs",
+    "recorded original/copy before identities match sealed baseline src/main.rs",
+    "physical independent variant source src/main.rs",
+    "bound verification-tools-worker-stack256/source/src/name.rs",
+    "original source preserved src/name.rs",
+    "recorded original/copy before identities match sealed baseline src/name.rs",
+    "physical independent variant source src/name.rs",
+    "bound verification-tools-worker-stack256/source/src/parser.rs",
+    "original source preserved src/parser.rs",
+    "recorded original/copy before identities match sealed baseline src/parser.rs",
+    "physical independent variant source src/parser.rs",
+    "bound verification-tools-worker-stack256/source/src/pretty_printer.rs",
+    "original source preserved src/pretty_printer.rs",
+    "recorded original/copy before identities match sealed baseline src/pretty_printer.rs",
+    "physical independent variant source src/pretty_printer.rs",
+    "bound verification-tools-worker-stack256/source/src/quot.rs",
+    "original source preserved src/quot.rs",
+    "recorded original/copy before identities match sealed baseline src/quot.rs",
+    "physical independent variant source src/quot.rs",
+    "bound verification-tools-worker-stack256/source/src/tc.rs",
+    "original source preserved src/tc.rs",
+    "recorded original/copy before identities match sealed baseline src/tc.rs",
+    "physical independent variant source src/tc.rs",
+    "bound verification-tools-worker-stack256/source/src/tests.rs",
+    "original source preserved src/tests.rs",
+    "recorded original/copy before identities match sealed baseline src/tests.rs",
+    "physical independent variant source src/tests.rs",
+    "bound verification-tools-worker-stack256/source/src/tests/level.rs",
+    "original source preserved src/tests/level.rs",
+    "recorded original/copy before identities match sealed baseline src/tests/level.rs",
+    "physical independent variant source src/tests/level.rs",
+    "bound verification-tools-worker-stack256/source/src/tests/natlit.rs",
+    "original source preserved src/tests/natlit.rs",
+    "recorded original/copy before identities match sealed baseline src/tests/natlit.rs",
+    "physical independent variant source src/tests/natlit.rs",
+    "bound verification-tools-worker-stack256/source/src/tests/util.rs",
+    "original source preserved src/tests/util.rs",
+    "recorded original/copy before identities match sealed baseline src/tests/util.rs",
+    "physical independent variant source src/tests/util.rs",
+    "bound verification-tools-worker-stack256/source/src/union_find.rs",
+    "original source preserved src/union_find.rs",
+    "recorded original/copy before identities match sealed baseline src/union_find.rs",
+    "physical independent variant source src/union_find.rs",
+    "bound verification-tools-worker-stack256/source/src/unique_hasher.rs",
+    "original source preserved src/unique_hasher.rs",
+    "recorded original/copy before identities match sealed baseline src/unique_hasher.rs",
+    "physical independent variant source src/unique_hasher.rs",
+    "bound verification-tools-worker-stack256/source/src/util.rs",
+    "original source preserved src/util.rs",
+    "recorded original/copy before identities match sealed baseline src/util.rs",
+    "physical independent variant source src/util.rs",
+    "bound verification-tools-worker-stack256/source/test_resources/Empty/export",
+    "original source preserved test_resources/Empty/export",
+    "recorded original/copy before identities match sealed baseline test_resources/Empty/export",
+    "physical independent variant source test_resources/Empty/export",
+    "bound verification-tools-worker-stack256/source/test_resources/ProjFromProp/config.json",
+    "original source preserved test_resources/ProjFromProp/config.json",
+    "recorded original/copy before identities match sealed baseline test_resources/ProjFromProp/config.json",
+    "physical independent variant source test_resources/ProjFromProp/config.json",
+    "bound verification-tools-worker-stack256/source/test_resources/ProjFromProp/export",
+    "original source preserved test_resources/ProjFromProp/export",
+    "recorded original/copy before identities match sealed baseline test_resources/ProjFromProp/export",
+    "physical independent variant source test_resources/ProjFromProp/export",
+    "only source delta is lib.rs constant",
+    "bound verification-tools/nanoda-source/target/release/nanoda_bin",
+    "bound verification-tools/record_nanoda.py",
+    "bound verification-tools/tool-manifest-r1.json",
+    "originalD9 binary preserved",
+    "original manifest preserved against independent baseline",
+    "copied recorder is byte-identical originalC34",
+    "copied recorder C34 identity",
+    "bound verification-tools/rustup/toolchains/1.99.1-aarch64-apple-darwin/bin/rustc",
+    "bound verification-tools/rustup/toolchains/1.99.1-aarch64-apple-darwin/bin/cargo",
+    "compiler executable matches independent pre-variant baseline rustc",
+    "compiler executable matches independent pre-variant baseline cargo",
+    "recorded build closed zero",
+    "release offline locked single-job argv",
+    "new physical target path exact",
+    "offline single-job no extra Rustflags override",
+    "bound verification-tools-worker-stack256/build-r1.raw.log",
+    "actual raw build records compilation and final release completion",
+    "saved build resources within authorized cap",
+    "bound verification-tools-worker-stack256/target/release/nanoda_bin",
+    "bound verification-tools-worker-stack256/target/release/nanoda_bin",
+    "actual new binary identity exact",
+    "new binary explicitly differs from originalD9",
+    "two original/new Cargo fingerprints available",
+    "bound verification-tools/nanoda-source/target/release/.fingerprint/nanoda_lib-ce8eff53b8da7bd3/bin-nanoda_bin.json",
+    "bound verification-tools-worker-stack256/target/release/.fingerprint/nanoda_lib-ce8eff53b8da7bd3/bin-nanoda_bin.json",
+    "original/new build fingerprint metadata equal bin-nanoda_bin.json",
+    "bound verification-tools/nanoda-source/target/release/.fingerprint/nanoda_lib-84797826779a110d/lib-nanoda_lib.json",
+    "bound verification-tools-worker-stack256/target/release/.fingerprint/nanoda_lib-84797826779a110d/lib-nanoda_lib.json",
+    "original/new build fingerprint metadata equal lib-nanoda_lib.json",
+    "two closed tiny controls present",
+    "bound verification-tools-worker-stack256/tiny-controls-r1/trusted-init/config.json",
+    "bound verification-tools-worker-stack256/tiny-controls-r1/trusted-init/stdout.raw",
+    "bound verification-tools-worker-stack256/tiny-controls-r1/trusted-init/stderr.raw",
+    "bound verification-tools-worker-stack256/tiny-controls-r1/trusted-init/records/nanoda-33878-wxh2zy65/02-finished.json",
+    "strict original2-thread control policy trusted-init",
+    "completed unchanged-input newbinary recording trusted-init",
+    "actual checker control outcome trusted-init",
+    "actual copiedC34 recorder bound trusted-init",
+    "bound verification-tools-worker-stack256/tiny-controls-r1/trusted-init/records/nanoda-33878-wxh2zy65/effective-config.json",
+    "actual control forwarded/effective config bytes equal trusted-init",
+    "bound verification-tools-worker-stack256/tiny-controls-r1/malformed/config.json",
+    "bound verification-tools-worker-stack256/tiny-controls-r1/malformed/stdout.raw",
+    "bound verification-tools-worker-stack256/tiny-controls-r1/malformed/stderr.raw",
+    "bound verification-tools-worker-stack256/tiny-controls-r1/malformed/records/nanoda-33880-zdcqln5h/02-finished.json",
+    "strict original2-thread control policy malformed",
+    "completed unchanged-input newbinary recording malformed",
+    "actual checker control outcome malformed",
+    "actual copiedC34 recorder bound malformed",
+    "bound verification-tools-worker-stack256/tiny-controls-r1/malformed/records/nanoda-33880-zdcqln5h/effective-config.json",
+    "actual control forwarded/effective config bytes equal malformed",
+    "publisher393e held unchanged"
+  ],
+  "artifacts": [
+    {
+      "path": "verification-tools/tool-manifest-r1.json",
+      "sha256": "90cf428c18e95d4e05502605b01f35e527d3f04644ef814a3742c8554c26a2c1",
+      "size_bytes": 55010
+    },
+    {
+      "path": "publication/nanoda-original-preservation-baseline-r1.json",
+      "sha256": "1b4cd1c7b852a47874aa6cf69f96061a3ea70afbff4a74c418058a27c8ea5910",
+      "size_bytes": 6625
+    },
+    {
+      "path": "verification-tools-worker-stack256/source-provenance-r1.json",
+      "sha256": "b73658a2cec0410e1df0a90c446c5f15c0cf3a28875131027972ddece9c71dc7",
+      "size_bytes": 35396
+    },
+    {
+      "path": "verification-tools-worker-stack256/build-result-r1.json",
+      "sha256": "9746cc46746f11d88d5d0f3f5ad1458e05a57627abb90fd6d60c6f42ebef325e",
+      "size_bytes": 8241
+    },
+    {
+      "path": "verification-tools-worker-stack256/tool-manifest-r1.json",
+      "sha256": "f90219aaeedd7bbff3746eff8167c99b8d075d1045ae5c4363bc8ebb425bc30d",
+      "size_bytes": 1872
+    },
+    {
+      "path": "verification-tools-worker-stack256/tiny-controls-r1/control-result-r1.json",
+      "sha256": "c539e45b86bf71fbfb4b69d61a2cf3654681baf3a159ed9a2ffd6a4c7b6ccd8b",
+      "size_bytes": 7088
+    },
+    {
+      "path": "verification-tools/nanoda-source/.github/workflows/release.yml",
+      "sha256": "3ac7ccfc95653d33b910efd69d541e22ba66b72d88422f54f4eafbe5be5eae0c",
+      "size_bytes": 710
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/.github/workflows/release.yml",
+      "sha256": "3ac7ccfc95653d33b910efd69d541e22ba66b72d88422f54f4eafbe5be5eae0c",
+      "size_bytes": 710
+    },
+    {
+      "path": "verification-tools/nanoda-source/.gitignore",
+      "sha256": "cc0528de53769499a02da6fbaaf0dab13434675fe571e276e13845f95f0b601b",
+      "size_bytes": 27
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/.gitignore",
+      "sha256": "cc0528de53769499a02da6fbaaf0dab13434675fe571e276e13845f95f0b601b",
+      "size_bytes": 27
+    },
+    {
+      "path": "verification-tools/nanoda-source/Cargo.lock",
+      "sha256": "f9df05457e9aae9acaa1039f10dd21dec4465e339a354f01c3f7c77c3bf0bed0",
+      "size_bytes": 6446
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/Cargo.lock",
+      "sha256": "f9df05457e9aae9acaa1039f10dd21dec4465e339a354f01c3f7c77c3bf0bed0",
+      "size_bytes": 6446
+    },
+    {
+      "path": "verification-tools/nanoda-source/Cargo.toml",
+      "sha256": "27aedf28f3b13f6c29edd73681e48b3b3769a01bd27235eec932c98f3c1842cd",
+      "size_bytes": 857
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/Cargo.toml",
+      "sha256": "27aedf28f3b13f6c29edd73681e48b3b3769a01bd27235eec932c98f3c1842cd",
+      "size_bytes": 857
+    },
+    {
+      "path": "verification-tools/nanoda-source/LICENSE",
+      "sha256": "c8858a5a76440bbca484e134cf7df46385d090dd18b2c58e650f939258802e5b",
+      "size_bytes": 10141
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/LICENSE",
+      "sha256": "c8858a5a76440bbca484e134cf7df46385d090dd18b2c58e650f939258802e5b",
+      "size_bytes": 10141
+    },
+    {
+      "path": "verification-tools/nanoda-source/README.md",
+      "sha256": "b91487520d495d8726fedfaa87462d81acf0ffab3a3cad942ae7232461f15fae",
+      "size_bytes": 6228
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/README.md",
+      "sha256": "b91487520d495d8726fedfaa87462d81acf0ffab3a3cad942ae7232461f15fae",
+      "size_bytes": 6228
+    },
+    {
+      "path": "verification-tools/nanoda-source/rustfmt.toml",
+      "sha256": "8bc492625b7a601b5147aa68f32a05fb90e7e95f55693c89619adea72ae230a5",
+      "size_bytes": 248
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/rustfmt.toml",
+      "sha256": "8bc492625b7a601b5147aa68f32a05fb90e7e95f55693c89619adea72ae230a5",
+      "size_bytes": 248
+    },
+    {
+      "path": "verification-tools/nanoda-source/src/debug_printer.rs",
+      "sha256": "184918c06946c0efcc57868e47098428bd1d98179725344ba81b1103eb940c81",
+      "size_bytes": 8921
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/src/debug_printer.rs",
+      "sha256": "184918c06946c0efcc57868e47098428bd1d98179725344ba81b1103eb940c81",
+      "size_bytes": 8921
+    },
+    {
+      "path": "verification-tools/nanoda-source/src/env.rs",
+      "sha256": "687edb90f3a8a2c665eacad66e021ec20c15819b6da7f2c152cb82fb24c3de5b",
+      "size_bytes": 10890
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/src/env.rs",
+      "sha256": "687edb90f3a8a2c665eacad66e021ec20c15819b6da7f2c152cb82fb24c3de5b",
+      "size_bytes": 10890
+    },
+    {
+      "path": "verification-tools/nanoda-source/src/expr.rs",
+      "sha256": "8e79e45afd043cd464f1e3af4597df3d4b09dfe087886cd32139f20746c6529e",
+      "size_bytes": 30985
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/src/expr.rs",
+      "sha256": "8e79e45afd043cd464f1e3af4597df3d4b09dfe087886cd32139f20746c6529e",
+      "size_bytes": 30985
+    },
+    {
+      "path": "verification-tools/nanoda-source/src/inductive.rs",
+      "sha256": "abef916af384d1d3ce339d9ca79a74e943e6cad6b79b67c5c95e717a8d2c4fb1",
+      "size_bytes": 80162
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/src/inductive.rs",
+      "sha256": "abef916af384d1d3ce339d9ca79a74e943e6cad6b79b67c5c95e717a8d2c4fb1",
+      "size_bytes": 80162
+    },
+    {
+      "path": "verification-tools/nanoda-source/src/level.rs",
+      "sha256": "801452fb06c25e037fc9f0136fd60ca1f720692f2341a3ead9aaf6e1a68a399c",
+      "size_bytes": 10847
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/src/level.rs",
+      "sha256": "801452fb06c25e037fc9f0136fd60ca1f720692f2341a3ead9aaf6e1a68a399c",
+      "size_bytes": 10847
+    },
+    {
+      "path": "verification-tools/nanoda-source/src/lib.rs",
+      "sha256": "ca7a3ba8754a06ee08c85fbc5af9debdefc372629c50b02142bdc8aad55cb69e",
+      "size_bytes": 397
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/src/lib.rs",
+      "sha256": "1ae715baf4c9b592ee918f9815d758f02aa2d60e17d293f602f5cf8732f6b069",
+      "size_bytes": 398
+    },
+    {
+      "path": "verification-tools/nanoda-source/src/main.rs",
+      "sha256": "245ceaef34e8925cacaa3c5b99ce096a8c744710ce1f9184423e5a0333e8b35a",
+      "size_bytes": 2524
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/src/main.rs",
+      "sha256": "245ceaef34e8925cacaa3c5b99ce096a8c744710ce1f9184423e5a0333e8b35a",
+      "size_bytes": 2524
+    },
+    {
+      "path": "verification-tools/nanoda-source/src/name.rs",
+      "sha256": "e6397a691030820156aa84574f2de3b510f9989e5bef61b99a0db37d2a014bd7",
+      "size_bytes": 2365
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/src/name.rs",
+      "sha256": "e6397a691030820156aa84574f2de3b510f9989e5bef61b99a0db37d2a014bd7",
+      "size_bytes": 2365
+    },
+    {
+      "path": "verification-tools/nanoda-source/src/parser.rs",
+      "sha256": "22b17bd188152fb3ded36a060fc1ade5e064aef7cc411aecf64c5730c40ea3e2",
+      "size_bytes": 33896
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/src/parser.rs",
+      "sha256": "22b17bd188152fb3ded36a060fc1ade5e064aef7cc411aecf64c5730c40ea3e2",
+      "size_bytes": 33896
+    },
+    {
+      "path": "verification-tools/nanoda-source/src/pretty_printer.rs",
+      "sha256": "b6284a0a27de2a40d714035577e29f259f47e872c2ececc9dfef9a5c479ed778",
+      "size_bytes": 36961
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/src/pretty_printer.rs",
+      "sha256": "b6284a0a27de2a40d714035577e29f259f47e872c2ececc9dfef9a5c479ed778",
+      "size_bytes": 36961
+    },
+    {
+      "path": "verification-tools/nanoda-source/src/quot.rs",
+      "sha256": "0131ae36f3daea5262f280aca44085c15e5335a8657cefd2afcec4c2bc388463",
+      "size_bytes": 10612
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/src/quot.rs",
+      "sha256": "0131ae36f3daea5262f280aca44085c15e5335a8657cefd2afcec4c2bc388463",
+      "size_bytes": 10612
+    },
+    {
+      "path": "verification-tools/nanoda-source/src/tc.rs",
+      "sha256": "73f00401263871e533eb0f2cfa38162866204ee3fe7e7dd146755c5690f0b696",
+      "size_bytes": 56610
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/src/tc.rs",
+      "sha256": "73f00401263871e533eb0f2cfa38162866204ee3fe7e7dd146755c5690f0b696",
+      "size_bytes": 56610
+    },
+    {
+      "path": "verification-tools/nanoda-source/src/tests.rs",
+      "sha256": "594aac68cef5af3c6c9513c09846c27b041d43b855828e2ec742ca1dd4173e56",
+      "size_bytes": 33
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/src/tests.rs",
+      "sha256": "594aac68cef5af3c6c9513c09846c27b041d43b855828e2ec742ca1dd4173e56",
+      "size_bytes": 33
+    },
+    {
+      "path": "verification-tools/nanoda-source/src/tests/level.rs",
+      "sha256": "0b532b157ce6b1b40d27e8acea78ac18c56b92de1bc9439f644b860c1f2a2d92",
+      "size_bytes": 6209
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/src/tests/level.rs",
+      "sha256": "0b532b157ce6b1b40d27e8acea78ac18c56b92de1bc9439f644b860c1f2a2d92",
+      "size_bytes": 6209
+    },
+    {
+      "path": "verification-tools/nanoda-source/src/tests/natlit.rs",
+      "sha256": "49e012cf9af881c4d3205795d2ced385e39128baa53770806489b69aaa1674fe",
+      "size_bytes": 27965
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/src/tests/natlit.rs",
+      "sha256": "49e012cf9af881c4d3205795d2ced385e39128baa53770806489b69aaa1674fe",
+      "size_bytes": 27965
+    },
+    {
+      "path": "verification-tools/nanoda-source/src/tests/util.rs",
+      "sha256": "f2de3d3bc76336ef82e34374ba6f50a8b185e30f17f68bb1e517e2b48f6666c2",
+      "size_bytes": 4345
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/src/tests/util.rs",
+      "sha256": "f2de3d3bc76336ef82e34374ba6f50a8b185e30f17f68bb1e517e2b48f6666c2",
+      "size_bytes": 4345
+    },
+    {
+      "path": "verification-tools/nanoda-source/src/union_find.rs",
+      "sha256": "2728ab1d2dcd84489a6bb4fa984af22c40236bf813205e42a1c55ca825bdc757",
+      "size_bytes": 5571
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/src/union_find.rs",
+      "sha256": "2728ab1d2dcd84489a6bb4fa984af22c40236bf813205e42a1c55ca825bdc757",
+      "size_bytes": 5571
+    },
+    {
+      "path": "verification-tools/nanoda-source/src/unique_hasher.rs",
+      "sha256": "e457ec69139dee08c4f21f3fee5bc9a2cfe6bb14e5d5bd217ca35d6a368daea5",
+      "size_bytes": 881
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/src/unique_hasher.rs",
+      "sha256": "e457ec69139dee08c4f21f3fee5bc9a2cfe6bb14e5d5bd217ca35d6a368daea5",
+      "size_bytes": 881
+    },
+    {
+      "path": "verification-tools/nanoda-source/src/util.rs",
+      "sha256": "b93e18f18c59286412109041daf31a5f90686d13f23cf378ce6a6a0c78f25d3d",
+      "size_bytes": 41176
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/src/util.rs",
+      "sha256": "b93e18f18c59286412109041daf31a5f90686d13f23cf378ce6a6a0c78f25d3d",
+      "size_bytes": 41176
+    },
+    {
+      "path": "verification-tools/nanoda-source/test_resources/Empty/export",
+      "sha256": "6ecdb8d4389e5c525cd9dfd05bb610c8a9c74739d9a62dbecc6a049ceb0b9837",
+      "size_bytes": 176
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/test_resources/Empty/export",
+      "sha256": "6ecdb8d4389e5c525cd9dfd05bb610c8a9c74739d9a62dbecc6a049ceb0b9837",
+      "size_bytes": 176
+    },
+    {
+      "path": "verification-tools/nanoda-source/test_resources/ProjFromProp/config.json",
+      "sha256": "c898525fcb5347fc9f60961201d93d7663afb1867197a46a5753e21b24fc3cc8",
+      "size_bytes": 186
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/test_resources/ProjFromProp/config.json",
+      "sha256": "c898525fcb5347fc9f60961201d93d7663afb1867197a46a5753e21b24fc3cc8",
+      "size_bytes": 186
+    },
+    {
+      "path": "verification-tools/nanoda-source/test_resources/ProjFromProp/export",
+      "sha256": "5fc8f25b717c2dd56880064e43d87489b1bea202f5b5ef96d0d06a6ba7ce2022",
+      "size_bytes": 4509
+    },
+    {
+      "path": "verification-tools-worker-stack256/source/test_resources/ProjFromProp/export",
+      "sha256": "5fc8f25b717c2dd56880064e43d87489b1bea202f5b5ef96d0d06a6ba7ce2022",
+      "size_bytes": 4509
+    },
+    {
+      "path": "verification-tools/nanoda-source/target/release/nanoda_bin",
+      "sha256": "d9a1fc5371b84c9eb0687a7630eb724fa88886d9f5d665f09f9f926730573b80",
+      "size_bytes": 1260088
+    },
+    {
+      "path": "verification-tools/record_nanoda.py",
+      "sha256": "c34f36d630d182708937a5280b6eda8d0723fa0ffdd85caf8fc54af17b332f48",
+      "size_bytes": 8494
+    },
+    {
+      "path": "verification-tools-worker-stack256/record_nanoda.py",
+      "sha256": "c34f36d630d182708937a5280b6eda8d0723fa0ffdd85caf8fc54af17b332f48",
+      "size_bytes": 8494
+    },
+    {
+      "path": "verification-tools/rustup/toolchains/1.99.1-aarch64-apple-darwin/bin/rustc",
+      "sha256": "1ba7bb8e273bd64125f4048d2ecce530e0a6470e565ab1b3aecf0b82b532f7b1",
+      "size_bytes": 413480
+    },
+    {
+      "path": "verification-tools/rustup/toolchains/1.99.1-aarch64-apple-darwin/bin/cargo",
+      "sha256": "6d576d8058f8ca643e8fce55b64ee3c614ba64c9da2e536bae843e6a2e1f3951",
+      "size_bytes": 32182376
+    },
+    {
+      "path": "verification-tools-worker-stack256/build-r1.raw.log",
+      "sha256": "14a4387c12f70eea04bf9b23c8f1e6f0dd4f5d0808a5e3bb5d0973dc803b1b83",
+      "size_bytes": 2177
+    },
+    {
+      "path": "verification-tools-worker-stack256/target/release/nanoda_bin",
+      "sha256": "10e1a4ebdb6fa606ca8d7a60774d8af0655294ab0b19d03a838a5ba746b7c2d9",
+      "size_bytes": 1260088
+    },
+    {
+      "path": "verification-tools/nanoda-source/target/release/.fingerprint/nanoda_lib-ce8eff53b8da7bd3/bin-nanoda_bin.json",
+      "sha256": "9c0da6d9b8c1db6de8036d2770c4fb20342ea2c228cea922dccce9e4d0080ae3",
+      "size_bytes": 904
+    },
+    {
+      "path": "verification-tools-worker-stack256/target/release/.fingerprint/nanoda_lib-ce8eff53b8da7bd3/bin-nanoda_bin.json",
+      "sha256": "9c0da6d9b8c1db6de8036d2770c4fb20342ea2c228cea922dccce9e4d0080ae3",
+      "size_bytes": 904
+    },
+    {
+      "path": "verification-tools/nanoda-source/target/release/.fingerprint/nanoda_lib-84797826779a110d/lib-nanoda_lib.json",
+      "sha256": "4b2f94bb23bf0fd0922a87c082de09bc30d2b7c7aa2e32621b5ef35d6e63d48d",
+      "size_bytes": 843
+    },
+    {
+      "path": "verification-tools-worker-stack256/target/release/.fingerprint/nanoda_lib-84797826779a110d/lib-nanoda_lib.json",
+      "sha256": "4b2f94bb23bf0fd0922a87c082de09bc30d2b7c7aa2e32621b5ef35d6e63d48d",
+      "size_bytes": 843
+    },
+    {
+      "path": "verification-tools-worker-stack256/tiny-controls-r1/trusted-init/config.json",
+      "sha256": "6f07bb7d15ed7566def9362806a8bcd4eb07d5cd28381d6d9af85dad72e851c7",
+      "size_bytes": 385
+    },
+    {
+      "path": "verification-tools-worker-stack256/tiny-controls-r1/trusted-init/stdout.raw",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "verification-tools-worker-stack256/tiny-controls-r1/trusted-init/stderr.raw",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "verification-tools-worker-stack256/tiny-controls-r1/trusted-init/records/nanoda-33878-wxh2zy65/02-finished.json",
+      "sha256": "87542c1f97dcacaf5c0fed53fa4c7c38fe82eecfc9d86320b3f99b5eb380baff",
+      "size_bytes": 6342
+    },
+    {
+      "path": "verification-tools-worker-stack256/tiny-controls-r1/trusted-init/records/nanoda-33878-wxh2zy65/effective-config.json",
+      "sha256": "6f07bb7d15ed7566def9362806a8bcd4eb07d5cd28381d6d9af85dad72e851c7",
+      "size_bytes": 385
+    },
+    {
+      "path": "verification-tools-worker-stack256/tiny-controls-r1/malformed/config.json",
+      "sha256": "66a1e0592334a84a462cfd0da5f66ebb5bb0dcb41d0f7c28fc112284fc555aa7",
+      "size_bytes": 377
+    },
+    {
+      "path": "verification-tools-worker-stack256/tiny-controls-r1/malformed/stdout.raw",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "verification-tools-worker-stack256/tiny-controls-r1/malformed/stderr.raw",
+      "sha256": "42bfb5670fdec1bdad4fd39863211d31ca9079cf0ae6f6fe5bbeab71b9f8c741",
+      "size_bytes": 77
+    },
+    {
+      "path": "verification-tools-worker-stack256/tiny-controls-r1/malformed/records/nanoda-33880-zdcqln5h/02-finished.json",
+      "sha256": "aab8e50d78f0515ed02d9f22ba5ac9ed875170ade1354212e1a646725f26f21f",
+      "size_bytes": 6293
+    },
+    {
+      "path": "verification-tools-worker-stack256/tiny-controls-r1/malformed/records/nanoda-33880-zdcqln5h/effective-config.json",
+      "sha256": "66a1e0592334a84a462cfd0da5f66ebb5bb0dcb41d0f7c28fc112284fc555aa7",
+      "size_bytes": 377
+    },
+    {
+      "path": "publish_package.py",
+      "sha256": "393e66e4bc31bb8115c371177a04024ca4d46728ce039b8adda1f32e50ef3bb1",
+      "size_bytes": 59740
+    }
+  ],
+  "only_source_difference": "src/lib.rs STACK_SIZE16_777_216\u2192268_435_456; all other28files byteidentical, tc.rs and Cargo.lock unchanged",
+  "new_binary": {
+    "path": "verification-tools-worker-stack256/target/release/nanoda_bin",
+    "sha256": "10e1a4ebdb6fa606ca8d7a60774d8af0655294ab0b19d03a838a5ba746b7c2d9",
+    "size_bytes": 1260088
+  },
+  "original_binary_preserved": {
+    "path": "<REPLICATION_ROOT>/verification-tools/nanoda-source/target/release/nanoda_bin",
+    "sha256": "d9a1fc5371b84c9eb0687a7630eb724fa88886d9f5d665f09f9f926730573b80",
+    "size_bytes": 1260088
+  },
+  "build_resources": {
+    "child_cpu_seconds": 29.215801000000003,
+    "wall_seconds": 32.241135667
+  },
+  "tiny_control_resources": {
+    "child_cpu_seconds": 0.32884599999999997,
+    "wall_seconds": 0.49753458399999995
+  },
+  "retained_build_warning": "rust-objcopy debug stripping failed with SIGABRT because libLLVM.dylib was unavailable; Cargo still exited0 and finished release, new binary passed the saved validInit/malformed parser controls. Warning is retained in raw build log; not a proof verdict.",
+  "compiler_scope": "Current Rustc/Cargo executable bytes match independent baseline; Cargo metadata fingerprints and reported installedRust1.99.1 agree. This does not claim a separately sealed original-build dynamic runtime hash or independent compiler/dependency rederivation.",
+  "limits": [
+    "One source constant resource patch and a new binary are explicit; not the originalD9binary or verbatim upstreamCI.",
+    "ValidInit accepted/malformed rejected are tiny control outcomes, not an ETH execution or an invalid-theorem typechecking control.",
+    "Probe supports one harmless worker reservation, not two actualNano worker stack measurements or committed memory.",
+    "Actual fullETH retry, originalfreshclosure, lastpostidentity and finalaggregate acceptance remain root-owned and pending."
+  ],
+  "review_resources": {
+    "cpu_seconds": 0.026002000000000004,
+    "wall_seconds": 0.032872833000000004,
+    "cost_usd": 0
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "worker256-config-byte-control/1",
+  "status": "passed",
+  "scope": "Harmless generated config byte comparison and final aggregate AST only; no proof/phase/checker/aggregate execution.",
+  "helper_sha256": "59931d7b0d00ba5651322e6a3e1efb9524223334ce74ee767891dd95534557fc",
+  "aggregator_sha256": "f540073691db650da2edd16888e99cc294891b9855df0e64e044c86e2235bcd0",
+  "actual_failed_config_sha256": "acd37052945a7ef7364cf4c30177c6f0d2e7355f2d5a86c1f242986ad361acf4",
+  "new_policy_serialized_sha256": "acd37052945a7ef7364cf4c30177c6f0d2e7355f2d5a86c1f242986ad361acf4",
+  "byte_identical": true,
+  "final_aggregate_ast_valid": true
+}

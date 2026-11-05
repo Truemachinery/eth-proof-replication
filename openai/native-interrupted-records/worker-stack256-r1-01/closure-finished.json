@@ -1,0 +1,20 @@
+{
+  "schema": "openai-native-interrupted-result/1",
+  "status": "interrupted_evidence_closed",
+  "expanded_suite_passed": false,
+  "result": {
+    "path": "<REPLICATION_ROOT>/openai/native-interrupted-records/worker-stack256-r1-01/native-interrupted-result.json",
+    "sha256": "89c492ef8435b3776aeb4f255bc4c3135be3db960d53673fdce2da3b88f1844f",
+    "size_bytes": 150192
+  },
+  "report": {
+    "path": "<REPLICATION_ROOT>/openai/native-interrupted-records/worker-stack256-r1-01/report.md",
+    "sha256": "55bcd48a11e67d1c841fd311fdf91542cb7124de65fbde0abf4048bcf0584522",
+    "size_bytes": 449
+  },
+  "artifacts_manifest": {
+    "path": "<REPLICATION_ROOT>/openai/native-interrupted-records/worker-stack256-r1-01/native-interrupted-artifacts.json",
+    "sha256": "dbdb79fe86b373b588abf80f3c7e2fd8ec132b077765cfd78559006a33f0fa48",
+    "size_bytes": 80238
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "schema": "eth-submission-negative-path-preparation/1",
+  "created_utc": "2026-11-05T17:05:07.499169+00:00",
+  "status": "design-only-held-for-actual-terminal-outcome",
+  "files": [
+    {
+      "path": "publication/final-submission-structure-preparation-r1.md",
+      "sha256": "62da7747256cd2891bed6681a7feb7585e9e5ef0eac4a17011a7f9d5c2cd7894",
+      "size_bytes": 6777,
+      "role": "new_preparation_note"
+    },
+    {
+      "path": "publication/native-incomplete-publication-design-r1.md",
+      "sha256": "04d638bb6ad841ce82f48242cc2519951cd0146eac45c410d9155613f787f6a1",
+      "size_bytes": 8283,
+      "role": "new_preparation_note"
+    },
+    {
+      "path": "publish_package.py",
+      "sha256": "a72ed2f73b37daaa375ee62c238897ba8e86c7549292bf5e3d6f1412fcc8675c",
+      "size_bytes": 68428,
+      "role": "read_only_source"
+    },
+    {
+      "path": "publication/native_worker_guard_r1.py",
+      "sha256": "68d3ef6d9e0c3d4ae436b2901f4ac483cfa49a5f65982ca07d7e56ea7a21c726",
+      "size_bytes": 31183,
+      "role": "read_only_source"
+    },
+    {
+      "path": "PUBLIC_README_TEMPLATE.md",
+      "sha256": "d83dd582e079d497ad4aa2018e3a70de8aeeadbae2afb90c640255695b0592bb",
+      "size_bytes": 16896,
+      "role": "read_only_source"
+    },
+    {
+      "path": "SUBMISSION.md",
+      "sha256": "2ced18c301575fcd150758f99494001c422898a9811dee23983de3ff6dee98db",
+      "size_bytes": 16808,
+      "role": "read_only_source"
+    }
+  ],
+  "writes_limited_to_new_preparation_notes": true,
+  "no_publisher_template_submission_map_or_export_changes": true,
+  "no_proof_network_wip_or_large_asset_reads": true,
+  "source_of_current_run_status": "Root supplied at17:01UTC; not independently sampled by preparation author",
+  "negative_aggregate_coordination": "Claims source owner supplied proposed openai-native-incomplete-result/1 schema; no runtime result inferred.",
+  "public_contact_omitted": true
+}
